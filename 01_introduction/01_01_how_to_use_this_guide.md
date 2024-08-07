@@ -1,0 +1,5 @@
+# How To Use This Guide
+
+I’ve been using ChatGPT to help me code for well over a year now. For the most part, it’s amazing and has helped me turn a lot of my ideas into working projects. However, there are also times when something gets updated behind the scenes, and ChatGPT loses a few IQ points. As someone who loves to tinker, I figured I’d give running local LLMs to allow me to use multiple models at once, leverage my computer's own hardware, and be in charge of my development environment.
+
+This guide is designed to share my understanding of how to set up and optimize local LLMs, solely for assistance when coding. There’s a lot to cover so I’m going to focus on understanding your computer's capabilities in order to select the right model, breaking down model naming, and benchmarking these models to ensure optimal performance. These are my notes and learnings over the past year of coding with an LLM at my side. I’ll show you how to not only leverage LLM’s ability to generate code but also learn when and how to use it so you can scale your productivity instead of relying on it like a crutch.
