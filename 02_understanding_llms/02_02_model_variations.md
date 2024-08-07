@@ -1,4 +1,4 @@
-# Understanding Models Variations
+# Models Variations
 
 Given LLMs' diverse capabilities, it's crucial to understand how different variations of these models can be tailored to specific tasks. Due to its flexibility and specialization, CodeLlama stands out as a robust choice for developers. However, the first time you search for CodeLlama in LM Studio, you’ll be surprised by how many results come back.
 

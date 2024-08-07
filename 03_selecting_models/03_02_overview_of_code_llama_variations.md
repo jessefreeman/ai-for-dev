@@ -1,4 +1,4 @@
-# Overview of Popular LLMs
+# Overview of Code Llama Variations
 
 In addition to CodeLlama Instruct, there are several other variations of the CodeLlama model, each tailored to specific coding needs. These models differ in their memory usage, resource requirements, and speed, making them suitable for various tasks and environments. Below is a table highlighting these notable variations and their distinct advantages:
 

@@ -1,6 +1,8 @@
 # Overview of Large Language Models (LLMs)
 
-Large Language Models (LLMs) represent a significant advancement in artificial intelligence, transforming how we interact with technology and manage complex tasks. At a high level, LLMs are sophisticated AI systems trained on vast amounts of text data to understand, generate, and manipulate human language. Their ability to comprehend and produce text with a high degree of fluency and accuracy makes them powerful tools for a wide range of applications.
+Large Language Models (LLMs) represent a significant advancement in artificial intelligence, transforming how we interact with technology and manage complex tasks. When I joined Samsung in 2019 to do AI, LLMs like ChatGPT were still science fiction. A few years later, I can't imagine writing or coding without one. 
+
+At a high level, LLMs are sophisticated AI systems trained on vast amounts of text data to understand, generate, and manipulate human language. Their ability to comprehend and produce text with a high degree of fluency and accuracy makes them powerful tools for a wide range of applications.
 
 ## What Are LLMs?
 

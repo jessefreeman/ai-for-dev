@@ -1,4 +1,4 @@
-# Understanding Quantization for Local LLMs
+# Quantization
 
 Quantization is a crucial concept in optimizing large language models (LLMs) for local use. It involves reducing the precision of model parameters to decrease model size and improve inference speed. This process allows for faster processing and lower memory usage, making it possible to run sophisticated models on a wider range of hardware. Here’s a detailed breakdown of different quantization levels and schemes, along with their implications, using CodeLlama as an example.
 

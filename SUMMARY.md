@@ -1,31 +1,34 @@
 # Table of contents
 
-* [Introduction](README.md)
-  * [How To Use This Guide](01\_introduction/01\_01\_how\_to\_use\_this\_guide.md)
-  * [Why Run Large Language Models Locally?](01\_introduction/01\_02\_why\_run\_models\_locally.md)
-* [Understanding LLMs](understanding-llms/README.md)
-  * [Overview of LLMs](02\_understanding\_llms/02\_01\_overview\_of\_llms.md)
-  * [Understanding Models Variations](02\_understanding\_llms/02\_02\_model\_variations.m.md)
-  * [Understanding Model Naming](02\_understanding\_llms/02\_03\_model\_naming\_conventions.md)
-  * [Understanding Quantization for Local LLMs](02\_understanding\_llms/02\_04\_quantization\_for\_llms.md)
-* [Selecting Models](selecting-models/README.md)
-  * [Selecting the Right Model](<03\_selecting\_models/03\_01\_selecting\_the right model.md>)
-  * [Overview of Popular LLMs](03\_selecting\_models/03\_02\_overview\_of\_popular\_llms.md)
-  * [CodeLlama Instruct Variations](03\_selecting\_models/03\_03\_codellama\_instruct\_variations.md)
-* [Installation](installation/README.md)
-  * [Installing LM Studio](04\_installation/04\_01\_installing\_lm\_studio.md)
-  * [Configuring LM Studio on Apple Silicon](04\_installation/04\_02\_configuring\_lm\_studio\_on\_apple\_silicon.md)
-  * [Optimizing LM Studio for Apple Silicon](04\_installation/04\_03\_optimizing\_lm\_studio\_for\_apple\_silicon.md)
-* [Evaluation](evaluation/README.md)
-  * [Testing Each Model](05\_evaluation/05\_01\_testing\_each\_model.md)
-  * [Evaluating Models with a Standardized Test](05\_evaluation/05\_02\_evaluating\_models.md)
-* [Best Practices](best-practices/README.md)
-  * [Best Practices for Running Local LLMs](06\_best\_practices/06\_01\_best\_practices\_for\_running\_local\_llms.md)
-* [Prompts](prompts/README.md)
-  * [Collection of Prompts](07\_prompts/07\_01\_collection\_of\_prompts.md)
-* [Advanced Usage](advanced-usage/README.md)
-  * [Advanced Model Tuning](08\_advanced\_usage/08\_01\_advanced\_model\_tuning.md)
-  * [Integrating LLMs into Workflows](08\_advanced\_usage/08\_02\_integrating\_llms\_into\_workflows.md)
-* [Additional Resources](additional-resources/README.md)
-  * [Tools](09\_additional\_resources/09\_01\_additional\_resources.md)
-  * [Articles](09\_additional\_resources/09\_01\_additional\_resources-1.md)
+* Introduction
+  * [How To Use This Guide](01_introduction/01_01_how_to_use_this_guide.md)
+  * [Why Run Large Language Models Locally?](01_introduction/01_02_why_run_models_locally.md)
+* Understanding LLMs
+  * [Overview of LLMs](02_understanding_llms/02_01_overview_of_llms.md)
+  * [Model Variations](02_understanding_llms/02_02_model_variations.md) 
+  * [Model Naming Conventions](02_understanding_llms/02_03_model_naming_conventions.md)
+  * [Parameter Size](02_understanding_llms/02_04_parameter_size.md) 
+  * [Quantization](02_understanding_llms/02_05_quantization.md) 
+  * [Quantization Schemes](02_understanding_llms/02_06_quantization_schemes.md) 
+* Selecting Models
+  * [Selecting the Right Model](03_selecting_models/03_01_selecting_the right model.md)
+  *  [Overview of Code Llama Variations](03_selecting_models/03_02_overview_of_code_llama_variations.md) 
+  * [CodeLlama Instruct Variations](03_selecting_models/03_03_codellama_instruct_variations.md)
+* Installation
+  
+  * [Installing LM Studio](04_installation/04_01_installing_lm_studio.md)
+  * [Configuring LM Studio on Apple Silicon](04_installation/04_02_configuring_lm_studio_on_apple_silicon.md)
+  * [Optimizing LM Studio for Apple Silicon](04_installation/04_03_optimizing_lm_studio_for_apple_silicon.md)
+* Evaluation
+  * [Testing Each Model](05_evaluation/05_01_testing_each_model.md)
+  * [Evaluating Models with a Standardized Test](05_evaluation/05_02_evaluating_models.md)
+* Best Practices
+  * [Best Practices for Running Local LLMs](06_best_practices/06_01_best_practices_for_running_local_llms.md)
+* Prompts
+  * [Collection of Prompts](07_prompts/07_01_collection_of_prompts.md)
+* Advanced Usage
+  * [Advanced Model Tuning](08_advanced_usage/08_01_advanced_model_tuning.md)
+  * [Integrating LLMs into Workflows](08_advanced_usage/08_02_integrating_llms_into_workflows.md)
+* Additional Resources
+  * [Tools](09_additional_resources/09_01_additional_resources.md)
+  * [Articles](09_additional_resources/09_01_additional_resources-1.md)
