@@ -30,5 +30,5 @@
   * [Advanced Model Tuning](08_advanced_usage/08_01_advanced_model_tuning.md)
   * [Integrating LLMs into Workflows](08_advanced_usage/08_02_integrating_llms_into_workflows.md)
 * Additional Resources
-  * [Tools](09_additional_resources/09_01_additional_resources.md)
-  * [Articles](09_additional_resources/09_01_additional_resources-1.md)
+  * [Tools](09_additional_resources/09_01_tools.md)
+  * [Articles](09_additional_resources/09_02_articles.md)
