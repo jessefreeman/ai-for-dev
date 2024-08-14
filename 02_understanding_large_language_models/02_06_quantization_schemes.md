@@ -44,6 +44,14 @@ Quantization schemes refer to the specific strategies used to apply quantization
    - **Pros**: Higher precision, better for models with varying value ranges across channels.
    - **Cons**: More complex and slower compared to per-tensor quantization.
 
+## Understanding "IQ" Models
+
+In addition to standard quantization schemes, you may encounter models labeled with "IQ" (Intelligent Quantization) prefixes, such as IQ1 or IQ2. These IQ models take the concept of quantization further by applying advanced optimization techniques during or after the quantization process.
+
+- **Enhanced Performance**: IQ models are designed to retain more of the original model's accuracy and performance, despite the reduced precision. They are particularly beneficial when you need to maintain high performance on tasks that require nuanced understanding, without the full computational overhead of a non-quantized model.
+- **Optimized Resource Usage**: While IQ models may have similar memory footprints to their standard quantized counterparts, they are typically more efficient in handling inferencing tasks. This efficiency can lead to faster processing times and better overall system performance, especially on hardware with limited resources.
+- **When to Use IQ Models**: Opt for IQ models if you’re looking to strike the best balance between resource efficiency and model accuracy. They are especially useful in scenarios where precision is critical, such as in detailed coding tasks or complex language understanding.
+
 ## Optimizing Quantization Schemes
 
 To optimize quantization schemes for your LLMs in an environment like LM Studio, consider the following steps:

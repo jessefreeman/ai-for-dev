@@ -7,6 +7,7 @@ This section lists recommended reading and community links.
 ### Model Selection
 
 * [50 Open-Source Options for Running LLMs Locally](https://medium.com/thedeephub/50-open-source-options-for-running-llms-locally-db1ec6f5a54f) by [Vince Lam](https://medium.com/@vince-lam): An extensive list of 50 open-source tools and projects for running LLMs locally, offering various options and their use cases.
+* [Code Llama: Llama 2 Learns to Code](https://huggingface.co/blog/codellama) by [https://huggingface.co/](https://huggingface.co/): An introduction to Code Llama, highlighting its variants—Base, Python, and Instruct—tailored for coding tasks. The article explores how these models, optimized from Meta's Llama 2, enhance code generation by bridging natural language and programming, making them powerful tools for developers.
 
 ### Installation and Configuration
 
