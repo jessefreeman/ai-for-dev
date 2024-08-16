@@ -40,3 +40,4 @@
 * Additional Resources
     * [Tools](./10_additional_resources/10_01_tools.md)
     * [Articles](./10_additional_resources/10_02_articles.md)
+    * [In the News](10_additional_resources/10_03_in_the_news.md)
