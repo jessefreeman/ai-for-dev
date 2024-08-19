@@ -37,7 +37,9 @@
 * Advanced Usage
     * [Advanced Model Tuning](./09_advanced_usage/09_01_advanced_model_tuning.md)
     * [Integrating LLMs into Workflows](./09_advanced_usage/09_02_integrating_llms_into_workflows.md)
+    *  [Custom Built PCs.md](09_advanced_usage/09_03_custom_built_pcs.md) 
 * Additional Resources
     * [Tools](./10_additional_resources/10_01_tools.md)
     * [Articles](./10_additional_resources/10_02_articles.md)
     * [In the News](10_additional_resources/10_03_in_the_news.md)
+    * [Geekbench AI Results](10_additional_resources/10_04_geekbench_ai_results.md)
