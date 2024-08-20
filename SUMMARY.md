@@ -12,15 +12,15 @@
     * [Quantization Schemes](./02_understanding_large_language_models/02_06_quantization_schemes.md)
     * [How Models Are Scaled](./02_understanding_large_language_models/02_07_scaling_models.md)
 * Selecting Models
-    * [Selecting the Right Model](./03_selecting_models/03_01_selecting_the_right_model.md)
+    * [Selecting the Right Model](./03_selecting_models/03_01_selecting_the right model.md)
     * [Pick the Right Model for Your Memory](./03_selecting_models/03_02_pick_the_right_model_for_your_memory.md)
     * [Model Size and Memory](./03_selecting_models/03_03_model_size_and_memory.md)
     * [CPU vs. GPU and Inferencing](./03_selecting_models/03_04_cpu_vs_gpu_inferencing.md)
     * [Offloading to the GPU](./03_selecting_models/03_05_offloading_to_the_gpu.md)
     * [CodeLlama 3.1 Instruct Variations](./03_selecting_models/03_06_picking_code_llama_instruct_variations.md)
 * Models For Coding
-    * [Overview of Code Llama Variations](./04_models_for_coding/04_01_overview_of_code_llama_variations.md)
-    * [Other Notable Open Source Models for Coding](./04_models_for_coding/04_02_other_open_source_coding_models.md)
+    * [Overview of Code Llama Variations](./04_models_for_ coding/04_01_overview_of_code_llama_variations.md)
+    * [Other Notable Open Source Models for Coding](./04_models_for_ coding/04_02_other_open_source_coding_models.md)
 * Installation
     * [Installing LM Studio](./05_installation/05_01_installing_lm_studio.md)
     * [Configuring LM Studio on Apple Silicon](./05_installation/05_02_configuring_lm_studio_on_apple_silicon.md)
@@ -37,9 +37,13 @@
 * Advanced Usage
     * [Advanced Model Tuning](./09_advanced_usage/09_01_advanced_model_tuning.md)
     * [Integrating LLMs into Workflows](./09_advanced_usage/09_02_integrating_llms_into_workflows.md)
-    *  [Custom Built PCs](09_advanced_usage/09_03_custom_built_pcs.md) 
+    * [Custom Built PCs](./09_advanced_usage/09_03_custom_built_pcs.md)
+* Benchmarks
+    * [Personal Computer Results](./10_benchmarks/10_01_geekbench_ai_benchmark.md)
+    * [Ryzen 7 5800X + RTX 4070 Super Performance Overview](./10_benchmarks/10_02_ryzen_7_5800_32.md)
+    * [MacBook Pro M3 Max Performance Overview](./10_benchmarks/10_03_m3_max.md)
+    * [Intel NUC9V7QNX Performance Overview](./10_benchmarks/10_04_nuc9v7qnx.md)
 * Additional Resources
-    * [Tools](./10_additional_resources/10_01_tools.md)
-    * [Articles](./10_additional_resources/10_02_articles.md)
-    * [In the News](10_additional_resources/10_03_in_the_news.md)
-    * [Geekbench AI Results](10_additional_resources/10_04_geekbench_ai_results.md)
+    * [Tools](./11_additional_resources/11_01_tools.md)
+    * [Articles](./11_additional_resources/11_02_articles.md)
+    * [In the News](./11_additional_resources/11_03_in_the_news.md)
