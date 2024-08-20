@@ -37,7 +37,7 @@
 * Advanced Usage
     * [Advanced Model Tuning](./09_advanced_usage/09_01_advanced_model_tuning.md)
     * [Integrating LLMs into Workflows](./09_advanced_usage/09_02_integrating_llms_into_workflows.md)
-    *  [Custom Built PCs.md](09_advanced_usage/09_03_custom_built_pcs.md) 
+    *  [Custom Built PCs](09_advanced_usage/09_03_custom_built_pcs.md) 
 * Additional Resources
     * [Tools](./10_additional_resources/10_01_tools.md)
     * [Articles](./10_additional_resources/10_02_articles.md)
