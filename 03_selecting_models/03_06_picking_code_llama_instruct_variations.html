@@ -1,0 +1,1074 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>CodeLlama 3.1 Instruct Variations · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="03_05_offloading_to_the_gpu.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Introduction
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01_introduction/01_01_how_to_use_this_guide.html">
+            
+                <a href="../01_introduction/01_01_how_to_use_this_guide.html">
+            
+                    
+                    How To Use This Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01_introduction/01_02_why_run_models_locally.html">
+            
+                <a href="../01_introduction/01_02_why_run_models_locally.html">
+            
+                    
+                    Why Run Large Language Models Locally?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Understanding Large Language Models
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02_understanding_large_language_models/02_01_overview_of_llms.html">
+            
+                <a href="../02_understanding_large_language_models/02_01_overview_of_llms.html">
+            
+                    
+                    Overview of Large Language Models (LLMs)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02_understanding_large_language_models/02_02_model_variations.html">
+            
+                <a href="../02_understanding_large_language_models/02_02_model_variations.html">
+            
+                    
+                    Models Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02_understanding_large_language_models/02_03_model_naming_conventions.html">
+            
+                <a href="../02_understanding_large_language_models/02_03_model_naming_conventions.html">
+            
+                    
+                    Model Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02_understanding_large_language_models/02_04_parameter_size.html">
+            
+                <a href="../02_understanding_large_language_models/02_04_parameter_size.html">
+            
+                    
+                    Parameter Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02_understanding_large_language_models/02_05_quantization.html">
+            
+                <a href="../02_understanding_large_language_models/02_05_quantization.html">
+            
+                    
+                    Quantization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../02_understanding_large_language_models/02_06_quantization_schemes.html">
+            
+                <a href="../02_understanding_large_language_models/02_06_quantization_schemes.html">
+            
+                    
+                    Quantization Schemes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../02_understanding_large_language_models/02_07_scaling_models.html">
+            
+                <a href="../02_understanding_large_language_models/02_07_scaling_models.html">
+            
+                    
+                    How Models Are Scaled
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Selecting Models
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03_01_selecting_the right model.html">
+            
+                <a href="03_01_selecting_the right model.html">
+            
+                    
+                    Selecting the Right Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="03_02_pick_the_right_model_for_your_memory.html">
+            
+                <a href="03_02_pick_the_right_model_for_your_memory.html">
+            
+                    
+                    Pick the Right Model for Your Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03_03_model_size_and_memory.html">
+            
+                <a href="03_03_model_size_and_memory.html">
+            
+                    
+                    Model Size and Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="03_04_cpu_vs_gpu_inferencing.html">
+            
+                <a href="03_04_cpu_vs_gpu_inferencing.html">
+            
+                    
+                    CPU vs. GPU and Inferencing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="03_05_offloading_to_the_gpu.html">
+            
+                <a href="03_05_offloading_to_the_gpu.html">
+            
+                    
+                    Offloading to the GPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="03_06_picking_code_llama_instruct_variations.html">
+            
+                <a href="03_06_picking_code_llama_instruct_variations.html">
+            
+                    
+                    CodeLlama 3.1 Instruct Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Models For Coding
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04_models_for_ coding/04_01_overview_of_code_llama_variations.html">
+            
+                <a href="../04_models_for_ coding/04_01_overview_of_code_llama_variations.html">
+            
+                    
+                    Overview of Code Llama Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04_models_for_ coding/04_02_other_open_source_coding_models.html">
+            
+                <a href="../04_models_for_ coding/04_02_other_open_source_coding_models.html">
+            
+                    
+                    Other Notable Open Source Models for Coding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Installation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05_installation/05_01_installing_lm_studio.html">
+            
+                <a href="../05_installation/05_01_installing_lm_studio.html">
+            
+                    
+                    Installing LM Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05_installation/05_02_configuring_lm_studio_on_apple_silicon.html">
+            
+                <a href="../05_installation/05_02_configuring_lm_studio_on_apple_silicon.html">
+            
+                    
+                    Configuring LM Studio on Apple Silicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05_installation/05_03_optimizing_lm_studio_for_apple_silicon.html">
+            
+                <a href="../05_installation/05_03_optimizing_lm_studio_for_apple_silicon.html">
+            
+                    
+                    Optimizing LM Studio for Apple Silicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../05_installation/05_04_picking_models_in_lm_studio.html">
+            
+                <a href="../05_installation/05_04_picking_models_in_lm_studio.html">
+            
+                    
+                    Picking Models in LM Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Evaluation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../06_evaluation/06_01_testing_each_model.html">
+            
+                <a href="../06_evaluation/06_01_testing_each_model.html">
+            
+                    
+                    Testing Each Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../06_evaluation/06_02_evaluating_models.html">
+            
+                <a href="../06_evaluation/06_02_evaluating_models.html">
+            
+                    
+                    Evaluating Models with a Standardized Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Best Practices
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../07_best_practices/07_01_best_practices_for_running_local_llms.html">
+            
+                <a href="../07_best_practices/07_01_best_practices_for_running_local_llms.html">
+            
+                    
+                    Best Practices for Running Local LLMs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Prompts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../08_prompts/08_01_collection_of_prompts.html">
+            
+                <a href="../08_prompts/08_01_collection_of_prompts.html">
+            
+                    
+                    Collection of Prompts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../08_prompts/08_02_example_create_shell_script.html">
+            
+                <a href="../08_prompts/08_02_example_create_shell_script.html">
+            
+                    
+                    Creating a Shell Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Advanced Usage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../09_advanced_usage/09_01_advanced_model_tuning.html">
+            
+                <a href="../09_advanced_usage/09_01_advanced_model_tuning.html">
+            
+                    
+                    Advanced Model Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../09_advanced_usage/09_02_integrating_llms_into_workflows.html">
+            
+                <a href="../09_advanced_usage/09_02_integrating_llms_into_workflows.html">
+            
+                    
+                    Integrating LLMs into Workflows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../09_advanced_usage/09_03_custom_built_pcs.html">
+            
+                <a href="../09_advanced_usage/09_03_custom_built_pcs.html">
+            
+                    
+                    Custom Built PCs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Benchmarks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../10_benchmarks/10_01_geekbench_ai_benchmark.html">
+            
+                <a href="../10_benchmarks/10_01_geekbench_ai_benchmark.html">
+            
+                    
+                    Personal Computer Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../10_benchmarks/10_02_ryzen_7_5800_32.html">
+            
+                <a href="../10_benchmarks/10_02_ryzen_7_5800_32.html">
+            
+                    
+                    Ryzen 7 5800X + RTX 4070 Super Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../10_benchmarks/10_03_m3_max.html">
+            
+                <a href="../10_benchmarks/10_03_m3_max.html">
+            
+                    
+                    MacBook Pro M3 Max Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../10_benchmarks/10_04_nuc9v7qnx.html">
+            
+                <a href="../10_benchmarks/10_04_nuc9v7qnx.html">
+            
+                    
+                    Intel NUC9V7QNX Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Additional Resources
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../11_additional_resources/11_01_tools.html">
+            
+                <a href="../11_additional_resources/11_01_tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../11_additional_resources/11_02_articles.html">
+            
+                <a href="../11_additional_resources/11_02_articles.html">
+            
+                    
+                    Articles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../11_additional_resources/11_03_in_the_news.html">
+            
+                <a href="../11_additional_resources/11_03_in_the_news.html">
+            
+                    
+                    In the News
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CodeLlama 3.1 Instruct Variations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="codellama-31-instruct-variations">CodeLlama 3.1 Instruct Variations</h1>
+<p>To optimize performance based on your system's memory, here are Code Llama Instruct model variations from LM Studio, categorized by performance tier. These categories range from fast and efficient to resource-intensive with maximum precision.</p>
+<p>When using LM Studio, you'll notice that it provides helpful compatibility suggestions for each model, such as "Full GPU Offload Possible," "GPU Offload Maybe Possible," and "Likely Too Large for This Machine." These suggestions are critical in determining whether a model will run efficiently on your hardware.</p>
+<ul>
+<li><strong>Full GPU Offload Possible</strong>: This indicates that the model can entirely offload processing to the GPU, which is ideal for maximizing performance and minimizing memory usage. If you see this message, it's likely that the model will run smoothly on your system.</li>
+<li><strong>GPU Offload Maybe Possible</strong>: This suggests that the model might offload some, but not all, of its processing to the GPU. While this can still improve performance, it may not fully relieve the memory burden on your system, so you should be cautious with larger models.</li>
+<li><strong>Likely Too Large for This Machine</strong>: This warning indicates that the model may exceed your system's capabilities due to insufficient memory or GPU power. Attempting to run such a model might result in crashes or significantly degraded performance, so it's generally best to only use these models if you have a high-end system with ample resources.</li>
+</ul>
+<p>These guidelines are meant to help you get started with choosing the right models, but finding the optimal configuration for your specific needs and hardware will involve some trial and error. Start with models that fall comfortably within your system's capabilities, and gradually test more demanding models as you gain confidence in your system's performance. Here are some of the ones I've been testing with.</p>
+<h4 id="fast-and-efficient-8-gb-memory">Fast and Efficient (8 GB Memory)</h4>
+<p>For developers with 8 GB of memory, the <code>TheBloke/CodeLlama-7B-Instruct-GGUF-Q5_K_M</code> model provides a good balance between speed and precision, offering the highest practical performance within this memory range.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Memory Usage</td>
+<td>~5.73 GB</td>
+</tr>
+<tr>
+<td>Resources Required</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Fast</td>
+</tr>
+<tr>
+<td>Precision</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p>This model is well-suited for tasks requiring quick responses and moderate precision, making it ideal for rapid iterations and less resource-intensive coding tasks. The Q5_K_M quantization strikes a good balance between memory usage and computational efficiency. However, suppose you want to push the boundaries with higher precision. In that case, you might try the phind-codellama-7B-v1.Q8_0.gguf model, which offers maximum precision with a memory usage that’s likely higher than most 8 GB systems can comfortably handle, so it may be worth trying on systems with 16 GB of memory.</p>
+<hr></hr>
+<h4 id="balanced-performance-16-gb-memory">Balanced Performance (16 GB Memory)</h4>
+<p>For systems with 16 GB of memory, the <code>TheBloke/CodeLlama-13B-Instruct-GGUF-Q6_K</code> model offers balanced performance, combining speed with high precision.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Memory Usage</td>
+<td>~14-16 GB</td>
+</tr>
+<tr>
+<td>Resources Required</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Precision</td>
+<td>Very High</td>
+</tr>
+</tbody>
+</table>
+<p>This model is ideal for complex coding tasks that demand both performance and accuracy. The Q6_K quantization ensures efficient use of memory while delivering high-quality outputs, making it a versatile choice for a wide range of programming challenges.  If your system can handle more, you could experiment with models like the <code>phind-codellama-13B-v1.Q8_0.gguf</code>, pushing precision even further, though at the cost of increased memory usage and potentially reduced speed.</p>
+<hr></hr>
+<h4 id="high-precision-32-gb-memory">High Precision (32 GB Memory)</h4>
+<p>For developers using systems with 32 GB of memory, the <code>phind-codellama-34B-v1.Q5_K_M.gguf</code> model is a strong choice. It offers high precision without exceeding the system's memoryding capacity, provi a good balance between precision and resource usage.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Memory Usage</td>
+<td>~23.84 GB</td>
+</tr>
+<tr>
+<td>Resources Required</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Precision</td>
+<td>Very High</td>
+</tr>
+</tbody>
+</table>
+<p>This model is designed for demanding coding tasks that require detailed and accurate outputs, such as advanced problem-solving or algorithm development. The Q5_K_M quantization ensures that your system's memory is used effectively, delivering high precision without compromising performance.</p>
+<p>However, if your system can handle even more demanding models, consider the <code>phind-codellama-34B-v1.Q8_0.gguf</code> model, which offers maximum precision with a memory usage of approximately 35.86 GB. This model is ideal for tasks requiring the highest detail and accuracy level. Remember that this model might be on the edge of what a 32 GB system can handle, especially without full GPU offload capabilities. Therefore, while pushing your system's limits with these higher-end versions is possible, it's essential to monitor performance and stability closely.</p>
+<h4 id="maximum-performance-64-gb-memory-or-more">Maximum Performance (64 GB Memory or More)</h4>
+<p>For systems with 64 GB of memory or more, the <code>TheBloke/codellama-70B-Instruct.Q2_K.gguf</code> model represents a significant step up in performance. This model uses around 28-32 GB of memory, which places it at the upper limit of what my 34 GB system can handle, especially since LM Studio indicates that "GPU offload may be possible." While your system might manage this model, monitoring performance closely is essential as it could be on the edge of your system’s capabilities.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Memory Usage</td>
+<td>~28-32 GB</td>
+</tr>
+<tr>
+<td>Resources Required</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Precision</td>
+<td>Very High</td>
+</tr>
+</tbody>
+</table>
+<p>This model is well-suited for complex tasks that require high precision, such as advanced algorithm development or detailed code analysis. However, due to your system's memory constraints, this model may push your resources to their limits, and performance might vary depending on the workload and GPU offload effectiveness.</p>
+<p>If you have more than 64 GB of RAM, there are larger models you can experiment with for even better results. For example, models like <code>phind-codellama-70B-v1.Q4_K_S.gguf</code> or <code>phind-codellama-70B-v1.Q6_K_S.gguf</code> provide enhanced precision and detail, with memory usage that can range from 35 GB to over 40 GB. These models are designed for the most demanding tasks and offer the highest level of precision available in the Code Llama series.</p>
+<ul>
+<li><p><strong><code>phind-codellama-70B-v1.Q4_K_S.gguf</code></strong>: With memory usage around 35-40 GB, this model provides a strong balance between resource utilization and precision. It's ideal for systems with 64 GB of memory that need to handle highly detailed coding tasks.</p>
+</li>
+<li><p><strong><code>phind-codellama-70B-v1.Q6_K_S.gguf</code></strong>: This model pushes the limits further, with memory usage exceeding 40 GB, delivering maximum precision and detail. It’s best suited for the most advanced systems with ample resources to spare.</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03_05_offloading_to_the_gpu.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Offloading to the GPU">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CodeLlama 3.1 Instruct Variations","level":"1.4.6","depth":2,"next":{"title":"Models For Coding","level":"1.5","depth":1,"ref":"","articles":[{"title":"Overview of Code Llama Variations","level":"1.5.1","depth":2,"path":"04_models_for_ coding/04_01_overview_of_code_llama_variations.md","ref":"./04_models_for_ coding/04_01_overview_of_code_llama_variations.md","articles":[]},{"title":"Other Notable Open Source Models for Coding","level":"1.5.2","depth":2,"path":"04_models_for_ coding/04_02_other_open_source_coding_models.md","ref":"./04_models_for_ coding/04_02_other_open_source_coding_models.md","articles":[]}]},"previous":{"title":"Offloading to the GPU","level":"1.4.5","depth":2,"path":"03_selecting_models/03_05_offloading_to_the_gpu.md","ref":"./03_selecting_models/03_05_offloading_to_the_gpu.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03_selecting_models/03_06_picking_code_llama_instruct_variations.md","mtime":"2024-08-27T18:31:41.765Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-08-27T18:50:45.127Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

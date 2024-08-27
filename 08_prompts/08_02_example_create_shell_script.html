@@ -1,0 +1,1228 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Creating a Shell Script · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="08_01_collection_of_prompts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Introduction
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01_introduction/01_01_how_to_use_this_guide.html">
+            
+                <a href="../01_introduction/01_01_how_to_use_this_guide.html">
+            
+                    
+                    How To Use This Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01_introduction/01_02_why_run_models_locally.html">
+            
+                <a href="../01_introduction/01_02_why_run_models_locally.html">
+            
+                    
+                    Why Run Large Language Models Locally?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Understanding Large Language Models
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02_understanding_large_language_models/02_01_overview_of_llms.html">
+            
+                <a href="../02_understanding_large_language_models/02_01_overview_of_llms.html">
+            
+                    
+                    Overview of Large Language Models (LLMs)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02_understanding_large_language_models/02_02_model_variations.html">
+            
+                <a href="../02_understanding_large_language_models/02_02_model_variations.html">
+            
+                    
+                    Models Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02_understanding_large_language_models/02_03_model_naming_conventions.html">
+            
+                <a href="../02_understanding_large_language_models/02_03_model_naming_conventions.html">
+            
+                    
+                    Model Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02_understanding_large_language_models/02_04_parameter_size.html">
+            
+                <a href="../02_understanding_large_language_models/02_04_parameter_size.html">
+            
+                    
+                    Parameter Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02_understanding_large_language_models/02_05_quantization.html">
+            
+                <a href="../02_understanding_large_language_models/02_05_quantization.html">
+            
+                    
+                    Quantization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../02_understanding_large_language_models/02_06_quantization_schemes.html">
+            
+                <a href="../02_understanding_large_language_models/02_06_quantization_schemes.html">
+            
+                    
+                    Quantization Schemes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../02_understanding_large_language_models/02_07_scaling_models.html">
+            
+                <a href="../02_understanding_large_language_models/02_07_scaling_models.html">
+            
+                    
+                    How Models Are Scaled
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Selecting Models
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../03_selecting_models/03_01_selecting_the right model.html">
+            
+                <a href="../03_selecting_models/03_01_selecting_the right model.html">
+            
+                    
+                    Selecting the Right Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../03_selecting_models/03_02_pick_the_right_model_for_your_memory.html">
+            
+                <a href="../03_selecting_models/03_02_pick_the_right_model_for_your_memory.html">
+            
+                    
+                    Pick the Right Model for Your Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../03_selecting_models/03_03_model_size_and_memory.html">
+            
+                <a href="../03_selecting_models/03_03_model_size_and_memory.html">
+            
+                    
+                    Model Size and Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../03_selecting_models/03_04_cpu_vs_gpu_inferencing.html">
+            
+                <a href="../03_selecting_models/03_04_cpu_vs_gpu_inferencing.html">
+            
+                    
+                    CPU vs. GPU and Inferencing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../03_selecting_models/03_05_offloading_to_the_gpu.html">
+            
+                <a href="../03_selecting_models/03_05_offloading_to_the_gpu.html">
+            
+                    
+                    Offloading to the GPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../03_selecting_models/03_06_picking_code_llama_instruct_variations.html">
+            
+                <a href="../03_selecting_models/03_06_picking_code_llama_instruct_variations.html">
+            
+                    
+                    CodeLlama 3.1 Instruct Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Models For Coding
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04_models_for_ coding/04_01_overview_of_code_llama_variations.html">
+            
+                <a href="../04_models_for_ coding/04_01_overview_of_code_llama_variations.html">
+            
+                    
+                    Overview of Code Llama Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04_models_for_ coding/04_02_other_open_source_coding_models.html">
+            
+                <a href="../04_models_for_ coding/04_02_other_open_source_coding_models.html">
+            
+                    
+                    Other Notable Open Source Models for Coding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Installation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05_installation/05_01_installing_lm_studio.html">
+            
+                <a href="../05_installation/05_01_installing_lm_studio.html">
+            
+                    
+                    Installing LM Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05_installation/05_02_configuring_lm_studio_on_apple_silicon.html">
+            
+                <a href="../05_installation/05_02_configuring_lm_studio_on_apple_silicon.html">
+            
+                    
+                    Configuring LM Studio on Apple Silicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05_installation/05_03_optimizing_lm_studio_for_apple_silicon.html">
+            
+                <a href="../05_installation/05_03_optimizing_lm_studio_for_apple_silicon.html">
+            
+                    
+                    Optimizing LM Studio for Apple Silicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../05_installation/05_04_picking_models_in_lm_studio.html">
+            
+                <a href="../05_installation/05_04_picking_models_in_lm_studio.html">
+            
+                    
+                    Picking Models in LM Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Evaluation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../06_evaluation/06_01_testing_each_model.html">
+            
+                <a href="../06_evaluation/06_01_testing_each_model.html">
+            
+                    
+                    Testing Each Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../06_evaluation/06_02_evaluating_models.html">
+            
+                <a href="../06_evaluation/06_02_evaluating_models.html">
+            
+                    
+                    Evaluating Models with a Standardized Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Best Practices
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../07_best_practices/07_01_best_practices_for_running_local_llms.html">
+            
+                <a href="../07_best_practices/07_01_best_practices_for_running_local_llms.html">
+            
+                    
+                    Best Practices for Running Local LLMs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Prompts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="08_01_collection_of_prompts.html">
+            
+                <a href="08_01_collection_of_prompts.html">
+            
+                    
+                    Collection of Prompts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.2" data-path="08_02_example_create_shell_script.html">
+            
+                <a href="08_02_example_create_shell_script.html">
+            
+                    
+                    Creating a Shell Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Advanced Usage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../09_advanced_usage/09_01_advanced_model_tuning.html">
+            
+                <a href="../09_advanced_usage/09_01_advanced_model_tuning.html">
+            
+                    
+                    Advanced Model Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../09_advanced_usage/09_02_integrating_llms_into_workflows.html">
+            
+                <a href="../09_advanced_usage/09_02_integrating_llms_into_workflows.html">
+            
+                    
+                    Integrating LLMs into Workflows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../09_advanced_usage/09_03_custom_built_pcs.html">
+            
+                <a href="../09_advanced_usage/09_03_custom_built_pcs.html">
+            
+                    
+                    Custom Built PCs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Benchmarks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../10_benchmarks/10_01_geekbench_ai_benchmark.html">
+            
+                <a href="../10_benchmarks/10_01_geekbench_ai_benchmark.html">
+            
+                    
+                    Personal Computer Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../10_benchmarks/10_02_ryzen_7_5800_32.html">
+            
+                <a href="../10_benchmarks/10_02_ryzen_7_5800_32.html">
+            
+                    
+                    Ryzen 7 5800X + RTX 4070 Super Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../10_benchmarks/10_03_m3_max.html">
+            
+                <a href="../10_benchmarks/10_03_m3_max.html">
+            
+                    
+                    MacBook Pro M3 Max Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../10_benchmarks/10_04_nuc9v7qnx.html">
+            
+                <a href="../10_benchmarks/10_04_nuc9v7qnx.html">
+            
+                    
+                    Intel NUC9V7QNX Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Additional Resources
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../11_additional_resources/11_01_tools.html">
+            
+                <a href="../11_additional_resources/11_01_tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../11_additional_resources/11_02_articles.html">
+            
+                <a href="../11_additional_resources/11_02_articles.html">
+            
+                    
+                    Articles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../11_additional_resources/11_03_in_the_news.html">
+            
+                <a href="../11_additional_resources/11_03_in_the_news.html">
+            
+                    
+                    In the News
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Creating a Shell Script</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="creating-a-shell-script">Creating a Shell Script</h1>
+<p>One of the things LLMs excel at is creating simple, self-contained scripts to help you automate repetitive tasks. For example, I needed a way to rebuild this guide's TOC every time I moved sections or chapters around. I started with ChatGPT but wasn't happy with the results, so I switched to Github Copilot since I was already editing and running the script through Visual Studio code. I use these kinds of shell scripts all the time and they are a pain to build from scratch. I'll walk you through my process so you can see how I break the problems up into smaller tasks the LLM can handle better. The end goal was a script that would do the following:</p>
+<ul>
+<li>Scan all the markdown files in the project.</li>
+<li>Pull out all the chapter names from the folder via Regex.</li>
+<li>Add each of the folder's markdown files to the TOC with links.</li>
+<li>Use each markdown file's title for the TOC.</li>
+<li>Clean up the chapter names by converting from snake case to title case.</li>
+<li>Ignore folders and files that are not part of the guide.</li>
+</ul>
+<p>Now let's look at my prompts and how I responded to the LLM to get it to create the final script I used.</p>
+<h2 id="listing-directory-contents">Listing Directory Contents</h2>
+<p>I started by asking for a basic script to list directory contents recursively:</p>
+<blockquote>
+<p>"Can you create a script to list the directory contents recursively?"</p>
+</blockquote>
+<p>In response, the LLM provided a basic script that traversed directories and listed markdown files:</p>
+<pre><code class="lang-shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">!/bin/bash</span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">Function to recursively list directory contents</span>
+list_structure() {
+  local dir_path="$1"
+  local indent="$2"
+
+  for entry in "$dir_path"/*; do
+    if [ -d "$entry" ]; then
+      if [[ "$(basename "$entry")" =~ ^[0-9]{2}_ ]]; then
+        echo "${indent}* $(basename "$entry")"
+        list_structure "$entry" "  $indent"
+      fi
+    elif [ -f "$entry" ] &amp;&amp; [[ "$entry" == *.md ]]; then
+      if [ "$dir_path" != "." ]; then
+        echo "${indent}  * $(basename "$entry")"
+      fi
+    fi
+  done
+}
+
+list_structure "." ""
+</code></pre>
+<h2 id="extracting-titles-from-markdown-files"><strong>Extracting Titles from Markdown Files</strong></h2>
+<p>Next, I wanted to extract H1 titles from the markdown files:</p>
+<blockquote>
+<p>"Can you extract the H1 title from each markdown file?"</p>
+</blockquote>
+<p>The LLM added a function to extract the H1 title:</p>
+<pre><code class="lang-shell">extract_h1_title() {
+  local file_path="$1"
+  local h1_title=$(grep -m 1 '^# ' "$file_path" | sed 's/^# //')
+  echo "$h1_title"
+}
+</code></pre>
+<p>The <code>list_structure</code> function was then updated to use these titles:</p>
+<pre><code class="lang-shell">if [ "$dir_path" != "." ]; then
+  local h1_title=$(extract_h1_title "$entry")
+  local file_name=$(basename "$entry")
+  echo "${indent}  * [$h1_title]($dir_path/$file_name)"
+fi
+</code></pre>
+<h2 id="clean-up-chapter-names"><strong>Clean Up Chapter Names</strong></h2>
+<p>I wanted to clean up the chapter names by removing numbers and converting them to title case:</p>
+<blockquote>
+<p>"Can you clean up the title names? Remove the number and then title case the chapter name."</p>
+</blockquote>
+<p>The LLM provided functions to handle this:</p>
+<pre><code class="lang-shell">to_title_case() {
+  local input="$1"
+  echo "$input" | awk '{for(i=1;i&lt;=NF;i++){$i=toupper(substr($i,1,1)) tolower(substr($i,2))}}1'
+}
+
+clean_chapter_name() {
+  local chapter_name="$1"
+  chapter_name=$(echo "$chapter_name" | sed 's/^[0-9]\{2\}_//')
+  chapter_name=$(echo "$chapter_name" | sed 's/_/ /g')
+  chapter_name=$(to_title_case "$chapter_name")
+  echo "$chapter_name"
+}
+</code></pre>
+<p>These functions were integrated into the <code>list_structure</code> function:</p>
+<pre><code class="lang-shell">if [[ "$(basename "$entry")" =~ ^[0-9]{2}_ ]]; then
+  local chapter_name=$(clean_chapter_name "$(basename "$entry")")
+  echo "${indent}* $chapter_name"
+  list_structure "$entry" "  $indent"
+fi
+</code></pre>
+<h2 id="converting-snake-case-to-title-case"><strong>Converting Snake Case to Title Case</strong></h2>
+<p>Next, I saw that it wasn't converting the chapter titles correctly. It was still including the underscores and not capitalizing the other words so I asked to convert the snake case of the chapter folder titles to title case:</p>
+<blockquote>
+<p>"You need to convert the snake case of the chapter folder titles to title case so remove the _ and capitalize things correctly."</p>
+</blockquote>
+<p>The LLM updated the <code>clean_chapter_name</code> function handled this:</p>
+<pre><code class="lang-shell">clean_chapter_name() {
+  local chapter_name="$1"
+  chapter_name=$(echo "$chapter_name" | sed 's/^[0-9]\{2\}_//')
+  chapter_name=$(echo "$chapter_name" | sed 's/_/ /g')
+  chapter_name=$(to_title_case "$chapter_name")
+  echo "$chapter_name"
+}
+</code></pre>
+<h2 id="using-regex-to-clean-up-names"><strong>Using Regex to Clean Up Names</strong></h2>
+<p>I realized there was a cleaner way to do this, so I asked it to optimize the regex to clean up the names more effectively:</p>
+<blockquote>
+<p>"Can you use regex to clean up the names more effectively?"</p>
+</blockquote>
+<p>The LLM updated the <code>clean_chapter_name</code> function to use regex for more efficient cleaning:</p>
+<pre><code class="lang-shell">clean_chapter_name() {
+  local chapter_name="$1"
+  chapter_name=$(echo "$chapter_name" | sed -E 's/^[0-9]{2}_//; s/_/ /g')
+  chapter_name=$(to_title_case "$chapter_name")
+  echo "$chapter_name"
+}
+</code></pre>
+<h2 id="removing-hard-coded-directory-exclusions"><strong>Removing Hard-Coded Directory Exclusions</strong></h2>
+<p>After seeing I could clean this up more, I asked to remove the hard-coded directories I was asking it to ignore, like .github, images, and any loose markdown files in the root of the directory like the README and SUMMARY files since I was already using regex for the chapter names:</p>
+<blockquote>
+<p>"Remove the hard-coded directories since we're using regex for the chapter names now."</p>
+</blockquote>
+<p>The LLM updated the <code>list_structure</code> function to dynamically handle directories:</p>
+<pre><code class="lang-shell">list_structure() {
+  local dir_path="$1"
+  local indent="$2"
+
+  for entry in "$dir_path"/*; do
+    if [ -d "$entry" ]; then
+      local chapter_name=$(clean_chapter_name "$(basename "$entry")")
+      echo "${indent}* $chapter_name"
+      list_structure "$entry" "  $indent"
+    elif [ -f "$entry" ] &amp;&amp; [[ "$entry" == *.md ]]; then
+      local h1_title=$(extract_h1_title "$entry")
+      local file_name=$(basename "$entry")
+      echo "${indent}  * [$h1_title]($dir_path/$file_name)"
+    fi
+  done
+}
+</code></pre>
+<h2 id="writing-back-to-summary-markdown-file">Writing Back To Summary Markdown File</h2>
+<p>Finally, after testing this a few times and double checking the terminal output was correct I asked to write the TOC back to the summary.md file:</p>
+<blockquote>
+<p>"Can you add writting these changes back to the SUMMARY.md file in the root of the directory."</p>
+</blockquote>
+<p>The LLM updated the script with the following:</p>
+<pre><code class="lang-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">Generate the TOC and write it to SUMMARY.md</span>
+{
+  echo "# Table of contents"
+  echo ""
+  list_structure "." ""
+} &gt; SUMMARY.md
+</code></pre>
+<h2 id="the-final-result">The Final Result</h2>
+<p>This approach can be adapted for various documentation projects, ensuring that the TOC remains up-to-date and correctly formatted as content evolves. Once everything worked, I asked for one final revision to the code:</p>
+<blockquote>
+<p>"Can you heavily comment this to explain what is going on in each block of code." </p>
+</blockquote>
+<p>The final script was then commented and looked like this:</p>
+<pre><code class="lang-shell"><span class="hljs-meta prompt_">#</span><span class="language-bash">!/bin/bash</span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">Function to extract the H1 title from a markdown file</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">Arguments:</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">  <span class="hljs-variable">$1</span> - The path to the markdown file</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">Returns:</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">  The first H1 title found <span class="hljs-keyword">in</span> the file</span>
+extract_h1_title() {
+  local file_path="$1"
+<span class="hljs-meta prompt_">  # </span><span class="language-bash">Use grep to find the first line that starts with <span class="hljs-string">'# '</span> and remove the <span class="hljs-string">'# '</span> prefix</span>
+  local h1_title=$(grep -m 1 '^# ' "$file_path" | sed 's/^# //')
+  echo "$h1_title"
+}
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">Function to convert a string to title <span class="hljs-keyword">case</span></span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">Arguments:</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">  <span class="hljs-variable">$1</span> - The input string</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">Returns:</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">  The input string converted to title <span class="hljs-keyword">case</span></span>
+to_title_case() {
+  local input="$1"
+<span class="hljs-meta prompt_">  # </span><span class="language-bash">Use awk to capitalize the first letter of each word and make the rest lowercase</span>
+  echo "$input" | awk '{for(i=1;i&lt;=NF;i++){$i=toupper(substr($i,1,1)) tolower(substr($i,2))}}1'
+}
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">Function to clean up chapter names</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">Arguments:</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">  <span class="hljs-variable">$1</span> - The chapter name string</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">Returns:</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">  The cleaned-up chapter name</span>
+clean_chapter_name() {
+  local chapter_name="$1"
+<span class="hljs-meta prompt_">  # </span><span class="language-bash">Remove the leading number and underscore (e.g., <span class="hljs-string">'01_Chapter'</span> becomes <span class="hljs-string">'Chapter'</span>)</span>
+  chapter_name=$(echo "$chapter_name" | sed 's/^[0-9]\{2\}_//')
+<span class="hljs-meta prompt_">  # </span><span class="language-bash">Replace underscores with spaces (e.g., <span class="hljs-string">'Chapter_Name'</span> becomes <span class="hljs-string">'Chapter Name'</span>)</span>
+  chapter_name=$(echo "$chapter_name" | sed 's/_/ /g')
+<span class="hljs-meta prompt_">  # </span><span class="language-bash">Convert the chapter name to title <span class="hljs-keyword">case</span></span>
+  chapter_name=$(to_title_case "$chapter_name")
+  echo "$chapter_name"
+}
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">Function to recursively list directory contents and <span class="hljs-built_in">print</span> the Table of Contents (TOC)</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">Arguments:</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">  <span class="hljs-variable">$1</span> - The path to the directory to list</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">  <span class="hljs-variable">$2</span> - The current indentation level <span class="hljs-keyword">for</span> the TOC</span>
+list_structure() {
+  local dir_path="$1"
+  local indent="$2"
+<span class="hljs-meta prompt_">
+  # </span><span class="language-bash">Iterate over all entries <span class="hljs-keyword">in</span> the current directory</span>
+  for entry in "$dir_path"/*; do
+    if [ -d "$entry" ]; then
+      # Only include directories that match the '00_' pattern
+      if [[ "$(basename "$entry")" =~ ^[0-9]{2}_ ]]; then
+        # Clean up the chapter name
+        local chapter_name=$(clean_chapter_name "$(basename "$entry")")
+        # Print the chapter name with the current indentation
+        echo "${indent}* $chapter_name"
+        # Recursively list the contents of the directory with increased indentation
+        list_structure "$entry" "  $indent"
+      fi
+    elif [ -f "$entry" ] &amp;&amp; [[ "$entry" == *.md ]]; then
+      # Ignore markdown files in the root directory
+      if [ "$dir_path" != "." ]; then
+        # Extract the H1 title from the markdown file
+        local h1_title=$(extract_h1_title "$entry")
+        local file_name=$(basename "$entry")
+        # Print the H1 title and file path with the current indentation
+        echo "${indent}  * [$h1_title]($dir_path/$file_name)"
+      fi
+    fi
+  done
+}
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">Generate the Table of Contents and write it to SUMMARY.md</span>
+{
+<span class="hljs-meta prompt_">  # </span><span class="language-bash">Print the header <span class="hljs-keyword">for</span> the TOC</span>
+  echo "# Table of contents"
+  echo ""
+<span class="hljs-meta prompt_">  # </span><span class="language-bash">List the structure of the current directory and its subdirectories</span>
+  list_structure "." ""
+} &gt; SUMMARY.md
+</code></pre>
+<p>This is an example of how I would use an LLM to automate something I could normally write in a few hours in a few minutes. The most important part is always to have the LLM comment on the code. This way, you can understand what is going on under the hood, and to help you if you need to go in and modify it yourself manually. </p>
+<p>You can even go one step further and have it integrate this into your CI system:</p>
+<blockquote>
+<p>Now, create a GitHub action that will call this shell script when I check my code, and make sure the SUMMARY is correct.md file is always up to date in case I forget to update it manually.</p>
+</blockquote>
+<p>The LLM instructed me to create a file named <code>.github/workflows/update_summary.yml</code> in your repository with the following content:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">Update</span> <span class="hljs-string">SUMMARY.md</span>
+
+<span class="hljs-attr">on:</span>
+  <span class="hljs-attr">push:</span>
+    <span class="hljs-attr">branches:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">main</span>  <span class="hljs-comment"># Change this to your default branch if it's not 'main'</span>
+
+<span class="hljs-attr">jobs:</span>
+  <span class="hljs-attr">update-summary:</span>
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
+
+    <span class="hljs-attr">steps:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span> <span class="hljs-string">repository</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v2</span>
+
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Set</span> <span class="hljs-string">up</span> <span class="hljs-string">Git</span>
+      <span class="hljs-attr">run:</span> <span class="hljs-string">|
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Run</span> <span class="hljs-string">generate_summary.sh</span>
+      <span class="hljs-attr">run:</span> <span class="hljs-string">|
+        chmod +x generate_summary.sh
+        ./generate_summary.sh
+</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Commit</span> <span class="hljs-string">and</span> <span class="hljs-string">push</span> <span class="hljs-string">changes</span>
+      <span class="hljs-attr">run:</span> <span class="hljs-string">|
+        git add SUMMARY.md
+        git commit -m "Update SUMMARY.md"
+        git push
+</span>      <span class="hljs-attr">env:</span>
+
+
+ <span class="hljs-string">G</span>
+
+<span class="hljs-attr">ITHUB_TOKEN:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.GITHUB_TOKEN</span> <span class="hljs-string">}}</span>
+</code></pre>
+<p>The response also included an explanation of what this does and how it works:</p>
+<ol>
+<li><strong>Trigger on Push:</strong> The workflow is triggered on every push to the <code>main</code> branch. You can change this to match your default branch.</li>
+<li><strong>Checkout Repository:</strong> Uses the <code>actions/checkout</code> action to check out the repository.</li>
+<li><strong>Set Up Git:</strong> Configures Git with a username and email for the commit.</li>
+<li><strong>Run Shell Script:</strong> Makes the <a href="command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Fjessefreeman%2FProjects%2FGitBooks%2Fai-for-dev%2Fgenerate_summary.sh%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D" title="/Users/jessefreeman/Projects/GitBooks/ai-for-dev/generate_summary.sh" target="_blank"><code>generate_summary.sh</code></a> script executable and runs it.</li>
+<li><strong>Commit and Push Changes:</strong> Adds the updated <a href="command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Fjessefreeman%2FProjects%2FGitBooks%2Fai-for-dev%2FSUMMARY.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D" title="/Users/jessefreeman/Projects/GitBooks/ai-for-dev/SUMMARY.md" target="_blank"><code>SUMMARY.md</code></a> file, commits the changes, and pushes them back to the repository. The <code>GITHUB_TOKEN</code> is used to authenticate the push.</li>
+</ol>
+<p>At this point, I now have a fully automated workflow that ensures every time I push code to my repository, the <a href="command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Fjessefreeman%2FProjects%2FGitBooks%2Fai-for-dev%2Fgenerate_summary.sh%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D" title="/Users/jessefreeman/Projects/GitBooks/ai-for-dev/generate_summary.sh" target="_blank"><code>generate_summary.sh</code></a> script is executed, and any changes to the <code>SUMMARY.md</code> file are committed and pushed automatically.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08_01_collection_of_prompts.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Collection of Prompts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Creating a Shell Script","level":"1.9.2","depth":2,"next":{"title":"Advanced Usage","level":"1.10","depth":1,"ref":"","articles":[{"title":"Advanced Model Tuning","level":"1.10.1","depth":2,"path":"09_advanced_usage/09_01_advanced_model_tuning.md","ref":"./09_advanced_usage/09_01_advanced_model_tuning.md","articles":[]},{"title":"Integrating LLMs into Workflows","level":"1.10.2","depth":2,"path":"09_advanced_usage/09_02_integrating_llms_into_workflows.md","ref":"./09_advanced_usage/09_02_integrating_llms_into_workflows.md","articles":[]},{"title":"Custom Built PCs","level":"1.10.3","depth":2,"path":"09_advanced_usage/09_03_custom_built_pcs.md","ref":"./09_advanced_usage/09_03_custom_built_pcs.md","articles":[]}]},"previous":{"title":"Collection of Prompts","level":"1.9.1","depth":2,"path":"08_prompts/08_01_collection_of_prompts.md","ref":"./08_prompts/08_01_collection_of_prompts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08_prompts/08_02_example_create_shell_script.md","mtime":"2024-08-27T18:31:41.772Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-08-27T18:50:45.127Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

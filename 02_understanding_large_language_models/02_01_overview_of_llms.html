@@ -1,0 +1,977 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Overview of Large Language Models (LLMs) · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02_02_model_variations.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Introduction
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01_introduction/01_01_how_to_use_this_guide.html">
+            
+                <a href="../01_introduction/01_01_how_to_use_this_guide.html">
+            
+                    
+                    How To Use This Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01_introduction/01_02_why_run_models_locally.html">
+            
+                <a href="../01_introduction/01_02_why_run_models_locally.html">
+            
+                    
+                    Why Run Large Language Models Locally?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Understanding Large Language Models
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="02_01_overview_of_llms.html">
+            
+                <a href="02_01_overview_of_llms.html">
+            
+                    
+                    Overview of Large Language Models (LLMs)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="02_02_model_variations.html">
+            
+                <a href="02_02_model_variations.html">
+            
+                    
+                    Models Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="02_03_model_naming_conventions.html">
+            
+                <a href="02_03_model_naming_conventions.html">
+            
+                    
+                    Model Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="02_04_parameter_size.html">
+            
+                <a href="02_04_parameter_size.html">
+            
+                    
+                    Parameter Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="02_05_quantization.html">
+            
+                <a href="02_05_quantization.html">
+            
+                    
+                    Quantization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="02_06_quantization_schemes.html">
+            
+                <a href="02_06_quantization_schemes.html">
+            
+                    
+                    Quantization Schemes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="02_07_scaling_models.html">
+            
+                <a href="02_07_scaling_models.html">
+            
+                    
+                    How Models Are Scaled
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Selecting Models
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../03_selecting_models/03_01_selecting_the right model.html">
+            
+                <a href="../03_selecting_models/03_01_selecting_the right model.html">
+            
+                    
+                    Selecting the Right Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../03_selecting_models/03_02_pick_the_right_model_for_your_memory.html">
+            
+                <a href="../03_selecting_models/03_02_pick_the_right_model_for_your_memory.html">
+            
+                    
+                    Pick the Right Model for Your Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../03_selecting_models/03_03_model_size_and_memory.html">
+            
+                <a href="../03_selecting_models/03_03_model_size_and_memory.html">
+            
+                    
+                    Model Size and Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../03_selecting_models/03_04_cpu_vs_gpu_inferencing.html">
+            
+                <a href="../03_selecting_models/03_04_cpu_vs_gpu_inferencing.html">
+            
+                    
+                    CPU vs. GPU and Inferencing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../03_selecting_models/03_05_offloading_to_the_gpu.html">
+            
+                <a href="../03_selecting_models/03_05_offloading_to_the_gpu.html">
+            
+                    
+                    Offloading to the GPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../03_selecting_models/03_06_picking_code_llama_instruct_variations.html">
+            
+                <a href="../03_selecting_models/03_06_picking_code_llama_instruct_variations.html">
+            
+                    
+                    CodeLlama 3.1 Instruct Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Models For Coding
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04_models_for_ coding/04_01_overview_of_code_llama_variations.html">
+            
+                <a href="../04_models_for_ coding/04_01_overview_of_code_llama_variations.html">
+            
+                    
+                    Overview of Code Llama Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04_models_for_ coding/04_02_other_open_source_coding_models.html">
+            
+                <a href="../04_models_for_ coding/04_02_other_open_source_coding_models.html">
+            
+                    
+                    Other Notable Open Source Models for Coding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Installation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05_installation/05_01_installing_lm_studio.html">
+            
+                <a href="../05_installation/05_01_installing_lm_studio.html">
+            
+                    
+                    Installing LM Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05_installation/05_02_configuring_lm_studio_on_apple_silicon.html">
+            
+                <a href="../05_installation/05_02_configuring_lm_studio_on_apple_silicon.html">
+            
+                    
+                    Configuring LM Studio on Apple Silicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05_installation/05_03_optimizing_lm_studio_for_apple_silicon.html">
+            
+                <a href="../05_installation/05_03_optimizing_lm_studio_for_apple_silicon.html">
+            
+                    
+                    Optimizing LM Studio for Apple Silicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../05_installation/05_04_picking_models_in_lm_studio.html">
+            
+                <a href="../05_installation/05_04_picking_models_in_lm_studio.html">
+            
+                    
+                    Picking Models in LM Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Evaluation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../06_evaluation/06_01_testing_each_model.html">
+            
+                <a href="../06_evaluation/06_01_testing_each_model.html">
+            
+                    
+                    Testing Each Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../06_evaluation/06_02_evaluating_models.html">
+            
+                <a href="../06_evaluation/06_02_evaluating_models.html">
+            
+                    
+                    Evaluating Models with a Standardized Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Best Practices
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../07_best_practices/07_01_best_practices_for_running_local_llms.html">
+            
+                <a href="../07_best_practices/07_01_best_practices_for_running_local_llms.html">
+            
+                    
+                    Best Practices for Running Local LLMs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Prompts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../08_prompts/08_01_collection_of_prompts.html">
+            
+                <a href="../08_prompts/08_01_collection_of_prompts.html">
+            
+                    
+                    Collection of Prompts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../08_prompts/08_02_example_create_shell_script.html">
+            
+                <a href="../08_prompts/08_02_example_create_shell_script.html">
+            
+                    
+                    Creating a Shell Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Advanced Usage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../09_advanced_usage/09_01_advanced_model_tuning.html">
+            
+                <a href="../09_advanced_usage/09_01_advanced_model_tuning.html">
+            
+                    
+                    Advanced Model Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../09_advanced_usage/09_02_integrating_llms_into_workflows.html">
+            
+                <a href="../09_advanced_usage/09_02_integrating_llms_into_workflows.html">
+            
+                    
+                    Integrating LLMs into Workflows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../09_advanced_usage/09_03_custom_built_pcs.html">
+            
+                <a href="../09_advanced_usage/09_03_custom_built_pcs.html">
+            
+                    
+                    Custom Built PCs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Benchmarks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../10_benchmarks/10_01_geekbench_ai_benchmark.html">
+            
+                <a href="../10_benchmarks/10_01_geekbench_ai_benchmark.html">
+            
+                    
+                    Personal Computer Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../10_benchmarks/10_02_ryzen_7_5800_32.html">
+            
+                <a href="../10_benchmarks/10_02_ryzen_7_5800_32.html">
+            
+                    
+                    Ryzen 7 5800X + RTX 4070 Super Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../10_benchmarks/10_03_m3_max.html">
+            
+                <a href="../10_benchmarks/10_03_m3_max.html">
+            
+                    
+                    MacBook Pro M3 Max Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../10_benchmarks/10_04_nuc9v7qnx.html">
+            
+                <a href="../10_benchmarks/10_04_nuc9v7qnx.html">
+            
+                    
+                    Intel NUC9V7QNX Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Additional Resources
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../11_additional_resources/11_01_tools.html">
+            
+                <a href="../11_additional_resources/11_01_tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../11_additional_resources/11_02_articles.html">
+            
+                <a href="../11_additional_resources/11_02_articles.html">
+            
+                    
+                    Articles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../11_additional_resources/11_03_in_the_news.html">
+            
+                <a href="../11_additional_resources/11_03_in_the_news.html">
+            
+                    
+                    In the News
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Overview of Large Language Models (LLMs)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="overview-of-large-language-models">Overview of Large Language Models</h1>
+<p>Large Language Models (LLMs) represent a significant advancement in artificial intelligence, transforming how we interact with technology and manage complex tasks. When I joined Samsung in 2019 to do AI, LLMs like today’s version of ChatGPT were still science fiction. Fast forward to now and I can't imagine writing or coding without one. </p>
+<p>At a high level, LLMs are sophisticated AI systems trained on vast amounts of text data to understand, generate, and manipulate human language. Their ability to comprehend and produce text with a high degree of fluency and accuracy makes them powerful tools for a wide range of applications but can be especially beneficial as you’ll see later on in this guide.</p>
+<h2 id="what-are-llms">What Are LLMs?</h2>
+<p>LLMs are built using deep learning techniques, specifically leveraging transformer architecture (TODO: NEED TO EXPLAIN WHAT THIS IS). </p>
+<p>These models are pre-trained on diverse and extensive datasets, which enables them to understand context, infer meaning, and generate coherent and contextually appropriate text based on given prompts. The level of interaction you can get out of these LLMs when using them for coding never ceases to impress me. </p>
+<p>Here are some common types of LLMs:</p>
+<table>
+<thead>
+<tr>
+<th>Model Type</th>
+<th>Description</th>
+<th>Use Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GPT (Generative Pre-trained Transformer)</strong></td>
+<td>Developed by OpenAI, GPT models are designed to generate human-like text based on input prompts. They are known for their versatility and ability to handle a wide range of natural language processing tasks.</td>
+<td>Content creation, conversational agents, text completion, and more.</td>
+</tr>
+<tr>
+<td><strong>BERT (Bidirectional Encoder Representations from Transformers)</strong></td>
+<td>Developed by Google, BERT models are designed to understand the context of words in a sentence by looking at both directions (left and right). This bidirectional approach helps in tasks that require understanding context, such as question answering and sentiment analysis.</td>
+<td>Search engines, sentiment analysis, question answering systems, and more.</td>
+</tr>
+<tr>
+<td><strong>LLaMA (Large Language Model Meta AI)</strong></td>
+<td>Developed by Meta, LLaMA models are designed to be more efficient and accessible, providing high performance on language tasks with relatively fewer computational resources. They are suitable for both research and practical applications.</td>
+<td>Research in language modeling, practical applications in resource-constrained environments.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-developers-can-use-llms">How Developers Can Use LLMs</h2>
+<p>Developers can leverage LLMs in numerous ways to enhance their applications and workflows. One of the primary uses is in natural language processing (NLP) tasks, where LLMs can help with understanding and generating human language. This includes applications like chatbots, virtual assistants, and automated customer support, where LLMs can provide more natural and accurate interactions. All of this can be leveraged by developers for more than content creation. LLMs can generate new code, find errors in existing code, and even add detailed contextual comments. When used correctly, they can save you a lot of time and effort, so you can focus on the bigger picture while the LLM handles repetitive or time-consuming tasks.</p>
+<p>LLMs are also powerful tools for data analysis and manipulation. They can help extract insights from large datasets, summarize information, and automate the creation of reports. For instance, developers can use LLMs to help clean up data, generate dummy data for testing and create instructional guides. Moreover, LLMs can assist in coding by providing auto-completion, code generation, and debugging assistance. This enhances the productivity of developers by reducing the time spent on routine coding tasks and allowing them to focus on more complex problems. If you don’t remember what something in your code does or want to understand code that someone else has written, just ask the LLM.</p>
+<p>In research and development (R&amp;D), LLMs offer a valuable ability to help you experiment with new ideas and pushing the boundaries of what you are capable of which is an incredibly powerful tool when you are learning a new language or trying to follow development best practices. Developers can fine-tune these models for specific applications, improving their performance on niche tasks and expanding their utility. Hate writing unit tests? Let the LLM do it for you. You’d be surprised at how they can help you optimize and refactor your code based on your direction or its own knowledge.</p>
+<p>By integrating LLMs into your workflow, You can harness the power of advanced LLMs to build smarter, more efficient, and more responsive code. This not only improves the end-user experience but also accelerates development cycles when leveraged correctly. But don’t take my word for it, you should give it a try. Most of this guide was generated by an LLM and I cleaned it up to add my own perspective and verify what I’m learning is accurate since this is my first time focusing on running these models locally.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="02_02_model_variations.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Models Variations">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Overview of Large Language Models (LLMs)","level":"1.3.1","depth":2,"next":{"title":"Models Variations","level":"1.3.2","depth":2,"path":"02_understanding_large_language_models/02_02_model_variations.md","ref":"./02_understanding_large_language_models/02_02_model_variations.md","articles":[]},"previous":{"title":"Understanding Large Language Models","level":"1.3","depth":1,"ref":"","articles":[{"title":"Overview of Large Language Models (LLMs)","level":"1.3.1","depth":2,"path":"02_understanding_large_language_models/02_01_overview_of_llms.md","ref":"./02_understanding_large_language_models/02_01_overview_of_llms.md","articles":[]},{"title":"Models Variations","level":"1.3.2","depth":2,"path":"02_understanding_large_language_models/02_02_model_variations.md","ref":"./02_understanding_large_language_models/02_02_model_variations.md","articles":[]},{"title":"Model Naming Conventions","level":"1.3.3","depth":2,"path":"02_understanding_large_language_models/02_03_model_naming_conventions.md","ref":"./02_understanding_large_language_models/02_03_model_naming_conventions.md","articles":[]},{"title":"Parameter Size","level":"1.3.4","depth":2,"path":"02_understanding_large_language_models/02_04_parameter_size.md","ref":"./02_understanding_large_language_models/02_04_parameter_size.md","articles":[]},{"title":"Quantization","level":"1.3.5","depth":2,"path":"02_understanding_large_language_models/02_05_quantization.md","ref":"./02_understanding_large_language_models/02_05_quantization.md","articles":[]},{"title":"Quantization Schemes","level":"1.3.6","depth":2,"path":"02_understanding_large_language_models/02_06_quantization_schemes.md","ref":"./02_understanding_large_language_models/02_06_quantization_schemes.md","articles":[]},{"title":"How Models Are Scaled","level":"1.3.7","depth":2,"path":"02_understanding_large_language_models/02_07_scaling_models.md","ref":"./02_understanding_large_language_models/02_07_scaling_models.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02_understanding_large_language_models/02_01_overview_of_llms.md","mtime":"2024-08-27T18:31:41.758Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-08-27T18:50:45.127Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,976 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Offloading to the GPU · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03_06_picking_code_llama_instruct_variations.html" />
+    
+    
+    <link rel="prev" href="03_04_cpu_vs_gpu_inferencing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Introduction
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01_introduction/01_01_how_to_use_this_guide.html">
+            
+                <a href="../01_introduction/01_01_how_to_use_this_guide.html">
+            
+                    
+                    How To Use This Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01_introduction/01_02_why_run_models_locally.html">
+            
+                <a href="../01_introduction/01_02_why_run_models_locally.html">
+            
+                    
+                    Why Run Large Language Models Locally?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Understanding Large Language Models
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02_understanding_large_language_models/02_01_overview_of_llms.html">
+            
+                <a href="../02_understanding_large_language_models/02_01_overview_of_llms.html">
+            
+                    
+                    Overview of Large Language Models (LLMs)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02_understanding_large_language_models/02_02_model_variations.html">
+            
+                <a href="../02_understanding_large_language_models/02_02_model_variations.html">
+            
+                    
+                    Models Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02_understanding_large_language_models/02_03_model_naming_conventions.html">
+            
+                <a href="../02_understanding_large_language_models/02_03_model_naming_conventions.html">
+            
+                    
+                    Model Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02_understanding_large_language_models/02_04_parameter_size.html">
+            
+                <a href="../02_understanding_large_language_models/02_04_parameter_size.html">
+            
+                    
+                    Parameter Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02_understanding_large_language_models/02_05_quantization.html">
+            
+                <a href="../02_understanding_large_language_models/02_05_quantization.html">
+            
+                    
+                    Quantization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../02_understanding_large_language_models/02_06_quantization_schemes.html">
+            
+                <a href="../02_understanding_large_language_models/02_06_quantization_schemes.html">
+            
+                    
+                    Quantization Schemes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../02_understanding_large_language_models/02_07_scaling_models.html">
+            
+                <a href="../02_understanding_large_language_models/02_07_scaling_models.html">
+            
+                    
+                    How Models Are Scaled
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Selecting Models
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03_01_selecting_the right model.html">
+            
+                <a href="03_01_selecting_the right model.html">
+            
+                    
+                    Selecting the Right Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="03_02_pick_the_right_model_for_your_memory.html">
+            
+                <a href="03_02_pick_the_right_model_for_your_memory.html">
+            
+                    
+                    Pick the Right Model for Your Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03_03_model_size_and_memory.html">
+            
+                <a href="03_03_model_size_and_memory.html">
+            
+                    
+                    Model Size and Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="03_04_cpu_vs_gpu_inferencing.html">
+            
+                <a href="03_04_cpu_vs_gpu_inferencing.html">
+            
+                    
+                    CPU vs. GPU and Inferencing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="03_05_offloading_to_the_gpu.html">
+            
+                <a href="03_05_offloading_to_the_gpu.html">
+            
+                    
+                    Offloading to the GPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="03_06_picking_code_llama_instruct_variations.html">
+            
+                <a href="03_06_picking_code_llama_instruct_variations.html">
+            
+                    
+                    CodeLlama 3.1 Instruct Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Models For Coding
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04_models_for_ coding/04_01_overview_of_code_llama_variations.html">
+            
+                <a href="../04_models_for_ coding/04_01_overview_of_code_llama_variations.html">
+            
+                    
+                    Overview of Code Llama Variations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04_models_for_ coding/04_02_other_open_source_coding_models.html">
+            
+                <a href="../04_models_for_ coding/04_02_other_open_source_coding_models.html">
+            
+                    
+                    Other Notable Open Source Models for Coding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Installation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05_installation/05_01_installing_lm_studio.html">
+            
+                <a href="../05_installation/05_01_installing_lm_studio.html">
+            
+                    
+                    Installing LM Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05_installation/05_02_configuring_lm_studio_on_apple_silicon.html">
+            
+                <a href="../05_installation/05_02_configuring_lm_studio_on_apple_silicon.html">
+            
+                    
+                    Configuring LM Studio on Apple Silicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05_installation/05_03_optimizing_lm_studio_for_apple_silicon.html">
+            
+                <a href="../05_installation/05_03_optimizing_lm_studio_for_apple_silicon.html">
+            
+                    
+                    Optimizing LM Studio for Apple Silicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../05_installation/05_04_picking_models_in_lm_studio.html">
+            
+                <a href="../05_installation/05_04_picking_models_in_lm_studio.html">
+            
+                    
+                    Picking Models in LM Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Evaluation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../06_evaluation/06_01_testing_each_model.html">
+            
+                <a href="../06_evaluation/06_01_testing_each_model.html">
+            
+                    
+                    Testing Each Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../06_evaluation/06_02_evaluating_models.html">
+            
+                <a href="../06_evaluation/06_02_evaluating_models.html">
+            
+                    
+                    Evaluating Models with a Standardized Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Best Practices
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../07_best_practices/07_01_best_practices_for_running_local_llms.html">
+            
+                <a href="../07_best_practices/07_01_best_practices_for_running_local_llms.html">
+            
+                    
+                    Best Practices for Running Local LLMs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Prompts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../08_prompts/08_01_collection_of_prompts.html">
+            
+                <a href="../08_prompts/08_01_collection_of_prompts.html">
+            
+                    
+                    Collection of Prompts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../08_prompts/08_02_example_create_shell_script.html">
+            
+                <a href="../08_prompts/08_02_example_create_shell_script.html">
+            
+                    
+                    Creating a Shell Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Advanced Usage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../09_advanced_usage/09_01_advanced_model_tuning.html">
+            
+                <a href="../09_advanced_usage/09_01_advanced_model_tuning.html">
+            
+                    
+                    Advanced Model Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../09_advanced_usage/09_02_integrating_llms_into_workflows.html">
+            
+                <a href="../09_advanced_usage/09_02_integrating_llms_into_workflows.html">
+            
+                    
+                    Integrating LLMs into Workflows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../09_advanced_usage/09_03_custom_built_pcs.html">
+            
+                <a href="../09_advanced_usage/09_03_custom_built_pcs.html">
+            
+                    
+                    Custom Built PCs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Benchmarks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../10_benchmarks/10_01_geekbench_ai_benchmark.html">
+            
+                <a href="../10_benchmarks/10_01_geekbench_ai_benchmark.html">
+            
+                    
+                    Personal Computer Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../10_benchmarks/10_02_ryzen_7_5800_32.html">
+            
+                <a href="../10_benchmarks/10_02_ryzen_7_5800_32.html">
+            
+                    
+                    Ryzen 7 5800X + RTX 4070 Super Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../10_benchmarks/10_03_m3_max.html">
+            
+                <a href="../10_benchmarks/10_03_m3_max.html">
+            
+                    
+                    MacBook Pro M3 Max Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../10_benchmarks/10_04_nuc9v7qnx.html">
+            
+                <a href="../10_benchmarks/10_04_nuc9v7qnx.html">
+            
+                    
+                    Intel NUC9V7QNX Performance Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Additional Resources
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../11_additional_resources/11_01_tools.html">
+            
+                <a href="../11_additional_resources/11_01_tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../11_additional_resources/11_02_articles.html">
+            
+                <a href="../11_additional_resources/11_02_articles.html">
+            
+                    
+                    Articles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../11_additional_resources/11_03_in_the_news.html">
+            
+                <a href="../11_additional_resources/11_03_in_the_news.html">
+            
+                    
+                    In the News
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Offloading to the GPU</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="offloading-to-the-gpu">Offloading to the GPU</h1>
+<p>As large language models (LLMs) continue to grow in size and complexity, the demands they place on computing hardware have increased significantly. While CPUs are capable of handling smaller models, the real power of LLMs is unleashed when they are run on GPUs (Graphics Processing Units). Offloading LLM inferencing to the GPU is a crucial step in optimizing model performance, especially when working with large-scale models that require substantial computational resources.</p>
+<h2 id="why-offloading-to-the-gpu-matters">Why Offloading to the GPU Matters</h2>
+<p>GPUs are designed for parallel processing, making them particularly well-suited for the kind of operations that LLMs require during inferencing. Unlike CPUs, which have a limited number of cores optimized for a wide range of tasks, GPUs have thousands of smaller cores that are optimized for performing many calculations simultaneously. This parallelism allows GPUs to handle the large matrix multiplications and other operations required by LLMs far more efficiently than CPUs.</p>
+<p>When you offload an LLM to the GPU, you are effectively leveraging this parallel processing capability to accelerate the inferencing process. This not only speeds up the time it takes to generate responses but also allows you to work with larger and more complex models that would be impractical to run solely on a CPU.</p>
+<h2 id="benefits-of-gpu-offloading">Benefits of GPU Offloading</h2>
+<ol>
+<li><p><strong>Increased Speed</strong>: The most immediate benefit of GPU offloading is the significant increase in processing speed. By utilizing the GPU’s parallel processing capabilities, inferencing times are drastically reduced, making real-time applications and quick iterations possible, even with large models.</p>
+</li>
+<li><p><strong>Better Resource Utilization</strong>: Offloading to the GPU allows the CPU to focus on other tasks, thereby improving overall system efficiency. This division of labor ensures that both the CPU and GPU are being used optimally, which is especially important when running multiple applications simultaneously.</p>
+</li>
+<li><p><strong>Enhanced Scalability</strong>: As models grow in size, the ability to offload their processing to a GPU becomes increasingly important. GPUs with large amounts of VRAM can handle more extensive models, making it easier to scale your use of LLMs as your needs evolve.</p>
+</li>
+<li><p><strong>Improved Performance with Large Models</strong>: For very large models, GPU offloading is often the only way to achieve acceptable performance. CPUs alone may struggle to handle the sheer volume of calculations required, leading to slow response times and potential system instability.</p>
+</li>
+</ol>
+<h2 id="challenges-and-considerations">Challenges and Considerations</h2>
+<p>While GPU offloading offers significant advantages, it’s not without its challenges. The amount of VRAM available on your GPU will determine how much of the model can be loaded and processed directly on the GPU. If the model is too large to fit into the available VRAM, you may experience performance issues, such as slower processing times or the need to revert to CPU processing for parts of the model.</p>
+<p>Moreover, not all GPUs are created equal. The performance gains from offloading can vary depending on the GPU’s architecture, the amount of VRAM, and the specific model being used. Therefore, understanding your GPU’s capabilities and selecting models that match its strengths is crucial for maximizing performance.</p>
+<blockquote>
+<p>If a model exceeds the available system memory (RAM) or GPU memory (VRAM), several issues can arise:</p>
+<ul>
+<li><p><strong>System Slowdown</strong>: The system may attempt to use swap space (a portion of disk storage used as virtual memory) to compensate for the lack of RAM. However, swap is much slower than RAM, leading to significant performance degradation and potential system instability.</p>
+</li>
+<li><p><strong>Application Crashes</strong>: If the system cannot allocate enough memory for the model, the application running the model might crash or fail to load the model entirely, often resulting in "Out of Memory" errors.</p>
+</li>
+<li><p><strong>Reduced Performance</strong>: When the GPU cannot fully load the model, it may revert to using the CPU for some operations, drastically reducing the speed of inferencing. This mixed CPU/GPU workload is less efficient and can lead to inconsistent performance.</p>
+</li>
+</ul>
+</blockquote>
+<p>By offloading LLM inferencing to a GPU, you can unlock the full potential of these powerful models, making it possible to work with larger datasets, generate more complex outputs, and achieve faster processing times. While there are considerations to keep in mind, particularly regarding VRAM limits and GPU capabilities, the benefits of GPU offloading are clear. For anyone serious about working with large language models, understanding and utilizing GPU offloading is not just an option—it’s a necessity for maximizing performance and efficiency.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03_04_cpu_vs_gpu_inferencing.html" class="navigation navigation-prev " aria-label="Previous page: CPU vs. GPU and Inferencing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03_06_picking_code_llama_instruct_variations.html" class="navigation navigation-next " aria-label="Next page: CodeLlama 3.1 Instruct Variations">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Offloading to the GPU","level":"1.4.5","depth":2,"next":{"title":"CodeLlama 3.1 Instruct Variations","level":"1.4.6","depth":2,"path":"03_selecting_models/03_06_picking_code_llama_instruct_variations.md","ref":"./03_selecting_models/03_06_picking_code_llama_instruct_variations.md","articles":[]},"previous":{"title":"CPU vs. GPU and Inferencing","level":"1.4.4","depth":2,"path":"03_selecting_models/03_04_cpu_vs_gpu_inferencing.md","ref":"./03_selecting_models/03_04_cpu_vs_gpu_inferencing.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03_selecting_models/03_05_offloading_to_the_gpu.md","mtime":"2024-08-27T18:31:41.764Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-08-27T18:50:45.127Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
