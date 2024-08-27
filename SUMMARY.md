@@ -1,5 +1,6 @@
-# Table of contents
+# Summary
 
+* [Introduction](README.md)
 * Introduction
     * [How To Use This Guide](./01_introduction/01_01_how_to_use_this_guide.md)
     * [Why Run Large Language Models Locally?](./01_introduction/01_02_why_run_models_locally.md)
@@ -47,3 +48,4 @@
     * [Tools](./11_additional_resources/11_01_tools.md)
     * [Articles](./11_additional_resources/11_02_articles.md)
     * [In the News](./11_additional_resources/11_03_in_the_news.md)
+
