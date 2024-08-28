@@ -1,7 +1,7 @@
 # Site settings
 title: "AI for Dev"
 description: "A guide on how to run Large Language Models (LLMs) locally for coding assistance."
-baseurl: "/ai-for-dev"  # The subpath of your site, e.g., /blog
+baseurl: ""  # The subpath of your site, e.g., /blog
 url: "https://jessefreeman.github.io/ai-for-dev/"  # The base hostname & protocol for your site
 
 # Repository details
