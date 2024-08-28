@@ -1,3 +1,33 @@
 title: "AI for Dev"
 description: "A guide on how to run Large Language Models (LLMs) locally for coding assistance."
-theme: jekyll-theme-minimal
+remote_theme: just-the-docs/just-the-docs
+logo: "/path/to/logo.png"
+search_enabled: true
+
+# Base URL and Repository Settings
+baseurl: "/ai-for-dev"  # the subpath of your site, for example /blog
+url: "https://jessefreeman.github.io/ai-for-dev/"  # the base hostname & protocol for your site
+
+# Sidebar Navigation - pulling from the _data/navigation.yml
+just_the_docs:
+  aux_links:
+    "GitHub Repository": "https://github.com/jessefreeman/ai-for-dev"
+  show_toc: true
+  toc_levels: "1,2,3"
+  logo: 
+    path: "/path/to/logo.png"  # Update with the correct path to your logo
+    alt: "AI for Dev"
+  navigation:
+    structure: data  # Enable _data folder usage for navigation
+
+# Enable plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed  # Optional plugin for generating RSS feed
+  - jekyll-paginate  # Optional plugin for pagination support
+
+# Optional: Social links in the footer (example)
+footer_content: |
+  <p><strong>AI for Dev</strong> - A guide to running LLMs for coding assistance locally.</p>
+  <p>Find more resources and follow us on <a href="https://twitter.com/yourhandle">Twitter</a>.</p>
