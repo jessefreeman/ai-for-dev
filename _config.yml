@@ -1,8 +1,3 @@
 title: "AI for Dev"
 description: "A guide on how to run Large Language Models (LLMs) locally for coding assistance."
 theme: jekyll-theme-minimal
-
-# Tell Jekyll to use the custom layout and pull in the custom CSS
-markdown: kramdown
-
-# No need to define layouts as Jekyll will automatically pick up the custom layout
