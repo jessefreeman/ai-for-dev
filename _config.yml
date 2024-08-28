@@ -1,170 +1,107 @@
+# Site settings
 title: "AI for Dev"
 description: "A guide on how to run Large Language Models (LLMs) locally for coding assistance."
-remote_theme: just-the-docs/just-the-docs
-logo: "/path/to/logo.png"
+baseurl: "/ai-for-dev"  # The subpath of your site, e.g., /blog
+url: "https://jessefreeman.github.io/ai-for-dev/"  # The base hostname & protocol for your site
+
+# Repository details
+repository: "jessefreeman/ai-for-dev"  # For GitHub metadata
+gh_edit_link: true  # Show or hide "Edit this page on GitHub"
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/jessefreeman/ai-for-dev"  # GitHub repository URL
+gh_edit_branch: "main"  # Branch where your docs are hosted
+gh_edit_view_mode: "tree"  # "tree" for navigating in repo or "edit" for direct editing
+
+# Navigation settings
+nav_enabled: true  # Enable the side/mobile navigation menu
+nav_sort: case_insensitive  # Sort order for navigation links
+nav_error_report: false  # Disable navigation error reports
+
+# Enable the search
 search_enabled: true
+search:
+  heading_level: 2  # Split pages into sections that can be searched individually
+  previews: 2  # Maximum number of previews per search result
+  preview_words_before: 3
+  preview_words_after: 3
+  rel_url: true  # Display the relative URL in search results
 
-# Base URL and Repository Settings
-baseurl: "/ai-for-dev"  # the subpath of your site, for example /blog
-url: "https://jessefreeman.github.io/ai-for-dev/"  # the base hostname & protocol for your site
-
-# Sidebar Navigation moved to _config.yml
+# Sidebar navigation settings
 just_the_docs:
   aux_links:
     "GitHub Repository": "https://github.com/jessefreeman/ai-for-dev"
   show_toc: true
   toc_levels: "1,2,3"
-  logo: 
-    path: "/path/to/logo.png"  # Update with the correct path to your logo
-    alt: "AI for Dev"
-  # Define navigation here
-  navigation:
-    - title: "Introduction"
-      url: /README
-      nav_order: 1
-    - title: "Introduction"
-      nav_order: 2
-      children:
-        - title: "How To Use This Guide"
-          url: /01_introduction/01_01_how_to_use_this_guide
-          nav_order: 1
-        - title: "Why Run Large Language Models Locally?"
-          url: /01_introduction/01_02_why_run_models_locally
-          nav_order: 2
-    - title: "Understanding Large Language Models"
-      nav_order: 3
-      children:
-        - title: "Overview of Large Language Models (LLMs)"
-          url: /02_understanding_large_language_models/02_01_overview_of_llms
-          nav_order: 1
-        - title: "Models Variations"
-          url: /02_understanding_large_language_models/02_02_model_variations
-          nav_order: 2
-        - title: "Model Naming Conventions"
-          url: /02_understanding_large_language_models/02_03_model_naming_conventions
-          nav_order: 3
-        - title: "Parameter Size"
-          url: /02_understanding_large_language_models/02_04_parameter_size
-          nav_order: 4
-        - title: "Quantization"
-          url: /02_understanding_large_language_models/02_05_quantization
-          nav_order: 5
-        - title: "Quantization Schemes"
-          url: /02_understanding_large_language_models/02_06_quantization_schemes
-          nav_order: 6
-        - title: "How Models Are Scaled"
-          url: /02_understanding_large_language_models/02_07_scaling_models
-          nav_order: 7
-    - title: "Selecting Models"
-      nav_order: 4
-      children:
-        - title: "Selecting the Right Model"
-          url: /03_selecting_models/03_01_selecting_the_right_model
-          nav_order: 1
-        - title: "Pick the Right Model for Your Memory"
-          url: /03_selecting_models/03_02_pick_the_right_model_for_your_memory
-          nav_order: 2
-        - title: "Model Size and Memory"
-          url: /03_selecting_models/03_03_model_size_and_memory
-          nav_order: 3
-        - title: "CPU vs. GPU and Inferencing"
-          url: /03_selecting_models/03_04_cpu_vs_gpu_inferencing
-          nav_order: 4
-        - title: "Offloading to the GPU"
-          url: /03_selecting_models/03_05_offloading_to_the_gpu
-          nav_order: 5
-        - title: "CodeLlama 3.1 Instruct Variations"
-          url: /03_selecting_models/03_06_picking_code_llama_instruct_variations
-          nav_order: 6
-    - title: "Models For Coding"
-      nav_order: 5
-      children:
-        - title: "Overview of Code Llama Variations"
-          url: /04_models_for_coding/04_01_overview_of_code_llama_variations
-          nav_order: 1
-        - title: "Other Notable Open Source Models for Coding"
-          url: /04_models_for_coding/04_02_other_open_source_coding_models
-          nav_order: 2
-    - title: "Installation"
-      nav_order: 6
-      children:
-        - title: "Installing LM Studio"
-          url: /05_installation/05_01_installing_lm_studio
-          nav_order: 1
-        - title: "Configuring LM Studio on Apple Silicon"
-          url: /05_installation/05_02_configuring_lm_studio_on_apple_silicon
-          nav_order: 2
-        - title: "Optimizing LM Studio for Apple Silicon"
-          url: /05_installation/05_03_optimizing_lm_studio_for_apple_silicon
-          nav_order: 3
-        - title: "Picking Models in LM Studio"
-          url: /05_installation/05_04_picking_models_in_lm_studio
-          nav_order: 4
-    - title: "Evaluation"
-      nav_order: 7
-      children:
-        - title: "Testing Each Model"
-          url: /06_evaluation/06_01_testing_each_model
-          nav_order: 1
-        - title: "Evaluating Models with a Standardized Test"
-          url: /06_evaluation/06_02_evaluating_models
-          nav_order: 2
-    - title: "Best Practices"
-      nav_order: 8
-      children:
-        - title: "Best Practices for Running Local LLMs"
-          url: /07_best_practices/07_01_best_practices_for_running_local_llms
-          nav_order: 1
-    - title: "Prompts"
-      nav_order: 9
-      children:
-        - title: "Collection of Prompts"
-          url: /08_prompts/08_01_collection_of_prompts
-          nav_order: 1
-        - title: "Creating a Shell Script"
-          url: /08_prompts/08_02_example_create_shell_script
-          nav_order: 2
-    - title: "Advanced Usage"
-      nav_order: 10
-      children:
-        - title: "Advanced Model Tuning"
-          url: /09_advanced_usage/09_01_advanced_model_tuning
-          nav_order: 1
-        - title: "Integrating LLMs into Workflows"
-          url: /09_advanced_usage/09_02_integrating_llms_into_workflows
-          nav_order: 2
-        - title: "Custom Built PCs"
-          url: /09_advanced_usage/09_03_custom_built_pcs
-          nav_order: 3
-    - title: "Benchmarks"
-      nav_order: 11
-      children:
-        - title: "Personal Computer Results"
-          url: /10_benchmarks/10_01_geekbench_ai_benchmark
-          nav_order: 1
-        - title: "Ryzen 7 5800X + RTX 4070 Super Performance Overview"
-          url: /10_benchmarks/10_02_ryzen_7_5800_32
-          nav_order: 2
-        - title: "MacBook Pro M3 Max Performance Overview"
-          url: /10_benchmarks/10_03_m3_max
-          nav_order: 3
-        - title: "Intel NUC9V7QNX Performance Overview"
-          url: /10_benchmarks/10_04_nuc9v7qnx
-          nav_order: 4
-    - title: "Additional Resources"
-      nav_order: 12
-      children:
-        - title: "Tools"
-          url: /11_additional_resources/11_01_tools
-          nav_order: 1
-        - title: "Articles"
-          url: /11_additional_resources/11_02_articles
-          nav_order: 2
-        - title: "In the News"
-          url: /11_additional_resources/11_03_in_the_news
-          nav_order: 3
+  color_scheme: light  # Choose between "light", "dark", or a custom scheme
 
-# Enable plugins (optional)
+# Set a path/url to a logo that will be displayed instead of the title
+logo: "/path/to/logo.png"
+
+# Copy button for code snippets
+enable_copy_code_button: true
+
+# Mermaid.js for diagrams and flowcharts (optional)
+mermaid:
+  version: "9.1.6"
+  # path: "/assets/js/mermaid.min.js"  # Optional for local use of Mermaid.js
+
+# Heading anchors (links next to headings)
+heading_anchors: true
+
+# Footer settings
+footer_content: "© 2024 AI for Dev. Powered by Jekyll & Just the Docs."
+last_edit_timestamp: true  # Show last edit timestamp on pages
+last_edit_time_format: "%b %e %Y at %I:%M %p"  # Format for last edit timestamp
+back_to_top: true  # Show "Back to top" link at the bottom of every page
+
+# Callouts for documentation
+callouts_level: quiet
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  warning:
+    title: Warning
+    color: red
+
+# Google Analytics (optional)
+# ga_tracking: "UA-1234567-89,G-1AB234CDE5"
+# ga_tracking_anonymize_ip: true  # GDPR compliant Google Analytics
+
+# Plugin settings
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed  # Optional RSS feed generation
+  - jekyll-github-metadata
+  - jekyll-include-cache
+
+# Markdown rendering options
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# HTML compression (optional)
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  blanklines: false
+
+# Exclude these files from the site
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - LICENSE.txt
