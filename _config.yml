@@ -1,107 +1,43 @@
-# Site settings
 title: "AI for Dev"
 description: "A guide on how to run Large Language Models (LLMs) locally for coding assistance."
-baseurl: ""  # The subpath of your site, e.g., /blog
-url: "https://jessefreeman.github.io/ai-for-dev/"  # The base hostname & protocol for your site
-
-# Repository details
-repository: "jessefreeman/ai-for-dev"  # For GitHub metadata
-gh_edit_link: true  # Show or hide "Edit this page on GitHub"
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/jessefreeman/ai-for-dev"  # GitHub repository URL
-gh_edit_branch: "main"  # Branch where your docs are hosted
-gh_edit_view_mode: "tree"  # "tree" for navigating in repo or "edit" for direct editing
-
-# Navigation settings
-nav_enabled: true  # Enable the side/mobile navigation menu
-nav_sort: case_insensitive  # Sort order for navigation links
-nav_error_report: false  # Disable navigation error reports
-
-# Enable the search
+remote_theme: just-the-docs/just-the-docs
+logo: "/path/to/logo.png"
 search_enabled: true
-search:
-  heading_level: 2  # Split pages into sections that can be searched individually
-  previews: 2  # Maximum number of previews per search result
-  preview_words_before: 3
-  preview_words_after: 3
-  rel_url: true  # Display the relative URL in search results
 
-# Sidebar navigation settings
+# Base URL and Repository Settings
+baseurl: ""  # the subpath of your site, for example /blog
+url: "https://jessefreeman.github.io/ai-for-dev/"  # the base hostname & protocol for your site
+
+# Sidebar Navigation - pulling from the _data/navigation.yml
 just_the_docs:
   aux_links:
     "GitHub Repository": "https://github.com/jessefreeman/ai-for-dev"
   show_toc: true
   toc_levels: "1,2,3"
-  color_scheme: light  # Choose between "light", "dark", or a custom scheme
 
-# Set a path/url to a logo that will be displayed instead of the title
-logo: "/path/to/logo.png"
-
-# Copy button for code snippets
-enable_copy_code_button: true
-
-# Mermaid.js for diagrams and flowcharts (optional)
-mermaid:
-  version: "9.1.6"
-  # path: "/assets/js/mermaid.min.js"  # Optional for local use of Mermaid.js
-
-# Heading anchors (links next to headings)
-heading_anchors: true
+# Enable plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed  # Optional plugin for generating RSS feed
+  - jekyll-paginate  # Optional plugin for pagination support
 
 # Footer settings
-footer_content: "© 2024 AI for Dev. Powered by Jekyll & Just the Docs."
+footer_content: |
+  <p><strong>AI for Dev</strong> - A guide to running LLMs for coding assistance locally.</p>
+  <p>Find more resources and follow us on <a href="https://twitter.com/yourhandle">Twitter</a>.</p>
 last_edit_timestamp: true  # Show last edit timestamp on pages
 last_edit_time_format: "%b %e %Y at %I:%M %p"  # Format for last edit timestamp
 back_to_top: true  # Show "Back to top" link at the bottom of every page
 
-# Callouts for documentation
-callouts_level: quiet
-callouts:
-  highlight:
-    color: yellow
-  important:
-    title: Important
-    color: blue
-  warning:
-    title: Warning
-    color: red
+# Heading anchors (links next to headings)
+heading_anchors: true
 
-# Google Analytics (optional)
-# ga_tracking: "UA-1234567-89,G-1AB234CDE5"
-# ga_tracking_anonymize_ip: true  # GDPR compliant Google Analytics
-
-# Plugin settings
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed  # Optional RSS feed generation
-  - jekyll-github-metadata
-  - jekyll-include-cache
+# Copy button for code snippets
+enable_copy_code_button: true
 
 # Markdown rendering options
 kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
-
-# HTML compression (optional)
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  blanklines: false
-
-# Exclude these files from the site
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile
-  - README.md
-  - LICENSE.txt
