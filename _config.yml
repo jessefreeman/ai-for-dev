@@ -7,14 +7,12 @@ search_enabled: true
 baseurl: ""  # the subpath of your site, for example /blog
 url: "https://jessefreeman.github.io/ai-for-dev/"  # the base hostname & protocol for your site
 
-# Sidebar Navigation - pulling from the _data/navigation.yml
+# Sidebar Navigation
 just_the_docs:
   aux_links:
     "GitHub Repository": "https://github.com/jessefreeman/ai-for-dev"
   show_toc: true
   toc_levels: "1,2,3"
-  collections:
-    nav_order: 1
   repository_url: "https://github.com/jessefreeman/ai-for-dev"
   edit:
     enabled: true  # Enable the Edit on GitHub link
@@ -24,12 +22,7 @@ just_the_docs:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed  # Optional plugin for generating RSS feed
-  - jekyll-paginate  # Optional plugin for pagination support
-
-# List of files or directories to exclude from site processing
-exclude:
-  - README.md
+  - jekyll-feed
 
 # Footer settings
 footer_content: |
