@@ -1,3 +1,8 @@
+---
+title: "Model Size and Memory"
+parent: "03 Selecting Models"
+order: 3
+---
 # Model Size and Memory
 
 LLMs, have specific storage requirements when they are saved on disk and distinct memory usage characteristics when loaded into a computer’s RAM. Understanding these differences is crucial for optimizing their performance on various systems.

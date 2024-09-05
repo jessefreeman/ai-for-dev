@@ -1,3 +1,8 @@
+---
+title: "Quantization Schemes"
+parent: "02 Understanding Large Language Models"
+order: 6
+---
 # Quantization Schemes
 
 Quantization refers to the process of converting a model's parameters from higher precision (e.g., 32-bit floating point) to lower precision (e.g., 8-bit integer). This reduction in precision can significantly reduce the model's size and the computational resources required for inference, making it feasible to run larger models on less powerful hardware.

@@ -1,3 +1,8 @@
+---
+title: "Models Variations"
+parent: "02 Understanding Large Language Models"
+order: 2
+---
 # Models Variations
 
 Given LLMs' diverse capabilities, it's crucial to understand how different variations of these models can be tailored to specific tasks. A downside of LLM’s ability to assist in content creation across different needs, it’s circular to find ones that are specialized for coding. For instance, CodeLlama, which is a specialized version of Meta’s Llama, is a good place to start. However, finding the right version isn’t as easy as doing a search in LM Studio, a tool we’ll use later on for running these models locally. You’d be surprised by how many results come back so you’ll need to learn how to pick the right model for your own needs.

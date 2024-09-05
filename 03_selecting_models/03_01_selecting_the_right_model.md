@@ -1,3 +1,8 @@
+---
+title: "Selecting the Right Model"
+parent: "03 Selecting Models"
+order: 1
+---
 # Selecting the Right Model
 
 After understanding the benefits of running large language models (LLMs) locally, the next step is to effectively select and use the right model for your needs. These are the 4 steps you’ll need to do in inorder to add local LLM models into your workflow, ensuring you make the most of your hardware and achieve the best performance possible.

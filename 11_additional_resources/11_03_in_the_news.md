@@ -1,3 +1,8 @@
+---
+title: "In the News"
+parent: "11 Additional Resources"
+order: 3
+---
 # In the News
 
 This section lists interesting articles and announcements from my RSS feeds:

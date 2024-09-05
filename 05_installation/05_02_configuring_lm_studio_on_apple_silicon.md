@@ -1,3 +1,8 @@
+---
+title: "Configuring LM Studio on Apple Silicon"
+parent: "05 Installation"
+order: 2
+---
 # Configuring LM Studio on Apple Silicon
 
 If you are using an Apple Silicon computer, such as a MacBook Pro with an M3 Max chip, it is important to optimize LM Studio to fully leverage your hardware’s capabilities. Here’s how you can do it:

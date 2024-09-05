@@ -1,3 +1,8 @@
+---
+title: "Parameter Size"
+parent: "02 Understanding Large Language Models"
+order: 4
+---
 # Parameter Size
 
 Yes, the parameter size does matter when it comes to selecting the right model. The size of the model's parameters directly impacts its performance, memory requirements, and suitability for different hardware configurations. In this section, we'll delve into everything you need to know about parameter size, how it affects model performance, and what to consider when choosing a model to run on your local machine.

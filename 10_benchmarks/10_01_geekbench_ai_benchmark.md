@@ -1,3 +1,8 @@
+---
+title: "Personal Computer Results"
+parent: "10 Benchmarks"
+order: 1
+---
 # Personal Computer Results
 
 These are my personal computers that I've been benchmarking using **Geekbench AI**. This benchmarking tool provides detailed insights into how different systems perform AI-centric tasks, including image processing, object detection, and style transfer. It offers performance scores based on three types of precision: **Single Precision**, **Half Precision**, and **Quantized**. Each system's GPU and CPU capabilities are tested, and the results help me evaluate their strengths in handling various AI workloads.
@@ -79,34 +84,6 @@ These tables provide a clear comparison of how each system performs in terms of 
 
 Here are the instructions for adding your own benchmarks to the project. This section will guide contributors on how to clone the project, perform tests, and submit their benchmark results for inclusion.
 
----
-
-## Contributing Your Own Benchmarks
-
-If you would like to contribute your own benchmarks to this project, please follow the instructions below. We encourage submissions of different system configurations, but please ensure that you provide complete results for all test types.
-
-### Steps to Contribute
-
-1. **Fork the Project on GitHub**  
-   First, fork this project on GitHub to create your own copy of the repository. You can do this by clicking the “Fork” button on the project’s GitHub page.
-
-2. **Clone the Repository**  
-   Clone your forked repository to your local machine by running the following command:
-   ```bash
-   git clone https://github.com/jessefreeman/ai-for-dev.git
-   ```
-
-3. **Run the Benchmarks**  
-   Download and run the **Geekbench AI** tool on your system, testing both CPU and GPU performance across all relevant tasks. These benchmarks include **Single Precision**, **Half Precision**, and **Quantized** tests.  
-   
-5. **Format Your Benchmark Results**  
-   Collect the benchmark results and follow the template provided below to format your results. Ensure the format is consistent and includes the system specs, benchmark scores, top AI tasks, and a total system price.
-
-### Benchmark Submission Template
-
-Please use the following template when submitting your benchmarks. Ensure that all sections are filled out and consistent with the formatting used for previous submissions.
-
----
 
 ### **[System Name] | [Framework] | [Backend] Benchmarks**
 
@@ -134,13 +111,3 @@ Total Price: [Current Price]
 | 1. [Task Name] | [Score]               | 4. [Task Name] | [Score]               |
 | 2. [Task Name] | [Score]               | 5. [Task Name] | [Score]               |
 | 3. [Task Name] | [Score]               | 6. [Task Name] | [Score]               |
-
----
-
-### Submit a Pull Request
-
-Once you’ve formatted your results according to the template, submit a **pull request** to the main project repository. Be sure to include your benchmark file with the results and formatted markdown.
-
-You can submit a pull request by navigating to your forked repository on GitHub and clicking the **New Pull Request** button. Make sure to provide a short description of your benchmarks and explain the key findings in your tests.
-
-We look forward to your contributions!

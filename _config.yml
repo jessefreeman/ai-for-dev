@@ -1,7 +1,6 @@
 title: "AI for Dev"
 description: "A guide on how to run Large Language Models (LLMs) locally for coding assistance."
 remote_theme: just-the-docs/just-the-docs
-logo: "/path/to/logo.png"
 search_enabled: true
 
 # Base URL and Repository Settings
@@ -14,6 +13,12 @@ just_the_docs:
     "GitHub Repository": "https://github.com/jessefreeman/ai-for-dev"
   show_toc: true
   toc_levels: "1,2,3"
+  collections:
+    nav_order: 1
+  repository_url: "https://github.com/jessefreeman/ai-for-dev"
+  edit:
+    enabled: true  # Enable the Edit on GitHub link
+    base_url: "https://github.com/jessefreeman/ai-for-dev/edit/main/"  # URL for editing the file
 
 # Enable plugins
 plugins:
@@ -21,6 +26,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed  # Optional plugin for generating RSS feed
   - jekyll-paginate  # Optional plugin for pagination support
+
+# List of files or directories to exclude from site processing
+exclude:
+  - README.md
 
 # Footer settings
 footer_content: |

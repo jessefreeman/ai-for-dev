@@ -1,3 +1,8 @@
+---
+title: "Articles"
+parent: "11 Additional Resources"
+order: 2
+---
 # Articles
 
 This section lists recommended reading and community links.

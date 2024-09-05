@@ -1,3 +1,8 @@
+---
+title: "Installing LM Studio"
+parent: "05 Installation"
+order: 1
+---
 # Installing LM Studio
 
 **LM Studio** is a free, more user-friendly tool designed for developers and data scientists to run LLMs locally on their machines. It provides a clean interface and the ability to facilitate the deployment and testing of LLMs without needing extensive cloud resources or messing with the command line, setting up services, and connecting to API endpoints. To get started with LM Studio, download it from the official [LM Studio website](https://lmstudio.ai/).

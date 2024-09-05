@@ -1,3 +1,8 @@
+---
+title: "Evaluating Models with a Standardized Test"
+parent: "06 Evaluation"
+order: 2
+---
 # Evaluating Models with a Standardized Test
 
 To determine the best CodeLlama Instruct model for your MacBook Pro M3 Max, we need a comprehensive and consistent test that challenges the models and allows us to evaluate their performance in terms of speed, accuracy, and resource usage. The chosen prompt involves creating a simple React note-taking application, which will test the models' abilities to generate detailed, functional code while handling various aspects of modern JavaScript development.

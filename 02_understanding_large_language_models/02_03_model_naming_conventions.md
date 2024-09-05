@@ -1,3 +1,8 @@
+---
+title: "Model Naming Conventions"
+parent: "02 Understanding Large Language Models"
+order: 3
+---
 # Model Naming Conventions
 
 Different variations of modes like CodeLlama attempt to optimize memory usage, resources requirements, and speed. Choosing the right model depends on your specific needs and the capabilities of your hardware. Since our goal is to have a dependable local LLM that can assist us in generating detailed and accurate code, we’ll be focusing on the CodeLlama Instruct models and over time I’ll add information about new models I test or use. But before you pick the right one, we should discuss how to read and understand each model’s name. 

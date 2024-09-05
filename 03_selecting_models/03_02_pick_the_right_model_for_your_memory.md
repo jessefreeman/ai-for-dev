@@ -1,3 +1,8 @@
+---
+title: "Pick the Right Model for Your Memory"
+parent: "03 Selecting Models"
+order: 2
+---
 # Pick the Right Model for Your Memory
 
 When running local language models (LLMs), it's crucial to choose a model that matches your system's capabilities. Models typically come in standard sizes like 8B and 70B, which refer to the number of parameters or the complexity of the model. The more parameters a model has, the more detailed and nuanced its outputs can be, but this also requires more memory and processing power.

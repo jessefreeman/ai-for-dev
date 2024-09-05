@@ -1,3 +1,8 @@
+---
+title: "How Models Are Scaled"
+parent: "02 Understanding Large Language Models"
+order: 7
+---
 # How Models Are Scaled
 
 Scaling up a model, such as going from an 8B (8 billion parameters) model to a 13B, 34B, or even larger, involves a significant increase in the model’s complexity and capacity. This process is crucial for developing models that can handle more intricate tasks, provide greater accuracy, and generate more sophisticated outputs. Here’s how this scaling process works:
@@ -44,7 +49,3 @@ While scaling up a model provides greater capacity and performance, it also come
 #### Conclusion
 
 Scaling models is a crucial process in the development of advanced LLMs, allowing them to handle more complex tasks and deliver more accurate outputs. By understanding the methods and challenges involved in making a model bigger, developers and researchers can better utilize these powerful tools to push the boundaries of what AI can achieve.
-
----
-
-This section should provide a comprehensive overview of how models are scaled up and what that entails. Let me know if this fits well into your guide or if there’s anything else you’d like to adjust!

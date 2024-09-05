@@ -1,3 +1,8 @@
+---
+title: "CodeLlama 3.1 Instruct Variations"
+parent: "03 Selecting Models"
+order: 6
+---
 # CodeLlama 3.1 Instruct Variations
 
 To optimize performance based on your system's memory, here are Code Llama Instruct model variations from LM Studio, categorized by performance tier. These categories range from fast and efficient to resource-intensive with maximum precision.
@@ -23,22 +28,6 @@ For developers with 8 GB of memory, the `TheBloke/CodeLlama-7B-Instruct-GGUF-Q5_
 
 This model is well-suited for tasks requiring quick responses and moderate precision, making it ideal for rapid iterations and less resource-intensive coding tasks. The Q5_K_M quantization strikes a good balance between memory usage and computational efficiency. However, suppose you want to push the boundaries with higher precision. In that case, you might try the phind-codellama-7B-v1.Q8_0.gguf model, which offers maximum precision with a memory usage that’s likely higher than most 8 GB systems can comfortably handle, so it may be worth trying on systems with 16 GB of memory.
 
----
-
-#### Balanced Performance (16 GB Memory)
-
-For systems with 16 GB of memory, the `TheBloke/CodeLlama-13B-Instruct-GGUF-Q6_K` model offers balanced performance, combining speed with high precision.
-
-| **Parameter**      | **Value** |
-| ------------------ | --------- |
-| Memory Usage       | ~14-16 GB |
-| Resources Required | High      |
-| Speed              | Moderate  |
-| Precision          | Very High |
-
-This model is ideal for complex coding tasks that demand both performance and accuracy. The Q6_K quantization ensures efficient use of memory while delivering high-quality outputs, making it a versatile choice for a wide range of programming challenges.  If your system can handle more, you could experiment with models like the `phind-codellama-13B-v1.Q8_0.gguf`, pushing precision even further, though at the cost of increased memory usage and potentially reduced speed.
-
----
 
 #### High Precision (32 GB Memory)
 

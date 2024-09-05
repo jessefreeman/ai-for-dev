@@ -1,3 +1,8 @@
+---
+title: "Custom Built PCs"
+parent: "09 Advanced Usage"
+order: 3
+---
 # Custom Built PCs
 
 When building a custom PC for running local LLMs, it's important to prioritize the components that will have the greatest impact on performance for your specific use case. Here are some key considerations to keep in mind:

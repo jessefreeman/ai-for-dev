@@ -1,3 +1,8 @@
+---
+title: "Overview of Code Llama Variations"
+parent: "04 Models For Coding"
+order: 1
+---
 # Overview of Code Llama Variations
 
 In my exploration of the Code Llama models, I’ve found them to be a strong tool for coding tasks. Built on Meta’s Llama 2, these models are trained on a vast corpus of publicly available code, making them effective at generating accurate and contextually relevant code snippets. This makes them invaluable for a range of coding tasks, from basic code completion to more complex problem-solving.
@@ -29,4 +34,3 @@ To give you a clear overview of how each variation of CodeLlama performs, here�
 This table focuses exclusively on the different CodeLlama variations, providing a clear overview of their memory usage, resource requirements, speed, and key strengths.
 
 CodeLlama-Instruct isn’t the only option available. There are other open-source models that offer unique strengths, depending on your specific needs. Whether you’re working on multi-language projects, need general-purpose coding assistance, or are exploring more specialized tools, the following section will introduce some of these alternatives and how they might complement your development environment.
-

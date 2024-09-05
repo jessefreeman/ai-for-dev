@@ -1,3 +1,8 @@
+---
+title: "Optimizing LM Studio for Apple Silicon"
+parent: "05 Installation"
+order: 3
+---
 # Optimizing LM Studio for Apple Silicon
 
 Running large language models (LLMs) locally on your Apple Silicon Mac can significantly enhance performance, privacy, and cost efficiency. However, to get the best results, it is crucial to configure LM Studio appropriately based on your specific hardware capabilities. Here’s a detailed guide on the key settings and their importance, followed by tailored configurations for high-end, medium-end, and low-end Apple Silicon Macs.

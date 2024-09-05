@@ -1,3 +1,8 @@
+---
+title: "Creating a Shell Script"
+parent: "08 Prompts"
+order: 2
+---
 # Creating a Shell Script
 
 One of the things LLMs excel at is creating simple, self-contained scripts to help you automate repetitive tasks. For example, I needed a way to rebuild this guide's TOC every time I moved sections or chapters around. I started with ChatGPT but wasn't happy with the results, so I switched to Github Copilot since I was already editing and running the script through Visual Studio code. I use these kinds of shell scripts all the time and they are a pain to build from scratch. I'll walk you through my process so you can see how I break the problems up into smaller tasks the LLM can handle better. The end goal was a script that would do the following:

@@ -1,3 +1,8 @@
+---
+title: "Overview of Large Language Models"
+parent: "02 Understanding Large Language Models"
+order: 1
+---
 # Overview of Large Language Models
 
 Large Language Models (LLMs) represent a significant advancement in artificial intelligence, transforming how we interact with technology and manage complex tasks. When I joined Samsung in 2019 to do AI, LLMs like today’s version of ChatGPT were still science fiction. Fast forward to now and I can't imagine writing or coding without one. 

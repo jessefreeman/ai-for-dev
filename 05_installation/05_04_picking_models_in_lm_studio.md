@@ -1,3 +1,8 @@
+---
+title: "Picking Models in LM Studio"
+parent: "05 Installation"
+order: 4
+---
 # Picking Models in LM Studio
 
 Selecting the right model in LM Studio is crucial for optimizing performance and ensuring that your system can handle the demands of large language models (LLMs). This guide will help you understand the key factors involved in choosing a model, from understanding model size and memory requirements to knowing how to leverage your CPU and GPU effectively.

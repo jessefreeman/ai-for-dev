@@ -1,3 +1,8 @@
+---
+title: "Why Run Large Language Models Locally?"
+parent: "01 Introduction"
+order: 2
+---
 # Why Run Large Language Models Locally?
 
 Running large language models (LLMs) locally on your computer offers several compelling advantages for developers, such as control, cost-efficiency, and a deeper understanding of how these models work. Unlike relying on online services like OpenAI’s ChatGPT, local deployment allows you to leverage your existing hardware, maintain complete control over your data, and demystify the inner workings of how these things work.

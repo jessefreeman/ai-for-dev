@@ -1,3 +1,8 @@
+---
+title: "How To Use This Guide"
+parent: "01 Introduction"
+order: 1
+---
 # How To Use This Guide
 
 I’ve been using ChatGPT and other Large Language Models (LLMs) to help me code for well over a year now. For the most part, it’s amazing and has helped me turn a lot of my ideas into working projects. However, there are also times when something gets updated behind the scenes, and ChatGPT loses a few IQ points. As someone who loves to tinker, I figured I’d give running local LLMs a try. Some of the advantages are allowing me to use multiple models at once, leveraging my computer's own hardware, and have full control of my development environment.

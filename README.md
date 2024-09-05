@@ -1,3 +1,10 @@
+---
+title: "AI for Dev"
+layout: default  # or home, depending on your layout
+permalink: /
+order: 0  # Set order to 0 so it appears at the top
+---
+
 # AI For Dev `V0.2.1` 
 
 Welcome to the AI For Dev guide! This constantly evolving guide is designed to help developers set up and optimize local Large Language Models (LLMs) for help with coding. Whether you're looking to leverage the power of AI to enhance your productivity, are still learning how to code, or want to gain a deeper understanding of how these models work, this guide is a collection of findings, experiments, and observations to help you in your journey.

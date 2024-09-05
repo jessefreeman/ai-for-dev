@@ -1,3 +1,8 @@
+---
+title: "Other Notable Open Source Models for Coding"
+parent: "04 Models For Coding"
+order: 2
+---
 # Other Notable Open Source Models for Coding
 
 While Code Llama models are a significant step forward in coding LLMs, there are other open-source models that also offer robust capabilities for developers, particularly when it comes to versatility and multi-functional tasks.

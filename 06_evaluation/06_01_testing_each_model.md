@@ -1,3 +1,8 @@
+---
+title: "Testing Each Model"
+parent: "06 Evaluation"
+order: 1
+---
 # Testing Each Model
 
 To determine which model works best for your needs, you should follow a systematic approach to testing each one. Start by evaluating the codellama-13b-instruct.Q3_K_S.gguf model for tasks that require quick responses. Note the speed and adequacy of the outputs for your typical coding tasks.
