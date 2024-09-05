@@ -4,8 +4,8 @@ remote_theme: just-the-docs/just-the-docs
 search_enabled: true
 
 # Base URL and Repository Settings
-baseurl: ""  # the subpath of your site, for example /blog
-url: "https://jessefreeman.github.io/ai-for-dev/"  # the base hostname & protocol for your site
+baseurl: "/ai-for-dev"  # if your repo is named ai-for-dev
+url: "https://jessefreeman.github.io"
 
 # Sidebar Navigation
 just_the_docs:
