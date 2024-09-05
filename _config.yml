@@ -4,7 +4,7 @@ remote_theme: just-the-docs/just-the-docs
 search_enabled: true
 
 # Base URL and Repository Settings
-baseurl: "/ai-for-dev"  # if your repo is named ai-for-dev
+baseurl: "/ai-for-dev"  # or set to "" if in the root directory
 url: "https://jessefreeman.github.io"
 
 # Sidebar Navigation
@@ -27,7 +27,9 @@ plugins:
 # Footer settings
 footer_content: |
   <p><strong>AI for Dev</strong> - A guide to running LLMs for coding assistance locally.</p>
-  <p>Find more resources and follow us on <a href="https://twitter.com/yourhandle">Twitter</a>.</p>
+  <p>Find more resources on <a href="https://github.com/jessefreeman/ai-for-dev">GitHub</a>.</p>
+
+# Edit timestamp and link
 last_edit_timestamp: true  # Show last edit timestamp on pages
 last_edit_time_format: "%b %e %Y at %I:%M %p"  # Format for last edit timestamp
 back_to_top: true  # Show "Back to top" link at the bottom of every page
@@ -37,9 +39,3 @@ heading_anchors: true
 
 # Copy button for code snippets
 enable_copy_code_button: true
-
-# Markdown rendering options
-kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
