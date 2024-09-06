@@ -4,8 +4,8 @@ remote_theme: just-the-docs/just-the-docs
 search_enabled: true
 
 # Base URL and Repository Settings
-baseurl: "/ai-for-dev"  # or set to "" if in the root directory
-url: "https://jessefreeman.github.io"
+baseurl: ""  # or set to "" if in the root directory
+url: "https://aifor.dev"
 
 # Sidebar Navigation
 just_the_docs:
