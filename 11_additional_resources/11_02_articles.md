@@ -20,6 +20,8 @@ This section lists recommended reading and community links.
 * [Local LLMs on Apple Silicon](https://medium.com/@aadityaubhat/local-llms-on-apple-silicon-39194de71ab7) by [Aaditya Bhat](https://medium.com/@aadityaubhat): Insights and techniques for running local LLMs \`on Apple Silicon, highlighting performance optimizations and practical applications.
 * [Local LLM Fine-Tuning on Mac M1 16GB](https://towardsdatascience.com/local-llm-fine-tuning-on-mac-m1-16gb-f59f4f598be7) by [Shaw Talebi](https://shawhin.medium.com/): This article explores fine-tuning local LLMs on a Mac M1 with 16GB RAM, offering insights and steps for effective model training and optimization.
 * [A Simple, Practical Guide to Running Large-Language Models on Your Laptop](https://medium.com/predict/a-simple-comprehensive-guide-to-running-large-language-models-locally-on-cpu-and-or-gpu-using-c0c2a8483eee) by [Ryan Stewart](https://medium.com/@ryanstewart): This guide shows how to run large-language models locally on your laptop using `llama-cpp-python` and GGUF models. It highlights benefits like cost savings, privacy, and faster iteration, providing step-by-step instructions for setup on both CPU and GPU.
+* [How Much GPU Memory is Needed to Serve a Large Language Model (LLM)?](https://medium.com/@masteringllm/how-much-gpu-memory-is-needed-to-serve-a-large-languagemodel-llm-b1899bb2ab5d) by [Mastering LLM](https://medium.com/@masteringllm): This article provides a formula to estimate the GPU memory needed for LLM deployment, covering key factors like model size, precision, and overhead, with practical tips for scaling models like GPT and LLaMA.
+
 
 ### Advanced Usage
 
