@@ -1,7 +1,7 @@
 ---
-title: "07 Best Practices"
+title: "Best Practices"
 has_children: true
-order: 7
+nav_order: 7
 ---
 
 # 07 Best Practices

@@ -1,7 +1,7 @@
 ---
 title: "Models Variations"
-parent: "02 Understanding Large Language Models"
-order: 2
+parent: "Understanding Large Language Models"
+nav_order: 2
 ---
 # Models Variations
 

@@ -1,7 +1,7 @@
 ---
-title: "08 Prompts"
+title: "Prompts"
 has_children: true
-order: 8
+nav_order: 8
 ---
 
 # 08 Prompts

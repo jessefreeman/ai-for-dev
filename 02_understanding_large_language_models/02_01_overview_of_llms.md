@@ -1,7 +1,7 @@
 ---
 title: "Overview of Large Language Models"
-parent: "02 Understanding Large Language Models"
-order: 1
+parent: "Understanding Large Language Models"
+nav_order: 1
 ---
 # Overview of Large Language Models
 

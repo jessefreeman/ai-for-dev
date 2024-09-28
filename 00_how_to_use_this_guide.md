@@ -1,7 +1,7 @@
 ---
 title: "How To Use This Guide"
-parent: "01 Introduction"
-order: 1
+permalink: /
+nav_order: 0
 ---
 # How To Use This Guide
 

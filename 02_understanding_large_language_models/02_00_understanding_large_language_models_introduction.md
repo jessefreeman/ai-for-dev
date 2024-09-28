@@ -1,7 +1,7 @@
 ---
-title: "02 Understanding Large Language Models"
+title: "Understanding Large Language Models"
 has_children: true
-order: 2
+nav_order: 2
 ---
 # 02 Understanding Large Language Models
 

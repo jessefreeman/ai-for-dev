@@ -1,7 +1,14 @@
 title: "AI for Dev"
 description: "A guide on how to run Large Language Models (LLMs) locally for coding assistance."
 remote_theme: just-the-docs/just-the-docs
-search_enabled: true
+collections:
+  docs:
+    output: true
+    sort_by: 'order'
+
+aux_links:
+  AI for Dev on GitHub:
+    - https://github.com/jessefreeman/ai-for-dev
 
 # Base URL and Repository Settings
 baseurl: ""  # or set to "" if in the root directory
@@ -16,7 +23,7 @@ just_the_docs:
   repository_url: "https://github.com/jessefreeman/ai-for-dev"
   edit:
     enabled: true  # Enable the Edit on GitHub link
-    base_url: "https://github.com/jessefreeman/ai-for-dev/edit/main/"  # URL for editing the file
+    base_url: "https://github.com/jessefreeman/ai-for-dev/edit/main/"
 
 # Enable plugins
 plugins:
@@ -39,3 +46,12 @@ heading_anchors: true
 
 # Copy button for code snippets
 enable_copy_code_button: true
+
+# Set default ordering for all docs
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: "default"
+      nav_order: 0

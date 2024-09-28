@@ -1,7 +1,7 @@
 ---
 title: "Configuring LM Studio on Apple Silicon"
-parent: "05 Installation"
-order: 2
+parent: "Installation"
+nav_order: 2
 ---
 # Configuring LM Studio on Apple Silicon
 

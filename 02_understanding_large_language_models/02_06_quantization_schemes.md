@@ -1,7 +1,7 @@
 ---
 title: "Quantization Schemes"
-parent: "02 Understanding Large Language Models"
-order: 6
+parent: "Understanding Large Language Models"
+nav_order: 6
 ---
 # Quantization Schemes
 

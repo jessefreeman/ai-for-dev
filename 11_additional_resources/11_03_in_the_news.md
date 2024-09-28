@@ -1,7 +1,7 @@
 ---
 title: "In the News"
-parent: "11 Additional Resources"
-order: 3
+parent: "Additional Resources"
+nav_order: 3
 ---
 # In the News
 

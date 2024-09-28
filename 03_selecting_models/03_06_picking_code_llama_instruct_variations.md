@@ -1,7 +1,7 @@
 ---
 title: "CodeLlama 3.1 Instruct Variations"
-parent: "03 Selecting Models"
-order: 6
+parent: "Selecting Models"
+nav_order: 6
 ---
 # CodeLlama 3.1 Instruct Variations
 

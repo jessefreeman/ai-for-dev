@@ -1,7 +1,7 @@
 ---
 title: "Offloading to the GPU"
-parent: "03 Selecting Models"
-order: 5
+parent: "Selecting Models"
+nav_order: 5
 ---
 # Offloading to the GPU
 

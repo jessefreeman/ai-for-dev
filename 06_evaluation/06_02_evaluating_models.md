@@ -1,7 +1,7 @@
 ---
 title: "Evaluating Models with a Standardized Test"
-parent: "06 Evaluation"
-order: 2
+parent: "Evaluation"
+nav_order: 2
 ---
 # Evaluating Models with a Standardized Test
 

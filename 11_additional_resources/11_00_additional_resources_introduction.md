@@ -1,7 +1,7 @@
 ---
-title: "11 Additional Resources"
+title: "Additional Resources"
 has_children: true
-order: 11
+nav_order: 11
 ---
 
 # 11 Additional Resources

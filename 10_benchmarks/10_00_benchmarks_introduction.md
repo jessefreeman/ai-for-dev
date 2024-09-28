@@ -1,7 +1,7 @@
 ---
-title: "10 Benchmarks"
+title: "Benchmarks"
 has_children: true
-order: 10
+nav_order: 10
 ---
 
 # 10 Benchmarks

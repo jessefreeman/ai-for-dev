@@ -1,7 +1,7 @@
 ---
 title: "Testing Each Model"
-parent: "06 Evaluation"
-order: 1
+parent: "Evaluation"
+nav_order: 1
 ---
 # Testing Each Model
 

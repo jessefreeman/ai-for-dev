@@ -1,7 +1,7 @@
 ---
 title: "Picking Models in LM Studio"
-parent: "05 Installation"
-order: 4
+parent: "Installation"
+nav_order: 4
 ---
 # Picking Models in LM Studio
 

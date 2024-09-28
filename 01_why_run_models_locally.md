@@ -1,7 +1,6 @@
 ---
 title: "Why Run Large Language Models Locally?"
-parent: "01 Introduction"
-order: 2
+nav_order: 1
 ---
 # Why Run Large Language Models Locally?
 

@@ -1,7 +1,7 @@
 ---
 title: "Pick the Right Model for Your Memory"
-parent: "03 Selecting Models"
-order: 2
+parent: "Selecting Models"
+nav_order: 2
 ---
 # Pick the Right Model for Your Memory
 

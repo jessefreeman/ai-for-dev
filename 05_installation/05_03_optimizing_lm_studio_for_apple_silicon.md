@@ -1,7 +1,7 @@
 ---
 title: "Optimizing LM Studio for Apple Silicon"
-parent: "05 Installation"
-order: 3
+parent: "Installation"
+nav_order: 3
 ---
 # Optimizing LM Studio for Apple Silicon
 

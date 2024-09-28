@@ -1,7 +1,7 @@
 ---
 title: "Selecting the Right Model"
-parent: "03 Selecting Models"
-order: 1
+parent: "Selecting Models"
+nav_order: 1
 ---
 # Selecting the Right Model
 

@@ -1,11 +1,12 @@
 ---
-title: "Personal Computer Results"
-parent: "10 Benchmarks"
-order: 1
+title: "Personal Computer Results"  
+parent: "Benchmarks"  
+nav_order: 1 
 ---
+
 # Personal Computer Results
 
-These are my personal computers that I've been benchmarking using **Geekbench AI**. This benchmarking tool provides detailed insights into how different systems perform AI-centric tasks, including image processing, object detection, and style transfer. It offers performance scores based on three types of precision: **Single Precision**, **Half Precision**, and **Quantized**. Each system's GPU and CPU capabilities are tested, and the results help me evaluate their strengths in handling various AI workloads.
+These are my personal computers that I've been benchmarking using **Geekbench AI**. This benchmarking tool provides detailed insights into how different systems perform AI-centric tasks, including image processing, object detection, and style transfer. It offers performance scores based on three types of precision: **Single Precision**, **Half Precision**, and **Quantized**. Each system's **GPU** and **CPU** capabilities are tested, and the results help evaluate their strengths in handling various AI workloads.
 
 ## The Benchmark Tests
 
@@ -33,7 +34,7 @@ These are my personal computers that I've been benchmarking using **Geekbench AI
 
    I also benchmarked **Apple's Neural Engine** using **Core ML**. The Neural Engine is optimized for fast AI inference, and this test showcases its ability to perform AI tasks efficiently, particularly in tasks like object detection and style transfer.
 
-3. #### macOS GPU Benchmarks (Core ML Framework)**
+3. #### **macOS GPU Benchmarks (Core ML Framework)**
 
    Lastly, I tested the **Apple M3 Max's GPU** using **Core ML**. This benchmark shows how Apple's GPU handles AI workloads that benefit from parallel processing, particularly tasks like image super-resolution and pose estimation.
 
@@ -66,24 +67,31 @@ This gives a standardized way to compare the systems based on the amount of perf
 
 ### GPU Performance per $100 Spent (IPS)
 
-| **Rank** | **System**                     | **Best AI Task**       | **Best AI Task Performance (IPS)** | **Current Price** | **Performance per $100 Spent (IPS)** |
-| -------- | ------------------------------ | ---------------------- | ---------------------------------- | ----------------- | ------------------------------------ |
-| 1        | Ryzen 7 5800X + RTX 4070 Super | Image Super-Resolution | 2,170 IPS                          | ~$1,169.51        | ~185.6 IPS per $100                  |
-| 2        | Intel NUC9V7QNX                | Image Super-Resolution | 1,370 IPS                          | ~$814.96          | ~168.1 IPS per $100                  |
-| 3        | MacBook Pro M3 Max             | Image Super-Resolution | 817.9 IPS                          | ~$2,999           | ~27.3 IPS per $100                   |
+### GPU Performance Table
 
-### CPU Performance per $100 Spent (IPS)
+| **Rank** | **System**                     | **RAM**         | **GPU**                           | **Single Precision Benchmark** | **Price-to-Performance (IPS per $100)** |
+| -------- | ------------------------------ | --------------- | --------------------------------- | ------------------------------ | --------------------------------------- |
+| 1        | Ryzen 7 5800X + RTX 4070 Super  | 32 GB DDR4      | NVIDIA GeForce RTX 4070 Super     | 37,950                          | 3,246                                   |
+| 2        | ASUS ProArt P16                 | 32 GB DDR5      | NVIDIA GeForce RTX 4070 Laptop    | 31,754                          | 1,574                                   |
+| 3        | Intel NUC9V7QNX                 | 64 GB DDR4      | NVIDIA GeForce RTX 4060           | 13,705                          | 1,682                                   |
+| 4        | MacBook Pro M3 Max              | 36 GB Unified   | 30-core GPU                      | 13,358                          | 446                                     |
+| 5        | ASUS ROG Zephyrus G15           | 16 GB DDR5      | NVIDIA GeForce RTX 3060           | 12,848                          | 988                                     |
 
-| **Rank** | **System**                     | **Best AI Task**    | **Best AI Task Performance (IPS)** | **Current Price** | **Performance per $100 Spent (IPS)** |
-| -------- | ------------------------------ | ------------------- | ---------------------------------- | ----------------- | ------------------------------------ |
-| 1        | MacBook Pro M3 Max             | Text Classification | 6,110 IPS                          | ~$2,999           | ~203.7 IPS per $100                  |
-| 2        | Ryzen 7 5800X + RTX 4070 Super | Style Transfer      | 53.4 IPS                           | ~$1,169.51        | ~4.57 IPS per $100                   |
-| 3        | Intel NUC9V7QNX                | Pose Estimation     | 9.57 IPS                           | ~$814.96          | ~1.17 IPS per $100                   |
+### CPU Performance Table
+
+| **Rank** | **System**                     | **RAM**         | **CPU**                        | **Single Precision Benchmark** | **Price-to-Performance (IPS per $100)** |
+| -------- | ------------------------------ | --------------- | ----------------------------- | ------------------------------ | --------------------------------------- |
+| 1        | ASUS ProArt P16                 | 32 GB DDR5      | AMD Ryzen AI 9 HX 370          | 5,295                           | 262                                     |
+| 2        | Ryzen 7 5800X + RTX 4070 Super  | 32 GB DDR4      | AMD Ryzen 7 5800X              | 4,991                           | 427                                     |
+| 3        | ASUS ROG Zephyrus G15           | 16 GB DDR5      | AMD Ryzen 9 6900HS             | 4,219                           | 325                                     |
+| 4        | MacBook Pro M3 Max              | 36 GB Unified   | Apple M3 Max 14-core CPU       | 5,356                           | 179                                     |
+| 5        | Intel NUC9V7QNX                 | 64 GB DDR4      | Intel Core i7-9850H            | 3,434                           | 421                                     |
 
 These tables provide a clear comparison of how each system performs in terms of GPU and CPU tasks, relative to its cost. This allows for an easier comparison of performance per dollar, making it more straightforward to decide which system offers the best value for AI tasks.
 
-Here are the instructions for adding your own benchmarks to the project. This section will guide contributors on how to clone the project, perform tests, and submit their benchmark results for inclusion.
+---
 
+To submit your own benchmarks, clone the repository, create a new branch, and run your tests using Geekbench AI or another benchmarking tool. Add your system’s results using the template provided, including details like CPU, GPU, RAM, and your Single Precision, Half Precision, and Quantized scores. After committing your changes, push the branch to GitHub and open a pull request with a clear description of your submission.
 
 ### **[System Name] | [Framework] | [Backend] Benchmarks**
 

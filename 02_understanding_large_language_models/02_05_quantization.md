@@ -1,7 +1,7 @@
 ---
 title: "Quantization"
-parent: "02 Understanding Large Language Models"
-order: 5
+parent: "Understanding Large Language Models"
+nav_order: 5
 ---
 # Quantization
 

@@ -1,7 +1,7 @@
 ---
 title: "Model Naming Conventions"
-parent: "02 Understanding Large Language Models"
-order: 3
+parent: "Understanding Large Language Models"
+nav_order: 3
 ---
 # Model Naming Conventions
 

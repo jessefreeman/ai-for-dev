@@ -1,7 +1,7 @@
 ---
-title: "06 Evaluation"
+title: "Evaluation"
 has_children: true
-order: 6
+nav_order: 6
 ---
 
 # 06 Evaluation

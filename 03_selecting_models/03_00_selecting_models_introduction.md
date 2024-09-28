@@ -1,7 +1,7 @@
 ---
-title: "03 Selecting Models"
+title: "Selecting Models"
 has_children: true
-order: 3
+nav_order: 3
 ---
 
 # 03 Selecting Models

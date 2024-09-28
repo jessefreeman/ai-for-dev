@@ -1,7 +1,7 @@
 ---
 title: "Installing LM Studio"
-parent: "05 Installation"
-order: 1
+parent: "Installation"
+nav_order: 1
 ---
 # Installing LM Studio
 

@@ -1,7 +1,7 @@
 ---
 title: "Articles"
-parent: "11 Additional Resources"
-order: 2
+parent: "Additional Resources"
+nav_order: 2
 ---
 # Articles
 

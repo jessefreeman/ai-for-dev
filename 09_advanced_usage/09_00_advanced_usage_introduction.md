@@ -1,7 +1,7 @@
 ---
-title: "09 Advanced Usage"
+title: "Advanced Usage"
 has_children: true
-order: 9
+nav_order: 9
 ---
 
 # 09 Advanced Usage

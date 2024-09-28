@@ -1,7 +1,7 @@
 ---
 title: "Custom Built PCs"
-parent: "09 Advanced Usage"
-order: 3
+parent: "Advanced Usage"
+nav_order: 3
 ---
 # Custom Built PCs
 

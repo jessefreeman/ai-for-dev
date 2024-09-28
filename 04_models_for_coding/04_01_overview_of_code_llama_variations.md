@@ -1,7 +1,7 @@
 ---
 title: "Overview of Code Llama Variations"
-parent: "04 Models For Coding"
-order: 1
+parent: "Models For Coding"
+nav_order: 1
 ---
 # Overview of Code Llama Variations
 

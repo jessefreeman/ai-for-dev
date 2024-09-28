@@ -1,7 +1,7 @@
 ---
 title: "How Models Are Scaled"
-parent: "02 Understanding Large Language Models"
-order: 7
+parent: "Understanding Large Language Models"
+nav_order: 7
 ---
 # How Models Are Scaled
 

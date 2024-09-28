@@ -1,7 +1,7 @@
 ---
-title: "04 Models For Coding"
+title: "Models For Coding"
 has_children: true
-order: 4
+nav_order: 4
 ---
 
 # 04 Models For Coding

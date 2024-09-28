@@ -1,7 +1,7 @@
 ---
 title: "CPU vs. GPU and Inferencing"
-parent: "03 Selecting Models"
-order: 4
+parent: "Selecting Models"
+nav_order: 4
 ---
 # CPU vs. GPU and Inferencing
 

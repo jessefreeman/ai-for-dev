@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for Running Local LLMs"
-parent: "07 Best Practices"
-order: 1
+parent: "Best Practices"
+nav_order: 1
 ---
 # Best Practices for Running Local LLMs
 

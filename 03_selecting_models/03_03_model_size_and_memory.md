@@ -1,7 +1,7 @@
 ---
 title: "Model Size and Memory"
-parent: "03 Selecting Models"
-order: 3
+parent: "Selecting Models"
+nav_order: 3
 ---
 # Model Size and Memory
 

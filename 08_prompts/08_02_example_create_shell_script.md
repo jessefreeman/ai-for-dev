@@ -1,7 +1,7 @@
 ---
 title: "Creating a Shell Script"
-parent: "08 Prompts"
-order: 2
+parent: "Prompts"
+nav_order: 2
 ---
 # Creating a Shell Script
 

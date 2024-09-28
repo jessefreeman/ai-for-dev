@@ -1,7 +1,7 @@
 ---
-title: "05 Installation"
+title: "Installation"
 has_children: true
-order: 5
+nav_order: 5
 ---
 
 # 05 Installation

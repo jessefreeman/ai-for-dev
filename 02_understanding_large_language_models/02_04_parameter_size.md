@@ -1,7 +1,7 @@
 ---
 title: "Parameter Size"
-parent: "02 Understanding Large Language Models"
-order: 4
+parent: "Understanding Large Language Models"
+nav_order: 4
 ---
 # Parameter Size
 

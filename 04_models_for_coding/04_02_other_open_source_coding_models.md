@@ -1,7 +1,7 @@
 ---
 title: "Other Notable Open Source Models for Coding"
-parent: "04 Models For Coding"
-order: 2
+parent: "Models For Coding"
+nav_order: 2
 ---
 # Other Notable Open Source Models for Coding
 
