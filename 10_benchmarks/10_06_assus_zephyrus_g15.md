@@ -1,10 +1,10 @@
 ---
-title: "ASUS ROG Zephyrus G15 + AMD Ryzen 9 6900HS Performance Overview"  
+title: "ASUS ROG Zephyrus G15 + RTX 3060"  
 parent: "Benchmarks"  
 nav_order: 6
 ---
 
-# ASUS ROG Zephyrus G15 + AMD Ryzen 9 6900HS Performance Overview
+# ASUS ROG Zephyrus G15 + RTX 3060 Performance Overview
 
 The ASUS ROG Zephyrus G15, featuring an **AMD Ryzen 9 6900HS CPU**, **16 GB of RAM**, and an **NVIDIA GeForce RTX 3060 Laptop GPU**, delivers impressive AI performance in GPU-heavy workloads. The **RTX 3060** excels in tasks like **Style Transfer**, **Depth Estimation**, and **Object Detection**. Additionally, the integrated **AMD Radeon Graphics (iGPU)** provides extra versatility for lighter AI tasks. This combination makes the G15 a solid option for developers seeking portable AI processing power.
 

@@ -1,0 +1,50 @@
+/* Headings */
+h1 {
+    font-size: 2.8rem;     /* Larger size for main headings */
+    font-weight: bold;     /* Strong, bold text */
+    margin-top: 1.5em;     /* Adds space above the heading */
+    margin-bottom: 0.75em; /* Tightens space below heading */
+    color: #333333;        /* Darker color for readability */
+    line-height: 1.2;      /* Compact line spacing */
+  }
+  
+  h2 {
+    font-size: 2.2rem;     /* Slightly smaller than h1 */
+    font-weight: bold;
+    margin-top: 1.25em;    
+    margin-bottom: 0.75em;
+    color: #444444;        /* Slightly lighter than h1 for visual distinction */
+    line-height: 1.3;      /* Slightly more breathing room */
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 1.2em;     
+    margin-bottom: 0.5em;
+    color: #555555;        /* Even lighter for subheadings */
+    line-height: 1.4;
+  }
+  
+  p {
+    font-size: 1.1rem;      /* Adjust for more readable paragraphs */
+    margin-top: 0.5em;      /* Adds a bit of space between paragraphs */
+    margin-bottom: 1.5em;   /* More space at the bottom for comfortable reading */
+    color: #666666;         /* Lighter gray for text */
+    line-height: 1.7;       /* Relaxed line height for easy reading */
+  }
+  
+  /* Additional optional styles */
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Clean font */
+    color: #333333;             /* General text color */
+  }
+  
+  a {
+    color: #0066cc;             /* Link color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none; /* Underline on hover */
+  }

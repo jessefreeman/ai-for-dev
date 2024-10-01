@@ -1,10 +1,10 @@
 ---
-title: "ASUS ProArt P16 H7606 + NVIDIA GeForce RTX 4070 Laptop GPU Performance Overview"  
+title: "ASUS ProArt P16 H7606 + RTX 4070"  
 parent: "Benchmarks"  
 nav_order: 5  
 ---
 
-# ASUS ProArt P16 + RTX 4070 Laptop GPU Performance Overview
+# ASUS ProArt P16 + RTX 4070 Performance Overview
 
 The ASUS ProArt P16, featuring a 12-core AMD Ryzen AI 9 HX 370 CPU, 32 GB of RAM, and the NVIDIA GeForce RTX 4070 Laptop GPU, is a robust machine for AI tasks like Pose Estimation, Style Transfer, and Object Detection. Despite being a laptop, it achieves impressive results when compared to desktop systems like the ASUS System Product Name and offers advantages such as portability and a high-quality 16-inch 4K OLED display. With a well-rounded performance across both CPU and GPU tasks, the ProArt P16 is a versatile choice for developers who need efficient, high-performance AI computing on Windows.
 

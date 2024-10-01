@@ -4,5 +4,5 @@ has_children: true
 nav_order: 11
 ---
 
-# 11 Additional Resources
+# Additional Resources
 This is the introduction to the chapter.

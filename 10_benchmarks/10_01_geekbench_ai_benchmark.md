@@ -53,41 +53,32 @@ The **Geekbench AI** benchmark tests systems on various real-world AI workloads.
 9. **Machine Translation**: Translates text between languages, crucial for chatbots, document translation, and multilingual communication.
 10. **Image Segmentation**: Splits an image into meaningful segments for analysis, widely used in medical imaging and autonomous driving.
 
-## Price-Performance Ratio
+## Benchmark Results
 
-To help compare systems, I calculated the **Performance per $100 Spent (IPS)**. This method highlights how much performance (in terms of **IPS** or **KIPS**) you're getting for every $100 invested.
+This section provides detailed results from the Geekbench AI tests on my personal computers. The tables below show the Single Precision scores for each system. The systems are ranked based on their Single Precision Benchmark scores, providing an overview of their AI performance capabilities.
 
-### Formula Used to Calculate Performance per $100 Spent
+### GPU Performance
 
-To calculate **Performance per $100 Spent**, I used the following formula:
+| **Rank** | **System**                     | **RAM**         | **GPU**                           | **VRAM**  | **Single Precision Benchmark** |
+| -------- | ------------------------------ | --------------- | --------------------------------- | --------- | ------------------------------ |
+| 1        | [Ryzen 7 5800X + RTX 4070 Super](./10_02_ryzen_7_4070s..md)  | 32 GB DDR4      | NVIDIA GeForce RTX 4070 Super     | 12 GB     | 37,950                          |
+| 2        | [ASUS ProArt P16](./10_05_asus_proart_p16.md)                 | 32 GB DDR5      | NVIDIA GeForce RTX 4070 Laptop    | 8 GB      | 31,754                          |
+| 3        | [Intel NUC9V7QNX](./10_04_nuc9v7qnx.md)                 | 64 GB DDR4      | NVIDIA GeForce RTX 4060           | 8 GB      | 13,705                          |
+| 4        | [MacBook Pro M3 Max](./10_03_m3_max.md)              | 36 GB Unified   | 30-core GPU                       | Unified   | 13,358                          |
+| 5        | [ASUS ROG Zephyrus G15](./10_06_asus_zephyrus_g15.md)           | 16 GB DDR5      | NVIDIA GeForce RTX 3060           | 6 GB      | 12,848                          |
+| 6        | [MacBook Air M2 (2022)](./10_07_m2_air.md)           | 16 GB Unified   | Apple M2 8-core GPU               | Unified   | 5,419                           |
 
-`Performance per $100 Spent = (Best Task Performance (IPS) / System Price) × 100`
 
-This gives a standardized way to compare the systems based on the amount of performance you're getting for every $100 you spend.
+### CPU Performance
 
-### GPU Performance per $100 Spent (IPS)
-
-### GPU Performance Table
-
-| **Rank** | **System**                     | **RAM**         | **GPU**                           | **Single Precision Benchmark** | **Price-to-Performance (IPS per $100)** |
-| -------- | ------------------------------ | --------------- | --------------------------------- | ------------------------------ | --------------------------------------- |
-| 1        | Ryzen 7 5800X + RTX 4070 Super  | 32 GB DDR4      | NVIDIA GeForce RTX 4070 Super     | 37,950                          | 3,246                                   |
-| 2        | ASUS ProArt P16                 | 32 GB DDR5      | NVIDIA GeForce RTX 4070 Laptop    | 31,754                          | 1,574                                   |
-| 3        | Intel NUC9V7QNX                 | 64 GB DDR4      | NVIDIA GeForce RTX 4060           | 13,705                          | 1,682                                   |
-| 4        | MacBook Pro M3 Max              | 36 GB Unified   | 30-core GPU                      | 13,358                          | 446                                     |
-| 5        | ASUS ROG Zephyrus G15           | 16 GB DDR5      | NVIDIA GeForce RTX 3060           | 12,848                          | 988                                     |
-
-### CPU Performance Table
-
-| **Rank** | **System**                     | **RAM**         | **CPU**                        | **Single Precision Benchmark** | **Price-to-Performance (IPS per $100)** |
-| -------- | ------------------------------ | --------------- | ----------------------------- | ------------------------------ | --------------------------------------- |
-| 1        | ASUS ProArt P16                 | 32 GB DDR5      | AMD Ryzen AI 9 HX 370          | 5,295                           | 262                                     |
-| 2        | Ryzen 7 5800X + RTX 4070 Super  | 32 GB DDR4      | AMD Ryzen 7 5800X              | 4,991                           | 427                                     |
-| 3        | ASUS ROG Zephyrus G15           | 16 GB DDR5      | AMD Ryzen 9 6900HS             | 4,219                           | 325                                     |
-| 4        | MacBook Pro M3 Max              | 36 GB Unified   | Apple M3 Max 14-core CPU       | 5,356                           | 179                                     |
-| 5        | Intel NUC9V7QNX                 | 64 GB DDR4      | Intel Core i7-9850H            | 3,434                           | 421                                     |
-
-These tables provide a clear comparison of how each system performs in terms of GPU and CPU tasks, relative to its cost. This allows for an easier comparison of performance per dollar, making it more straightforward to decide which system offers the best value for AI tasks.
+| **Rank** | **System**                     | **RAM**         | **CPU**                        | **Single Precision Benchmark** |
+| -------- | ------------------------------ | --------------- | ----------------------------- | ------------------------------ |
+| 1        | [MacBook Pro M3 Max](./10_03_m3_max.md)              | 36 GB Unified   | Apple M3 Max 14-core CPU       | 5,356                           |
+| 2        | [ASUS ProArt P16](./10_05_asus_proart_p16.md)                 | 32 GB DDR5      | AMD Ryzen AI 9 HX 370          | 5,295                           |
+| 3        | [Ryzen 7 5800X + RTX 4070 Super](./10_02_ryzen_7_4070s..md)  | 32 GB DDR4      | AMD Ryzen 7 5800X              | 4,991                           |
+| 4        | [ASUS ROG Zephyrus G15](./10_06_asus_zephyrus_g15.md)           | 16 GB DDR5      | AMD Ryzen 9 6900HS             | 4,219                           |
+| 5        | [Intel NUC9V7QNX](./10_04_nuc9v7qnx.md)                 | 64 GB DDR4      | Intel Core i7-9850H            | 3,434                           |
+| 6        | [MacBook Air M2 (2022)](./10_07_m2_air.md)           | 16 GB Unified   | Apple M2 8-core CPU            | 3,214                           |
 
 ---
 

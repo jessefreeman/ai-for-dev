@@ -1,5 +1,5 @@
 ---
-title: "Intel NUC9V7QNX + NVIDIA GeForce RTX 4060 Performance Overview"  
+title: "Intel NUC9V7QNX + RTX 4060"  
 parent: "Benchmarks"  
 nav_order: 4  
 ---

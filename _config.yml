@@ -31,11 +31,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-# Footer settings
-footer_content: |
-  <p><strong>AI for Dev</strong> - A guide to running LLMs for coding assistance locally.</p>
-  <p>Find more resources on <a href="https://github.com/jessefreeman/ai-for-dev">GitHub</a>.</p>
-
 # Edit timestamp and link
 last_edit_timestamp: true  # Show last edit timestamp on pages
 last_edit_time_format: "%b %e %Y at %I:%M %p"  # Format for last edit timestamp
