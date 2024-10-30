@@ -321,10 +321,7 @@ jobs:
         git push
       env:
        
-
- G
-
-ITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 The response also included an explanation of what this does and how it works:
