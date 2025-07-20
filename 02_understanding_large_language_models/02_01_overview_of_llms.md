@@ -3,17 +3,20 @@ title: "Overview of Large Language Models"
 parent: "Understanding Large Language Models"
 nav_order: 1
 ---
+
 # Overview of Large Language Models
 
-Large Language Models (LLMs) represent a significant advancement in artificial intelligence, transforming how we interact with technology and manage complex tasks. When I joined Samsung in 2019 to do AI, LLMs like today’s version of ChatGPT were still science fiction. Fast forward to now and I can't imagine writing or coding without one. 
+Large Language Models (LLMs) represent a significant advancement in artificial intelligence, transforming how we interact with technology and manage complex tasks. When I joined Samsung in 2019 to do AI, LLMs like today’s version of ChatGPT were still science fiction. Fast forward to now and I can't imagine writing or coding without one.
 
 At a high level, LLMs are sophisticated AI systems trained on vast amounts of text data to understand, generate, and manipulate human language. Their ability to comprehend and produce text with a high degree of fluency and accuracy makes them powerful tools for a wide range of applications but can be especially beneficial as you’ll see later on in this guide.
 
 ## What Are LLMs?
 
-LLMs are built using deep learning techniques, specifically leveraging transformer architecture (TODO: NEED TO EXPLAIN WHAT THIS IS). 
+LLMs are built using deep learning techniques, specifically leveraging **transformer architecture**. Transformers are a type of neural network architecture that was introduced in 2017 and revolutionized natural language processing. The key innovation of transformers is their use of "attention mechanisms" that allow the model to focus on different parts of the input text when generating each word, rather than processing text sequentially like older approaches.
 
-These models are pre-trained on diverse and extensive datasets, which enables them to understand context, infer meaning, and generate coherent and contextually appropriate text based on given prompts. The level of interaction you can get out of these LLMs when using them for coding never ceases to impress me. 
+Think of attention like highlighting the most important words in a sentence when you're trying to understand its meaning. For example, when processing "The cat sat on the mat," the transformer can simultaneously look at relationships between "cat" and "sat," "sat" and "mat," and so on, understanding that "cat" is the subject performing the action "sat." This parallel processing makes transformers much faster to train and more effective at understanding context than previous architectures.
+
+These models are pre-trained on diverse and extensive datasets, which enables them to understand context, infer meaning, and generate coherent and contextually appropriate text based on given prompts. The level of interaction you can get out of these LLMs when using them for coding never ceases to impress me.
 
 Here are some common types of LLMs:
 
