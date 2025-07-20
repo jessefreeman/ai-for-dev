@@ -1,7 +1,7 @@
 ---
 title: "Best Practices"
 has_children: true
-nav_order: 7
+nav_order: 6
 ---
 
 # Best Practices
@@ -73,7 +73,3 @@ Track your LLM integration success with these metrics:
 ## Getting Started
 
 Whether you're a solo developer or part of a team, start with the [Best Practices for Running Local LLMs](07_01_best_practices_for_running_local_llms.md) to establish a solid foundation for your local AI development environment.
-
----
-
-_These practices are derived from real-world experience and community feedback from developers successfully using local LLMs_

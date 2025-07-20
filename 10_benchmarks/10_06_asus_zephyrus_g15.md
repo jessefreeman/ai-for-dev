@@ -1,4 +1,9 @@
 ---
+title: "ASUS ROG Zephyrus G15 + RTX 3060 Performance Overview"
+parent: "Benchmarks"
+nav_order: 6
+---
+---
 title: "ASUS Zephyrus G15"  
 parent: "Benchmarks"  
 nav_order: 6

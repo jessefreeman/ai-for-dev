@@ -1,7 +1,7 @@
 ---
 title: "Additional Resources"
 has_children: true
-nav_order: 11
+nav_order: 10
 ---
 
 # Additional Resources
@@ -85,7 +85,3 @@ All resources in this section are:
 - **Current**: Recently published or regularly updated
 - **Accessible**: Available to the general public
 - **Quality**: Well-written, accurate, and useful
-
----
-
-_This section is continuously updated to reflect the latest developments in the local LLM ecosystem_

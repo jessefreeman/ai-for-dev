@@ -146,7 +146,10 @@ list_structure() {
 
   for entry in "$dir_path"/*; do
     if [ -d "$entry" ]; then
-      if [[ "$(basename "$entry")" =~ ^[0-9]{2}_ ]]; then
+      # Skip project management folders (starting with _)
+      if [[ "$(basename "$entry")" =~ ^_ ]]; then
+        echo "Skipping project folder: $(basename "$entry")"
+      elif [[ "$(basename "$entry")" =~ ^[0-9]{2}_ ]]; then
         echo "Processing folder: $(basename "$entry")"
         process_markdown_files "$entry" "$chapter_order"
         ((chapter_order++))

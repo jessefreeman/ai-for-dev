@@ -1,7 +1,7 @@
 ---
 title: "Installation"
 has_children: true
-nav_order: 5
+nav_order: 4
 ---
 
 # Installation
@@ -48,7 +48,3 @@ This section guides you through installing and configuring various local LLM pla
 ## Getting Started
 
 New users should start with [Installing LM Studio](05_01_installing_lm_studio.md) for the easiest setup experience. Mac users with Apple Silicon should also review the [Apple Silicon optimization guide](05_02_configuring_lm_studio_on_apple_silicon.md) for best performance.
-
----
-
-_This section covers installation processes for the most popular local LLM platforms_

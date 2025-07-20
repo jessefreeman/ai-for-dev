@@ -1,7 +1,7 @@
 ---
 title: "Evaluation"
 has_children: true
-nav_order: 6
+nav_order: 5
 ---
 
 # Evaluation
@@ -69,7 +69,3 @@ Evaluation isn't just about finding the "best" model—it's about finding the be
 - **Experienced Developers**: Prioritize code quality and advanced features
 - **Teams**: Consider consistency and collaboration features
 - **Resource-Constrained**: Balance performance with hardware requirements
-
----
-
-_This section provides both standardized benchmarks and guidance for creating your own evaluation criteria_

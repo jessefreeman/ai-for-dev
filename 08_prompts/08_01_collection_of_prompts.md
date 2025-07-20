@@ -388,7 +388,3 @@ Provide the configuration file and explain each section.
 
 - **Problem**: Generated code works but isn't optimized or well-structured
 - **Solution**: Specify coding standards, style guides, or best practices in your prompt
-
----
-
-_These prompts have been tested across multiple local LLMs and refined based on community feedback_

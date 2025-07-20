@@ -132,28 +132,5 @@ Essential tools, platforms, and utilities for local LLM development. This curate
 - **[tiktoken](https://github.com/openai/tiktoken)**: Tokenizer library for counting tokens.
 - **[sentencepiece](https://github.com/google/sentencepiece)**: Tokenization library used by many LLMs.
 
----
-
-## Installation Tips
-
-### For Windows Users
-
-- Install [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) for better Linux tool compatibility
-- Use [Chocolatey](https://chocolatey.org/) or [Winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) for package management
-- Consider [PowerShell Core](https://github.com/PowerShell/PowerShell) for better scripting capabilities
-
-### For macOS Users
-
-- Install [Homebrew](https://brew.sh/) for package management
-- Use [iTerm2](https://iterm2.com/) for enhanced terminal functionality
-- Consider [Rectangle](https://rectangleapp.com/) for window management during development
-
-### For Linux Users
-
-- Most tools are available through standard package managers (apt, yum, pacman)
-- Consider [Flatpak](https://flatpak.org/) or [Snap](https://snapcraft.io/) for GUI applications
-- Use [pyenv](https://github.com/pyenv/pyenv) for Python version management
-
----
 
 _Tool recommendations updated as of July 2025. Check project websites for the latest versions and features._

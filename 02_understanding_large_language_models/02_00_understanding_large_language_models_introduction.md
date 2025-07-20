@@ -1,7 +1,7 @@
 ---
 title: "Understanding Large Language Models"
 has_children: true
-nav_order: 2
+nav_order: 1
 ---
 
 # Understanding Large Language Models
@@ -39,7 +39,3 @@ Before diving into this section, you should have:
 ## Getting Started
 
 If you're new to LLMs, start with the [Overview of Large Language Models](02_01_overview_of_llms.md) to understand the fundamentals. For those looking to optimize performance, jump directly to [Parameter Size](02_04_parameter_size.md) and [Quantization](02_05_quantization.md).
-
----
-
-_This section contains 7 articles covering the essential concepts for understanding and working with local LLMs_

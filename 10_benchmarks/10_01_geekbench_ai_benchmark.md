@@ -1,7 +1,7 @@
 ---
-title: "Personal Computer Results"  
-parent: "Benchmarks"  
-nav_order: 1 
+title: "Personal Computer Results"
+parent: "Benchmarks"
+nav_order: 1
 ---
 
 # Personal Computer Results
@@ -70,22 +70,6 @@ This section provides detailed results from the Geekbench AI tests on my persona
 | 7        | [ASUS ROG Zephyrus G15](./10_06_asus_zephyrus_g15.md)                                              | 16 GB DDR5     | NVIDIA GeForce RTX 3060 Laptop | 6 GB      | 12,858                         |
 | 8        | [MacBook Air M2](./10_07_m2_air.md)                                                                | 16 GB Unified  | Apple M2 8-core GPU            | Unified   | 5,419                          |
 
----
-
-### **ONNX CPU Performance**
-
-| **Rank** | **System**                                                                                         | **RAM**        | **CPU**                       | **Single Precision Benchmark** |
-|----------|-----------------------------------------------------------------------------------------------------|----------------|-------------------------------|--------------------------------|
-| 1        | [MINISFORUM BD790i](./10_08_minisforum_bd790i.md)                                                  | 96 GB DDR5     | AMD Ryzen 9 7945HX            | 4,082                          |
-| 2        | [MacBook Pro M3 Max](./10_03_m3_max.md)                                                            | 36 GB Unified  | Apple M3 Max                  | 3,841                          |
-| 3        | [ASUS Ryzen 7](./10_02_ryzen_7_4070s..md)                                                          | 32 GB DDR4     | AMD Ryzen 7 5800X             | 3,582                          |
-| 4        | [MacBook Air M2](./10_07_m2_air.md)                                                                | 16 GB Unified  | Apple M2                      | 3,214                          |
-| 5        | [ASUS ROG Zephyrus G16](./10_09_asus_zephyrus_g16.md)                                              | 32 GB DDR5     | Intel Core Ultra 9 185H       | 3,076                          |
-| 6        | [ASUS ProArt P16](./10_05_asus_proart_p16.md)                                                      | 32 GB DDR5     | AMD Ryzen AI 9 HX 370         | 2,983                          |
-| 7        | [ASUS ROG Zephyrus G15](./10_06_asus_zephyrus_g15.md)                                              | 16 GB DDR5     | AMD Ryzen 9 6900HS            | 2,902                          |
-| 8        | [Intel NUC9V7QNX](./10_04_nuc9v7qnx.md)                                                            | 64 GB DDR4     | Intel Core i7-9850H           | 2,283                          |
-
----
 
 ### **OpenVino CPU Performance**
 
@@ -99,56 +83,3 @@ This section provides detailed results from the Geekbench AI tests on my persona
 | 6        | [Intel NUC9V7QNX](./10_04_nuc9v7qnx.md)                                                            | 64 GB DDR4     | Intel Core i7-9850H           | 3,434                          |
 | 7        | [MacBook Air M2](./10_07_m2_air.md)                                                                | 16 GB Unified  | Apple M2                      | 3,214                          |
 | 8        | [ASUS ROG Zephyrus G16](./10_09_asus_zephyrus_g16.md)                                              | 32 GB DDR5     | Intel Core Ultra 9 185H       | 3,009                          |
-
----
-
-To submit your own benchmarks, clone the repository, create a new branch, and run your tests using Geekbench AI or another benchmarking tool. Add your system’s results using the template provided, including details like CPU, GPU, RAM, and your Single Precision, Half Precision, and Quantized scores. After committing your changes, push the branch to GitHub and open a pull request with a clear description of your submission.
-
-### **[System Name] | [Framework] | [Backend] Benchmarks**
-
-[Provide a brief summary of your system’s performance. Describe the strengths and performance highlights from the tests.]
-
-#### **System Specs**
-
-- **CPU**: [Name]  
-- **Motherboard**: [Name]  
-- **RAM**: [Size and Type]  
-- **GPU**: [Name and VRAM]  
-
-Total Price: [Current Price]
-
-#### **Benchmark Scores**
-
-- **Single Precision**: [Score]  
-- **Half Precision**: [Score]  
-- **Quantized**: [Score]  
-
-#### **Top AI Tasks**
-
-| **AI Task**    | **Performance (IPS)** | **AI Task**    | **Performance (IPS)** |
-| -------------- | --------------------- | -------------- | --------------------- |
-| 1. [Task Name] | [Score]               | 4. [Task Name] | [Score]               |
-| 2. [Task Name] | [Score]               | 5. [Task Name] | [Score]               |
-| 3. [Task Name] | [Score]               | 6. [Task Name] | [Score]               |
-
-# [System Name] + [GPU Name] Performance Overview
-
-[Provide a 3-4 sentence high-level summary of the system’s performance across both GPU and CPU tests. Highlight key strengths in AI tasks like model training, inference, or image processing. Mention any standout areas of performance, whether GPU-accelerated tasks or CPU efficiency. Keep it brief and general to reflect the overall benchmark results.]
-
-## Hardware Specs
-- **CPU**: [CPU Name]  
-- **Motherboard**: [Motherboard Name] *(Optional)*  
-- **RAM**: [RAM Size and Type]  
-- **GPU**: [GPU Name and VRAM]  
-
-**Estimated Total Price (2024)**: $[Current Price]
-
-This reflects the current price for the system when purchased in 2024.
-
-## Price-to-Performance: [Calculated Ratio] IPS per $100
-
-The [System Name] achieves a price-to-performance ratio of [Calculated Ratio] IPS per $100, based on its overall single precision GPU benchmark score of [Single Precision Score]. This summary should be 3-4 sentences, focusing on the system’s balance between cost and performance. Highlight how well it handles AI workloads and mention whether the performance is skewed towards GPU-heavy tasks or balanced across GPU and CPU tasks.
-
-> **Price-to-Performance Calculation:**  
-> The price-to-performance ratio is calculated by dividing the single precision GPU benchmark score by the system price, then multiplying by 100.  
-> Calculation: ([Single Precision Score] / [System Price]) × 100 ≈ [Calculated Ratio] IPS per $100

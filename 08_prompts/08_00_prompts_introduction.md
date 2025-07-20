@@ -1,7 +1,7 @@
 ---
 title: "Prompts"
 has_children: true
-nav_order: 8
+nav_order: 7
 ---
 
 # Prompts
@@ -81,7 +81,3 @@ Different models respond better to different prompting styles:
 - **Set Constraints**: Specify limitations, preferences, and requirements
 - **Ask for Explanations**: Request reasoning behind suggestions
 - **Request Alternatives**: Ask for multiple approaches to problems
-
----
-
-_This section includes battle-tested prompts from developers using local LLMs for real-world projects_

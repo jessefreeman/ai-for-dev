@@ -1,4 +1,9 @@
 ---
+title: "ASUS ProArt P16 + RTX 4070 Performance Overview"
+parent: "Benchmarks"
+nav_order: 5
+---
+---
 title: "ASUS ProArt P16"  
 parent: "Benchmarks"  
 nav_order: 5  

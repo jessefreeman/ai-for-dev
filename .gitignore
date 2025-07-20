@@ -1,9 +1,3 @@
-# Ruby / Jekyll
-_site/
-.bundle/
-vendor/
-Gemfile.lock
-
 # Node modules
 node_modules/
 
@@ -12,38 +6,48 @@ _book/
 _bookdown/
 _glossary/
 _summary/
+_site/
+*.log
 
 # Temp files
-*.log
 *.tmp
 *.temp
+
+# Development files (don't commit to main repo)
+_project/
 
 # System files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# VSCode
+
+# VScode
 .vscode/
+
+# macOS
+.DS_Store
 
 # Environment files
 .env
 .env.local
 .env.*.local
 
-# Logs
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Ulysses
 /.Ulysses-Settings.plist
 /.Ulysses-Group.plist
 
-# Project management
-PROJECT_TASKS.md
-TASK_*.md
-TODO_*.md
-workflow_helper.sh
-workflow_helper.ps1
-CONTENT_TEMPLATES.md
+# Project management files moved to _project/ folder
+# (This section kept for reference - files now in _project/)
+
+# Ruby/Jekyll files
+vendor/
+.bundle/
+Gemfile.lock
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+*.gem

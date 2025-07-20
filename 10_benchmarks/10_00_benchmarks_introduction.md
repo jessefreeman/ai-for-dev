@@ -1,7 +1,7 @@
 ---
 title: "Benchmarks"
 has_children: true
-nav_order: 10
+nav_order: 9
 ---
 
 # Benchmarks
@@ -57,7 +57,3 @@ All benchmarks follow consistent testing procedures:
 - **Multiple Runs**: Results averaged across multiple test runs for accuracy
 - **Standard Prompts**: Consistent prompt sets for comparable results
 - **Environmental Controls**: Temperature and power settings documented
-
----
-
-_Benchmarks are contributed by community members and updated regularly as new hardware and models become available_

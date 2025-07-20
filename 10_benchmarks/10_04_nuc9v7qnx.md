@@ -1,7 +1,7 @@
 ---
-title: "Intel NUC9V7QNX"  
-parent: "Benchmarks"  
-nav_order: 4  
+title: "Intel NUC9V7QNX + NVIDIA GeForce RTX 4060 Performance Overview"
+parent: "Benchmarks"
+nav_order: 4
 ---
 
 # Intel NUC9V7QNX + NVIDIA GeForce RTX 4060 Performance Overview
@@ -25,29 +25,6 @@ The **Intel NUC9i7QN Extreme Kit** achieves a price-to-performance ratio of **1,
 > The price-to-performance ratio is calculated by dividing the single precision GPU benchmark score by the system price, then multiplying by 100.  
 > Calculation: (13112 / 814.96) × 100 ≈ **1,608.9 per $100**
 
----
-
-## **DirectML GPU Benchmarks**
-
-This benchmark measures the performance of the **MSI GeForce RTX 4060**, showcasing its capabilities in tasks such as **Style Transfer**, **Pose Estimation**, and **Object Detection**. The **RTX 4060** handles AI tasks with solid scores in both single and half precision tasks, making it an efficient solution for AI-driven workloads.
-
-[View the full benchmark test here](https://browser.geekbench.com/ai/v1/29226).
-
-### **Benchmark Scores**
-
-- **Single Precision**: 13,112  
-- **Half Precision**: 21,260  
-- **Quantized**: 10,609  
-
-### **Top AI Tasks (Single Precision)**
-
-| **AI Task**              | **Score** | **IPS** | **AI Task**              | **Score** | **IPS** |
-|--------------------------|-----------|---------|--------------------------|-----------|---------|
-| 1. Style Transfer         | 131,019   | 168.4   | 4. Depth Estimation       | 33,634    | 259.1   |
-| 2. Pose Estimation        | 81,721    | 95.4    | 5. Face Detection         | 14,555    | 172.9   |
-| 3. Image Segmentation     | 7,948     | 128.9   | 6. Object Detection       | 6,349     | 503.6   |
-
----
 
 ## **ONNX CPU Benchmarks**
 
@@ -69,29 +46,6 @@ This test evaluates the AI performance of the **Intel Core i7-9850H CPU**, demon
 | 2. Pose Estimation        | 4,104     | 4.79    | 5. Face Detection         | 1,927     | 22.9    |
 | 3. Image Classification   | 1,306     | 242.9   | 6. Object Detection       | 1,577     | 125.1   |
 
----
-
-## **OpenVINO CPU Benchmarks**
-
-This benchmark, using the **OpenVINO Backend**, demonstrates the performance of the **Intel Core i7-9850H** in AI tasks, showing particularly strong results in **Style Transfer** and **Object Detection**. The system also performs well in quantized tasks, offering good efficiency in low-precision AI workloads.
-
-[View the full benchmark test here](https://browser.geekbench.com/ai/v1/29230).
-
-### **Benchmark Scores**
-
-- **Single Precision**: 3,434  
-- **Half Precision**: 3,490  
-- **Quantized**: 4,812  
-
-### **Top AI Tasks (Single Precision)**
-
-| **AI Task**              | **Score** | **IPS** | **AI Task**              | **Score** | **IPS** |
-|--------------------------|-----------|---------|--------------------------|-----------|---------|
-| 1. Style Transfer         | 13,703    | 17.6    | 4. Depth Estimation       | 6,084     | 46.9    |
-| 2. Pose Estimation        | 4,726     | 5.51    | 5. Face Detection         | 4,126     | 49.0    |
-| 3. Image Classification   | 2,141     | 398.2   | 6. Object Detection       | 2,210     | 175.3   |
-
----
 
 ## **Final Summary**
 

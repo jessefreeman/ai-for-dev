@@ -1,7 +1,7 @@
 ---
 title: "Advanced Usage"
 has_children: true
-nav_order: 9
+nav_order: 8
 ---
 
 # Advanced Usage
@@ -45,7 +45,3 @@ Before exploring advanced usage, you should have:
 ## Getting Started
 
 If you're comfortable with basic LLM usage, start with [Advanced Model Tuning](09_01_advanced_model_tuning.md). For those planning hardware upgrades or builds, jump to [Custom Built PCs](09_03_custom_built_pcs.md).
-
----
-
-_This section assumes familiarity with basic LLM concepts and focuses on advanced optimization and integration techniques_

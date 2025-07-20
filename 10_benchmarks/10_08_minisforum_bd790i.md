@@ -1,4 +1,9 @@
 ---
+title: "**MINISFORUM BD790i with AMD Ryzen 9 7945HX + NVIDIA GeForce RTX 4070 SUPER Performance Overview**"
+parent: "Benchmarks"
+nav_order: 8
+---
+---
 title: "MINISFORUM AMD Ryzen 9"  
 parent: "Benchmarks"  
 nav_order: 8

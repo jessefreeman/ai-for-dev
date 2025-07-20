@@ -112,28 +112,5 @@ This section lists recommended reading, in-depth guides, and community-contribut
 - **[Log Analysis for LLM Debugging](https://elastic.co/blog/llm-log-analysis-guide)** - Troubleshooting and optimization through logging.
 - **[Automated Model Management Workflows](https://mlflow.org/docs/latest/llm-management.html)** - MLOps practices for local LLMs.
 
----
-
-## Contribution Guidelines
-
-### Submitting Articles
-
-To suggest new articles for inclusion:
-
-1. Ensure the article is relevant to local LLM development
-2. Verify the content is current (published within the last 18 months preferred)
-3. Check that the source is reputable and technically accurate
-4. Include a brief description of why the article is valuable
-
-### Quality Standards
-
-All included articles should:
-
-- Provide practical, actionable information
-- Be well-written and technically accurate
-- Include working examples where applicable
-- Be accessible to the intended audience level
-
----
 
 _Article collection last updated: July 2025. Links verified for accessibility and relevance._
