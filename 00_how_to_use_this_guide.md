@@ -1,5 +1,5 @@
 ---
-title: "How To Use This Guide (Updated)"
+title: "How To Use This Guide"
 permalink: /
 nav_order: 0
 ---
