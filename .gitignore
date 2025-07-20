@@ -1,3 +1,9 @@
+# Ruby / Jekyll
+_site/
+.bundle/
+vendor/
+Gemfile.lock
+
 # Node modules
 node_modules/
 
@@ -6,10 +12,9 @@ _book/
 _bookdown/
 _glossary/
 _summary/
-_site/
-*.log
 
 # Temp files
+*.log
 *.tmp
 *.temp
 
@@ -18,21 +23,27 @@ _site/
 Thumbs.db
 desktop.ini
 
-
-# VScode
+# VSCode
 .vscode/
-
-# macOS
-.DS_Store
 
 # Environment files
 .env
 .env.local
 .env.*.local
 
-# Log files
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ulysses
 /.Ulysses-Settings.plist
 /.Ulysses-Group.plist
+
+# Project management
+PROJECT_TASKS.md
+TASK_*.md
+TODO_*.md
+workflow_helper.sh
+workflow_helper.ps1
+CONTENT_TEMPLATES.md
