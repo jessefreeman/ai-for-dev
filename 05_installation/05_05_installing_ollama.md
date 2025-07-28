@@ -1,4 +1,9 @@
 ---
+title: "Installing Ollama"
+parent: "Installation"
+nav_order: 5
+---
+---
 title: "Installing Ollama"
 parent: "Installation"
 nav_order: 5

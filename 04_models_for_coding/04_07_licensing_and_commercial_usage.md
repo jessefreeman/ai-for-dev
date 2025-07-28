@@ -1,7 +1,7 @@
 ---
 title: "Model Licensing and Commercial Usage Guide"
 parent: "Models For Coding"
-nav_order: 4
+nav_order: 5
 ---
 ---
 title: "Model Licensing and Commercial Usage"

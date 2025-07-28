@@ -1,7 +1,7 @@
 ---
 title: "The Models I Actually Use for TypeScript/JavaScript"
 parent: "Models For Coding"
-nav_order: 3
+nav_order: 4
 ---
 # The Models I Actually Use for TypeScript/JavaScript
 
