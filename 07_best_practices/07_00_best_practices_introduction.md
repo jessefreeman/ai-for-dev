@@ -6,69 +6,56 @@ nav_order: 6
 
 # Best Practices
 
-Discover proven strategies and best practices for running LLMs locally. This section covers optimization techniques, workflow integration, performance tuning, and common pitfalls to avoid when working with local AI models for development.
+These are hard-learned lessons from over a year of using local LLMs for development work. I made a lot of mistakes early on that cost me time and frustration. Here's what I wish someone had told me when I started.
 
-## What You'll Learn
+## My Biggest Early Mistakes
 
-- Proven workflows for integrating LLMs into your development process
-- Performance optimization techniques for different hardware configurations
-- Security considerations when running models locally
-- Memory management and resource optimization strategies
-- Common mistakes and how to avoid them
+**Mistake #1**: Trying to use the biggest model I could fit in memory, thinking bigger = better. Wrong. A smaller, faster model that you can actually have a conversation with beats a huge model that takes 30 seconds per response.
 
-## Core Principles
+**Mistake #2**: Not setting up proper workflows. I'd just open the LLM app whenever I felt like it, with no consistent approach. This led to inconsistent results and a lot of wasted effort.
 
-### 1. **Right Model for the Right Task**
+**Mistake #3**: Treating the LLM like a magic oracle. These things need guidance and iteration. The first response is rarely the best response.
 
-- Match model capabilities to your specific needs
-- Don't use a 30B model for simple autocomplete tasks
-- Consider speed vs. quality trade-offs
+**Mistake #4**: Not backing up my conversations. Lost so many good examples and prompts when I reset sessions.
 
-### 2. **Resource Management**
+## What Actually Works
 
-- Monitor memory usage and prevent system overload
-- Implement proper model loading/unloading strategies
-- Balance background processes with LLM performance
+After lots of trial and error, here's what I've learned:
 
-### 3. **Workflow Integration**
+**Pick the right model size**: I use a 7B model for quick tasks and conversations, a 13B model for complex coding, and only fire up the 34B model for really tough problems.
 
-- Start small and gradually increase LLM usage
-- Establish clear use cases and success criteria
-- Train team members on effective prompt techniques
+**Create a workflow**: I have specific models for specific tasks. Code review gets one model, explanation gets another, generation gets a third.
 
-### 4. **Performance Optimization**
+**Save your good prompts**: I keep a text file of prompts that work well. When I find something that gives good results, I save it.
 
-- Regular model updates and maintenance
-- Hardware-specific optimization techniques
-- Monitoring and alerting for performance issues
+**Iterate, don't accept first answers**: The first response is usually 70% there. I ask for improvements, clarifications, optimizations.
 
-## Best Practice Categories
+**Keep your code**: Don't lose good conversations. I copy important code and explanations to my notes.
 
-| Category                  | Focus Area                            | Impact |
-| ------------------------- | ------------------------------------- | ------ |
-| **Setup & Configuration** | Initial installation and optimization | High   |
-| **Daily Workflow**        | Integrating LLMs into coding routines | High   |
-| **Resource Management**   | Memory, CPU, and GPU optimization     | Medium |
-| **Security & Privacy**    | Protecting code and data              | High   |
-| **Team Collaboration**    | Sharing models and configurations     | Medium |
-| **Maintenance**           | Keeping systems updated and optimized | Medium |
+## My Current Setup
 
-## Common Pitfalls to Avoid
+**Daily Development**: CodeLlama-13B-Instruct for most coding tasks
+**Code Explanation**: Mistral-7B when I need something explained quickly  
+**Complex Problems**: Mixtral-8x7B when I'm really stuck
+**Quick Questions**: Phi-3-mini for fast answers
 
-- **Over-reliance**: Using LLMs for tasks better done manually
-- **Under-utilization**: Not leveraging LLM capabilities fully
-- **Poor prompting**: Ineffective communication with models
-- **Resource waste**: Running oversized models unnecessarily
-- **Security gaps**: Exposing sensitive code or data
+## Areas That Actually Matter
 
-## Success Metrics
+Based on my experience, focus your energy on:
 
-Track your LLM integration success with these metrics:
+**Getting prompting right** - This makes more difference than any other factor
+**Hardware optimization** - A well-tuned 7B model beats a poorly configured 34B model
+**Workflow integration** - Having models ready when you need them, not fighting with setup
+**Context management** - Keeping conversations focused and relevant
 
-- **Development Speed**: Time saved on coding tasks
-- **Code Quality**: Improvement in code reviews and bug rates
-- **Learning Acceleration**: Faster adoption of new technologies
-- **Team Satisfaction**: Developer experience improvements
+## What I've Learned Not to Worry About
+
+**Perfect model choice** - Any decent model is better than no model
+**Latest models** - Stable, well-supported models > bleeding edge
+**Benchmarks** - Real-world performance > synthetic test scores
+**Complex setups** - Simple, reliable > fancy but fragile
+
+Want the details? Check out [my specific practices](07_01_best_practices_for_running_local_llms.md).
 
 ## Getting Started
 

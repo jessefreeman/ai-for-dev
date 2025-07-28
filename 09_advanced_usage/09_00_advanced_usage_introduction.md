@@ -6,24 +6,28 @@ nav_order: 8
 
 # Advanced Usage
 
-Explore advanced techniques for local LLM deployment, including custom configurations, multi-model workflows, hardware optimization, and integration with development environments. This section is designed for users who want to push beyond basic setups and create sophisticated local AI development environments.
+# Advanced Usage
 
-## What You'll Learn
+This is where I share the more experimental stuff I've been working on. Fair warning: not everything here is practical for day-to-day development work. Some of it is just cool things I've figured out while tinkering.
 
-- Advanced model tuning and configuration techniques
-- How to integrate LLMs into existing development workflows
-- Custom PC builds optimized specifically for running LLMs
-- Multi-model strategies and ensemble approaches
-- Performance monitoring and optimization techniques
-- Enterprise deployment considerations
+## What's in This Section
 
-## Section Overview
+After you've got the basics down and have been using local LLMs for a while, you might want to push things further. Here are some of the more advanced setups and experiments I've been working on:
 
-| Topic                 | Description                                                    | Difficulty   |
-| --------------------- | -------------------------------------------------------------- | ------------ |
-| Advanced Model Tuning | Fine-tuning parameters and custom configurations               | Advanced     |
-| Workflow Integration  | Seamlessly incorporating LLMs into development processes       | Intermediate |
-| Custom Built PCs      | Hardware specifications and builds for optimal LLM performance | Advanced     |
+**Custom Hardware Builds**: I've built dedicated machines for running LLMs and learned what actually matters for hardware
+**Multi-Model Workflows**: Running different models for different tasks and chaining them together
+**Development Integration**: Hooking LLMs directly into my IDE and build process
+**Performance Tuning**: Squeezing every bit of performance out of models and hardware
+
+## My Advanced Setup Evolution
+
+**Stage 1**: Single model, basic prompting (where most people stop)
+**Stage 2**: Multiple models for different tasks, saved prompt collections
+**Stage 3**: Custom hardware, automated workflows, performance monitoring
+**Stage 4**: Integration with development tools, custom fine-tuning experiments
+
+Most of this stuff is overkill unless you're really into this or using LLMs heavily for work. But if you want to see what's possible, here are my notes:
+| Custom Built PCs | Hardware specifications and builds for optimal LLM performance | Advanced |
 
 ## Prerequisites
 

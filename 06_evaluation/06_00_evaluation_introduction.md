@@ -6,66 +6,54 @@ nav_order: 5
 
 # Evaluation
 
-Learn how to properly test and evaluate different LLMs for your specific use cases. This section covers benchmarking methodologies, performance metrics, and practical evaluation techniques to help you choose the right model for your development needs.
+Testing models was something I initially skipped, and it cost me time later. I'd download a model, try it for a few minutes, and if it seemed okay, I'd start using it for everything. Bad idea. Different models are good at different things, and what works for one type of coding task might be terrible for another.
 
-## What You'll Learn
+Here's how I learned to actually test models properly.
 
-- How to systematically test and compare different LLMs
-- Key performance metrics that matter for coding tasks
-- Standardized evaluation procedures for consistent results
-- Creating custom tests for your specific use cases
-- Interpreting benchmark results and making informed decisions
+## Why I Started Testing Models Systematically
 
-## Section Overview
+Early on, I wasted weeks using a model that was great at explaining code but terrible at generating it. I only realized this when I tried a different model for the same tasks and got dramatically better results. Now I test every model against a standard set of tasks before committing to it.
 
-| Topic                   | Description                                         | Difficulty   |
-| ----------------------- | --------------------------------------------------- | ------------ |
-| Testing Each Model      | Systematic approach to evaluating individual models | Beginner     |
-| Standardized Evaluation | Using consistent benchmarks for fair comparisons    | Intermediate |
+My current testing approach:
 
-## Evaluation Criteria
+- Test with actual coding tasks, not toy examples
+- Use the same prompts across different models
+- Time how long responses take
+- Check memory usage during inference
+- Test with different types of code (Python, JavaScript, systems stuff)
 
-### Performance Metrics
+## My Testing Framework
 
-- **Code Quality**: Accuracy, syntax correctness, and best practices adherence
-- **Response Speed**: Time to first token and sustained generation rate
-- **Context Understanding**: Ability to maintain context in long conversations
-- **Language Support**: Coverage of different programming languages
-- **Resource Efficiency**: Memory usage and computational requirements
+I've developed a simple but effective testing routine that takes about 30 minutes per model:
 
-### Practical Considerations
+**Quick Tests** (5 minutes):
 
-- **Installation Ease**: How simple is it to set up and configure
-- **Stability**: Reliability during extended use sessions
-- **Model Availability**: Ease of downloading and updating models
-- **Documentation Quality**: Support resources and community
+- Generate a simple function with error handling
+- Explain a complex piece of code
+- Debug a function with an obvious bug
 
-## Testing Methodology
+**Real-World Tests** (15 minutes):
 
-### Standardized Tests
+- Build a small but complete feature (like a REST endpoint)
+- Refactor existing messy code
+- Write unit tests for existing code
 
-We provide standardized coding tasks that help you compare models fairly:
+**Performance Tests** (10 minutes):
 
-- Code generation from natural language descriptions
-- Code explanation and documentation
-- Bug detection and fixing
-- Code refactoring and optimization
-- Multi-language code translation
+- Time response speed with different prompt lengths
+- Check memory usage during heavy prompts
+- Test with different quantization levels
 
-### Custom Evaluation
+## What Actually Matters
 
-Learn to create tests specific to your workflow:
+After testing dozens of models, here's what I've learned matters most:
 
-- Testing with your actual codebase
-- Domain-specific coding challenges
-- Integration with your development tools
-- Team-specific coding standards
+**Code Quality**: Does it generate code that actually works and follows good practices?
+**Speed**: Can I have a conversation without waiting forever for responses?
+**Context Understanding**: Does it remember what we talked about earlier in the conversation?
+**Explanation Quality**: Can it explain its code in a way that helps me learn?
 
-## Making the Right Choice
+## My Actual Testing Process
 
-Evaluation isn't just about finding the "best" model—it's about finding the best model **for your needs**:
-
-- **Beginners**: Focus on ease of use and clear explanations
-- **Experienced Developers**: Prioritize code quality and advanced features
-- **Teams**: Consider consistency and collaboration features
-- **Resource-Constrained**: Balance performance with hardware requirements
+[Testing Individual Models](06_01_testing_each_model.md) - My step-by-step process for evaluating any new model
+[Comparing Models](06_02_evaluating_models.md) - How I run head-to-head comparisons

@@ -1,8 +1,9 @@
 ---
 title: "Offloading to the GPU"
-parent: "Selecting Models"
+parent: "Hardware Requirements"
 nav_order: 5
 ---
+
 # Offloading to the GPU
 
 As large language models (LLMs) continue to grow in size and complexity, the demands they place on computing hardware have increased significantly. While CPUs are capable of handling smaller models, the real power of LLMs is unleashed when they are run on GPUs (Graphics Processing Units). Offloading LLM inferencing to the GPU is a crucial step in optimizing model performance, especially when working with large-scale models that require substantial computational resources.
@@ -36,6 +37,5 @@ Moreover, not all GPUs are created equal. The performance gains from offloading 
 > - **Application Crashes**: If the system cannot allocate enough memory for the model, the application running the model might crash or fail to load the model entirely, often resulting in "Out of Memory" errors.
 >
 > - **Reduced Performance**: When the GPU cannot fully load the model, it may revert to using the CPU for some operations, drastically reducing the speed of inferencing. This mixed CPU/GPU workload is less efficient and can lead to inconsistent performance.
->
 
 By offloading LLM inferencing to a GPU, you can unlock the full potential of these powerful models, making it possible to work with larger datasets, generate more complex outputs, and achieve faster processing times. While there are considerations to keep in mind, particularly regarding VRAM limits and GPU capabilities, the benefits of GPU offloading are clear. For anyone serious about working with large language models, understanding and utilizing GPU offloading is not just an option—it’s a necessity for maximizing performance and efficiency.

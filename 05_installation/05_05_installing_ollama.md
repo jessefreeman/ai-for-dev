@@ -1,9 +1,4 @@
 ---
-title: "Installing Ollama"
-parent: "Installation"
-nav_order: 5
----
----
 title: "Installing Ollama"
 parent: "Installation"
 nav_order: 5
@@ -11,17 +6,9 @@ nav_order: 5
 
 # Installing Ollama
 
-Ollama is one of the most popular and user-friendly platforms for running local Large Language Models. It provides a simple command-line interface and supports a wide variety of models with automatic downloading and management.
+Ollama has become my preferred choice for terminal-based LLM work. It's incredibly simple to set up and use, especially if you're comfortable with command-line tools. Here's how I got it working and what I learned along the way.
 
-## What You'll Learn
-
-- How to install Ollama on Windows, macOS, and Linux
-- Basic Ollama commands and usage
-- How to download and run your first model
-- Essential configuration options
-- Troubleshooting common installation issues
-
-## Why Choose Ollama
+## Why I Like Ollama
 
 **Advantages:**
 

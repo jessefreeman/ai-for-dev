@@ -1,8 +1,9 @@
 ---
 title: "CPU vs. GPU and Inferencing"
-parent: "Selecting Models"
+parent: "Hardware Requirements"
 nav_order: 4
 ---
+
 # CPU vs. GPU and Inferencing
 
 Inferencing is the process of using a pre-trained model to make predictions or generate outputs based on new inputs. When working with large language models (LLMs), the process of inferencing involves a series of complex mathematical operations that are computationally intensive. Understanding how these operations are handled by your computer's hardware—specifically the CPU and GPU—is crucial for optimizing performance.

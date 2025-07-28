@@ -6,74 +6,54 @@ nav_order: 7
 
 # Prompts
 
-Master the art of prompt engineering for coding tasks. This section provides a curated collection of effective prompts, examples, and techniques for getting the best results from your local LLMs when working on development projects.
+Prompting is the most important skill for working with LLMs, and it took me months to get decent at it. The difference between a good prompt and a bad prompt is often the difference between getting exactly what you need and getting complete garbage.
 
-## What You'll Learn
+Here are the prompts I actually use and the techniques I've learned through lots of trial and error.
 
-- Effective prompt structures for different coding tasks
-- How to communicate clearly with LLMs to get precise results
-- Advanced prompting techniques for complex scenarios
-- Model-specific prompt optimization strategies
-- Troubleshooting common prompting issues
+## How My Prompting Evolved
 
-## Prompt Categories
+**Early days**: "Write a function to sort an array"
+**Result**: Generic, basic code with no context
 
-### Code Generation
+**Getting better**: "Write a Python function to sort a list of dictionaries by date, handling invalid dates gracefully"
+**Result**: Much more useful, but still generic
 
-- **Function Creation**: Prompts for generating specific functions
-- **Class Design**: Creating complete classes with methods and properties
-- **API Integration**: Connecting to external services and APIs
-- **Algorithm Implementation**: Complex algorithmic solutions
+**Current approach**: "I'm building a task management API in Python. Write a function to sort a list of task dictionaries by due_date field. Some tasks might have null due dates - put those at the end. Include type hints and handle the case where due_date is a string instead of datetime object."
+**Result**: Code that actually fits my project and handles real-world edge cases
 
-### Code Analysis
+## My Prompt Categories
 
-- **Code Review**: Getting feedback on existing code
-- **Bug Detection**: Finding and fixing issues in code
-- **Performance Analysis**: Identifying optimization opportunities
-- **Security Review**: Spotting potential security vulnerabilities
+These are the types of prompts I use most often:
 
-### Documentation & Learning
+**Code Generation**: When I need new code written from scratch
+**Debugging Help**: When existing code isn't working  
+**Code Explanation**: When I'm trying to understand something complex
+**Optimization**: When code works but could be better
+**Testing**: When I need unit tests or want to verify code quality
 
-- **Code Explanation**: Understanding complex code sections
-- **Documentation Generation**: Creating comments and documentation
-- **Learning New Technologies**: Exploring unfamiliar frameworks
-- **Best Practices**: Getting advice on coding standards
+## What I've Learned About Effective Prompting
 
-### Workflow Automation
+**Context is everything**: Always explain what you're building and why
+**Be specific about constraints**: Language version, libraries you're using, performance requirements
+**Ask for explanations**: Don't just get code, understand why it works that way
+**Iterate on responses**: First answer is rarely perfect, ask for improvements
+**Include error handling**: Always specify how edge cases should be handled
 
-- **Testing**: Generating unit tests and test cases
-- **Refactoring**: Improving code structure and readability
-- **Configuration**: Setting up build tools and environments
-- **Deployment**: Creating deployment scripts and configurations
+## My Prompt Template
 
-## Prompt Engineering Principles
+Here's the basic structure I use for most coding requests:
 
-### 1. **Be Specific and Clear**
+```
+Context: [What I'm building and why]
+Task: [Specific thing I need done]
+Requirements: [Language, frameworks, constraints]
+Input/Output: [What goes in, what should come out]
+Edge cases: [What could go wrong and how to handle it]
+```
 
-- Provide context about your project and requirements
-- Specify the programming language and framework
-- Include examples of desired output format
+## Real Examples
 
-### 2. **Use Structured Prompts**
-
-- Break complex requests into smaller, manageable parts
-- Use consistent formatting for similar tasks
-- Include relevant code snippets for context
-
-### 3. **Iterate and Refine**
-
-- Start with simple prompts and add complexity gradually
-- Test prompts with different models to find what works best
-- Keep a collection of proven prompts for reuse
-
-## Model-Specific Considerations
-
-Different models respond better to different prompting styles:
-
-- **Code Llama**: Prefers detailed technical specifications
-- **Mistral**: Works well with structured, step-by-step instructions
-- **Smaller Models**: Benefit from simpler, more direct prompts
-- **Larger Models**: Can handle complex, multi-part requests
+Check out [my prompt collection](08_01_collection_of_prompts.md) for actual prompts I use regularly, with examples of the results they produce.
 
 ## Getting the Most From Your Prompts
 

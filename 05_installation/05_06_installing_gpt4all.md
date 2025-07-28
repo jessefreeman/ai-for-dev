@@ -11,18 +11,13 @@ nav_order: 6
 
 # Installing GPT4All
 
-GPT4All is a user-friendly, GUI-based application for running local Large Language Models. It's perfect for users who prefer a graphical interface over command-line tools and offers an excellent introduction to local LLMs.
+# Installing GPT4All
 
-## What You'll Learn
+GPT4All was one of the first local LLM tools I tried, mainly because it has a familiar chat interface that feels like using ChatGPT. It's a good option if you want something simple and don't want to deal with command-line tools.
 
-- How to install GPT4All on Windows, macOS, and Linux
-- How to navigate the GPT4All interface
-- How to download and manage models
-- Configuration options and settings
-- Integration with external applications
-- Troubleshooting common issues
+Here's my experience setting it up and what I think about it after using it for several months.
 
-## Why Choose GPT4All
+## My Take on GPT4All
 
 **Advantages:**
 

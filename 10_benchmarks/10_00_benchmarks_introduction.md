@@ -10,7 +10,7 @@ Real-world performance data from various hardware configurations running differe
 
 ## What You'll Find Here
 
-- Comprehensive performance tests across different hardware configurations
+- Detailed performance tests across different hardware configurations
 - Token generation speeds, memory usage, and loading times
 - Comparison data for various model sizes and quantization levels
 - Real-world performance metrics from community contributors

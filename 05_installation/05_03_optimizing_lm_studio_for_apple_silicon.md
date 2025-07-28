@@ -3,6 +3,7 @@ title: "Optimizing LM Studio for Apple Silicon"
 parent: "Installation"
 nav_order: 3
 ---
+
 # Optimizing LM Studio for Apple Silicon
 
 Running large language models (LLMs) locally on your Apple Silicon Mac can significantly enhance performance, privacy, and cost efficiency. However, to get the best results, it is crucial to configure LM Studio appropriately based on your specific hardware capabilities. Here’s a detailed guide on the key settings and their importance, followed by tailored configurations for high-end, medium-end, and low-end Apple Silicon Macs.
@@ -29,49 +30,25 @@ Apple Silicon Cheat Sheet
 
 For high-end systems like the MacBook Pro M3 Max with 32GB RAM, maximizing the context length and offloading significant computation to the GPU will leverage the full potential of the hardware. The settings should be adjusted as follows:
 
-| Configuration Option           | Setting                         | Impact                                                       |
-| ------------------------------ | ------------------------------- | ------------------------------------------------------------ |
+| Configuration Option           | Setting                         | Impact                                                                                               |
+| ------------------------------ | ------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Context Length (n_ctx)         | 2048                            | Reduces memory usage and speeds up processing without significantly impacting context understanding. |
-| Tokens to Generate (n_predict) | 100                             | Limits the response length, speeding up response time.       |
-| CPU Threads (n_threads)        | 8 (or number of physical cores) | Utilizes more CPU cores, speeding up processing.             |
-| GPU Offload (n_gpu_layers)     | 24                              | Shifts more computation to the GPU, reducing CPU load.       |
-| Memory Allocation              | Maximize available RAM          | Ensures sufficient memory is allocated to LM Studio, preventing slowdowns. |
-
-
-
-------
-
-
-
-#### **Medium-End System: MacBook Pro M1 Pro with 16GB RAM**
-
-For medium-end systems like the MacBook Pro M1 Pro with 16GB RAM, a balanced approach is necessary. Adjusting the context length and GPU offload settings will help maintain performance without overloading the system:
-
-| Configuration Option           | Setting                         | Impact                                                       |
-| ------------------------------ | ------------------------------- | ------------------------------------------------------------ |
-| Context Length (n_ctx)         | 1024                            | Balances memory usage and processing speed, providing adequate context analysis. |
-| Tokens to Generate (n_predict) | 100                             | Limits the response length, speeding up response time.       |
-| CPU Threads (n_threads)        | 8 (or number of physical cores) | Utilizes more CPU cores, speeding up processing.             |
-| GPU Offload (n_gpu_layers)     | 16                              | Distributes some computation to the GPU, reducing CPU load.  |
-| Memory Allocation              | Optimize for 16GB               | Ensures efficient memory usage without overloading the system. |
-
-
-
-------
-
+| Tokens to Generate (n_predict) | 100                             | Limits the response length, speeding up response time.                                               |
+| CPU Threads (n_threads)        | 8 (or number of physical cores) | Utilizes more CPU cores, speeding up processing.                                                     |
+| GPU Offload (n_gpu_layers)     | 24                              | Shifts more computation to the GPU, reducing CPU load.                                               |
+| Memory Allocation              | Maximize available RAM          | Ensures sufficient memory is allocated to LM Studio, preventing slowdowns.                           |
 
 
 #### **Low-End System: MacBook Air M1 with 8GB RAM**
 
 For low-end systems like the MacBook Air M1 with 8GB RAM, it's essential to reduce the load on both the CPU and GPU. Shortening the context length and limiting the number of tokens generated will help maintain performance:
 
-| Configuration Option           | Setting                         | Impact                                                       |
-| ------------------------------ | ------------------------------- | ------------------------------------------------------------ |
+| Configuration Option           | Setting                         | Impact                                                                              |
+| ------------------------------ | ------------------------------- | ----------------------------------------------------------------------------------- |
 | Context Length (n_ctx)         | 512                             | Reduces memory usage and processing load, while still providing sufficient context. |
-| Tokens to Generate (n_predict) | 50                              | Limits the response length, speeding up response time and reducing resource usage. |
-| CPU Threads (n_threads)        | 4 (or number of physical cores) | Utilizes available CPU cores efficiently without overloading the system. |
-| GPU Offload (n_gpu_layers)     | 8                               | Shifts some computation to the GPU, alleviating CPU load.    |
-| Memory Allocation              | Optimize for 8GB                | Ensures efficient memory usage without overloading the system. |
-
+| Tokens to Generate (n_predict) | 50                              | Limits the response length, speeding up response time and reducing resource usage.  |
+| CPU Threads (n_threads)        | 4 (or number of physical cores) | Utilizes available CPU cores efficiently without overloading the system.            |
+| GPU Offload (n_gpu_layers)     | 8                               | Shifts some computation to the GPU, alleviating CPU load.                           |
+| Memory Allocation              | Optimize for 8GB                | Ensures efficient memory usage without overloading the system.                      |
 
 By following these configuration settings tailored to your specific Apple Silicon Mac, you can ensure optimal performance when running large language models in LM Studio. Each table provides a balance between resource allocation and processing efficiency to make the most out of your hardware capabilities, from high-end systems with abundant resources to lower-end systems with more constrained hardware.

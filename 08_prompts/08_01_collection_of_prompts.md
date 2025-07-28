@@ -342,29 +342,29 @@ Provide the configuration file and explain each section.
 ### 1. **Be Specific About Context**
 
 ```
-❌ "Create a function to process data"
-✅ "Create a Python function to validate and clean user input data for a web form"
+**Poor**: "Create a function to process data"
+**Better**: "Create a Python function to validate and clean user input data for a web form"
 ```
 
 ### 2. **Specify Output Format**
 
 ```
-❌ "Explain this code"
-✅ "Explain this code with numbered steps and include code comments"
+**Poor**: "Explain this code"
+**Better**: "Explain this code with numbered steps and include code comments"
 ```
 
 ### 3. **Include Constraints**
 
 ```
-❌ "Optimize this function"
-✅ "Optimize this function for memory usage while maintaining O(n) time complexity"
+**Poor**: "Optimize this function"
+**Better**: "Optimize this function for memory usage while maintaining O(n) time complexity"
 ```
 
 ### 4. **Request Examples**
 
 ```
-❌ "Show me how to use this API"
-✅ "Show me how to use this API with a complete example including error handling"
+**Poor**: "Show me how to use this API"
+**Better**: "Show me how to use this API with a complete example including error handling"
 ```
 
 ## Troubleshooting Common Issues

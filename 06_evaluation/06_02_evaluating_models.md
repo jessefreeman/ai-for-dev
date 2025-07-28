@@ -3,9 +3,10 @@ title: "Evaluating Models with a Standardized Test"
 parent: "Evaluation"
 nav_order: 2
 ---
+
 # Evaluating Models with a Standardized Test
 
-To determine the best CodeLlama Instruct model for your MacBook Pro M3 Max, we need a comprehensive and consistent test that challenges the models and allows us to evaluate their performance in terms of speed, accuracy, and resource usage. The chosen prompt involves creating a simple React note-taking application, which will test the models' abilities to generate detailed, functional code while handling various aspects of modern JavaScript development.
+To determine the best CodeLlama Instruct model for your MacBook Pro M3 Max, we need a detailed and consistent test that challenges the models and allows us to evaluate their performance in terms of speed, accuracy, and resource usage. The chosen prompt involves creating a simple React note-taking application, which will test the models' abilities to generate detailed, functional code while handling various aspects of modern JavaScript development.
 
 The Test Prompt
 
@@ -22,9 +23,9 @@ Develop a simple note-taking application using React. The application should hav
 
 ## Why This Prompt?
 
-This prompt is chosen for several compelling reasons. Firstly, it requires the model to generate multiple components, manage state, and handle user inputs, which are critical tasks in React development. By involving these complexities, we can thoroughly assess the model's capability to generate accurate and comprehensive code.
+This prompt is chosen for several compelling reasons. Firstly, it requires the model to generate multiple components, manage state, and handle user inputs, which are critical tasks in React development. By involving these complexities, we can thoroughly assess the model's capability to generate accurate and detailed code.
 
-Furthermore, the prompt specifies the use of functional components and React hooks, ensuring that the generated code adheres to current React practices. This helps us evaluate the model's understanding of modern development paradigms, which is crucial for any developer aiming to stay up-to-date with industry standards.
+Also, the prompt specifies the use of functional components and React hooks, ensuring that the generated code adheres to current React practices. This helps us evaluate the model's understanding of modern development paradigms, which is crucial for any developer aiming to stay up-to-date with industry standards.
 
 The inclusion of error handling in the prompt tests the model's ability to write robust and reliable code. Error handling is a fundamental aspect of real-world applications, and the model's competence in this area is essential for producing high-quality outputs.
 
@@ -38,9 +39,9 @@ Response Time: We will measure the time taken by each model to generate a comple
 
 Accuracy: Accuracy will be assessed on multiple fronts:
 
-* Functionality: We will verify that the generated code meets all the specified requirements, such as displaying notes, adding new notes, and deleting notes. This ensures the model can follow detailed instructions and implement complex functionality.
-* Correctness: We will check for any syntax or logical errors in the code. Correctness is vital for ensuring the generated code runs without issues and performs as expected.
-* Clarity: We will evaluate the quality of the comments and the use of proper coding conventions. Clear and well-commented code is easier to understand and maintain, which is essential for collaborative development environments.
+- Functionality: We will verify that the generated code meets all the specified requirements, such as displaying notes, adding new notes, and deleting notes. This ensures the model can follow detailed instructions and implement complex functionality.
+- Correctness: We will check for any syntax or logical errors in the code. Correctness is vital for ensuring the generated code runs without issues and performs as expected.
+- Clarity: We will evaluate the quality of the comments and the use of proper coding conventions. Clear and well-commented code is easier to understand and maintain, which is essential for collaborative development environments.
 
 Resource Usage: We will monitor CPU, GPU, and RAM usage during the code generation process. This metric will help us determine how efficiently each model uses the available hardware resources, which is important for optimizing performance on your MacBook Pro M3 Max.
 

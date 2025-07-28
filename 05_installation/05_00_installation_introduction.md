@@ -6,26 +6,24 @@ nav_order: 4
 
 # Installation
 
-This section guides you through installing and configuring various local LLM platforms and tools. Whether you're using LM Studio, Ollama, or other solutions, you'll find step-by-step instructions for getting started on your operating system.
+# Installation
 
-## What You'll Learn
+Getting local LLMs up and running was the biggest hurdle when I started. There are so many different tools and platforms, each with their own quirks. I've tried most of them and made plenty of mistakes along the way. Here's what I learned about getting everything set up properly.
 
-- How to install LM Studio and configure it for optimal performance
-- Platform-specific installation steps for Windows, macOS, and Linux
-- Model selection and download processes
-- Hardware optimization techniques for different configurations
-- Troubleshooting common installation issues
+## My Installation Journey
 
-## Section Overview
+I started with LM Studio because it seemed the most beginner-friendly, and honestly, it still is. But over time I've experimented with Ollama (great for terminal users), GPT4All (decent UI), and LocalAI (if you want more control). Each has its place, but if you're just starting out, stick with LM Studio.
 
-| Topic                       | Description                                                  | Difficulty   |
-| --------------------------- | ------------------------------------------------------------ | ------------ |
-| Installing LM Studio        | Complete setup guide for the most popular local LLM platform | Beginner     |
-| Apple Silicon Configuration | Optimizing LM Studio for M1/M2/M3 Macs                       | Intermediate |
-| Model Selection             | How to choose and download the right models                  | Beginner     |
-| Performance Optimization    | Getting the best performance from your hardware              | Intermediate |
+The biggest mistakes I made early on:
 
-## Supported Platforms
+- Not checking my hardware specs first
+- Downloading models that were way too big for my system
+- Not understanding that Apple Silicon needs special handling
+- Trying to run everything at once and melting my laptop
+
+## What I've Tested
+
+Here's what I actually use and can recommend:
 
 - **Windows 10/11** (x64, ARM64)
 - **macOS** (Intel and Apple Silicon)

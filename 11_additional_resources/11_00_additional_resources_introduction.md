@@ -6,7 +6,7 @@ nav_order: 10
 
 # Additional Resources
 
-A curated collection of tools, articles, tutorials, and community resources to help you stay up-to-date with the rapidly evolving local LLM ecosystem. This section serves as your gateway to the broader community and cutting-edge developments.
+A curated collection of tools, articles, tutorials, and community resources to help you stay up-to-date with the rapidly evolving local LLM ecosystem. This section serves as your gateway to the broader community and latest developments.
 
 ## What You'll Find Here
 

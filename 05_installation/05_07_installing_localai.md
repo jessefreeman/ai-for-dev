@@ -11,18 +11,13 @@ nav_order: 7
 
 # Installing LocalAI
 
-LocalAI is a powerful, self-hosted alternative to OpenAI's API that runs entirely on your local machine. It's designed for developers who need API compatibility with OpenAI while maintaining complete privacy and control over their AI infrastructure.
+# Installing LocalAI
 
-## What You'll Learn
+LocalAI is for when you want more control over your setup and need API compatibility with OpenAI. It's definitely more complex than LM Studio or Ollama, but if you're building applications that need to integrate with LLMs programmatically, it's worth the extra complexity.
 
-- How to install LocalAI using Docker, binary, or from source
-- How to configure LocalAI for different models and backends
-- Setting up API endpoints compatible with OpenAI
-- Performance optimization for various hardware configurations
-- Integration examples and use cases
-- Troubleshooting common deployment issues
+I spent a weekend getting this set up properly, and here's what I learned.
 
-## Why Choose LocalAI
+## Why I Use LocalAI
 
 **Advantages:**
 
