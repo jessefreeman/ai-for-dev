@@ -22,3 +22,4 @@ public/
 *.log
 .vscode/
 .trash/
+.obsidian/graph.json
