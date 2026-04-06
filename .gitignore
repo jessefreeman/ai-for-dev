@@ -1,11 +1,20 @@
-raw/
-.obsidian/
-.claude/
-.instructions/
-.DS_Store
-.smbdelete*
+# Personal source files (raw inputs — not versioned)
+raw/**/*.md
+raw/**/*.pdf
+raw/**/*.html
+
+# Obsidian machine-specific state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Build artifacts
 node_modules/
 public/
+
+# OS / editor
+.DS_Store
+.smbdelete*
 .env
-.vscode/
 *.log
+.vscode/
+.trash/
