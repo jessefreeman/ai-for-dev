@@ -21,8 +21,10 @@ Research/
     log.md           # Chronological record of all operations.
     overview.md      # High-level synthesis of the entire knowledge base.
     hot.md           # Hot cache: ~500 words of current context. Read this first.
+    tasks.md         # Running checklist of tools, projects, and resources to investigate.
     people/          # Entity pages: people.
-    tools/           # Entity pages: tools and products.
+    tools/           # Entity pages: commercial and hosted tools.
+    open-source/     # Entity pages: open source projects and libraries.
     concepts/        # Concept pages: ideas, frameworks, techniques.
     analyses/        # Analysis and comparison pages.
     sources/         # Source summaries and source entity pages.
@@ -62,7 +64,8 @@ Link to sources as [[raw/filename|display name]].
 |------|--------|---------|---------|
 | `source-summary` | `wiki/sources/` | Summary of a single raw source | Summary of an article or paper |
 | `entity` (person) | `wiki/people/` | A person | "Andrej Karpathy" |
-| `entity` (tool/product) | `wiki/tools/` | A tool, product, or company | "Claude Code", "Obsidian" |
+| `entity` (tool/product) | `wiki/tools/` | A commercial or hosted tool | "Claude Code", "Obsidian" |
+| `entity` (open source) | `wiki/open-source/` | An open source project or library | "LangChain", "Ollama" |
 | `entity` (article/source) | `wiki/sources/` | A notable article or document | "AI 2027" |
 | `concept` | `wiki/concepts/` | An idea, framework, technique | "RAG", "Knowledge Graph" |
 | `comparison` | `wiki/analyses/` | Side-by-side analysis of 2+ things | "RAG vs. Wiki Pattern" |
@@ -89,9 +92,10 @@ When the human adds a new source to `raw/` and asks to ingest it:
 7. **Update `wiki/overview.md`**: Revise the synthesis to reflect the new source.
 8. **Append to `wiki/log.md`**: Record what was ingested and what pages were created/updated.
 9. **Update `wiki/hot.md`**: Rewrite to reflect current state. Max 500 words. See Hot Cache rules.
-10. **Move source** from `raw/` to `raw/archive/`.
-11. **Commit**: Stage and commit all changed wiki files with the message `ingest: <source-slug>`. This creates a rollback point for every ingest.
-12. **Lint prompt**: After every 5th ingest (check log count), remind the human: *"You've ingested X sources — recommend running a lint pass to catch orphans, duplicates, and stale content."*
+10. **Update `wiki/tasks.md`**: Add any tools, projects, repos, or resources mentioned in the source that are worth investigating but not yet in the wiki. Format as a checkbox: `- [ ] **Name** — why it's worth checking out [[source-page]]`. Do not add things already covered by existing wiki pages.
+11. **Move source** from `raw/` to `raw/archive/`.
+12. **Commit**: Stage and commit all changed wiki files with the message `ingest: <source-slug>`. This creates a rollback point for every ingest.
+13. **Lint prompt**: After every 5th ingest (check log count), remind the human: *"You've ingested X sources — recommend running a lint pass to catch orphans, duplicates, and stale content."*
 
 ### 2. Query
 
@@ -176,5 +180,6 @@ Rewrite from scratch on every update — do not append.
 2. Read `wiki/hot.md` — fast context, do not skip.
 3. Read `wiki/index.md` — full page catalog.
 4. Read last ~20 entries of `wiki/log.md` — recent activity.
-5. Do **not** read individual wiki pages unless the human's request requires it.
+5. Glance at `wiki/tasks.md` — note any open items relevant to the session.
+6. Do **not** read individual wiki pages unless the human's request requires it.
 6. Ask the human what they'd like to do: ingest, query, lint, or explore.
