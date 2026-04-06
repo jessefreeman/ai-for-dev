@@ -8,18 +8,32 @@ tags: [person, ai, llm]
 
 # Andrej Karpathy
 
-AI researcher and former head of AI at Tesla. Known for his educational content on neural networks and deep learning.
+AI researcher. Former director of AI at Tesla, former OpenAI founding member. Known for influential educational content on neural networks, deep learning, and AI systems.
 
-## Relevance
+## Channels
 
-Karpathy published a viral gist (April 2026) describing the [[LLM Wiki Pattern]] — using LLMs to build and maintain personal knowledge bases as structured markdown files. The idea gained massive traction on X, with many people implementing it using [[Claude Code]] and [[Obsidian]].
+- **YouTube**: [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) — deep technical AI education
+- **X/Twitter**: [@karpathy](https://x.com/karpathy)
+- **GitHub**: [github.com/karpathy](https://github.com/karpathy) — open-source projects and gists
+- **Blog**: karpathy.ai
 
-Key details from the gist:
-- Uses ~100 articles / ~500K words in his own wiki
-- Relies on index files rather than embedding-based retrieval
-- Left the idea intentionally vague for customization
-- Considers it related to Vannevar Bush's Memex (1945)
+## Content in This Wiki
+
+- [[summary-karpathy-10x-claude-code|Andrej Karpathy Just 10x'd Everyone's Claude Code]] *(covered via [[Nate Herk]]*) — Karpathy's viral [[LLM Wiki Pattern]] gist; Nate Herk's video is the primary source ingested, not the gist itself
+
+## Key Ideas
+
+- Published the [[LLM Wiki Pattern]] as a gist (April 2026) — using LLMs to maintain structured markdown knowledge bases instead of relying on chat history or RAG
+- His own wiki: ~100 articles / ~500K words; uses index files rather than embedding-based retrieval
+- Left the pattern intentionally vague for others to customize
+- Connects the idea to Vannevar Bush's Memex (1945)
+
+## Gaps
+
+- Karpathy's original gist has not been ingested directly — would add depth and primary-source details to [[LLM Wiki Pattern]]
 
 ## See Also
-- [[summary-karpathy-10x-claude-code|Source: Karpathy 10x'd Claude Code]]
 - [[LLM Wiki Pattern]]
+- [[Nate Herk]]
+- [[Claude Code]]
+- [[summary-karpathy-10x-claude-code|Source: Karpathy 10x'd Claude Code]]

@@ -72,6 +72,43 @@ Link to sources as [[raw/filename|display name]].
 | `analysis` | `wiki/analyses/` | Answer to a query, filed as a page | "Why wikis beat chat history" |
 | `overview` | `wiki/` (root) | High-level synthesis of the whole KB | The single `overview.md` |
 
+### Person Page Structure
+
+Every person page is an **author hub** — it should be the single place to find everything this person has contributed to the wiki. Required sections:
+
+```markdown
+# Name
+
+One-sentence description of who they are and their focus.
+
+## Channels
+
+List every platform they publish on with a link and one-phrase description.
+- **YouTube**: [Channel Name](url) — what they cover
+- **Newsletter**: [name](url) — what they cover
+- **Site**: url
+- **X/Twitter**: @handle
+- **GitHub**: url
+(Include only channels confirmed from ingested sources.)
+
+## Content in This Wiki
+
+List every source ingested from this person, linked to its source-summary page.
+- [[source-slug|Source Title]] — one-sentence description of what it covers
+
+## Key Ideas
+
+3–6 bullet points capturing the person's most notable claims, frameworks, or quotes found across all their ingested content.
+
+## See Also
+- Links to concepts, tools, and other pages their content touches
+```
+
+**Rules:**
+- Update a person page every time a new source from that person is ingested — add the new source to "Content in This Wiki" and any new key ideas.
+- Never create a stub person page. If you don't have channel info yet, note it as unknown rather than omitting the section.
+- "Content in This Wiki" is the authoritative list of what's been ingested from this person. Keep it complete.
+
 ## Operations
 
 ### 1. Ingest

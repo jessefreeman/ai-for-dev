@@ -56,6 +56,12 @@ Chronological record of all operations.
   - `openrouter.md` — Entity: unified AI API gateway
 - **Updated**: `claude-code.md`, `index.md`, `overview.md`
 
+## [2026-04-06] maintenance | Person pages standardized as author hubs
+- **Reason**: Person pages were minimal stubs with no channel info and no content index.
+- **Change**: All four person pages rebuilt with Channels, Content in This Wiki, and Key Ideas sections.
+- **Updated**: `andrej-karpathy.md`, `nate-herk.md`, `nate-b-jones.md`, `matthew-berman.md`
+- **CLAUDE.md**: Added "Person Page Structure" standard under Page Types — required sections, rules for keeping content lists complete, instruction to update on every new ingest from that person.
+
 ## [2026-04-06] ingest | Google just dropped Gemma 4 (Matthew Berman)
 - **Source**: YouTube transcript by Matthew Berman covering Gemma 4 release
 - **Pages created** (3):
