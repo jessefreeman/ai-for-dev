@@ -20,6 +20,7 @@ Research/
     index.md         # Content catalog of all wiki pages.
     log.md           # Chronological record of all operations.
     overview.md      # High-level synthesis of the entire knowledge base.
+    hot.md           # Hot cache: ~500 words of current context. Read this first.
     people/          # Entity pages: people.
     tools/           # Entity pages: tools and products.
     concepts/        # Concept pages: ideas, frameworks, techniques.
@@ -82,16 +83,17 @@ When the human adds a new source to `raw/` and asks to ingest it:
 6. **Update `wiki/index.md`**: Add or update entries for every page touched.
 7. **Update `wiki/overview.md`**: Revise the synthesis to reflect the new source.
 8. **Append to `wiki/log.md`**: Record what was ingested and what pages were created/updated.
-9. **Move source** from `raw/` to `raw/archive/`. This marks it as processed. Any files remaining in `raw/` (not in subfolders) are unprocessed and should be ingested.
+9. **Update `wiki/hot.md`**: Rewrite with the current context — what was just ingested, what's active, what pages are most relevant right now. Keep it under 500 words. This is the first thing any agent reads.
+10. **Move source** from `raw/` to `raw/archive/`. This marks it as processed. Any files remaining in `raw/` (not in subfolders) are unprocessed and should be ingested.
 
 ### 2. Query
 
 When the human asks a question:
 
-1. **Read `wiki/index.md`** to find relevant pages.
-2. **Read** the relevant wiki pages (and raw sources if needed).
+1. **Read `wiki/hot.md`** for immediate context, then **`wiki/index.md`** to locate relevant pages.
+2. **Read only the relevant wiki pages** — do not crawl the full wiki unless the question requires it.
 3. **Synthesize** an answer with citations to wiki pages and sources.
-4. **Optionally file** the answer as a new wiki page (type: `analysis` or `comparison`) if the human agrees it's worth keeping. Update index and log.
+4. **Optionally file** the answer as a new wiki page (type: `analysis` or `comparison`) if the human agrees it's worth keeping. Update index, log, and hot cache.
 
 ### 3. Lint
 
@@ -103,6 +105,18 @@ When the human asks for a health check, or periodically after major ingests:
 4. **Missing pages**: Concepts or entities mentioned in links but lacking their own page.
 5. **Gaps**: Suggest questions to investigate or sources to find.
 6. **Log** the lint pass and any fixes made.
+
+## Hot Cache
+
+`wiki/hot.md` is a short (~500 word) file that captures the current state of the wiki in plain language. It is **not** a summary of every page — it is a snapshot of what's most active and relevant right now.
+
+Update it after every ingest or significant query. It should answer:
+- What topics are currently in the wiki?
+- What was most recently added?
+- What are the most connected/important pages?
+- What gaps or questions are open?
+
+Any agent pointing at this wiki should read `hot.md` first and only go deeper into the wiki if the query requires it.
 
 ## Wikilink Conventions
 
@@ -131,6 +145,8 @@ Use tags from this evolving list. Add new tags as needed but prefer reusing exis
 At the start of every conversation:
 
 1. Read `CLAUDE.md` (this file) to load the schema.
-2. Read `wiki/index.md` to understand what's in the wiki.
-3. Read `wiki/log.md` (last ~20 entries) to understand recent activity.
-4. Ask the human what they'd like to do: ingest, query, lint, or explore.
+2. Read `wiki/hot.md` for immediate context on what's active.
+3. Read `wiki/index.md` to understand the full scope of the wiki.
+4. Read `wiki/log.md` (last ~20 entries) to understand recent activity.
+5. Do **not** read individual wiki pages unless the human's request requires it.
+6. Ask the human what they'd like to do: ingest, query, lint, or explore.
