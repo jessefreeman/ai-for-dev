@@ -3,6 +3,10 @@ raw/**/*.md
 raw/**/*.pdf
 raw/**/*.html
 
+# Exceptions — LLM-generated output inside raw/ that should be versioned
+!raw/memories/
+!raw/memories/*.md
+
 # Obsidian machine-specific state
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json

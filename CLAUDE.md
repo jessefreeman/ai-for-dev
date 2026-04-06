@@ -29,6 +29,8 @@ Research/
     business/        # Business patterns: selling AI, ROI frameworks, automation use cases.
     analyses/        # Analysis and comparison pages.
     sources/         # Source summaries and source entity pages.
+  raw/
+    memories/        # Atomized memory snippets for RavenBrain MCP ingestion.
 ```
 
 ## Roles
@@ -131,10 +133,11 @@ When the human adds a new source to `raw/` and asks to ingest it:
 7. **Update `wiki/overview.md`**: Revise the synthesis to reflect the new source.
 8. **Append to `wiki/log.md`**: Record what was ingested and what pages were created/updated.
 9. **Update `wiki/hot.md`**: Rewrite to reflect current state. Max 500 words. See Hot Cache rules.
-10. **Update `wiki/tasks.md`**: Add any tools, projects, repos, or resources mentioned in the source that are worth investigating but not yet in the wiki. Format as a checkbox: `- [ ] **Name** — why it's worth checking out [[source-page]]`. Do not add things already covered by existing wiki pages.
-11. **Move source** from `raw/` to `raw/archive/`.
-12. **Commit**: Stage and commit all changed wiki files with the message `ingest: <source-slug>`. This creates a rollback point for every ingest.
-13. **Lint prompt**: After every 5th ingest (check log count), remind the human: *"You've ingested X sources — recommend running a lint pass to catch orphans, duplicates, and stale content."*
+10. **Generate memories**: Create atomized memory files in `raw/memories/`. See Memory Rules below.
+11. **Update `wiki/tasks.md`**: Add any tools, projects, repos, or resources mentioned in the source that are worth investigating but not yet in the wiki. Format as a checkbox: `- [ ] **Name** — why it's worth checking out [[source-page]]`. Do not add things already covered by existing wiki pages.
+12. **Move source** from `raw/` to `raw/archive/`.
+13. **Commit**: Stage and commit all changed wiki files and new memory files with the message `ingest: <source-slug>`. This creates a rollback point for every ingest.
+14. **Lint prompt**: After every 5th ingest (check log count), remind the human: *"You've ingested X sources — recommend running a lint pass to catch orphans, duplicates, and stale content."*
 
 ### 2. Query
 
@@ -158,6 +161,63 @@ When triggered manually or prompted automatically:
 7. **Gaps**: Suggest questions to investigate or sources to find.
 8. Present all findings to the human before making any changes. Only act on approved items.
 9. **Log** the lint pass and all changes made.
+
+## Memory Rules
+
+`raw/memories/` holds atomized memory snippets ingested by the RavenBrain MCP server. Each file is one atomic fact, concept, or recall item — the kind of thing someone would ask an agent: *"How did Nate reduce token costs?"* or *"What video covered Paperclip?"*
+
+### Format
+
+```markdown
+---
+title: Short Descriptive Title
+summary: One sentence — what this memory captures.
+tags: person_name, tool_name, topic_name, source_slug
+---
+
+# Short Descriptive Title
+
+## Context
+
+Where this came from. Link to the source-summary wiki page and any relevant entity/concept pages.
+Example: From [[summary-nate-herk-ollama-claude-code|Nate Herk's Ollama + Claude Code video]]. See also [[Open-Source Model Integration]].
+
+## Content
+
+The atomic fact, method, claim, or concept. Write it as a self-contained answer — someone reading only this file should get the complete answer without needing to open the source.
+```
+
+### Tag Taxonomy
+
+Use flat comma-separated strings (not YAML arrays):
+- `person_[firstname_lastname]` — e.g. `person_nate_herk`
+- `tool_[toolname]` — e.g. `tool_claude_code`, `tool_ollama`
+- `concept_[name]` — e.g. `concept_multi_agent`, `concept_token_budget`
+- `topic_[name]` — broad grouping — e.g. `topic_cost_reduction`, `topic_local_ai`
+- `source_[slug]` — e.g. `source_nate_herk_ollama`
+
+### What to Capture
+
+Good memories:
+- Specific methods or steps (*"How do you configure OpenRouter in Claude Code?"*)
+- Key claims with numbers (*"MiniMax M2.7 is 20x cheaper than Opus 4.6"*)
+- Named frameworks or patterns (*"The clogged pipe diagnostic"*)
+- Important distinctions (*"Workflow state vs conversation state"*)
+- Tool overviews (*"What is Paperclip and what does it solve?"*)
+- Quotes or theses worth recalling (*"Building agents is 80% plumbing"*)
+
+Skip:
+- Information already obvious from a wiki page title
+- Full summaries (that's `wiki/sources/`)
+- Redundant memories covering the same fact
+
+### Naming
+
+Use kebab-case descriptive slugs: `openrouter-all-models-config-pitfall.md`, `paperclip-heartbeat-pattern.md`.
+
+### Volume
+
+Aim for **3–8 memories per source** depending on density. Prefer fewer high-quality memories over many redundant ones.
 
 ## Hot Cache Rules
 
