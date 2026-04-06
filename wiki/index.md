@@ -98,6 +98,7 @@ New content appears as I read, watch, and research. The site updates automatical
 
 ### Business
 - [[ai-automation-workflows|AI Automation Workflows]] — The 5 highest-value AI automations to sell to businesses, plus the clogged pipe sales framework.
+- [[ai-professional-interface|AI Professional Interface]] — Replace the broken hiring pipeline with an AI-powered personal interface. Five components, attention economics, bidirectional fit assessment.
 
 ### Sources
 - [[ai-2027|AI 2027]] — Forecasting article used as a demo ingest source.
@@ -126,6 +127,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-stephen-g-pope-thepopebot|FREE OpenClaw]] — ThePepeBot architecture: Docker + GitHub Actions + Ollama.
 - [[summary-cole-medin-e2e-testing|E2E Testing Command]] — Self-healing AI coding workflow with browser automation.
 - [[summary-nate-b-jones-frontier-operations|Frontier Operations]] — The expanding bubble; five persistent skills.
+- [[summary-nate-b-jones-ai-professional-interface|AI Professional Interface]] — Replace hiring pipeline with AI-powered personal interface.
 
 ## Contribute or build your own
 

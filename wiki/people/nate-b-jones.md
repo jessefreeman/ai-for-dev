@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026..md", "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build).md", "The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2).md", "Why Every AI Skill You Learned 6 Months Ago Is Already Wrong (And What Is Replacing Them).md"]
+sources: ["I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026..md", "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build).md", "The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2).md", "Why Every AI Skill You Learned 6 Months Ago Is Already Wrong (And What Is Replacing Them).md", "Stop Competing With 400 Applicants. Build This in One Weekend (Yes, there's a  no code option too!).md"]
 created: 2026-04-06
 updated: 2026-04-06
 tags: [person, ai, agent, educator]
@@ -26,6 +26,7 @@ AI strategy educator and daily content creator. Focuses on production agent arch
 - [[summary-nate-b-jones-openbrain-architecture|The $0.10 System That Replaced My AI Workflow]] — The definitive [[OpenBrain]] architecture guide: Postgres + PGVector + Supabase + MCP. Walled garden problem. Human web vs agent web. Four lifecycle prompts. The compounding advantage thesis.
 - [[summary-nate-b-jones-five-levels|The 5 Levels of AI Coding]] — Dan Shapiro's framework (L0 spicy autocomplete → L5 dark factory). StrongDM's 3-person software factory with [[Attractor]]. METR study (devs 19% slower). J-curve. Junior pipeline collapse. AI-native economics ($3.5M/employee).
 - [[summary-nate-b-jones-frontier-operations|Why Every AI Skill Is Already Wrong]] — [[Frontier Operations]]: the expanding bubble metaphor. Five persistent skills (boundary sensing, seam design, failure model maintenance, capability forecasting, leverage calibration). Team of one, pod of five.
+- [[summary-nate-b-jones-ai-professional-interface|Stop Competing With 400 Applicants]] — [[AI Professional Interface]]: five components (AI chat, expandable context, skills matrix with gaps, fit assessment tool, polished site). Attention economics, showing vs telling, bidirectional power inversion. Buildable in Lovable in an afternoon.
 
 ## Key Ideas
 
@@ -45,6 +46,7 @@ AI strategy educator and daily content creator. Focuses on production agent arch
 - **[[Five Levels of AI Coding]]**: L0 spicy autocomplete → L5 dark factory. 90% of "AI-native" devs are stuck at L2. StrongDM's 3-person team with Attractor is the clearest L5 example. The bottleneck has moved from implementation speed to spec quality.
 - **[[Frontier Operations]]**: The expanding bubble — as AI gets smarter, the surface area for human judgment GROWS. Five persistent skills. "The first workforce skill that expires on a roughly quarterly cycle."
 - The **J-curve**: Most orgs are stuck at the bottom, getting measurably slower with AI while believing they're faster
+- **[[AI Professional Interface]]**: Replace the 0.4% success rate hiring pipeline with an AI-powered interface. Five components. The fit assessment tool inverts the power dynamic — both sides evaluate fit. "Showing is almost always more persuasive than telling."
 
 ## See Also
 - [[Agentic Harness Primitives]]
@@ -64,5 +66,7 @@ AI strategy educator and daily content creator. Focuses on production agent arch
 - [[Attractor]]
 - [[summary-nate-b-jones-four-prompting-disciplines|Source: Prompting Split Into 4 Skills]]
 - [[summary-nate-b-jones-openbrain-architecture|Source: The $0.10 System]]
+- [[AI Professional Interface]]
 - [[summary-nate-b-jones-five-levels|Source: 5 Levels of AI Coding]]
 - [[summary-nate-b-jones-frontier-operations|Source: Frontier Operations]]
+- [[summary-nate-b-jones-ai-professional-interface|Source: AI Professional Interface]]

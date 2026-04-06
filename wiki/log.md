@@ -267,3 +267,12 @@ Chronological record of all operations.
 - **Updated**: `nate-b-jones.md`
 - **Memories** (1): frontier-operations-five-skills
 - **Note**: 26 total sources ingested — lint pass seriously overdue
+
+## [2026-04-06] ingest | Stop Competing With 400 Applicants (Nate B Jones)
+- **Source**: YouTube transcript — AI-powered professional interface replacing broken hiring pipeline
+- **Pages created** (2):
+  - `summary-nate-b-jones-ai-professional-interface.md` — Source summary
+  - `wiki/business/ai-professional-interface.md` — Business: Five interface components, attention economics, fit assessment, client service model
+- **Updated**: `nate-b-jones.md` (8th source)
+- **Memories** (5): ai-professional-interface-five-components, attention-economics-hiring, fit-assessment-tool-power-inversion, showing-vs-telling-credibility, hiring-arms-race-04-percent
+- **Note**: Granular breakdown per user request — detailed concept page with implementation details, objection handling, and client service productization notes. 27 total sources.

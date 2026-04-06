@@ -26,6 +26,9 @@ Things to investigate, try, or read. Added automatically during ingest. Check of
 - [ ] **Shadow factory agency model** — Jesse's business vision; research deeper into dark factory economics, L4/L5 operating patterns, and agency models serving businesses that can't build their own [[Five Levels of AI Coding]]
 - [ ] **Bright Data** — web scraping/CAPTCHA solving platform for agents; mentioned in Cole Medin E2E video [[summary-cole-medin-e2e-testing]]
 - [ ] **Neon** — serverless Postgres with database branching for test isolation; mentioned in Cole Medin E2E video [[summary-cole-medin-e2e-testing]]
+- [ ] **Lovable** — no-code app builder used to build the AI professional interface in an afternoon; multiple references [[AI Professional Interface]]
+- [ ] **AI professional interface as client service** — build out the productized version: interview process, AI training, site build, fit tool config, distribution guidance [[AI Professional Interface]]
+- [ ] **Marcus Chen demo site** — Nate's working demo; GitHub repo available; study the implementation for client builds [[summary-nate-b-jones-ai-professional-interface]]
 
 ## Completed
 

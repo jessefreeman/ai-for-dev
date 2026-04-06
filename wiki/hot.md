@@ -7,39 +7,30 @@ updated: 2026-04-06
 
 ## Current State
 
-26 sources across seven themes. Nate B Jones now has 7 sources — the wiki's dominant voice with a coherent theory spanning agent architecture, prompting methodology, memory infrastructure, and organizational transformation.
+27 sources. Nate B Jones has 8 — the wiki's dominant voice spanning agent architecture, prompting, AI coding maturity, frontier operations, memory infrastructure, and now business/hiring applications.
 
 ## Most Active Pages
 
-- [[Five Levels of AI Coding]] — L0→L5 framework; StrongDM dark factory; J-curve; junior pipeline collapse
-- [[Frontier Operations]] — five persistent skills at the expanding AI/human boundary
+- [[Five Levels of AI Coding]] — L0→L5; StrongDM dark factory; J-curve
+- [[AI Professional Interface]] — five components replacing broken hiring; client-serviceable
+- [[Frontier Operations]] — five persistent skills at expanding AI/human boundary
 - [[Four Prompting Disciplines]] — prompt craft → context → intent → specification
-- [[Claude Code]] — primary tool; architecture, /loop, skills ecosystem
-- [[OpenBrain]] — Postgres + PGVector + MCP agent memory ($0.10/month)
-- [[ThePepeBot]] — free OpenClaw alternative; Docker + GitHub Actions + Ollama
+- [[OpenBrain]] — Postgres + PGVector + MCP ($0.10/month)
+- [[Claude Code]] — primary tool; /loop, skills ecosystem
 
-## Recently Added (2026-04-06, batch 7)
+## Most Recently Added
 
-- **Nate B Jones** (5 Levels): [[Five Levels of AI Coding]], [[Attractor]] — Dan Shapiro's framework, StrongDM dark factory, scenarios vs tests, METR study, J-curve, AI-native economics
-- **Stephen G. Pope**: [[ThePepeBot]] — free OpenClaw alternative architecture for future claw projects
-- **Cole Medin** (E2E testing): Self-healing coding workflow, PIV loop, browser automation validation
-- **Nate B Jones** (Frontier Ops): [[Frontier Operations]] — expanding bubble metaphor, 5 persistent skills, team of one / pod of five
+- **Nate B Jones** (professional interface): [[AI Professional Interface]] — 5 components (AI chat, expandable context, skills matrix with gaps, fit assessment tool, polished site). Attention economics. Showing vs telling. Bidirectional power inversion. Productizable as client service.
 
-## Nate B Jones: The Complete Theory (7 sources)
+## Business Pages Now
 
-1. Agent infra: [[Agentic Harness Primitives]] (12 primitives)
-2. Agent primitives: memory + proactivity + tools ([[OpenBrain]], [[/loop]])
-3. Prompting: [[Four Prompting Disciplines]] (prompt craft → spec engineering)
-4. AI coding maturity: [[Five Levels of AI Coding]] (L0→L5 dark factory)
-5. Human skills: [[Frontier Operations]] (5 skills at the expanding boundary)
-6. Creative tools: MCP as growth hack ([[Google Stitch]], [[Remotion]])
-7. Memory infra: [[OpenBrain]] full architecture
+- [[AI Automation Workflows]] — 5 workflows to sell to businesses
+- [[AI Professional Interface]] — replace hiring pipeline with AI-powered interface
 
 ## Open Gaps
 
-- Karpathy's original gist — primary source for LLM Wiki pattern
-- AI 2027 article — referenced but not ingested
-- **Dan Shapiro** — the 5 Levels originator; no person page yet (worth investigating)
-- **StrongDM** — the dark factory team; worth deeper investigation
-- **METR study** — the RCT showing devs 19% slower; worth ingesting directly
-- **26 ingests — lint pass seriously overdue**
+- Karpathy's original gist, AI 2027 article
+- Dan Shapiro, StrongDM, METR study — deeper investigation
+- Shadow factory agency model — Jesse's business vision
+- Lovable — mentioned as the build tool; no page yet
+- **27 ingests — lint pass seriously overdue**
