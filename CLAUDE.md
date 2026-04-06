@@ -17,7 +17,7 @@ Research/
     assets/          # Downloaded images and attachments.
     *.md             # New articles, notes, transcripts, papers awaiting ingest.
   wiki/              # LLM-generated and LLM-maintained markdown files.
-    index.md         # Content catalog of all wiki pages.
+    index.md         # Page catalog — one line per page, no prose.
     log.md           # Chronological record of all operations.
     overview.md      # High-level synthesis of the entire knowledge base.
     hot.md           # Hot cache: ~500 words of current context. Read this first.
@@ -75,16 +75,23 @@ Link to sources as [[raw/filename|display name]].
 
 When the human adds a new source to `raw/` and asks to ingest it:
 
-1. **Read** the source fully. If it contains image references, read the text first, then view key images separately.
-2. **Discuss** key takeaways with the human. Ask what to emphasize if unclear.
+1. **Read** the source fully.
+2. **Pre-ingest assessment** — before creating any pages, report:
+   - A 2-3 sentence summary of what the source covers
+   - Any content that significantly overlaps with existing wiki pages
+   - Any content that seems off-topic or low-value for this wiki
+   - A proposed page list (what would be created or updated)
+   Then **pause and ask the human to approve** before proceeding. The human may tell you to skip certain pages, merge content, or abort entirely.
 3. **Create** a `source-summary` page in `wiki/sources/` named `summary-<slug>.md`.
-4. **Update or create** pages for every notable person, organization, idea, or term mentioned. Place them in the correct subfolder (see Page Types table). Add new information; don't duplicate what's already there.
-5. **Cross-reference**: Add `[[wikilinks]]` in both directions between related pages. Every page should link to at least one other page.
-6. **Update `wiki/index.md`**: Add or update entries for every page touched.
+4. **Update or create** pages for every approved person, organization, idea, or term. Place them in the correct subfolder. Add new information only — do not duplicate what's already in existing pages.
+5. **Cross-reference**: Add `[[wikilinks]]` in both directions. Every page must link to at least one other page.
+6. **Update `wiki/index.md`**: One line per page — title and one-phrase description only. No prose.
 7. **Update `wiki/overview.md`**: Revise the synthesis to reflect the new source.
 8. **Append to `wiki/log.md`**: Record what was ingested and what pages were created/updated.
-9. **Update `wiki/hot.md`**: Rewrite with the current context — what was just ingested, what's active, what pages are most relevant right now. Keep it under 500 words. This is the first thing any agent reads.
-10. **Move source** from `raw/` to `raw/archive/`. This marks it as processed. Any files remaining in `raw/` (not in subfolders) are unprocessed and should be ingested.
+9. **Update `wiki/hot.md`**: Rewrite to reflect current state. Max 500 words. See Hot Cache rules.
+10. **Move source** from `raw/` to `raw/archive/`.
+11. **Commit**: Stage and commit all changed wiki files with the message `ingest: <source-slug>`. This creates a rollback point for every ingest.
+12. **Lint prompt**: After every 5th ingest (check log count), remind the human: *"You've ingested X sources — recommend running a lint pass to catch orphans, duplicates, and stale content."*
 
 ### 2. Query
 
@@ -97,56 +104,77 @@ When the human asks a question:
 
 ### 3. Lint
 
-When the human asks for a health check, or periodically after major ingests:
+When triggered manually or prompted automatically:
 
-1. **Contradictions**: Flag claims that conflict across pages.
-2. **Stale content**: Identify pages that newer sources have superseded.
-3. **Orphans**: Find pages with no inbound links.
-4. **Missing pages**: Concepts or entities mentioned in links but lacking their own page.
-5. **Gaps**: Suggest questions to investigate or sources to find.
-6. **Log** the lint pass and any fixes made.
+1. **Duplicates**: Flag pages covering the same entity or concept. Propose merges.
+2. **Orphans**: Find pages with no inbound links. Propose linking or deleting.
+3. **Contradictions**: Flag claims that conflict across pages.
+4. **Stale content**: Identify pages that newer sources have superseded.
+5. **Off-topic pages**: Flag pages that don't serve the wiki's focus. Propose removal.
+6. **Missing pages**: Concepts or entities mentioned in links but lacking their own page.
+7. **Gaps**: Suggest questions to investigate or sources to find.
+8. Present all findings to the human before making any changes. Only act on approved items.
+9. **Log** the lint pass and all changes made.
 
-## Hot Cache
+## Hot Cache Rules
 
-`wiki/hot.md` is a short (~500 word) file that captures the current state of the wiki in plain language. It is **not** a summary of every page — it is a snapshot of what's most active and relevant right now.
+`wiki/hot.md` must stay under 500 words. It is read every session — every word costs tokens.
 
-Update it after every ingest or significant query. It should answer:
-- What topics are currently in the wiki?
-- What was most recently added?
-- What are the most connected/important pages?
-- What gaps or questions are open?
+**Include only:**
+- What topics are currently in the wiki (one sentence)
+- The 5-10 most linked-to or important pages
+- What was most recently added
+- Open gaps or questions worth investigating
 
-Any agent pointing at this wiki should read `hot.md` first and only go deeper into the wiki if the query requires it.
+**Strip out:**
+- Descriptions of how the wiki works (that's CLAUDE.md's job)
+- Full summaries of individual pages
+- Anything that hasn't changed since the last ingest
+- Historical context that's already captured in log.md
+
+Rewrite from scratch on every update — do not append.
+
+## Index Rules
+
+`wiki/index.md` is a navigation file, not a summary document. Keep it scannable.
+
+**Format strictly as:**
+```
+## Section
+- [[page-title|Display Name]] — one phrase description
+```
+
+**Never include:**
+- Multi-sentence descriptions
+- Prose between entries
+- Duplicate entries
+- Pages that no longer exist
 
 ## Wikilink Conventions
 
 - Use `[[Page Title]]` for wiki-to-wiki links.
-- Use `[[raw/archive/filename|Display Name]]` for citations to raw sources (sources live in archive after ingest).
+- Use `[[raw/archive/filename|Display Name]]` for citations to raw sources.
 - Prefer short, clear page titles: "Retrieval-Augmented Generation" not "A Summary of RAG Techniques".
 - Use lowercase-kebab-case for filenames: `retrieval-augmented-generation.md`.
 
 ## Frontmatter Tags
-
-Use tags from this evolving list. Add new tags as needed but prefer reusing existing ones:
 
 - Domain tags: `ai`, `llm`, `knowledge-management`, `productivity`, `health`, `business`, etc.
 - Format tags: `article`, `paper`, `book-chapter`, `podcast`, `video`, `transcript`, etc.
 
 ## Quality Standards
 
-- Every claim should be traceable to a source via links.
-- When new information contradicts existing wiki content, note the contradiction explicitly and update the page to reflect the best current understanding.
-- Prefer precise language. Avoid filler and hedging.
-- Keep summaries dense. A 5000-word article should become a ~500-word summary, not a 3000-word paraphrase.
-- The wiki should be browsable by a human in Obsidian with no LLM assistance.
+- Every claim must be traceable to a source via links.
+- When new information contradicts existing content, note the contradiction and update to reflect best current understanding.
+- Precise language only. No filler, no hedging.
+- Dense summaries. A 5000-word article → ~500-word summary.
+- The wiki must be browsable by a human in Obsidian with no LLM assistance.
 
 ## Session Start Checklist
 
-At the start of every conversation:
-
-1. Read `CLAUDE.md` (this file) to load the schema.
-2. Read `wiki/hot.md` for immediate context on what's active.
-3. Read `wiki/index.md` to understand the full scope of the wiki.
-4. Read `wiki/log.md` (last ~20 entries) to understand recent activity.
+1. Read `CLAUDE.md` (this file).
+2. Read `wiki/hot.md` — fast context, do not skip.
+3. Read `wiki/index.md` — full page catalog.
+4. Read last ~20 entries of `wiki/log.md` — recent activity.
 5. Do **not** read individual wiki pages unless the human's request requires it.
 6. Ask the human what they'd like to do: ingest, query, lint, or explore.
