@@ -95,10 +95,15 @@ Larger models (e.g., 70B+) generally behave more reliably with Claude Code's har
 - Qwen 3.5/3.6 — strong open-source coding models, available on Ollama and OpenRouter
 - MiniMax M 2.7 — cloud-only via Ollama; comparable experience to Sonnet in demos
 
+## Context Window Improvements
+
+[[TurboQuant]] (April 2026, Google Research) dramatically improves the practical context window of local models — 4x more tokens in the same RAM. A model previously capped at 8K context on consumer hardware can now reach 32K. Being merged into llama.cpp. This significantly expands the range of tasks suitable for local inference.
+
 ## See Also
 - [[Claude Code]]
 - [[Ollama]]
 - [[OpenRouter]]
 - [[Gemma 4]]
+- [[TurboQuant]]
 - [[Agentic Harness Primitives]]
 - [[summary-nate-herk-ollama-claude-code|Source: Ollama + Claude Code]]

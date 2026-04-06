@@ -40,8 +40,13 @@ Ollama also hosts cloud models (e.g., MiniMax M 2.7) that can be used without lo
 - [[Gemma 4]] — Google's high-efficiency open-source family; 31B ranks #3 globally
 - Qwen 3.5/3.6 — Strong coding models, available locally
 
+## Context Window Note
+
+[[TurboQuant]] (in progress, merging into llama.cpp) will enable 4x larger context windows on the same hardware. Models that currently max out at 8K context on your GPU will reach 32K. Watch for llama.cpp releases.
+
 ## See Also
 - [[Claude Code]]
 - [[OpenRouter]]
 - [[Open-Source Model Integration]]
 - [[Gemma 4]]
+- [[TurboQuant]]

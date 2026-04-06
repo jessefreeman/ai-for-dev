@@ -62,6 +62,24 @@ Chronological record of all operations.
 - **Updated**: `andrej-karpathy.md`, `nate-herk.md`, `nate-b-jones.md`, `matthew-berman.md`
 - **CLAUDE.md**: Added "Person Page Structure" standard under Page Types — required sections, rules for keeping content lists complete, instruction to update on every new ingest from that person.
 
+## [2026-04-06] ingest | Claude Code + Paperclip Just Destroyed OpenClaw (Nate Herk)
+- **Source**: YouTube transcript by Nate Herk on Paperclip multi-agent orchestration
+- **Pages created** (4):
+  - `summary-nate-herk-paperclip.md` — Source summary
+  - `paperclip.md` — Entity: open-source multi-agent orchestration tool
+  - `multi-agent-orchestration.md` — Concept: coordinating multiple AI agents
+  - (no new person page — Nate Herk already exists)
+- **Updated**: `nate-herk.md` (added new source + key idea), `index.md`
+
+## [2026-04-06] ingest | TurboQuant will change Local AI for everyone (Tim Carambat)
+- **Source**: YouTube transcript by Tim Carambat on TurboQuant KV cache optimization
+- **Pages created** (4):
+  - `summary-tim-carambat-turboquant.md` — Source summary
+  - `turboquant.md` — Concept: KV cache optimization technique
+  - `anything-llm.md` — Entity: local AI all-in-one app
+  - `tim-carambat.md` — Entity: AnythingLLM founder
+- **Updated**: `open-source-model-integration.md`, `ollama.md`, `index.md`
+
 ## [2026-04-06] ingest | Google just dropped Gemma 4 (Matthew Berman)
 - **Source**: YouTube transcript by Matthew Berman covering Gemma 4 release
 - **Pages created** (3):

@@ -26,6 +26,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[nate-herk|Nate Herk]] — YouTube creator who demonstrated the LLM Wiki in practice.
 - [[nate-b-jones|Nate B Jones]] — AI strategy educator; analyzed the Claude Code architecture leak.
 - [[matthew-berman|Matthew Berman]] — AI YouTuber focused on open-source models and local inference.
+- [[tim-carambat|Tim Carambat]] — Founder of AnythingLLM; covers local AI inference and TurboQuant.
 
 ### Tools
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki.
@@ -34,11 +35,15 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[ollama|Ollama]] — Local model runner for running open-source LLMs on consumer hardware.
 - [[openrouter|OpenRouter]] — Unified API gateway for hundreds of AI models, including free tiers.
 - [[gemma-4|Gemma 4]] — Google's high-efficiency open-weights model family; 31B ranks #3 globally.
+- [[paperclip|Paperclip]] — Open-source multi-agent orchestration dashboard; MIT licensed.
+- [[anything-llm|AnythingLLM]] — All-in-one local AI app for document chat, agents, and automations.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
 - [[agentic-harness-primitives|Agentic Harness Primitives]] — 12-primitive framework for production-grade agent systems.
 - [[open-source-model-integration|Open-Source Model Integration]] — Running Claude Code with local or third-party models to reduce cost.
+- [[multi-agent-orchestration|Multi-Agent Orchestration]] — Coordinating multiple AI agents with distinct roles toward shared goals.
+- [[turboquant|TurboQuant]] — KV cache optimization enabling 4x more context window on the same consumer hardware.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -49,6 +54,8 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-nate-jones-12-agent-primitives|12 Agent Primitives]] — Nate B Jones analyzes the Claude Code leak for production agent patterns.
 - [[summary-nate-herk-ollama-claude-code|Ollama + Claude Code]] — Nate Herk's guide to running Claude Code with local and free cloud models.
 - [[summary-matthew-berman-gemma4|Google Drops Gemma 4]] — Matthew Berman covers Gemma 4 benchmarks and release.
+- [[summary-nate-herk-paperclip|Claude Code + Paperclip]] — Nate Herk demonstrates multi-agent orchestration with Paperclip.
+- [[summary-tim-carambat-turboquant|TurboQuant]] — Tim Carambat covers TurboQuant's impact on local model context windows.
 
 ## Contribute or build your own
 

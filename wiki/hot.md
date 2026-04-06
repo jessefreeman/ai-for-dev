@@ -7,30 +7,34 @@ updated: 2026-04-06
 
 ## Current State
 
-The wiki covers four ingested sources across two main themes: (1) LLM-maintained knowledge bases using the Karpathy/Nate Herk pattern, and (2) production agent architecture and cost-effective AI tooling.
+The wiki covers six ingested sources across three themes: (1) LLM-maintained knowledge bases, (2) production agent architecture and cost-effective AI tooling, and (3) multi-agent orchestration and local AI improvements.
 
 ## Most Active Pages
 
-- [[LLM Wiki Pattern]] — the core concept; most linked-to page in the wiki
-- [[Claude Code]] — primary tool; now includes internal architecture from the leaked source map
-- [[Agentic Harness Primitives]] — 12-primitive framework for production agents; derived from the Claude Code leak
-- [[Open-Source Model Integration]] — how to run Claude Code with Ollama or OpenRouter for 50–100x cost reduction
-- [[RAG vs Wiki]] — key analysis comparing LLM Wiki to semantic search RAG
-- [[Andrej Karpathy]] — originator of the LLM Wiki pattern
+- [[Claude Code]] — primary tool; internal architecture documented from the leak
+- [[Agentic Harness Primitives]] — 12-primitive production agent framework from the leak
+- [[LLM Wiki Pattern]] — the core concept behind this wiki
+- [[Multi-Agent Orchestration]] — coordinating fleets of Claude Code agents via Paperclip
+- [[Open-Source Model Integration]] — running Claude Code with Ollama/OpenRouter (50–100x cheaper)
+- [[TurboQuant]] — 4x context window expansion for local models; merging into llama.cpp
 
 ## Recently Added (2026-04-06)
 
-- **Nate B Jones** video: Claude Code architecture leak → [[Agentic Harness Primitives]] (12 primitives, 3 tiers)
-- **Nate Herk** video: Running Claude Code free/cheap with [[Ollama]] and [[OpenRouter]]
-- **Matthew Berman** video: [[Gemma 4]] — Google's #3-ranked open model at 31B params
-- New people: [[Nate B Jones]], [[Matthew Berman]]
-- New tools: [[Ollama]], [[OpenRouter]], [[Gemma 4]]
-- New concepts: [[Agentic Harness Primitives]], [[Open-Source Model Integration]]
+- **Nate Herk** (Paperclip video): [[Paperclip]] tool page + [[Multi-Agent Orchestration]] concept
+- **Tim Carambat** (TurboQuant video): [[TurboQuant]] concept + [[AnythingLLM]] tool + [[Tim Carambat]] person
+- New person: [[Tim Carambat]]
+- New tools: [[Paperclip]], [[AnythingLLM]]
+- New concepts: [[Multi-Agent Orchestration]], [[TurboQuant]]
+
+## Pending Assessment (awaiting approval)
+
+- **Damian Malliaros — MiniMax M2.7**: Claude Code + MiniMax as cheap/fast alternative to Opus 4.6; ClickUp clone demo; Supabase MCP integration. Would add MiniMax as a new model page.
+- **Nate Herk — 500 AI Workflows**: 5 most profitable AI automation workflows for businesses (speed to lead, document processing, follow-up, database reactivation, internal reporting). **Scope question pending** — more business/sales focused than developer-focused.
 
 ## Open Gaps
 
-- Karpathy's original gist not yet ingested — would add depth on the pattern's origin
-- AI 2027 article referenced but not yet ingested — flagged as rich (~23 pages)
-- No sources on traditional RAG implementations for direct comparison
-- Claude "Mythos" model leak referenced in Nate B Jones video — no page yet
-- Token management strategies for long-running Claude Code sessions not yet a dedicated concept
+- Karpathy's original gist not yet ingested — primary source for [[LLM Wiki Pattern]]
+- AI 2027 article referenced but not yet ingested
+- No sources on traditional RAG for direct comparison
+- OpenClaw mentioned repeatedly but has no wiki page
+- skills.sh (Claude Code skill marketplace) mentioned but has no wiki page
