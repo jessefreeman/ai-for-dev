@@ -21,6 +21,7 @@ YouTube creator focused on AI automation and practical Claude Code workflows. Ru
 - [[summary-karpathy-10x-claude-code|Andrej Karpathy Just 10x'd Everyone's Claude Code]] — Demonstrates Karpathy's [[LLM Wiki Pattern]] in practice; shows two working wikis and the executive assistant integration
 - [[summary-nate-herk-ollama-claude-code|Ollama + Claude Code = 99% CHEAPER]] — Two methods for running Claude Code with open-source models (local via [[Ollama]], cloud via [[OpenRouter]])
 - [[summary-nate-herk-paperclip|Claude Code + Paperclip Just Destroyed OpenClaw]] — Demonstrates [[Paperclip]] for multi-agent orchestration; building a persistent AI "company" using Claude Code agents with heartbeats, ticketing, and a CEO/engineer/QA hierarchy
+- [[summary-nate-herk-500-ai-workflows|I've Built 500 AI Workflows, This is What Businesses Want in 2026]] — The 5 highest-value AI automation workflows for selling to businesses, plus the clogged pipe framework for identifying which one a client needs
 
 ## Key Ideas
 
@@ -28,6 +29,8 @@ YouTube creator focused on AI automation and practical Claude Code workflows. Ru
 - "Claude Code is the car, the AI model is the engine" — framing for why model swapping works
 - Pointed out that setting only `ANTHROPIC_MODEL` in OpenRouter config causes silent fallback to paid Anthropic Haiku for tool calls
 - Human-as-board pattern: operate Paperclip in 30-minute board sessions (set high-level goals, approve hires) rather than managing individual agent sessions
+- "Businesses don't want fancy AI — they want boring workflows that save time, save money, or remove mistakes"
+- The clogged pipe diagnostic: *"If 500 new clients showed up tomorrow, what would break first?"* — reveals the real bottleneck
 
 ## See Also
 - [[Claude Code]]
@@ -35,4 +38,5 @@ YouTube creator focused on AI automation and practical Claude Code workflows. Ru
 - [[Open-Source Model Integration]]
 - [[Paperclip]]
 - [[Multi-Agent Orchestration]]
+- [[AI Automation Workflows]]
 - [[Andrej Karpathy]]

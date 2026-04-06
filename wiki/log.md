@@ -62,6 +62,24 @@ Chronological record of all operations.
 - **Updated**: `andrej-karpathy.md`, `nate-herk.md`, `nate-b-jones.md`, `matthew-berman.md`
 - **CLAUDE.md**: Added "Person Page Structure" standard under Page Types — required sections, rules for keeping content lists complete, instruction to update on every new ingest from that person.
 
+## [2026-04-06] maintenance | Added business/ category to wiki schema
+- **Reason**: Nate Herk's 500 AI Workflows content is business/sales-focused rather than developer tooling — needed a dedicated folder.
+- **Change**: Added `wiki/business/` to CLAUDE.md directory structure and Page Types table.
+
+## [2026-04-06] ingest | I Cut Claude Code Costs by 95% (MiniMax M2.7) — Damian Malliaros
+- **Source**: YouTube transcript: Claude Code + MiniMax M2.7 ClickUp clone demo
+- **Pages created** (3):
+  - `summary-damian-malliaros-minimax-m27.md` — Source summary
+  - `minimax-m2-7.md` — Entity: MiniMax M2.7 model
+  - `damian-malliaros.md` — Entity: AI creator
+- **Updated**: `open-source-model-integration.md` (added MiniMax), `index.md`
+
+## [2026-04-06] ingest | I've Built 500 AI Workflows (Nate Herk)
+- **Pages created** (2):
+  - `summary-nate-herk-500-ai-workflows.md` — Source summary
+  - `wiki/business/ai-automation-workflows.md` — Business: 5 workflows + clogged pipe framework
+- **Updated**: `nate-herk.md` (added source + key ideas), `index.md`
+
 ## [2026-04-06] ingest | Claude Code + Paperclip Just Destroyed OpenClaw (Nate Herk)
 - **Source**: YouTube transcript by Nate Herk on Paperclip multi-agent orchestration
 - **Pages created** (4):

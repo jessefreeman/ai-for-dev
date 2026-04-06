@@ -26,6 +26,7 @@ Research/
     tools/           # Entity pages: commercial and hosted tools.
     open-source/     # Entity pages: open source projects and libraries.
     concepts/        # Concept pages: ideas, frameworks, techniques.
+    business/        # Business patterns: selling AI, ROI frameworks, automation use cases.
     analyses/        # Analysis and comparison pages.
     sources/         # Source summaries and source entity pages.
 ```
@@ -68,6 +69,7 @@ Link to sources as [[raw/filename|display name]].
 | `entity` (open source) | `wiki/open-source/` | An open source project or library | "LangChain", "Ollama" |
 | `entity` (article/source) | `wiki/sources/` | A notable article or document | "AI 2027" |
 | `concept` | `wiki/concepts/` | An idea, framework, technique | "RAG", "Knowledge Graph" |
+| `business` | `wiki/business/` | Selling AI, ROI frameworks, automation patterns for clients | "AI Automation Workflows" |
 | `comparison` | `wiki/analyses/` | Side-by-side analysis of 2+ things | "RAG vs. Wiki Pattern" |
 | `analysis` | `wiki/analyses/` | Answer to a query, filed as a page | "Why wikis beat chat history" |
 | `overview` | `wiki/` (root) | High-level synthesis of the whole KB | The single `overview.md` |

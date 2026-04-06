@@ -27,6 +27,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[nate-b-jones|Nate B Jones]] — AI strategy educator; analyzed the Claude Code architecture leak.
 - [[matthew-berman|Matthew Berman]] — AI YouTuber focused on open-source models and local inference.
 - [[tim-carambat|Tim Carambat]] — Founder of AnythingLLM; covers local AI inference and TurboQuant.
+- [[damian-malliaros|Damian Malliaros]] — AI creator focused on Claude Code cost optimization and app building.
 
 ### Tools
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki.
@@ -37,6 +38,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[gemma-4|Gemma 4]] — Google's high-efficiency open-weights model family; 31B ranks #3 globally.
 - [[paperclip|Paperclip]] — Open-source multi-agent orchestration dashboard; MIT licensed.
 - [[anything-llm|AnythingLLM]] — All-in-one local AI app for document chat, agents, and automations.
+- [[minimax-m2-7|MiniMax M2.7]] — Closed-source model claiming to outperform Opus 4.6 at 20x lower cost.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -48,6 +50,9 @@ New content appears as I read, watch, and research. The site updates automatical
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
 
+### Business
+- [[ai-automation-workflows|AI Automation Workflows]] — The 5 highest-value AI automations to sell to businesses, plus the clogged pipe sales framework.
+
 ### Sources
 - [[ai-2027|AI 2027]] — Forecasting article used as a demo ingest source.
 - [[summary-karpathy-10x-claude-code|Karpathy 10x'd Claude Code]] — YouTube transcript: Nate Herk demonstrates the LLM Wiki in practice.
@@ -56,6 +61,8 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-matthew-berman-gemma4|Google Drops Gemma 4]] — Matthew Berman covers Gemma 4 benchmarks and release.
 - [[summary-nate-herk-paperclip|Claude Code + Paperclip]] — Nate Herk demonstrates multi-agent orchestration with Paperclip.
 - [[summary-tim-carambat-turboquant|TurboQuant]] — Tim Carambat covers TurboQuant's impact on local model context windows.
+- [[summary-damian-malliaros-minimax-m27|MiniMax M2.7 + Claude Code]] — Damian Malliaros demos building a ClickUp clone with MiniMax at 95% lower cost.
+- [[summary-nate-herk-500-ai-workflows|500 AI Workflows]] — Nate Herk's 5 highest-value automation workflows for business clients.
 
 ## Contribute or build your own
 

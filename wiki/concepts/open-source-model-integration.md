@@ -92,8 +92,8 @@ Larger models (e.g., 70B+) generally behave more reliably with Claude Code's har
 ## Relevant Models
 
 - [[Gemma 4]] — highlighted as motivating example; small size, high quality, good tool calling
+- [[MiniMax M2.7]] — claims to outperform Opus 4.6 on SWE benchmarks; 20x cheaper, 3x faster; subscription-based pricing
 - Qwen 3.5/3.6 — strong open-source coding models, available on Ollama and OpenRouter
-- MiniMax M 2.7 — cloud-only via Ollama; comparable experience to Sonnet in demos
 
 ## Context Window Improvements
 
