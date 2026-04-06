@@ -1,7 +1,7 @@
 ---
 title: Blender MCP — Natural Language to 3D Without the Learning Curve
 summary: Blender MCP uses MCP to expose Blender's 1,500-operator Python API through natural language, making professional 3D scene creation accessible to non-Blender users.
-tags: tool_blender_mcp, concept_mcp, topic_creative_tools, topic_3d, source_nate_b_jones_google_stitch
+tags: [tool_blender_mcp, concept_mcp, topic_creative_tools, topic_3d, source_nate_b_jones_google_stitch]
 ---
 
 # Blender MCP — Natural Language to 3D Without the Learning Curve

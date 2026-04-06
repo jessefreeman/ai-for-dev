@@ -1,7 +1,7 @@
 ---
 title: Database Reactivation ROI Numbers
 summary: Concrete ROI figures for database reactivation automations — one of the highest-return AI workflows for established businesses.
-tags: person_nate_herk, topic_business, topic_automation, source_nate_herk_500_workflows
+tags: [person_nate_herk, topic_business, topic_automation, source_nate_herk_500_workflows]
 ---
 
 # Database Reactivation ROI Numbers

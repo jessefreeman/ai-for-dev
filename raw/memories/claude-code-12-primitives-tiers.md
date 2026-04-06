@@ -1,7 +1,7 @@
 ---
 title: Claude Code's 12 Agent Primitives in 3 Tiers
 summary: The framework Nate B Jones extracted from the leaked Claude Code architecture — 12 production agent primitives organized into three implementation tiers.
-tags: person_nate_b_jones, tool_claude_code, concept_agentic_harness, topic_agent_architecture, source_nate_jones_12_primitives
+tags: [person_nate_b_jones, tool_claude_code, concept_agentic_harness, topic_agent_architecture, source_nate_jones_12_primitives]
 ---
 
 # Claude Code's 12 Agent Primitives in 3 Tiers

@@ -1,7 +1,7 @@
 ---
 title: Open Viking — File-System Agent Memory with Tiered Loading
 summary: Open Viking organizes agent memory, resources, and skills into the file system (not vector DB) with tiered loading to dramatically reduce token consumption.
-tags: tool_open_viking, topic_agent_memory, topic_context_management, source_fireship_7_tools
+tags: [tool_open_viking, topic_agent_memory, topic_context_management, source_fireship_7_tools]
 ---
 
 # Open Viking — File-System Agent Memory with Tiered Loading

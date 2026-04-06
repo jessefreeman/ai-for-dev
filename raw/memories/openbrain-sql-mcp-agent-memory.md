@@ -1,7 +1,7 @@
 ---
 title: OpenBrain — Agent Memory for $0.30/month
 summary: Nate B Jones's community pattern for giving agents persistent memory — a SQL database (Supabase) connected via MCP server, costing pennies per month.
-tags: person_nate_b_jones, concept_open_brain, tool_supabase, concept_mcp, source_nate_b_jones_loop_openbrain
+tags: [person_nate_b_jones, concept_open_brain, tool_supabase, concept_mcp, source_nate_b_jones_loop_openbrain]
 ---
 
 # OpenBrain — Agent Memory for $0.30/month

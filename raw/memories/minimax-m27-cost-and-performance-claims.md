@@ -1,7 +1,7 @@
 ---
 title: MiniMax M2.7 Cost and Performance Claims vs Opus 4.6
 summary: MiniMax M2.7 claims to outperform Opus 4.6 on SWE benchmarks while being 20x cheaper and 3x faster.
-tags: person_damian_malliaros, tool_minimax_m27, tool_claude_code, topic_cost_reduction, source_damian_malliaros_minimax
+tags: [person_damian_malliaros, tool_minimax_m27, tool_claude_code, topic_cost_reduction, source_damian_malliaros_minimax]
 ---
 
 # MiniMax M2.7 Cost and Performance Claims vs Opus 4.6

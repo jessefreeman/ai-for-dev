@@ -1,7 +1,7 @@
 ---
 title: Three Agent Primitives — Memory, Proactivity, Tools
 summary: Nate B Jones's framework reducing agent architecture to three Lego bricks — memory, proactivity, and tools — which together replicate OpenClaw without the security risks.
-tags: person_nate_b_jones, concept_agents, concept_slash_loop, concept_open_brain, source_nate_b_jones_loop_openbrain
+tags: [person_nate_b_jones, concept_agents, concept_slash_loop, concept_open_brain, source_nate_b_jones_loop_openbrain]
 ---
 
 # Three Agent Primitives — Memory, Proactivity, Tools

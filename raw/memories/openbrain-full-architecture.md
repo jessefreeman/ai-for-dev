@@ -1,7 +1,7 @@
 ---
 title: OpenBrain Full Architecture — Postgres + PGVector + MCP
 summary: The definitive OpenBrain architecture: Postgres with PGVector for semantic search, Supabase for hosting, MCP for universal AI access, $0.10-0.30/month.
-tags: person_nate_b_jones, concept_open_brain, tool_supabase, concept_mcp, source_nate_b_jones_openbrain_architecture
+tags: [person_nate_b_jones, concept_open_brain, tool_supabase, concept_mcp, source_nate_b_jones_openbrain_architecture]
 ---
 
 # OpenBrain Full Architecture — Postgres + PGVector + MCP

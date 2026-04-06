@@ -1,7 +1,7 @@
 ---
 title: The Hiring Arms Race — 0.4% Success Rate and Why the System Is Collapsing
 summary: The traditional hiring system has a 0.4% success rate. Candidates and employers both use AI to escalate, both lose. 88% of employers admit their own systems miss qualified people.
-tags: person_nate_b_jones, topic_hiring, topic_business, source_nate_b_jones_professional_interface
+tags: [person_nate_b_jones, topic_hiring, topic_business, source_nate_b_jones_professional_interface]
 ---
 
 # The Hiring Arms Race — 0.4% Success Rate and Why the System Is Collapsing

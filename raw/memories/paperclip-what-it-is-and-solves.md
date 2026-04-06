@@ -1,7 +1,7 @@
 ---
 title: What Paperclip Is and the Problem It Solves
 summary: Paperclip is an open-source multi-agent orchestration dashboard that solves the "20 terminals" problem of managing many parallel Claude Code sessions.
-tags: person_nate_herk, tool_paperclip, tool_claude_code, concept_multi_agent, topic_agent_orchestration, source_nate_herk_paperclip
+tags: [person_nate_herk, tool_paperclip, tool_claude_code, concept_multi_agent, topic_agent_orchestration, source_nate_herk_paperclip]
 ---
 
 # What Paperclip Is and the Problem It Solves

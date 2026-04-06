@@ -1,7 +1,7 @@
 ---
 title: AutoResearch — Three Ingredients for Self-Improving Anything
 summary: The AutoResearch methodology needs only three things — an objective metric, a measurement tool, and something to change — to self-improve any process.
-tags: person_nick_saraev, person_andrej_karpathy, concept_autoresearch, tool_claude_code, source_nick_saraev_autoresearch
+tags: [person_nick_saraev, person_andrej_karpathy, concept_autoresearch, tool_claude_code, source_nick_saraev_autoresearch]
 ---
 
 # AutoResearch — Three Ingredients for Self-Improving Anything

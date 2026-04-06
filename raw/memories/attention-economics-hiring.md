@@ -1,7 +1,7 @@
 ---
 title: Attention Economics in Hiring — 6 Seconds vs 5 Minutes
 summary: In a saturated hiring market, the scarcest resource is human attention. An interactive interface shifts the employer from filtering mode (6 seconds) to investigating mode (5+ minutes).
-tags: person_nate_b_jones, topic_hiring, topic_attention, topic_business, source_nate_b_jones_professional_interface
+tags: [person_nate_b_jones, topic_hiring, topic_attention, topic_business, source_nate_b_jones_professional_interface]
 ---
 
 # Attention Economics in Hiring — 6 Seconds vs 5 Minutes

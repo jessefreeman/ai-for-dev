@@ -1,7 +1,7 @@
 ---
 title: Open-Source Models Cover 95% of Use Cases
 summary: Matthew Berman's claim that despite being less capable than frontier models, open-source models are good enough for the vast majority of real-world AI use cases.
-tags: topic_open_source, topic_local_ai, person_matthew_berman, source_matthew_berman_ai_models
+tags: [topic_open_source, topic_local_ai, person_matthew_berman, source_matthew_berman_ai_models]
 ---
 
 # Open-Source Models Cover 95% of Use Cases

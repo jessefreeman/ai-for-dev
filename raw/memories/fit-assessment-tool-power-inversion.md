@@ -1,7 +1,7 @@
 ---
 title: Fit Assessment Tool — Inverting the Hiring Power Dynamic
 summary: A tool where employers paste a job description and your AI honestly tells them whether you're the right fit — including saying no. This inverts the supplicant dynamic and provides genuine utility.
-tags: person_nate_b_jones, topic_hiring, topic_business, topic_ai_interface, source_nate_b_jones_professional_interface
+tags: [person_nate_b_jones, topic_hiring, topic_business, topic_ai_interface, source_nate_b_jones_professional_interface]
 ---
 
 # Fit Assessment Tool — Inverting the Hiring Power Dynamic

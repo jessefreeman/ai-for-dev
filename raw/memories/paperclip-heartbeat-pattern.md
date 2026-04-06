@@ -1,7 +1,7 @@
 ---
 title: Paperclip Heartbeat Pattern
 summary: Paperclip agents wake on a schedule with fresh context, review their tasks, and work autonomously — the heartbeat pattern that drove OpenClaw's popularity.
-tags: tool_paperclip, tool_claude_code, concept_multi_agent, topic_agent_orchestration, source_nate_herk_paperclip
+tags: [tool_paperclip, tool_claude_code, concept_multi_agent, topic_agent_orchestration, source_nate_herk_paperclip]
 ---
 
 # Paperclip Heartbeat Pattern

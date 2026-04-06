@@ -1,7 +1,7 @@
 ---
 title: Gemini's Unique Video Ingestion Capability
 summary: Gemini can ingest full videos and answer questions about specific frames — a capability no other frontier model (Claude, ChatGPT) had as of early 2026.
-tags: tool_gemini, topic_multimodal, topic_video, source_matthew_berman_ai_models
+tags: [tool_gemini, topic_multimodal, topic_video, source_matthew_berman_ai_models]
 ---
 
 # Gemini's Unique Video Ingestion Capability

@@ -1,7 +1,7 @@
 ---
 title: Claude Code Bash Tool 18-Module Security Architecture
 summary: The bash tool in Claude Code is protected by 18 separate security modules — a concrete example of what production-grade agent security looks like.
-tags: tool_claude_code, concept_agentic_harness, topic_agent_security, source_nate_jones_12_primitives
+tags: [tool_claude_code, concept_agentic_harness, topic_agent_security, source_nate_jones_12_primitives]
 ---
 
 # Claude Code Bash Tool 18-Module Security Architecture

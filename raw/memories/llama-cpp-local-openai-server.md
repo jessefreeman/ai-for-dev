@@ -1,7 +1,7 @@
 ---
 title: llama.cpp as Drop-In Local OpenAI Server
 summary: llama.cpp's server mode exposes an OpenAI-compatible API on localhost:8080, making any local model a drop-in replacement for OpenAI's API.
-tags: tool_llama_cpp, topic_local_ai, topic_openai_compatible, source_ibm_llama_cpp
+tags: [tool_llama_cpp, topic_local_ai, topic_openai_compatible, source_ibm_llama_cpp]
 ---
 
 # llama.cpp as Drop-In Local OpenAI Server

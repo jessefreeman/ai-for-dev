@@ -1,7 +1,7 @@
 ---
 title: Five Levels of AI Coding — Dan Shapiro's Framework
 summary: L0 spicy autocomplete → L5 dark factory. 90% of "AI-native" devs are at L2. StrongDM's 3-person team operates at L5 with Attractor. The bottleneck is spec quality, not implementation speed.
-tags: person_nate_b_jones, person_dan_shapiro, concept_dark_factory, concept_specification, source_nate_b_jones_five_levels
+tags: [person_nate_b_jones, person_dan_shapiro, concept_dark_factory, concept_specification, source_nate_b_jones_five_levels]
 ---
 
 # Five Levels of AI Coding — Dan Shapiro's Framework

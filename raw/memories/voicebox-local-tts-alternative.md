@@ -1,7 +1,7 @@
 ---
 title: VoiceBox — Free Local TTS That Rivals ElevenLabs
 summary: VoiceBox is a free open-source TTS app running locally with voice cloning, sound effects, and API access — positioned as the ElevenLabs alternative.
-tags: tool_voicebox, topic_tts, topic_audio, topic_local_ai, source_dave_swift_voicebox
+tags: [tool_voicebox, topic_tts, topic_audio, topic_local_ai, source_dave_swift_voicebox]
 ---
 
 # VoiceBox — Free Local TTS That Rivals ElevenLabs

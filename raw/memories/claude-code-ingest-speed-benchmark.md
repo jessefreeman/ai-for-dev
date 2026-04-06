@@ -1,7 +1,7 @@
 ---
 title: Claude Code Ingest Speed Benchmark
 summary: How fast Claude Code can process and file sources into a wiki, from Nate Herk's live demo.
-tags: person_nate_herk, tool_claude_code, topic_llm_wiki, source_karpathy_10x_claude_code
+tags: [person_nate_herk, tool_claude_code, topic_llm_wiki, source_karpathy_10x_claude_code]
 ---
 
 # Claude Code Ingest Speed Benchmark

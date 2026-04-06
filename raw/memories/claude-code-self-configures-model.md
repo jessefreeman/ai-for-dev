@@ -1,7 +1,7 @@
 ---
 title: Let Claude Code Configure Its Own Alternative Model
 summary: Damian Malliaros's method: give Claude Code your API key and ask it to configure the alternative model integration itself — it reads the docs and writes the config.
-tags: person_damian_malliaros, tool_claude_code, tool_minimax_m27, topic_cost_reduction, source_damian_malliaros_minimax
+tags: [person_damian_malliaros, tool_claude_code, tool_minimax_m27, topic_cost_reduction, source_damian_malliaros_minimax]
 ---
 
 # Let Claude Code Configure Its Own Alternative Model

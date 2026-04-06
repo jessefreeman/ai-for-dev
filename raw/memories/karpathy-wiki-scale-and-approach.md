@@ -1,7 +1,7 @@
 ---
 title: Karpathy's Wiki Scale and Design Choices
 summary: Specifics of Andrej Karpathy's own wiki — size, retrieval approach, and design philosophy.
-tags: person_andrej_karpathy, concept_llm_wiki, topic_knowledge_management, source_karpathy_10x_claude_code
+tags: [person_andrej_karpathy, concept_llm_wiki, topic_knowledge_management, source_karpathy_10x_claude_code]
 ---
 
 # Karpathy's Wiki Scale and Design Choices

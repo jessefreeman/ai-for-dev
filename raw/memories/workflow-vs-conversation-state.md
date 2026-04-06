@@ -1,7 +1,7 @@
 ---
 title: Workflow State vs Conversation State
 summary: A critical distinction most agent frameworks conflate — conversation state tracks what was said; workflow state tracks what step the agent is on and whether it's safe to retry.
-tags: concept_agentic_harness, topic_agent_architecture, source_nate_jones_12_primitives
+tags: [concept_agentic_harness, topic_agent_architecture, source_nate_jones_12_primitives]
 ---
 
 # Workflow State vs Conversation State

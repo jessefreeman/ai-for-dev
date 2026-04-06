@@ -1,7 +1,7 @@
 ---
 title: Remotion — Programmable Video vs Generative Video
 summary: Remotion generates React code that renders video — not AI-generated pixels — making output editable, version-controllable, and free to iterate.
-tags: tool_remotion, tool_claude_code, topic_video, topic_creative_tools, source_nate_b_jones_google_stitch
+tags: [tool_remotion, tool_claude_code, topic_video, topic_creative_tools, source_nate_b_jones_google_stitch]
 ---
 
 # Remotion — Programmable Video vs Generative Video

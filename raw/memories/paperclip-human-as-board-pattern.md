@@ -1,7 +1,7 @@
 ---
 title: Paperclip Human-as-Board Pattern
 summary: In Paperclip, the human operates as a board of directors — setting high-level goals and approving major decisions — rather than managing individual agent sessions.
-tags: person_nate_herk, tool_paperclip, concept_multi_agent, topic_agent_orchestration, source_nate_herk_paperclip
+tags: [person_nate_herk, tool_paperclip, concept_multi_agent, topic_agent_orchestration, source_nate_herk_paperclip]
 ---
 
 # Paperclip Human-as-Board Pattern

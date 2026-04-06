@@ -1,7 +1,7 @@
 ---
 title: Prompt Fu — Unit Testing for AI Prompts
 summary: Prompt Fu is an open-source prompt testing framework (acquired by OpenAI) that lets you test prompts × models and run automated red team attacks for prompt injection.
-tags: tool_prompt_fu, topic_testing, topic_security, source_fireship_7_tools
+tags: [tool_prompt_fu, topic_testing, topic_security, source_fireship_7_tools]
 ---
 
 # Prompt Fu — Unit Testing for AI Prompts

@@ -1,7 +1,7 @@
 ---
 title: The 5 AI Automation Workflows Businesses Actually Pay For
 summary: Nate Herk's distillation from 500+ client projects — the five boring workflows that generate the most client revenue.
-tags: person_nate_herk, topic_business, topic_automation, source_nate_herk_500_workflows
+tags: [person_nate_herk, topic_business, topic_automation, source_nate_herk_500_workflows]
 ---
 
 # The 5 AI Automation Workflows Businesses Actually Pay For

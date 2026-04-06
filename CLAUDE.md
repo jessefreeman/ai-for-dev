@@ -172,7 +172,7 @@ When triggered manually or prompted automatically:
 ---
 title: Short Descriptive Title
 summary: One sentence — what this memory captures.
-tags: person_name, tool_name, topic_name, source_slug
+tags: [person_name, tool_name, topic_name, source_slug]
 ---
 
 # Short Descriptive Title
@@ -189,7 +189,7 @@ The atomic fact, method, claim, or concept. Write it as a self-contained answer 
 
 ### Tag Taxonomy
 
-Use flat comma-separated strings (not YAML arrays):
+Use YAML arrays for Obsidian compatibility: `tags: [person_nate_herk, tool_claude_code]`
 - `person_[firstname_lastname]` — e.g. `person_nate_herk`
 - `tool_[toolname]` — e.g. `tool_claude_code`, `tool_ollama`
 - `concept_[name]` — e.g. `concept_multi_agent`, `concept_token_budget`

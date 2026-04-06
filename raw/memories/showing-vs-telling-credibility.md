@@ -1,7 +1,7 @@
 ---
 title: Showing vs Telling — Why AI Interfaces Build Trust Better Than Resumes
 summary: An AI interface changes the epistemology of evaluation — instead of asserting claims and asking to be believed, you create a tool that demonstrates capability through use, which is hard to fake at scale.
-tags: person_nate_b_jones, topic_hiring, topic_trust, topic_ai_interface, source_nate_b_jones_professional_interface
+tags: [person_nate_b_jones, topic_hiring, topic_trust, topic_ai_interface, source_nate_b_jones_professional_interface]
 ---
 
 # Showing vs Telling — Why AI Interfaces Build Trust Better Than Resumes

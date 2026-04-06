@@ -1,7 +1,7 @@
 ---
 title: AI Professional Interface — The Five Components
 summary: The five building blocks of an AI-powered professional interface that replaces traditional job applications: AI chat, expandable context, honest skills matrix, fit assessment tool, and polished site.
-tags: person_nate_b_jones, topic_business, topic_hiring, topic_ai_interface, source_nate_b_jones_professional_interface
+tags: [person_nate_b_jones, topic_business, topic_hiring, topic_ai_interface, source_nate_b_jones_professional_interface]
 ---
 
 # AI Professional Interface — The Five Components

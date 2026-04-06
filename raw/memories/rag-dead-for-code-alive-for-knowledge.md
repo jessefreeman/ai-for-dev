@@ -1,7 +1,7 @@
 ---
 title: RAG Is Dead for Code, Alive for Knowledge Bases
 summary: Traditional RAG (vector DB + semantic search) is unnecessary for code but essential for unstructured data — the key variable is data structure, not model capability.
-tags: person_cole_medin, concept_rag, tool_claude_code, source_cole_medin_rag_for_code
+tags: [person_cole_medin, concept_rag, tool_claude_code, source_cole_medin_rag_for_code]
 ---
 
 # RAG Is Dead for Code, Alive for Knowledge Bases

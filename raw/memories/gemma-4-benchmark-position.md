@@ -1,7 +1,7 @@
 ---
 title: Gemma 4 31B Benchmark Position
 summary: Gemma 4's 31B model ranks #3 among all open models globally while being small enough to run on consumer hardware.
-tags: tool_gemma_4, person_matthew_berman, topic_local_ai, topic_open_source_models, source_matthew_berman_gemma4
+tags: [tool_gemma_4, person_matthew_berman, topic_local_ai, topic_open_source_models, source_matthew_berman_gemma4]
 ---
 
 # Gemma 4 31B Benchmark Position

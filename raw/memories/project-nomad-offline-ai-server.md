@@ -1,7 +1,7 @@
 ---
 title: Project Nomad — Offline Knowledge Server with Local AI
 summary: Free open-source offline knowledge server with Wikipedia, AI chat, RAG, maps, and education — runs on any Linux machine with Docker.
-tags: tool_project_nomad, topic_local_ai, topic_offline, source_crosstalk_project_nomad
+tags: [tool_project_nomad, topic_local_ai, topic_offline, source_crosstalk_project_nomad]
 ---
 
 # Project Nomad — Offline Knowledge Server with Local AI

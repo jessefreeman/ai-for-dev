@@ -1,7 +1,7 @@
 ---
 title: design.md — Agent-Readable Design System Export
 summary: Google Stitch exports a design.md file that gives coding agents full design-system context (colors, typography, components) without Figma handoff.
-tags: person_nate_b_jones, tool_google_stitch, concept_mcp, topic_design, source_nate_b_jones_google_stitch
+tags: [person_nate_b_jones, tool_google_stitch, concept_mcp, topic_design, source_nate_b_jones_google_stitch]
 ---
 
 # design.md — Agent-Readable Design System Export

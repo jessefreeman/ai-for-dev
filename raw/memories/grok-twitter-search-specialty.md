@@ -1,7 +1,7 @@
 ---
 title: Grok's Twitter/X Search Specialty
 summary: Grok's unique value is real-time Twitter/X data access — it's the best tool for trend research and live social media analysis, but not competitive for general use.
-tags: tool_grok, topic_search, topic_social_media, source_matthew_berman_ai_models
+tags: [tool_grok, topic_search, topic_social_media, source_matthew_berman_ai_models]
 ---
 
 # Grok's Twitter/X Search Specialty

@@ -1,7 +1,7 @@
 ---
 title: StrongDM's Dark Factory — Scenarios and Digital Twins
 summary: StrongDM's 3-person team uses external scenarios (holdout sets the agent can't game) and a digital twin universe (simulated external services) to run fully autonomous software development.
-tags: tool_attractor, concept_dark_factory, concept_evals, source_nate_b_jones_five_levels
+tags: [tool_attractor, concept_dark_factory, concept_evals, source_nate_b_jones_five_levels]
 ---
 
 # StrongDM's Dark Factory — Scenarios and Digital Twins

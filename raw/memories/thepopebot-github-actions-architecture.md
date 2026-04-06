@@ -1,7 +1,7 @@
 ---
 title: ThePepeBot — GitHub Actions as Agent Orchestration
 summary: ThePepeBot uses GitHub Actions workflows for scalable agent job execution with git-based change approval, Docker isolation, and free local LLMs via Ollama.
-tags: person_stephen_g_pope, tool_thepopebot, tool_github, concept_agents, source_stephen_g_pope_thepopebot
+tags: [person_stephen_g_pope, tool_thepopebot, tool_github, concept_agents, source_stephen_g_pope_thepopebot]
 ---
 
 # ThePepeBot — GitHub Actions as Agent Orchestration

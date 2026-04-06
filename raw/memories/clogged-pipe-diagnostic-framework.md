@@ -1,7 +1,7 @@
 ---
 title: The Clogged Pipe Diagnostic Framework
 summary: Nate Herk's framework for identifying which AI automation a business needs — find the clog before adding more flow.
-tags: person_nate_herk, topic_business, topic_automation, source_nate_herk_500_workflows
+tags: [person_nate_herk, topic_business, topic_automation, source_nate_herk_500_workflows]
 ---
 
 # The Clogged Pipe Diagnostic Framework

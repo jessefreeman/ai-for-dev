@@ -1,7 +1,7 @@
 ---
 title: Why 32K Context Is a Step Function for Local AI
 summary: Tim Carambat's calibration: the jump from 8K to 32K context is not incremental — it unlocks entirely new categories of tasks for local models.
-tags: person_tim_carambat, concept_turboquant, topic_local_ai, source_tim_carambat_turboquant
+tags: [person_tim_carambat, concept_turboquant, topic_local_ai, source_tim_carambat_turboquant]
 ---
 
 # Why 32K Context Is a Step Function for Local AI

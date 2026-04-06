@@ -1,7 +1,7 @@
 ---
 title: Four Prompting Disciplines — The Full Stack for 2026
 summary: Nate B Jones's framework splitting prompting into four cumulative disciplines — prompt craft (table stakes), context engineering, intent engineering, and specification engineering.
-tags: person_nate_b_jones, concept_prompting, concept_specification, source_nate_b_jones_four_prompting_disciplines
+tags: [person_nate_b_jones, concept_prompting, concept_specification, source_nate_b_jones_four_prompting_disciplines]
 ---
 
 # Four Prompting Disciplines — The Full Stack for 2026

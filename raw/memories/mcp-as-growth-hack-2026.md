@@ -1,7 +1,7 @@
 ---
 title: MCP Is the Growth Hack of 2026
 summary: Nate B Jones's thesis that making any product an MCP server is the single most impactful distribution move a developer tool can make in 2026.
-tags: person_nate_b_jones, concept_mcp, topic_growth, source_nate_b_jones_google_stitch
+tags: [person_nate_b_jones, concept_mcp, topic_growth, source_nate_b_jones_google_stitch]
 ---
 
 # MCP Is the Growth Hack of 2026

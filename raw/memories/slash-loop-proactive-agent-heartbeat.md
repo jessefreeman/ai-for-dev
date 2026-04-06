@@ -1,7 +1,7 @@
 ---
 title: /loop — Give Your Agent a Heartbeat
 summary: Anthropic's /loop command lets Claude Code run jobs on a schedule without human interaction, enabling proactive agent workflows that accumulate value across cycles.
-tags: tool_claude_code, concept_slash_loop, topic_proactivity, source_nate_b_jones_loop_openbrain
+tags: [tool_claude_code, concept_slash_loop, topic_proactivity, source_nate_b_jones_loop_openbrain]
 ---
 
 # /loop — Give Your Agent a Heartbeat

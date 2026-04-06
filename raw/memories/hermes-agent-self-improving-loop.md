@@ -1,7 +1,7 @@
 ---
 title: Hermes Agent — The Self-Improving Agent Loop
 summary: Hermes Agent by Nouse Research implements a closed learning loop where the agent autonomously creates and improves skills from experience across sessions.
-tags: tool_hermes_agent, topic_self_improving, topic_agent_memory, source_matthew_berman_open_source_projects
+tags: [tool_hermes_agent, topic_self_improving, topic_agent_memory, source_matthew_berman_open_source_projects]
 ---
 
 # Hermes Agent — The Self-Improving Agent Loop

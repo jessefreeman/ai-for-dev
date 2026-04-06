@@ -1,7 +1,7 @@
 ---
 title: Excalidraw Skill — Visual Validation Loop Pattern
 summary: Cole Medin's Claude Code skill for diagrams uses a visual validation loop: generate JSON → render PNG → agent reviews screenshot → iterate 2-4 times before human review.
-tags: person_cole_medin, tool_claude_code, topic_skills, topic_diagrams, source_cole_medin_excalidraw_skill
+tags: [person_cole_medin, tool_claude_code, topic_skills, topic_diagrams, source_cole_medin_excalidraw_skill]
 ---
 
 # Excalidraw Skill — Visual Validation Loop Pattern

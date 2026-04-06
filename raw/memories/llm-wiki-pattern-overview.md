@@ -1,7 +1,7 @@
 ---
 title: LLM Wiki Pattern Overview
 summary: The core idea of using an LLM to maintain a structured markdown wiki instead of relying on chat history or RAG.
-tags: person_andrej_karpathy, person_nate_herk, concept_llm_wiki, topic_knowledge_management, source_karpathy_10x_claude_code
+tags: [person_andrej_karpathy, person_nate_herk, concept_llm_wiki, topic_knowledge_management, source_karpathy_10x_claude_code]
 ---
 
 # LLM Wiki Pattern Overview

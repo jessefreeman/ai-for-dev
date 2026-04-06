@@ -1,7 +1,7 @@
 ---
 title: OpenRouter Config Pitfall — Must Set ALL Model Variables
 summary: If you only set ANTHROPIC_MODEL in OpenRouter config, Claude Code silently falls back to paid Anthropic Haiku for small tool calls.
-tags: person_nate_herk, tool_claude_code, tool_openrouter, topic_cost_reduction, source_nate_herk_ollama
+tags: [person_nate_herk, tool_claude_code, tool_openrouter, topic_cost_reduction, source_nate_herk_ollama]
 ---
 
 # OpenRouter Config Pitfall — Must Set ALL Model Variables

@@ -1,7 +1,7 @@
 ---
 title: Claude Code's Six Built-In Agent Types
 summary: The six constrained agent types found in the leaked Claude Code architecture, each with distinct tools and behavioral limits.
-tags: tool_claude_code, concept_agentic_harness, topic_agent_architecture, source_nate_jones_12_primitives
+tags: [tool_claude_code, concept_agentic_harness, topic_agent_architecture, source_nate_jones_12_primitives]
 ---
 
 # Claude Code's Six Built-In Agent Types

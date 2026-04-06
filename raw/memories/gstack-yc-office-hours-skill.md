@@ -1,7 +1,7 @@
 ---
 title: GStack — YC Office Hours as a Claude Code Skill
 summary: Gary Tan (YC President) open-sourced his startup methodology as Claude Code skills, including YC-style office hours as 6 forcing questions that reframe your product before writing code.
-tags: person_gary_tan, tool_gstack, tool_claude_code, topic_startup, source_matthew_berman_open_source_projects
+tags: [person_gary_tan, tool_gstack, tool_claude_code, topic_startup, source_matthew_berman_open_source_projects]
 ---
 
 # GStack — YC Office Hours as a Claude Code Skill

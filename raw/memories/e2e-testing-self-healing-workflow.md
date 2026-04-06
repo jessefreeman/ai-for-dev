@@ -1,7 +1,7 @@
 ---
 title: E2E Testing — Self-Healing AI Coding Workflow
 summary: Cole Medin's /e2e test command runs 6-step validation with parallel sub-agents, browser automation through user journeys, DB validation, and a self-fix loop before returning control to the human.
-tags: person_cole_medin, tool_claude_code, topic_testing, topic_validation, source_cole_medin_e2e_testing
+tags: [person_cole_medin, tool_claude_code, topic_testing, topic_validation, source_cole_medin_e2e_testing]
 ---
 
 # E2E Testing — Self-Healing AI Coding Workflow

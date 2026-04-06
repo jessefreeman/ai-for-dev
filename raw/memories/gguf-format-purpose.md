@@ -1,7 +1,7 @@
 ---
 title: GGUF Format — What It Is and Why It Matters
 summary: GGUF is llama.cpp's single-file model format combining weights and metadata, enabling fast model loading, swapping, and quantization.
-tags: tool_llama_cpp, topic_local_ai, topic_quantization, source_ibm_llama_cpp
+tags: [tool_llama_cpp, topic_local_ai, topic_quantization, source_ibm_llama_cpp]
 ---
 
 # GGUF Format — What It Is and Why It Matters

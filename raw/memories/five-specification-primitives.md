@@ -1,7 +1,7 @@
 ---
 title: Five Specification Primitives for Agent Work
 summary: The five building blocks of specification engineering — self-contained problem statements, acceptance criteria, constraint architecture, task decomposition, and evaluation design.
-tags: person_nate_b_jones, concept_specification, concept_prompting, source_nate_b_jones_four_prompting_disciplines
+tags: [person_nate_b_jones, concept_specification, concept_prompting, source_nate_b_jones_four_prompting_disciplines]
 ---
 
 # Five Specification Primitives for Agent Work

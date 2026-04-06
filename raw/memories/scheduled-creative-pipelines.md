@@ -1,7 +1,7 @@
 ---
 title: Scheduled Creative Pipelines Pattern
 summary: Combining creative tools (Stitch, Remotion) with cloud-based Claude Code scheduling to create autonomous content generation pipelines.
-tags: person_nate_b_jones, tool_remotion, tool_google_stitch, tool_claude_code, concept_scheduling, source_nate_b_jones_google_stitch
+tags: [person_nate_b_jones, tool_remotion, tool_google_stitch, tool_claude_code, concept_scheduling, source_nate_b_jones_google_stitch]
 ---
 
 # Scheduled Creative Pipelines Pattern

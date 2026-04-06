@@ -1,7 +1,7 @@
 ---
 title: Quantization Naming Convention — Q4_K_M Decoded
 summary: How to read llama.cpp's quantization naming scheme: Q=quantized, 4=4-bit precision, K_M=quality-tuned compression variant.
-tags: tool_llama_cpp, topic_quantization, topic_local_ai, source_ibm_llama_cpp
+tags: [tool_llama_cpp, topic_quantization, topic_local_ai, source_ibm_llama_cpp]
 ---
 
 # Quantization Naming Convention — Q4_K_M Decoded

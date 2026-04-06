@@ -1,7 +1,7 @@
 ---
 title: Frontier Operations — Five Skills That Can't Be Automated
 summary: Nate B Jones's framework for the one workforce skill structurally resistant to obsolescence: boundary sensing, seam design, failure model maintenance, capability forecasting, and leverage calibration.
-tags: person_nate_b_jones, concept_frontier_operations, topic_workforce, source_nate_b_jones_frontier_operations
+tags: [person_nate_b_jones, concept_frontier_operations, topic_workforce, source_nate_b_jones_frontier_operations]
 ---
 
 # Frontier Operations — Five Skills That Can't Be Automated

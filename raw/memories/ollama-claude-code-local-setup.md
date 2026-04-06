@@ -1,7 +1,7 @@
 ---
 title: Running Claude Code Free with Ollama Local Models
 summary: Step-by-step method for swapping Claude Code's model engine to a local open-source model via Ollama.
-tags: person_nate_herk, tool_claude_code, tool_ollama, topic_cost_reduction, topic_local_ai, source_nate_herk_ollama
+tags: [person_nate_herk, tool_claude_code, tool_ollama, topic_cost_reduction, topic_local_ai, source_nate_herk_ollama]
 ---
 
 # Running Claude Code Free with Ollama Local Models

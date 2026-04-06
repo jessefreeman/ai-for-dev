@@ -1,7 +1,7 @@
 ---
 title: Sell Outcomes Not Automations
 summary: Nate Herk's core sales principle — position AI automation work as outcomes (time saved, money recovered) not tools or technology.
-tags: person_nate_herk, topic_business, topic_selling_ai, source_nate_herk_500_workflows
+tags: [person_nate_herk, topic_business, topic_selling_ai, source_nate_herk_500_workflows]
 ---
 
 # Sell Outcomes Not Automations

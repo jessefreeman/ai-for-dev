@@ -1,7 +1,7 @@
 ---
 title: TurboQuant KV Cache Compression
 summary: TurboQuant shrinks the KV cache 4x, turning 8K practical context into 32K on the same consumer hardware.
-tags: person_tim_carambat, concept_turboquant, tool_ollama, topic_local_ai, source_tim_carambat_turboquant
+tags: [person_tim_carambat, concept_turboquant, tool_ollama, topic_local_ai, source_tim_carambat_turboquant]
 ---
 
 # TurboQuant KV Cache Compression

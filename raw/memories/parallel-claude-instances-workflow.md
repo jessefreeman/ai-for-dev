@@ -1,7 +1,7 @@
 ---
 title: Parallel Claude Code Instances for Independent Tasks
 summary: Running two simultaneous Claude Code sessions for independent work — no waiting for sequential completion.
-tags: person_damian_malliaros, tool_claude_code, topic_productivity, source_damian_malliaros_minimax
+tags: [person_damian_malliaros, tool_claude_code, topic_productivity, source_damian_malliaros_minimax]
 ---
 
 # Parallel Claude Code Instances for Independent Tasks

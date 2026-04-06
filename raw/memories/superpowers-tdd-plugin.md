@@ -1,7 +1,7 @@
 ---
 title: Superpowers — TDD-Enforcing Claude Code Plugin
 summary: Superpowers is a 115k-star Claude Code plugin that enforces TDD, YAGNI, and DRY through a structured brainstorm→plan→execute→review workflow with worktree parallelism.
-tags: tool_superpowers, tool_claude_code, topic_tdd, topic_workflow, source_matthew_berman_open_source_projects
+tags: [tool_superpowers, tool_claude_code, topic_tdd, topic_workflow, source_matthew_berman_open_source_projects]
 ---
 
 # Superpowers — TDD-Enforcing Claude Code Plugin
