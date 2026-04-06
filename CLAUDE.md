@@ -1,5 +1,10 @@
 # LLM Wiki Schema
 
+## Git Rules
+
+- Never add `Co-Authored-By` or any Claude attribution to commit messages.
+- Commits should appear under the repo owner's account only.
+
 This vault is a **personal knowledge base** maintained by an LLM agent. The human curates sources, directs analysis, and asks questions. The LLM does all summarizing, cross-referencing, filing, and maintenance.
 
 ## Directory Structure
