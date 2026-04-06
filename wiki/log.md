@@ -152,3 +152,54 @@ Chronological record of all operations.
   - `wiki/open-source/qwen.md` — Entity: Alibaba's open-weights model family
 - **Updated**: `matthew-berman.md` (added source + key ideas), `index.md`
 - **Memories** (2): gemini-video-ingestion-unique, grok-twitter-search-specialty, open-source-models-95-percent-use-cases
+
+## [2026-04-06] ingest | 7 New Open-Source AI Tools (Fireship)
+- **Source**: YouTube transcript by Fireship covering 7 open-source AI tools
+- **Pages created** (9):
+  - `summary-fireship-7-open-source-tools.md` — Source summary
+  - `wiki/people/fireship.md` — Entity: Developer education YouTube channel
+  - `wiki/open-source/agency.md` — Entity: Role-based agent templates for Claude Code
+  - `wiki/open-source/prompt-fu.md` — Entity: Prompt unit testing (acquired by OpenAI)
+  - `wiki/open-source/mirrorish.md` — Entity: Multi-agent prediction engine
+  - `wiki/open-source/impeccable.md` — Entity: Claude Code frontend design skill
+  - `wiki/open-source/open-viking.md` — Entity: File-system agent memory DB
+  - `wiki/open-source/heretic.md` — Entity: Model guardrail removal
+  - `wiki/open-source/nano-chat.md` — Entity: Full LLM training pipeline
+- **Memories** (2): open-viking-file-system-agent-memory, prompt-fu-unit-testing-for-prompts
+
+## [2026-04-06] ingest | /loop + OpenBrain (Nate B Jones)
+- **Source**: YouTube transcript by Nate B Jones on Anthropic's /loop, OpenBrain, and OpenClaw
+- **Pages created** (5):
+  - `summary-nate-b-jones-loop-openbrain.md` — Source summary
+  - `wiki/concepts/slash-loop.md` — Concept: Anthropic's proactive scheduling command
+  - `wiki/concepts/open-brain.md` — Concept: SQL + MCP agent memory pattern
+  - `wiki/tools/openclaw.md` — Entity: Fastest-growing OSS agent framework
+  - `wiki/concepts/autoresearch-evals.md` — Concept: (co-sourced with Nick Saraev)
+- **Updated**: `nate-b-jones.md`, `andrej-karpathy.md`, `claude-code.md` (/loop + skills ecosystem sections)
+- **Memories** (3): three-agent-primitives, slash-loop-heartbeat, openbrain-sql-mcp
+- **Note**: Fills the OpenClaw gap from tasks.md
+
+## [2026-04-06] ingest | Project Nomad (Crosstalk Solutions)
+- **Source**: YouTube transcript by Crosstalk Solutions on offline AI knowledge server
+- **Pages created** (3):
+  - `summary-crosstalk-project-nomad.md` — Source summary
+  - `wiki/open-source/project-nomad.md` — Entity: Offline knowledge server + local AI
+  - `wiki/people/crosstalk-solutions.md` — Entity: Home lab YouTuber
+- **Memories** (1): project-nomad-offline-ai-server
+
+## [2026-04-06] ingest | AutoResearch for Skills (Nick Saraev)
+- **Source**: YouTube transcript by Nick Saraev on self-improving Claude Code skills
+- **Pages created** (2):
+  - `summary-nick-saraev-autoresearch.md` — Source summary
+  - `wiki/people/nick-saraev.md` — Entity: AI educator, Maker School
+- **Updated**: `wiki/concepts/autoresearch-evals.md` (co-sourced)
+- **Memories** (1): autoresearch-three-ingredients
+
+## [2026-04-06] ingest | VoiceBox TTS (Dave Swift)
+- **Source**: YouTube transcript by Dave Swift demoing VoiceBox open-source TTS
+- **Pages created** (3):
+  - `summary-dave-swift-voicebox.md` — Source summary
+  - `wiki/open-source/voicebox.md` — Entity: Free local TTS with voice cloning
+  - `wiki/people/dave-swift.md` — Entity: AI tools YouTuber
+- **Memories** (1): voicebox-local-tts-alternative
+- **Note**: 18 total sources ingested — lint pass recommended per CLAUDE.md (every 5th ingest)

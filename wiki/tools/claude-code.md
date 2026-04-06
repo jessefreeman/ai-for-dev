@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md"]
 created: 2026-04-06
 updated: 2026-04-06
 tags: [tool, ai, llm, anthropic]
@@ -35,6 +35,23 @@ Claude Code's model is configurable. The harness (Claude Code) and the engine (A
 
 This is not against Anthropic's ToS. Practical result: 50–100x cost reduction for many workflows.
 
+## /loop — Proactive Agent Scheduling
+
+Shipped March 2026. The `/loop` command lets Claude Code run jobs on a repeating schedule without human interaction — the "heartbeat" for agents. Combined with a persistent memory system (like [[OpenBrain]]) and MCP tools, `/loop` enables agents that accumulate value across cycles.
+
+Before `/loop`, developers needed external scaffolding (bash scripts, markdown context files, completion conditions) to achieve this. Now it's native to Claude Code. See [[/loop]] for full concept page.
+
+**Limitations**: Session-scoped (stops when laptop closes), no built-in "done" signal.
+
+## Skills Ecosystem
+
+Claude Code has a growing ecosystem of installable skills and plugins:
+- [[skills.sh]] — open directory for agent skills (150k+ installs for [[Remotion]])
+- [[GStack]] — YC startup methodology (~50k stars)
+- [[Superpowers]] — TDD-enforcing plugin (115k stars)
+- [[Impeccable]] — frontend design skill (17 commands)
+- [[Agency]] — role-based agent templates
+
 ## Notable
 
 - [[Nate Herk]] demonstrated ingesting 36 YouTube transcripts in ~14 minutes and a single long article in ~10 minutes.
@@ -48,6 +65,10 @@ This is not against Anthropic's ToS. Practical result: 50–100x cost reduction 
 - [[Open-Source Model Integration]]
 - [[Ollama]]
 - [[OpenRouter]]
+- [[/loop]] — proactive scheduling command
+- [[OpenBrain]] — personal agent memory via SQL + MCP
+- [[AutoResearch and Evals]] — methodology for self-improving skills
 - [[summary-karpathy-10x-claude-code|Source: Karpathy 10x'd Claude Code]]
 - [[summary-nate-jones-12-agent-primitives|Source: 12 Agent Primitives]]
 - [[summary-nate-herk-ollama-claude-code|Source: Ollama + Claude Code]]
+- [[summary-nate-b-jones-loop-openbrain|Source: /loop + OpenBrain]]

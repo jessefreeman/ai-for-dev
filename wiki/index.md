@@ -22,12 +22,16 @@ New content appears as I read, watch, and research. The site updates automatical
 ## Browse by category
 
 ### People
-- [[andrej-karpathy|Andrej Karpathy]] — AI researcher, creator of the LLM Wiki pattern.
+- [[andrej-karpathy|Andrej Karpathy]] — AI researcher, creator of the LLM Wiki pattern and AutoResearch.
 - [[nate-herk|Nate Herk]] — YouTube creator who demonstrated the LLM Wiki in practice.
-- [[nate-b-jones|Nate B Jones]] — AI strategy educator; analyzed the Claude Code architecture leak; thesis on MCP as 2026's growth hack.
+- [[nate-b-jones|Nate B Jones]] — AI strategy educator; agent primitives, MCP thesis, /loop + OpenBrain.
 - [[matthew-berman|Matthew Berman]] — AI YouTuber focused on open-source models, local inference, and agent tooling.
 - [[tim-carambat|Tim Carambat]] — Founder of AnythingLLM; covers local AI inference and TurboQuant.
 - [[damian-malliaros|Damian Malliaros]] — AI creator focused on Claude Code cost optimization and app building.
+- [[nick-saraev|Nick Saraev]] — AI educator; AutoResearch methodology for self-improving Claude Code skills.
+- [[fireship|Fireship]] — Fast-paced developer education YouTube channel.
+- [[crosstalk-solutions|Crosstalk Solutions]] — Home lab creator; built Project Nomad offline AI server.
+- [[dave-swift|Dave Swift]] — AI tools creator focused on audio and local-first applications.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -36,10 +40,11 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[grok|Grok]] — xAI's model; best for real-time Twitter/X research.
 
 ### Tools
-- [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki.
+- [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki. Now with /loop and a skills ecosystem.
 - [[cursor|Cursor]] — AI-native code editor; one of the first coding agents.
 - [[codex|Codex]] — OpenAI's coding agent harness.
 - [[devin|Devin]] — Cognition's autonomous software engineering agent.
+- [[openclaw|OpenClaw]] — Fastest-growing open-source agent framework (200k+ stars); security concerns.
 - [[google-stitch|Google Stitch]] — Voice-to-UI design tool; exports agent-readable design.md.
 - [[remotion|Remotion]] — React framework treating video as code; #1 non-corporate Claude Code skill.
 - [[skills-sh|skills.sh]] — Open directory for Claude Code agent skills.
@@ -57,6 +62,15 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[gstack|GStack]] — YC President Gary Tan's startup methodology as Claude Code skills.
 - [[hermes-agent|Hermes Agent]] — Self-improving agent framework with closed learning loop.
 - [[superpowers|Superpowers]] — TDD-enforcing Claude Code plugin; 115k stars.
+- [[agency|Agency]] — Role-based agent templates for Claude Code (frontend, backend, security, etc.).
+- [[prompt-fu|Prompt Fu]] — Unit testing framework for prompts; acquired by OpenAI.
+- [[impeccable|Impeccable]] — Claude Code skill for frontend design; 17 UI commands.
+- [[open-viking|Open Viking]] — File-system agent memory DB with tiered loading.
+- [[mirrorish|Mirrorish]] — Multi-agent prediction engine with simulated social network.
+- [[heretic|Heretic]] — Model guardrail removal via "obliteration" technique.
+- [[nano-chat|Nano Chat]] — Full LLM pipeline; train your own model for ~$100.
+- [[project-nomad|Project Nomad]] — Offline knowledge server with local AI, maps, and education.
+- [[voicebox|VoiceBox]] — Free local TTS app with voice cloning; open-source ElevenLabs alternative.
 - [[gemma-4|Gemma 4]] — Google's open-weights model; 31B ranks #3 globally.
 - [[llama|Llama]] — Meta's open-weights model family; pioneered local LLM inference.
 - [[deepseek|DeepSeek]] — Chinese lab open-weights model; stronger than Llama as of 2026.
@@ -68,6 +82,9 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[open-source-model-integration|Open-Source Model Integration]] — Running Claude Code with local or third-party models to reduce cost.
 - [[multi-agent-orchestration|Multi-Agent Orchestration]] — Coordinating multiple AI agents with distinct roles toward shared goals.
 - [[turboquant|TurboQuant]] — KV cache optimization enabling 4x more context window on the same consumer hardware.
+- [[slash-loop|/loop]] — Anthropic's proactive agent scheduling command for Claude Code.
+- [[open-brain|OpenBrain]] — SQL database + MCP server pattern for persistent agent memory.
+- [[autoresearch-evals|AutoResearch and Evals]] — Self-improving methodology with objective metrics and binary evals.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -77,18 +94,23 @@ New content appears as I read, watch, and research. The site updates automatical
 
 ### Sources
 - [[ai-2027|AI 2027]] — Forecasting article used as a demo ingest source.
-- [[summary-karpathy-10x-claude-code|Karpathy 10x'd Claude Code]] — YouTube transcript: Nate Herk demonstrates the LLM Wiki in practice.
-- [[summary-nate-jones-12-agent-primitives|12 Agent Primitives]] — Nate B Jones analyzes the Claude Code leak for production agent patterns.
-- [[summary-nate-herk-ollama-claude-code|Ollama + Claude Code]] — Nate Herk's guide to running Claude Code with local and free cloud models.
-- [[summary-matthew-berman-gemma4|Google Drops Gemma 4]] — Matthew Berman covers Gemma 4 benchmarks and release.
-- [[summary-nate-herk-paperclip|Claude Code + Paperclip]] — Nate Herk demonstrates multi-agent orchestration with Paperclip.
-- [[summary-tim-carambat-turboquant|TurboQuant]] — Tim Carambat covers TurboQuant's impact on local model context windows.
-- [[summary-damian-malliaros-minimax-m27|MiniMax M2.7 + Claude Code]] — Damian Malliaros demos building a ClickUp clone with MiniMax at 95% lower cost.
-- [[summary-nate-herk-500-ai-workflows|500 AI Workflows]] — Nate Herk's 5 highest-value automation workflows for business clients.
-- [[summary-nate-b-jones-google-stitch|A Markdown File Just Replaced Your Design Meeting]] — Nate B Jones on Google Stitch, Remotion, Blender MCP, and MCP as the 2026 growth hack.
-- [[summary-ibm-llama-cpp|What Is Llama.cpp?]] — IBM Technology's explainer on llama.cpp: GGUF format, quantization, local server mode.
-- [[summary-matthew-berman-open-source-projects|Open-Source AI Projects]] — Matthew Berman covers GStack, Hermes Agent, Superpowers, and Paperclip.
-- [[summary-matthew-berman-ai-models|Every AI Model Explained]] — Matthew Berman's survey of frontier models, open-source models, and coding agents.
+- [[summary-karpathy-10x-claude-code|Karpathy 10x'd Claude Code]] — Nate Herk demonstrates the LLM Wiki in practice.
+- [[summary-nate-jones-12-agent-primitives|12 Agent Primitives]] — Nate B Jones analyzes the Claude Code leak.
+- [[summary-nate-herk-ollama-claude-code|Ollama + Claude Code]] — Running Claude Code with local and free cloud models.
+- [[summary-matthew-berman-gemma4|Google Drops Gemma 4]] — Matthew Berman covers Gemma 4 benchmarks.
+- [[summary-nate-herk-paperclip|Claude Code + Paperclip]] — Multi-agent orchestration with Paperclip.
+- [[summary-tim-carambat-turboquant|TurboQuant]] — Tim Carambat covers TurboQuant's impact on local models.
+- [[summary-damian-malliaros-minimax-m27|MiniMax M2.7 + Claude Code]] — Building a ClickUp clone at 95% lower cost.
+- [[summary-nate-herk-500-ai-workflows|500 AI Workflows]] — Nate Herk's 5 highest-value automation workflows.
+- [[summary-nate-b-jones-google-stitch|Design Meeting → Markdown File]] — Google Stitch, Remotion, Blender MCP.
+- [[summary-ibm-llama-cpp|What Is Llama.cpp?]] — GGUF format, quantization, local server mode.
+- [[summary-matthew-berman-open-source-projects|Open-Source AI Projects]] — GStack, Hermes Agent, Superpowers, Paperclip.
+- [[summary-matthew-berman-ai-models|Every AI Model Explained]] — Frontier models, open-source models, coding agents.
+- [[summary-fireship-7-open-source-tools|7 Open-Source AI Tools]] — Agency, Prompt Fu, Impeccable, Open Viking, and more.
+- [[summary-nate-b-jones-loop-openbrain|/loop + OpenBrain]] — Three agent primitives; OpenClaw without the risk.
+- [[summary-crosstalk-project-nomad|Project Nomad]] — Offline knowledge server with local AI.
+- [[summary-nick-saraev-autoresearch|AutoResearch for Skills]] — Self-improving Claude Code skills with evals.
+- [[summary-dave-swift-voicebox|VoiceBox TTS]] — Free open-source local text-to-speech.
 
 ## Contribute or build your own
 

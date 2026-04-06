@@ -27,6 +27,7 @@ AI researcher. Former director of AI at Tesla, former OpenAI founding member. Kn
 - His own wiki: ~100 articles / ~500K words; uses index files rather than embedding-based retrieval
 - Left the pattern intentionally vague for others to customize
 - Connects the idea to Vannevar Bush's Memex (1945)
+- **AutoResearch**: Open-sourced `auto_research` repo — gives an agent a training setup, single GPU, and success metric → agent runs ~100 experiments overnight autonomously. Persistent log turns random search into intelligent convergence. Shopify CEO Toby Lutke used it to produce an agent-optimized model that outperformed a larger human-tuned model. Also inspired [[Nick Saraev]]'s application to Claude Code skill optimization and [[Hermes Agent]]'s self-improving loop concept.
 
 ## Gaps
 
@@ -34,6 +35,7 @@ AI researcher. Former director of AI at Tesla, former OpenAI founding member. Kn
 
 ## See Also
 - [[LLM Wiki Pattern]]
+- [[AutoResearch and Evals]] — methodology originating from Karpathy's repo
 - [[Nate Herk]]
 - [[Claude Code]]
 - [[summary-karpathy-10x-claude-code|Source: Karpathy 10x'd Claude Code]]
