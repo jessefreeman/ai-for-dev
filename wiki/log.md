@@ -105,3 +105,50 @@ Chronological record of all operations.
   - `gemma-4.md` — Entity: Google's open-weights model family
   - `matthew-berman.md` — Entity: AI YouTuber
 - **Updated**: `index.md`, `overview.md`
+
+## [2026-04-06] ingest | A Markdown File Just Replaced Your Design Meeting (Nate B Jones)
+- **Source**: YouTube transcript by Nate B Jones on Google Stitch, Remotion, and Blender MCP
+- **Pages created** (5):
+  - `summary-nate-b-jones-google-stitch.md` — Source summary
+  - `wiki/tools/google-stitch.md` — Entity: Google's voice-to-UI design tool
+  - `wiki/tools/remotion.md` — Entity: React video-as-code framework
+  - `wiki/open-source/blender-mcp.md` — Entity: Natural language to 3D via MCP (first page in open-source/ dir)
+  - `wiki/tools/skills-sh.md` — Entity: Claude Code skill directory
+- **Updated**: `nate-b-jones.md` (added source + key ideas), `index.md`
+- **Memories** (5): design-md-agent-readable-design-system, mcp-as-growth-hack-2026, remotion-video-as-code, blender-mcp-natural-language-3d, scheduled-creative-pipelines
+- **Note**: Created `wiki/open-source/` directory for first time
+
+## [2026-04-06] ingest | What Is Llama.cpp? (IBM Technology)
+- **Source**: YouTube transcript by IBM Technology on llama.cpp internals
+- **Pages created** (2):
+  - `summary-ibm-llama-cpp.md` — Source summary
+  - `wiki/open-source/llama-cpp.md` — Entity: C++ inference engine
+- **Note**: No person page created — IBM Technology is a corporate channel
+- **Memories** (3): gguf-format-purpose, quantization-naming-q4km, llama-cpp-local-openai-server
+
+## [2026-04-06] ingest | You NEED to Try These Open-Source AI Projects (Matthew Berman)
+- **Source**: YouTube transcript by Matthew Berman on four open-source agent projects
+- **Pages created** (4):
+  - `summary-matthew-berman-open-source-projects.md` — Source summary
+  - `wiki/open-source/gstack.md` — Entity: YC President Gary Tan's Claude Code skills
+  - `wiki/open-source/hermes-agent.md` — Entity: Self-improving agent framework
+  - `wiki/open-source/superpowers.md` — Entity: TDD-enforcing Claude Code plugin (115k stars)
+- **Updated**: `matthew-berman.md` (added source + key ideas), `index.md`
+- **Memories** (3): gstack-yc-office-hours-skill, hermes-agent-self-improving-loop, superpowers-tdd-plugin
+
+## [2026-04-06] ingest | Every AI Model Explained in 20 Minutes (Matthew Berman)
+- **Source**: YouTube transcript by Matthew Berman — introductory AI model survey
+- **Pages created** (11):
+  - `summary-matthew-berman-ai-models.md` — Source summary
+  - `wiki/tools/chatgpt.md` — Entity: OpenAI's flagship consumer AI
+  - `wiki/tools/claude.md` — Entity: Anthropic's model family (distinct from Claude Code)
+  - `wiki/tools/gemini.md` — Entity: Google's frontier model; unique video ingestion
+  - `wiki/tools/grok.md` — Entity: xAI's model; Twitter/X specialty
+  - `wiki/tools/cursor.md` — Entity: AI-native code editor
+  - `wiki/tools/codex.md` — Entity: OpenAI's coding agent
+  - `wiki/tools/devin.md` — Entity: Cognition's autonomous software engineer
+  - `wiki/open-source/llama.md` — Entity: Meta's open-weights model family
+  - `wiki/open-source/deepseek.md` — Entity: Chinese lab open-weights model
+  - `wiki/open-source/qwen.md` — Entity: Alibaba's open-weights model family
+- **Updated**: `matthew-berman.md` (added source + key ideas), `index.md`
+- **Memories** (2): gemini-video-ingestion-unique, grok-twitter-search-specialty, open-source-models-95-percent-use-cases

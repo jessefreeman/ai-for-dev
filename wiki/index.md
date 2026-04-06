@@ -24,21 +24,43 @@ New content appears as I read, watch, and research. The site updates automatical
 ### People
 - [[andrej-karpathy|Andrej Karpathy]] — AI researcher, creator of the LLM Wiki pattern.
 - [[nate-herk|Nate Herk]] — YouTube creator who demonstrated the LLM Wiki in practice.
-- [[nate-b-jones|Nate B Jones]] — AI strategy educator; analyzed the Claude Code architecture leak.
-- [[matthew-berman|Matthew Berman]] — AI YouTuber focused on open-source models and local inference.
+- [[nate-b-jones|Nate B Jones]] — AI strategy educator; analyzed the Claude Code architecture leak; thesis on MCP as 2026's growth hack.
+- [[matthew-berman|Matthew Berman]] — AI YouTuber focused on open-source models, local inference, and agent tooling.
 - [[tim-carambat|Tim Carambat]] — Founder of AnythingLLM; covers local AI inference and TurboQuant.
 - [[damian-malliaros|Damian Malliaros]] — AI creator focused on Claude Code cost optimization and app building.
 
+### Frontier Models
+- [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
+- [[claude|Claude]] — Anthropic's model family; best for work and coding.
+- [[gemini|Gemini]] — Google's model; unique video ingestion; best for search and deep research.
+- [[grok|Grok]] — xAI's model; best for real-time Twitter/X research.
+
 ### Tools
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki.
+- [[cursor|Cursor]] — AI-native code editor; one of the first coding agents.
+- [[codex|Codex]] — OpenAI's coding agent harness.
+- [[devin|Devin]] — Cognition's autonomous software engineering agent.
+- [[google-stitch|Google Stitch]] — Voice-to-UI design tool; exports agent-readable design.md.
+- [[remotion|Remotion]] — React framework treating video as code; #1 non-corporate Claude Code skill.
+- [[skills-sh|skills.sh]] — Open directory for Claude Code agent skills.
 - [[obsidian|Obsidian]] — Markdown note-taking app used as the visual frontend.
 - [[obsidian-web-clipper|Obsidian Web Clipper]] — Browser extension for clipping articles into raw/.
 - [[ollama|Ollama]] — Local model runner for running open-source LLMs on consumer hardware.
 - [[openrouter|OpenRouter]] — Unified API gateway for hundreds of AI models, including free tiers.
-- [[gemma-4|Gemma 4]] — Google's high-efficiency open-weights model family; 31B ranks #3 globally.
 - [[paperclip|Paperclip]] — Open-source multi-agent orchestration dashboard; MIT licensed.
 - [[anything-llm|AnythingLLM]] — All-in-one local AI app for document chat, agents, and automations.
 - [[minimax-m2-7|MiniMax M2.7]] — Closed-source model claiming to outperform Opus 4.6 at 20x lower cost.
+
+### Open-Source Projects
+- [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
+- [[blender-mcp|Blender MCP]] — Natural language to 3D via MCP bridge to Blender's Python API.
+- [[gstack|GStack]] — YC President Gary Tan's startup methodology as Claude Code skills.
+- [[hermes-agent|Hermes Agent]] — Self-improving agent framework with closed learning loop.
+- [[superpowers|Superpowers]] — TDD-enforcing Claude Code plugin; 115k stars.
+- [[gemma-4|Gemma 4]] — Google's open-weights model; 31B ranks #3 globally.
+- [[llama|Llama]] — Meta's open-weights model family; pioneered local LLM inference.
+- [[deepseek|DeepSeek]] — Chinese lab open-weights model; stronger than Llama as of 2026.
+- [[qwen|Qwen]] — Alibaba's open-weights model family; among the top open-source models.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -63,6 +85,10 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-tim-carambat-turboquant|TurboQuant]] — Tim Carambat covers TurboQuant's impact on local model context windows.
 - [[summary-damian-malliaros-minimax-m27|MiniMax M2.7 + Claude Code]] — Damian Malliaros demos building a ClickUp clone with MiniMax at 95% lower cost.
 - [[summary-nate-herk-500-ai-workflows|500 AI Workflows]] — Nate Herk's 5 highest-value automation workflows for business clients.
+- [[summary-nate-b-jones-google-stitch|A Markdown File Just Replaced Your Design Meeting]] — Nate B Jones on Google Stitch, Remotion, Blender MCP, and MCP as the 2026 growth hack.
+- [[summary-ibm-llama-cpp|What Is Llama.cpp?]] — IBM Technology's explainer on llama.cpp: GGUF format, quantization, local server mode.
+- [[summary-matthew-berman-open-source-projects|Open-Source AI Projects]] — Matthew Berman covers GStack, Hermes Agent, Superpowers, and Paperclip.
+- [[summary-matthew-berman-ai-models|Every AI Model Explained]] — Matthew Berman's survey of frontier models, open-source models, and coding agents.
 
 ## Contribute or build your own
 
