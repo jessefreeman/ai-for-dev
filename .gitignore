@@ -1,0 +1,11 @@
+raw/
+.obsidian/
+.claude/
+.instructions/
+.DS_Store
+.smbdelete*
+node_modules/
+public/
+.env
+.vscode/
+*.log
