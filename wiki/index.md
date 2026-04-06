@@ -1,6 +1,8 @@
 ---
 type: index
 updated: 2026-04-06
+description: "Jesse Freeman's personal AI research wiki — AI tools, techniques, and workflows for developers. Maintained by Claude Code."
+socialImage: og-image.png
 ---
 
 # Wiki Index
