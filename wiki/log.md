@@ -203,3 +203,34 @@ Chronological record of all operations.
   - `wiki/people/dave-swift.md` — Entity: AI tools YouTuber
 - **Memories** (1): voicebox-local-tts-alternative
 - **Note**: 18 total sources ingested — lint pass recommended per CLAUDE.md (every 5th ingest)
+
+## [2026-04-06] ingest | Prompting Split Into 4 Skills (Nate B Jones)
+- **Source**: YouTube transcript on the four-discipline prompting framework
+- **Pages created** (2):
+  - `summary-nate-b-jones-four-prompting-disciplines.md` — Source summary
+  - `wiki/concepts/four-prompting-disciplines.md` — Concept: The four disciplines + five spec primitives
+- **Updated**: `nate-b-jones.md`
+- **Memories** (2): four-prompting-disciplines-framework, five-specification-primitives
+
+## [2026-04-06] ingest | Excalidraw Diagrams (Cole Medin)
+- **Source**: YouTube transcript on visual validation loop for Claude Code diagrams
+- **Pages created** (2):
+  - `summary-cole-medin-excalidraw-skill.md` — Source summary
+  - `wiki/people/cole-medin.md` — Entity: AI educator (2 sources ingested)
+- **Updated**: `claude-code.md` (Excalidraw skill in ecosystem section)
+- **Memories** (1): excalidraw-visual-validation-loop
+
+## [2026-04-06] ingest | Why Coding Tools Abandoned RAG (Cole Medin)
+- **Source**: YouTube transcript on RAG for structured vs unstructured data
+- **Pages created** (1):
+  - `summary-cole-medin-rag-for-code.md` — Source summary
+- **Updated**: `wiki/analyses/rag-vs-wiki.md` (major rewrite with structured vs unstructured distinction), `cole-medin.md`
+- **Memories** (1): rag-dead-for-code-alive-for-knowledge
+
+## [2026-04-06] ingest | OpenBrain Architecture (Nate B Jones)
+- **Source**: YouTube transcript — definitive OpenBrain architecture guide
+- **Pages created** (1):
+  - `summary-nate-b-jones-openbrain-architecture.md` — Source summary
+- **Updated**: `wiki/concepts/open-brain.md` (major rewrite with full Postgres + PGVector architecture, lifecycle prompts, compounding advantage thesis), `nate-b-jones.md`
+- **Memories** (1): openbrain-full-architecture
+- **Note**: 22 total sources ingested — lint pass overdue

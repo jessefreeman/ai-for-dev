@@ -28,6 +28,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[matthew-berman|Matthew Berman]] — AI YouTuber focused on open-source models, local inference, and agent tooling.
 - [[tim-carambat|Tim Carambat]] — Founder of AnythingLLM; covers local AI inference and TurboQuant.
 - [[damian-malliaros|Damian Malliaros]] — AI creator focused on Claude Code cost optimization and app building.
+- [[cole-medin|Cole Medin]] — AI educator; Excalidraw diagrams, RAG analysis, agentic engineering.
 - [[nick-saraev|Nick Saraev]] — AI educator; AutoResearch methodology for self-improving Claude Code skills.
 - [[fireship|Fireship]] — Fast-paced developer education YouTube channel.
 - [[crosstalk-solutions|Crosstalk Solutions]] — Home lab creator; built Project Nomad offline AI server.
@@ -85,6 +86,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[slash-loop|/loop]] — Anthropic's proactive agent scheduling command for Claude Code.
 - [[open-brain|OpenBrain]] — SQL database + MCP server pattern for persistent agent memory.
 - [[autoresearch-evals|AutoResearch and Evals]] — Self-improving methodology with objective metrics and binary evals.
+- [[four-prompting-disciplines|Four Prompting Disciplines]] — Prompt craft → context engineering → intent engineering → specification engineering.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -111,6 +113,10 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-crosstalk-project-nomad|Project Nomad]] — Offline knowledge server with local AI.
 - [[summary-nick-saraev-autoresearch|AutoResearch for Skills]] — Self-improving Claude Code skills with evals.
 - [[summary-dave-swift-voicebox|VoiceBox TTS]] — Free open-source local text-to-speech.
+- [[summary-nate-b-jones-four-prompting-disciplines|Prompting Split Into 4 Skills]] — The four-discipline prompting framework for 2026.
+- [[summary-cole-medin-excalidraw-skill|Excalidraw Diagrams]] — Visual validation loop for Claude Code diagram generation.
+- [[summary-cole-medin-rag-for-code|RAG for Code vs Knowledge]] — Why coding tools abandoned RAG; when semantic search still matters.
+- [[summary-nate-b-jones-openbrain-architecture|OpenBrain Architecture]] — The $0.10/month agent memory system in full detail.
 
 ## Contribute or build your own
 

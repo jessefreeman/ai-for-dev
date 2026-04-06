@@ -51,6 +51,7 @@ Claude Code has a growing ecosystem of installable skills and plugins:
 - [[Superpowers]] — TDD-enforcing plugin (115k stars)
 - [[Impeccable]] — frontend design skill (17 commands)
 - [[Agency]] — role-based agent templates
+- **Excalidraw Diagram Skill** — [[Cole Medin]]'s visual validation workflow for generating diagrams
 
 ## Notable
 
