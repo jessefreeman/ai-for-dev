@@ -38,3 +38,28 @@ Chronological record of all operations.
   - `llm-wiki-pattern.md` — Concept: LLM-maintained knowledge bases
   - `rag-vs-wiki.md` — Comparison: LLM Wiki vs semantic search RAG
 - **Updated**: `index.md`, `overview.md`
+
+## [2026-04-06] ingest | I Broke Down Anthropic's $2.5 Billion Leak (Nate B Jones)
+- **Source**: YouTube transcript by Nate B Jones analyzing the leaked Claude Code architecture
+- **Pages created** (3):
+  - `summary-nate-jones-12-agent-primitives.md` — Source summary
+  - `agentic-harness-primitives.md` — Concept: 12-primitive production agent framework
+  - `nate-b-jones.md` — Entity: AI strategy educator
+- **Updated**: `claude-code.md` (added internal architecture section from leak), `index.md`, `overview.md`
+
+## [2026-04-06] ingest | Ollama + Claude Code = 99% CHEAPER (Nate Herk)
+- **Source**: YouTube transcript by Nate Herk on running Claude Code with open-source models
+- **Pages created** (3):
+  - `summary-nate-herk-ollama-claude-code.md` — Source summary
+  - `open-source-model-integration.md` — Concept: substituting models in Claude Code
+  - `ollama.md` — Entity: local model runner
+  - `openrouter.md` — Entity: unified AI API gateway
+- **Updated**: `claude-code.md`, `index.md`, `overview.md`
+
+## [2026-04-06] ingest | Google just dropped Gemma 4 (Matthew Berman)
+- **Source**: YouTube transcript by Matthew Berman covering Gemma 4 release
+- **Pages created** (3):
+  - `summary-matthew-berman-gemma4.md` — Source summary (minimal)
+  - `gemma-4.md` — Entity: Google's open-weights model family
+  - `matthew-berman.md` — Entity: AI YouTuber
+- **Updated**: `index.md`, `overview.md`
