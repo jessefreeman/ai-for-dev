@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026..md", "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build).md"]
+sources: ["I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026..md", "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build).md", "The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2).md", "Why Every AI Skill You Learned 6 Months Ago Is Already Wrong (And What Is Replacing Them).md"]
 created: 2026-04-06
 updated: 2026-04-06
 tags: [person, ai, agent, educator]
@@ -24,6 +24,8 @@ AI strategy educator and daily content creator. Focuses on production agent arch
 - [[summary-nate-b-jones-loop-openbrain|Anthropic Just Gave Your Agent the One Thing OpenClaw Has]] — Introduces [[/loop]] (Anthropic's proactivity command), [[OpenBrain]] (SQL + MCP memory), and the three-primitive agent stack. Argues you can replicate [[OpenClaw]] without the security risks. References Karpathy's AutoResearch and Toby Lutke's agent-optimized model.
 - [[summary-nate-b-jones-four-prompting-disciplines|Prompting Just Split Into 4 Skills]] — The [[Four Prompting Disciplines]] framework: Prompt Craft → Context Engineering → Intent Engineering → Specification Engineering. Five specification primitives. The Klarna warning. Toby Lutke on prompting as communication discipline.
 - [[summary-nate-b-jones-openbrain-architecture|The $0.10 System That Replaced My AI Workflow]] — The definitive [[OpenBrain]] architecture guide: Postgres + PGVector + Supabase + MCP. Walled garden problem. Human web vs agent web. Four lifecycle prompts. The compounding advantage thesis.
+- [[summary-nate-b-jones-five-levels|The 5 Levels of AI Coding]] — Dan Shapiro's framework (L0 spicy autocomplete → L5 dark factory). StrongDM's 3-person software factory with [[Attractor]]. METR study (devs 19% slower). J-curve. Junior pipeline collapse. AI-native economics ($3.5M/employee).
+- [[summary-nate-b-jones-frontier-operations|Why Every AI Skill Is Already Wrong]] — [[Frontier Operations]]: the expanding bubble metaphor. Five persistent skills (boundary sensing, seam design, failure model maintenance, capability forecasting, leverage calibration). Team of one, pod of five.
 
 ## Key Ideas
 
@@ -40,6 +42,9 @@ AI strategy educator and daily content creator. Focuses on production agent arch
 - **"Memory architecture determines agent capabilities much more than model selection does"** — the compounding advantage of owning your memory infrastructure
 - The human web vs agent web fork: note-taking apps are built for human eyes; agents need infrastructure designed for machine-to-machine readability
 - **Klarna as anti-example**: Perfect context, wrong intent = AI resolved 2.3M conversations but optimized for speed not satisfaction
+- **[[Five Levels of AI Coding]]**: L0 spicy autocomplete → L5 dark factory. 90% of "AI-native" devs are stuck at L2. StrongDM's 3-person team with Attractor is the clearest L5 example. The bottleneck has moved from implementation speed to spec quality.
+- **[[Frontier Operations]]**: The expanding bubble — as AI gets smarter, the surface area for human judgment GROWS. Five persistent skills. "The first workforce skill that expires on a roughly quarterly cycle."
+- The **J-curve**: Most orgs are stuck at the bottom, getting measurably slower with AI while believing they're faster
 
 ## See Also
 - [[Agentic Harness Primitives]]
@@ -54,5 +59,10 @@ AI strategy educator and daily content creator. Focuses on production agent arch
 - [[summary-nate-jones-12-agent-primitives|Source: 12 Agent Primitives]]
 - [[summary-nate-b-jones-google-stitch|Source: A Markdown File Just Replaced Your Design Meeting]]
 - [[summary-nate-b-jones-loop-openbrain|Source: /loop + OpenBrain]]
+- [[Five Levels of AI Coding]]
+- [[Frontier Operations]]
+- [[Attractor]]
 - [[summary-nate-b-jones-four-prompting-disciplines|Source: Prompting Split Into 4 Skills]]
 - [[summary-nate-b-jones-openbrain-architecture|Source: The $0.10 System]]
+- [[summary-nate-b-jones-five-levels|Source: 5 Levels of AI Coding]]
+- [[summary-nate-b-jones-frontier-operations|Source: Frontier Operations]]

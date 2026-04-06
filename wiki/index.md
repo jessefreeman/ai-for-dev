@@ -33,6 +33,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[fireship|Fireship]] — Fast-paced developer education YouTube channel.
 - [[crosstalk-solutions|Crosstalk Solutions]] — Home lab creator; built Project Nomad offline AI server.
 - [[dave-swift|Dave Swift]] — AI tools creator focused on audio and local-first applications.
+- [[stephen-g-pope|Stephen G. Pope]] — Creator of ThePepeBot; autonomous agent architecture.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -72,6 +73,8 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[nano-chat|Nano Chat]] — Full LLM pipeline; train your own model for ~$100.
 - [[project-nomad|Project Nomad]] — Offline knowledge server with local AI, maps, and education.
 - [[voicebox|VoiceBox]] — Free local TTS app with voice cloning; open-source ElevenLabs alternative.
+- [[attractor|Attractor]] — StrongDM's dark factory agent; three markdown specs = the entire agent.
+- [[thepopebot|ThePepeBot]] — Free open-source OpenClaw alternative; Docker + GitHub Actions + Ollama.
 - [[gemma-4|Gemma 4]] — Google's open-weights model; 31B ranks #3 globally.
 - [[llama|Llama]] — Meta's open-weights model family; pioneered local LLM inference.
 - [[deepseek|DeepSeek]] — Chinese lab open-weights model; stronger than Llama as of 2026.
@@ -87,6 +90,8 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[open-brain|OpenBrain]] — SQL database + MCP server pattern for persistent agent memory.
 - [[autoresearch-evals|AutoResearch and Evals]] — Self-improving methodology with objective metrics and binary evals.
 - [[four-prompting-disciplines|Four Prompting Disciplines]] — Prompt craft → context engineering → intent engineering → specification engineering.
+- [[five-levels-of-ai-coding|Five Levels of AI Coding]] — L0 spicy autocomplete → L5 dark factory. Dan Shapiro's framework + StrongDM case study.
+- [[frontier-operations|Frontier Operations]] — Five persistent skills for working at the expanding AI/human boundary.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -117,6 +122,10 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-cole-medin-excalidraw-skill|Excalidraw Diagrams]] — Visual validation loop for Claude Code diagram generation.
 - [[summary-cole-medin-rag-for-code|RAG for Code vs Knowledge]] — Why coding tools abandoned RAG; when semantic search still matters.
 - [[summary-nate-b-jones-openbrain-architecture|OpenBrain Architecture]] — The $0.10/month agent memory system in full detail.
+- [[summary-nate-b-jones-five-levels|5 Levels of AI Coding]] — Dark factory, StrongDM, J-curve, junior pipeline collapse.
+- [[summary-stephen-g-pope-thepopebot|FREE OpenClaw]] — ThePepeBot architecture: Docker + GitHub Actions + Ollama.
+- [[summary-cole-medin-e2e-testing|E2E Testing Command]] — Self-healing AI coding workflow with browser automation.
+- [[summary-nate-b-jones-frontier-operations|Frontier Operations]] — The expanding bubble; five persistent skills.
 
 ## Contribute or build your own
 

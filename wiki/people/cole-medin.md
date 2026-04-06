@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Build BEAUTIFUL Diagrams with Claude Code (Full Workflow).md", "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead).md"]
+sources: ["Build BEAUTIFUL Diagrams with Claude Code (Full Workflow).md", "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead).md", "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now).md"]
 created: 2026-04-06
 updated: 2026-04-06
 tags: [person, ai, claude-code, rag, educator]
@@ -20,6 +20,7 @@ AI educator and developer. Runs the Dynamis community. Focuses on practical Clau
 
 - [[summary-cole-medin-excalidraw-skill|Build Beautiful Diagrams with Claude Code]] — Excalidraw diagram skill with visual validation loop: generate → render PNG → agent reviews screenshot → iterate. "Argue visually" design philosophy.
 - [[summary-cole-medin-rag-for-code|Why the Best AI Coding Tools Abandoned RAG]] — RAG is dead for code (structured data → agentic search) but essential for unstructured data. Bridge approach: give agents both tools, let them choose per-query.
+- [[summary-cole-medin-e2e-testing|This One Command Makes Coding Agents Find All Their Mistakes]] — Self-healing AI coding workflow: 6-step E2E testing with parallel sub-agents, browser automation, DB validation, screenshot review, and PIV loop (Plan→Implement→Validate).
 
 ## Key Ideas
 
@@ -28,6 +29,8 @@ AI educator and developer. Runs the Dynamis community. Focuses on practical Clau
 - RAG is dead for code because of exact identifiers + file structure + terminal tools — but very much alive for unstructured knowledge bases
 - The "RAG is dead" narrative is a mind virus that causes overengineering by avoiding semantic search where it's still essential
 - Bridge approach: smart agents should have both semantic search and agentic search tools and choose per-query
+- **PIV loop** (Plan→Implement→Validate): Structure AI coding around a validation-first mindset; E2E testing as the V
+- Self-healing coding workflow: agent fixes blocking issues during testing, reports moderate/minor for human decision — not vibe coding, but delegated validation
 
 ## See Also
 
@@ -36,3 +39,4 @@ AI educator and developer. Runs the Dynamis community. Focuses on practical Clau
 - [[AutoResearch and Evals]] — related skill improvement methodology
 - [[summary-cole-medin-excalidraw-skill|Source: Excalidraw Diagrams]]
 - [[summary-cole-medin-rag-for-code|Source: RAG for Code]]
+- [[summary-cole-medin-e2e-testing|Source: E2E Testing]]

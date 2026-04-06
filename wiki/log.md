@@ -234,3 +234,36 @@ Chronological record of all operations.
 - **Updated**: `wiki/concepts/open-brain.md` (major rewrite with full Postgres + PGVector architecture, lifecycle prompts, compounding advantage thesis), `nate-b-jones.md`
 - **Memories** (1): openbrain-full-architecture
 - **Note**: 22 total sources ingested — lint pass overdue
+
+## [2026-04-06] ingest | The 5 Levels of AI Coding (Nate B Jones)
+- **Source**: YouTube transcript — Dan Shapiro's framework, StrongDM dark factory, J-curve, junior pipeline
+- **Pages created** (3):
+  - `summary-nate-b-jones-five-levels.md` — Source summary
+  - `wiki/concepts/five-levels-of-ai-coding.md` — Concept: L0→L5 framework + StrongDM case study
+  - `wiki/open-source/attractor.md` — Entity: StrongDM's dark factory coding agent
+- **Updated**: `nate-b-jones.md` (7th source)
+- **Memories** (2): five-levels-of-ai-coding, strongdm-dark-factory-architecture
+
+## [2026-04-06] ingest | I Built a FREE OpenClaw (Stephen G. Pope)
+- **Source**: YouTube transcript — ThePepeBot autonomous agent architecture
+- **Pages created** (3):
+  - `summary-stephen-g-pope-thepopebot.md` — Source summary
+  - `wiki/open-source/thepopebot.md` — Entity: Free OpenClaw alternative
+  - `wiki/people/stephen-g-pope.md` — Entity: AI developer, ThePepeBot creator
+- **Memories** (1): thepopebot-github-actions-architecture
+
+## [2026-04-06] ingest | E2E Testing Command (Cole Medin)
+- **Source**: YouTube transcript — Self-healing AI coding workflow
+- **Pages created** (1):
+  - `summary-cole-medin-e2e-testing.md` — Source summary
+- **Updated**: `cole-medin.md` (3rd source)
+- **Memories** (1): e2e-testing-self-healing-workflow
+
+## [2026-04-06] ingest | Frontier Operations (Nate B Jones)
+- **Source**: YouTube transcript — The expanding bubble; five persistent skills
+- **Pages created** (2):
+  - `summary-nate-b-jones-frontier-operations.md` — Source summary
+  - `wiki/concepts/frontier-operations.md` — Concept: Five skills at the AI/human boundary
+- **Updated**: `nate-b-jones.md`
+- **Memories** (1): frontier-operations-five-skills
+- **Note**: 26 total sources ingested — lint pass seriously overdue
