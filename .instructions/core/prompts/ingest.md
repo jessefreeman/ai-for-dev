@@ -10,12 +10,7 @@ You are ingesting one or more new source documents into the wiki. Follow this pr
 
 ## PDF sources
 
-If a source is a PDF (clipping `.md` contains `![[<filename>.pdf]]` or the file in `raw/` is a `.pdf` directly):
-
-1. **Run the PDF extraction protocol first** — see [`pdf-extraction.md`](../rules/pdf-extraction.md). This detects/installs a per-installation PDF tool, extracts the text, and injects it into the clipping markdown between `pdf-extract:begin/end` markers.
-2. **Then proceed with normal Phase 1 assessment** below, treating the now-text-augmented clipping MD as the source.
-3. The clipping `.md` shape is governed by the [`pdf-source.md` template](../templates/pdf-source.md).
-4. In Phase 5, archive **both** the clipping MD and the PDF asset (move PDF from `raw/assets/` to `raw/assets/archive/`).
+If a source is a PDF (clipping `.md` contains `![[<filename>.pdf]]` or the file in `raw/` is a `.pdf` directly): run [`pdf-extraction.md`](../rules/pdf-extraction.md) first to extract text into the clipping markdown, then proceed with Phase 1 below treating the text-augmented clipping as a normal source. Clipping shape: [`pdf-source.md`](../templates/pdf-source.md). Phase 5 archives both the clipping MD and the PDF asset.
 
 ## Protocol
 
