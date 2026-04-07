@@ -31,10 +31,10 @@ Report back:
 
 ### Phase 3 — Write or update the page
 
-- **New rig:** copy `.instructions/templates/benchmark-rig.md` to `wiki/benchmarks/rigs/<slug>.md` and fill in every field. Delete the instructional comment block.
+- **New rig:** copy `.instructions/projects/benchmarks/rig-template.md` to `wiki/benchmarks/rigs/<slug>.md` and fill in every field. Delete the instructional comment block.
 - **Existing rig:** add the new test rows to the run table. If a new GPU was added, also add it to the AI Capability per-config table. Bump `updated` in frontmatter.
 
-Compute the **AI Capability Index (ACI)** per [methodology](../../wiki/benchmarks/methodology.md):
+Compute the **AI Capability Index (ACI)** per [methodology](../../../wiki/benchmarks/methodology.md):
 
 ```
 ACI = (BestSingle + BestHalf*0.6 + BestQuant*0.4) / 100

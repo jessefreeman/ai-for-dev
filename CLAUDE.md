@@ -25,10 +25,13 @@ This wiki tracks **AI tools, techniques, and workflows for developers** — prod
 ```
 research/
   CLAUDE.md          # Top-level rules + topic scope + project-specific declarations
-  .instructions/     # Versioned, reusable prompts, templates, and detailed rules
-    prompts/         # Callable prompts (ingest, lint, clean-data, orphans, ...)
-    templates/       # Page templates (source-summary, person-page, ...)
-    rules/           # Detailed protocols referenced from prompts
+  .instructions/
+    core/            # Data-agnostic methodology — works for any second brain
+      prompts/       # Callable prompts (ingest, lint, clean-data, orphans, ...)
+      templates/     # Page templates (source-summary, person-page, ...)
+      rules/         # Detailed protocols referenced from prompts
+    projects/        # Project-specific methodology (this wiki only)
+      benchmarks/    # Hardware benchmark prompt + rig template
     tools/           # ⚠️ GITIGNORED — per-installation helpers (PDF extractors, etc.)
   raw/               # Unprocessed source documents (gitignored except memories/)
     archive/         # Already-ingested sources
@@ -50,10 +53,12 @@ research/
     sources/         # Source summaries and notable-document entity pages
 ```
 
-**Project-specific additions** for this wiki (declared here, not in `.instructions/`):
+**Project-specific additions** for this wiki (declared here, not in `.instructions/core/`):
 
 ```
 research/
+  .instructions/projects/
+    benchmarks/      # Hardware benchmark methodology (add-benchmark.md, rig-template.md)
   raw/
     benchmarks/      # Raw Geekbench AI exports (project: hardware benchmarks)
   wiki/
@@ -61,51 +66,65 @@ research/
     benchmarks/      # Personal hardware benchmark section (project: hardware benchmarks)
 ```
 
-When adding a new project-specific data subdirectory under `raw/` or new wiki section, add it to the project-specific block above so the ingest prompt knows to skip it during source listing.
+When adding a new project-specific data subdirectory under `raw/` or new wiki section, add it to the project-specific block above so the ingest prompt knows to skip it during source listing. Project-specific prompts and templates live under `.instructions/projects/<name>/`.
 
 ## Reusable prompts
 
 The user invokes these by name (e.g. *"run the ingest prompt"*). Each one is a complete, self-contained protocol. **Read the prompt file when invoked — do not summarize from memory.**
 
+### Core prompts (data-agnostic — work for any second brain)
+
 | Prompt | Path | Purpose |
 |--------|------|---------|
-| Ingest | `.instructions/prompts/ingest.md` | Add new sources from `raw/` into the wiki |
-| Lint | `.instructions/prompts/lint.md` | Quality audit — duplicates, contradictions, stale content |
-| Orphans | `.instructions/prompts/orphans.md` | Link-graph audit — orphaned pages and dangling links |
-| Clean Data | `.instructions/prompts/clean-data.md` | Mechanical hygiene — frontmatter, naming, tags, encoding |
-| Benchmark Add | `.instructions/prompts/benchmark-add.md` | Add or update a Geekbench AI rig benchmark |
+| Ingest | `.instructions/core/prompts/ingest.md` | Add new sources from `raw/` into the wiki |
+| Lint | `.instructions/core/prompts/lint.md` | Quality audit — duplicates, contradictions, stale content |
+| Orphans | `.instructions/core/prompts/orphans.md` | Link-graph audit — orphaned pages and dangling links |
+| Clean Data | `.instructions/core/prompts/clean-data.md` | Mechanical hygiene — frontmatter, naming, tags, encoding |
+
+### Project-specific prompts (this wiki only)
+
+| Prompt | Path | Purpose |
+|--------|------|---------|
+| Benchmark Add | `.instructions/projects/benchmarks/add-benchmark.md` | Add or update a Geekbench AI rig benchmark |
 
 ## Templates
 
+### Core templates
+
 | Template | Path | Used by |
 |----------|------|---------|
-| Source summary | `.instructions/templates/source-summary.md` | Ingest prompt |
-| YouTube source | `.instructions/templates/youtube-source.md` | Ingest prompt (whenever the source is a YouTube video — has additional sponsor/bias rules) |
-| PDF source | `.instructions/templates/pdf-source.md` | Ingest prompt (whenever the source is a PDF — paired with PDF extraction rule) |
-| Person page | `.instructions/templates/person-page.md` | Ingest prompt (for any new author) |
-| Memory snippet | `.instructions/templates/memory.md` | Ingest prompt (Phase 4) |
-| Benchmark rig | `.instructions/templates/benchmark-rig.md` | Benchmark Add prompt |
+| Source summary | `.instructions/core/templates/source-summary.md` | Ingest prompt |
+| YouTube source | `.instructions/core/templates/youtube-source.md` | Ingest prompt (whenever the source is a YouTube video — has additional sponsor/bias rules) |
+| PDF source | `.instructions/core/templates/pdf-source.md` | Ingest prompt (whenever the source is a PDF — paired with PDF extraction rule) |
+| Person page | `.instructions/core/templates/person-page.md` | Ingest prompt (for any new author) |
+| Memory snippet | `.instructions/core/templates/memory.md` | Ingest prompt (Phase 4) |
 
-**Important YouTube rule:** when ingesting a YouTube video, never create a wiki entity for the video's sponsor, even if the sponsor is on-topic. See [`youtube-source.md`](.instructions/templates/youtube-source.md) for the full sponsorship and product-placement bias protocol.
+### Project-specific templates
+
+| Template | Path | Used by |
+|----------|------|---------|
+| Benchmark rig | `.instructions/projects/benchmarks/rig-template.md` | Benchmark Add prompt |
+
+**Important YouTube rule:** when ingesting a YouTube video, never create a wiki entity for the video's sponsor, even if the sponsor is on-topic. See [`youtube-source.md`](.instructions/core/templates/youtube-source.md) for the full sponsorship and product-placement bias protocol.
 
 ## Rules
 
-Detailed rules live in `.instructions/rules/`. Read these on demand, not preemptively.
+Detailed rules live in `.instructions/core/rules/`. Read these on demand, not preemptively.
 
 | Rules file | Covers |
 |-----------|--------|
-| `.instructions/rules/page-conventions.md` | Frontmatter, page types & folders, wikilinks, quality bar |
-| `.instructions/rules/memory-rules.md` | RavenBrain memory format, tag taxonomy, what to capture |
-| `.instructions/rules/hot-cache-rules.md` | What goes in `wiki/hot.md` and what doesn't |
-| `.instructions/rules/index-rules.md` | Format and content of `wiki/index.md` |
-| `.instructions/rules/pdf-extraction.md` | How to detect/install/run a PDF→text tool and inject the result into the clipping MD |
+| `.instructions/core/rules/page-conventions.md` | Frontmatter, page types & folders, wikilinks, quality bar |
+| `.instructions/core/rules/memory-rules.md` | RavenBrain memory format, tag taxonomy, what to capture |
+| `.instructions/core/rules/hot-cache-rules.md` | What goes in `wiki/hot.md` and what doesn't |
+| `.instructions/core/rules/index-rules.md` | Format and content of `wiki/index.md` |
+| `.instructions/core/rules/pdf-extraction.md` | How to detect/install/run a PDF→text tool and inject the result into the clipping MD |
 
 ## Operations (high-level)
 
-- **Ingest** — see [`.instructions/prompts/ingest.md`](.instructions/prompts/ingest.md). Always pause for approval after the Phase 1 plan.
+- **Ingest** — see [`.instructions/core/prompts/ingest.md`](.instructions/core/prompts/ingest.md). Always pause for approval after the Phase 1 plan.
 - **Query** — read `wiki/hot.md` then `wiki/index.md`, then load only the relevant pages. Synthesize with citations. Optionally file the answer as an `analysis` page if the user agrees.
-- **Lint** — see [`.instructions/prompts/lint.md`](.instructions/prompts/lint.md). Audit-only first; never fix without approval.
-- **Benchmark add** — see [`.instructions/prompts/benchmark-add.md`](.instructions/prompts/benchmark-add.md). A rig is identified by CPU + motherboard.
+- **Lint** — see [`.instructions/core/prompts/lint.md`](.instructions/core/prompts/lint.md). Audit-only first; never fix without approval.
+- **Benchmark add** *(this wiki only)* — see [`.instructions/projects/benchmarks/add-benchmark.md`](.instructions/projects/benchmarks/add-benchmark.md). A rig is identified by CPU + motherboard.
 
 ## Session Start Checklist
 

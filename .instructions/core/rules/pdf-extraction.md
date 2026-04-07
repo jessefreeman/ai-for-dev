@@ -95,7 +95,7 @@ so the caller can capture provenance metadata for the injection block.
 
 Bootstrap location: this script lives in `.instructions/tools/pdf-extract/extract.py`
 and expects the pypdf package to be installed alongside it under `lib/`.
-The canonical source for this file is `.instructions/rules/pdf-extraction.md` —
+The canonical source for this file is `.instructions/core/rules/pdf-extraction.md` —
 recreate from there on a fresh clone.
 """
 import sys

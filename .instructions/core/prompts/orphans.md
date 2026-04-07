@@ -34,7 +34,7 @@ Present the report. **Do not modify anything.** Wait for the user to approve spe
 
 After approval:
 - Add the approved cross-links.
-- Create approved new pages (use the appropriate template from `.instructions/templates/`).
+- Create approved new pages (use the appropriate template from `.instructions/core/templates/`).
 - Delete approved orphans (and remove them from `wiki/index.md`).
 - Append a `lint: orphans <date>` entry to `wiki/log.md`.
 
