@@ -72,4 +72,5 @@ The 5090 configuration is the highest-scoring rig in this collection. Note that 
 ## See Also
 - [[methodology|Benchmark Methodology]]
 - [[proxmox-ultra7-265k|Proxmox host (Ultra 7 265K)]] — also tested with 5090 and 3090
+- [[intel-nuc9v7qnx|Intel NUC9V7QNX]] — same physical RTX 4060 GPU on an older 9th-gen Intel mobile platform; direct CPU-bottleneck comparison
 - [[Gemma 4 VRAM Requirements]] — VRAM-driven model picks
