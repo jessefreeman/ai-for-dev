@@ -8,6 +8,9 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] skip | Fireship duplicate
+- `7 new open source AI tools you need right now… 1.md` — duplicate of the already-ingested Fireship video (Obsidian Web Clipper added " 1" suffix on a re-clip). Same content as `summary-fireship-7-open-source-tools.md`. Moved to `raw/archive/` without ingest.
+
 ## [2026-04-07] ingest | Planning in Claude Code Just Got a Huge Upgrade (Nate Herk)
 - **Source**: YouTube transcript by Nate Herk on Claude Code's new Ultra Plan feature
 - **Pages created** (1):

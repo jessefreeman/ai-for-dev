@@ -8,29 +8,31 @@ updated: 2026-04-07
 
 ## Current State
 
-**36 sources ingested** + a 16-rig personal hardware benchmark section. Big April-7 ingest landed: AI coding workflows (Cole Medin, BMAD), MCP canonical page, Augment Agent, Firebase Studio, Gemma 4 VRAM reference, pixegami RAG patterns. Lint pass also completed before ingest.
+**41 sources ingested** + a 16-rig personal hardware benchmark section. Two big April-7 batches landed. Latest batch added: Ultra Plan in Claude Code, the SaaS death spiral thesis, GPT-5 meta-prompting, Hermes Agent's GEPA loop, Docker Model Runner. The MCP canonical page is now anchoring most of the agent infrastructure threads.
 
 ## Most Active Pages
 
-- [[mcp|MCP]] — **new canonical page**, fills the long-missing concept; foundational across the wiki
-- [[ai-coding-workflow]] — Cole Medin's PLANNING.md/TASK.md + global rules + three core MCP servers pattern
-- [[bmad-method]] — six Agile AI personas (BA → PM → Architect → PO → SM → Dev); plan outside the IDE
-- [[Five Levels of AI Coding]] — L0→L5; StrongDM dark factory; J-curve
-- [[Frontier Operations]] — five persistent skills at the AI/human boundary
-- [[OpenBrain]] + [[/loop]] — agent memory + proactivity stack ($0.10/month)
-- [[gemma-4-vram-requirements]] — VRAM lookup tables for the benchmarks section
+- [[claude-code|Claude Code]] — primary tool; **now with /ultra-plan** (cloud Opus 4.6 + 3 exploration agents + 1 critique)
+- [[mcp|MCP]] — canonical page; foundational across the wiki
+- [[ai-coding-workflow]] — Cole Medin's PLANNING.md/TASK.md + global rules + 3 core MCP servers
+- [[bmad-method]] — six Agile AI personas; plan outside the IDE
+- [[meta-prompting]] — power steering for GPT-5 (Nate B Jones)
+- [[saas-death-spiral]] — $1T SaaS market cap thesis; orchestration is the new battleground
+- [[Five Levels of AI Coding]] — the architectural consequence of the death spiral
+- [[Frontier Operations]] + [[OpenBrain]] + [[/loop]] — agent operations stack
+- [[hermes-agent]] — significantly expanded with GEPA (backprop for prompts, not weights)
 
-## Most Recently Added (2026-04-07)
+## Most Recently Added (2026-04-07, Batch 2)
 
-- **MCP page** [[mcp]] — Anthropic's standard, three-stage evolution of LLM capability, four-component architecture, the "3D chess" externalization play. Sources: [[Greg Isenberg]] hosts [[Ras Mic]].
-- **AI Coding Workflow** [[ai-coding-workflow]] — Cole Medin's full process: 8 golden rules, PLANNING.md + TASK.md, workspace global rules, three core MCP servers (filesystem/Brave/git), one-shot Supabase MCP server demo.
-- **BMAD Method** [[bmad-method]] — Brian's heavier alternative; six Agile personas; planning happens outside the IDE to save credits.
-- **Augment Agent** [[augment-agent]] — claims #1 OSS on SWE-bench Verified (65.4%) via Claude 3.7 + o1; treat as marketing-adjacent.
-- **Firebase Studio** [[firebase-studio]] — Google's Project IDX rebrand; cloud agentic IDE with Gemini + Genkit + Vertex AI.
-- **Gemma 4 VRAM Requirements** [[gemma-4-vram-requirements]] — full GPU + Mac lookup tables; 26B A4B MoE is the sweet spot at 12–16 GB.
-- **Open WebUI** [[open-webui]] — self-hosted ChatGPT-like UI for Ollama (canonical page).
-- **Heretic update** — Dolphin Llama 3 documented as the pre-Heretic path to unaligned models; PowerShell-as-admin gotcha noted.
-- **Python RAG patterns** [[summary-pixegami-python-rag-tutorial|pixegami]] — deterministic chunk IDs for incremental DB updates; LLM-as-judge unit tests with negative cases.
+- **Ultra Plan in Claude Code** ([[summary-nate-herk-ultra-plan|Nate Herk]]) — `/ultra-plan` runs cloud Opus 4.6 with 3 parallel exploration agents + 1 critique agent. Doc-style review UI with comments. Side-by-side benchmark: ~10–15 min total vs ~45 min for local plan mode. Pro/Max only, CLI only, requires git sync. Full section added to [[claude-code]].
+- **SaaS Death Spiral** ([[summary-fireship-saas-death-spiral|Fireship]]) — $1T market cap erased from SaaS megacaps in early 2026 because per-seat pricing breaks when agents do 10 people's work. New analysis page [[saas-death-spiral]] synthesizing 7 Feb 2026 developments. New tool [[github-agent-hq]]. Counter-thesis added (vertical SaaS, orchestration platforms, data-moat companies survive).
+- **Meta-Prompting** ([[summary-nate-b-jones-chatgpt5-prompting|Nate B Jones]]) — GPT-5 is "a speedboat with a really big rudder." Meta-prompts wrap sloppy human input in structured instructions. 7 prompting principles + 7 prompt components. New concept page [[meta-prompting]]. Updates [[chatgpt]].
+- **Hermes Agent expansion** ([[summary-worldofai-hermes-agent|WorldofAI]]) — GEPA is "backprop for prompts, not weights." Every ~15 tool calls, Hermes reflects on its own history and updates itself. Built by Nous Research. Local Gemma 4 path. Obsidian-vault skill demo. Significantly expanded existing [[hermes-agent]] page.
+- **Docker Model Runner** ([[summary-worldofai-docker-model-runner|WorldofAI]]) — local LLM runtime built into Docker Desktop. No CUDA, no drivers. OCI packaging contains only weights + manifest + license. New tool [[docker-model-runner]].
+
+## April-7 Batch 1 (Reference)
+
+MCP canonical page, Augment Agent, BMAD Method, Cole Medin's AI coding workflow, Gemma 4 VRAM lookup tables, Firebase Studio, Open WebUI, Dolphin Llama 3 (merged into Heretic), pixegami Python RAG patterns. Hot cache from that batch is still active context.
 
 ## Open Gaps
 
@@ -38,4 +40,5 @@ updated: 2026-04-07
 - Lovable — referenced repeatedly, no entity page
 - Shadow factory agency model — Jesse's business vision
 - Two broken `[[proxmox-mobile-hx-pro-370]]` rig links (lint #6 — user undecided)
-- Three sources skipped at user-approved ingest (Alex Ziskind image gen, BlueSpork install tutorial, Laith Talks Llama 4) — archived without wiki pages
+- 4 sources skipped at user-approved ingest across both batches — archived without wiki pages
+- Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model — mentioned in [[saas-death-spiral]] but no dedicated entity pages
