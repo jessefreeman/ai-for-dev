@@ -158,6 +158,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-greg-isenberg-mcp-explained|MCP Clearly Explained]] — Ras Mic's non-technical walkthrough of MCP on the Greg Isenberg podcast.
 - [[summary-pixegami-python-rag-tutorial|Python RAG Tutorial (Local LLMs)]] — pixegami builds a PDF RAG app with chunk IDs and LLM-as-judge tests.
 - [[summary-nate-b-jones-chatgpt5-prompting|ChatGPT-5 Prompting is Too Hard]] — Nate B Jones on meta-prompting GPT-5; the speedboat with a big rudder.
+- [[summary-worldofai-hermes-agent|Hermes Agent: 24/7 Self-Evolving]] — WorldofAI walkthrough of GEPA, install, Obsidian skill demo.
 
 ## Contribute or build your own
 

@@ -8,6 +8,12 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Hermes Agent: 24/7 Self-Evolving (WorldofAI)
+- **Source**: YouTube transcript by WorldofAI on Hermes Agent by Nous Research
+- **Pages created** (1):
+  - `summary-worldofai-hermes-agent.md` — Source summary
+- **Updated**: `wiki/open-source/hermes-agent.md` (added GEPA section, vendor details, install/setup, Obsidian skill demo, sharper OpenClaw comparison), `wiki/people/worldofai.md` (3rd source), `wiki/index.md`
+
 ## [2026-04-07] ingest | ChatGPT-5 Prompting is Too Hard (Nate B Jones)
 - **Source**: YouTube transcript by Nate B Jones on GPT-5 prompting
 - **Pages created** (2):
