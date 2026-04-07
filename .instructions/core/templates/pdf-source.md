@@ -1,10 +1,10 @@
 # PDF Source Template
 
-Use this template when ingesting a PDF document. The clipping markdown lives in `raw/<title>.md` and the PDF itself in `raw/assets/<title>.pdf`. This is the same layout Obsidian Web Clipper produces by default.
+> **Extension** of [`source-summary.md`](source-summary.md). Use the base template's shape; this file documents only the PDF-specific overrides — the on-disk layout, the extracted-text injection block, the Funding & Affiliation Notes section that replaces YouTube's Sponsorship & Bias Notes, and the Phase 5 archive note for the PDF asset.
 
-> **Important**: extraction itself is governed by [`pdf-extraction.md`](../rules/pdf-extraction.md). This template just defines the clipping-file shape so the extraction step can find and update it consistently.
+> **Extraction itself** is governed by [`../rules/pdf-extraction.md`](../rules/pdf-extraction.md). This template just defines the clipping-file shape so the extraction step can find and update it consistently.
 
-## Layout on disk
+## On-disk layout
 
 ```
 raw/
@@ -13,9 +13,11 @@ raw/
     <Title>.pdf       ← the actual PDF
 ```
 
-The clipping `.md` file uses an Obsidian embed (`![[Title.pdf]]`) so the PDF renders inline in Obsidian, plus an injected `## Extracted Text` block (added by the extraction protocol) that holds the searchable plain text.
+The clipping `.md` uses an Obsidian embed (`![[Title.pdf]]`) so the PDF renders inline in Obsidian, plus an injected `## Extracted Text` block that holds the searchable plain text.
 
-## Frontmatter
+## Frontmatter override
+
+Web Clipper-style frontmatter is fine; the agent fills in missing fields during ingest using the extracted text and metadata:
 
 ```yaml
 ---
@@ -32,11 +34,9 @@ tags:
 ---
 ```
 
-If the clipping was created by Obsidian Web Clipper, several of these fields may be blank — the agent should fill them in during ingest using the extracted text and the URL bar / file metadata.
-
 ## Body shape (post-extraction)
 
-After running the [PDF extraction protocol](../rules/pdf-extraction.md), the body should look like:
+After running the [PDF extraction protocol](../rules/pdf-extraction.md):
 
 ```markdown
 ![[Title.pdf]]
@@ -46,31 +46,45 @@ After running the [PDF extraction protocol](../rules/pdf-extraction.md), the bod
 
 > Extracted YYYY-MM-DD via {tool}. Source: `raw/assets/{filename}`. {N} pages.
 
-{full extracted text — paragraphs preserved, page breaks marked with blank lines}
+{full extracted text}
 <!-- pdf-extract:end -->
 ```
 
-The Obsidian embed (`![[Title.pdf]]`) is preserved at the top so the PDF still renders inline in Obsidian's reader view. The extracted text below it is what the LLM actually reads during the rest of the ingest.
+The Obsidian embed at the top is preserved so the PDF renders inline. The extracted text below is what the LLM reads during ingest.
 
-## After extraction, ingest as normal
+## Source-summary page (the wiki page itself)
 
-Once the extracted text block exists, the clipping MD is treated like any other markdown source:
+Once the clipping has the extracted text inline, write the source-summary page using [`source-summary.md`](source-summary.md) as the base. The only PDF-specific section to add is **Funding & Affiliation Notes** in place of YouTube's Sponsorship & Bias Notes — insert it between Key Points and Notable Quotes:
 
-1. Phase 1 of [`ingest.md`](../prompts/ingest.md) — pre-ingest assessment (still pauses for user approval)
-2. Phase 2 — write source summary + entity/concept pages
-3. Phase 3 — update index, log, hot, overview, tasks
-4. Phase 4 — generate memories
-5. Phase 5 — archive the clipping MD **and** the PDF asset to `raw/archive/` and `raw/assets/archive/` respectively, then commit
+```markdown
+## Funding & Affiliation Notes
 
-## Special considerations for PDFs
+**Publisher / publishing org:** {name + relevant context — is this a vendor whitepaper, an academic paper, a think-tank report, a government document?}
 
-- **Source summaries**: a typical PDF (research paper, white paper, policy document) is denser than a YouTube transcript. Aim for the same ~500-word source-summary target but expect the source itself to need more careful reading. Cite section/page numbers in the summary where they help anchor specific claims.
-- **No sponsorship section** — PDFs don't have sponsors. Use a "Funding & Affiliation Notes" section instead, capturing the publishing org, any grants/funders mentioned in the document, and any disclosed conflicts of interest.
-- **Author handling**: if the PDF has multiple authors, create person pages for each named author the wiki cares about (typically the first author, the corresponding author, or anyone with a public profile). Lower-priority co-authors can be listed in the source summary without their own pages.
-- **Tags**: always include `pdf` in addition to the format/domain tags. This makes it easy to filter the wiki by document type later.
+**Funders / grants:** {any funding sources disclosed in the document; "none disclosed" if absent}
+
+**Conflicts of interest:** {any disclosed conflicts; flag if the publisher is an interested party in the topic}
+
+**Editorial framing to discount:** {one or two notes about where the publisher's interest may have shaped the framing — e.g., a vendor whitepaper proposing regulation that exempts them}
+```
+
+PDFs from interested parties (vendor whitepapers, lobbying documents, position papers) should always have a substantive Funding & Affiliation Notes section. Academic papers and government docs often have less to flag, but the section should still exist.
+
+## Author handling
+
+If the PDF has multiple authors, create person pages for each named author the wiki cares about (typically the first author, the corresponding author, or anyone with a public profile). Lower-priority co-authors can be listed in the source summary without their own pages.
+
+## Phase 5 archive (PDF-specific)
+
+In addition to moving the clipping `.md` from `raw/` to `raw/archive/`, also move the asset:
+
+```
+raw/assets/<Title>.pdf  →  raw/assets/archive/<Title>.pdf
+```
+
+Create `raw/assets/archive/` if it doesn't exist yet. Both the clipping MD and the PDF asset get moved in the same Phase 5 commit.
 
 ## See Also
-
-- [`pdf-extraction.md`](../rules/pdf-extraction.md) — the extraction protocol
-- [`source-summary.md`](source-summary.md) — base source-summary template
-- [`ingest.md`](../prompts/ingest.md) — the ingest prompt
+- [`source-summary.md`](source-summary.md) — base template (this file extends it)
+- [`../rules/pdf-extraction.md`](../rules/pdf-extraction.md) — extraction protocol
+- [`../prompts/ingest.md`](../prompts/ingest.md) — ingest prompt
