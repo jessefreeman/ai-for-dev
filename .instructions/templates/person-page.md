@@ -10,7 +10,7 @@ type: entity
 sources: ["summary-slug-1.md", "summary-slug-2.md"]
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-tags: [person, ai, ...]
+tags: [person, <domain-tag>, ...]
 ---
 
 # Name
@@ -19,14 +19,10 @@ One-sentence description of who they are and their focus.
 
 ## Channels
 
-List every platform they publish on with a link and one-phrase description.
-- **YouTube**: [Channel Name](url) — what they cover
-- **Newsletter**: [name](url) — what they cover
-- **Site**: url
-- **X/Twitter**: @handle
-- **GitHub**: url
-
-(Include only channels confirmed from ingested sources. If unknown, write "unknown" — never omit the section.)
+List the platforms they actually publish on. One bullet per channel, formatted as
+`- **Platform**: [link or handle](url) — one-phrase description of what they cover`.
+Include only channels confirmed from ingested sources — don't pad with empty fields.
+If you have nothing, write "unknown" rather than omitting the section.
 
 ## Content in This Wiki
 
@@ -40,6 +36,20 @@ Every source ingested from this person, linked to its source-summary page.
 ## See Also
 - Links to concepts, tools, and other pages their content touches
 ```
+
+### Common channel types
+
+Pick whichever fit the person; this list is illustrative, not exhaustive:
+
+- **Video / audio**: YouTube, podcast, TikTok, Twitch
+- **Long-form text**: Substack, Newsletter, Blog, Medium
+- **Site**: personal homepage
+- **Short-form social**: X/Twitter, Mastodon, Bluesky, Threads
+- **Code**: GitHub, GitLab, Codeberg
+- **Visual**: Instagram, Pinterest, ArtStation
+- **Professional**: LinkedIn
+
+The wiki's specific topic determines which platforms matter most — see `CLAUDE.md` for the wiki's domain.
 
 ## Rules
 
