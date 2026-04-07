@@ -8,6 +8,14 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Augment Agent: RIP Cursor (WorldofAI)
+- **Source**: YouTube transcript by WorldofAI on Augment Code's launch of Augment Agent
+- **Pages created** (3):
+  - `summary-worldofai-augment-agent.md` — Source summary
+  - `wiki/tools/augment-agent.md` — Entity: agentic IDE; #1 OSS SWE-bench Verified
+  - `wiki/people/worldofai.md` — Entity: YouTube creator
+- **Updated**: `wiki/index.md`
+
 ## [2026-04-07] lint: 2026-04-07 — pre-ingest cleanup
 - Fixed dangling `[[proxmox-ai-host-ultra7-265k]]` → `[[proxmox-ultra7-265k]]` in 2 rig pages.
 - Renamed entity content "ThePepeBot" → "ThePopeBot" across 5 pages (filename `thepopebot.md` was already correct; matches GitHub repo `stephengpope/thepopebot`).

@@ -43,6 +43,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[grok|Grok]] — xAI's model; best for real-time Twitter/X research.
 
 ### Tools
+- [[augment-agent|Augment Agent]] — Agentic IDE; #1 OSS on SWE-bench Verified at 65.4%; large-codebase indexing.
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki. Now with /loop and a skills ecosystem.
 - [[cursor|Cursor]] — AI-native code editor; one of the first coding agents.
 - [[codex|Codex]] — OpenAI's coding agent harness.
@@ -133,6 +134,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-cole-medin-e2e-testing|E2E Testing Command]] — Self-healing AI coding workflow with browser automation.
 - [[summary-nate-b-jones-frontier-operations|Frontier Operations]] — The expanding bubble; five persistent skills.
 - [[summary-nate-b-jones-ai-professional-interface|AI Professional Interface]] — Replace hiring pipeline with AI-powered personal interface.
+- [[summary-worldofai-augment-agent|Augment Agent: RIP Cursor]] — WorldofAI walkthrough of Augment Agent's SWE-bench launch.
 
 ## Contribute or build your own
 
