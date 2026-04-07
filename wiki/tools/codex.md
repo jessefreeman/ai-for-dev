@@ -8,7 +8,7 @@ tags: [tool, coding-agent, openai, ai]
 
 # Codex
 
-OpenAI's coding agent. Wraps OpenAI's frontier models in a harness optimized for software development tasks — reading codebases, writing code, executing tests, and iterating.
+[[openai|OpenAI]]'s coding agent. Wraps OpenAI's frontier models in a harness optimized for software development tasks — reading codebases, writing code, executing tests, and iterating. See [[openai]] for the company-level entity (corporate structure, policy positioning, acquisitions).
 
 ## What It Is
 

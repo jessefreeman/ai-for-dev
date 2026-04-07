@@ -40,7 +40,7 @@ research/
     benchmarks/                       #   project: raw Geekbench AI exports
   wiki/                               # LLM-generated and LLM-maintained markdown
     {index,log,overview,hot,tasks}.md # State files (read hot.md first)
-    people/   tools/   open-source/   # Generic entity folders
+    people/   orgs/   tools/   open-source/   # Generic entity folders
     concepts/ analyses/ sources/      # Generic concept/analysis/document folders
     business/                         #   project: AI as business
     benchmarks/                       #   project: hardware benchmarks

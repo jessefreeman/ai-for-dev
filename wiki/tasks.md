@@ -10,19 +10,36 @@ Things to investigate, try, or read. Added automatically during ingest. Check of
 
 ## High Priority — Fill Recurring Gaps
 
-- [ ] **Lovable** — no-code app builder; referenced across [[AI Professional Interface]], [[bmad-method]], [[ai-coding-workflow]] discussions. Multiple sources, no entity page yet.
 - [ ] **Karpathy's LLM Wiki Gist** — the original idea file [[LLM Wiki Pattern]]
 - [ ] **Karpathy's auto_research repo** — ingest the actual code/README [[AutoResearch and Evals]]
 - [ ] **AI 2027** — referenced as a rich demo source (~23 pages); good stress test [[sources/ai-2027]]
 
-## People & Orgs Worth Tracking
+## Organizations to add to wiki/orgs/
+
+The wiki has [[openai|OpenAI]] and [[lovable|Lovable]] as the first two org pages. The following companies are referenced across multiple sources and should also have org pages:
+
+- [ ] **Anthropic** — maker of [[claude|Claude]] + [[claude-code|Claude Code]]; competing PBC structure to OpenAI; Claude Code leak analysis is one of the wiki's foundational threads
+- [ ] **Google** — [[gemini|Gemini]], [[gemma-4|Gemma 4]], [[firebase-studio|Firebase Studio]], [[google-stitch|Google Stitch]], Genkit, Vertex AI, Waymo World Model — heavily referenced across the wiki
+- [ ] **Nous Research** — org behind [[hermes-agent|Hermes Agent]] and GEPA
+- [ ] **HKUDS (Hong Kong University Data Science)** — academic group behind [[deepcode|DeepCode]]
+- [ ] **Microsoft / GitHub** — [[github-agent-hq|GitHub Agent HQ]], Codex Mac App distribution context
+- [ ] **Alibaba** — [[qwen|Qwen]] family, Qwen 3 Coder Next
+- [ ] **MiniMax** — [[minimax-m2-7|M2.7]] and the M2.5 follow-up
+- [ ] **Meta** — [[llama|Llama]] family
+- [ ] **Apple** — Apple Silicon, MLX, Neural Engine — heavily referenced in benchmarks + Alex Ziskind's vLLM analysis
+- [ ] **xAI** — [[grok|Grok]]
+- [ ] **DeepSeek** — [[deepseek|DeepSeek]] family
+- [ ] **Glowforge** — Dan Shapiro's company, context for the [[five-levels-of-ai-coding|Five Levels of AI Coding]] framework
+- [ ] **TCM Security** — [[the-cyber-mentor]]'s company; PIPA cert; Bjorn pedagogy
+
+## People to add
 
 - [ ] **Dan Shapiro** — CEO of Glowforge, creator of the 5 Levels framework [[Five Levels of AI Coding]]
-- [ ] **Nous Research** — org behind [[hermes-agent|Hermes Agent]] and GEPA. Worth a deeper look into their broader work.
-- [ ] **HKUDS (Hong Kong University Data Science)** — the academic group behind [[deepcode|DeepCode]]. Other releases?
-- [ ] **OpenAI as a policy entity** — needs ≥2 sources before getting an org page distinct from [[chatgpt]] / [[codex]]. The [[industrial-policy-intelligence-age|April 2026 paper]] is the first; watch for follow-ups.
-- [ ] **CAISI (Center for AI Standards and Innovation)** — referenced in the OpenAI paper as an existing US institution. Need a primary source on what it currently does and who runs it.
 - [ ] **Marcus Chen demo site** — Nate's working AI Professional Interface demo; GitHub repo available [[summary-nate-b-jones-ai-professional-interface]]
+
+## Institutions / agencies
+
+- [ ] **CAISI (Center for AI Standards and Innovation)** — referenced in the OpenAI Industrial Policy paper as an existing US institution. Need a primary source on what it currently does and who runs it. Goes in `wiki/orgs/` once material exists.
 
 ## Concept threads needing a second source
 
@@ -73,3 +90,6 @@ Things to investigate, try, or read. Added automatically during ingest. Check of
 - [x] **FP8 Quantization** — concept page created during the same ingest
 - [x] **Lint pass** — completed 2026-04-07 (twice in the same day)
 - [x] **`[[proxmox-mobile-hx-pro-370]]` broken refs** — resolved 2026-04-07: removed the 2 forward-references from [[benchmarks/rigs/proxmox-ultra7-265k]] and [[benchmarks/rigs/proxmox-lenovo-p8-threadripper]]. The slug pointed at a planned-but-not-built rig; can be added back when the rig is benchmarked.
+- [x] **OpenAI org page** — created 2026-04-07 at [[openai]]. Combined ChatGPT, Codex, Industrial Policy paper, Prompt Fu acquisition, and the policy-positioning thread into a single org entity.
+- [x] **Lovable org page** — created 2026-04-07 at [[lovable]]. Captured the references from AI Professional Interface and BMAD Method.
+- [x] **`wiki/orgs/` folder convention** — added to `.instructions/core/rules/page-conventions.md` as a new page-type row. Org pages exist when the wiki references the company itself (corporate decisions, policy, acquisitions) beyond just its products.

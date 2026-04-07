@@ -45,6 +45,10 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[alex-ziskind|Alex Ziskind]] — Local LLM benchmarks; vLLM/FP8/Apple Silicon vs Nvidia hardware deep dives.
 - [[the-cyber-mentor|The Cyber Mentor (Heath Adams)]] — Cybersecurity educator; founder of TCM Security Academy.
 
+### Organizations
+- [[openai|OpenAI]] — US frontier-AI lab; ChatGPT, Codex, the Industrial Policy paper. PBC structure.
+- [[lovable|Lovable]] — European no-code AI app builder; afternoon-to-prototype tool referenced across multiple wiki sources.
+
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
 - [[claude|Claude]] — Anthropic's model family; best for work and coding.

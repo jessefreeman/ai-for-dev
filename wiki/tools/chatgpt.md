@@ -8,7 +8,7 @@ tags: [tool, llm, openai, frontier-model]
 
 # ChatGPT
 
-OpenAI's flagship consumer AI product. A large language model interface covering text, code, images, voice, and web search. The most consumer-friendly and widely used AI product as of 2026.
+[[openai|OpenAI]]'s flagship consumer AI product. A large language model interface covering text, code, images, voice, and web search. The most consumer-friendly and widely used AI product as of 2026. See [[openai]] for the company-level entity (corporate structure, policy positioning, acquisitions).
 
 ## Strengths
 

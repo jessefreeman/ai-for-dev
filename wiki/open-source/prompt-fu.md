@@ -8,7 +8,7 @@ tags: [open-source, testing, prompts, security]
 
 # Prompt Fu
 
-An open-source unit testing framework for AI prompts, recently acquired by OpenAI. Tests different prompts against different models to optimize application behavior. Also includes automated red team attacks for prompt injection vulnerability testing.
+An open-source unit testing framework for AI prompts, recently acquired by [[openai|OpenAI]]. Tests different prompts against different models to optimize application behavior. Also includes automated red team attacks for prompt injection vulnerability testing.
 
 ## What It Does
 
