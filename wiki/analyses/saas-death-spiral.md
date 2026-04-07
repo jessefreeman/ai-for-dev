@@ -75,6 +75,10 @@ The market-mechanism view above is one half of the story. The other half is what
 
 The pattern to watch: whether other frontier labs (Anthropic, Google DeepMind, xAI, Meta) publish equivalent industrial-policy artifacts in response. If they do, this becomes a real **AI ethics, politics, and policy** concept page. For now it's a single-source thread tracked here.
 
+## Open questions
+
+- **Shadow factory agency model** — Jesse's business vision: deeper into dark factory economics, L4/L5 operating patterns, and agency models serving businesses that can't build their own. Related to the StrongDM 3-person dark factory team referenced in [[summary-nate-b-jones-five-levels|5 Levels of AI Coding]]. Needs a primary source on shadow-factory economics before promoting to its own page.
+
 ## See Also
 
 - [[fireship]] — author

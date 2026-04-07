@@ -139,6 +139,10 @@ This positioning changes everything about how you're perceived. It also provides
 
 **Economics**: Low build cost (afternoon + LLM), high perceived value (replaces a broken system), recurring potential (updates as career evolves).
 
+## Open questions
+
+- **Marcus Chen demo site** — Nate's working AI Professional Interface demo with GitHub repo available (referenced from [[summary-nate-b-jones-ai-professional-interface]]). Pull the repo and write a closer walkthrough if/when productizing this as a client service.
+
 ## See Also
 
 - [[Four Prompting Disciplines]] — specification engineering applies to building these interfaces
