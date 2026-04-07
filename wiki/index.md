@@ -44,6 +44,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[pixegami|pixegami]] — Python LLM tutorial creator; RAG, LangChain, pytest patterns.
 - [[alex-ziskind|Alex Ziskind]] — Local LLM benchmarks; vLLM/FP8/Apple Silicon vs Nvidia hardware deep dives.
 - [[the-cyber-mentor|The Cyber Mentor (Heath Adams)]] — Cybersecurity educator; founder of TCM Security Academy.
+- [[tech-with-tim|Tech With Tim]] — Python + AI tutorials; concrete walkthroughs of fine-tuning, Ollama, Docker Model Runner.
 
 ### Organizations
 - [[anthropic|Anthropic]] — US frontier-AI lab; Claude, Claude Code, the MCP standard, the Claude Code architecture leak. PBC structure.
@@ -85,6 +86,7 @@ New content appears as I read, watch, and research. The site updates automatical
 
 ### Open-Source Projects
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
+- [[unsloth|Unsloth]] — Fast, free fine-tuning library for open-weights LLMs; LoRA + GGUF export pipeline that runs on free Colab T4.
 - [[blender-mcp|Blender MCP]] — Natural language to 3D via MCP bridge to Blender's Python API.
 - [[gstack|GStack]] — YC President Gary Tan's startup methodology as Claude Code skills.
 - [[hermes-agent|Hermes Agent]] — Self-improving agent framework with closed learning loop.
@@ -124,6 +126,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[ai-coding-workflow|AI Coding Workflow]] — Cole Medin's PLANNING.md + TASK.md + global rules + MCP servers pattern.
 - [[mcp|Model Context Protocol (MCP)]] — Anthropic's standard for connecting LLMs to tools, services, and data.
 - [[meta-prompting|Meta-Prompting]] — Wrapping sloppy requests in a structured instruction-set; power steering for GPT-5.
+- [[fine-tuning|Fine-Tuning (LLMs)]] — LoRA + GGUF + Ollama pipeline for specializing open-weights models on local hardware.
 - [[fp8-quantization|FP8 Quantization]] — Floating-point 8-bit precision; native to Nvidia Blackwell tensor cores; the throughput sweet spot for vLLM.
 
 ### Analyses
@@ -188,6 +191,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-alex-ziskind-vllm-fp8|THIS is the REAL DEAL for local LLMs]] — Alex Ziskind on vLLM + FP8 + RTX PRO 6000; 5,800 tok/s sustained.
 - [[summary-tcm-bjorn-network-pentest-pi|Meet Bjorn, the Easy to Build Hacking Tool]] — TCM walkthrough of building a Raspberry Pi network pentest device; defensive audit angle for self-hosters.
 - [[summary-openai-industrial-policy-intelligence-age|Industrial Policy for the Intelligence Age]] — OpenAI's first major public policy paper; 21 proposals + heavy interested-party caveats.
+- [[summary-tech-with-tim-fine-tune-ollama|EASIEST Way to Fine-Tune a LLM and Use It With Ollama]] — Tech With Tim: Unsloth + LoRA + GGUF + Ollama Modelfile workflow.
 
 ## Contribute or build your own
 

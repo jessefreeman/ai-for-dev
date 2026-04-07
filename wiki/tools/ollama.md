@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Ollama + Claude Code = 99% CHEAPER.md", "Google just dropped Gemma 4... (WOAH).md"]
+sources: ["Ollama + Claude Code = 99% CHEAPER.md", "Google just dropped Gemma 4... (WOAH).md", "EASIEST Way to Fine-Tune a LLM and Use It With Ollama.md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-07
 tags: [tool, ai, open-source, local, inference]
 ---
 
@@ -32,6 +32,22 @@ Ollama integrates with [[Claude Code]] to substitute open-source models for Anth
 
 Ollama also hosts cloud models (e.g., MiniMax M 2.7) that can be used without local hardware. Free usage is limited; paid subscription unlocks higher throughput. Models only available in the cloud tier will not show a size in Ollama's model list.
 
+## Custom Models via Modelfile (loading fine-tuned GGUF)
+
+Ollama can load any GGUF file as a custom model via a **Modelfile** — the same format Docker uses for image manifests. This is the bridge between [[fine-tuning|fine-tuning]] (via [[unsloth|Unsloth]] in Google Colab) and local inference.
+
+Per [[summary-tech-with-tim-fine-tune-ollama|Tech With Tim's walkthrough]]: after exporting a fine-tuned model to `unsloth.q4_K_M.gguf`, drop it next to a `Modelfile` like:
+
+```
+FROM ./unsloth.q4_K_M.gguf
+PARAMETER temperature 0.7
+PARAMETER stop <|end|>
+TEMPLATE "{{ .Prompt }}"
+SYSTEM "You are a helpful AI assistant."
+```
+
+Then `ollama create <name> -f Modelfile && ollama run <name>` registers it as a local model. From that point on it behaves identically to a model pulled from `ollama.com`.
+
 ## Model Selection Guidance
 
 - Look at SWE-bench verified scores or Arena AI ELO for coding tasks
@@ -54,3 +70,6 @@ Ollama also hosts cloud models (e.g., MiniMax M 2.7) that can be used without lo
 - [[Open-Source Model Integration]]
 - [[Gemma 4]]
 - [[TurboQuant]]
+- [[fine-tuning]] — fine-tuned models land in Ollama via the Modelfile system
+- [[unsloth]] — the typical fine-tuning library that produces Modelfile-loadable GGUFs
+- [[summary-tech-with-tim-fine-tune-ollama|Source: Fine-Tune a LLM and Use It With Ollama]]

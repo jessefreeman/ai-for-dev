@@ -8,6 +8,16 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | EASIEST Way to Fine-Tune a LLM and Use It With Ollama (Tech With Tim)
+- **Source**: YouTube tutorial walkthrough by Tech With Tim, 2025-06-27 publish, ~5,270 source words
+- **Pages created** (4):
+  - `wiki/sources/summary-tech-with-tim-fine-tune-ollama.md` — Source summary
+  - `wiki/people/tech-with-tim.md` — Entity: Python + AI tutorials creator (will accumulate a 2nd source from this batch)
+  - `wiki/open-source/unsloth.md` — Entity: fast/free fine-tuning library; LoRA + GGUF export pipeline
+  - `wiki/concepts/fine-tuning.md` — Concept: when to fine-tune, the canonical Unsloth+LoRA+GGUF+Ollama recipe, the deliberate trade-off
+- **Updated**: `wiki/tools/ollama.md` (added 'Custom Models via Modelfile' section showing how fine-tuned GGUFs get loaded), `wiki/index.md`
+- **Notes**: First fine-tuning entry in the wiki. Anchors a new concept thread that connects [[unsloth]] (training) → GGUF (artifact) → [[ollama]] (runtime) → [[llama-cpp]] (engine).
+
 ## [2026-04-07] ingest | Industrial Policy for the Intelligence Age (OpenAI)
 - **Source**: PDF policy paper, 13 pages, published April 2026 by OpenAI. Hosted at `cdn.openai.com/pdf/.../Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf`. **First test of the new PDF ingest workflow** — extracted via `pypdf` 6.9.2 (per `.instructions/core/rules/pdf-extraction.md`), text injected into the clipping MD with `pdf-extract:begin/end` markers.
 - **Pages created** (2):
