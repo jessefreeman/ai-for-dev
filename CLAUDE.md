@@ -20,37 +20,48 @@ This wiki tracks **AI tools, techniques, and workflows for developers** — prod
 
 ## Directory Structure
 
+**Generic structure** (works for any LLM-maintained second brain):
+
 ```
 research/
-  CLAUDE.md          # This file. Top-level rules + pointers to .instructions/.
-  .instructions/     # Versioned, reusable prompts, templates, and detailed rules.
-    prompts/         # Reusable prompts the user invokes by name (ingest, lint, etc.).
-    templates/       # Page templates for rigs, person pages, source summaries, memories.
-    rules/           # Detailed rules referenced from CLAUDE.md and prompts.
-    tools/           # ⚠️ GITIGNORED — per-installation helper tools (PDF extractors, etc.).
-                     # Bootstrapped on demand from the corresponding rule file. Never committed.
-  raw/               # Unprocessed source documents.
-    archive/         # Already-ingested sources. Do not reprocess.
-    assets/          # Downloaded images and attachments.
-      archive/       # Archived asset files (PDFs, images) paired with archived clipping MDs.
-    memories/        # Atomized memory snippets for RavenBrain MCP. Versioned.
-    benchmarks/      # Raw Geekbench AI exports for the benchmark section.
-    *.md             # New articles, notes, transcripts, papers awaiting ingest.
-  wiki/              # LLM-generated and LLM-maintained markdown.
-    index.md         # Page catalog — one line per page, no prose.
-    log.md           # Chronological record of all operations.
-    overview.md      # High-level synthesis of the entire knowledge base.
-    hot.md           # Hot cache: ~500 words of current context. Read first.
-    tasks.md         # Running checklist of things to investigate.
-    people/          # Entity pages: people.
-    tools/           # Entity pages: commercial and hosted tools.
-    open-source/     # Entity pages: open source projects and libraries.
-    concepts/        # Concept pages: ideas, frameworks, techniques.
-    business/        # Business patterns: selling AI, ROI frameworks, automation.
-    analyses/        # Analysis and comparison pages.
-    sources/         # Source summaries and source entity pages.
-    benchmarks/      # Personal hardware benchmark section (rigs/, methodology, index).
+  CLAUDE.md          # Top-level rules + topic scope + project-specific declarations
+  .instructions/     # Versioned, reusable prompts, templates, and detailed rules
+    prompts/         # Callable prompts (ingest, lint, clean-data, orphans, ...)
+    templates/       # Page templates (source-summary, person-page, ...)
+    rules/           # Detailed protocols referenced from prompts
+    tools/           # ⚠️ GITIGNORED — per-installation helpers (PDF extractors, etc.)
+  raw/               # Unprocessed source documents (gitignored except memories/)
+    archive/         # Already-ingested sources
+    assets/          # Downloaded images and attachments
+      archive/       # Archived asset files paired with archived clipping MDs
+    memories/        # Atomized memory snippets for RavenBrain MCP (versioned)
+    *.md             # New sources awaiting ingest
+  wiki/              # LLM-generated and LLM-maintained markdown
+    index.md         # Page catalog
+    log.md           # Chronological record of operations
+    overview.md      # High-level synthesis
+    hot.md           # Hot cache: ~500 words of current context (read first)
+    tasks.md         # Running investigation checklist
+    people/          # Person entity pages
+    tools/           # Commercial / hosted tool entity pages
+    open-source/     # OSS project entity pages
+    concepts/        # Idea / framework / technique pages
+    analyses/        # Analysis and comparison pages
+    sources/         # Source summaries and notable-document entity pages
 ```
+
+**Project-specific additions** for this wiki (declared here, not in `.instructions/`):
+
+```
+research/
+  raw/
+    benchmarks/      # Raw Geekbench AI exports (project: hardware benchmarks)
+  wiki/
+    business/        # Business patterns / sales playbooks (project: AI as business)
+    benchmarks/      # Personal hardware benchmark section (project: hardware benchmarks)
+```
+
+When adding a new project-specific data subdirectory under `raw/` or new wiki section, add it to the project-specific block above so the ingest prompt knows to skip it during source listing.
 
 ## Reusable prompts
 

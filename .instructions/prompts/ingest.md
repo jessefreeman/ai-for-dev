@@ -6,7 +6,7 @@ You are ingesting one or more new source documents into the wiki. Follow this pr
 
 ## Inputs
 - New `.md`, `.html`, `.pdf`, or transcript files in `raw/` (not in `raw/archive/`).
-- If the user names a specific file, ingest only that one. Otherwise list every un-archived source file under `raw/` (excluding `raw/archive/`, `raw/assets/`, `raw/memories/`, and `raw/benchmarks/`) and confirm the list with the user before proceeding.
+- If the user names a specific file, ingest only that one. Otherwise list every un-archived source file directly under `raw/` and confirm the list with the user before proceeding. Skip the standard subdirectories: `raw/archive/`, `raw/assets/`, `raw/memories/`, and any project-specific data subdirectories declared in `CLAUDE.md`.
 
 ## PDF sources
 
