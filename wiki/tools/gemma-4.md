@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Google just dropped Gemma 4... (WOAH).md", "Ollama + Claude Code = 99% CHEAPER.md"]
+sources: ["Google just dropped Gemma 4... (WOAH).md", "Ollama + Claude Code = 99% CHEAPER.md", "Gemma 4 VRAM Requirements Every GPU and Mac Tested (2026).md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-07
 tags: [tool, ai, llm, open-source, google, model]
 ---
 
@@ -39,6 +39,17 @@ Google's fourth-generation open-weights model family. Released April 2026. The h
 
 HuggingFace, [[Ollama]], LM Studio, Unsloth, NVIDIA NIMs, MLX, llama.cpp, and others.
 
+## Hardware Requirements
+
+See [[gemma-4-vram-requirements]] for the full VRAM lookup table by GPU and Mac. Quick rule of thumb (Q5_K_M):
+
+- **E4B** — 6 GB GPU minimum (RTX 3060, RX 6600)
+- **26B A4B** (MoE, ~4B active) — 12 GB GPU at Q5 (RTX 3080 12GB / RTX 4070); the **best Mac sweet spot** at 32–36 GB unified memory
+- **31B** dense — 16 GB GPU at Q4 (RTX 4080 / RTX 3090)
+- **BF16 31B** — 24 GB GPU (RTX 4090)
+
+The 26B A4B MoE only activates ~4B params during inference, which is why it fits in 12–14 GB while delivering reasoning quality close to a 26B dense model — the most efficient option for users who want more than E4B but can't run 31B.
+
 ## Relevance to Claude Code Workflows
 
 Highlighted by [[Nate Herk]] as the motivation for his Ollama + Claude Code tutorial. The 31B model is a strong candidate for running [[Claude Code]] locally on consumer hardware — high capability, small enough to fit in reasonable GPU RAM. See [[Open-Source Model Integration]].
@@ -46,8 +57,11 @@ Highlighted by [[Nate Herk]] as the motivation for his Ollama + Claude Code tuto
 [[Matthew Berman]]'s take: use Gemma 4 for lighter tasks in a hybrid workflow; reserve Opus 4.6 for serious coding.
 
 ## See Also
+- [[gemma-4-vram-requirements]] — full GPU + Mac lookup tables
 - [[Ollama]]
 - [[Open-Source Model Integration]]
 - [[Matthew Berman]]
+- [[benchmarks/index|Personal Hardware Benchmarks]] — many rigs reference Gemma 4 model fit
 - [[summary-matthew-berman-gemma4|Source: Google Drops Gemma 4]]
 - [[summary-nate-herk-ollama-claude-code|Source: Ollama + Claude Code]]
+- [[summary-gemma4guide-vram-requirements|Source: Gemma 4 VRAM Requirements]]

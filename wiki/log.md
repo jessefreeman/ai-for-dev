@@ -8,6 +8,13 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Gemma 4 VRAM Requirements (Gemma4Guide.com)
+- **Source**: Web reference article from Gemma4Guide.com
+- **Pages created** (2):
+  - `summary-gemma4guide-vram-requirements.md` — Source summary
+  - `wiki/tools/gemma-4-vram-requirements.md` — Reference: full VRAM lookup tables (resolves dangling link from 9 rig pages)
+- **Updated**: `wiki/tools/gemma-4.md` (added Hardware Requirements section), `wiki/index.md`
+
 ## [2026-04-07] ingest | Code 100x Faster with AI (Cole Medin)
 - **Source**: YouTube transcript by Cole Medin on his full AI coding workflow
 - **Pages created** (2):

@@ -107,6 +107,7 @@ New content appears as I read, watch, and research. The site updates automatical
 ### Personal Hardware Benchmarks
 - [[benchmarks/index|Benchmark Index]] — Master ranking of all 16 personal rigs by AI Capability Index.
 - [[benchmarks/methodology|Benchmark Methodology]] — How the AI Capability Index (ACI) is calculated.
+- [[gemma-4-vram-requirements|Gemma 4 VRAM Requirements]] — GPU + Mac lookup tables; quantization breakdown.
 
 ### Business
 - [[ai-automation-workflows|AI Automation Workflows]] — The 5 highest-value AI automations to sell to businesses, plus the clogged pipe sales framework.
@@ -144,6 +145,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-bmad-code-aiadd-method|Better Than Vibe Coding]] — BMad Code introduces the BMAD Method (six Agile AI personas).
 - [[summary-joshua-clarke-local-ai-cybersec|Local AI for Cybersec]] — Joshua Clarke on Ollama + Open WebUI for private security writing.
 - [[summary-cole-medin-100x-ai-coding|Code 100x Faster with AI]] — Cole Medin's full AI coding process; one-shots a Supabase MCP server.
+- [[summary-gemma4guide-vram-requirements|Gemma 4 VRAM Requirements]] — Reference article: GPU + Mac sizing for every Gemma 4 model.
 
 ## Contribute or build your own
 
