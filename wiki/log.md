@@ -8,6 +8,13 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Dolphin Llama 3 Offline (Global Science Network)
+- **Source**: YouTube transcript by Global Science Network on running Dolphin Llama 3 from a USB drive
+- **Pages created** (2):
+  - `summary-global-science-network-dolphin-llama3.md` — Source summary
+  - `wiki/people/global-science-network.md` — Entity: privacy-first DIY AI YouTuber
+- **Updated**: `wiki/open-source/heretic.md` (added Dolphin pre-Heretic section), `wiki/index.md`
+
 ## [2026-04-07] ingest | Firebase Studio (WorldofAI)
 - **Source**: YouTube transcript by WorldofAI on Google's Firebase Studio launch
 - **Pages created** (2):

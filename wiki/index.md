@@ -38,6 +38,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[worldofai|WorldofAI]] — YouTube creator covering AI tools and agentic IDE launches.
 - [[bmad-code|BMad Code (Brian)]] — Creator of the BMAD Method; 20-year software vet on agile + AI workflows.
 - [[joshua-clarke|Joshua Clarke]] — Cybersecurity educator; local AI for private security workflows.
+- [[global-science-network|Global Science Network]] — YouTube channel on offline AI, hardware NNs, privacy-first computing.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -148,6 +149,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-cole-medin-100x-ai-coding|Code 100x Faster with AI]] — Cole Medin's full AI coding process; one-shots a Supabase MCP server.
 - [[summary-gemma4guide-vram-requirements|Gemma 4 VRAM Requirements]] — Reference article: GPU + Mac sizing for every Gemma 4 model.
 - [[summary-worldofai-firebase-studio|Firebase Studio Walkthrough]] — WorldofAI on Google's free agentic dev environment.
+- [[summary-global-science-network-dolphin-llama3|Dolphin Llama 3 Offline]] — Running an uncensored Llama variant from a USB drive via Ollama + AnythingLLM.
 
 ## Contribute or build your own
 
