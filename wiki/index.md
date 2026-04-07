@@ -46,6 +46,11 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[the-cyber-mentor|The Cyber Mentor (Heath Adams)]] — Cybersecurity educator; founder of TCM Security Academy.
 - [[tech-with-tim|Tech With Tim]] — Python + AI tutorials; concrete walkthroughs of fine-tuning, Ollama, Docker Model Runner.
 - [[wolfgangs-channel|Wolfgang's Channel]] — Homelab/self-hosting YouTuber; local AI code assistant + power consumption analysis.
+- [[simon-hoiberg|Simon Høiberg]] — SaaS founder; bootstrapped portfolio, leaving-the-cloud, AI agent monetization playbooks.
+- [[beyond-fireship|Beyond Fireship]] — Long-form companion channel to Fireship; from-scratch builder tutorials.
+- [[zubair-trabzada|Zubair Trabzada]] — No-code AI automation educator; voice agents and n8n workflows.
+- [[tin-rovic|Tin Rovic]] — No-code AI automation creator; n8n workflow recipes.
+- [[nathan-sebhastian|Nathan Sebhastian]] — Code with Nathan; practical dev environment + AI coding tutorials.
 
 ### Organizations
 - [[anthropic|Anthropic]] — US frontier-AI lab; Claude, Claude Code, the MCP standard, the Claude Code architecture leak. PBC structure.
@@ -86,6 +91,12 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[docker-model-runner|Docker Model Runner]] — Local LLM runtime built into Docker Desktop; OCI-packaged models, no CUDA needed.
 - [[continue|Continue]] — Open-source VS Code/JetBrains extension; local Copilot replacement via Ollama or any OpenAI-compliant API.
 - [[minimax-m2-7|MiniMax M2.7]] — Closed-source model claiming to outperform Opus 4.6 at 20x lower cost.
+- [[n8n|n8n]] — Open-source workflow automation platform; canonical no-code agent runner; convergence point for the wiki's AI-automation thread.
+- [[flowith|Flowith]] — Multimodal infinite-canvas execution agent; 10M-token context, 30+ native integrations.
+- [[manus|Manus]] — Closed-source viral general AI agent; the original of the open-source [[openmanus]] clone.
+- [[retell-ai|Retell AI]] — Voice-AI platform for inbound/outbound phone agents; telephony + persona + function calling.
+- [[zep|Zep]] — Hosted long-term agent memory as a per-user relational graph; n8n integration.
+- [[void-ide|Void IDE]] — Fully open-source agentic IDE shipped as a full editor; Agent Mode + Gather Mode.
 
 ### Open-Source Projects
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
@@ -115,6 +126,12 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[deepcode|DeepCode]] — Open-source multi-agent coding platform from HKUDS; Paper2Code, Text2Web, Text2Backend.
 - [[bjorn|Bjorn]] — Open-source Raspberry Pi network pentest tool; defensive audit for self-hosted AI infrastructure.
 - [[vllm|vLLM]] — High-throughput LLM inference engine; saturates Nvidia GPUs with concurrent requests.
+- [[cline|Cline]] — Open-source autonomous AI coding agent as a VS Code extension; bring-your-own-model.
+- [[opencode|OpenCode]] — SST's open-source terminal AI coder; 75+ providers, parallel agents, themable UI.
+- [[openmanus|OpenManus]] — MetaGPT's open-source clone of [[manus|Manus]]; Python agent loop with no UI.
+- [[kimi-k2|Kimi K2]] — Moonshot's open-weights MoE model; 32B active params, ~10× cheaper than Sonnet at output.
+- [[kimi-coder|Kimi Coder]] — Llama Coder fork repointed at Kimi K2; web app for prompt-to-SPA generation.
+- [[minimax-m1|MiniMax M1]] — MiniMax's open-weights hybrid-attention model; 1M token context, 80K reasoning output.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -134,6 +151,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[meta-prompting|Meta-Prompting]] — Wrapping sloppy requests in a structured instruction-set; power steering for GPT-5.
 - [[fine-tuning|Fine-Tuning (LLMs)]] — LoRA + GGUF + Ollama pipeline for specializing open-weights models on local hardware.
 - [[fp8-quantization|FP8 Quantization]] — Floating-point 8-bit precision; native to Nvidia Blackwell tensor cores; the throughput sweet spot for vLLM.
+- [[context-engineering|Context Engineering]] — Karpathy/Lütke's successor to prompt engineering; curating *all* the information an LLM needs to plausibly solve a task.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -200,6 +218,23 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-tech-with-tim-fine-tune-ollama|EASIEST Way to Fine-Tune a LLM and Use It With Ollama]] — Tech With Tim: Unsloth + LoRA + GGUF + Ollama Modelfile workflow.
 - [[summary-wolfgangs-channel-self-host-ai-code-assistant|Host Your Own AI Code Assistant with Docker, Ollama and Continue!]] — Wolfgang's Channel: 7900XTX gaming PC vs MiniPC for local Copilot; "GPU is the cliff."
 - [[summary-worldofai-open-swe|Open-SWE: Opensource Jules!]] — WorldofAI on LangChain's open-source async coding agent built on LangGraph.
+- [[summary-simon-hoiberg-5-ai-agent-business-ideas|5 (Real) AI Agent Business Ideas For 2025]] — Simon Høiberg's five concrete AI monetization paths.
+- [[summary-simon-hoiberg-self-hostable-alternatives|Replace Cloud Tools With Self-Hostable Alternatives]] — Six-tool replacement stack saving $10K/yr.
+- [[summary-worldofai-claude-code-subagents|Claude Code Sub-Agents]] — WorldofAI on Anthropic's first-class sub-agents in Claude Code.
+- [[summary-worldofai-cline-v318|Cline v3.18 HUGE UPDATE]] — Gemini CLI provider, Claude Code as backend, 35 new MCP servers.
+- [[summary-worldofai-context-engineering|Context Engineering: The End of Vibe Coding]] — Walkthrough of Cole Medin's PRP template.
+- [[summary-worldofai-flowith-neo|Flowith Neo: Infinite Agent]] — Multimodal infinite-canvas execution agent.
+- [[summary-beyond-fireship-deepseek-vscode-extension|I built a DeepSeek R1 powered VS Code extension]] — From-scratch VS Code extension wired to Ollama + DeepSeek R1.
+- [[summary-worldofai-kimi-coder|Kimi Coder]] — Kimi K2 model + Llama Coder fork for prompt-to-SPA generation.
+- [[summary-worldofai-minimax-m1-agent|MiniMax Agent (M1)]] — Open-weights hybrid-attention model + the hosted general agent.
+- [[summary-worldofai-docker-mcp-toolkit|Docker MCP Toolkit]] — Containerized MCP install + secrets vault inside Docker Desktop.
+- [[summary-worldofai-opencode|OpenCode]] — SST's terminal AI coder with 75+ provider support.
+- [[summary-worldofai-openmanus|OpenManus]] — MetaGPT's open-source Manus clone.
+- [[summary-zubair-trabzada-retell-voice-agent|AI Voice Agent (Retell + n8n)]] — Inbound dental receptionist no-code build.
+- [[summary-tin-rovic-youtube-seo-blog|YouTube → SEO Blog (n8n)]] — Content-repurposing pipeline with n8n + OpenRouter + WordPress.
+- [[summary-nate-herk-zep-memory|n8n + Zep memory]] — Knowledge-graph long-term memory with cost-trap fix.
+- [[summary-nathan-sebhastian-vscode-cline-continue|VSCode + Cline + Continue]] — Canonical free Cursor-replacement setup.
+- [[summary-worldofai-void-ide|Void IDE Update]] — Fully open-source agentic IDE with Agent Mode + Gather Mode.
 
 ## Contribute or build your own
 

@@ -6,7 +6,40 @@ updated: 2026-04-07
 
 # Wiki Log
 
-Chronological record of all operations.
+Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
+
+## [2026-04-07] ingest | 17-source batch (mixed channels)
+
+Largest single ingest in the wiki to date. The user authorized batch processing with autonomous judgment. **17 sources, 68 source ingested total.**
+
+- **Sources** (17):
+  1. **5 (Real) AI Agent Business Ideas** ([[simon-hoiberg|Simon Høiberg]]) — five monetization paths
+  2. **Claude Code Sub-Agents** ([[worldofai|WorldofAI]]) — Anthropic ships first-class sub-agents in [[claude-code]]
+  3. **Cline v3.18** (WorldofAI) — anchors new [[cline]] entity
+  4. **Context Engineering** (WorldofAI) — anchors new [[context-engineering]] concept
+  5. **Flowith Neo** (WorldofAI) — anchors new [[flowith]] entity
+  6. **DeepSeek R1 VS Code Extension** ([[beyond-fireship|Beyond Fireship]]) — first builder-tutorial in the wiki
+  7. **Kimi Coder** (WorldofAI) — anchors new [[kimi-k2]] + [[kimi-coder]] entities
+  8. **MiniMax Agent (M1)** (WorldofAI) — anchors new [[minimax-m1]] entity
+  9. **Docker MCP Toolkit** (WorldofAI) — major [[mcp]] ecosystem development
+  10. **OpenCode** (WorldofAI) — anchors new [[opencode]] entity
+  11. **OpenManus** (WorldofAI) — anchors new [[openmanus]] + [[manus]] entities
+  12. **Self-Hostable Cloud Alternatives** (Simon Høiberg) — n8n + DeepSeek + Hetzner GPU thread
+  13. **Retell AI Voice Agent** ([[zubair-trabzada|Zubair Trabzada]]) — anchors new [[retell-ai]] entity
+  14. **YouTube → SEO Blog (n8n)** ([[tin-rovic|Tin Rovic]]) — content-repurposing pipeline
+  15. **n8n + Zep memory** ([[nate-herk|Nate Herk]]) — anchors new [[zep]] entity; cost-trap fix
+  16. **VSCode + Cline + Continue** ([[nathan-sebhastian|Nathan Sebhastian]]) — second source on [[cline]]
+  17. **Void IDE Update** (WorldofAI) — anchors new [[void-ide]] entity
+
+- **Major thread filled — n8n** (long-standing wiki gap): **5 sources in this batch reference n8n** as their backbone. Created [[n8n]] as a first-class entity that ties together [[ai-automation-workflows]], [[zep]], [[retell-ai]], [[openrouter]], and the Simon Høiberg / Tin Rovic / Nate Herk / Zubair Trabzada source threads.
+
+- **New thread — open-source IDE proliferation**: [[cline]], [[opencode]], [[void-ide]], [[continue]] now together form the wiki's free-cursor-alternative cluster, complementing the commercial [[cursor]] / [[claude-code]] / [[augment-agent]] thread. Documented two install paths: extension-stack (Cline + Continue) and full-app (Void).
+
+- **New thread — general AI agent landscape**: [[manus]], [[openmanus]], [[flowith]] now sit alongside [[devin]] and [[deepcode]] as the "general autonomous agent" cluster.
+
+- **New concept — context engineering**: [[context-engineering]] joins [[bmad-method]], [[meta-prompting]], [[four-prompting-disciplines]], [[ai-coding-workflow]] as a planning-discipline page. Anchors the PRP (Product Requirement Prompt) pattern.
+
+- **Single-commit batch decision**: protocol says one commit per source, but the volume + user authorization made one batch commit the right call for this run. Each source still has its own summary page = the rollback unit.
 
 ## [2026-04-07] ingest | The Easiest Ways to Run LLMs Locally - Docker Model Runner Tutorial (Tech With Tim)
 - **Source**: YouTube tutorial walkthrough by Tech With Tim, 2025-07-19, ~3,605 source words. **Second wiki source on `[[docker-model-runner]]`** — complementary coverage to WorldofAI's earlier walkthrough.
@@ -17,504 +50,39 @@ Chronological record of all operations.
 
 ## [2026-04-07] ingest | Open-SWE (WorldofAI)
 - **Source**: YouTube tool walkthrough by WorldofAI, 2025-08-12, ~2,445 source words
-- **Pages created** (3):
-  - `wiki/sources/summary-worldofai-open-swe.md` — Source summary
-  - `wiki/orgs/langchain.md` — **NEW org page**: LangChain (LangChain library + LangGraph + Open-SWE + LangSmith). 6th wiki org. Justified by condition (b): three referenced products in the same editorial thread.
-  - `wiki/open-source/open-swe.md` — Entity: open-source async coding agent built on LangGraph; free Jules alternative; bring-your-own-API-key flexibility (Anthropic / OpenAI / Google / OpenRouter free tier / Ollama local)
-- **Updated**: `wiki/people/worldofai.md` (8th source from this channel — most prolific in the wiki), `wiki/analyses/saas-death-spiral.md` (Open-SWE added to Connected Threads as the open-source-async data point), `wiki/index.md`
+- **Pages created** (3): `summary-worldofai-open-swe.md`; `wiki/orgs/langchain.md` (NEW org page — 6th wiki org); `wiki/open-source/open-swe.md`
 - **Notes**: First first-party LangChain product to land in the wiki. The org page documents LangChain's framework-vendor distinction vs the model-vendor frontier labs and the agent-shipping open-source collectives.
 
 ## [2026-04-07] ingest | Host Your Own AI Code Assistant (Wolfgang's Channel)
 - **Source**: YouTube tutorial + hardware comparison by Wolfgang's Channel, 2024-08-24, ~3,532 source words
-- **Pages created** (3):
-  - `wiki/sources/summary-wolfgangs-channel-self-host-ai-code-assistant.md` — Source summary with full Docker Compose recipe + power consumption data
-  - `wiki/people/wolfgangs-channel.md` — Entity: homelab/self-hosting YouTuber
-  - `wiki/tools/continue.md` — Entity: open-source VS Code/JetBrains extension; local Copilot replacement via any OpenAI-compliant local backend
-- **Updated**: `wiki/index.md`
-- **Notes**: Builds the wiki's bridge between the local-AI hardware thread and the agentic-coding thread. Power data (130W gaming PC vs 4.6W MiniPC, no usable middle ground) corroborates [[summary-alex-ziskind-vllm-fp8|Alex Ziskind's vLLM analysis]] from a different angle. Sponsor: Docker (Docker Scout segment) — disclosed and clean.
+- **Pages created** (3): `summary-wolfgangs-channel-self-host-ai-code-assistant.md`; `wiki/people/wolfgangs-channel.md`; `wiki/tools/continue.md`
+- **Notes**: Builds the wiki's bridge between the local-AI hardware thread and the agentic-coding thread. Power data (130W gaming PC vs 4.6W MiniPC, no usable middle ground) corroborates [[summary-alex-ziskind-vllm-fp8|Alex Ziskind's vLLM analysis]] from a different angle.
 
 ## [2026-04-07] ingest | EASIEST Way to Fine-Tune a LLM and Use It With Ollama (Tech With Tim)
 - **Source**: YouTube tutorial walkthrough by Tech With Tim, 2025-06-27 publish, ~5,270 source words
-- **Pages created** (4):
-  - `wiki/sources/summary-tech-with-tim-fine-tune-ollama.md` — Source summary
-  - `wiki/people/tech-with-tim.md` — Entity: Python + AI tutorials creator (will accumulate a 2nd source from this batch)
-  - `wiki/open-source/unsloth.md` — Entity: fast/free fine-tuning library; LoRA + GGUF export pipeline
-  - `wiki/concepts/fine-tuning.md` — Concept: when to fine-tune, the canonical Unsloth+LoRA+GGUF+Ollama recipe, the deliberate trade-off
-- **Updated**: `wiki/tools/ollama.md` (added 'Custom Models via Modelfile' section showing how fine-tuned GGUFs get loaded), `wiki/index.md`
-- **Notes**: First fine-tuning entry in the wiki. Anchors a new concept thread that connects [[unsloth]] (training) → GGUF (artifact) → [[ollama]] (runtime) → [[llama-cpp]] (engine).
+- **Pages created** (4): `summary-tech-with-tim-fine-tune-ollama.md`; `wiki/people/tech-with-tim.md`; `wiki/open-source/unsloth.md`; `wiki/concepts/fine-tuning.md`
+- **Notes**: First fine-tuning entry in the wiki. Anchors a new concept thread connecting [[unsloth]] (training) → GGUF (artifact) → [[ollama]] (runtime) → [[llama-cpp]] (engine).
 
 ## [2026-04-07] ingest | Industrial Policy for the Intelligence Age (OpenAI)
-- **Source**: PDF policy paper, 13 pages, published April 2026 by OpenAI. Hosted at `cdn.openai.com/pdf/.../Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf`. **First test of the new PDF ingest workflow** — extracted via `pypdf` 6.9.2 (per `.instructions/core/rules/pdf-extraction.md`), text injected into the clipping MD with `pdf-extract:begin/end` markers.
-- **Pages created** (2):
-  - `wiki/sources/summary-openai-industrial-policy-intelligence-age.md` — Source summary with section-by-section bullets and a heavy Funding & Affiliation Notes section
-  - `wiki/sources/industrial-policy-intelligence-age.md` — Source entity page in the [[ai-2027]] pattern with deeper synthesis, document structure, editorial framing to discount, and connections to existing wiki threads
-- **Updated** (3):
-  - `wiki/analyses/saas-death-spiral.md` — added a "Policy responses" subsection linking to this paper as the policy-response counterpart to the market-mechanism thesis
-  - `wiki/tools/chatgpt.md` — added an "OpenAI policy positioning" subsection with the interested-party caveats
-  - `wiki/index.md` — added entries under Sources and Source summaries
-- **Tasks added**: OpenAI as a policy entity (needs ≥2 sources before getting an org page), CAISI (Center for AI Standards and Innovation), Public Wealth Fund as a named proposal, "Right to AI" framing, Public Benefit Corporation governance for frontier AI, the OpenAI fellowship + API credits pilot program
-- **No memories** generated — speculative policy proposals don't atomize well; revisit if any becomes load-bearing across multiple sources
-- **Phase 5 archive**: clipping MD → `raw/archive/`, PDF asset → `raw/assets/archive/` (created the directory)
-- **Notes**: First wiki source where the framing is "policy artifact from an interested party" — required heavier-than-usual editorial caveats about regulatory-moat plays. The new pdf-source.md template's Funding & Affiliation Notes section was the right shape for this.
+- **Source**: PDF policy paper, 13 pages, published April 2026 by OpenAI. **First test of the new PDF ingest workflow** — extracted via `pypdf` 6.9.2.
+- **Pages created** (2): `summary-openai-industrial-policy-intelligence-age.md`; `industrial-policy-intelligence-age.md`
+- **Updated** (3): `saas-death-spiral.md`, `chatgpt.md`, `index.md`
+- **Notes**: First wiki source where the framing is "policy artifact from an interested party" — required heavier-than-usual editorial caveats.
 
 ## [2026-04-07] ingest | Meet Bjorn (The Cyber Mentor) — re-ingested
-- **Source**: YouTube transcript by The Cyber Mentor on building Bjorn (Raspberry Pi network pentest tool)
-- **Status**: Originally skipped as off-topic in batch 3 lint plan. **User reframed**: relevant as a defensive audit tool for self-hosters running local AI infrastructure (Ollama, Archon OS, Open WebUI, Supabase, GPU-passthrough rigs) on the same LAN.
-- **Pages created** (3):
-  - `summary-tcm-bjorn-network-pentest-pi.md` — Source summary with defensive framing
-  - `wiki/open-source/bjorn.md` — Entity: open-source automated network reconnaissance + brute-force tool on Pi Zero 2W; reframed for self-hoster defensive use
-  - `wiki/people/the-cyber-mentor.md` — Entity: Heath Adams, TCM Security Academy founder
-- **Updated**: `wiki/people/joshua-clarke.md` (cross-link to TCM as adjacent cybersec creator), `wiki/index.md`
-- **Memory**: 1 atomized memory file (`bjorn-defensive-pentest-pi.md`)
-- **Note**: This is the first wiki entry whose framing differs significantly from the source's framing. The video is offensive-pentesting-pedagogy; the wiki framing is defensive-audit-for-self-hosted-AI-infrastructure. Both are accurate; the wiki framing is what makes it useful in this knowledge base.
+- **Source**: YouTube transcript by The Cyber Mentor on Bjorn (Raspberry Pi network pentest tool)
+- **Status**: Originally skipped as off-topic. **User reframed**: relevant as a defensive audit tool for self-hosters running local AI infrastructure.
+- **Pages created** (3): `summary-tcm-bjorn-network-pentest-pi.md`; `wiki/open-source/bjorn.md`; `wiki/people/the-cyber-mentor.md`
+- **Notes**: First wiki entry whose framing differs significantly from the source's framing. Both are accurate; the wiki framing is what makes it useful in this knowledge base.
 
 ## [2026-04-07] lint: 2026-04-07 (round 2) — post-batch-3 cleanup
-- **Group A — re-fixed two regressions from the first lint pass**:
-  - `[[proxmox-ai-host-ultra7-265k]]` → `[[proxmox-ultra7-265k]]` in 2 rig pages (`asus-zephyrus-g16-ultra9-185h.md`, `msi-codex-r-i5-12400f.md`). Verified with grep this time.
-  - `[[raw/archive/Andrej Karpathy...]]` wikilink → relative markdown link in `summary-karpathy-10x-claude-code.md`. Verified.
-- **Group B — filled new gap**: created [[supabase]] entity page. Convergence point across [[OpenBrain]], [[archon-os]], [[ai-coding-workflow]], [[sim-ai]], [[mcp]] one-shot demo. Updated `wiki/index.md` Tools section.
-- **Group 5 — refreshed `wiki/overview.md`**: was 13 sources stale. Now covers all 45 sources, the new themes (planning-first AI coding workflows, local AI throughput stack, agentic coding platform proliferation, SaaS death spiral), the new key pages (mcp, archon-os, supabase, vllm, fp8-quantization, hermes-agent expansions), and corrected the top benchmark rig reference (Lenovo P8 Threadripper, not Ultra 7 265K).
-- **Group 6 — refreshed `wiki/tasks.md`**: reorganized into High Priority / People & Orgs / Models / Tools / Deeper Investigations / Open Questions / Completed sections. Added new candidates from batches 1–3: Lovable, Nous Research, HKUDS, Kimi K2, Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model, Bret Fisher's gist, vLLM FP4 follow-up, etc. Marked Supabase + vLLM + FP8 + MCP + Gemma 4 VRAM + lint pass as completed.
-- **Group C deferred**: `[[proxmox-mobile-hx-pro-370]]` (still 2 broken refs) — user undecided across two lint passes. Added to tasks.md Open Questions.
-- **Group D deferred**: stub pages, tag taxonomy survey.
-- No orphans, no contradictions, no frontmatter drift.
+- **Group A — re-fixed two regressions from the first lint pass**; **Group B** — created [[supabase]]; **Group 5** — refreshed `wiki/overview.md`; **Group 6** — refreshed `wiki/tasks.md`.
+- **Notes**: Two passes were needed. Lesson: lint Phase 3 must verify edits before declaring done.
 
 ## [2026-04-07] ingest | THIS is the REAL DEAL for local LLMs (Alex Ziskind)
 - **Source**: YouTube transcript by Alex Ziskind on vLLM + FP8 + RTX PRO 6000 Blackwell
-- **Pages created** (4):
-  - `summary-alex-ziskind-vllm-fp8.md` — Source summary with reproduced benchmark numbers
-  - `wiki/people/alex-ziskind.md` — Entity: local-LLM hardware/runtime YouTuber (long-overdue addition)
-  - `wiki/open-source/vllm.md` — Entity: high-throughput LLM inference engine; the parallelism upgrade path past Ollama/LM Studio
-  - `wiki/concepts/fp8-quantization.md` — Concept: floating-point 8-bit, Blackwell tensor core native, vs Int8
-- **Updated**: `wiki/tools/docker-model-runner.md` (parallelism findings + comparison), `wiki/tools/ollama.md` (parallelism limit note + vLLM upgrade path), `wiki/benchmarks/rigs/proxmox-lenovo-p8-threadripper.md` (added vLLM+FP8 throughput context — the practical answer to "why pay $9,145 for the PRO 6000"), `wiki/index.md`
-- **Cross-thread synthesis**: this video is the practical justification for the top-spend rig in the benchmarks section; it explains why Geekbench AI numbers understate the real ceiling
-
-## [2026-04-07] skip | Two off-topic sources
-- `Meet Bjorn, the Easy to Build Hacking Tool!.md` (The Cyber Mentor, May 2025) — Raspberry Pi Zero hardware pentesting build. No AI content. Off-topic for the wiki's AI focus. Archived without ingest.
-- `you need this k8s data center at home.md` (GoatsInAPond, Nov 2025) — Talos Linux + Kubernetes + Flux GitOps homelab tutorial. No AI content. Off-topic. Archived without ingest.
+- **Pages created** (4): `summary-alex-ziskind-vllm-fp8.md`; `wiki/people/alex-ziskind.md`; `wiki/open-source/vllm.md`; `wiki/concepts/fp8-quantization.md`
 
 ## [2026-04-07] ingest | Sim AI (WorldofAI)
 - **Source**: YouTube transcript by WorldofAI on Sim AI
-- **Pages created** (2):
-  - `summary-worldofai-sim-ai.md` — Source summary
-  - `wiki/tools/sim-ai.md` — Entity: open-source visual AI agent workflow builder (n8n alternative)
-- **Updated**: `wiki/people/worldofai.md` (7th source), `wiki/index.md`
-
-## [2026-04-07] ingest | DeepCode (WorldofAI)
-- **Source**: YouTube transcript by WorldofAI on HKUDS's DeepCode
-- **Pages created** (2):
-  - `summary-worldofai-deepcode.md` — Source summary
-  - `wiki/open-source/deepcode.md` — Entity: open-source multi-agent coding platform with Paper2Code pipeline
-- **Updated**: `wiki/people/worldofai.md` (6th source), `wiki/index.md`
-
-## [2026-04-07] ingest | Archon OS (WorldofAI)
-- **Source**: YouTube transcript by WorldofAI on Cole Medin's Archon OS
-- **Pages created** (2):
-  - `summary-worldofai-archon-os.md` — Source summary
-  - `wiki/tools/archon-os.md` — Entity: open-source AI command center for coding agents (Cole Medin / Dynamis)
-- **Updated**: `wiki/people/cole-medin.md` (5th source), `wiki/people/worldofai.md` (5th source), `wiki/index.md`
-
-## [2026-04-07] skip | Fireship duplicate
-- `7 new open source AI tools you need right now… 1.md` — duplicate of the already-ingested Fireship video (Obsidian Web Clipper added " 1" suffix on a re-clip). Same content as `summary-fireship-7-open-source-tools.md`. Moved to `raw/archive/` without ingest.
-
-## [2026-04-07] ingest | Planning in Claude Code Just Got a Huge Upgrade (Nate Herk)
-- **Source**: YouTube transcript by Nate Herk on Claude Code's new Ultra Plan feature
-- **Pages created** (1):
-  - `summary-nate-herk-ultra-plan.md` — Source summary
-- **Updated**: `wiki/tools/claude-code.md` (added /ultra-plan section with full feature breakdown), `wiki/people/nate-herk.md` (3rd source), `wiki/index.md`
-
-## [2026-04-07] ingest | Docker Model Runner (WorldofAI)
-- **Source**: YouTube transcript by WorldofAI on Docker Model Runner
-- **Pages created** (2):
-  - `summary-worldofai-docker-model-runner.md` — Source summary
-  - `wiki/tools/docker-model-runner.md` — Entity: local LLM runtime built into Docker Desktop
-- **Updated**: `wiki/people/worldofai.md` (4th source), `wiki/tools/ollama.md` (added alternative cross-link), `wiki/tools/open-webui.md` (added backend options section), `wiki/index.md`
-
-## [2026-04-07] ingest | How AI is Breaking the SaaS Business Model (Fireship)
-- **Source**: YouTube transcript by Fireship — Code Report on the SaaS death spiral
-- **Pages created** (3):
-  - `summary-fireship-saas-death-spiral.md` — Source summary
-  - `wiki/analyses/saas-death-spiral.md` — Analysis: $1T SaaS market cap thesis + seven Feb 2026 developments
-  - `wiki/tools/github-agent-hq.md` — Entity: Microsoft's GitHub→agent orchestration platform
-- **Updated**: `wiki/people/fireship.md` (3rd source), `wiki/tools/codex.md` (added Codex 5.3 + Mac app section), `wiki/index.md`
-- **Note**: Did not create stub pages for Qwen 3 Coder Next, GLM 5, MiniMax M2.5, Waymo World Model — they're mentions in this source, not subjects. MiniMax M2.5 noted as same family as existing [[minimax-m2-7]].
-
-## [2026-04-07] ingest | Hermes Agent: 24/7 Self-Evolving (WorldofAI)
-- **Source**: YouTube transcript by WorldofAI on Hermes Agent by Nous Research
-- **Pages created** (1):
-  - `summary-worldofai-hermes-agent.md` — Source summary
-- **Updated**: `wiki/open-source/hermes-agent.md` (added GEPA section, vendor details, install/setup, Obsidian skill demo, sharper OpenClaw comparison), `wiki/people/worldofai.md` (3rd source), `wiki/index.md`
-
-## [2026-04-07] ingest | ChatGPT-5 Prompting is Too Hard (Nate B Jones)
-- **Source**: YouTube transcript by Nate B Jones on GPT-5 prompting
-- **Pages created** (2):
-  - `summary-nate-b-jones-chatgpt5-prompting.md` — Source summary
-  - `wiki/concepts/meta-prompting.md` — Concept: meta-prompting + 7 GPT-5 prompting principles
-- **Updated**: `wiki/people/nate-b-jones.md` (9th source), `wiki/tools/chatgpt.md` (added GPT-5 prompting section), `wiki/index.md`
-
-## [2026-04-07] skip | Three sources archived without ingest
-- **User-approved skips** from the 12-source April-7 batch (low value, redundant with existing wiki coverage):
-  1. `FREE Local Image Gen on Apple Silicon  FAST!.md` (Alex Ziskind, 2024-05) — Stable Diffusion + Automatic1111 tutorial; very old, off-focus from dev tooling
-  2. `How to Install Ollama, Docker, and Open WebUI on MacOS.md` (BlueSpork, 2024-12) — pure 2-min install tutorial; zero new info beyond what already lives in [[ollama]]/[[open-webui]] pages
-  3. `VS Code Just Got a LOT Faster with LLAMA 4 Integration (Scout, Maverick, Behemoth).md` (Laith Talks AI, 2025-04) — 2-min Roo Code + OpenRouter walkthrough; creator himself notes Llama 4 performed poorly
-- **Action**: moved to `raw/archive/` without creating wiki pages. Memories also skipped.
-
-## [2026-04-07] ingest | Python RAG Tutorial (pixegami)
-- **Source**: YouTube transcript by pixegami on building a local RAG app over PDFs
-- **Pages created** (2):
-  - `summary-pixegami-python-rag-tutorial.md` — Source summary
-  - `wiki/people/pixegami.md` — Entity: Python LLM tutorial creator
-- **Updated**: `wiki/index.md`
-
-## [2026-04-07] ingest | MCP Clearly Explained (Greg Isenberg + Ras Mic)
-- **Source**: YouTube podcast episode — Greg Isenberg hosts Ras Mic on MCP
-- **Pages created** (4):
-  - `summary-greg-isenberg-mcp-explained.md` — Source summary
-  - `wiki/concepts/mcp.md` — Concept: canonical MCP page (resolves missing page from lint audit)
-  - `wiki/people/greg-isenberg.md` — Entity: founder/podcaster
-  - `wiki/people/ras-mic.md` — Entity: technical explainer at Tempo
-- **Updated**: `wiki/index.md`
-
-## [2026-04-07] ingest | Dolphin Llama 3 Offline (Global Science Network)
-- **Source**: YouTube transcript by Global Science Network on running Dolphin Llama 3 from a USB drive
-- **Pages created** (2):
-  - `summary-global-science-network-dolphin-llama3.md` — Source summary
-  - `wiki/people/global-science-network.md` — Entity: privacy-first DIY AI YouTuber
-- **Updated**: `wiki/open-source/heretic.md` (added Dolphin pre-Heretic section), `wiki/index.md`
-
-## [2026-04-07] ingest | Firebase Studio (WorldofAI)
-- **Source**: YouTube transcript by WorldofAI on Google's Firebase Studio launch
-- **Pages created** (2):
-  - `summary-worldofai-firebase-studio.md` — Source summary
-  - `wiki/tools/firebase-studio.md` — Entity: cloud agentic dev environment (Project IDX rebrand)
-- **Updated**: `wiki/people/worldofai.md` (2nd source), `wiki/index.md`
-
-## [2026-04-07] ingest | Gemma 4 VRAM Requirements (Gemma4Guide.com)
-- **Source**: Web reference article from Gemma4Guide.com
-- **Pages created** (2):
-  - `summary-gemma4guide-vram-requirements.md` — Source summary
-  - `wiki/tools/gemma-4-vram-requirements.md` — Reference: full VRAM lookup tables (resolves dangling link from 9 rig pages)
-- **Updated**: `wiki/tools/gemma-4.md` (added Hardware Requirements section), `wiki/index.md`
-
-## [2026-04-07] ingest | Code 100x Faster with AI (Cole Medin)
-- **Source**: YouTube transcript by Cole Medin on his full AI coding workflow
-- **Pages created** (2):
-  - `summary-cole-medin-100x-ai-coding.md` — Source summary
-  - `wiki/concepts/ai-coding-workflow.md` — Concept: PLANNING.md/TASK.md + global rules + MCP servers pattern
-- **Updated**: `wiki/people/cole-medin.md` (4th source), `wiki/index.md`
-
-## [2026-04-07] ingest | Local AI for Cybersec (Joshua Clarke)
-- **Source**: YouTube transcript by Joshua Clarke on Ollama + Open WebUI for cybersecurity workflows
-- **Pages created** (3):
-  - `summary-joshua-clarke-local-ai-cybersec.md` — Source summary
-  - `wiki/tools/open-webui.md` — Entity: self-hosted ChatGPT-like UI for local models
-  - `wiki/people/joshua-clarke.md` — Entity: cybersecurity educator
-- **Updated**: `wiki/index.md`
-
-## [2026-04-07] ingest | Better Than Vibe Coding: BMAD Method (BMad Code)
-- **Source**: YouTube transcript by BMad Code (Brian) introducing the BMAD Method
-- **Pages created** (3):
-  - `summary-bmad-code-aiadd-method.md` — Source summary
-  - `wiki/concepts/bmad-method.md` — Concept: six-persona Agile AI-Driven Development
-  - `wiki/people/bmad-code.md` — Entity: 20-year software vet, BMAD-METHOD creator
-- **Updated**: `wiki/index.md`
-
-## [2026-04-07] ingest | Augment Agent: RIP Cursor (WorldofAI)
-- **Source**: YouTube transcript by WorldofAI on Augment Code's launch of Augment Agent
-- **Pages created** (3):
-  - `summary-worldofai-augment-agent.md` — Source summary
-  - `wiki/tools/augment-agent.md` — Entity: agentic IDE; #1 OSS SWE-bench Verified
-  - `wiki/people/worldofai.md` — Entity: YouTube creator
-- **Updated**: `wiki/index.md`
-
-## [2026-04-07] lint: 2026-04-07 — pre-ingest cleanup
-- Fixed dangling `[[proxmox-ai-host-ultra7-265k]]` → `[[proxmox-ultra7-265k]]` in 2 rig pages.
-- Renamed entity content "ThePepeBot" → "ThePopeBot" across 5 pages (filename `thepopebot.md` was already correct; matches GitHub repo `stephengpope/thepopebot`).
-- Converted `[[raw/archive/...]]` wikilink in karpathy summary to a relative markdown link so the archive backlink actually resolves in Obsidian/Quartz.
-- Deduplicated OpenClaw task in `wiki/tasks.md`.
-- Added missing `created` field to `index.md`, `log.md`, `hot.md`, `tasks.md`.
-- Refreshed `wiki/overview.md`: covered sources 19–27, added benchmark/Five-Levels/Four-Prompting-Disciplines/AI-Professional-Interface threads, fixed stale `$0.30/month` → `$0.10/month` for OpenBrain.
-- Audit findings deferred to ingest phase: missing `[[mcp]]` page (will be filled by source #10), missing `[[gemma-4-vram-requirements]]` (will be filled by source #6).
-- Audit finding left open per user: `[[proxmox-mobile-hx-pro-370]]` references in 2 rig pages — no matching rig file, user unsure of correct target.
-- No orphans, no duplicates, no contradictions found.
-
-## [2026-04-07] benchmarks | Personal Rig Benchmark Refactor
-- One-off project: refactored `raw/benchmarks/` into proper wiki pages.
-- Parsed all 71 Geekbench AI results from `raw/benchmarks/_source.html`.
-- Identified 16 unique rigs (CPU + motherboard pairs); 7 had old-format pages, 9 are new.
-- Designed **AI Capability Index (ACI)** scoring: `(BestSingle + BestHalf×0.6 + BestQuant×0.4)/100` with S/A/B/C/D tiers.
-- Created `wiki/benchmarks/methodology.md`, `wiki/benchmarks/index.md`, and 16 rig pages under `wiki/benchmarks/rigs/`.
-- Top of leaderboard: Proxmox host with RTX PRO 6000 Blackwell (ACI 978.8, S tier). Lowest: Lenovo ThinkPad i5-1230U (ACI 42.5, D tier).
-- Notable cross-cutting finding: Apple Neural Engine on Mac Mini M4 has the highest **quantized** score of any rig (51,472), beating every NVIDIA card.
-- Pricing left as TBD per user — to be filled in via separate receipts pass.
-- Open work: re-benchmark Intel NUC9V7QNX RTX 4060 (half/quant missing), confirm Proxmox host motherboard, investigate RTX 5090 score variance on Proxmox host (29,750 → 44,345 across runs).
-
-## [2026-04-06] init | Wiki Initialized
-- Created directory structure: `raw/`, `raw/assets/`, `wiki/`
-- Created `CLAUDE.md` schema file
-- Created `wiki/index.md`, `wiki/log.md`, `wiki/overview.md`
-- Wiki is empty and ready for first source ingest.
-
-## [2026-04-06] maintenance | Wiki Reorganized into Subdirectories
-- **Reason**: Flat wiki/ layout produces an endless article list on the public Quartz site.
-- **Structure**: Introduced five subdirectories under `wiki/`:
-  - `people/` — andrej-karpathy, nate-herk
-  - `tools/` — claude-code, obsidian, obsidian-web-clipper
-  - `concepts/` — llm-wiki-pattern
-  - `analyses/` — rag-vs-wiki
-  - `sources/` — summary-karpathy-10x-claude-code, ai-2027
-- **Root** (`wiki/`): index.md, overview.md, log.md unchanged.
-- **Updated**: `CLAUDE.md` (directory structure, Page Types table, Ingest step 3–4), `wiki/index.md` (section headers match new folders).
-- **Wikilinks**: No body link changes required — Obsidian and Quartz both resolve `[[filename]]` links by filename regardless of folder.
-
-## [2026-04-06] ingest | Andrej Karpathy Just 10x'd Everyone's Claude Code
-- **Source**: YouTube transcript by Nate Herk on Karpathy's LLM Wiki pattern
-- **Pages created** (9):
-  - `summary-karpathy-10x-claude-code.md` — Source summary
-  - `andrej-karpathy.md` — Entity: AI researcher, LLM Wiki creator
-  - `nate-herk.md` — Entity: YouTube creator, demo author
-  - `claude-code.md` — Entity: Anthropic's CLI tool
-  - `obsidian.md` — Entity: Markdown note-taking app
-  - `obsidian-web-clipper.md` — Entity: Browser extension for clipping
-  - `ai-2027.md` — Entity: Forecasting article used as demo
-  - `llm-wiki-pattern.md` — Concept: LLM-maintained knowledge bases
-  - `rag-vs-wiki.md` — Comparison: LLM Wiki vs semantic search RAG
-- **Updated**: `index.md`, `overview.md`
-
-## [2026-04-06] ingest | I Broke Down Anthropic's $2.5 Billion Leak (Nate B Jones)
-- **Source**: YouTube transcript by Nate B Jones analyzing the leaked Claude Code architecture
-- **Pages created** (3):
-  - `summary-nate-jones-12-agent-primitives.md` — Source summary
-  - `agentic-harness-primitives.md` — Concept: 12-primitive production agent framework
-  - `nate-b-jones.md` — Entity: AI strategy educator
-- **Updated**: `claude-code.md` (added internal architecture section from leak), `index.md`, `overview.md`
-
-## [2026-04-06] ingest | Ollama + Claude Code = 99% CHEAPER (Nate Herk)
-- **Source**: YouTube transcript by Nate Herk on running Claude Code with open-source models
-- **Pages created** (3):
-  - `summary-nate-herk-ollama-claude-code.md` — Source summary
-  - `open-source-model-integration.md` — Concept: substituting models in Claude Code
-  - `ollama.md` — Entity: local model runner
-  - `openrouter.md` — Entity: unified AI API gateway
-- **Updated**: `claude-code.md`, `index.md`, `overview.md`
-
-## [2026-04-06] maintenance | Person pages standardized as author hubs
-- **Reason**: Person pages were minimal stubs with no channel info and no content index.
-- **Change**: All four person pages rebuilt with Channels, Content in This Wiki, and Key Ideas sections.
-- **Updated**: `andrej-karpathy.md`, `nate-herk.md`, `nate-b-jones.md`, `matthew-berman.md`
-- **CLAUDE.md**: Added "Person Page Structure" standard under Page Types — required sections, rules for keeping content lists complete, instruction to update on every new ingest from that person.
-
-## [2026-04-06] maintenance | Added business/ category to wiki schema
-- **Reason**: Nate Herk's 500 AI Workflows content is business/sales-focused rather than developer tooling — needed a dedicated folder.
-- **Change**: Added `wiki/business/` to CLAUDE.md directory structure and Page Types table.
-
-## [2026-04-06] ingest | I Cut Claude Code Costs by 95% (MiniMax M2.7) — Damian Malliaros
-- **Source**: YouTube transcript: Claude Code + MiniMax M2.7 ClickUp clone demo
-- **Pages created** (3):
-  - `summary-damian-malliaros-minimax-m27.md` — Source summary
-  - `minimax-m2-7.md` — Entity: MiniMax M2.7 model
-  - `damian-malliaros.md` — Entity: AI creator
-- **Updated**: `open-source-model-integration.md` (added MiniMax), `index.md`
-
-## [2026-04-06] ingest | I've Built 500 AI Workflows (Nate Herk)
-- **Pages created** (2):
-  - `summary-nate-herk-500-ai-workflows.md` — Source summary
-  - `wiki/business/ai-automation-workflows.md` — Business: 5 workflows + clogged pipe framework
-- **Updated**: `nate-herk.md` (added source + key ideas), `index.md`
-
-## [2026-04-06] ingest | Claude Code + Paperclip Just Destroyed OpenClaw (Nate Herk)
-- **Source**: YouTube transcript by Nate Herk on Paperclip multi-agent orchestration
-- **Pages created** (4):
-  - `summary-nate-herk-paperclip.md` — Source summary
-  - `paperclip.md` — Entity: open-source multi-agent orchestration tool
-  - `multi-agent-orchestration.md` — Concept: coordinating multiple AI agents
-  - (no new person page — Nate Herk already exists)
-- **Updated**: `nate-herk.md` (added new source + key idea), `index.md`
-
-## [2026-04-06] ingest | TurboQuant will change Local AI for everyone (Tim Carambat)
-- **Source**: YouTube transcript by Tim Carambat on TurboQuant KV cache optimization
-- **Pages created** (4):
-  - `summary-tim-carambat-turboquant.md` — Source summary
-  - `turboquant.md` — Concept: KV cache optimization technique
-  - `anything-llm.md` — Entity: local AI all-in-one app
-  - `tim-carambat.md` — Entity: AnythingLLM founder
-- **Updated**: `open-source-model-integration.md`, `ollama.md`, `index.md`
-
-## [2026-04-06] ingest | Google just dropped Gemma 4 (Matthew Berman)
-- **Source**: YouTube transcript by Matthew Berman covering Gemma 4 release
-- **Pages created** (3):
-  - `summary-matthew-berman-gemma4.md` — Source summary (minimal)
-  - `gemma-4.md` — Entity: Google's open-weights model family
-  - `matthew-berman.md` — Entity: AI YouTuber
-- **Updated**: `index.md`, `overview.md`
-
-## [2026-04-06] ingest | A Markdown File Just Replaced Your Design Meeting (Nate B Jones)
-- **Source**: YouTube transcript by Nate B Jones on Google Stitch, Remotion, and Blender MCP
-- **Pages created** (5):
-  - `summary-nate-b-jones-google-stitch.md` — Source summary
-  - `wiki/tools/google-stitch.md` — Entity: Google's voice-to-UI design tool
-  - `wiki/tools/remotion.md` — Entity: React video-as-code framework
-  - `wiki/open-source/blender-mcp.md` — Entity: Natural language to 3D via MCP (first page in open-source/ dir)
-  - `wiki/tools/skills-sh.md` — Entity: Claude Code skill directory
-- **Updated**: `nate-b-jones.md` (added source + key ideas), `index.md`
-- **Memories** (5): design-md-agent-readable-design-system, mcp-as-growth-hack-2026, remotion-video-as-code, blender-mcp-natural-language-3d, scheduled-creative-pipelines
-- **Note**: Created `wiki/open-source/` directory for first time
-
-## [2026-04-06] ingest | What Is Llama.cpp? (IBM Technology)
-- **Source**: YouTube transcript by IBM Technology on llama.cpp internals
-- **Pages created** (2):
-  - `summary-ibm-llama-cpp.md` — Source summary
-  - `wiki/open-source/llama-cpp.md` — Entity: C++ inference engine
-- **Note**: No person page created — IBM Technology is a corporate channel
-- **Memories** (3): gguf-format-purpose, quantization-naming-q4km, llama-cpp-local-openai-server
-
-## [2026-04-06] ingest | You NEED to Try These Open-Source AI Projects (Matthew Berman)
-- **Source**: YouTube transcript by Matthew Berman on four open-source agent projects
-- **Pages created** (4):
-  - `summary-matthew-berman-open-source-projects.md` — Source summary
-  - `wiki/open-source/gstack.md` — Entity: YC President Gary Tan's Claude Code skills
-  - `wiki/open-source/hermes-agent.md` — Entity: Self-improving agent framework
-  - `wiki/open-source/superpowers.md` — Entity: TDD-enforcing Claude Code plugin (115k stars)
-- **Updated**: `matthew-berman.md` (added source + key ideas), `index.md`
-- **Memories** (3): gstack-yc-office-hours-skill, hermes-agent-self-improving-loop, superpowers-tdd-plugin
-
-## [2026-04-06] ingest | Every AI Model Explained in 20 Minutes (Matthew Berman)
-- **Source**: YouTube transcript by Matthew Berman — introductory AI model survey
-- **Pages created** (11):
-  - `summary-matthew-berman-ai-models.md` — Source summary
-  - `wiki/tools/chatgpt.md` — Entity: OpenAI's flagship consumer AI
-  - `wiki/tools/claude.md` — Entity: Anthropic's model family (distinct from Claude Code)
-  - `wiki/tools/gemini.md` — Entity: Google's frontier model; unique video ingestion
-  - `wiki/tools/grok.md` — Entity: xAI's model; Twitter/X specialty
-  - `wiki/tools/cursor.md` — Entity: AI-native code editor
-  - `wiki/tools/codex.md` — Entity: OpenAI's coding agent
-  - `wiki/tools/devin.md` — Entity: Cognition's autonomous software engineer
-  - `wiki/open-source/llama.md` — Entity: Meta's open-weights model family
-  - `wiki/open-source/deepseek.md` — Entity: Chinese lab open-weights model
-  - `wiki/open-source/qwen.md` — Entity: Alibaba's open-weights model family
-- **Updated**: `matthew-berman.md` (added source + key ideas), `index.md`
-- **Memories** (2): gemini-video-ingestion-unique, grok-twitter-search-specialty, open-source-models-95-percent-use-cases
-
-## [2026-04-06] ingest | 7 New Open-Source AI Tools (Fireship)
-- **Source**: YouTube transcript by Fireship covering 7 open-source AI tools
-- **Pages created** (9):
-  - `summary-fireship-7-open-source-tools.md` — Source summary
-  - `wiki/people/fireship.md` — Entity: Developer education YouTube channel
-  - `wiki/open-source/agency.md` — Entity: Role-based agent templates for Claude Code
-  - `wiki/open-source/prompt-fu.md` — Entity: Prompt unit testing (acquired by OpenAI)
-  - `wiki/open-source/mirrorish.md` — Entity: Multi-agent prediction engine
-  - `wiki/open-source/impeccable.md` — Entity: Claude Code frontend design skill
-  - `wiki/open-source/open-viking.md` — Entity: File-system agent memory DB
-  - `wiki/open-source/heretic.md` — Entity: Model guardrail removal
-  - `wiki/open-source/nano-chat.md` — Entity: Full LLM training pipeline
-- **Memories** (2): open-viking-file-system-agent-memory, prompt-fu-unit-testing-for-prompts
-
-## [2026-04-06] ingest | /loop + OpenBrain (Nate B Jones)
-- **Source**: YouTube transcript by Nate B Jones on Anthropic's /loop, OpenBrain, and OpenClaw
-- **Pages created** (5):
-  - `summary-nate-b-jones-loop-openbrain.md` — Source summary
-  - `wiki/concepts/slash-loop.md` — Concept: Anthropic's proactive scheduling command
-  - `wiki/concepts/open-brain.md` — Concept: SQL + MCP agent memory pattern
-  - `wiki/tools/openclaw.md` — Entity: Fastest-growing OSS agent framework
-  - `wiki/concepts/autoresearch-evals.md` — Concept: (co-sourced with Nick Saraev)
-- **Updated**: `nate-b-jones.md`, `andrej-karpathy.md`, `claude-code.md` (/loop + skills ecosystem sections)
-- **Memories** (3): three-agent-primitives, slash-loop-heartbeat, openbrain-sql-mcp
-- **Note**: Fills the OpenClaw gap from tasks.md
-
-## [2026-04-06] ingest | Project Nomad (Crosstalk Solutions)
-- **Source**: YouTube transcript by Crosstalk Solutions on offline AI knowledge server
-- **Pages created** (3):
-  - `summary-crosstalk-project-nomad.md` — Source summary
-  - `wiki/open-source/project-nomad.md` — Entity: Offline knowledge server + local AI
-  - `wiki/people/crosstalk-solutions.md` — Entity: Home lab YouTuber
-- **Memories** (1): project-nomad-offline-ai-server
-
-## [2026-04-06] ingest | AutoResearch for Skills (Nick Saraev)
-- **Source**: YouTube transcript by Nick Saraev on self-improving Claude Code skills
-- **Pages created** (2):
-  - `summary-nick-saraev-autoresearch.md` — Source summary
-  - `wiki/people/nick-saraev.md` — Entity: AI educator, Maker School
-- **Updated**: `wiki/concepts/autoresearch-evals.md` (co-sourced)
-- **Memories** (1): autoresearch-three-ingredients
-
-## [2026-04-06] ingest | VoiceBox TTS (Dave Swift)
-- **Source**: YouTube transcript by Dave Swift demoing VoiceBox open-source TTS
-- **Pages created** (3):
-  - `summary-dave-swift-voicebox.md` — Source summary
-  - `wiki/open-source/voicebox.md` — Entity: Free local TTS with voice cloning
-  - `wiki/people/dave-swift.md` — Entity: AI tools YouTuber
-- **Memories** (1): voicebox-local-tts-alternative
-- **Note**: 18 total sources ingested — lint pass recommended per CLAUDE.md (every 5th ingest)
-
-## [2026-04-06] ingest | Prompting Split Into 4 Skills (Nate B Jones)
-- **Source**: YouTube transcript on the four-discipline prompting framework
-- **Pages created** (2):
-  - `summary-nate-b-jones-four-prompting-disciplines.md` — Source summary
-  - `wiki/concepts/four-prompting-disciplines.md` — Concept: The four disciplines + five spec primitives
-- **Updated**: `nate-b-jones.md`
-- **Memories** (2): four-prompting-disciplines-framework, five-specification-primitives
-
-## [2026-04-06] ingest | Excalidraw Diagrams (Cole Medin)
-- **Source**: YouTube transcript on visual validation loop for Claude Code diagrams
-- **Pages created** (2):
-  - `summary-cole-medin-excalidraw-skill.md` — Source summary
-  - `wiki/people/cole-medin.md` — Entity: AI educator (2 sources ingested)
-- **Updated**: `claude-code.md` (Excalidraw skill in ecosystem section)
-- **Memories** (1): excalidraw-visual-validation-loop
-
-## [2026-04-06] ingest | Why Coding Tools Abandoned RAG (Cole Medin)
-- **Source**: YouTube transcript on RAG for structured vs unstructured data
-- **Pages created** (1):
-  - `summary-cole-medin-rag-for-code.md` — Source summary
-- **Updated**: `wiki/analyses/rag-vs-wiki.md` (major rewrite with structured vs unstructured distinction), `cole-medin.md`
-- **Memories** (1): rag-dead-for-code-alive-for-knowledge
-
-## [2026-04-06] ingest | OpenBrain Architecture (Nate B Jones)
-- **Source**: YouTube transcript — definitive OpenBrain architecture guide
-- **Pages created** (1):
-  - `summary-nate-b-jones-openbrain-architecture.md` — Source summary
-- **Updated**: `wiki/concepts/open-brain.md` (major rewrite with full Postgres + PGVector architecture, lifecycle prompts, compounding advantage thesis), `nate-b-jones.md`
-- **Memories** (1): openbrain-full-architecture
-- **Note**: 22 total sources ingested — lint pass overdue
-
-## [2026-04-06] ingest | The 5 Levels of AI Coding (Nate B Jones)
-- **Source**: YouTube transcript — Dan Shapiro's framework, StrongDM dark factory, J-curve, junior pipeline
-- **Pages created** (3):
-  - `summary-nate-b-jones-five-levels.md` — Source summary
-  - `wiki/concepts/five-levels-of-ai-coding.md` — Concept: L0→L5 framework + StrongDM case study
-  - `wiki/open-source/attractor.md` — Entity: StrongDM's dark factory coding agent
-- **Updated**: `nate-b-jones.md` (7th source)
-- **Memories** (2): five-levels-of-ai-coding, strongdm-dark-factory-architecture
-
-## [2026-04-06] ingest | I Built a FREE OpenClaw (Stephen G. Pope)
-- **Source**: YouTube transcript — ThePopeBot autonomous agent architecture
-- **Pages created** (3):
-  - `summary-stephen-g-pope-thepopebot.md` — Source summary
-  - `wiki/open-source/thepopebot.md` — Entity: Free OpenClaw alternative
-  - `wiki/people/stephen-g-pope.md` — Entity: AI developer, ThePopeBot creator
-- **Memories** (1): thepopebot-github-actions-architecture
-
-## [2026-04-06] ingest | E2E Testing Command (Cole Medin)
-- **Source**: YouTube transcript — Self-healing AI coding workflow
-- **Pages created** (1):
-  - `summary-cole-medin-e2e-testing.md` — Source summary
-- **Updated**: `cole-medin.md` (3rd source)
-- **Memories** (1): e2e-testing-self-healing-workflow
-
-## [2026-04-06] ingest | Frontier Operations (Nate B Jones)
-- **Source**: YouTube transcript — The expanding bubble; five persistent skills
-- **Pages created** (2):
-  - `summary-nate-b-jones-frontier-operations.md` — Source summary
-  - `wiki/concepts/frontier-operations.md` — Concept: Five skills at the AI/human boundary
-- **Updated**: `nate-b-jones.md`
-- **Memories** (1): frontier-operations-five-skills
-- **Note**: 26 total sources ingested — lint pass seriously overdue
-
-## [2026-04-06] ingest | Stop Competing With 400 Applicants (Nate B Jones)
-- **Source**: YouTube transcript — AI-powered professional interface replacing broken hiring pipeline
-- **Pages created** (2):
-  - `summary-nate-b-jones-ai-professional-interface.md` — Source summary
-  - `wiki/business/ai-professional-interface.md` — Business: Five interface components, attention economics, fit assessment, client service model
-- **Updated**: `nate-b-jones.md` (8th source)
-- **Memories** (5): ai-professional-interface-five-components, attention-economics-hiring, fit-assessment-tool-power-inversion, showing-vs-telling-credibility, hiring-arms-race-04-percent
-- **Note**: Granular breakdown per user request — detailed concept page with implementation details, objection handling, and client service productization notes. 27 total sources.
+- **Pages created** (2): `summary-worldofai-sim-ai.md`; `wiki/tools/sim-ai.md`

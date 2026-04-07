@@ -17,6 +17,17 @@ tags: [tool, ai, llm, anthropic]
 - Configured via `CLAUDE.md` schema files that define project conventions
 - Can be pointed at wiki directories from other projects (e.g., an executive assistant referencing a knowledge base)
 
+## Sub-Agents (July 2025)
+
+Anthropic shipped first-class sub-agents: per-project or per-user specialist agents with their own system prompt, tool/MCP whitelist, and **isolated context window** (preserves the main thread). Managed via `/agents` in the Claude Code TUI.
+
+- **Why** — solves three pain points at once: context-window pollution from off-task work, tool-call hallucination, and the lack of a clean delegation primitive
+- **Setup** — `/agents` → New → project or user level → describe (recommended: let Claude generate, then customize) → tool whitelist → color tag
+- **Marketplace** — community sub-agents at claudecodeagents.com (UX optimizer, Delegator, etc.)
+- **Parallelism** — multiple sub-agents can work concurrently on the same project
+
+See [[summary-worldofai-claude-code-subagents|Claude Code Sub-Agents walkthrough]].
+
 ## Internal Architecture (from leak)
 
 In early 2026, Anthropic accidentally exposed Claude Code's source map via a build configuration error. [[Nate B Jones]] analyzed the leak and identified [[Agentic Harness Primitives]] — 12 production-grade infrastructure patterns Claude Code uses at scale.

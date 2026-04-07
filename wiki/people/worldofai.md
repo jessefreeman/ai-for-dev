@@ -27,6 +27,16 @@ YouTube creator covering AI tools, agents, and coding assistants. Tends to publi
 - [[summary-worldofai-deepcode|DeepCode: NEW Opensource Agentic Coder]] — Walkthrough of [[deepcode|DeepCode]] from HKUDS: multi-agent platform with Paper2Code, Text2Web, Text2Backend pipelines. Single-prompt project management web app demo.
 - [[summary-worldofai-sim-ai|Sim AI: Open-Source n8n Alternative]] — Walkthrough of [[sim-ai|Sim AI]], a visual drag-and-drop AI agent workflow builder with 60+ integrations and multi-model support.
 - [[summary-worldofai-open-swe|Open-SWE: Opensource Jules!]] — Walkthrough of [[open-swe|Open-SWE]], LangChain's open-source asynchronous coding agent built on LangGraph; the free alternative to Google Jules with bring-your-own-API-key flexibility.
+- [[summary-worldofai-claude-code-subagents|Claude Code Sub-Agents]] — Anthropic ships first-class sub-agents in [[claude-code]]: per-project specialists with isolated context, tool whitelists, and the new `/agents` UI.
+- [[summary-worldofai-cline-v318|Cline v3.18 HUGE UPDATE]] — Gemini CLI provider (1K free daily), Claude Code as backend, diff-edit reliability gains, 35 new MCP servers. See [[cline]].
+- [[summary-worldofai-context-engineering|Context Engineering: The End of Vibe Coding]] — Walkthrough of Cole Medin's `context-engineering-intro` template + PRP pattern. See [[context-engineering]].
+- [[summary-worldofai-flowith-neo|Flowith Neo: Infinite Agent]] — Walkthrough of [[flowith]], a multimodal infinite-canvas execution agent.
+- [[summary-worldofai-kimi-coder|Kimi Coder]] — Walkthrough of [[kimi-k2]] + [[kimi-coder]]; open-weights MoE model and a Llama Coder fork.
+- [[summary-worldofai-minimax-m1-agent|MiniMax Agent (M1)]] — Walkthrough of [[minimax-m1]] open-weights hybrid-attention model + the hosted MiniMax Agent.
+- [[summary-worldofai-docker-mcp-toolkit|Docker MCP Toolkit]] — Walkthrough of Docker Desktop's MCP Toolkit extension; containerized MCP install + secrets vault.
+- [[summary-worldofai-opencode|OpenCode]] — Walkthrough of SST's [[opencode]] terminal AI coder; 75+ providers, parallel agents, themable UI.
+- [[summary-worldofai-openmanus|OpenManus]] — Walkthrough of MetaGPT's [[openmanus]], the open-source [[manus]] clone.
+- [[summary-worldofai-void-ide|Void IDE Update]] — Walkthrough of [[void-ide]]; full-app open-source agentic IDE with Agent Mode + Gather Mode.
 
 ## Key Ideas
 
