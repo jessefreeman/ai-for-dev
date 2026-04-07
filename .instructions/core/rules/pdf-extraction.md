@@ -80,79 +80,19 @@ Should print `pypdf 6.x.x` (or whatever was installed). If it prints `ModuleNotF
 
 ### Drop the extractor script
 
-Save the following as `.instructions/tools/pdf-extract/extract.py`. **This is the canonical source — recreate from here on a fresh clone**, since `.instructions/tools/` is gitignored.
+The canonical source lives in a sibling file: [`pdf-extract.py.template`](pdf-extract.py.template). Copy it into the gitignored tools directory as `extract.py`:
 
-```python
-#!/usr/bin/env python3
-"""PDF text extractor for the wiki ingest workflow.
-
-Usage: python extract.py <path-to-pdf>
-Prints extracted text to stdout. Exit code 0 on success, non-zero on failure.
-
-Extraction uses pypdf. The first line of output is a header in the form:
-    # pypdf <version> | <pages> pages | <pdf filename>
-so the caller can capture provenance metadata for the injection block.
-
-Bootstrap location: this script lives in `.instructions/tools/pdf-extract/extract.py`
-and expects the pypdf package to be installed alongside it under `lib/`.
-The canonical source for this file is `.instructions/core/rules/pdf-extraction.md` —
-recreate from there on a fresh clone.
-"""
-import sys
-from pathlib import Path
-
-# Add the local --target install directory to sys.path so pypdf can be imported
-# without needing a venv (more robust on network shares).
-HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE / "lib"))
-
-try:
-    import pypdf
-except ImportError:
-    print("ERROR: pypdf not installed. Run: pip3 install --target {}/lib pypdf".format(HERE), file=sys.stderr)
-    sys.exit(2)
-
-if len(sys.argv) != 2:
-    print("Usage: python extract.py <path-to-pdf>", file=sys.stderr)
-    sys.exit(64)
-
-pdf_path = Path(sys.argv[1])
-if not pdf_path.is_file():
-    print(f"ERROR: not a file: {pdf_path}", file=sys.stderr)
-    sys.exit(66)
-
-try:
-    reader = pypdf.PdfReader(str(pdf_path))
-except Exception as e:
-    print(f"ERROR: pypdf failed to open {pdf_path}: {e}", file=sys.stderr)
-    sys.exit(74)
-
-pages = []
-for i, page in enumerate(reader.pages):
-    try:
-        pages.append(page.extract_text() or "")
-    except Exception as e:
-        print(f"WARNING: page {i+1} extraction failed: {e}", file=sys.stderr)
-        pages.append("")
-
-text = "\n\n".join(pages).strip()
-
-# Verify the output looks like text (not binary garbage / not empty)
-if len(text) < 200:
-    print(f"ERROR: extracted text suspiciously short ({len(text)} chars) — PDF may be image-based / scanned", file=sys.stderr)
-    sys.exit(65)
-
-printable = sum(1 for c in text if c.isprintable() or c in "\n\r\t")
-ratio = printable / max(1, len(text))
-if ratio < 0.85:
-    print(f"ERROR: printable-ASCII ratio {ratio:.2f} below 0.85 — looks like binary garbage", file=sys.stderr)
-    sys.exit(65)
-
-# Header line for provenance capture by the caller
-print(f"# pypdf {pypdf.__version__} | {len(reader.pages)} pages | {pdf_path.name}")
-print()
-print(text)
+```bash
+cp .instructions/core/rules/pdf-extract.py.template \
+   .instructions/tools/pdf-extract/extract.py
 ```
+
+The `.template` extension on the source file signals that it's a canonical reference artifact (not a working `.py` to be run from its rule-file location). The actual install lives in the gitignored `.instructions/tools/pdf-extract/` directory and is bootstrapped per-installation.
+
+**Why a separate file** (instead of an embedded code block in this rule)?
+1. The rule file gets read into context every time PDF extraction runs — embedding ~80 lines of Python made it ~600 words larger than necessary.
+2. Editing Python inside a markdown code fence is awkward; a `.py.template` file gets proper syntax highlighting in editors.
+3. Re-bootstrapping on a fresh clone is one `cp` instead of "find the code block, copy lines X–Y."
 
 ### Running the extractor
 
