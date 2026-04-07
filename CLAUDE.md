@@ -56,6 +56,7 @@ The user invokes these by name (e.g. *"run the ingest prompt"*). Each one is a c
 |---|---|---|---|
 | core | Customize Template | `.instructions/core/prompts/customize-template.md` | One-time onboarding for a fresh template clone (sets topic scope) |
 | core | Ingest | `.instructions/core/prompts/ingest.md` | Add new sources from `raw/` into the wiki |
+| core | Task Review | `.instructions/core/prompts/task-review.md` | Walk through open questions in `wiki/tasks.md` one at a time |
 | core | Lint | `.instructions/core/prompts/lint.md` | Quality audit — duplicates, contradictions, stale content |
 | core | Orphans | `.instructions/core/prompts/orphans.md` | Link-graph audit — orphaned pages and dangling links |
 | core | Clean Data | `.instructions/core/prompts/clean-data.md` | Mechanical hygiene — frontmatter, naming, tags, encoding |
@@ -82,6 +83,7 @@ Detailed rules live in `.instructions/core/rules/`. Read on demand, not preempti
 | `memory-rules.md` | RavenBrain memory format, tag taxonomy, what to capture |
 | `hot-cache-rules.md` | What goes in `wiki/hot.md` and what doesn't |
 | `index-rules.md` | Format and content of `wiki/index.md` |
+| `tasks-rules.md` | What belongs in `wiki/tasks.md` (user-input items only) and how lint/task-review keep it pruned |
 | `pdf-extraction.md` | How to detect/install/run a PDF→text tool and inject the result into the clipping MD |
 
 ## Querying the wiki

@@ -20,6 +20,13 @@ Walk the wiki and produce a single report covering:
 8. **Frontmatter drift** — pages missing required frontmatter fields (type, sources, created, updated, tags) per [page-conventions](../rules/page-conventions.md).
 9. **Index/log drift** — entries in `wiki/index.md` that point to nonexistent files, or recent ingests in `wiki/log.md` whose pages aren't in the index.
 10. **Tag inconsistency** — same concept tagged different ways across pages.
+11. **Tasks.md validation** — walk the active section of `wiki/tasks.md` per [tasks-rules](../rules/tasks-rules.md) and flag:
+    - **Resolved by page creation** — items referencing a wikilink that now resolves to an existing page
+    - **Resolved by source ingest** — items referencing a `raw/archive/` filename that has been archived
+    - **Threshold-met for entity-page creation** — items asking "should X get a page" where X now has ≥2 inbound source-summary references
+    - **Stale items** — items unchanged for >30 days
+    - **Volume warning** — if active item count >15, surface as a separate finding and propose pruning
+    Never auto-delete from `tasks.md`. Surface candidates and wait for user approval in Phase 3.
 
 ### Phase 2 — Report and pause
 
