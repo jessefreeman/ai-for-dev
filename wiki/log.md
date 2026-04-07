@@ -12,6 +12,20 @@ Chronological record of all operations.
 - `Meet Bjorn, the Easy to Build Hacking Tool!.md` (The Cyber Mentor, May 2025) — Raspberry Pi Zero hardware pentesting build. No AI content. Off-topic for the wiki's AI focus. Archived without ingest.
 - `you need this k8s data center at home.md` (GoatsInAPond, Nov 2025) — Talos Linux + Kubernetes + Flux GitOps homelab tutorial. No AI content. Off-topic. Archived without ingest.
 
+## [2026-04-07] ingest | Sim AI (WorldofAI)
+- **Source**: YouTube transcript by WorldofAI on Sim AI
+- **Pages created** (2):
+  - `summary-worldofai-sim-ai.md` — Source summary
+  - `wiki/tools/sim-ai.md` — Entity: open-source visual AI agent workflow builder (n8n alternative)
+- **Updated**: `wiki/people/worldofai.md` (7th source), `wiki/index.md`
+
+## [2026-04-07] ingest | DeepCode (WorldofAI)
+- **Source**: YouTube transcript by WorldofAI on HKUDS's DeepCode
+- **Pages created** (2):
+  - `summary-worldofai-deepcode.md` — Source summary
+  - `wiki/open-source/deepcode.md` — Entity: open-source multi-agent coding platform with Paper2Code pipeline
+- **Updated**: `wiki/people/worldofai.md` (6th source), `wiki/index.md`
+
 ## [2026-04-07] ingest | Archon OS (WorldofAI)
 - **Source**: YouTube transcript by WorldofAI on Cole Medin's Archon OS
 - **Pages created** (2):

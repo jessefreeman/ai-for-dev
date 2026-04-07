@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Augment Agent RIP Cursor! NEW Agentic AI IDE! AI Software Engineer Automates Your Code (Opensource).md", "Google's Firebase Studio FULLY FREE AI Code Editor! Generate Full-Stack Apps! (Beats Cursor + Bolt).md", "Hermes Agent The 247 Self-Evolving AI Agent!.md", "How To Install Any LLM Locally! Open WebUI (Model Runner) - Easiest Way Possible!.md", "Archon OS First-Ever AI Operating System for AI Coding! (Opensource).md"]
+sources: ["Augment Agent RIP Cursor! NEW Agentic AI IDE! AI Software Engineer Automates Your Code (Opensource).md", "Google's Firebase Studio FULLY FREE AI Code Editor! Generate Full-Stack Apps! (Beats Cursor + Bolt).md", "Hermes Agent The 247 Self-Evolving AI Agent!.md", "How To Install Any LLM Locally! Open WebUI (Model Runner) - Easiest Way Possible!.md", "Archon OS First-Ever AI Operating System for AI Coding! (Opensource).md", "DeepCode NEW Opensource Agentic Coder IS POWERFUL! Can Build ANYTHING!.md", "Sim AI Easily Create AI Agents That Can Automate Anything! Opensource n8n Alternative!.md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [person, ai, youtube, agents]
@@ -24,6 +24,8 @@ YouTube creator covering AI tools, agents, and coding assistants. Tends to publi
 - [[summary-worldofai-hermes-agent|Hermes Agent: The 24/7 Self-Evolving AI Agent]] — Walkthrough of [[hermes-agent|Hermes Agent]] by Nous Research; covers GEPA ("backprop for prompts"), local Gemma 4 setup, Obsidian-vault skill demo, finance dashboard build.
 - [[summary-worldofai-docker-model-runner|How To Install Any LLM Locally with Docker Model Runner]] — Walkthrough of [[docker-model-runner|Docker Model Runner]], the local LLM runtime built into Docker Desktop. OCI packaging, no CUDA/GPU drivers, Open WebUI integration.
 - [[summary-worldofai-archon-os|Archon OS: First-Ever AI Operating System for AI Coding]] — Walkthrough of [[archon-os|Archon OS]], Cole Medin's command center that gives any AI coding agent a unified knowledge base and editable real-time task list via MCP.
+- [[summary-worldofai-deepcode|DeepCode: NEW Opensource Agentic Coder]] — Walkthrough of [[deepcode|DeepCode]] from HKUDS: multi-agent platform with Paper2Code, Text2Web, Text2Backend pipelines. Single-prompt project management web app demo.
+- [[summary-worldofai-sim-ai|Sim AI: Open-Source n8n Alternative]] — Walkthrough of [[sim-ai|Sim AI]], a visual drag-and-drop AI agent workflow builder with 60+ integrations and multi-model support.
 
 ## Key Ideas
 
@@ -38,4 +40,6 @@ YouTube creator covering AI tools, agents, and coding assistants. Tends to publi
 - [[hermes-agent]]
 - [[docker-model-runner]]
 - [[archon-os]]
+- [[deepcode]]
+- [[sim-ai]]
 - [[cursor]]

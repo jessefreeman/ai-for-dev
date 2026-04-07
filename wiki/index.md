@@ -93,6 +93,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[llama|Llama]] — Meta's open-weights model family; pioneered local LLM inference.
 - [[deepseek|DeepSeek]] — Chinese lab open-weights model; stronger than Llama as of 2026.
 - [[qwen|Qwen]] — Alibaba's open-weights model family; among the top open-source models.
+- [[deepcode|DeepCode]] — Open-source multi-agent coding platform from HKUDS; Paper2Code, Text2Web, Text2Backend.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -167,6 +168,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-worldofai-docker-model-runner|Docker Model Runner Walkthrough]] — WorldofAI on the Docker-native local LLM runtime.
 - [[summary-nate-herk-ultra-plan|Planning in Claude Code Just Got a Huge Upgrade]] — Nate Herk on Claude Code's new Ultra Plan: cloud Opus 4.6 + multi-agent exploration.
 - [[summary-worldofai-archon-os|Archon OS Walkthrough]] — WorldofAI on Cole Medin's AI coding command center.
+- [[summary-worldofai-deepcode|DeepCode Walkthrough]] — WorldofAI on HKUDS's multi-agent coding platform with Paper2Code.
 
 ## Contribute or build your own
 
