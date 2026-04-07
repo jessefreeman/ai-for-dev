@@ -8,6 +8,17 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Meet Bjorn (The Cyber Mentor) — re-ingested
+- **Source**: YouTube transcript by The Cyber Mentor on building Bjorn (Raspberry Pi network pentest tool)
+- **Status**: Originally skipped as off-topic in batch 3 lint plan. **User reframed**: relevant as a defensive audit tool for self-hosters running local AI infrastructure (Ollama, Archon OS, Open WebUI, Supabase, GPU-passthrough rigs) on the same LAN.
+- **Pages created** (3):
+  - `summary-tcm-bjorn-network-pentest-pi.md` — Source summary with defensive framing
+  - `wiki/open-source/bjorn.md` — Entity: open-source automated network reconnaissance + brute-force tool on Pi Zero 2W; reframed for self-hoster defensive use
+  - `wiki/people/the-cyber-mentor.md` — Entity: Heath Adams, TCM Security Academy founder
+- **Updated**: `wiki/people/joshua-clarke.md` (cross-link to TCM as adjacent cybersec creator), `wiki/index.md`
+- **Memory**: 1 atomized memory file (`bjorn-defensive-pentest-pi.md`)
+- **Note**: This is the first wiki entry whose framing differs significantly from the source's framing. The video is offensive-pentesting-pedagogy; the wiki framing is defensive-audit-for-self-hosted-AI-infrastructure. Both are accurate; the wiki framing is what makes it useful in this knowledge base.
+
 ## [2026-04-07] lint: 2026-04-07 (round 2) — post-batch-3 cleanup
 - **Group A — re-fixed two regressions from the first lint pass**:
   - `[[proxmox-ai-host-ultra7-265k]]` → `[[proxmox-ultra7-265k]]` in 2 rig pages (`asus-zephyrus-g16-ultra9-185h.md`, `msi-codex-r-i5-12400f.md`). Verified with grep this time.

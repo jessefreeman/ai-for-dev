@@ -31,3 +31,5 @@ Cybersecurity educator on YouTube. Focus: ethical hacking, security operations, 
 - [[ollama]]
 - [[open-webui]]
 - [[open-source-model-integration]]
+- [[the-cyber-mentor]] — adjacent cybersec educator with offensive-tool focus
+- [[bjorn]] — defensive audit tool for self-hosters running local AI infrastructure

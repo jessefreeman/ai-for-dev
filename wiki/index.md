@@ -43,6 +43,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[ras-mic|Ras Mic]] — Engineer at Tempo; non-technical AI infrastructure explainer.
 - [[pixegami|pixegami]] — Python LLM tutorial creator; RAG, LangChain, pytest patterns.
 - [[alex-ziskind|Alex Ziskind]] — Local LLM benchmarks; vLLM/FP8/Apple Silicon vs Nvidia hardware deep dives.
+- [[the-cyber-mentor|The Cyber Mentor (Heath Adams)]] — Cybersecurity educator; founder of TCM Security Academy.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -97,6 +98,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[deepseek|DeepSeek]] — Chinese lab open-weights model; stronger than Llama as of 2026.
 - [[qwen|Qwen]] — Alibaba's open-weights model family; among the top open-source models.
 - [[deepcode|DeepCode]] — Open-source multi-agent coding platform from HKUDS; Paper2Code, Text2Web, Text2Backend.
+- [[bjorn|Bjorn]] — Open-source Raspberry Pi network pentest tool; defensive audit for self-hosted AI infrastructure.
 - [[vllm|vLLM]] — High-throughput LLM inference engine; saturates Nvidia GPUs with concurrent requests.
 
 ### Concepts
@@ -176,6 +178,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-worldofai-deepcode|DeepCode Walkthrough]] — WorldofAI on HKUDS's multi-agent coding platform with Paper2Code.
 - [[summary-worldofai-sim-ai|Sim AI Walkthrough]] — WorldofAI on the open-source n8n alternative for AI agent workflows.
 - [[summary-alex-ziskind-vllm-fp8|THIS is the REAL DEAL for local LLMs]] — Alex Ziskind on vLLM + FP8 + RTX PRO 6000; 5,800 tok/s sustained.
+- [[summary-tcm-bjorn-network-pentest-pi|Meet Bjorn, the Easy to Build Hacking Tool]] — TCM walkthrough of building a Raspberry Pi network pentest device; defensive audit angle for self-hosters.
 
 ## Contribute or build your own
 
