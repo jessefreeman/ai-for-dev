@@ -39,6 +39,8 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[bmad-code|BMad Code (Brian)]] — Creator of the BMAD Method; 20-year software vet on agile + AI workflows.
 - [[joshua-clarke|Joshua Clarke]] — Cybersecurity educator; local AI for private security workflows.
 - [[global-science-network|Global Science Network]] — YouTube channel on offline AI, hardware NNs, privacy-first computing.
+- [[greg-isenberg|Greg Isenberg]] — Founder/podcaster; startup-ideas community Startup Empire.
+- [[ras-mic|Ras Mic]] — Engineer at Tempo; non-technical AI infrastructure explainer.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -102,6 +104,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[frontier-operations|Frontier Operations]] — Five persistent skills for working at the expanding AI/human boundary.
 - [[bmad-method|BMAD Method]] — Agile AI-Driven Development; six AI personas (BA → PM → Architect → PO → SM → Dev).
 - [[ai-coding-workflow|AI Coding Workflow]] — Cole Medin's PLANNING.md + TASK.md + global rules + MCP servers pattern.
+- [[mcp|Model Context Protocol (MCP)]] — Anthropic's standard for connecting LLMs to tools, services, and data.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -150,6 +153,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-gemma4guide-vram-requirements|Gemma 4 VRAM Requirements]] — Reference article: GPU + Mac sizing for every Gemma 4 model.
 - [[summary-worldofai-firebase-studio|Firebase Studio Walkthrough]] — WorldofAI on Google's free agentic dev environment.
 - [[summary-global-science-network-dolphin-llama3|Dolphin Llama 3 Offline]] — Running an uncensored Llama variant from a USB drive via Ollama + AnythingLLM.
+- [[summary-greg-isenberg-mcp-explained|MCP Clearly Explained]] — Ras Mic's non-technical walkthrough of MCP on the Greg Isenberg podcast.
 
 ## Contribute or build your own
 

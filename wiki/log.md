@@ -8,6 +8,15 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | MCP Clearly Explained (Greg Isenberg + Ras Mic)
+- **Source**: YouTube podcast episode — Greg Isenberg hosts Ras Mic on MCP
+- **Pages created** (4):
+  - `summary-greg-isenberg-mcp-explained.md` — Source summary
+  - `wiki/concepts/mcp.md` — Concept: canonical MCP page (resolves missing page from lint audit)
+  - `wiki/people/greg-isenberg.md` — Entity: founder/podcaster
+  - `wiki/people/ras-mic.md` — Entity: technical explainer at Tempo
+- **Updated**: `wiki/index.md`
+
 ## [2026-04-07] ingest | Dolphin Llama 3 Offline (Global Science Network)
 - **Source**: YouTube transcript by Global Science Network on running Dolphin Llama 3 from a USB drive
 - **Pages created** (2):
