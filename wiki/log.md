@@ -8,6 +8,13 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Python RAG Tutorial (pixegami)
+- **Source**: YouTube transcript by pixegami on building a local RAG app over PDFs
+- **Pages created** (2):
+  - `summary-pixegami-python-rag-tutorial.md` — Source summary
+  - `wiki/people/pixegami.md` — Entity: Python LLM tutorial creator
+- **Updated**: `wiki/index.md`
+
 ## [2026-04-07] ingest | MCP Clearly Explained (Greg Isenberg + Ras Mic)
 - **Source**: YouTube podcast episode — Greg Isenberg hosts Ras Mic on MCP
 - **Pages created** (4):

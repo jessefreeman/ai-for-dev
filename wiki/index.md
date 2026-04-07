@@ -41,6 +41,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[global-science-network|Global Science Network]] — YouTube channel on offline AI, hardware NNs, privacy-first computing.
 - [[greg-isenberg|Greg Isenberg]] — Founder/podcaster; startup-ideas community Startup Empire.
 - [[ras-mic|Ras Mic]] — Engineer at Tempo; non-technical AI infrastructure explainer.
+- [[pixegami|pixegami]] — Python LLM tutorial creator; RAG, LangChain, pytest patterns.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -154,6 +155,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-worldofai-firebase-studio|Firebase Studio Walkthrough]] — WorldofAI on Google's free agentic dev environment.
 - [[summary-global-science-network-dolphin-llama3|Dolphin Llama 3 Offline]] — Running an uncensored Llama variant from a USB drive via Ollama + AnythingLLM.
 - [[summary-greg-isenberg-mcp-explained|MCP Clearly Explained]] — Ras Mic's non-technical walkthrough of MCP on the Greg Isenberg podcast.
+- [[summary-pixegami-python-rag-tutorial|Python RAG Tutorial (Local LLMs)]] — pixegami builds a PDF RAG app with chunk IDs and LLM-as-judge tests.
 
 ## Contribute or build your own
 
