@@ -65,6 +65,7 @@ The death spiral hits horizontal SaaS sold per seat to knowledge workers — not
 - [[frontier-operations]] — the surviving roles operate at the expanding AI/human boundary
 - [[ai-coding-workflow]] + [[bmad-method]] — process discipline becomes the moat for individual operators in the new regime
 - [[mcp]] — the standard that makes orchestration platforms possible
+- [[open-swe]] — open-source async coding agent (LangChain/LangGraph); another data point in the agentic-coding-platform fragmentation. Distinctive for being self-hostable + bring-your-own-model + free
 
 ## Policy responses
 

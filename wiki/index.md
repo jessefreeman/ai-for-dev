@@ -52,6 +52,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[openai|OpenAI]] — US frontier-AI lab; ChatGPT, Codex, the Industrial Policy paper. PBC structure.
 - [[google|Google]] — Big-tech AI org spanning Gemini (frontier), Gemma 4 (open weights), Firebase Studio, Stitch, Vertex AI, plus Waymo/DeepMind.
 - [[nous-research|Nous Research]] — Open-source AI research collective; Hermes Agent + GEPA self-improving loop.
+- [[langchain|LangChain]] — AI framework vendor (LangChain library, LangGraph, Open-SWE); open-source frameworks + paid LangSmith observability.
 - [[lovable|Lovable]] — European no-code AI app builder; afternoon-to-prototype tool referenced across multiple wiki sources.
 
 ### Frontier Models
@@ -89,6 +90,7 @@ New content appears as I read, watch, and research. The site updates automatical
 ### Open-Source Projects
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
 - [[unsloth|Unsloth]] — Fast, free fine-tuning library for open-weights LLMs; LoRA + GGUF export pipeline that runs on free Colab T4.
+- [[open-swe|Open-SWE]] — LangChain's open-source async AI coding agent on LangGraph; self-hostable, bring-your-own-model, free Jules alternative.
 - [[blender-mcp|Blender MCP]] — Natural language to 3D via MCP bridge to Blender's Python API.
 - [[gstack|GStack]] — YC President Gary Tan's startup methodology as Claude Code skills.
 - [[hermes-agent|Hermes Agent]] — Self-improving agent framework with closed learning loop.
@@ -195,6 +197,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-openai-industrial-policy-intelligence-age|Industrial Policy for the Intelligence Age]] — OpenAI's first major public policy paper; 21 proposals + heavy interested-party caveats.
 - [[summary-tech-with-tim-fine-tune-ollama|EASIEST Way to Fine-Tune a LLM and Use It With Ollama]] — Tech With Tim: Unsloth + LoRA + GGUF + Ollama Modelfile workflow.
 - [[summary-wolfgangs-channel-self-host-ai-code-assistant|Host Your Own AI Code Assistant with Docker, Ollama and Continue!]] — Wolfgang's Channel: 7900XTX gaming PC vs MiniPC for local Copilot; "GPU is the cliff."
+- [[summary-worldofai-open-swe|Open-SWE: Opensource Jules!]] — WorldofAI on LangChain's open-source async coding agent built on LangGraph.
 
 ## Contribute or build your own
 
