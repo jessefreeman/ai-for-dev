@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Augment Agent RIP Cursor! NEW Agentic AI IDE! AI Software Engineer Automates Your Code (Opensource).md", "Google's Firebase Studio FULLY FREE AI Code Editor! Generate Full-Stack Apps! (Beats Cursor + Bolt).md", "Hermes Agent The 247 Self-Evolving AI Agent!.md", "How To Install Any LLM Locally! Open WebUI (Model Runner) - Easiest Way Possible!.md"]
+sources: ["Augment Agent RIP Cursor! NEW Agentic AI IDE! AI Software Engineer Automates Your Code (Opensource).md", "Google's Firebase Studio FULLY FREE AI Code Editor! Generate Full-Stack Apps! (Beats Cursor + Bolt).md", "Hermes Agent The 247 Self-Evolving AI Agent!.md", "How To Install Any LLM Locally! Open WebUI (Model Runner) - Easiest Way Possible!.md", "Archon OS First-Ever AI Operating System for AI Coding! (Opensource).md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [person, ai, youtube, agents]
@@ -23,6 +23,7 @@ YouTube creator covering AI tools, agents, and coding assistants. Tends to publi
 - [[summary-worldofai-firebase-studio|Google's Firebase Studio: FULLY FREE AI Code Editor]] — Walkthrough of [[firebase-studio|Firebase Studio]], Google's Project IDX rebrand combining Gemini, Firebase, and Genkit.
 - [[summary-worldofai-hermes-agent|Hermes Agent: The 24/7 Self-Evolving AI Agent]] — Walkthrough of [[hermes-agent|Hermes Agent]] by Nous Research; covers GEPA ("backprop for prompts"), local Gemma 4 setup, Obsidian-vault skill demo, finance dashboard build.
 - [[summary-worldofai-docker-model-runner|How To Install Any LLM Locally with Docker Model Runner]] — Walkthrough of [[docker-model-runner|Docker Model Runner]], the local LLM runtime built into Docker Desktop. OCI packaging, no CUDA/GPU drivers, Open WebUI integration.
+- [[summary-worldofai-archon-os|Archon OS: First-Ever AI Operating System for AI Coding]] — Walkthrough of [[archon-os|Archon OS]], Cole Medin's command center that gives any AI coding agent a unified knowledge base and editable real-time task list via MCP.
 
 ## Key Ideas
 
@@ -36,4 +37,5 @@ YouTube creator covering AI tools, agents, and coding assistants. Tends to publi
 - [[firebase-studio]]
 - [[hermes-agent]]
 - [[docker-model-runner]]
+- [[archon-os]]
 - [[cursor]]

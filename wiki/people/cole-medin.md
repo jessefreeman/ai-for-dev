@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Build BEAUTIFUL Diagrams with Claude Code (Full Workflow).md", "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead).md", "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now).md", "Code 100x Faster with AI, Here's How (No Hype, FULL Process).md"]
+sources: ["Build BEAUTIFUL Diagrams with Claude Code (Full Workflow).md", "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead).md", "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now).md", "Code 100x Faster with AI, Here's How (No Hype, FULL Process).md", "Archon OS First-Ever AI Operating System for AI Coding! (Opensource).md"]
 created: 2026-04-06
 updated: 2026-04-07
 tags: [person, ai, claude-code, rag, educator]
@@ -34,9 +34,11 @@ AI educator and developer. Runs the Dynamis community. Focuses on practical Clau
 - Self-healing coding workflow: agent fixes blocking issues during testing, reports moderate/minor for human decision — not vibe coding, but delegated validation
 - The PLANNING.md + TASK.md + workspace-global-rules pattern lets user prompts stay short because all the discipline is encoded outside the prompt itself — see [[ai-coding-workflow]]
 - **Never trust the LLM with env vars, DB security, or API keys** — these belong to the human, period
+- **Archon OS** — Cole's productized "AI OS for AI coding" — a persistent knowledge + task backbone any MCP client can plug into. The heavyweight version of his PLANNING.md/TASK.md pattern. See [[archon-os]].
 
 ## See Also
 
+- [[archon-os]] — Cole's flagship project
 - [[Claude Code]]
 - [[RAG vs Wiki]]
 - [[AutoResearch and Evals]] — related skill improvement methodology
