@@ -8,6 +8,14 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Local AI for Cybersec (Joshua Clarke)
+- **Source**: YouTube transcript by Joshua Clarke on Ollama + Open WebUI for cybersecurity workflows
+- **Pages created** (3):
+  - `summary-joshua-clarke-local-ai-cybersec.md` — Source summary
+  - `wiki/tools/open-webui.md` — Entity: self-hosted ChatGPT-like UI for local models
+  - `wiki/people/joshua-clarke.md` — Entity: cybersecurity educator
+- **Updated**: `wiki/index.md`
+
 ## [2026-04-07] ingest | Better Than Vibe Coding: BMAD Method (BMad Code)
 - **Source**: YouTube transcript by BMad Code (Brian) introducing the BMAD Method
 - **Pages created** (3):

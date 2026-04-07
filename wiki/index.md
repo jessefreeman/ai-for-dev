@@ -37,6 +37,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[stephen-g-pope|Stephen G. Pope]] — Creator of ThePopeBot; autonomous agent architecture.
 - [[worldofai|WorldofAI]] — YouTube creator covering AI tools and agentic IDE launches.
 - [[bmad-code|BMad Code (Brian)]] — Creator of the BMAD Method; 20-year software vet on agile + AI workflows.
+- [[joshua-clarke|Joshua Clarke]] — Cybersecurity educator; local AI for private security workflows.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -60,6 +61,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[openrouter|OpenRouter]] — Unified API gateway for hundreds of AI models, including free tiers.
 - [[paperclip|Paperclip]] — Open-source multi-agent orchestration dashboard; MIT licensed.
 - [[anything-llm|AnythingLLM]] — All-in-one local AI app for document chat, agents, and automations.
+- [[open-webui|Open WebUI]] — Self-hosted ChatGPT-like web interface for local LLMs via Ollama.
 - [[minimax-m2-7|MiniMax M2.7]] — Closed-source model claiming to outperform Opus 4.6 at 20x lower cost.
 
 ### Open-Source Projects
@@ -139,6 +141,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-nate-b-jones-ai-professional-interface|AI Professional Interface]] — Replace hiring pipeline with AI-powered personal interface.
 - [[summary-worldofai-augment-agent|Augment Agent: RIP Cursor]] — WorldofAI walkthrough of Augment Agent's SWE-bench launch.
 - [[summary-bmad-code-aiadd-method|Better Than Vibe Coding]] — BMad Code introduces the BMAD Method (six Agile AI personas).
+- [[summary-joshua-clarke-local-ai-cybersec|Local AI for Cybersec]] — Joshua Clarke on Ollama + Open WebUI for private security writing.
 
 ## Contribute or build your own
 
