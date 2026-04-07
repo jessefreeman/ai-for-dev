@@ -46,7 +46,10 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[the-cyber-mentor|The Cyber Mentor (Heath Adams)]] — Cybersecurity educator; founder of TCM Security Academy.
 
 ### Organizations
+- [[anthropic|Anthropic]] — US frontier-AI lab; Claude, Claude Code, the MCP standard, the Claude Code architecture leak. PBC structure.
 - [[openai|OpenAI]] — US frontier-AI lab; ChatGPT, Codex, the Industrial Policy paper. PBC structure.
+- [[google|Google]] — Big-tech AI org spanning Gemini (frontier), Gemma 4 (open weights), Firebase Studio, Stitch, Vertex AI, plus Waymo/DeepMind.
+- [[nous-research|Nous Research]] — Open-source AI research collective; Hermes Agent + GEPA self-improving loop.
 - [[lovable|Lovable]] — European no-code AI app builder; afternoon-to-prototype tool referenced across multiple wiki sources.
 
 ### Frontier Models
