@@ -9,7 +9,7 @@ tags: [article, video, llm, knowledge-management, claude-code, obsidian]
 # Andrej Karpathy Just 10x'd Everyone's Claude Code
 
 **Source**: YouTube video by [[Nate Herk]] (published 2026-04-05)
-**Raw**: [[raw/archive/Andrej Karpathy Just 10x'd Everyone's Claude Code.md|Original Transcript]]
+**Raw**: [Original Transcript](../../raw/archive/Andrej%20Karpathy%20Just%2010x%27d%20Everyone%27s%20Claude%20Code.md)
 
 ## Summary
 

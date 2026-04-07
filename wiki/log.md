@@ -8,6 +8,17 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] lint: 2026-04-07 (round 2) — post-batch-3 cleanup
+- **Group A — re-fixed two regressions from the first lint pass**:
+  - `[[proxmox-ai-host-ultra7-265k]]` → `[[proxmox-ultra7-265k]]` in 2 rig pages (`asus-zephyrus-g16-ultra9-185h.md`, `msi-codex-r-i5-12400f.md`). Verified with grep this time.
+  - `[[raw/archive/Andrej Karpathy...]]` wikilink → relative markdown link in `summary-karpathy-10x-claude-code.md`. Verified.
+- **Group B — filled new gap**: created [[supabase]] entity page. Convergence point across [[OpenBrain]], [[archon-os]], [[ai-coding-workflow]], [[sim-ai]], [[mcp]] one-shot demo. Updated `wiki/index.md` Tools section.
+- **Group 5 — refreshed `wiki/overview.md`**: was 13 sources stale. Now covers all 45 sources, the new themes (planning-first AI coding workflows, local AI throughput stack, agentic coding platform proliferation, SaaS death spiral), the new key pages (mcp, archon-os, supabase, vllm, fp8-quantization, hermes-agent expansions), and corrected the top benchmark rig reference (Lenovo P8 Threadripper, not Ultra 7 265K).
+- **Group 6 — refreshed `wiki/tasks.md`**: reorganized into High Priority / People & Orgs / Models / Tools / Deeper Investigations / Open Questions / Completed sections. Added new candidates from batches 1–3: Lovable, Nous Research, HKUDS, Kimi K2, Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model, Bret Fisher's gist, vLLM FP4 follow-up, etc. Marked Supabase + vLLM + FP8 + MCP + Gemma 4 VRAM + lint pass as completed.
+- **Group C deferred**: `[[proxmox-mobile-hx-pro-370]]` (still 2 broken refs) — user undecided across two lint passes. Added to tasks.md Open Questions.
+- **Group D deferred**: stub pages, tag taxonomy survey.
+- No orphans, no contradictions, no frontmatter drift.
+
 ## [2026-04-07] ingest | THIS is the REAL DEAL for local LLMs (Alex Ziskind)
 - **Source**: YouTube transcript by Alex Ziskind on vLLM + FP8 + RTX PRO 6000 Blackwell
 - **Pages created** (4):

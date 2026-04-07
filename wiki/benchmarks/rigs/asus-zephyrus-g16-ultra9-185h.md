@@ -47,4 +47,4 @@ The RTX 4090 Laptop carries the score; the Intel NPU is the standout for INT8 wo
 ## See Also
 - [[methodology|Benchmark Methodology]]
 - [[asus-zephyrus-g15-6900hs|Zephyrus G15]] — predecessor
-- [[proxmox-ai-host-ultra7-265k|Proxmox host (Ultra 7 265K)]] — same Meteor Lake family
+- [[proxmox-ultra7-265k|Proxmox host (Ultra 7 265K)]] — same Meteor Lake family

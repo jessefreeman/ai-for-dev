@@ -71,5 +71,5 @@ The 5090 configuration is the highest-scoring rig in this collection. Note that 
 
 ## See Also
 - [[methodology|Benchmark Methodology]]
-- [[proxmox-ai-host-ultra7-265k|Proxmox host (Ultra 7 265K)]] — also tested with 5090 and 3090
+- [[proxmox-ultra7-265k|Proxmox host (Ultra 7 265K)]] — also tested with 5090 and 3090
 - [[Gemma 4 VRAM Requirements]] — VRAM-driven model picks

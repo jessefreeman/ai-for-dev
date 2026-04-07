@@ -7,60 +7,90 @@ tags: [ai, llm, knowledge-management, agent]
 
 # Overview
 
-This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, cost-effective AI workflows, the command-line creative stack, the agent proactivity/memory layer, and personal hardware capacity for local AI.
+This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
+
+**Current state:** 45 sources ingested; 16-rig personal hardware benchmark section.
 
 ## Themes
 
 ### Knowledge Compounding
-The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value that chat-based or RAG-based approaches don't. Cross-references, contradictions, and synthesis are pre-compiled. See [[RAG vs Wiki]] and [[summary-cole-medin-rag-for-code|Cole Medin's RAG dead-for-code thesis]].
+The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value that chat-based or RAG-based approaches don't. Cross-references, contradictions, and synthesis are pre-compiled. See [[RAG vs Wiki]] and [[summary-cole-medin-rag-for-code|Cole Medin's RAG-dead-for-code thesis]].
 
 ### Production Agent Architecture
 [[Nate B Jones]]'s body of work defines the architectural layer: the [[Agentic Harness Primitives]] (12 primitives from the Claude Code leak), the three-Lego-brick model (memory + proactivity + tools), and the argument that [[OpenClaw]]'s 200k-star appeal is reducible to these primitives. The [[Claude Code]] ecosystem now includes multiple skill/plugin layers ([[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]]) each encoding different methodologies.
 
-### Agent Proactivity and Memory
-[[/loop]] (Anthropic, March 2026) gives agents a native heartbeat. [[OpenBrain]] (Postgres + PGVector + MCP, ~$0.10/month) gives them persistent memory. Together they enable accumulated-value loops: each cycle informed by all previous cycles. [[AutoResearch and Evals]] provides the convergence logic — binary evals, objective metrics, mutation. [[ThePopeBot]] is the self-hosted variant: Docker + GitHub Actions + [[Ollama]], no cloud dependency. [[Hermes Agent]] takes a different approach with a closed learning loop and autonomous skill creation.
+### Agent Proactivity, Memory, and Self-Improvement
+Three converging primitives: [[/loop]] (Anthropic, March 2026) gives agents a native heartbeat; [[OpenBrain]] (Postgres + PGVector + MCP via [[supabase|Supabase]], ~$0.10/month) gives them persistent memory; [[mcp|MCP]] gives them tool reach. Together they enable accumulated-value loops.
 
-### Five Levels of AI Coding
-[[Five Levels of AI Coding]] (Dan Shapiro's L0→L5 framework) anchors a major thread: from "spicy autocomplete" to the [[Attractor|StrongDM dark factory]] where 3 humans run an entire engineering org. The J-curve, the collapsing junior pipeline, and the METR study (experienced devs 19% slower with AI) all live here. [[Frontier Operations]] and the [[Four Prompting Disciplines]] describe the persistent skills required as the AI/human boundary expands.
+The self-improvement frontier: [[hermes-agent|Hermes Agent]]'s **GEPA** loop ("backpropagation for prompts, not weights") pauses every ~15 tool calls, reviews failures, and updates the agent's own prompts and skills without fine-tuning. [[ThePopeBot]] is the self-hosted variant: Docker + GitHub Actions + [[Ollama]]. [[autoresearch-evals|AutoResearch]] is the conceptual root.
 
-### The Four Prompting Disciplines
-[[Four Prompting Disciplines]]: prompt craft → context engineering → intent engineering → specification engineering. Each layer is a more durable skill than the last. Specifications (the five primitives) are how senior operators stay relevant.
+### Planning-First AI Coding Workflows
+A major thread that crystallized in early April 2026: **structured thinking before code, executed by agents.**
 
-### Local AI and Cost Optimization
-[[llama.cpp]] is the invisible foundation: GGUF format, quantization (Q4_K_M = 4-bit, ~55% memory savings), optimized kernels for every platform. [[Ollama]] wraps it. [[TurboQuant]] extends it with 4x context windows. [[Open-Source Model Integration]] demonstrates 50–100x cost reduction via model substitution. [[Project Nomad]] takes local AI to its logical extreme: fully offline knowledge infrastructure.
+- [[ai-coding-workflow|Cole Medin's lightweight pattern]] — `PLANNING.md` + `TASK.md` + workspace global rules + three core MCP servers (filesystem, Brave, git)
+- [[bmad-method|Brian's heavyweight pattern]] — six Agile personas (BA → PM → Architect → PO → SM → Dev) producing markdown artifacts in a fresh chat thread
+- [[claude-code|Claude Code Ultra Plan]] — cloud-hosted Opus 4.6 with 3 parallel exploration agents + 1 critique agent; automates what Cole and Brian do by hand
+- [[meta-prompting|Meta-prompting]] — Nate B Jones's wrapper-pattern for sloppy human input on GPT-5 ("a speedboat with a really big rudder")
+- [[four-prompting-disciplines]] — the broader theory: prompt craft → context engineering → intent engineering → specification engineering
+
+[[archon-os]] is the productized layer underneath: a hosted MCP-based knowledge + task backbone that any AI coding agent ([[claude-code|Claude Code]], [[cursor|Cursor]], Kira) can plug into.
+
+### Five Levels of AI Coding & SaaS Death Spiral
+[[Five Levels of AI Coding]] (Dan Shapiro's L0→L5 framework) anchors the architectural-consequence thread: from "spicy autocomplete" to the [[Attractor|StrongDM dark factory]] where 3 humans run an entire engineering org. The J-curve, the collapsing junior pipeline, and the METR study all live here.
+
+[[saas-death-spiral|The SaaS death spiral]] is the market consequence: ~$1T in SaaS megacap valuation erased in early 2026 because per-seat pricing breaks when an AI agent does 10 people's work in 10 milliseconds. [[fireship|Fireship]]'s thesis. New tool [[github-agent-hq]] is the orchestration-platform play that absorbs the vacated spend.
+
+[[Frontier Operations]] and [[meta-prompting]] describe the persistent skills required to operate at the expanding AI/human boundary.
+
+### Local AI Throughput Stack
+[[llama-cpp|llama.cpp]] is the foundation: GGUF format, integer quantization (Q4_K_M, Q5_K_M, Q8). [[Ollama]] wraps it. [[Open WebUI]] is the canonical chat UI. [[docker-model-runner|Docker Model Runner]] is the container-native alternative. [[turboquant|TurboQuant]] extends the same hardware with 4x context windows.
+
+The **throughput ceiling** is unlocked by [[vllm|vLLM]] + [[fp8-quantization|FP8 quantization]] on Nvidia Blackwell. [[Alex Ziskind]]'s benchmark on RTX PRO 6000: same model + same hardware, **vLLM hits 5,800 tok/s vs LM Studio's 80** because LM Studio cannot parallelize requests. Code completion is the use case where parallelism matters most — even for solo developers. This is the practical justification for the top-spend rig in [[benchmarks/index|the personal benchmarks section]].
+
+[[Open-Source Model Integration]] demonstrates 50–100x cost reduction via model substitution. [[Project Nomad]] takes local AI to its logical extreme: fully offline knowledge infrastructure.
 
 ### Open-Source Model Landscape
-Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (Google, 31B) ranks #3 globally. [[MiniMax M2.7]] claims to outperform Claude Opus 4.6 at 20x lower cost. For 95% of use cases, open-source is sufficient.
+Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (Google, 31B) ranks #3 globally — see [[gemma-4-vram-requirements]] for full GPU + Mac sizing. [[MiniMax M2.7]] claims to outperform Claude Opus 4.6 at 20x lower cost. For 95% of use cases, open-source is sufficient.
 
-### Frontier Model Specialties
-[[ChatGPT]] = ease of use; [[Claude]] = work and coding; [[Gemini]] = search, deep research, and unique video ingestion; [[Grok]] = real-time Twitter/X.
+### Frontier Model Specialties & Prompting
+[[ChatGPT]] = ease of use (now needs [[meta-prompting]] for GPT-5's literalism); [[Claude]] = work and coding; [[Gemini]] = search, deep research, video ingestion; [[Grok]] = real-time Twitter/X.
+
+### Agentic Coding Platform Proliferation
+The market is fragmenting fast. [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]], [[firebase-studio|Firebase Studio]], [[archon-os|Archon OS]], [[deepcode|DeepCode]] all coexist with overlapping but distinct positioning. [[Augment Agent]] claims #1 OSS on SWE-bench Verified at 65.4%. [[deepcode|DeepCode]]'s standout is **Paper2Code** (research → working implementations). [[firebase-studio|Firebase Studio]] is Google's Project IDX rebrand. [[saas-death-spiral|The death spiral analysis]] explains why this market is fragmenting.
+
+### Visual Workflow & Multi-Agent Orchestration
+Different layers of the same problem:
+- [[sim-ai|Sim AI]] — drag-and-drop visual workflow builder; n8n alternative; AI primitives as first-class nodes
+- [[paperclip|Paperclip]] — multi-agent orchestration at the company level
+- [[hermes-agent|Hermes Agent]], [[OpenClaw]], [[ThePopeBot]] — full personal-agent frameworks
 
 ### The Command-Line Creative Stack
-[[Google Stitch]] (voice→UI, design.md), [[Remotion]] (video-as-code, #1 non-corporate Claude Code skill), [[Blender MCP]] (natural language→3D), [[VoiceBox]] (local TTS / ElevenLabs alternative). MCP turns any tool into an agent-accessible primitive — [[Nate B Jones]]'s "growth hack of 2026" thesis.
+[[Google Stitch]] (voice→UI, design.md), [[Remotion]] (video-as-code, #1 non-corporate Claude Code skill), [[Blender MCP]] (natural language→3D), [[VoiceBox]] (local TTS / ElevenLabs alternative). MCP turns any tool into an agent-accessible primitive.
 
 ### AI as Business
-[[AI Automation Workflows]]: 5 highest-return workflows for selling AI to businesses; clogged-pipe sales framework. [[AI Professional Interface]]: replace the broken hiring pipeline with an AI-powered personal interface (5 components, attention economics, bidirectional fit assessment) — productizable as a client service.
+[[AI Automation Workflows]]: 5 highest-return workflows for selling AI to businesses; clogged-pipe sales framework. [[AI Professional Interface]]: replace the broken hiring pipeline with an AI-powered personal interface — productizable as a client service. [[saas-death-spiral|The death spiral]] explains where the budget for these is coming from.
 
 ### Personal Hardware Benchmarks
-[[benchmarks/index|Benchmark section]] ranks 16 personal rigs by the [[benchmarks/methodology|AI Capability Index]] (S/A/B/C/D tiers). Top: Proxmox host with RTX PRO 6000 Blackwell (978.8, S). Notable: Mac Mini M4 has the highest INT8 quantized score of any rig (51,472), beating every NVIDIA card thanks to the Apple Neural Engine.
+[[benchmarks/index|Benchmark section]] ranks 16 personal rigs by the [[benchmarks/methodology|AI Capability Index]] (S/A/B/C/D tiers). Top: [[benchmarks/rigs/proxmox-lenovo-p8-threadripper|Lenovo P8 Threadripper Proxmox host]] with **RTX PRO 6000 Blackwell Max-Q**. Notable: Mac Mini M4 has the highest INT8 quantized score of any rig (51,472), beating every NVIDIA card thanks to the Apple Neural Engine — but loses on parallelism (see [[vllm]] and [[fp8-quantization]]).
 
 ## Key Pages
 
-- [[Claude Code]] — primary tool; architecture, /loop, skills ecosystem
-- [[Agentic Harness Primitives]] — 12-primitive production framework
-- [[/loop]] + [[OpenBrain]] — agent proactivity + memory stack
-- [[Five Levels of AI Coding]] — L0→L5; dark factory; J-curve
-- [[Four Prompting Disciplines]] — the durable prompting skills
-- [[Frontier Operations]] — five persistent skills at the AI/human boundary
-- [[AutoResearch and Evals]] — self-improving methodology
-- [[llama.cpp]] — the inference engine underlying local AI
-- [[AI Automation Workflows]] + [[AI Professional Interface]] — business framework + applied use case
-- [[benchmarks/index|Personal Benchmarks]] — hardware capacity for local AI
+- [[mcp|MCP]] — the canonical concept page; foundational across the wiki
+- [[claude-code|Claude Code]] — primary tool; /loop, /ultra-plan, skills ecosystem
+- [[archon-os]] — Cole Medin's MCP-based knowledge + task backbone
+- [[supabase|Supabase]] — the convergence point for memory, coding workflows, visual builders
+- [[vllm]] + [[fp8-quantization]] — the local-AI throughput ceiling on Nvidia Blackwell
+- [[ai-coding-workflow]] + [[bmad-method]] + [[meta-prompting]] — the planning-discipline thread
+- [[saas-death-spiral]] + [[five-levels-of-ai-coding]] — the market + architectural thesis
+- [[OpenBrain]] + [[/loop]] — the agent proactivity/memory primitives
+- [[hermes-agent]] (GEPA) + [[ThePopeBot]] — self-improving agent frameworks
+- [[benchmarks/index]] — personal hardware capacity for local AI
 
 ## Gaps & Next Steps
 
-- Karpathy's original gist — canonical source for the LLM Wiki pattern (still uningested)
-- AI 2027 article — referenced but only stub
-- Dan Shapiro, StrongDM, METR study — primary sources for the Five Levels thread
-- Lovable — referenced repeatedly but no entity page
-- Shadow factory agency model — Jesse's business vision; deeper L4/L5 economics research
+- Karpathy's gist, AI 2027, Dan Shapiro, StrongDM, METR study — long-standing primary sources still uningested
+- Lovable — referenced repeatedly across multiple sources, no entity page
+- Kimi K2, Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model — mentioned but no entity pages
+- Nous Research, HKUDS — orgs behind Hermes Agent and DeepCode, both worth tracking
+- Bret Fisher's Open WebUI + Docker Model Runner gist — referenced but not pulled
+- Two broken `[[proxmox-mobile-hx-pro-370]]` rig links (lint open question)

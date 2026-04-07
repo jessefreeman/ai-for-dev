@@ -56,6 +56,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[github-agent-hq|GitHub Agent HQ]] — Microsoft's evolution of GitHub into a full AI agent orchestration platform.
 - [[archon-os|Archon OS]] — Cole Medin's open-source command center for AI coding agents; unified knowledge + task layer via MCP.
 - [[sim-ai|Sim AI]] — Open-source visual AI agent workflow builder; n8n alternative with 60+ integrations.
+- [[supabase|Supabase]] — Open-source Postgres + PGVector + auth backend; convergence point for OpenBrain, Archon OS, Sim AI, and AI coding workflows.
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki. Now with /loop and a skills ecosystem.
 - [[cursor|Cursor]] — AI-native code editor; one of the first coding agents.
 - [[codex|Codex]] — OpenAI's coding agent harness.
