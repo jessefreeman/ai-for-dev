@@ -6,125 +6,86 @@ This vault is a **personal knowledge base** maintained by an LLM agent. The huma
 
 This wiki tracks **AI tools, techniques, and workflows for developers** — production agent architecture, the planning-first AI coding stack, the local-AI throughput layer, agent proactivity/memory primitives, AI ethics and policy as industry-observability signal, business models in the post-SaaS world, and personal hardware capacity for local inference. Adjacent topics are in scope when they materially affect the above (e.g., self-hosting infrastructure, defensive network security for self-hosted AI rigs).
 
-> **Important**: this scope statement is the **only** place where the wiki's topic focus lives. Everything in `.instructions/` is intentionally topic-agnostic — the same prompts, templates, and rules would work for any LLM-maintained personal knowledge base. When the lint prompt asks "is this page off-topic?", the answer is determined by *this section* of `CLAUDE.md`, not by any rule file.
+> **Important**: this scope statement is the **only** place where the wiki's topic focus lives. Everything in `.instructions/core/` is intentionally topic-agnostic — the same prompts, templates, and rules would work for any LLM-maintained personal knowledge base. When the lint prompt asks "is this page off-topic?", the answer comes from *this section*, not from any rule file.
 
 ## Git Rules
 
 - Never add `Co-Authored-By` or any Claude attribution to commit messages.
 - Commits should appear under the repo owner's account only.
+- Don't auto-close GitHub issues from commit messages — use `Refs #N`, not `Closes #N`. The user closes issues themselves after verification.
 
 ## Roles
 
-- **Human**: Adds sources to `raw/`, asks questions, directs analysis, reviews wiki pages.
+- **Human**: Adds sources to `raw/`, asks questions, directs analysis, reviews wiki pages, closes issues.
 - **LLM**: Reads sources, writes and maintains all files in `wiki/`, updates index and log. After ingesting a source, moves it from `raw/` to `raw/archive/`.
 
 ## Directory Structure
 
-**Generic structure** (works for any LLM-maintained second brain):
-
 ```
 research/
-  CLAUDE.md          # Top-level rules + topic scope + project-specific declarations
+  CLAUDE.md                           # This file: rules + scope + project declarations
+  README.md                           # Repo + template-project documentation
   .instructions/
-    core/            # Data-agnostic methodology — works for any second brain
-      prompts/       # Callable prompts (ingest, lint, clean-data, orphans, ...)
-      templates/     # Page templates (source-summary, person-page, ...)
-      rules/         # Detailed protocols referenced from prompts
-    projects/        # Project-specific methodology (this wiki only)
-      benchmarks/    # Hardware benchmark prompt + rig template
-    tools/           # ⚠️ GITIGNORED — per-installation helpers (PDF extractors, etc.)
-  raw/               # Unprocessed source documents (gitignored except memories/)
-    archive/         # Already-ingested sources
-    assets/          # Downloaded images and attachments
-      archive/       # Archived asset files paired with archived clipping MDs
-    memories/        # Atomized memory snippets for RavenBrain MCP (versioned)
-    *.md             # New sources awaiting ingest
-  wiki/              # LLM-generated and LLM-maintained markdown
-    index.md         # Page catalog
-    log.md           # Chronological record of operations
-    overview.md      # High-level synthesis
-    hot.md           # Hot cache: ~500 words of current context (read first)
-    tasks.md         # Running investigation checklist
-    people/          # Person entity pages
-    tools/           # Commercial / hosted tool entity pages
-    open-source/     # OSS project entity pages
-    concepts/        # Idea / framework / technique pages
-    analyses/        # Analysis and comparison pages
-    sources/         # Source summaries and notable-document entity pages
+    core/                             # Data-agnostic methodology — works for any second brain
+      prompts/    {ingest,lint,clean-data,orphans}.md
+      rules/      {page-conventions,memory-rules,hot-cache-rules,index-rules,pdf-extraction}.md
+      templates/  {source-summary,youtube-source,pdf-source,person-page}.md
+    projects/                         # Project-specific methodology (this wiki only)
+      benchmarks/                     #   project: hardware benchmarks
+    tools/                            # ⚠️ GITIGNORED — per-installation helpers
+  raw/                                # Source documents (gitignored except memories/)
+    archive/                          #   already-ingested sources
+    assets/{,/archive/}               #   image/PDF attachments + their archive
+    memories/                         #   atomized snippets for RavenBrain MCP (versioned)
+    benchmarks/                       #   project: raw Geekbench AI exports
+  wiki/                               # LLM-generated and LLM-maintained markdown
+    {index,log,overview,hot,tasks}.md # State files (read hot.md first)
+    people/   tools/   open-source/   # Generic entity folders
+    concepts/ analyses/ sources/      # Generic concept/analysis/document folders
+    business/                         #   project: AI as business
+    benchmarks/                       #   project: hardware benchmarks
 ```
 
-**Project-specific additions** for this wiki (declared here, not in `.instructions/core/`):
-
-```
-research/
-  .instructions/projects/
-    benchmarks/      # Hardware benchmark methodology (add-benchmark.md, rig-template.md)
-  raw/
-    benchmarks/      # Raw Geekbench AI exports (project: hardware benchmarks)
-  wiki/
-    business/        # Business patterns / sales playbooks (project: AI as business)
-    benchmarks/      # Personal hardware benchmark section (project: hardware benchmarks)
-```
-
-When adding a new project-specific data subdirectory under `raw/` or new wiki section, add it to the project-specific block above so the ingest prompt knows to skip it during source listing. Project-specific prompts and templates live under `.instructions/projects/<name>/`.
+**Project-specific entries** (marked `# project: ...`) live alongside the generic structure but are declared here in CLAUDE.md, not in `.instructions/core/`. When adding a new project subdirectory, declare it in this tree so the ingest prompt knows to skip it during source listing. Project-specific prompts and templates live under `.instructions/projects/<name>/`.
 
 ## Reusable prompts
 
-The user invokes these by name (e.g. *"run the ingest prompt"*). Each one is a complete, self-contained protocol. **Read the prompt file when invoked — do not summarize from memory.**
+The user invokes these by name (e.g. *"run the ingest prompt"*). Each one is a complete, self-contained protocol — **read the prompt file when invoked, do not summarize from memory.**
 
-### Core prompts (data-agnostic — work for any second brain)
-
-| Prompt | Path | Purpose |
-|--------|------|---------|
-| Ingest | `.instructions/core/prompts/ingest.md` | Add new sources from `raw/` into the wiki |
-| Lint | `.instructions/core/prompts/lint.md` | Quality audit — duplicates, contradictions, stale content |
-| Orphans | `.instructions/core/prompts/orphans.md` | Link-graph audit — orphaned pages and dangling links |
-| Clean Data | `.instructions/core/prompts/clean-data.md` | Mechanical hygiene — frontmatter, naming, tags, encoding |
-
-### Project-specific prompts (this wiki only)
-
-| Prompt | Path | Purpose |
-|--------|------|---------|
-| Benchmark Add | `.instructions/projects/benchmarks/add-benchmark.md` | Add or update a Geekbench AI rig benchmark |
+| Scope | Prompt | Path | Purpose |
+|---|---|---|---|
+| core | Ingest | `.instructions/core/prompts/ingest.md` | Add new sources from `raw/` into the wiki |
+| core | Lint | `.instructions/core/prompts/lint.md` | Quality audit — duplicates, contradictions, stale content |
+| core | Orphans | `.instructions/core/prompts/orphans.md` | Link-graph audit — orphaned pages and dangling links |
+| core | Clean Data | `.instructions/core/prompts/clean-data.md` | Mechanical hygiene — frontmatter, naming, tags, encoding |
+| project: benchmarks | Benchmark Add | `.instructions/projects/benchmarks/add-benchmark.md` | Add or update a Geekbench AI rig benchmark |
 
 ## Templates
 
-### Core templates
-
-| Template | Path | Used by |
-|----------|------|---------|
-| Source summary | `.instructions/core/templates/source-summary.md` | Ingest prompt |
-| YouTube source | `.instructions/core/templates/youtube-source.md` | Ingest prompt (whenever the source is a YouTube video — has additional sponsor/bias rules) |
-| PDF source | `.instructions/core/templates/pdf-source.md` | Ingest prompt (whenever the source is a PDF — paired with PDF extraction rule) |
-| Person page | `.instructions/core/templates/person-page.md` | Ingest prompt (for any new author) |
-| Memory snippet | (no template — see [`memory-rules.md`](.instructions/core/rules/memory-rules.md)) | Ingest prompt (Phase 4) |
-
-### Project-specific templates
-
-| Template | Path | Used by |
-|----------|------|---------|
-| Benchmark rig | `.instructions/projects/benchmarks/rig-template.md` | Benchmark Add prompt |
-
-**Important YouTube rule:** when ingesting a YouTube video, never create a wiki entity for the video's sponsor, even if the sponsor is on-topic. See [`youtube-source.md`](.instructions/core/templates/youtube-source.md) for the full sponsorship and product-placement bias protocol.
+| Scope | Template | Path |
+|---|---|---|
+| core | Source summary (base) | `.instructions/core/templates/source-summary.md` |
+| core | YouTube source (extends base) | `.instructions/core/templates/youtube-source.md` |
+| core | PDF source (extends base) | `.instructions/core/templates/pdf-source.md` |
+| core | Person page | `.instructions/core/templates/person-page.md` |
+| core | Memory snippet | (no template — see [`memory-rules.md`](.instructions/core/rules/memory-rules.md)) |
+| project: benchmarks | Benchmark rig | `.instructions/projects/benchmarks/rig-template.md` |
 
 ## Rules
 
-Detailed rules live in `.instructions/core/rules/`. Read these on demand, not preemptively.
+Detailed rules live in `.instructions/core/rules/`. Read on demand, not preemptively.
 
-| Rules file | Covers |
-|-----------|--------|
-| `.instructions/core/rules/page-conventions.md` | Frontmatter, page types & folders, wikilinks, quality bar |
-| `.instructions/core/rules/memory-rules.md` | RavenBrain memory format, tag taxonomy, what to capture |
-| `.instructions/core/rules/hot-cache-rules.md` | What goes in `wiki/hot.md` and what doesn't |
-| `.instructions/core/rules/index-rules.md` | Format and content of `wiki/index.md` |
-| `.instructions/core/rules/pdf-extraction.md` | How to detect/install/run a PDF→text tool and inject the result into the clipping MD |
+| File | Covers |
+|---|---|
+| `page-conventions.md` | Frontmatter, page types & folders, wikilinks, quality bar |
+| `memory-rules.md` | RavenBrain memory format, tag taxonomy, what to capture |
+| `hot-cache-rules.md` | What goes in `wiki/hot.md` and what doesn't |
+| `index-rules.md` | Format and content of `wiki/index.md` |
+| `pdf-extraction.md` | How to detect/install/run a PDF→text tool and inject the result into the clipping MD |
 
-## Operations (high-level)
+## Querying the wiki
 
-- **Ingest** — see [`.instructions/core/prompts/ingest.md`](.instructions/core/prompts/ingest.md). Always pause for approval after the Phase 1 plan.
-- **Query** — read `wiki/hot.md` then `wiki/index.md`, then load only the relevant pages. Synthesize with citations. Optionally file the answer as an `analysis` page if the user agrees.
-- **Lint** — see [`.instructions/core/prompts/lint.md`](.instructions/core/prompts/lint.md). Audit-only first; never fix without approval.
-- **Benchmark add** *(this wiki only)* — see [`.instructions/projects/benchmarks/add-benchmark.md`](.instructions/projects/benchmarks/add-benchmark.md). A rig is identified by CPU + motherboard.
+Read `wiki/hot.md` then `wiki/index.md`, then load only the relevant pages. Synthesize with citations. Optionally file the answer as an `analysis` page if the user agrees.
 
 ## Session Start Checklist
 
