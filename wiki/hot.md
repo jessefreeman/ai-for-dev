@@ -35,9 +35,7 @@ Batch 1: MCP canonical, Augment Agent, BMAD Method, Cole Medin AI coding workflo
 
 - Karpathy's gist, AI 2027, Dan Shapiro, StrongDM, METR study — long-standing primary sources still uningested
 - Lovable — referenced repeatedly, no entity page
-- Supabase — now referenced from Archon OS, Sim AI, Cole Medin coding workflow; deserves its own entity page
 - Shadow factory agency model — Jesse's business vision
-- Two broken `[[proxmox-mobile-hx-pro-370]]` rig links (lint #6 — user undecided)
 - 6 sources skipped across batches — archived
 - Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model, Kimi K2 — mentioned but no entity pages
 

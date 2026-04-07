@@ -93,4 +93,3 @@ Different layers of the same problem:
 - Kimi K2, Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model — mentioned but no entity pages
 - Nous Research, HKUDS — orgs behind Hermes Agent and DeepCode, both worth tracking
 - Bret Fisher's Open WebUI + Docker Model Runner gist — referenced but not pulled
-- Two broken `[[proxmox-mobile-hx-pro-370]]` rig links (lint open question)

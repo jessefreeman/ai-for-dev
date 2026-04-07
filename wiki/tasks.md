@@ -53,10 +53,6 @@ Things to investigate, try, or read. Added automatically during ingest. Check of
 - [ ] **Shadow factory agency model** — Jesse's business vision; deeper into dark factory economics, L4/L5 operating patterns, and agency models serving businesses that can't build their own [[Five Levels of AI Coding]]
 - [ ] **AI professional interface as client service** — build out the productized version: interview process, AI training, site build, fit tool config, distribution guidance [[AI Professional Interface]]
 
-## Open Questions
-
-- [ ] **`[[proxmox-mobile-hx-pro-370]]`** — 2 broken rig links in [[benchmarks/rigs/proxmox-ultra7-265k]] and [[benchmarks/rigs/proxmox-lenovo-p8-threadripper]]. Either rename to existing rig (likely [[benchmarks/rigs/asus-proart-p16-hx370]] or [[benchmarks/rigs/minisforum-n5-pro-hx-pro-370]]?) or remove the link. **User undecided across two lint passes.**
-
 ## Completed
 
 - [x] **OpenClaw** — wiki page created [[OpenClaw]]
@@ -66,3 +62,4 @@ Things to investigate, try, or read. Added automatically during ingest. Check of
 - [x] **vLLM** — created during the [[Alex Ziskind]] ingest; the parallelism upgrade past Ollama/LM Studio
 - [x] **FP8 Quantization** — concept page created during the same ingest
 - [x] **Lint pass** — completed 2026-04-07 (twice in the same day)
+- [x] **`[[proxmox-mobile-hx-pro-370]]` broken refs** — resolved 2026-04-07: removed the 2 forward-references from [[benchmarks/rigs/proxmox-ultra7-265k]] and [[benchmarks/rigs/proxmox-lenovo-p8-threadripper]]. The slug pointed at a planned-but-not-built rig; can be added back when the rig is benchmarked.

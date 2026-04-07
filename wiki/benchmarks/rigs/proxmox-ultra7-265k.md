@@ -62,5 +62,4 @@ Within this Ultra 7 host, the spread between best (36,140) and worst (29,750) su
 ## See Also
 - [[methodology|Benchmark Methodology]]
 - [[proxmox-lenovo-p8-threadripper|Proxmox: Lenovo P8 Threadripper]] — same passthrough strategy, different host, hosts the PRO 6000 Blackwell
-- [[proxmox-mobile-hx-pro-370|Proxmox: Mobile HX PRO 370]] — third Proxmox host
 - [[msi-codex-r-i5-12400f|MSI Codex R]] — same RTX 5090 model, bare metal

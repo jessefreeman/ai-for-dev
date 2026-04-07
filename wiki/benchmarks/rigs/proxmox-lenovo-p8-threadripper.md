@@ -79,5 +79,4 @@ The **RTX 3090 is the best $/ACI of any compute card in the entire collection** 
 ## See Also
 - [[methodology|Benchmark Methodology]]
 - [[proxmox-ultra7-265k|Proxmox: Ultra 7 265K]] — sibling Proxmox host, different physical hardware
-- [[proxmox-mobile-hx-pro-370|Proxmox: Mobile HX PRO 370]] — third Proxmox host
 - [[Gemma 4 VRAM Requirements]]
