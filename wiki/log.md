@@ -8,6 +8,22 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | The Easiest Ways to Run LLMs Locally - Docker Model Runner Tutorial (Tech With Tim)
+- **Source**: YouTube tutorial walkthrough by Tech With Tim, 2025-07-19, ~3,605 source words. **Second wiki source on `[[docker-model-runner]]`** — complementary coverage to WorldofAI's earlier walkthrough.
+- **Pages created** (1):
+  - `wiki/sources/summary-tech-with-tim-docker-model-runner.md` — Source summary
+- **Updated**: `wiki/tools/docker-model-runner.md` (added 'Port distinction', 'Container-side usage (host.docker.internal)', and 'Compose `provider: type: model` syntax' sections — three substantive new sections from this source). Tech With Tim already added in this batch's first ingest, so no person page change.
+- **Notes**: Sponsored by Docker (disclosed openly upfront, not buried). Recipes are reproducible and accurate; the framing language is the part to discount.
+
+## [2026-04-07] ingest | Open-SWE (WorldofAI)
+- **Source**: YouTube tool walkthrough by WorldofAI, 2025-08-12, ~2,445 source words
+- **Pages created** (3):
+  - `wiki/sources/summary-worldofai-open-swe.md` — Source summary
+  - `wiki/orgs/langchain.md` — **NEW org page**: LangChain (LangChain library + LangGraph + Open-SWE + LangSmith). 6th wiki org. Justified by condition (b): three referenced products in the same editorial thread.
+  - `wiki/open-source/open-swe.md` — Entity: open-source async coding agent built on LangGraph; free Jules alternative; bring-your-own-API-key flexibility (Anthropic / OpenAI / Google / OpenRouter free tier / Ollama local)
+- **Updated**: `wiki/people/worldofai.md` (8th source from this channel — most prolific in the wiki), `wiki/analyses/saas-death-spiral.md` (Open-SWE added to Connected Threads as the open-source-async data point), `wiki/index.md`
+- **Notes**: First first-party LangChain product to land in the wiki. The org page documents LangChain's framework-vendor distinction vs the model-vendor frontier labs and the agent-shipping open-source collectives.
+
 ## [2026-04-07] ingest | Host Your Own AI Code Assistant (Wolfgang's Channel)
 - **Source**: YouTube tutorial + hardware comparison by Wolfgang's Channel, 2024-08-24, ~3,532 source words
 - **Pages created** (3):
