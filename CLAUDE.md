@@ -54,6 +54,7 @@ The user invokes these by name (e.g. *"run the ingest prompt"*). Each one is a c
 
 | Scope | Prompt | Path | Purpose |
 |---|---|---|---|
+| core | Customize Template | `.instructions/core/prompts/customize-template.md` | One-time onboarding for a fresh template clone (sets topic scope) |
 | core | Ingest | `.instructions/core/prompts/ingest.md` | Add new sources from `raw/` into the wiki |
 | core | Lint | `.instructions/core/prompts/lint.md` | Quality audit — duplicates, contradictions, stale content |
 | core | Orphans | `.instructions/core/prompts/orphans.md` | Link-graph audit — orphaned pages and dangling links |
