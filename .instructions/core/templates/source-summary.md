@@ -1,21 +1,29 @@
 # Source Summary Template
 
-A `source-summary` page lives at `wiki/sources/summary-<slug>.md` and is the dense, citable record of one ingested source.
+A `source-summary` page lives at `wiki/sources/summary-<slug>.md` and is the dense, citable record of one ingested source. This is the **base template** — the YouTube and PDF templates layer format-specific overrides on top of this shape.
 
-```markdown
+## Frontmatter
+
+```yaml
 ---
 type: source-summary
-sources: ["raw/archive/<source-filename>"]
+sources: ["<raw-filename>.md"]
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags: [<format-tag>, <domain-tags>]
 ---
+```
 
+`tags` must be a YAML array. Format tags are reusable (`article`, `paper`, `video`, `podcast`, ...); domain tags come from the wiki's topic scope declared in `CLAUDE.md`.
+
+## Body shape
+
+```markdown
 # {Source Title}
 
 **Author / channel:** [[person-slug|Person Name]]
 **Format:** article | video | podcast | paper | transcript | ...
-**Source:** [[raw/archive/<filename>|Original]]
+**Source:** [Original](../../raw/archive/<filename>.md)
 **Published:** YYYY-MM-DD (if known)
 
 ## Summary
@@ -47,7 +55,17 @@ tags: [<format-tag>, <domain-tags>]
 ```
 
 ## Rules
+
 - Dense, not exhaustive. Strip filler.
 - Every claim should be traceable to the original source via context, not just by reference.
 - Always link to the author's person page.
-- Always link the original source via `[[raw/archive/<filename>|...]]`.
+- Cite the original raw source via a **relative markdown link**: `[Original](../../raw/archive/<filename>.md)` — see [page-conventions.md → Wikilink rules](../rules/page-conventions.md#wikilink-rules) for why wikilinks don't work for paths outside `wiki/`.
+
+## Format-specific extensions
+
+This is the base template. Use one of these instead when the source format demands extra structure:
+
+- **YouTube videos**: [`youtube-source.md`](youtube-source.md) — adds Sponsorship & Bias Notes plus the video-specific header fields (Channel / URL / Length / Sponsor)
+- **PDFs**: [`pdf-source.md`](pdf-source.md) — adds Funding & Affiliation Notes plus the PDF-specific archive instructions and embed handling
+
+Both extensions reuse this base shape and only document their deltas.
