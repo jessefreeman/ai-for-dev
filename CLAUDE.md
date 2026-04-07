@@ -97,7 +97,7 @@ The user invokes these by name (e.g. *"run the ingest prompt"*). Each one is a c
 | YouTube source | `.instructions/core/templates/youtube-source.md` | Ingest prompt (whenever the source is a YouTube video — has additional sponsor/bias rules) |
 | PDF source | `.instructions/core/templates/pdf-source.md` | Ingest prompt (whenever the source is a PDF — paired with PDF extraction rule) |
 | Person page | `.instructions/core/templates/person-page.md` | Ingest prompt (for any new author) |
-| Memory snippet | `.instructions/core/templates/memory.md` | Ingest prompt (Phase 4) |
+| Memory snippet | (no template — see [`memory-rules.md`](.instructions/core/rules/memory-rules.md)) | Ingest prompt (Phase 4) |
 
 ### Project-specific templates
 
