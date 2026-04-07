@@ -8,6 +8,13 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | ChatGPT-5 Prompting is Too Hard (Nate B Jones)
+- **Source**: YouTube transcript by Nate B Jones on GPT-5 prompting
+- **Pages created** (2):
+  - `summary-nate-b-jones-chatgpt5-prompting.md` — Source summary
+  - `wiki/concepts/meta-prompting.md` — Concept: meta-prompting + 7 GPT-5 prompting principles
+- **Updated**: `wiki/people/nate-b-jones.md` (9th source), `wiki/tools/chatgpt.md` (added GPT-5 prompting section), `wiki/index.md`
+
 ## [2026-04-07] skip | Three sources archived without ingest
 - **User-approved skips** from the 12-source April-7 batch (low value, redundant with existing wiki coverage):
   1. `FREE Local Image Gen on Apple Silicon  FAST!.md` (Alex Ziskind, 2024-05) — Stable Diffusion + Automatic1111 tutorial; very old, off-focus from dev tooling
