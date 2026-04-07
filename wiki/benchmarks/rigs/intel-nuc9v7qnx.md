@@ -40,3 +40,7 @@ This rig is bottlenecked by the 9th-gen CPU and the 8 GB of VRAM. Useful for vis
 
 ## See Also
 - [[methodology|Benchmark Methodology]]
+- [[index|Benchmark Index & Rankings]]
+- [[msi-codex-r-i5-12400f|MSI Codex R]] — same RTX 4060 GPU on a more modern Intel platform; useful direct comparison for the CPU bottleneck on this rig
+- [[mac-mini-m4|Mac Mini M4]] — same SFF form factor, very different architecture (Apple Silicon + Neural Engine); good baseline for "small box, what's possible in 2024–2026"
+- [[lenovo-thinkpad-x1-fold-i5-1230u|Lenovo ThinkPad X1 Fold]] — adjacent older-Intel-mobile rig at the bottom of the leaderboard; together they bracket what 9th-gen-era Intel mobile silicon can do for AI workloads
