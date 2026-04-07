@@ -43,11 +43,31 @@ After approval:
 When the agent runs the dangling-link check via an ad-hoc script (the typical pattern), the script should:
 
 1. Walk every `.md` under `wiki/` **except `wiki/log.md`** — the changelog is documentation of historical state, not active content
-2. Strip fenced code blocks (` ``` ... ``` `) from each file's body before extracting wikilinks — code blocks contain template examples and syntax demonstrations, not real links
-3. Resolve wikilinks against both filename slugs and H1 titles (Obsidian-style title aliasing)
-4. Produce the dangling list from the surviving links only
+2. **For `wiki/tasks.md`**, only process the body **before** the `## Completed` section. Completed entries quote historical fixes that may reference removed slugs.
+3. Strip **fenced code blocks** (` ``` ... ``` `) from each file's body before extracting wikilinks — code blocks contain template examples and syntax demonstrations, not real links
+4. Strip **inline code spans** (`` ` ... ` ``) too — wikilink-syntax demonstrations like `` `[[Page Title]]` `` are documentation, not active links
+5. Resolve wikilinks against both filename slugs and H1 titles (Obsidian-style title aliasing)
+6. Produce the dangling list from the surviving links only
 
-This avoids the recurring noise of `[[Page Title]]` example placeholders in template documentation, `[[raw/archive/...]]` historical bug references in `log.md`, and other documentation artifacts that the regex would otherwise match.
+Reference Python implementation:
+
+```python
+import re
+
+def clean_for_lint(text):
+    text = re.sub(r'```.*?```', '', text, flags=re.S)   # fenced blocks
+    text = re.sub(r'`[^`\n]*`', '', text)                # inline code
+    return text
+
+def lint_target(path, content):
+    if path.endswith('wiki/log.md'):
+        return None  # skip entirely
+    if path.endswith('wiki/tasks.md'):
+        content = content.split('## Completed', 1)[0]    # active section only
+    return clean_for_lint(content)
+```
+
+This avoids the recurring noise of `[[Page Title]]` example placeholders in template documentation, `[[raw/archive/...]]` historical bug references in `log.md`, completed-task references to slugs that were intentionally removed, and other documentation artifacts that the regex would otherwise match.
 
 **Intentional dangling links** (entities the wiki references but hasn't built a page for yet) should be left in place unless the user explicitly asks for them to be converted to plain text. The convention: a dangling link signals "this page should exist eventually." Track candidates in `wiki/tasks.md` and create the page when there's enough material.
 
