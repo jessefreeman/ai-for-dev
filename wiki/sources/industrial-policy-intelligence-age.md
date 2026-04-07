@@ -87,12 +87,12 @@ These flags don't make the paper worthless — they just mean the wiki should tr
 
 ## Open questions raised by this document
 
-These are added to [[tasks.md]] and revisited if a second source corroborates or contradicts:
+These are added to [[tasks]] and revisited if a second source corroborates or contradicts:
 
 - **CAISI** — referenced as an existing institution. Need to ingest a primary source on what it currently does, who runs it, and how active it is.
 - **Public Wealth Fund** — Norway-style sovereign wealth fund analogue? Alaska Permanent Fund analogue? A novel structure? Not specified.
 - **Public Benefit Corporation governance for frontier AI** — only OpenAI and Anthropic operate under PBC structures today. What does it actually constrain? OpenAI's own conversion drama (the 2024 attempted restructuring) is relevant context.
-- **METR study** (already in [[tasks.md]] from earlier) — referenced indirectly when the paper claims AI is "increasing productivity" but workers may not see benefits. The METR finding (experienced devs 19% slower with AI) sharpens this.
+- **METR study** (already in [[tasks]] from earlier) — referenced indirectly when the paper claims AI is "increasing productivity" but workers may not see benefits. The METR finding (experienced devs 19% slower with AI) sharpens this.
 - **Whether Anthropic, Google DeepMind, xAI, and Meta publish equivalent industrial-policy papers in response.** This is the natural follow-on watch. If they do, the [[saas-death-spiral]] policy-response thread becomes a real concept page.
 
 ## See Also
