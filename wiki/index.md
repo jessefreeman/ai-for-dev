@@ -91,6 +91,8 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
 - [[unsloth|Unsloth]] — Fast, free fine-tuning library for open-weights LLMs; LoRA + GGUF export pipeline that runs on free Colab T4.
 - [[open-swe|Open-SWE]] — LangChain's open-source async AI coding agent on LangGraph; self-hostable, bring-your-own-model, free Jules alternative.
+- [[langchain-library|LangChain (library)]] — Original Python/JavaScript framework for chaining LLM calls with tools, prompts, retrievers, memory, and document loaders. The first widely-adopted LLM-app framework.
+- [[langgraph|LangGraph]] — Stateful multi-step agent framework from LangChain; agents as directed graphs of nodes and edges; underlies Open-SWE.
 - [[blender-mcp|Blender MCP]] — Natural language to 3D via MCP bridge to Blender's Python API.
 - [[gstack|GStack]] — YC President Gary Tan's startup methodology as Claude Code skills.
 - [[hermes-agent|Hermes Agent]] — Self-improving agent framework with closed learning loop.

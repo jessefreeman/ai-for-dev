@@ -18,12 +18,12 @@ US AI infrastructure company that ships open-source frameworks and tooling for b
 
 ## Products tracked in this wiki
 
-- **[[open-swe|Open-SWE]]** — open-source asynchronous AI coding agent built on LangGraph. Positioned as a free alternative to Google's Jules. Plans → writes → tests → opens PRs autonomously. Local via [[ollama|Ollama]] or remote via [[openrouter|OpenRouter]]. The wiki's first first-party LangChain-shipped product entry.
+- **[[langchain-library|LangChain (library)]]** — the original Python/JavaScript framework for chaining LLM calls with tools, prompts, retrievers, output parsers, memory, and document loaders. The original 2022 product and the framework most other LangChain products build on.
+- **[[langgraph|LangGraph]]** — agent-orchestration framework built on top of the LangChain library. Stateful multi-step agent workflows modeled as directed graphs of nodes and edges. Underlies Open-SWE.
+- **[[open-swe|Open-SWE]]** — open-source asynchronous AI coding agent built on LangGraph. Positioned as a free alternative to Google's Jules. Plans → writes → tests → opens PRs autonomously. Local via [[ollama|Ollama]] or remote via [[openrouter|OpenRouter]]. LangChain's first-party reference implementation of an asynchronous coding agent.
 
-## Frameworks LangChain ships (referenced but not yet entity pages)
+## Commercial layer (not yet tracked)
 
-- **LangChain** (the library) — the original Python/JavaScript framework for chaining LLM calls with tools, prompts, retrievers, etc. Heavily referenced in adjacent threads but doesn't have its own page yet.
-- **LangGraph** — the agent-orchestration framework underlying Open-SWE. Stateful multi-step agent workflows. Worth a separate page once the wiki has more LangGraph-built tools to reference.
 - **LangSmith** — hosted observability and evaluation platform for LLM apps. The commercial product LangChain monetizes around the open-source frameworks. Out of wiki scope until a source covers it directly.
 
 ## Where LangChain fits in the wiki's threads
@@ -45,13 +45,15 @@ LangChain is **the framework vendor** in a market where most tracked orgs are mo
 
 ## Open questions
 
-- **LangChain (the library) → wiki page**: it's referenced indirectly across many wiki sources but doesn't have its own page. Should be added when a source covers it directly.
-- **LangGraph → wiki page**: same situation. Open-SWE is built on LangGraph, several other tools in the agent space are too. Worth a dedicated page.
-- **LangSmith and the LangChain commercial strategy**: out of scope until a source covers it.
-- **LangChain's relationship to Harrison Chase as a person**: not yet captured. He's a public figure in the AI dev community.
+- **LangSmith and the LangChain commercial strategy**: out of scope until a source covers it directly.
+- **LangChain's relationship to Harrison Chase as a person**: not yet captured. He's a public figure in the AI dev community and a future person-page candidate.
+- **Migration patterns from LangChain (library) agents → LangGraph**: for users on the older API.
 
 ## See Also
 
-- [[open-swe]] — primary product tracked in this wiki
+- [[langchain-library]] — the original library; the foundation under everything else LangChain ships
+- [[langgraph]] — the stateful-agent framework built on top
+- [[open-swe]] — first-party agent built on LangGraph; the wiki's primary first-party LangChain product
 - [[anthropic]], [[openai]], [[google]], [[nous-research]] — other AI orgs in the wiki for comparison
 - [[summary-worldofai-open-swe|Source: Open-SWE walkthrough]]
+- [[summary-pixegami-python-rag-tutorial|Source: pixegami's RAG tutorial]] — concrete LangChain library code example
