@@ -15,7 +15,7 @@ Walk the wiki and produce a single report covering:
 3. **Contradictions** — claims that conflict across pages. Quote both, name both pages.
 4. **Stale content** — pages where a newer source has clearly superseded the claims. Name the superseding source.
 5. **Off-topic pages** — anything that drifted away from the wiki's declared scope (see `CLAUDE.md` for the current scope statement).
-6. **Missing pages** — entities or concepts mentioned in `[[wikilinks]]` that have no actual page. List the dangling links and which pages reference them.
+6. **Missing pages** — entities or concepts mentioned in `[[wikilinks]]` that have no actual page. List the dangling links and which pages reference them. **Skip wikilinks that appear inside `wiki/log.md`** — the changelog documents historical broken state by design (lint entries quote the bugs they fixed; ingest entries may reference pages that were later renamed or deleted), so flagging them every pass is just noise. **Also skip wikilinks inside fenced code blocks** in any file — those are template examples or syntax demonstrations, not active links. Apply both filters before producing the dangling-link report.
 7. **Stub pages** — pages with less than ~150 words or only a title and a See Also section.
 8. **Frontmatter drift** — pages missing required frontmatter fields (type, sources, created, updated, tags) per [page-conventions](../rules/page-conventions.md).
 9. **Index/log drift** — entries in `wiki/index.md` that point to nonexistent files, or recent ingests in `wiki/log.md` whose pages aren't in the index.
@@ -37,6 +37,19 @@ After approval:
 - Update `wiki/index.md`, `wiki/log.md`, and `wiki/hot.md` to reflect any deletions, merges, or renames.
 - Append a dated entry to `wiki/log.md` titled `lint: <date>` with a one-line summary of every change made.
 - Commit with message `lint: <date> — <short description>`.
+
+## Lint script convention
+
+When the agent runs the dangling-link check via an ad-hoc script (the typical pattern), the script should:
+
+1. Walk every `.md` under `wiki/` **except `wiki/log.md`** — the changelog is documentation of historical state, not active content
+2. Strip fenced code blocks (` ``` ... ``` `) from each file's body before extracting wikilinks — code blocks contain template examples and syntax demonstrations, not real links
+3. Resolve wikilinks against both filename slugs and H1 titles (Obsidian-style title aliasing)
+4. Produce the dangling list from the surviving links only
+
+This avoids the recurring noise of `[[Page Title]]` example placeholders in template documentation, `[[raw/archive/...]]` historical bug references in `log.md`, and other documentation artifacts that the regex would otherwise match.
+
+**Intentional dangling links** (entities the wiki references but hasn't built a page for yet) should be left in place unless the user explicitly asks for them to be converted to plain text. The convention: a dangling link signals "this page should exist eventually." Track candidates in `wiki/tasks.md` and create the page when there's enough material.
 
 ## Don'ts
 - Never delete a page without explicit user approval.
