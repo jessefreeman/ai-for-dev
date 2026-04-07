@@ -8,7 +8,7 @@ tags: [tool, llm, anthropic, frontier-model]
 
 # Claude
 
-Anthropic's frontier LLM family. Widely considered the best model for work tasks and coding. Distinct from [[Claude Code]], which is the CLI agent harness built on top of Claude models.
+[[anthropic|Anthropic]]'s frontier LLM family. Widely considered the best model for work tasks and coding. Distinct from [[Claude Code]], which is the CLI agent harness built on top of Claude models. See [[anthropic]] for the company-level entity.
 
 ## Strengths
 

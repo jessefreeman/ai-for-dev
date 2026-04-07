@@ -8,7 +8,7 @@ tags: [tool, ai, llm, open-source, google, model]
 
 # Gemma 4
 
-Google's fourth-generation open-weights model family. Released April 2026. The headline achievement: state-of-the-art open-source performance at unusually small parameter counts. Licensed under Apache 2.0.
+[[google|Google]]'s fourth-generation open-weights model family. Released April 2026. The headline achievement: state-of-the-art open-source performance at unusually small parameter counts. Licensed under Apache 2.0. See [[google]] for the company-level entity.
 
 ## Model Sizes
 

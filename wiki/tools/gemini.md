@@ -8,7 +8,7 @@ tags: [tool, llm, google, frontier-model]
 
 # Gemini
 
-Google's frontier LLM family. Notable for video ingestion, deep research capabilities, and tight Google ecosystem integration.
+[[google|Google]]'s frontier LLM family. Notable for video ingestion, deep research capabilities, and tight Google ecosystem integration. See [[google]] for the company-level entity (Google DeepMind, Vertex AI, Genkit, Gemma 4, Firebase Studio, Stitch).
 
 ## Unique Capabilities
 

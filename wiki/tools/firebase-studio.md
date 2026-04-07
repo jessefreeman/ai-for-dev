@@ -8,9 +8,9 @@ tags: [tool, ai, ide, full-stack, google, gemini, cloud]
 
 # Firebase Studio
 
-Google's cloud-based agentic development environment, launched at Google Cloud Next 2025 as the rebrand of Project IDX. Unifies Firebase, Genkit, and Gemini into a single full-stack workspace for building backends, frontends, and mobile apps from natural-language prompts. Free tier with three workspaces (30 for dev program members) and $300 in credits for new users.
+[[google|Google]]'s cloud-based agentic development environment, launched at Google Cloud Next 2025 as the rebrand of Project IDX. Unifies Firebase, Genkit, and Gemini into a single full-stack workspace for building backends, frontends, and mobile apps from natural-language prompts. Free tier with three workspaces (30 for dev program members) and $300 in credits for new users. See [[google]] for the company-level entity.
 
-- **Vendor**: Google
+- **Vendor**: [[google|Google]]
 - **Site**: studio.firebase.google.com
 - **Predecessor**: Project IDX
 - **License**: Hosted product, free tier

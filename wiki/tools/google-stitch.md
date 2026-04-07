@@ -8,7 +8,7 @@ tags: [tool, ai, design, google, mcp]
 
 # Google Stitch
 
-Google's AI-powered UI design tool. Generates high-fidelity, multi-screen app designs from natural language descriptions or voice input. Originally launched at Google IO 2025 as a limited experiment; the March 2026 update rebuilt the product around "vibe design" — the design equivalent of vibe coding.
+[[google|Google]]'s AI-powered UI design tool. Generates high-fidelity, multi-screen app designs from natural language descriptions or voice input. Originally launched at Google IO 2025 as a limited experiment; the March 2026 update rebuilt the product around "vibe design" — the design equivalent of vibe coding. See [[google]] for the company-level entity.
 
 ## What It Does
 

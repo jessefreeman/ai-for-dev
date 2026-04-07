@@ -8,7 +8,7 @@ tags: [open-source, agent, self-improving, local-ai]
 
 # Hermes Agent
 
-An open-source AI agent framework by **Nous Research**. Positioned as an alternative to [[OpenClaw]] with a distinctive feature: a built-in closed learning loop that enables the agent to self-improve over time without fine-tuning. Per Nous's own framing: "It gets better the more you use it with no fine-tuning or prompt engineering needed."
+An open-source AI agent framework by **[[nous-research|Nous Research]]**. Positioned as an alternative to [[OpenClaw]] with a distinctive feature: a built-in closed learning loop that enables the agent to self-improve over time without fine-tuning. Per Nous's own framing: "It gets better the more you use it with no fine-tuning or prompt engineering needed." See [[nous-research]] for the org-level entity.
 
 - **GitHub**: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
 - **Site / docs**: hermes-agent.nousresearch.com

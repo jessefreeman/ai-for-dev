@@ -16,11 +16,8 @@ Things to investigate, try, or read. Added automatically during ingest. Check of
 
 ## Organizations to add to wiki/orgs/
 
-The wiki has [[openai|OpenAI]] and [[lovable|Lovable]] as the first two org pages. The following companies are referenced across multiple sources and should also have org pages:
+The wiki currently has [[anthropic]], [[openai]], [[google]], [[nous-research]], and [[lovable]] as org pages. The following companies are referenced across multiple sources and should also get org pages:
 
-- [ ] **Anthropic** — maker of [[claude|Claude]] + [[claude-code|Claude Code]]; competing PBC structure to OpenAI; Claude Code leak analysis is one of the wiki's foundational threads
-- [ ] **Google** — [[gemini|Gemini]], [[gemma-4|Gemma 4]], [[firebase-studio|Firebase Studio]], [[google-stitch|Google Stitch]], Genkit, Vertex AI, Waymo World Model — heavily referenced across the wiki
-- [ ] **Nous Research** — org behind [[hermes-agent|Hermes Agent]] and GEPA
 - [ ] **HKUDS (Hong Kong University Data Science)** — academic group behind [[deepcode|DeepCode]]
 - [ ] **Microsoft / GitHub** — [[github-agent-hq|GitHub Agent HQ]], Codex Mac App distribution context
 - [ ] **Alibaba** — [[qwen|Qwen]] family, Qwen 3 Coder Next
@@ -31,6 +28,8 @@ The wiki has [[openai|OpenAI]] and [[lovable|Lovable]] as the first two org page
 - [ ] **DeepSeek** — [[deepseek|DeepSeek]] family
 - [ ] **Glowforge** — Dan Shapiro's company, context for the [[five-levels-of-ai-coding|Five Levels of AI Coding]] framework
 - [ ] **TCM Security** — [[the-cyber-mentor]]'s company; PIPA cert; Bjorn pedagogy
+- [ ] **Tempo** — [[ras-mic|Ras Mic]]'s employer; AI startup mentioned alongside MCP clients
+- [ ] **Stability AI / Black Forest Labs** — image gen ecosystem (only referenced indirectly so far; needs a primary source)
 
 ## People to add
 
@@ -93,3 +92,6 @@ The wiki has [[openai|OpenAI]] and [[lovable|Lovable]] as the first two org page
 - [x] **OpenAI org page** — created 2026-04-07 at [[openai]]. Combined ChatGPT, Codex, Industrial Policy paper, Prompt Fu acquisition, and the policy-positioning thread into a single org entity.
 - [x] **Lovable org page** — created 2026-04-07 at [[lovable]]. Captured the references from AI Professional Interface and BMAD Method.
 - [x] **`wiki/orgs/` folder convention** — added to `.instructions/core/rules/page-conventions.md` as a new page-type row. Org pages exist when the wiki references the company itself (corporate decisions, policy, acquisitions) beyond just its products.
+- [x] **Anthropic org page** — created 2026-04-07 at [[anthropic]]. Combined Claude, Claude Code, the architecture leak, /loop, Ultra Plan, the MCP standard origin, and the OpenClaw-replacement thread.
+- [x] **Google org page** — created 2026-04-07 at [[google]]. Combined Gemini, Gemma 4, Firebase Studio, Stitch, Vertex AI, Genkit, plus the Waymo World Model context. The wiki's broadest org by surface area.
+- [x] **Nous Research org page** — created 2026-04-07 at [[nous-research]]. Anchored on Hermes Agent + GEPA as the wiki's clearest "open agent-research alternative" entry.

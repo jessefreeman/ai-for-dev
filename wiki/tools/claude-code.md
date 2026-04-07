@@ -8,7 +8,7 @@ tags: [tool, ai, llm, anthropic]
 
 # Claude Code
 
-Anthropic's CLI tool for Claude that operates directly on local files and directories. The primary engine used in the [[LLM Wiki Pattern]] for reading sources, generating wiki pages, and maintaining cross-references.
+[[anthropic|Anthropic]]'s CLI tool for [[claude|Claude]] that operates directly on local files and directories. The primary engine used in the [[LLM Wiki Pattern]] for reading sources, generating wiki pages, and maintaining cross-references. See [[anthropic]] for the company-level entity (corporate structure, MCP standard, /loop, Ultra Plan, the architecture leak).
 
 ## Role in LLM Wiki
 
