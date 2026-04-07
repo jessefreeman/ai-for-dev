@@ -53,6 +53,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[augment-agent|Augment Agent]] — Agentic IDE; #1 OSS on SWE-bench Verified at 65.4%; large-codebase indexing.
 - [[firebase-studio|Firebase Studio]] — Google's cloud agentic dev environment (rebrand of Project IDX); free tier.
 - [[github-agent-hq|GitHub Agent HQ]] — Microsoft's evolution of GitHub into a full AI agent orchestration platform.
+- [[archon-os|Archon OS]] — Cole Medin's open-source command center for AI coding agents; unified knowledge + task layer via MCP.
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki. Now with /loop and a skills ecosystem.
 - [[cursor|Cursor]] — AI-native code editor; one of the first coding agents.
 - [[codex|Codex]] — OpenAI's coding agent harness.
@@ -165,6 +166,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-fireship-saas-death-spiral|How AI is Breaking SaaS]] — Fireship's $1T market-cap thesis; seven Feb 2026 developments.
 - [[summary-worldofai-docker-model-runner|Docker Model Runner Walkthrough]] — WorldofAI on the Docker-native local LLM runtime.
 - [[summary-nate-herk-ultra-plan|Planning in Claude Code Just Got a Huge Upgrade]] — Nate Herk on Claude Code's new Ultra Plan: cloud Opus 4.6 + multi-agent exploration.
+- [[summary-worldofai-archon-os|Archon OS Walkthrough]] — WorldofAI on Cole Medin's AI coding command center.
 
 ## Contribute or build your own
 

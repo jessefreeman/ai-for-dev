@@ -8,6 +8,17 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] skip | Two off-topic sources
+- `Meet Bjorn, the Easy to Build Hacking Tool!.md` (The Cyber Mentor, May 2025) — Raspberry Pi Zero hardware pentesting build. No AI content. Off-topic for the wiki's AI focus. Archived without ingest.
+- `you need this k8s data center at home.md` (GoatsInAPond, Nov 2025) — Talos Linux + Kubernetes + Flux GitOps homelab tutorial. No AI content. Off-topic. Archived without ingest.
+
+## [2026-04-07] ingest | Archon OS (WorldofAI)
+- **Source**: YouTube transcript by WorldofAI on Cole Medin's Archon OS
+- **Pages created** (2):
+  - `summary-worldofai-archon-os.md` — Source summary
+  - `wiki/tools/archon-os.md` — Entity: open-source AI command center for coding agents (Cole Medin / Dynamis)
+- **Updated**: `wiki/people/cole-medin.md` (5th source), `wiki/people/worldofai.md` (5th source), `wiki/index.md`
+
 ## [2026-04-07] skip | Fireship duplicate
 - `7 new open source AI tools you need right now… 1.md` — duplicate of the already-ingested Fireship video (Obsidian Web Clipper added " 1" suffix on a re-clip). Same content as `summary-fireship-7-open-source-tools.md`. Moved to `raw/archive/` without ingest.
 
