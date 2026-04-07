@@ -8,31 +8,34 @@ updated: 2026-04-07
 
 ## Current State
 
-27 sources + a new **personal hardware benchmark section** at [[benchmarks/index]] covering 16 personal rigs from a Geekbench AI export. Nate B Jones still dominates the source side with 8 ingests.
+**36 sources ingested** + a 16-rig personal hardware benchmark section. Big April-7 ingest landed: AI coding workflows (Cole Medin, BMAD), MCP canonical page, Augment Agent, Firebase Studio, Gemma 4 VRAM reference, pixegami RAG patterns. Lint pass also completed before ingest.
 
 ## Most Active Pages
 
+- [[mcp|MCP]] — **new canonical page**, fills the long-missing concept; foundational across the wiki
+- [[ai-coding-workflow]] — Cole Medin's PLANNING.md/TASK.md + global rules + three core MCP servers pattern
+- [[bmad-method]] — six Agile AI personas (BA → PM → Architect → PO → SM → Dev); plan outside the IDE
 - [[Five Levels of AI Coding]] — L0→L5; StrongDM dark factory; J-curve
-- [[AI Professional Interface]] — five components replacing broken hiring; client-serviceable
-- [[Frontier Operations]] — five persistent skills at expanding AI/human boundary
-- [[Four Prompting Disciplines]] — prompt craft → context → intent → specification
-- [[OpenBrain]] — Postgres + PGVector + MCP ($0.10/month)
-- [[Claude Code]] — primary tool; /loop, skills ecosystem
+- [[Frontier Operations]] — five persistent skills at the AI/human boundary
+- [[OpenBrain]] + [[/loop]] — agent memory + proactivity stack ($0.10/month)
+- [[gemma-4-vram-requirements]] — VRAM lookup tables for the benchmarks section
 
-## Most Recently Added
+## Most Recently Added (2026-04-07)
 
-- **Personal benchmark refactor (2026-04-07)** — [[benchmarks/index|16 rigs]], new **AI Capability Index** scoring, S/A/B/C/D tiers. Top: Proxmox host + RTX PRO 6000 Blackwell (978.8, S). Surprise: Mac Mini M4 has the highest INT8 score of any rig (51,472 quant). Pricing TBD.
-- **Nate B Jones** (professional interface): [[AI Professional Interface]] — 5 components (AI chat, expandable context, skills matrix with gaps, fit assessment tool, polished site). Attention economics. Showing vs telling. Bidirectional power inversion. Productizable as client service.
-
-## Business Pages Now
-
-- [[AI Automation Workflows]] — 5 workflows to sell to businesses
-- [[AI Professional Interface]] — replace hiring pipeline with AI-powered interface
+- **MCP page** [[mcp]] — Anthropic's standard, three-stage evolution of LLM capability, four-component architecture, the "3D chess" externalization play. Sources: [[Greg Isenberg]] hosts [[Ras Mic]].
+- **AI Coding Workflow** [[ai-coding-workflow]] — Cole Medin's full process: 8 golden rules, PLANNING.md + TASK.md, workspace global rules, three core MCP servers (filesystem/Brave/git), one-shot Supabase MCP server demo.
+- **BMAD Method** [[bmad-method]] — Brian's heavier alternative; six Agile personas; planning happens outside the IDE to save credits.
+- **Augment Agent** [[augment-agent]] — claims #1 OSS on SWE-bench Verified (65.4%) via Claude 3.7 + o1; treat as marketing-adjacent.
+- **Firebase Studio** [[firebase-studio]] — Google's Project IDX rebrand; cloud agentic IDE with Gemini + Genkit + Vertex AI.
+- **Gemma 4 VRAM Requirements** [[gemma-4-vram-requirements]] — full GPU + Mac lookup tables; 26B A4B MoE is the sweet spot at 12–16 GB.
+- **Open WebUI** [[open-webui]] — self-hosted ChatGPT-like UI for Ollama (canonical page).
+- **Heretic update** — Dolphin Llama 3 documented as the pre-Heretic path to unaligned models; PowerShell-as-admin gotcha noted.
+- **Python RAG patterns** [[summary-pixegami-python-rag-tutorial|pixegami]] — deterministic chunk IDs for incremental DB updates; LLM-as-judge unit tests with negative cases.
 
 ## Open Gaps
 
-- Karpathy's original gist, AI 2027 article
-- Dan Shapiro, StrongDM, METR study — deeper investigation
+- Karpathy's gist, AI 2027, Dan Shapiro, StrongDM, METR study — long-standing primary sources still uningested
+- Lovable — referenced repeatedly, no entity page
 - Shadow factory agency model — Jesse's business vision
-- Lovable — mentioned as the build tool; no page yet
-- **27 ingests — lint pass seriously overdue**
+- Two broken `[[proxmox-mobile-hx-pro-370]]` rig links (lint #6 — user undecided)
+- Three sources skipped at user-approved ingest (Alex Ziskind image gen, BlueSpork install tutorial, Laith Talks Llama 4) — archived without wiki pages

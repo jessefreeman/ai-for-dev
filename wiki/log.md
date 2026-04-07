@@ -8,6 +8,13 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] skip | Three sources archived without ingest
+- **User-approved skips** from the 12-source April-7 batch (low value, redundant with existing wiki coverage):
+  1. `FREE Local Image Gen on Apple Silicon  FAST!.md` (Alex Ziskind, 2024-05) — Stable Diffusion + Automatic1111 tutorial; very old, off-focus from dev tooling
+  2. `How to Install Ollama, Docker, and Open WebUI on MacOS.md` (BlueSpork, 2024-12) — pure 2-min install tutorial; zero new info beyond what already lives in [[ollama]]/[[open-webui]] pages
+  3. `VS Code Just Got a LOT Faster with LLAMA 4 Integration (Scout, Maverick, Behemoth).md` (Laith Talks AI, 2025-04) — 2-min Roo Code + OpenRouter walkthrough; creator himself notes Llama 4 performed poorly
+- **Action**: moved to `raw/archive/` without creating wiki pages. Memories also skipped.
+
 ## [2026-04-07] ingest | Python RAG Tutorial (pixegami)
 - **Source**: YouTube transcript by pixegami on building a local RAG app over PDFs
 - **Pages created** (2):
