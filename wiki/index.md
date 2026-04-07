@@ -42,6 +42,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[greg-isenberg|Greg Isenberg]] — Founder/podcaster; startup-ideas community Startup Empire.
 - [[ras-mic|Ras Mic]] — Engineer at Tempo; non-technical AI infrastructure explainer.
 - [[pixegami|pixegami]] — Python LLM tutorial creator; RAG, LangChain, pytest patterns.
+- [[alex-ziskind|Alex Ziskind]] — Local LLM benchmarks; vLLM/FP8/Apple Silicon vs Nvidia hardware deep dives.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -54,6 +55,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[firebase-studio|Firebase Studio]] — Google's cloud agentic dev environment (rebrand of Project IDX); free tier.
 - [[github-agent-hq|GitHub Agent HQ]] — Microsoft's evolution of GitHub into a full AI agent orchestration platform.
 - [[archon-os|Archon OS]] — Cole Medin's open-source command center for AI coding agents; unified knowledge + task layer via MCP.
+- [[sim-ai|Sim AI]] — Open-source visual AI agent workflow builder; n8n alternative with 60+ integrations.
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki. Now with /loop and a skills ecosystem.
 - [[cursor|Cursor]] — AI-native code editor; one of the first coding agents.
 - [[codex|Codex]] — OpenAI's coding agent harness.
@@ -94,6 +96,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[deepseek|DeepSeek]] — Chinese lab open-weights model; stronger than Llama as of 2026.
 - [[qwen|Qwen]] — Alibaba's open-weights model family; among the top open-source models.
 - [[deepcode|DeepCode]] — Open-source multi-agent coding platform from HKUDS; Paper2Code, Text2Web, Text2Backend.
+- [[vllm|vLLM]] — High-throughput LLM inference engine; saturates Nvidia GPUs with concurrent requests.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -111,6 +114,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[ai-coding-workflow|AI Coding Workflow]] — Cole Medin's PLANNING.md + TASK.md + global rules + MCP servers pattern.
 - [[mcp|Model Context Protocol (MCP)]] — Anthropic's standard for connecting LLMs to tools, services, and data.
 - [[meta-prompting|Meta-Prompting]] — Wrapping sloppy requests in a structured instruction-set; power steering for GPT-5.
+- [[fp8-quantization|FP8 Quantization]] — Floating-point 8-bit precision; native to Nvidia Blackwell tensor cores; the throughput sweet spot for vLLM.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -169,6 +173,8 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-nate-herk-ultra-plan|Planning in Claude Code Just Got a Huge Upgrade]] — Nate Herk on Claude Code's new Ultra Plan: cloud Opus 4.6 + multi-agent exploration.
 - [[summary-worldofai-archon-os|Archon OS Walkthrough]] — WorldofAI on Cole Medin's AI coding command center.
 - [[summary-worldofai-deepcode|DeepCode Walkthrough]] — WorldofAI on HKUDS's multi-agent coding platform with Paper2Code.
+- [[summary-worldofai-sim-ai|Sim AI Walkthrough]] — WorldofAI on the open-source n8n alternative for AI agent workflows.
+- [[summary-alex-ziskind-vllm-fp8|THIS is the REAL DEAL for local LLMs]] — Alex Ziskind on vLLM + FP8 + RTX PRO 6000; 5,800 tok/s sustained.
 
 ## Contribute or build your own
 

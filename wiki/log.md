@@ -8,6 +8,16 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | THIS is the REAL DEAL for local LLMs (Alex Ziskind)
+- **Source**: YouTube transcript by Alex Ziskind on vLLM + FP8 + RTX PRO 6000 Blackwell
+- **Pages created** (4):
+  - `summary-alex-ziskind-vllm-fp8.md` — Source summary with reproduced benchmark numbers
+  - `wiki/people/alex-ziskind.md` — Entity: local-LLM hardware/runtime YouTuber (long-overdue addition)
+  - `wiki/open-source/vllm.md` — Entity: high-throughput LLM inference engine; the parallelism upgrade path past Ollama/LM Studio
+  - `wiki/concepts/fp8-quantization.md` — Concept: floating-point 8-bit, Blackwell tensor core native, vs Int8
+- **Updated**: `wiki/tools/docker-model-runner.md` (parallelism findings + comparison), `wiki/tools/ollama.md` (parallelism limit note + vLLM upgrade path), `wiki/benchmarks/rigs/proxmox-lenovo-p8-threadripper.md` (added vLLM+FP8 throughput context — the practical answer to "why pay $9,145 for the PRO 6000"), `wiki/index.md`
+- **Cross-thread synthesis**: this video is the practical justification for the top-spend rig in the benchmarks section; it explains why Geekbench AI numbers understate the real ceiling
+
 ## [2026-04-07] skip | Two off-topic sources
 - `Meet Bjorn, the Easy to Build Hacking Tool!.md` (The Cyber Mentor, May 2025) — Raspberry Pi Zero hardware pentesting build. No AI content. Off-topic for the wiki's AI focus. Archived without ingest.
 - `you need this k8s data center at home.md` (GoatsInAPond, Nov 2025) — Talos Linux + Kubernetes + Flux GitOps homelab tutorial. No AI content. Off-topic. Archived without ingest.

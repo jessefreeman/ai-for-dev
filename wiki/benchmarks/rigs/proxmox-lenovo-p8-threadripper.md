@@ -27,6 +27,10 @@ A Lenovo ThinkStation P8 workstation repurposed as a Proxmox host with GPU passt
 | GPU (config C) | NVIDIA RTX 5090 32 GB | $1,999.00 (2025) |
 | **System base + RAM upgrade** | | **$6,682.71** |
 
+## Beyond Geekbench: vLLM + FP8 Throughput
+
+Geekbench AI numbers reflect *single-request* throughput. The real ceiling for this rig comes from running [[vllm|vLLM]] with [[fp8-quantization|FP8 quantization]] on the Blackwell tensor cores — see [[summary-alex-ziskind-vllm-fp8|Alex Ziskind's benchmark on the same RTX PRO 6000 class]]: ~5,800–6,000 tokens/sec sustained across 256 concurrent users with Quen 3 Coder 30B FP8. The Max-Q variant in this rig will be slightly lower (lower power envelope) but in the same order of magnitude. **This is the practical answer to "why pay $9,145 for the PRO 6000."**
+
 ## Geekbench AI Runs
 
 All runs are GPU passthrough into a Windows 11 Pro VM (16 GB allocated to guest).

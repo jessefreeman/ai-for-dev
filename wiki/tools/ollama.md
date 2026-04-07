@@ -26,6 +26,8 @@ Ollama integrates with [[Claude Code]] to substitute open-source models for Anth
 
 **Alternative**: [[docker-model-runner|Docker Model Runner]] is a competing local LLM runtime built into Docker Desktop. Use Docker Model Runner if you already live in containers; use Ollama if you don't. Both expose OpenAI-compatible APIs.
 
+**Parallelism limit**: Ollama (like LM Studio) is designed for single-request workflows. For code completion or multi-user serving on Nvidia hardware, the upgrade path is [[vllm|vLLM]], which fully saturates a GPU with concurrent requests. See [[summary-alex-ziskind-vllm-fp8|Alex Ziskind's benchmark]] — same model + same hardware, vLLM hit ~5,800 tok/s vs LM Studio's ~80 tok/s on parallel workloads.
+
 ## Cloud Tier
 
 Ollama also hosts cloud models (e.g., MiniMax M 2.7) that can be used without local hardware. Free usage is limited; paid subscription unlocks higher throughput. Models only available in the cloud tier will not show a size in Ollama's model list.

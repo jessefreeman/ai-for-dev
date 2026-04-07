@@ -31,6 +31,12 @@ A local LLM runtime built directly into **Docker Desktop**. Pulls models from Do
 
 WorldofAI's framing: Ollama is awesome for getting started, but Docker Model Runner fits production pipelines that already use containers — "scalable, compose, and integrate into full stack projects without changing how you already work."
 
+## Parallelism Limits (Updated From Alex Ziskind Benchmarks)
+
+[[summary-alex-ziskind-vllm-fp8|Alex Ziskind's vLLM video]] benchmarked Docker Model Runner against [[vllm|vLLM]] on the same RTX PRO 6000 hardware. Key finding: **Docker Model Runner does support parallelism** via runtime flags (Alex set `--max-num-seqs 4` and got ~88 tok/s vs LM Studio's ~80 at the same concurrency), but the parallelism is **modest compared to vLLM**. At 4 concurrent users vLLM hit ~298 tok/s on the same hardware. At 256 concurrent users vLLM hit 5,800–6,000 tok/s — Docker Model Runner doesn't reach those numbers.
+
+**Practical takeaway**: Docker Model Runner is the right choice for "container-native dev with light concurrency." For serious code completion or multi-user serving, [[vllm|vLLM]] is the upgrade path — same Docker packaging story, much higher throughput ceiling.
+
 ## OCI Packaging Format
 
 Docker Hub uses a new **OCI-based packaging format** for AI models. The intentional design choice: each model package contains only the bare essentials — model weights, a simple manifest, a license file. **No bundled inference server, no API wrapper.** This gives you full control to pair the weights with the runtime of your choice (e.g., TGI or [[llama-cpp|llama.cpp]]). Cleaner, more modular, more production-friendly than the typical model-with-everything-bundled approach.
@@ -65,5 +71,8 @@ This gives you a full ChatGPT-style local UI without ever installing Ollama.
 - [[open-webui]] — common UI layer; supports both backends
 - [[llama-cpp]] — the runtime Docker Model Runner can pair with via OCI packaging
 - [[anything-llm]] — adjacent local-AI all-in-one
-- [[WorldofAI]] — source channel
+- [[vllm]] — the higher-throughput upgrade path for serious workloads
+- [[fp8-quantization]] — quantization format that pairs with vLLM on Blackwell
+- [[WorldofAI]], [[alex-ziskind|Alex Ziskind]] — source channels
 - [[summary-worldofai-docker-model-runner|Source: Docker Model Runner walkthrough]]
+- [[summary-alex-ziskind-vllm-fp8|Source: Alex Ziskind on vLLM + FP8 (parallelism comparison)]]
