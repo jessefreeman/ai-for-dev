@@ -8,6 +8,14 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Better Than Vibe Coding: BMAD Method (BMad Code)
+- **Source**: YouTube transcript by BMad Code (Brian) introducing the BMAD Method
+- **Pages created** (3):
+  - `summary-bmad-code-aiadd-method.md` — Source summary
+  - `wiki/concepts/bmad-method.md` — Concept: six-persona Agile AI-Driven Development
+  - `wiki/people/bmad-code.md` — Entity: 20-year software vet, BMAD-METHOD creator
+- **Updated**: `wiki/index.md`
+
 ## [2026-04-07] ingest | Augment Agent: RIP Cursor (WorldofAI)
 - **Source**: YouTube transcript by WorldofAI on Augment Code's launch of Augment Agent
 - **Pages created** (3):

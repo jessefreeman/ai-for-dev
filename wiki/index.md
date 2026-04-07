@@ -36,6 +36,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[dave-swift|Dave Swift]] — AI tools creator focused on audio and local-first applications.
 - [[stephen-g-pope|Stephen G. Pope]] — Creator of ThePopeBot; autonomous agent architecture.
 - [[worldofai|WorldofAI]] — YouTube creator covering AI tools and agentic IDE launches.
+- [[bmad-code|BMad Code (Brian)]] — Creator of the BMAD Method; 20-year software vet on agile + AI workflows.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
@@ -95,6 +96,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[four-prompting-disciplines|Four Prompting Disciplines]] — Prompt craft → context engineering → intent engineering → specification engineering.
 - [[five-levels-of-ai-coding|Five Levels of AI Coding]] — L0 spicy autocomplete → L5 dark factory. Dan Shapiro's framework + StrongDM case study.
 - [[frontier-operations|Frontier Operations]] — Five persistent skills for working at the expanding AI/human boundary.
+- [[bmad-method|BMAD Method]] — Agile AI-Driven Development; six AI personas (BA → PM → Architect → PO → SM → Dev).
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -136,6 +138,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-nate-b-jones-frontier-operations|Frontier Operations]] — The expanding bubble; five persistent skills.
 - [[summary-nate-b-jones-ai-professional-interface|AI Professional Interface]] — Replace hiring pipeline with AI-powered personal interface.
 - [[summary-worldofai-augment-agent|Augment Agent: RIP Cursor]] — WorldofAI walkthrough of Augment Agent's SWE-bench launch.
+- [[summary-bmad-code-aiadd-method|Better Than Vibe Coding]] — BMad Code introduces the BMAD Method (six Agile AI personas).
 
 ## Contribute or build your own
 
