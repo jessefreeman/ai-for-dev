@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Every AI Model Explained in 20 Minutes.md", "ChatGPT-5 Prompting is Too Hard This Video Makes it Easy for You.md"]
+sources: ["Every AI Model Explained in 20 Minutes.md", "ChatGPT-5 Prompting is Too Hard This Video Makes it Easy for You.md", "Industrial Policy for the Intelligence Age.md"]
 created: 2026-04-06
 updated: 2026-04-07
 tags: [tool, llm, openai, frontier-model]
@@ -33,6 +33,14 @@ The practical fix is **[[meta-prompting]]** — wrapping a sloppy human request 
 
 OpenAI itself published a GPT-5 prompting guide, which Nate reads as an admission that the model is harder to steer than its consumer marketing implies.
 
+## OpenAI policy positioning
+
+OpenAI published its first major industrial-policy paper in **April 2026**: [[industrial-policy-intelligence-age|Industrial Policy for the Intelligence Age: Ideas to Keep People First]]. 21 named proposals across worker outcomes (Public Wealth Fund, Right to AI, modernized tax base, 32-hour workweek pilots, adaptive safety nets) and AI safety/governance (CAISI auditing regimes, model-containment playbooks, Public Benefit Corporation governance, incident reporting). The paper announces a $100K fellowship + $1M API credits pilot program at `newindustrialpolicy@openai.com` and an OpenAI Workshop opening in DC May 2026.
+
+**Treat as positioning, not neutral analysis** — OpenAI is a direct interested party in nearly every proposal. Most acute conflicts: the Public Benefit Corporation governance proposal validates OpenAI's own corporate structure, and the audit-requirements-for-the-most-advanced-models-only carve-out is the canonical regulatory-moat play. See the [source page](../sources/industrial-policy-intelligence-age) for the full breakdown of editorial framings to discount.
+
+This is the first entry in what may become a wiki thread on AI ethics, politics, and policy as industry-observability signal — see [[saas-death-spiral#policy-responses|saas-death-spiral § Policy responses]].
+
 ## Compared to Other Frontier Models
 
 According to [[Matthew Berman]]:
@@ -48,5 +56,7 @@ According to [[Matthew Berman]]:
 - [[meta-prompting]] — the practical answer to GPT-5 prompting difficulty
 - [[four-prompting-disciplines]] — broader prompting taxonomy
 - [[Matthew Berman]] — source
+- [[industrial-policy-intelligence-age]] — OpenAI's first major public policy paper
 - [[summary-matthew-berman-ai-models|Source: Every AI Model Explained]]
 - [[summary-nate-b-jones-chatgpt5-prompting|Source: ChatGPT-5 Prompting is Too Hard]]
+- [[summary-openai-industrial-policy-intelligence-age|Source: Industrial Policy for the Intelligence Age]]

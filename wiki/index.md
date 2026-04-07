@@ -134,6 +134,7 @@ New content appears as I read, watch, and research. The site updates automatical
 
 ### Sources
 - [[ai-2027|AI 2027]] — Forecasting article used as a demo ingest source.
+- [[industrial-policy-intelligence-age|Industrial Policy for the Intelligence Age]] — OpenAI's first major public policy paper (April 2026); 21 proposals for the transition to "superintelligence."
 - [[summary-karpathy-10x-claude-code|Karpathy 10x'd Claude Code]] — Nate Herk demonstrates the LLM Wiki in practice.
 - [[summary-nate-jones-12-agent-primitives|12 Agent Primitives]] — Nate B Jones analyzes the Claude Code leak.
 - [[summary-nate-herk-ollama-claude-code|Ollama + Claude Code]] — Running Claude Code with local and free cloud models.
@@ -179,6 +180,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-worldofai-sim-ai|Sim AI Walkthrough]] — WorldofAI on the open-source n8n alternative for AI agent workflows.
 - [[summary-alex-ziskind-vllm-fp8|THIS is the REAL DEAL for local LLMs]] — Alex Ziskind on vLLM + FP8 + RTX PRO 6000; 5,800 tok/s sustained.
 - [[summary-tcm-bjorn-network-pentest-pi|Meet Bjorn, the Easy to Build Hacking Tool]] — TCM walkthrough of building a Raspberry Pi network pentest device; defensive audit angle for self-hosters.
+- [[summary-openai-industrial-policy-intelligence-age|Industrial Policy for the Intelligence Age]] — OpenAI's first major public policy paper; 21 proposals + heavy interested-party caveats.
 
 ## Contribute or build your own
 

@@ -8,6 +8,20 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Industrial Policy for the Intelligence Age (OpenAI)
+- **Source**: PDF policy paper, 13 pages, published April 2026 by OpenAI. Hosted at `cdn.openai.com/pdf/.../Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf`. **First test of the new PDF ingest workflow** — extracted via `pypdf` 6.9.2 (per `.instructions/core/rules/pdf-extraction.md`), text injected into the clipping MD with `pdf-extract:begin/end` markers.
+- **Pages created** (2):
+  - `wiki/sources/summary-openai-industrial-policy-intelligence-age.md` — Source summary with section-by-section bullets and a heavy Funding & Affiliation Notes section
+  - `wiki/sources/industrial-policy-intelligence-age.md` — Source entity page in the [[ai-2027]] pattern with deeper synthesis, document structure, editorial framing to discount, and connections to existing wiki threads
+- **Updated** (3):
+  - `wiki/analyses/saas-death-spiral.md` — added a "Policy responses" subsection linking to this paper as the policy-response counterpart to the market-mechanism thesis
+  - `wiki/tools/chatgpt.md` — added an "OpenAI policy positioning" subsection with the interested-party caveats
+  - `wiki/index.md` — added entries under Sources and Source summaries
+- **Tasks added**: OpenAI as a policy entity (needs ≥2 sources before getting an org page), CAISI (Center for AI Standards and Innovation), Public Wealth Fund as a named proposal, "Right to AI" framing, Public Benefit Corporation governance for frontier AI, the OpenAI fellowship + API credits pilot program
+- **No memories** generated — speculative policy proposals don't atomize well; revisit if any becomes load-bearing across multiple sources
+- **Phase 5 archive**: clipping MD → `raw/archive/`, PDF asset → `raw/assets/archive/` (created the directory)
+- **Notes**: First wiki source where the framing is "policy artifact from an interested party" — required heavier-than-usual editorial caveats about regulatory-moat plays. The new pdf-source.md template's Funding & Affiliation Notes section was the right shape for this.
+
 ## [2026-04-07] ingest | Meet Bjorn (The Cyber Mentor) — re-ingested
 - **Source**: YouTube transcript by The Cyber Mentor on building Bjorn (Raspberry Pi network pentest tool)
 - **Status**: Originally skipped as off-topic in batch 3 lint plan. **User reframed**: relevant as a defensive audit tool for self-hosters running local AI infrastructure (Ollama, Archon OS, Open WebUI, Supabase, GPU-passthrough rigs) on the same LAN.

@@ -20,7 +20,17 @@ Things to investigate, try, or read. Added automatically during ingest. Check of
 - [ ] **Dan Shapiro** — CEO of Glowforge, creator of the 5 Levels framework [[Five Levels of AI Coding]]
 - [ ] **Nous Research** — org behind [[hermes-agent|Hermes Agent]] and GEPA. Worth a deeper look into their broader work.
 - [ ] **HKUDS (Hong Kong University Data Science)** — the academic group behind [[deepcode|DeepCode]]. Other releases?
+- [ ] **OpenAI as a policy entity** — needs ≥2 sources before getting an org page distinct from [[chatgpt]] / [[codex]]. The [[industrial-policy-intelligence-age|April 2026 paper]] is the first; watch for follow-ups.
+- [ ] **CAISI (Center for AI Standards and Innovation)** — referenced in the OpenAI paper as an existing US institution. Need a primary source on what it currently does and who runs it.
 - [ ] **Marcus Chen demo site** — Nate's working AI Professional Interface demo; GitHub repo available [[summary-nate-b-jones-ai-professional-interface]]
+
+## Concept threads needing a second source
+
+- [ ] **AI ethics, politics, and policy as industry-observability signal** — currently single-source ([[industrial-policy-intelligence-age|OpenAI Industrial Policy paper]]). When a second policy artifact lands (Anthropic, Google DeepMind, xAI, Meta, or a major government agency), promote to a concept page.
+- [ ] **Public Wealth Fund** as a named proposal — only the OpenAI paper so far. Norway-style? Alaska Permanent Fund analogue? Novel? Worth a primary source.
+- [ ] **"Right to AI"** as a framing — only the OpenAI paper so far. Watch for adoption by others.
+- [ ] **Public Benefit Corporation governance for frontier AI** — only OpenAI and Anthropic operate under PBC structures. The OpenAI paper validates this structure. Worth a deeper investigation of OpenAI's own 2024 conversion drama for context.
+- [ ] **OpenAI fellowship + API credits pilot** — `newindustrialpolicy@openai.com`, $100K fellowships + $1M API credits announced in the [[industrial-policy-intelligence-age|April 2026 paper]]. Track which projects get funded — the funded list is itself a signal of OpenAI's policy priorities.
 
 ## Models Mentioned But No Entity Page
 

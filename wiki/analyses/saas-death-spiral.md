@@ -66,6 +66,14 @@ The death spiral hits horizontal SaaS sold per seat to knowledge workers — not
 - [[ai-coding-workflow]] + [[bmad-method]] — process discipline becomes the moat for individual operators in the new regime
 - [[mcp]] — the standard that makes orchestration platforms possible
 
+## Policy responses
+
+The market-mechanism view above is one half of the story. The other half is what *policy actors* propose in response to the same dynamic. The first major policy artifact in this thread:
+
+- **[[industrial-policy-intelligence-age|OpenAI: Industrial Policy for the Intelligence Age]]** (April 2026) — OpenAI's first major public policy paper. 21 named proposals across "Building an Open Economy" (worker perspectives, Public Wealth Fund, modernized tax base, 32-hour workweek pilots, Right to AI, adaptive safety nets) and "Building a Resilient Society" (CAISI auditing, model-containment playbooks, Public Benefit Corporation governance, incident reporting, international information-sharing). Soft language on disruption — much less sharp than this analysis. **Heavy interested-party caveats**: the Public Benefit Corp proposal validates OpenAI's own structure, the audit carve-out for "the most advanced models" is the canonical regulatory-moat play. See the [source page](industrial-policy-intelligence-age) for the full breakdown.
+
+The pattern to watch: whether other frontier labs (Anthropic, Google DeepMind, xAI, Meta) publish equivalent industrial-policy artifacts in response. If they do, this becomes a real **AI ethics, politics, and policy** concept page. For now it's a single-source thread tracked here.
+
 ## See Also
 
 - [[fireship]] — author
@@ -74,3 +82,4 @@ The death spiral hits horizontal SaaS sold per seat to knowledge workers — not
 - [[summary-fireship-saas-death-spiral|Source: How AI is Breaking the SaaS Business Model]]
 - [[summary-nate-b-jones-five-levels|5 Levels of AI Coding]] — the architectural consequence
 - [[summary-nate-herk-500-ai-workflows|500 AI Workflows]] — what gets sold into the vacated spend
+- [[summary-openai-industrial-policy-intelligence-age|Source: OpenAI Industrial Policy paper]] — the policy-response counterpart
