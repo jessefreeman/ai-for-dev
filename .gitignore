@@ -15,6 +15,11 @@ raw/**/*.html
 node_modules/
 public/
 
+# Per-installation tools (PDF extractors, future helpers) — OS-specific, never committed.
+# Each session should bootstrap what it needs from .instructions/rules/pdf-extraction.md
+# (or similar rule files) into this directory locally.
+.instructions/tools/
+
 # OS / editor
 .DS_Store
 .smbdelete*
