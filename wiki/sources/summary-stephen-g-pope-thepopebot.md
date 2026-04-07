@@ -13,9 +13,9 @@ tags: [source, video, agent, open-source, docker, local-ai]
 
 ## Summary
 
-Stephen G. Pope walks through ThePepeBot, his free open-source autonomous AI agent designed as an OpenClaw replacement. The architecture is notable: Docker containers for isolation, GitHub Actions for scalable job execution, Ollama for free local LLMs, and git-based change approval for every agent action. The creator demo covers the full setup process (one-step install, ~15 min) and the architectural decisions behind scalability and security.
+Stephen G. Pope walks through ThePopeBot, his free open-source autonomous AI agent designed as an OpenClaw replacement. The architecture is notable: Docker containers for isolation, GitHub Actions for scalable job execution, Ollama for free local LLMs, and git-based change approval for every agent action. The creator demo covers the full setup process (one-step install, ~15 min) and the architectural decisions behind scalability and security.
 
-See [[ThePepeBot]] for the full entity page with architecture details and OpenClaw comparison.
+See [[ThePopeBot]] for the full entity page with architecture details and OpenClaw comparison.
 
 ## Key Architectural Decisions
 
@@ -27,11 +27,11 @@ See [[ThePepeBot]] for the full entity page with architecture details and OpenCl
 
 ## Pages Created or Updated
 
-- [[ThePepeBot]] — new
+- [[ThePopeBot]] — new
 - [[Stephen G. Pope]] — new
 
 ## See Also
 
-- [[OpenClaw]] — what ThePepeBot replaces
+- [[OpenClaw]] — what ThePopeBot replaces
 - [[/loop]] — Anthropic's native approach (cloud-dependent)
 - [[OpenBrain]] — complementary memory layer

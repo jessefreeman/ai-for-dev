@@ -1,11 +1,34 @@
 ---
 type: log
-updated: 2026-04-06
+created: 2026-04-06
+updated: 2026-04-07
 ---
 
 # Wiki Log
 
 Chronological record of all operations.
+
+## [2026-04-07] lint: 2026-04-07 — pre-ingest cleanup
+- Fixed dangling `[[proxmox-ai-host-ultra7-265k]]` → `[[proxmox-ultra7-265k]]` in 2 rig pages.
+- Renamed entity content "ThePepeBot" → "ThePopeBot" across 5 pages (filename `thepopebot.md` was already correct; matches GitHub repo `stephengpope/thepopebot`).
+- Converted `[[raw/archive/...]]` wikilink in karpathy summary to a relative markdown link so the archive backlink actually resolves in Obsidian/Quartz.
+- Deduplicated OpenClaw task in `wiki/tasks.md`.
+- Added missing `created` field to `index.md`, `log.md`, `hot.md`, `tasks.md`.
+- Refreshed `wiki/overview.md`: covered sources 19–27, added benchmark/Five-Levels/Four-Prompting-Disciplines/AI-Professional-Interface threads, fixed stale `$0.30/month` → `$0.10/month` for OpenBrain.
+- Audit findings deferred to ingest phase: missing `[[mcp]]` page (will be filled by source #10), missing `[[gemma-4-vram-requirements]]` (will be filled by source #6).
+- Audit finding left open per user: `[[proxmox-mobile-hx-pro-370]]` references in 2 rig pages — no matching rig file, user unsure of correct target.
+- No orphans, no duplicates, no contradictions found.
+
+## [2026-04-07] benchmarks | Personal Rig Benchmark Refactor
+- One-off project: refactored `raw/benchmarks/` into proper wiki pages.
+- Parsed all 71 Geekbench AI results from `raw/benchmarks/_source.html`.
+- Identified 16 unique rigs (CPU + motherboard pairs); 7 had old-format pages, 9 are new.
+- Designed **AI Capability Index (ACI)** scoring: `(BestSingle + BestHalf×0.6 + BestQuant×0.4)/100` with S/A/B/C/D tiers.
+- Created `wiki/benchmarks/methodology.md`, `wiki/benchmarks/index.md`, and 16 rig pages under `wiki/benchmarks/rigs/`.
+- Top of leaderboard: Proxmox host with RTX PRO 6000 Blackwell (ACI 978.8, S tier). Lowest: Lenovo ThinkPad i5-1230U (ACI 42.5, D tier).
+- Notable cross-cutting finding: Apple Neural Engine on Mac Mini M4 has the highest **quantized** score of any rig (51,472), beating every NVIDIA card.
+- Pricing left as TBD per user — to be filled in via separate receipts pass.
+- Open work: re-benchmark Intel NUC9V7QNX RTX 4060 (half/quant missing), confirm Proxmox host motherboard, investigate RTX 5090 score variance on Proxmox host (29,750 → 44,345 across runs).
 
 ## [2026-04-06] init | Wiki Initialized
 - Created directory structure: `raw/`, `raw/assets/`, `wiki/`
@@ -245,11 +268,11 @@ Chronological record of all operations.
 - **Memories** (2): five-levels-of-ai-coding, strongdm-dark-factory-architecture
 
 ## [2026-04-06] ingest | I Built a FREE OpenClaw (Stephen G. Pope)
-- **Source**: YouTube transcript — ThePepeBot autonomous agent architecture
+- **Source**: YouTube transcript — ThePopeBot autonomous agent architecture
 - **Pages created** (3):
   - `summary-stephen-g-pope-thepopebot.md` — Source summary
   - `wiki/open-source/thepopebot.md` — Entity: Free OpenClaw alternative
-  - `wiki/people/stephen-g-pope.md` — Entity: AI developer, ThePepeBot creator
+  - `wiki/people/stephen-g-pope.md` — Entity: AI developer, ThePopeBot creator
 - **Memories** (1): thepopebot-github-actions-architecture
 
 ## [2026-04-06] ingest | E2E Testing Command (Cole Medin)

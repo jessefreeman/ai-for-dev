@@ -1,6 +1,7 @@
 ---
 type: tasks
-updated: 2026-04-06
+created: 2026-04-06
+updated: 2026-04-07
 ---
 
 # Tasks
@@ -11,7 +12,6 @@ Things to investigate, try, or read. Added automatically during ingest. Check of
 
 - [ ] **Karpathy's LLM Wiki Gist** — the original idea file; ingest directly for depth on the pattern's origin [[LLM Wiki Pattern]]
 - [ ] **AI 2027** — referenced as a rich demo source (~23 pages when ingested); good stress test for the wiki [[sources/ai-2027]]
-- [x] **OpenClaw** — wiki page created [[OpenClaw]]
 - [ ] **Factory** — coding agent cited alongside Cursor, Claude Code, Codex, Devin; no page yet [[summary-matthew-berman-ai-models]]
 - [ ] **ElevenLabs** — voice cloning and TTS; mentioned in AI models survey as the leading audio model [[summary-matthew-berman-ai-models]]
 - [ ] **Pulsia** — closed-source AI-runs-your-company product mentioned by Berman; comparison point for Paperclip [[Paperclip]]

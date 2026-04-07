@@ -6,7 +6,7 @@ updated: 2026-04-06
 tags: [open-source, agent, autonomous, local-ai, docker]
 ---
 
-# ThePepeBot
+# ThePopeBot
 
 A free, open-source autonomous AI agent by [[Stephen G. Pope]] designed as an [[OpenClaw]] alternative. Runs 24/7 on any computer using free local LLMs via [[Ollama]]. No API fees, no Mac Mini required. All changes tracked via git with optional human approval.
 
@@ -47,7 +47,7 @@ Designed for free local models via [[Ollama]], but supports any OpenAI-compatibl
 
 ## Compared to OpenClaw
 
-| | [[OpenClaw]] | ThePepeBot |
+| | [[OpenClaw]] | ThePopeBot |
 |---|---|---|
 | Cost | API fees + Mac Mini recommended | Free (Ollama + your hardware) |
 | LLM | Cloud APIs required | Local models via Ollama (or any API) |
@@ -70,9 +70,9 @@ The three Docker containers can run together (simple) or on separate servers (sc
 
 ## See Also
 
-- [[OpenClaw]] — the framework ThePepeBot is designed to replace
-- [[/loop]] — Anthropic's native proactivity (cloud-dependent vs ThePepeBot's self-hosted)
-- [[OpenBrain]] — complementary memory layer (ThePepeBot handles proactivity/tools, OpenBrain handles memory)
+- [[OpenClaw]] — the framework ThePopeBot is designed to replace
+- [[/loop]] — Anthropic's native proactivity (cloud-dependent vs ThePopeBot's self-hosted)
+- [[OpenBrain]] — complementary memory layer (ThePopeBot handles proactivity/tools, OpenBrain handles memory)
 - [[Paperclip]] — multi-agent orchestration at company level
 - [[Stephen G. Pope]] — creator
 - [[summary-stephen-g-pope-thepopebot|Source: I Built a FREE OpenClaw]]

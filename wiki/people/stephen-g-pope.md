@@ -8,7 +8,7 @@ tags: [person, ai, agents, open-source, local-ai]
 
 # Stephen G. Pope
 
-AI developer and educator focused on autonomous agent architecture. Creator of [[ThePepeBot]], a free open-source OpenClaw alternative. Runs the AI Architects community on Skool.
+AI developer and educator focused on autonomous agent architecture. Creator of [[ThePopeBot]], a free open-source OpenClaw alternative. Runs the AI Architects community on Skool.
 
 ## Channels
 
@@ -18,7 +18,7 @@ AI developer and educator focused on autonomous agent architecture. Creator of [
 
 ## Content in This Wiki
 
-- [[summary-stephen-g-pope-thepopebot|I Built a FREE OpenClaw]] — Full walkthrough of [[ThePepeBot]] architecture: Docker containers, GitHub Actions for scalable job execution, Ollama for free local LLMs, git-based change approval.
+- [[summary-stephen-g-pope-thepopebot|I Built a FREE OpenClaw]] — Full walkthrough of [[ThePopeBot]] architecture: Docker containers, GitHub Actions for scalable job execution, Ollama for free local LLMs, git-based change approval.
 
 ## Key Ideas
 
@@ -28,7 +28,7 @@ AI developer and educator focused on autonomous agent architecture. Creator of [
 
 ## See Also
 
-- [[ThePepeBot]]
+- [[ThePopeBot]]
 - [[OpenClaw]]
 - [[/loop]], [[OpenBrain]] — complementary primitives
 - [[summary-stephen-g-pope-thepopebot|Source: FREE OpenClaw]]
