@@ -2,6 +2,12 @@
 
 This vault is a **personal knowledge base** maintained by an LLM agent. The human curates sources, directs analysis, and asks questions. The LLM does all summarizing, cross-referencing, filing, and maintenance.
 
+## Wiki Scope
+
+This wiki tracks **AI tools, techniques, and workflows for developers** — production agent architecture, the planning-first AI coding stack, the local-AI throughput layer, agent proactivity/memory primitives, AI ethics and policy as industry-observability signal, business models in the post-SaaS world, and personal hardware capacity for local inference. Adjacent topics are in scope when they materially affect the above (e.g., self-hosting infrastructure, defensive network security for self-hosted AI rigs).
+
+> **Important**: this scope statement is the **only** place where the wiki's topic focus lives. Everything in `.instructions/` is intentionally topic-agnostic — the same prompts, templates, and rules would work for any LLM-maintained personal knowledge base. When the lint prompt asks "is this page off-topic?", the answer is determined by *this section* of `CLAUDE.md`, not by any rule file.
+
 ## Git Rules
 
 - Never add `Co-Authored-By` or any Claude attribution to commit messages.
