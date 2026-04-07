@@ -52,6 +52,7 @@ New content appears as I read, watch, and research. The site updates automatical
 ### Tools
 - [[augment-agent|Augment Agent]] — Agentic IDE; #1 OSS on SWE-bench Verified at 65.4%; large-codebase indexing.
 - [[firebase-studio|Firebase Studio]] — Google's cloud agentic dev environment (rebrand of Project IDX); free tier.
+- [[github-agent-hq|GitHub Agent HQ]] — Microsoft's evolution of GitHub into a full AI agent orchestration platform.
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki. Now with /loop and a skills ecosystem.
 - [[cursor|Cursor]] — AI-native code editor; one of the first coding agents.
 - [[codex|Codex]] — OpenAI's coding agent harness.
@@ -110,6 +111,7 @@ New content appears as I read, watch, and research. The site updates automatical
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
+- [[saas-death-spiral|SaaS Death Spiral]] — Why $1T in SaaS market cap evaporated in early 2026; seven AI developments and the per-seat pricing axis.
 
 ### Personal Hardware Benchmarks
 - [[benchmarks/index|Benchmark Index]] — Master ranking of all 16 personal rigs by AI Capability Index.
@@ -159,6 +161,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-pixegami-python-rag-tutorial|Python RAG Tutorial (Local LLMs)]] — pixegami builds a PDF RAG app with chunk IDs and LLM-as-judge tests.
 - [[summary-nate-b-jones-chatgpt5-prompting|ChatGPT-5 Prompting is Too Hard]] — Nate B Jones on meta-prompting GPT-5; the speedboat with a big rudder.
 - [[summary-worldofai-hermes-agent|Hermes Agent: 24/7 Self-Evolving]] — WorldofAI walkthrough of GEPA, install, Obsidian skill demo.
+- [[summary-fireship-saas-death-spiral|How AI is Breaking SaaS]] — Fireship's $1T market-cap thesis; seven Feb 2026 developments.
 
 ## Contribute or build your own
 

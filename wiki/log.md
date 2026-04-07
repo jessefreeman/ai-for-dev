@@ -8,6 +8,15 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | How AI is Breaking the SaaS Business Model (Fireship)
+- **Source**: YouTube transcript by Fireship — Code Report on the SaaS death spiral
+- **Pages created** (3):
+  - `summary-fireship-saas-death-spiral.md` — Source summary
+  - `wiki/analyses/saas-death-spiral.md` — Analysis: $1T SaaS market cap thesis + seven Feb 2026 developments
+  - `wiki/tools/github-agent-hq.md` — Entity: Microsoft's GitHub→agent orchestration platform
+- **Updated**: `wiki/people/fireship.md` (3rd source), `wiki/tools/codex.md` (added Codex 5.3 + Mac app section), `wiki/index.md`
+- **Note**: Did not create stub pages for Qwen 3 Coder Next, GLM 5, MiniMax M2.5, Waymo World Model — they're mentions in this source, not subjects. MiniMax M2.5 noted as same family as existing [[minimax-m2-7]].
+
 ## [2026-04-07] ingest | Hermes Agent: 24/7 Self-Evolving (WorldofAI)
 - **Source**: YouTube transcript by WorldofAI on Hermes Agent by Nous Research
 - **Pages created** (1):
