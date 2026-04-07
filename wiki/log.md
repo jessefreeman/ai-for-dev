@@ -8,6 +8,15 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Host Your Own AI Code Assistant (Wolfgang's Channel)
+- **Source**: YouTube tutorial + hardware comparison by Wolfgang's Channel, 2024-08-24, ~3,532 source words
+- **Pages created** (3):
+  - `wiki/sources/summary-wolfgangs-channel-self-host-ai-code-assistant.md` — Source summary with full Docker Compose recipe + power consumption data
+  - `wiki/people/wolfgangs-channel.md` — Entity: homelab/self-hosting YouTuber
+  - `wiki/tools/continue.md` — Entity: open-source VS Code/JetBrains extension; local Copilot replacement via any OpenAI-compliant local backend
+- **Updated**: `wiki/index.md`
+- **Notes**: Builds the wiki's bridge between the local-AI hardware thread and the agentic-coding thread. Power data (130W gaming PC vs 4.6W MiniPC, no usable middle ground) corroborates [[summary-alex-ziskind-vllm-fp8|Alex Ziskind's vLLM analysis]] from a different angle. Sponsor: Docker (Docker Scout segment) — disclosed and clean.
+
 ## [2026-04-07] ingest | EASIEST Way to Fine-Tune a LLM and Use It With Ollama (Tech With Tim)
 - **Source**: YouTube tutorial walkthrough by Tech With Tim, 2025-06-27 publish, ~5,270 source words
 - **Pages created** (4):

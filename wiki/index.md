@@ -45,6 +45,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[alex-ziskind|Alex Ziskind]] — Local LLM benchmarks; vLLM/FP8/Apple Silicon vs Nvidia hardware deep dives.
 - [[the-cyber-mentor|The Cyber Mentor (Heath Adams)]] — Cybersecurity educator; founder of TCM Security Academy.
 - [[tech-with-tim|Tech With Tim]] — Python + AI tutorials; concrete walkthroughs of fine-tuning, Ollama, Docker Model Runner.
+- [[wolfgangs-channel|Wolfgang's Channel]] — Homelab/self-hosting YouTuber; local AI code assistant + power consumption analysis.
 
 ### Organizations
 - [[anthropic|Anthropic]] — US frontier-AI lab; Claude, Claude Code, the MCP standard, the Claude Code architecture leak. PBC structure.
@@ -82,6 +83,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[anything-llm|AnythingLLM]] — All-in-one local AI app for document chat, agents, and automations.
 - [[open-webui|Open WebUI]] — Self-hosted ChatGPT-like web interface for local LLMs via Ollama.
 - [[docker-model-runner|Docker Model Runner]] — Local LLM runtime built into Docker Desktop; OCI-packaged models, no CUDA needed.
+- [[continue|Continue]] — Open-source VS Code/JetBrains extension; local Copilot replacement via Ollama or any OpenAI-compliant API.
 - [[minimax-m2-7|MiniMax M2.7]] — Closed-source model claiming to outperform Opus 4.6 at 20x lower cost.
 
 ### Open-Source Projects
@@ -192,6 +194,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-tcm-bjorn-network-pentest-pi|Meet Bjorn, the Easy to Build Hacking Tool]] — TCM walkthrough of building a Raspberry Pi network pentest device; defensive audit angle for self-hosters.
 - [[summary-openai-industrial-policy-intelligence-age|Industrial Policy for the Intelligence Age]] — OpenAI's first major public policy paper; 21 proposals + heavy interested-party caveats.
 - [[summary-tech-with-tim-fine-tune-ollama|EASIEST Way to Fine-Tune a LLM and Use It With Ollama]] — Tech With Tim: Unsloth + LoRA + GGUF + Ollama Modelfile workflow.
+- [[summary-wolfgangs-channel-self-host-ai-code-assistant|Host Your Own AI Code Assistant with Docker, Ollama and Continue!]] — Wolfgang's Channel: 7900XTX gaming PC vs MiniPC for local Copilot; "GPU is the cliff."
 
 ## Contribute or build your own
 
