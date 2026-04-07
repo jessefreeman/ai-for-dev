@@ -47,6 +47,7 @@ New content appears as I read, watch, and research. The site updates automatical
 
 ### Tools
 - [[augment-agent|Augment Agent]] — Agentic IDE; #1 OSS on SWE-bench Verified at 65.4%; large-codebase indexing.
+- [[firebase-studio|Firebase Studio]] — Google's cloud agentic dev environment (rebrand of Project IDX); free tier.
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki. Now with /loop and a skills ecosystem.
 - [[cursor|Cursor]] — AI-native code editor; one of the first coding agents.
 - [[codex|Codex]] — OpenAI's coding agent harness.
@@ -146,6 +147,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-joshua-clarke-local-ai-cybersec|Local AI for Cybersec]] — Joshua Clarke on Ollama + Open WebUI for private security writing.
 - [[summary-cole-medin-100x-ai-coding|Code 100x Faster with AI]] — Cole Medin's full AI coding process; one-shots a Supabase MCP server.
 - [[summary-gemma4guide-vram-requirements|Gemma 4 VRAM Requirements]] — Reference article: GPU + Mac sizing for every Gemma 4 model.
+- [[summary-worldofai-firebase-studio|Firebase Studio Walkthrough]] — WorldofAI on Google's free agentic dev environment.
 
 ## Contribute or build your own
 

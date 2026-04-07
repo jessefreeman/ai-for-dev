@@ -8,6 +8,13 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Firebase Studio (WorldofAI)
+- **Source**: YouTube transcript by WorldofAI on Google's Firebase Studio launch
+- **Pages created** (2):
+  - `summary-worldofai-firebase-studio.md` — Source summary
+  - `wiki/tools/firebase-studio.md` — Entity: cloud agentic dev environment (Project IDX rebrand)
+- **Updated**: `wiki/people/worldofai.md` (2nd source), `wiki/index.md`
+
 ## [2026-04-07] ingest | Gemma 4 VRAM Requirements (Gemma4Guide.com)
 - **Source**: Web reference article from Gemma4Guide.com
 - **Pages created** (2):
