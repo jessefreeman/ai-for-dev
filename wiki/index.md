@@ -35,6 +35,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[crosstalk-solutions|Crosstalk Solutions]] — Home lab creator; built Project Nomad offline AI server.
 - [[dave-swift|Dave Swift]] — AI tools creator focused on audio and local-first applications.
 - [[stephen-g-pope|Stephen G. Pope]] — Creator of ThePopeBot; autonomous agent architecture.
+- [[worldofai|WorldofAI]] — YouTube creator covering AI tools and agentic IDE launches.
 
 ### Frontier Models
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
