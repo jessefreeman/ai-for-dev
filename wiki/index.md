@@ -68,6 +68,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[paperclip|Paperclip]] — Open-source multi-agent orchestration dashboard; MIT licensed.
 - [[anything-llm|AnythingLLM]] — All-in-one local AI app for document chat, agents, and automations.
 - [[open-webui|Open WebUI]] — Self-hosted ChatGPT-like web interface for local LLMs via Ollama.
+- [[docker-model-runner|Docker Model Runner]] — Local LLM runtime built into Docker Desktop; OCI-packaged models, no CUDA needed.
 - [[minimax-m2-7|MiniMax M2.7]] — Closed-source model claiming to outperform Opus 4.6 at 20x lower cost.
 
 ### Open-Source Projects
@@ -162,6 +163,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-nate-b-jones-chatgpt5-prompting|ChatGPT-5 Prompting is Too Hard]] — Nate B Jones on meta-prompting GPT-5; the speedboat with a big rudder.
 - [[summary-worldofai-hermes-agent|Hermes Agent: 24/7 Self-Evolving]] — WorldofAI walkthrough of GEPA, install, Obsidian skill demo.
 - [[summary-fireship-saas-death-spiral|How AI is Breaking SaaS]] — Fireship's $1T market-cap thesis; seven Feb 2026 developments.
+- [[summary-worldofai-docker-model-runner|Docker Model Runner Walkthrough]] — WorldofAI on the Docker-native local LLM runtime.
 
 ## Contribute or build your own
 

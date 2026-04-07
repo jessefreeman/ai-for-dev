@@ -24,6 +24,8 @@ Ollama integrates with [[Claude Code]] to substitute open-source models for Anth
 
 **Context window note:** Ollama may default to a small context window regardless of what the model supports. Fix by creating a custom model config with `num_ctx` set to the desired size.
 
+**Alternative**: [[docker-model-runner|Docker Model Runner]] is a competing local LLM runtime built into Docker Desktop. Use Docker Model Runner if you already live in containers; use Ollama if you don't. Both expose OpenAI-compatible APIs.
+
 ## Cloud Tier
 
 Ollama also hosts cloud models (e.g., MiniMax M 2.7) that can be used without local hardware. Free usage is limited; paid subscription unlocks higher throughput. Models only available in the cloud tier will not show a size in Ollama's model list.

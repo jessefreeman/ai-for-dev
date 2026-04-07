@@ -18,6 +18,13 @@ A self-hosted, ChatGPT-like web interface for local LLMs. Connects to [[ollama|O
 
 Ollama exposes local models as a REST API, but the bare CLI is awkward for sustained work. Open WebUI sits on top and makes local LLMs feel like commercial chat — without sending anything off the machine. Common stack: **Ollama + Docker + Open WebUI** for fully-offline ChatGPT.
 
+## Backend Options
+
+Open WebUI sits on top of an OpenAI-API-compatible local model runtime. Two practical choices:
+
+- **[[ollama|Ollama]]** — the canonical pairing; standalone install, simplest setup
+- **[[docker-model-runner|Docker Model Runner]]** — newer alternative built into Docker Desktop; community compose file by Bret Fisher wires the two together via `OPENAI_API_BASE_URL`
+
 ## Use Cases Covered in Wiki Sources
 
 - **Cybersecurity communication** — translating technical findings into plain English without leaking data to cloud LLMs ([[summary-joshua-clarke-local-ai-cybersec|Joshua Clarke video]])

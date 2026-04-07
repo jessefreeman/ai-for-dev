@@ -8,6 +8,13 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Docker Model Runner (WorldofAI)
+- **Source**: YouTube transcript by WorldofAI on Docker Model Runner
+- **Pages created** (2):
+  - `summary-worldofai-docker-model-runner.md` — Source summary
+  - `wiki/tools/docker-model-runner.md` — Entity: local LLM runtime built into Docker Desktop
+- **Updated**: `wiki/people/worldofai.md` (4th source), `wiki/tools/ollama.md` (added alternative cross-link), `wiki/tools/open-webui.md` (added backend options section), `wiki/index.md`
+
 ## [2026-04-07] ingest | How AI is Breaking the SaaS Business Model (Fireship)
 - **Source**: YouTube transcript by Fireship — Code Report on the SaaS death spiral
 - **Pages created** (3):
