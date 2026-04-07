@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Planning In Claude Code Just Got a Huge Upgrade.md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-07
 tags: [tool, ai, llm, anthropic]
 ---
 
@@ -43,6 +43,50 @@ Before `/loop`, developers needed external scaffolding (bash scripts, markdown c
 
 **Limitations**: Session-scoped (stops when laptop closes), no built-in "done" signal.
 
+## /ultra-plan — Cloud-Hosted Multi-Agent Planning
+
+Shipped April 2026 (research preview). The **Ultra Plan** feature offloads the planning phase to a cloud-hosted **Opus 4.6** instance with **multi-agent exploration**: 3 parallel exploration agents + 1 critique agent collaborate on the plan, then teleport it back to the local terminal for execution (or execute remotely). Demonstrated by [[Nate Herk]] in a side-by-side dashboard build:
+
+- **Local plan mode**: ~45 minutes total (planning + execution)
+- **Ultra Plan**: ~10–15 minutes total — *both planning AND execution were faster*
+
+Why execution is also faster: the plan is so much clearer that the local execution agent has less to figure out at runtime. "Give me 6 hours to chop down a tree and I will spend the first four sharpening the axe."
+
+### How it works
+
+| | Local Plan | Ultra Plan |
+|---|---|---|
+| Runs in | Your terminal | Anthropic cloud container runtime |
+| Model | Whatever your session uses | Opus 4.6 (always) |
+| Approach | Single agent, linear thinking | 3 parallel exploration agents + 1 critique agent |
+| Max compute time | Bounded by session | 30 min cap |
+| Terminal blocking | Yes (session blocks) | No (you can keep working in the terminal) |
+| Review surface | Text dialogue | Doc-style web UI with comments + emoji reactions on individual sections |
+
+### Triggering and review loop
+
+- `/ultra-plan <prompt>` or include the keyword "ultra plan" anywhere in a CLI prompt → Claude offers to run it
+- Plan drafts on the web; you review with comments and emoji reactions on individual sections
+- Approve plan → teleports back to the terminal for local execution, OR execute remotely in the cloud
+- Iterate via comments — Claude does another pass on the plan based on feedback
+
+### Requirements & limits
+
+- **Project must be synced to a git/GitHub repo** — Claude needs to read the codebase from the cloud. If your project is local-only, ultra plan refuses with "you can't do this on the web yet."
+- **Only works in the CLI** — VS Code extension and desktop app don't trigger Ultra Plan even if you type the command
+- **Requires Pro or Max subscription** — API billing doesn't work; you need a cloud-attached account
+- **Token usage is opaque** — Nate's tests showed it consumed ~1% of his Max 20x plan per ultra-plan run, but no explicit token counter
+- **Skills aren't always invoked** — even though Ultra Plan can see your whole project, it sometimes needs explicit prompting to use a specific skill
+
+### When it's worth it
+
+Ultra Plan uses more tokens upfront because it's running multi-agent exploration in parallel. Worth it when:
+- Building a non-trivial feature where plan quality dramatically affects execution quality
+- You want a richer review surface than the terminal offers (comments, emoji, doc layout)
+- You have enough subscription headroom to spend the extra tokens
+
+Skip it for trivial changes — local plan mode is fine and doesn't need the cloud roundtrip.
+
 ## Skills Ecosystem
 
 Claude Code has a growing ecosystem of installable skills and plugins:
@@ -73,3 +117,6 @@ Claude Code has a growing ecosystem of installable skills and plugins:
 - [[summary-nate-jones-12-agent-primitives|Source: 12 Agent Primitives]]
 - [[summary-nate-herk-ollama-claude-code|Source: Ollama + Claude Code]]
 - [[summary-nate-b-jones-loop-openbrain|Source: /loop + OpenBrain]]
+- [[summary-nate-herk-ultra-plan|Source: Planning In Claude Code Just Got a Huge Upgrade]]
+- [[ai-coding-workflow]] — Cole Medin's process discipline that pairs naturally with Ultra Plan
+- [[bmad-method]] — heavier alternative to Ultra Plan's automatic multi-agent approach

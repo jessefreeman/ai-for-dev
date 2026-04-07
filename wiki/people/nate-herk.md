@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "Ollama + Claude Code = 99% CHEAPER.md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "Ollama + Claude Code = 99% CHEAPER.md", "Planning In Claude Code Just Got a Huge Upgrade.md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-07
 tags: [person, ai, youtube, automation]
 ---
 
@@ -22,6 +22,7 @@ YouTube creator focused on AI automation and practical Claude Code workflows. Ru
 - [[summary-nate-herk-ollama-claude-code|Ollama + Claude Code = 99% CHEAPER]] — Two methods for running Claude Code with open-source models (local via [[Ollama]], cloud via [[OpenRouter]])
 - [[summary-nate-herk-paperclip|Claude Code + Paperclip Just Destroyed OpenClaw]] — Demonstrates [[Paperclip]] for multi-agent orchestration; building a persistent AI "company" using Claude Code agents with heartbeats, ticketing, and a CEO/engineer/QA hierarchy
 - [[summary-nate-herk-500-ai-workflows|I've Built 500 AI Workflows, This is What Businesses Want in 2026]] — The 5 highest-value AI automation workflows for selling to businesses, plus the clogged pipe framework for identifying which one a client needs
+- [[summary-nate-herk-ultra-plan|Planning In Claude Code Just Got a Huge Upgrade]] — Walkthrough of Claude Code's new [[claude-code|Ultra Plan]] feature: cloud-hosted Opus 4.6 with 3 parallel exploration agents + 1 critique agent. Side-by-side dashboard build shows Ultra Plan at ~10–15 min vs local plan at ~45 min total.
 
 ## Key Ideas
 
@@ -31,6 +32,8 @@ YouTube creator focused on AI automation and practical Claude Code workflows. Ru
 - Human-as-board pattern: operate Paperclip in 30-minute board sessions (set high-level goals, approve hires) rather than managing individual agent sessions
 - "Businesses don't want fancy AI — they want boring workflows that save time, save money, or remove mistakes"
 - The clogged pipe diagnostic: *"If 500 new clients showed up tomorrow, what would break first?"* — reveals the real bottleneck
+- **"Give me 6 hours to chop down a tree and I will spend the first four sharpening the axe"** — quoted re: planning. Spending more tokens upfront on planning is worth it if execution is faster and higher-quality
+- Ultra Plan in Claude Code uses **3 parallel exploration agents + 1 critique agent** running cloud-hosted Opus 4.6 — multi-agent exploration is the structural reason it produces better plans than local single-agent linear thinking
 
 ## See Also
 - [[Claude Code]]

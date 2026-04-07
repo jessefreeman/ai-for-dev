@@ -164,6 +164,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-worldofai-hermes-agent|Hermes Agent: 24/7 Self-Evolving]] — WorldofAI walkthrough of GEPA, install, Obsidian skill demo.
 - [[summary-fireship-saas-death-spiral|How AI is Breaking SaaS]] — Fireship's $1T market-cap thesis; seven Feb 2026 developments.
 - [[summary-worldofai-docker-model-runner|Docker Model Runner Walkthrough]] — WorldofAI on the Docker-native local LLM runtime.
+- [[summary-nate-herk-ultra-plan|Planning in Claude Code Just Got a Huge Upgrade]] — Nate Herk on Claude Code's new Ultra Plan: cloud Opus 4.6 + multi-agent exploration.
 
 ## Contribute or build your own
 

@@ -8,6 +8,12 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Planning in Claude Code Just Got a Huge Upgrade (Nate Herk)
+- **Source**: YouTube transcript by Nate Herk on Claude Code's new Ultra Plan feature
+- **Pages created** (1):
+  - `summary-nate-herk-ultra-plan.md` — Source summary
+- **Updated**: `wiki/tools/claude-code.md` (added /ultra-plan section with full feature breakdown), `wiki/people/nate-herk.md` (3rd source), `wiki/index.md`
+
 ## [2026-04-07] ingest | Docker Model Runner (WorldofAI)
 - **Source**: YouTube transcript by WorldofAI on Docker Model Runner
 - **Pages created** (2):
