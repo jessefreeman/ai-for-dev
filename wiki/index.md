@@ -99,6 +99,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[five-levels-of-ai-coding|Five Levels of AI Coding]] — L0 spicy autocomplete → L5 dark factory. Dan Shapiro's framework + StrongDM case study.
 - [[frontier-operations|Frontier Operations]] — Five persistent skills for working at the expanding AI/human boundary.
 - [[bmad-method|BMAD Method]] — Agile AI-Driven Development; six AI personas (BA → PM → Architect → PO → SM → Dev).
+- [[ai-coding-workflow|AI Coding Workflow]] — Cole Medin's PLANNING.md + TASK.md + global rules + MCP servers pattern.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -142,6 +143,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[summary-worldofai-augment-agent|Augment Agent: RIP Cursor]] — WorldofAI walkthrough of Augment Agent's SWE-bench launch.
 - [[summary-bmad-code-aiadd-method|Better Than Vibe Coding]] — BMad Code introduces the BMAD Method (six Agile AI personas).
 - [[summary-joshua-clarke-local-ai-cybersec|Local AI for Cybersec]] — Joshua Clarke on Ollama + Open WebUI for private security writing.
+- [[summary-cole-medin-100x-ai-coding|Code 100x Faster with AI]] — Cole Medin's full AI coding process; one-shots a Supabase MCP server.
 
 ## Contribute or build your own
 

@@ -8,6 +8,13 @@ updated: 2026-04-07
 
 Chronological record of all operations.
 
+## [2026-04-07] ingest | Code 100x Faster with AI (Cole Medin)
+- **Source**: YouTube transcript by Cole Medin on his full AI coding workflow
+- **Pages created** (2):
+  - `summary-cole-medin-100x-ai-coding.md` — Source summary
+  - `wiki/concepts/ai-coding-workflow.md` — Concept: PLANNING.md/TASK.md + global rules + MCP servers pattern
+- **Updated**: `wiki/people/cole-medin.md` (4th source), `wiki/index.md`
+
 ## [2026-04-07] ingest | Local AI for Cybersec (Joshua Clarke)
 - **Source**: YouTube transcript by Joshua Clarke on Ollama + Open WebUI for cybersecurity workflows
 - **Pages created** (3):
