@@ -39,7 +39,7 @@ The wiki's specific topic scope is declared in `CLAUDE.md`. These page types and
 # Page Title
 
 Content here. Use [[wikilinks]] to link to other wiki pages.
-Link to sources as [[raw/archive/filename|display name]].
+Link to raw sources as relative markdown links: [display name](../../raw/archive/filename.md).
 
 ## See Also
 - [[Related Page 1]]
@@ -50,10 +50,16 @@ Every page must link to at least one other wiki page.
 
 ## Wikilink rules
 
-- Wiki-to-wiki: `[[Page Title]]` or `[[page-slug|Display Name]]`
-- Citations to raw sources: `[[raw/archive/filename|Display Name]]`
-- Filenames: lowercase-kebab-case (`retrieval-augmented-generation.md`)
-- Page titles: short and clear ("Retrieval-Augmented Generation", not "A Summary of RAG Techniques")
+- **Wiki-to-wiki**: `[[Page Title]]` or `[[page-slug|Display Name]]`. These resolve in both Obsidian and Quartz.
+- **Citations to raw sources**: use a **relative markdown link**, not a wikilink:
+  ```markdown
+  [Original Transcript](../../raw/archive/filename.md)
+  ```
+  **Why not wikilinks?** `raw/` lives outside the `wiki/` tree. The wikilink form `[[raw/archive/filename]]` does not resolve in either Obsidian (which only resolves wikilinks within the vault root, and the gitignored `raw/` directory may not be a vault member) or in Quartz (which only renders the `wiki/` subtree). Relative markdown links are the only form that works in both renderers.
+  - URL-encode any spaces or apostrophes in the filename (e.g. `Karpathy%20Just%2010x%27d.md`).
+  - The path depth is `../../` from any standard wiki page (`wiki/<folder>/<page>.md` → repo root) — adjust if pages are nested deeper.
+- **Filenames**: lowercase-kebab-case (`retrieval-augmented-generation.md`)
+- **Page titles**: short and clear ("Retrieval-Augmented Generation", not "A Summary of RAG Techniques")
 
 ## Frontmatter tag taxonomy
 
