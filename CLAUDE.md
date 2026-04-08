@@ -4,7 +4,9 @@ This vault is a **personal knowledge base** maintained by an LLM agent. The huma
 
 ## Wiki Scope
 
-This wiki tracks **AI tools, techniques, and workflows for developers** — production agent architecture, the planning-first AI coding stack, the local-AI throughput layer, agent proactivity/memory primitives, AI ethics and policy as industry-observability signal, business models in the post-SaaS world, and personal hardware capacity for local inference. Adjacent topics are in scope when they materially affect the above (e.g., self-hosting infrastructure, defensive network security for self-hosted AI rigs).
+This wiki tracks **AI tools, techniques, and workflows for developers** — production agent architecture, the planning-first AI coding stack, the local-AI throughput layer, agent proactivity/memory primitives, AI ethics and policy as industry-observability signal, business models in the post-SaaS world, and personal hardware capacity for local inference.
+
+**Adjacent dev tooling is also in scope.** A lot of the AI content here exists to help with coding, so the wiki is *AI for devs* in the broad sense: open-source and self-hostable developer tools belong here even when they're not AI-specific (wikis, project management, CMS, databases, observability, automation). When an ingested source mentions a commercial tool that has a credible self-hostable open-source alternative, capture the alternative as its own entity and cross-link it to the commercial tool via the [[self-hostable-alternatives|Self-Hostable Alternatives]] map. Other adjacent topics in scope when they materially affect the above (e.g., self-hosting infrastructure, defensive network security for self-hosted AI rigs).
 
 > **Important**: this scope statement is the **only** place where the wiki's topic focus lives. Everything in `.instructions/core/` is intentionally topic-agnostic — the same prompts, templates, and rules would work for any LLM-maintained personal knowledge base. When the lint prompt asks "is this page off-topic?", the answer comes from *this section*, not from any rule file.
 
@@ -81,8 +83,10 @@ Detailed rules live in `.instructions/core/rules/`. Read on demand, not preempti
 |---|---|
 | `page-conventions.md` | Frontmatter, page types & folders, wikilinks, quality bar |
 | `memory-rules.md` | RavenBrain memory format, tag taxonomy, what to capture |
-| `hot-cache-rules.md` | What goes in `wiki/hot.md` and what doesn't |
+| `hot-cache-rules.md` | What goes in `wiki/hot.md` and what doesn't (500-word cap) |
+| `overview-rules.md` | What goes in `wiki/overview.md` (1,500-word cap, synthesis only) |
 | `index-rules.md` | Format and content of `wiki/index.md` |
+| `log-rules.md` | Rolling-window changelog rules for `wiki/log.md` (10-entry cap; git is the historical record) |
 | `tasks-rules.md` | What belongs in `wiki/tasks.md` (user-input items only) and how lint/task-review keep it pruned |
 | `pdf-extraction.md` | How to detect/install/run a PDF→text tool and inject the result into the clipping MD |
 
@@ -95,7 +99,7 @@ Read `wiki/hot.md` then `wiki/index.md`, then load only the relevant pages. Synt
 1. Read `CLAUDE.md` (this file).
 2. Read `wiki/hot.md` — fast context, do not skip.
 3. Read `wiki/index.md` — full page catalog.
-4. Read last ~20 entries of `wiki/log.md` — recent activity.
+4. Read all of `wiki/log.md` — recent activity (capped at 10 entries per `log-rules.md`).
 5. Glance at `wiki/tasks.md` — note any open items relevant to the session.
 6. Do **not** read individual wiki pages unless the user's request requires it.
 7. Ask the user what they'd like to do: ingest, query, lint, or explore.

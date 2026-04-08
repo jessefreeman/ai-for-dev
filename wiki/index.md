@@ -132,6 +132,11 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[kimi-k2|Kimi K2]] — Moonshot's open-weights MoE model; 32B active params, ~10× cheaper than Sonnet at output.
 - [[kimi-coder|Kimi Coder]] — Llama Coder fork repointed at Kimi K2; web app for prompt-to-SPA generation.
 - [[minimax-m1|MiniMax M1]] — MiniMax's open-weights hybrid-attention model; 1M token context, 80K reasoning output.
+- [[docmost|Docmost]] — Self-hostable collaborative wiki/docs platform; Notion (docs portion) alternative.
+- [[plane|Plane]] — Self-hostable open-source project management; Jira/Linear/Notion (PM portion) alternative.
+- [[strapi|Strapi]] — Self-hostable headless CMS; Contentful/Sanity alternative.
+- [[nocodb|NocoDB]] — Self-hostable no-code database; Airtable alternative.
+- [[grafana|Grafana]] — Open-source observability/analytics dashboards; PostHog/Amplitude alternative when paired with Postgres.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -152,10 +157,12 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[fine-tuning|Fine-Tuning (LLMs)]] — LoRA + GGUF + Ollama pipeline for specializing open-weights models on local hardware.
 - [[fp8-quantization|FP8 Quantization]] — Floating-point 8-bit precision; native to Nvidia Blackwell tensor cores; the throughput sweet spot for vLLM.
 - [[context-engineering|Context Engineering]] — Karpathy/Lütke's successor to prompt engineering; curating *all* the information an LLM needs to plausibly solve a task.
+- [[claude-code-subagents|Claude Code Sub-Agents]] — Anthropic's first-party multi-agent primitive: isolated context, tool whitelists, parallel execution.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
 - [[saas-death-spiral|SaaS Death Spiral]] — Why $1T in SaaS market cap evaporated in early 2026; seven AI developments and the per-seat pricing axis.
+- [[self-hostable-alternatives|Self-Hostable Alternatives]] — Running map of commercial dev tools and credible open-source self-hostable replacements captured in this wiki.
 
 ### Personal Hardware Benchmarks
 - [[benchmarks/index|Benchmark Index]] — Master ranking of all 16 personal rigs by AI Capability Index.

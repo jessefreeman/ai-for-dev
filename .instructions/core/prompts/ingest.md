@@ -53,8 +53,9 @@ Create 3–8 atomized memory files in `raw/memories/` per [memory rules](../rule
 1. Move the source file from `raw/` to `raw/archive/`.
    - **For PDF sources**: also move the asset from `raw/assets/<filename>.pdf` to `raw/assets/archive/<filename>.pdf`.
 2. Stage all changed wiki files and new memory files.
-3. Commit with message `ingest: <source-slug>`. Never add `Co-Authored-By` or any Claude attribution.
-4. Each source is its own commit (rollback point).
+3. Commit. Never add `Co-Authored-By` or any Claude attribution.
+   - **Single source**: commit with `ingest: <source-slug>`.
+   - **Batch ingest** (multiple sources processed in one run with user authorization): commit once at the end with `ingest: <N>-source batch (<short-theme>)` and list each source slug in the commit body. The per-source rollback unit is the source-summary page itself.
 
 ### Phase 6 — Lint reminder
 

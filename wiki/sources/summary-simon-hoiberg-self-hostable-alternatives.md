@@ -31,7 +31,11 @@ Promotes his own FounderStack lifetime deal throughout. The recommendations them
 
 ## Connected Pages
 
+- [[self-hostable-alternatives]] — the running map this source anchors
 - [[n8n]] — primary wiki-relevant tool
+- [[docmost]], [[plane]], [[strapi]] — the three-way Notion split
+- [[nocodb]] — Airtable replacement
+- [[grafana]] — analytics replacement (+ Postgres event logging)
 - [[deepseek]] — fixed-cost local-hosting use case
 - [[saas-death-spiral]] — adjacent thesis (per-seat pricing → bypass)
 - [[ollama]], [[vllm]] — local-AI thread
