@@ -1,8 +1,8 @@
 ---
 type: comparison
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead).md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead).md", "Don't do RAG - This method is way faster & accurate....md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-08
 tags: [ai, llm, knowledge-management, rag, comparison]
 ---
 
@@ -54,6 +54,20 @@ For large knowledge bases (customer support, compliance, legal, enterprise docs)
 - **Semantic matching** handles ambiguous natural language, synonyms, conceptual similarity
 - Keyword/regex search cannot find buried conceptual references
 
+## CAG: The Third Approach
+
+[[context-augmented-generation|Context Augmented Generation]] (per [[ai-jason|AI Jason]]) is the third entry in this comparison: instead of retrieving chunks (RAG) or following structured links (wiki), **load the entire dataset into the model's context window** and let the model do the relevance work itself. Only viable now because long-context models (Gemini 2.0 with 1M+ tokens) and collapsing per-token prices ($0.01/M input on Gemini 2.0 Flash) inverted the cost calculus.
+
+| Aspect | LLM Wiki | RAG | CAG |
+|---|---|---|---|
+| Best for | Personal KB | Massive unstructured corpora | Bounded datasets that fit context |
+| Infrastructure | Markdown only | Embedding model + vector DB | Long-context model + cache |
+| Per-query cost | Tokens for index + page | Embedding + vector lookup + LLM | One LLM call with full corpus |
+| Tuning surface | Page conventions, lint passes | Chunk size, embedding, reranker | Prompt + corpus selection |
+| Failure mode | Stale index | Bad retrieval | Context overflow |
+
+The macro view: **RAG was a bridge technology** that papered over context-window scarcity. With cheap long context, RAG's reason-to-exist shrinks to "the dataset is larger than any feasible context window." See [[context-augmented-generation|CAG]] for the full pattern.
+
 ## The Bridge Approach
 
 Emerging best practice: give agents **both** retrieval tools (semantic search + agentic search) and let them decide per-query which strategy fits the data.
@@ -80,3 +94,5 @@ One user reported a **95% reduction in token usage** after converting 383 scatte
 - [[Cole Medin]] — primary source for the structured vs unstructured analysis
 - [[summary-karpathy-10x-claude-code|Source: Karpathy 10x'd Claude Code]]
 - [[summary-cole-medin-rag-for-code|Source: Why Coding Tools Abandoned RAG]]
+- [[context-augmented-generation|CAG]] — the third approach
+- [[summary-ai-jason-cag-context-augmented-generation|Source: Don't Do RAG (AI Jason)]]

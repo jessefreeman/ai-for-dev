@@ -9,6 +9,25 @@ updated: 2026-04-08
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-08] ingest | 5-source batch (Google I/O launches + CAG + Dify)
+
+Third batch of the day; user split it from the larger queue. **5 sources, all in scope, none skipped. 85 sources ingested total.**
+
+- **Sources** (5):
+  1. **Claude 4 Sonnet & Opus + Cline** ([[worldofai|WorldofAI]]) — refreshes [[claude]] with Claude 4 pricing ($15/$75 Opus, $3/$15 Sonnet) and the **~$2.60 SaaS-landing-page cost** data point; refreshes [[cline]] with Requesty/Kilo free-API workarounds.
+  2. **Don't Do RAG — CAG** ([[ai-jason|AI Jason]] — new person) — anchors new concept [[context-augmented-generation]]; updates [[rag-vs-wiki]] with CAG as a third approach.
+  3. **Google Jules** (WorldofAI) — anchors new entity [[jules]]; first-party Google async coding agent on Gemini 2.5 Pro; closes the long-standing Jules gap that [[open-swe]] was tracked against.
+  4. **Google Stitch I/O 2025 launch** (WorldofAI) — second source on existing [[google-stitch]]; adds two-mode pricing (350 Flash / 50 Pro per month), Figma/HTML export options, Airbnb-clone demo.
+  5. **Dify Knowledge Base configuration** (LLMs Explained / Aggregate Intellect — channel-attributed) — anchors new entity [[dify]].
+
+- **Major thread — Google's coordinated I/O 2025 free push**: Jules + Stitch in the same week, both Gemini-powered, both targeting paid incumbents (Codex/Copilot, v0.dev/Figma). Jules at 5 tasks/day free, Stitch at 350+50 generations/month free. The aggressive zero-pricing is the [[saas-death-spiral]] thread's strongest near-term move.
+
+- **Major thread — RAG-skepticism gets a third entry**: [[context-augmented-generation|CAG]] joins [[rag-vs-wiki|RAG vs Wiki]] (curated wiki) and [[summary-cole-medin-rag-for-code|"RAG is dead for code"]] (agentic search). Each proposes a different replacement for semantic retrieval. The [[rag-vs-wiki]] page now hosts the three-way comparison.
+
+- **Person page judgment call**: the Dify source channel ("LLMs Explained / Aggregate Intellect / AI.SCIENCE") doesn't name an individual creator. Per page-conventions ("never create stub person pages with unknown channel info"), no person page was created — flagged in tasks.md as a follow-up.
+
+- **5 memories** added to `raw/memories/`.
+
 ## [2026-04-08] lint: 2026-04-08 (round 2) — post-12-source-batch cleanup
 
 Second lint pass of the day, after the 12-source ingest batch. 3 actionable groups, all approved.
@@ -128,10 +147,4 @@ Largest single ingest in the wiki to date. The user authorized batch processing 
 - **Pages created** (2): `summary-openai-industrial-policy-intelligence-age.md`; `industrial-policy-intelligence-age.md`
 - **Updated** (3): `saas-death-spiral.md`, `chatgpt.md`, `index.md`
 - **Notes**: First wiki source where the framing is "policy artifact from an interested party" — required heavier-than-usual editorial caveats.
-
-## [2026-04-07] ingest | Meet Bjorn (The Cyber Mentor) — re-ingested
-- **Source**: YouTube transcript by The Cyber Mentor on Bjorn (Raspberry Pi network pentest tool)
-- **Status**: Originally skipped as off-topic. **User reframed**: relevant as a defensive audit tool for self-hosters running local AI infrastructure.
-- **Pages created** (3): `summary-tcm-bjorn-network-pentest-pi.md`; `wiki/open-source/bjorn.md`; `wiki/people/the-cyber-mentor.md`
-- **Notes**: First wiki entry whose framing differs significantly from the source's framing. Both are accurate; the wiki framing is what makes it useful in this knowledge base.
 

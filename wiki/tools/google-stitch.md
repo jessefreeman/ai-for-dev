@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md"]
+sources: ["A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md", "Google Stitch FULLY FREE New AI UI Designer By Google CAN CREATE INSANE Frontends! (v0 Alternative).md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-08
 tags: [tool, ai, design, google, mcp]
 ---
 
@@ -25,10 +25,31 @@ The most-overlooked feature: Stitch exports a `design.md` file — an agent-read
 
 Your coding agent reads `design.md` while building, eliminating the Figma export→handoff→misinterpretation cycle. The pipeline: describe objective → Stitch generates UI → coding agent reads `design.md` → code ships.
 
-## Pricing
+## Pricing & modes
 
-- **Free**: 350 generations/month
-- Paid tiers available
+Two-mode split (per [[summary-worldofai-google-stitch|WorldofAI's I/O 2025 walkthrough]]):
+
+| Mode | Model | Generations/month |
+|---|---|---|
+| **Standard** | Gemini 2.5 Flash | 350 |
+| **Experimental** | Gemini 2.5 Pro | 50 |
+
+Both are free at launch. Paid tiers added later for higher generation caps.
+
+## Export options
+
+Stitch can export designs in three forms:
+
+1. **`design.md`** — agent-readable design system file (the most-overlooked output, per Nate B Jones)
+2. **Figma-ready file** — for designers continuing in Figma
+3. **Static HTML/CSS** — for direct codebase import
+
+## Capability demos
+
+- **Visual mockup replication** — paste a screenshot, get a working clone (Airbnb demo)
+- **Sketch-to-design** — hand-drawn sketch → polished UI
+- **Theme controls** — colors, corner radius, light/dark appearance
+- **Multi-page apps** — Daily Stoic app with light/dark mode, multi-page navigation, quote history
 
 ## Limitations (as of March 2026)
 
@@ -41,7 +62,10 @@ Figma stock dropped when Stitch launched because the product makes high-fidelity
 ## See Also
 
 - [[Nate B Jones]] — source analysis
+- [[jules|Google Jules]] — sibling free Google I/O 2025 Gemini-powered tool
+- [[google|Google]]
 - [[Blender MCP]] — companion creative tool via MCP
 - [[Remotion]] — companion video-as-code tool
 - [[mcp|MCP]] — the standard that makes Stitch agent-accessible
 - [[summary-nate-b-jones-google-stitch|Source: A Markdown File Just Replaced Your Design Meeting]]
+- [[summary-worldofai-google-stitch|Source: WorldofAI on Stitch — pricing modes + Airbnb demo]]

@@ -1,14 +1,23 @@
 ---
 type: entity
-sources: ["Every AI Model Explained in 20 Minutes.md"]
+sources: ["Every AI Model Explained in 20 Minutes.md", "Claude 4 Sonnet & Opus + Cline FULLY FREE AI Coder! Develop a Full-stack App Without Code!.md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-08
 tags: [tool, llm, anthropic, frontier-model]
 ---
 
 # Claude
 
 [[anthropic|Anthropic]]'s frontier LLM family. Widely considered the best model for work tasks and coding. Distinct from [[Claude Code]], which is the CLI agent harness built on top of Claude models. See [[anthropic]] for the company-level entity.
+
+## Claude 4 (May 2025 generation)
+
+| Tier | Input | Output | Notable |
+|---|---|---|---|
+| **Opus 4** | $15/1M | $75/1M | #1 SWE-bench Verified at launch; one-shot full-stack capability |
+| **Sonnet 4** | $3/1M | $15/1M | Faster than Opus; ~$2.60 to generate a SaaS landing page via Cline ([[summary-worldofai-claude-4-opus-sonnet-cline|source]]) |
+
+The model family later evolved into the 4.5 / 4.6 line that powers [[claude-code|Claude Code]] today.
 
 ## Strengths
 
@@ -52,3 +61,4 @@ According to [[Matthew Berman]]:
 - [[Open-Source Model Integration]] — running Claude Code with cheaper models
 - [[Matthew Berman]] — source
 - [[summary-matthew-berman-ai-models|Source: Every AI Model Explained]]
+- [[summary-worldofai-claude-4-opus-sonnet-cline|Source: Claude 4 Opus/Sonnet + Cline]] — Claude 4 pricing + cost-of-build data

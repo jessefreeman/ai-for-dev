@@ -8,38 +8,37 @@ updated: 2026-04-08
 
 ## Current State
 
-**80 sources ingested** (after a 12-source batch on 2026-04-08), 6 org pages, 1 newly-tagged Models section in the index. The two strongest threads from this batch: **R1-0528 as the default open-source reasoning backbone** for the agent ecosystem, and **n8n's content-pipeline maturation** (faceless shorts + longform videos + first-class Perplexity node + free YouTube scraper).
+**85 sources ingested** (after a 5-source batch on 2026-04-08, second batch of the day). Strongest threads from this round: **Google's coordinated I/O 2025 free-tools push** (Jules + Stitch, both Gemini-powered) and a **third entry in the wiki's RAG-skepticism thread** ([[context-augmented-generation|CAG]]) joining [[rag-vs-wiki|RAG vs Wiki]] and [[summary-cole-medin-rag-for-code|Cole Medin's "RAG is dead for code"]].
 
 ## Most Active Pages
 
-- [[deepseek|DeepSeek]] — refreshed with R1-0528 (671B/37B MoE, MIT, 136K context, free OpenRouter); now the default free reasoning backbone for [[codename-goose|Goose]], [[stagehand]], [[deerflow]], [[agenticseek]]
-- [[n8n]] — added 4 new workflow refs and a "First-class nodes worth tracking" section ([[perplexity]], [[zep]], AI Agent)
-- [[task-master-ai]] — new entity; the cleanest practical implementation of the cost-routing thesis
-- [[deerflow]] — new entity; first ByteDance-published open-source agent framework in the wiki
-- [[codename-goose]] — new entity; the only "free Claude Code" alternative with corporate backing (Block)
-- [[stagehand]] — new entity; MCP-native browser automation; fills the long-empty browser-control slot
-- [[perplexity]] — new entity; canonical real-time-search primitive for n8n agents and MCP servers
-- [[multi-agent-orchestration]] — expanded with Task Master, AgentZero, DeerFlow, AgenticSeek
+- [[jules|Google Jules]] — new entity; first-party Google async coding agent (Gemini 2.5 Pro, free, GitHub-integrated, 5 tasks/day). Closes the long-standing Jules gap that [[open-swe]] was tracked against.
+- [[google-stitch|Google Stitch]] — second source; added pricing modes (350/mo Flash, 50/mo Pro) + Figma/HTML export + Airbnb-clone demo.
+- [[context-augmented-generation|CAG]] — new concept; pre-load entire dataset into context; the third RAG-skepticism entry. Cost economics: Gemini 2.0 Flash at $0.01/M input × 1M context window broke the calculus.
+- [[dify|Dify]] — new entity; no-code AI agent + knowledge base platform; complement to [[n8n]].
+- [[claude|Claude]] — refreshed with Claude 4 Opus/Sonnet pricing ($15/$75 and $3/$15) and ~$2.60 SaaS-landing-page cost data point.
+- [[google|Google]] — added Jules + Stitch second-source to product list; first-party Google coding agent now tracked.
+- [[ai-jason|AI Jason]] — new person; LLM application architecture / CAG / MCP patterns.
 
-## Most Recently Added (the 12-source batch 2026-04-08)
+## Most Recently Added (the 5-source batch 2026-04-08 round 2)
 
-- **Open-source agent frameworks** (4): [[task-master-ai]] (cost-routing layer), [[agent-zero]] (self-organizing), [[agenticseek]] (local + voice), [[deerflow]] (deep research, ByteDance)
-- **Free Claude Code alternatives** (2): [[codename-goose]] (Block), [[codellm]] (Abacus, $10 hosted bundle)
-- **Browser automation** (1): [[stagehand]] (Browserbase, MCP-native, self-healing)
-- **Models** (1): [[deepseek|DeepSeek R1-0528]] benchmark + adoption signal
-- **n8n maturation** (4): Perplexity node v1.98+, faceless shorts pipeline, longform video pipeline (new person [[jay-e-robonuggets]]), free YouTube scraper
+1. **Claude 4 Opus/Sonnet + Cline** ([[worldofai|WorldofAI]]) — enriches existing [[claude]] and [[cline]]; first source with concrete cost-of-build numbers
+2. **Don't Do RAG — CAG** ([[ai-jason|AI Jason]]) — new concept [[context-augmented-generation]], new person [[ai-jason]]
+3. **Google Jules** (WorldofAI) — new entity [[jules]]; closes long-standing Jules gap
+4. **Google Stitch I/O 2025 launch** (WorldofAI) — second source; updates [[google-stitch]] with pricing modes + export options
+5. **Dify Knowledge Base config** (LLMs Explained / Aggregate Intellect — channel-attributed, individual creator unknown) — new entity [[dify]]
 
 ## Open Gaps
 
 - **Long-standing primary sources**: Karpathy's gist, AI 2027, Dan Shapiro, StrongDM, METR study
-- **JSON-to-Video pricing model** — flagged as a tasks.md item for follow-up
-- **Bazzite gaming-VM source** — skipped as off-topic this batch
-- **Jules (Google)** — still mentioned as the thing Open-SWE replaces; no primary ingest yet
-- **Browserbase as a company page** — Stagehand vendor; no org page yet
+- **Aggregate Intellect / LLMs Explained creator name** — flagged in tasks.md; no person page until verified
+- **JSON-to-Video pricing model** — carryover from previous batch
+- **Jules vs Codex benchmark beyond the WorldofAI demo** — single side-by-side isn't a benchmark
+- **Browserbase / Block / ByteDance org pages** — carryover threshold-watching from previous batch
 
 ## Architectural Threads to Watch
 
-- **DeepSeek R1-0528 as the default open-weights reasoning backbone**: this is the single biggest pattern from the batch — Goose, Stagehand, DeerFlow, AgenticSeek all converge on R1 (or its distillations) as their recommended free model. The MIT license + free OpenRouter tier is the structural reason.
-- **Cost-routing layers (multi-model splits)**: Task Master AI's main/research/fallback split is a generalization of [[open-source-model-integration]]; AgentZero takes it further (5 model slots). This is the next abstraction layer above "use a cheaper model."
-- **n8n's first-class node ecosystem**: Perplexity, Zep, AI Agent, and the next-up integrations are pulling automation work *into* n8n rather than out of it. The real-time-search closure with Perplexity is the structurally biggest of the batch.
-- **ByteDance enters as a frontier OSS contributor**: DeerFlow is the first; expect more.
+- **RAG-skepticism thread now has 3 entries**: [[rag-vs-wiki|RAG vs Wiki]], [[summary-cole-medin-rag-for-code|RAG-dead-for-code]], and [[context-augmented-generation|CAG]]. Macro view: **RAG was a bridge technology** for context-window scarcity; cheap long context shrinks its remaining role to "datasets larger than any feasible window."
+- **Google's I/O 2025 free push**: [[jules]] + [[google-stitch]] shipped same week, both on Gemini, both targeting paid incumbents (Codex/Copilot, v0/Figma). Coordinated SaaS-death-spiral move.
+- **No-code AI platform layer filling out**: [[n8n]] (workflow), [[dify]] (KB + agents), [[sim-ai]] (visual). Builders mix and match.
+- **Claude 4 cost-of-build evidence**: ~$2.60 for a SaaS landing page via Sonnet — concrete dollar number the [[saas-death-spiral]] thesis needed.

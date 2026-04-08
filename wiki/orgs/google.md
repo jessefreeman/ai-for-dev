@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Every AI Model Explained in 20 Minutes.md", "Google just dropped Gemma 4... (WOAH).md", "Gemma 4 VRAM Requirements Every GPU and Mac Tested (2026).md", "Google's Firebase Studio FULLY FREE AI Code Editor! Generate Full-Stack Apps! (Beats Cursor + Bolt).md", "A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md", "How AI is breaking the SaaS business model....md"]
+sources: ["Every AI Model Explained in 20 Minutes.md", "Google just dropped Gemma 4... (WOAH).md", "Gemma 4 VRAM Requirements Every GPU and Mac Tested (2026).md", "Google's Firebase Studio FULLY FREE AI Code Editor! Generate Full-Stack Apps! (Beats Cursor + Bolt).md", "A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md", "How AI is breaking the SaaS business model....md", "Google Jules New FULLY FREE Async AI Coder Is INSANE! RIP Codex and Copilot!.md", "Google Stitch FULLY FREE New AI UI Designer By Google CAN CREATE INSANE Frontends! (v0 Alternative).md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [org, ai, llm, frontier-lab, big-tech]
 ---
 
@@ -25,6 +25,7 @@ The largest AI infrastructure company tracked in the wiki. Builds frontier model
 ### Dev tools
 
 - **[[firebase-studio|Firebase Studio]]** — cloud-based agentic dev environment, rebranded from **Project IDX** at Google Cloud Next 2025. Combines Firebase, Genkit, and Gemini into a single full-stack workspace. Free tier with 3 workspaces (30 for dev program members).
+- **[[jules|Google Jules]]** — free cloud-based async AI coding agent. Built on Gemini 2.5 Pro, connects to GitHub, plans + executes in a sandboxed VM, opens PRs with audio summaries. Launched at Google I/O 2025; 5 tasks/day free. The wiki's first first-party Google async coding agent.
 - **[[google-stitch|Google Stitch]]** — voice-to-UI design tool that exports agent-readable `design.md`. Featured in [[nate-b-jones|Nate B Jones]]'s "command-line creative stack" thesis as the canonical example of design moving to the command line.
 - **Genkit** — Google's GenAI framework with Python/Go support, RAG, multimodal orchestration. Bundled into Firebase Studio. Not yet a standalone wiki page.
 - **Vertex AI** — Google Cloud's enterprise AI platform; provides access to Gemini, Imagen 3, and open-source models including [[llama|Llama]] and Mistral. Underpins Firebase Studio's model selection.
@@ -45,7 +46,7 @@ The largest AI infrastructure company tracked in the wiki. Builds frontier model
 |---|---|---|---|
 | Frontier model | Gemini | Claude | ChatGPT / GPT-5 |
 | Open-weights | **Yes (Gemma 4)** | No | No |
-| Coding agent | (none direct; uses Gemini via Firebase Studio) | Claude Code | Codex |
+| Coding agent | **[[jules\|Jules]]** (cloud, async, free) | Claude Code | Codex |
 | Cloud-IDE play | **Firebase Studio** | None | None |
 | Creative tool | **Google Stitch** | None | DALL-E / Sora |
 | Wiki-tracked policy positions | None | None | [[industrial-policy-intelligence-age\|Industrial Policy paper]] |

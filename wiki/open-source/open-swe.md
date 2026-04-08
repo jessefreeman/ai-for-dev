@@ -8,7 +8,7 @@ tags: [open-source, ai, coding-agent, agentic, langchain, langgraph, async]
 
 # Open-SWE
 
-Open-source **asynchronous AI coding agent** built on **LangGraph** by [[langchain|LangChain]]. Positioned explicitly as a free alternative to Google's **Jules** (which moved many of its features behind a paywall). Plans, writes, tests, reviews, and opens GitHub pull requests autonomously — all the same surface area as Jules, but locally hostable, free if you bring your own API key (or use [[openrouter|OpenRouter]]'s free tier or [[ollama|Ollama]]).
+Open-source **asynchronous AI coding agent** built on **LangGraph** by [[langchain|LangChain]]. Positioned explicitly as a free alternative to **[[jules|Google Jules]]** (which is itself free at 5 tasks/day, but cloud-only and not self-hostable — Open-SWE is the bring-your-own-model, self-hostable version of the same workflow shape). Plans, writes, tests, reviews, and opens GitHub pull requests autonomously — all the same surface area as Jules, but locally hostable, free if you bring your own API key (or use [[openrouter|OpenRouter]]'s free tier or [[ollama|Ollama]]).
 
 - **GitHub**: [langchain-ai/open-swe](https://github.com/langchain-ai/open-swe)
 - **Cloud demo**: swe.langchain.com
@@ -68,7 +68,7 @@ The local-via-Ollama path is the wiki's preferred configuration — it's the mos
 
 ## How it compares
 
-| | Open-SWE | Google Jules | [[claude-code\|Claude Code]] | [[cursor\|Cursor]] | [[archon-os\|Archon OS]] |
+| | Open-SWE | [[jules\|Google Jules]] | [[claude-code\|Claude Code]] | [[cursor\|Cursor]] | [[archon-os\|Archon OS]] |
 |---|---|---|---|---|---|
 | Form factor | Web UI + GitHub integration (cloud or self-hosted) | Cloud web UI | CLI agent harness | Standalone editor | Hosted dashboard |
 | Async vs sync | **Async** (queue and walk away) | **Async** | Sync (interactive) | Sync (interactive) | Async (real-time editable task list) |

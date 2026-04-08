@@ -39,6 +39,10 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
 
 - [ ] **ByteDance as a company page** — [[deerflow|DeerFlow]] is the wiki's first ByteDance OSS contribution. Pattern to watch — if a second ByteDance OSS framework lands, the org page becomes a clear yes. For now: tracking only.
 
+- [ ] **LLMs Explained / Aggregate Intellect / AI.SCIENCE — creator attribution** — The Dify knowledge-base source ([[summary-dify-knowledge-base-rag-configuration]]) is from a YouTube channel that uses three different display names but doesn't credit an individual creator on screen. Per page-conventions ("never create stub person pages with unknown channel info"), no person page was created.
+      **What I need from you:** If you know who runs this channel, name them and I'll create the person page. Otherwise we leave the source-summary stand-alone.
+      *Referenced from:* [[summary-dify-knowledge-base-rag-configuration]]
+
 - [ ] **20 stub pages need richer coverage as new sources land** — Lint 2026-04-08 flagged the following pages as <150 words. They are intentionally thin "nascent entity" pages that the wiki rule says should grow with new sources, not by fabricating content from training data. This task is a tracking pointer so we remember to enrich them when relevant sources come in.
       **People (need a second source each):** [[tin-rovic]], [[zubair-trabzada]], [[nathan-sebhastian]], [[beyond-fireship]], [[simon-hoiberg]], [[dave-swift]].
       **Self-hostable alternatives (will grow with deployment-experience sources):** [[nocodb]], [[strapi]], [[grafana]], [[plane]], [[docmost]].

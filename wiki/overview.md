@@ -9,12 +9,12 @@ tags: [ai, llm, knowledge-management, agent]
 
 This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
-**Current state:** 80 sources ingested (after 12-source batch on 2026-04-08); 16-rig personal hardware benchmark section; 6 organization pages; new index Models category.
+**Current state:** 85 sources ingested (after a second 5-source batch on 2026-04-08); 16-rig personal hardware benchmark section; 6 organization pages; index Models category; growing RAG-skepticism thread (now 3 entries).
 
 ## Themes
 
 ### Knowledge Compounding
-The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value that chat-based or RAG-based approaches don't. Cross-references, contradictions, and synthesis are pre-compiled. See [[RAG vs Wiki]] and [[summary-cole-medin-rag-for-code|Cole Medin's RAG-dead-for-code thesis]].
+The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value that chat-based or RAG-based approaches don't. Cross-references, contradictions, and synthesis are pre-compiled. The wiki's **RAG-skepticism thread** now has three entries: [[RAG vs Wiki]] (curated wiki beats vector search), [[summary-cole-medin-rag-for-code|Cole Medin's "RAG is dead for code"]] (agentic search beats vector search for codebases), and [[context-augmented-generation|CAG]] (full-context loading beats retrieval when the dataset fits the window). The macro thesis: **RAG was a bridge technology** for context-window scarcity; cheap long context (Gemini 2.0 at $0.01/M and 1M-token windows) shrinks its remaining role.
 
 ### Production Agent Architecture
 [[Nate B Jones]]'s body of work defines the architectural layer: the [[Agentic Harness Primitives]] (12 primitives from the Claude Code leak), the three-Lego-brick model (memory + proactivity + tools), and the argument that [[OpenClaw]]'s 200k-star appeal is reducible to these primitives. The [[Claude Code]] ecosystem now includes multiple skill/plugin layers ([[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]]) each encoding different methodologies.
@@ -56,11 +56,12 @@ Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4
 [[ChatGPT]] = ease of use (now needs [[meta-prompting]] for GPT-5's literalism); [[Claude]] = work and coding; [[Gemini]] = search, deep research, video ingestion; [[Grok]] = real-time Twitter/X.
 
 ### Agentic Coding Platform Proliferation
-The market is fragmenting fast. [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]], [[firebase-studio|Firebase Studio]], [[archon-os|Archon OS]], [[deepcode|DeepCode]], [[codellm|Abacus CodeLLM]] (Claude 4 Opus inside a hosted IDE at $10/mo) all coexist with overlapping but distinct positioning. [[Augment Agent]] claims #1 OSS on SWE-bench Verified at 65.4%. [[deepcode|DeepCode]]'s standout is **Paper2Code** (research → working implementations). [[firebase-studio|Firebase Studio]] is Google's Project IDX rebrand. **[[task-master-ai|Task Master AI]]** introduces a *cost-routing layer* (main/research/fallback model split) that runs *inside* any host harness — this is the next abstraction above raw model substitution. [[saas-death-spiral|The death spiral analysis]] explains why this market is fragmenting.
+The market is fragmenting fast. [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]], [[firebase-studio|Firebase Studio]], [[archon-os|Archon OS]], [[deepcode|DeepCode]], [[codellm|Abacus CodeLLM]] (Claude 4 Opus hosted IDE, $10/mo), and **[[jules|Google Jules]]** (free async coder on Gemini 2.5 Pro, 5 tasks/day) all coexist with overlapping but distinct positioning. Jules is the wiki's first first-party Google async coding agent and closes the gap that [[open-swe|Open-SWE]] was tracked against. [[Augment Agent]] claims #1 OSS on SWE-bench Verified at 65.4%. [[deepcode|DeepCode]]'s standout is **Paper2Code** (research → working implementations). [[firebase-studio|Firebase Studio]] is Google's Project IDX rebrand. **[[task-master-ai|Task Master AI]]** introduces a *cost-routing layer* (main/research/fallback model split) that runs *inside* any host harness — this is the next abstraction above raw model substitution. [[saas-death-spiral|The death spiral analysis]] explains why this market is fragmenting.
 
 ### Visual Workflow & Multi-Agent Orchestration
 Different layers of the same problem:
 - [[sim-ai|Sim AI]] — drag-and-drop visual workflow builder; n8n alternative; AI primitives as first-class nodes
+- [[dify|Dify]] — no-code AI agent + knowledge base platform; complement to n8n with first-class RAG
 - [[paperclip|Paperclip]] — multi-agent orchestration at the company level
 - [[hermes-agent|Hermes Agent]], [[OpenClaw]], [[ThePopeBot]] — full personal-agent frameworks
 - [[deerflow|DeerFlow]] (ByteDance) — Coordinator → Planner → Research Team → Reporter for deep-research workflows

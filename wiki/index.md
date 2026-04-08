@@ -53,6 +53,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[tin-rovic|Tin Rovic]] — No-code AI automation creator; n8n workflow recipes.
 - [[nathan-sebhastian|Nathan Sebhastian]] — Code with Nathan; practical dev environment + AI coding tutorials.
 - [[jay-e-robonuggets|Jay E (RoboNuggets)]] — AI automation educator; deep n8n + generative-media long-form video pipelines.
+- [[ai-jason|AI Jason]] — LLM application architecture educator; CAG advocate; runs the AI Builder Cloud community.
 
 ### Organizations
 - [[anthropic|Anthropic]] — US frontier-AI lab; Claude, Claude Code, the MCP standard, the Claude Code architecture leak. PBC structure.
@@ -114,6 +115,8 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[codellm|Abacus AI CodeLLM]] — Hosted IDE running Claude 4 Opus by default; bundles Composer Agent + Computer Agent + Chat Mode at ~$10/month; Cursor alternative.
 - [[perplexity|Perplexity]] — AI search engine with citations; canonical "real-time search" primitive; first-class n8n node and MCP server.
 - [[json-to-video|JSON-to-Video]] — Video assembly API used as the no-code video primitive in n8n content pipelines; the no-code sibling of [[remotion|Remotion]].
+- [[jules|Google Jules]] — Google's free cloud-based async AI coding agent on Gemini 2.5 Pro; GitHub-integrated, sandboxed VM, audio PR summaries; 5 tasks/day free.
+- [[dify|Dify]] — No-code AI agent + knowledge base platform; first-class RAG with configurable chunking/retrieval; complementary to n8n.
 
 ### Open-Source Projects
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
@@ -174,6 +177,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[fine-tuning|Fine-Tuning (LLMs)]] — LoRA + GGUF + Ollama pipeline for specializing open-weights models on local hardware.
 - [[fp8-quantization|FP8 Quantization]] — Floating-point 8-bit precision; native to Nvidia Blackwell tensor cores; the throughput sweet spot for vLLM.
 - [[context-engineering|Context Engineering]] — Karpathy/Lütke's successor to prompt engineering; curating *all* the information an LLM needs to plausibly solve a task.
+- [[context-augmented-generation|Context Augmented Generation (CAG)]] — Pre-load the entire dataset into the model context window; the third entry in the wiki's RAG-skepticism thread alongside the LLM Wiki Pattern and Cole Medin's "RAG is dead for code."
 - [[claude-code-subagents|Claude Code Sub-Agents]] — Anthropic's first-party multi-agent primitive: isolated context, tool whitelists, parallel execution.
 
 ### Analyses
@@ -271,6 +275,11 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-nate-herk-faceless-shorts-n8n|Faceless Shorts with n8n]] — Free template for fully automated n8n short-form video pipeline.
 - [[summary-tin-rovic-youtube-scraper-n8n|How To Scrape YouTube For FREE with n8n]] — Free YouTube Data API v3 channel scraper.
 - [[summary-jay-e-longform-youtube-videos|Longform YouTube Videos Hourly]] — Jay E's deep n8n + JSON-to-Video long-form pipeline with error-routed Creator Agent.
+- [[summary-worldofai-claude-4-opus-sonnet-cline|Claude 4 Opus/Sonnet + Cline]] — Claude 4 launch pricing + ~$2.60 SaaS-landing-page demo via Cline.
+- [[summary-ai-jason-cag-context-augmented-generation|Don't Do RAG (CAG)]] — AI Jason introduces Context Augmented Generation as a practical RAG alternative.
+- [[summary-worldofai-google-jules|Google Jules launch]] — first-party Google async coder on Gemini 2.5 Pro; CRM dashboard demo.
+- [[summary-worldofai-google-stitch|Google Stitch I/O 2025 launch]] — Stitch second source; pricing modes + Airbnb clone demo.
+- [[summary-dify-knowledge-base-rag-configuration|Dify Knowledge Base configuration]] — no-code RAG control panel walkthrough.
 
 ## Contribute or build your own
 

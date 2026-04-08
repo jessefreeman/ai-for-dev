@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Cline v3.18 HUGE UPDATE Fully FREE Autonomous AI Coding Agent! Gemini CLI + Claude Code!.md", "VSCode + Cline + Continue  NEVER PAY for CURSOR again. Use this OPEN SOURCE & LOCAL Alternative.md"]
+sources: ["Cline v3.18 HUGE UPDATE Fully FREE Autonomous AI Coding Agent! Gemini CLI + Claude Code!.md", "VSCode + Cline + Continue  NEVER PAY for CURSOR again. Use this OPEN SOURCE & LOCAL Alternative.md", "Claude 4 Sonnet & Opus + Cline FULLY FREE AI Coder! Develop a Full-stack App Without Code!.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [open-source, ai-coding, vscode-extension]
 ---
 
@@ -31,10 +31,15 @@ See [[summary-worldofai-cline-v318|Cline v3.18 walkthrough]] for full release no
 - **[[ollama]]** — drives Cline locally with DeepSeek, Qwen, etc.
 - **[[openrouter]]** — unified API gateway including free DeepSeek tiers
 
+## Free-API workarounds
+
+Cline accepts any provider; users who want to skip Anthropic billing entirely can route through **Requesty** or **Kilo** (free-credit gateways), in addition to [[openrouter|OpenRouter]] and Gemini CLI's free tier. Gives Cline its "fully free" framing in three different WorldofAI walkthroughs.
+
 ## Sources in this wiki
 
 - [[summary-worldofai-cline-v318|Cline v3.18 HUGE UPDATE]] (WorldofAI, 2025-06-27)
 - [[summary-nathan-sebhastian-vscode-cline-continue|VSCode + Cline + Continue]] (Nathan Sebhastian, 2025-04-09)
+- [[summary-worldofai-claude-4-opus-sonnet-cline|Claude 4 Opus/Sonnet + Cline]] (WorldofAI, 2025-05-23) — Claude 4 launch pricing + ~$2.60 SaaS-landing-page demo
 
 ## See Also
 
