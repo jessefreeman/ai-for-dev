@@ -9,7 +9,7 @@ tags: [ai, llm, knowledge-management, agent]
 
 This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
-**Current state:** 68 sources ingested (after 17-source batch on 2026-04-07); 16-rig personal hardware benchmark section; 6 organization pages.
+**Current state:** 80 sources ingested (after 12-source batch on 2026-04-08); 16-rig personal hardware benchmark section; 6 organization pages; new index Models category.
 
 ## Themes
 
@@ -50,19 +50,24 @@ The **throughput ceiling** is unlocked by [[vllm|vLLM]] + [[fp8-quantization|FP8
 [[Open-Source Model Integration]] demonstrates 50–100x cost reduction via model substitution. [[Project Nomad]] takes local AI to its logical extreme: fully offline knowledge infrastructure.
 
 ### Open-Source Model Landscape
-Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (Google, 31B) ranks #3 globally — see [[gemma-4-vram-requirements]] for full GPU + Mac sizing. [[minimax-m2-7|MiniMax M2.7]] claims to outperform Claude Opus 4.6 at 20x lower cost. New entrants from the 2026-04-07 batch: [[kimi-k2|Kimi K2]] (Moonshot, ~10× cheaper than Sonnet) and [[minimax-m1|MiniMax M1]] (1M context, hybrid attention). For 95% of use cases, open-source is sufficient.
+Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (Google, 31B) ranks #3 globally — see [[gemma-4-vram-requirements]] for full GPU + Mac sizing. [[minimax-m2-7|MiniMax M2.7]] claims to outperform Claude Opus 4.6 at 20x lower cost. New entrants from the 2026-04-07 batch: [[kimi-k2|Kimi K2]] (Moonshot, ~10× cheaper than Sonnet) and [[minimax-m1|MiniMax M1]] (1M context, hybrid attention). **The 2026-04-08 batch made [[deepseek|DeepSeek R1-0528]] (671B/37B MoE, MIT, 136K context, free OpenRouter tier) the de facto open-source reasoning backbone** — [[codename-goose|Goose]], [[stagehand|Stagehand]], [[deerflow|DeerFlow]], and [[agenticseek|AgenticSeek]] all default to it. For 95% of use cases, open-source is sufficient.
 
 ### Frontier Model Specialties & Prompting
 [[ChatGPT]] = ease of use (now needs [[meta-prompting]] for GPT-5's literalism); [[Claude]] = work and coding; [[Gemini]] = search, deep research, video ingestion; [[Grok]] = real-time Twitter/X.
 
 ### Agentic Coding Platform Proliferation
-The market is fragmenting fast. [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]], [[firebase-studio|Firebase Studio]], [[archon-os|Archon OS]], [[deepcode|DeepCode]] all coexist with overlapping but distinct positioning. [[Augment Agent]] claims #1 OSS on SWE-bench Verified at 65.4%. [[deepcode|DeepCode]]'s standout is **Paper2Code** (research → working implementations). [[firebase-studio|Firebase Studio]] is Google's Project IDX rebrand. [[saas-death-spiral|The death spiral analysis]] explains why this market is fragmenting.
+The market is fragmenting fast. [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]], [[firebase-studio|Firebase Studio]], [[archon-os|Archon OS]], [[deepcode|DeepCode]], [[codellm|Abacus CodeLLM]] (Claude 4 Opus inside a hosted IDE at $10/mo) all coexist with overlapping but distinct positioning. [[Augment Agent]] claims #1 OSS on SWE-bench Verified at 65.4%. [[deepcode|DeepCode]]'s standout is **Paper2Code** (research → working implementations). [[firebase-studio|Firebase Studio]] is Google's Project IDX rebrand. **[[task-master-ai|Task Master AI]]** introduces a *cost-routing layer* (main/research/fallback model split) that runs *inside* any host harness — this is the next abstraction above raw model substitution. [[saas-death-spiral|The death spiral analysis]] explains why this market is fragmenting.
 
 ### Visual Workflow & Multi-Agent Orchestration
 Different layers of the same problem:
 - [[sim-ai|Sim AI]] — drag-and-drop visual workflow builder; n8n alternative; AI primitives as first-class nodes
 - [[paperclip|Paperclip]] — multi-agent orchestration at the company level
 - [[hermes-agent|Hermes Agent]], [[OpenClaw]], [[ThePopeBot]] — full personal-agent frameworks
+- [[deerflow|DeerFlow]] (ByteDance) — Coordinator → Planner → Research Team → Reporter for deep-research workflows
+- [[agent-zero|AgentZero]] — self-organizing multi-agent framework with multi-tier LLM slots and MCP-first extensibility
+- [[agenticseek|AgenticSeek]] — fully local Manus alternative with voice and visual UI
+- [[codename-goose|Codename Goose]] — Block's AI software engineer (TUI + desktop)
+- [[stagehand|Stagehand]] — MCP-native browser-automation primitive
 
 ### The Command-Line Creative Stack
 [[Google Stitch]] (voice→UI, design.md), [[Remotion]] (video-as-code, #1 non-corporate Claude Code skill), [[Blender MCP]] (natural language→3D), [[VoiceBox]] (local TTS / ElevenLabs alternative). MCP turns any tool into an agent-accessible primitive.
@@ -91,6 +96,10 @@ Different layers of the same problem:
 - Karpathy's gist, AI 2027, Dan Shapiro, StrongDM, METR study — long-standing primary sources still uningested
 - Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model — mentioned but no entity pages
 - HKUDS — org behind DeepCode, worth tracking
+- ByteDance — DeerFlow vendor; first appearance, no org page yet
+- Block — Goose vendor; tracked as a company would help connect Cash App / Square / Tidal context to the AI thread
+- Browserbase — Stagehand vendor; no org page yet
 - Bret Fisher's Open WebUI + Docker Model Runner gist — referenced but not pulled
 - Jules (Google) — still mentioned as the thing Open-SWE replaces; no primary ingest yet
 - CAISI — referenced in OpenAI's industrial policy paper; needs corroboration
+- JSON-to-Video pricing/credit model — needs follow-up source for cost guidance

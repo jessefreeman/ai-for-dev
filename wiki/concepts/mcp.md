@@ -57,6 +57,8 @@ This is why every major service provider has been racing to publish MCP servers 
 - **Memory via MCP** ([[OpenBrain]]): treat a Postgres database as an MCP server and you have persistent agent memory for ~$0.10/month.
 - **Replacing OpenClaw** ([[/loop]] + [[OpenBrain]] + MCP tools): the three-Lego-brick model says you can replicate most [[openclaw|OpenClaw]] capabilities by combining MCP tools with native scheduling and memory primitives.
 - **Standalone MCP servers as products**: e.g. Cole Medin's Supabase MCP server demo in [[summary-cole-medin-100x-ai-coding|his AI coding video]].
+- **MCP-native agents**: [[stagehand|Stagehand]] (browser automation), [[task-master-ai|Task Master AI]] (cost-routing task manager), [[agent-zero|AgentZero]] (general-agent framework) all install as MCP servers and run inside any compliant host (Cline, Cursor, Claude Code) without per-host glue.
+- **Perplexity-as-a-tool**: now a first-class node in [[n8n]] (v1.98+) as well as the canonical free MCP server in AgentZero quickstarts. See [[perplexity]].
 
 ## Startup Opportunities (Per Ras Mic)
 

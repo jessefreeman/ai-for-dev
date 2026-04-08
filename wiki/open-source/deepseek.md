@@ -1,14 +1,27 @@
 ---
 type: entity
-sources: ["Every AI Model Explained in 20 Minutes.md"]
+sources: ["Every AI Model Explained in 20 Minutes.md", "Deepseek-R1-0528 BEST Opensource Reasoning Model! Powerful, Fast, & Cheap! Fully Tested + Free API.md"]
 created: 2026-04-06
-updated: 2026-04-06
-tags: [open-source, llm, chinese-lab, model]
+updated: 2026-04-08
+tags: [open-source, llm, chinese-lab, model, reasoning]
 ---
 
 # DeepSeek
 
-Open-weights LLM family from a Chinese AI lab. One of the strongest open-source models available as of early 2026 — frequently cited alongside Qwen as having surpassed Meta's Llama in capability.
+Open-weights LLM family from a Chinese AI lab. One of the strongest open-source models available as of early 2026 — frequently cited alongside Qwen as having surpassed Meta's Llama in capability. The **R1 reasoning** line is the wiki's default recommendation for "free local-equivalent reasoning model."
+
+## R1-0528 (May 2025 refresh)
+
+The latest R1 release at the time of [[summary-deepseek-r1-0528-reasoning-model|WorldofAI's benchmark]]:
+
+- **Params**: 671B total, **37B active** (Mixture-of-Experts)
+- **Context**: 136K
+- **License**: **MIT** — fully unrestricted, no Commons Clause
+- **Pricing**: $1.95/M input, $5/M output via DeepSeek API; **free tier on [[openrouter|OpenRouter]]**
+- **MMLU**: competitive with OpenAI O3-high and GPT-4 mini
+- **Demoed**: 107s chain-of-thought on multi-step unit-conversion math (correct); full animated SaaS landing page in one shot
+
+R1-0528 is now the default open-weights backbone for several tools in the wiki: [[codename-goose|Codename Goose]] (recommended free model), [[stagehand|Stagehand]] (R1-distilled Qwen 32B is the fastest+cheapest in Stagehand's eval), [[deerflow|DeerFlow]] (named explicitly as a recommended model), [[agenticseek|AgenticSeek]].
 
 ## Why It Matters
 

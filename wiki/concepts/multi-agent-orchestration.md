@@ -46,6 +46,10 @@ The 12 primitives become more critical at multi-agent scale: workflow state prev
 
 - [[Paperclip]] — open-source, MIT, dashboard-based; agents run as Claude Code sessions; 36k stars
 - OpenClaw — the earlier tool this pattern popularized (native heartbeats)
+- [[task-master-ai|Task Master AI]] — three-model split (main/research/fallback) routes each task to the cheapest capable model; CLI + MCP; works inside any host harness
+- [[agent-zero|AgentZero]] — self-organizing multi-agent framework with multi-tier LLM slots and MCP-first extensibility
+- [[deerflow|DeerFlow]] — ByteDance's LangGraph-built deep-research framework (Coordinator → Planner → Research Team → Reporter)
+- [[agenticseek|AgenticSeek]] — fully local Manus alternative with voice input and visual UI
 
 ## See Also
 - [[Paperclip]]

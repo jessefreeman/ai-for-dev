@@ -25,7 +25,10 @@ When you ingest a source that mentions a commercial tool with an OSS alternative
 | **Cursor** / Windsurf / GitHub Copilot | [[cline]] + [[continue]], [[void-ide]], [[opencode]] | [[summary-nathan-sebhastian-vscode-cline-continue]], [[summary-worldofai-void-ide]], [[summary-worldofai-opencode]], [[summary-wolfgangs-channel-self-host-ai-code-assistant]] |
 | **ChatGPT web UI** | [[open-webui]] (+ [[ollama]]) | multiple existing wiki sources |
 | **ElevenLabs** (TTS) | [[voicebox]] | [[summary-dave-swift-voicebox]] |
-| **Manus** (general agent) | [[openmanus]] | [[summary-worldofai-openmanus]] |
+| **Manus** (general agent) | [[openmanus]], [[agenticseek]], [[agent-zero]] | [[summary-worldofai-openmanus]], [[summary-agenticseek-manus-alternative]], [[summary-agent-zero-framework]] |
+| **OpenAI Deep Research** / GenSpark / Perplexity Deep Research | [[deerflow]] | [[summary-deerflow-local-research-agent]] |
+| **Cursor** / Claude Code (commercial) — additional alternatives | [[codename-goose]] (Block-backed TUI + desktop), [[task-master-ai]] (cost-routing layer over any host) | [[summary-codename-goose-claude-code-alternative]], [[summary-task-master-ai-cursor-cline]] |
+| **browser-use commercial / Playwright cloud** | [[stagehand]] (Browserbase, MCP-native, self-healing) | [[summary-stagehand-v2-browser-automation]] |
 | **Google Jules** (async coding agent) | [[open-swe]] | [[summary-worldofai-open-swe]] |
 | **OpenClaw** (multi-agent runtime) | [[thepopebot]], [[paperclip]] | [[summary-stephen-g-pope-thepopebot]], [[summary-nate-herk-paperclip]] |
 | **Hosted MCP servers** | [[mcp]] via Docker MCP Toolkit (containerized + secrets vault) | [[summary-worldofai-docker-mcp-toolkit]] |

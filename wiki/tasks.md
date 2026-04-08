@@ -2,6 +2,7 @@
 type: tasks
 created: 2026-04-06
 updated: 2026-04-08
+# 12-source ingest batch 2026-04-08 added 5 new items
 ---
 
 # Tasks
@@ -21,6 +22,22 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
 - [ ] **Customize-template prompt — validate end-to-end on a fresh clone?** — `customize-template.md` has been written but never run on an actual fresh clone of this repo. Until it's tested at least once we don't know whether the prompt produces a clean second-brain starter or whether the data-agnostic split in `.instructions/core/` actually holds. GitHub issues #7 and #8 track this.
       **What I need from you:** Want to spin up a throwaway clone (e.g. `~/tmp/test-brain`) and run the prompt against it together so we can find the breakage, or defer until you actually start a second brain?
       *Referenced from:* [`customize-template.md`](../.instructions/core/prompts/customize-template.md)
+
+- [ ] **CodeLLM pricing tier verification** — [[codellm|Abacus AI CodeLLM]] page cites "$10/mo bundles CodeLLM + ChatLLM + Deep Agent + Computer Agent" from a 2025-06-01 source. Pricing has likely shifted in the ~10 months since. Before recommending the bundle to anyone, verify current tier on codellm.abacus.ai.
+      **What I need from you:** Skim the current pricing page (or have me skim it) before any external recommendation; or accept "verify current tier" as a permanent caveat on the page.
+      *Referenced from:* [[codellm]]
+
+- [ ] **JSON-to-Video pricing/credit model** — [[json-to-video]] is the assembly primitive in two new n8n video pipelines ([[summary-nate-herk-faceless-shorts-n8n|Nate Herk shorts]], [[summary-jay-e-longform-youtube-videos|Jay E longform]]). Both sources cite "$50/mo all-in with premium models" but neither breaks down JSON-to-Video's own credit model. Need a follow-up source (or a page-fetch) to give cost guidance.
+      **What I need from you:** Want me to web-fetch the json2video.com pricing page and add a Pricing section, or leave it as a tasks-tracked gap until an organic source lands?
+      *Referenced from:* [[json-to-video]]
+
+- [ ] **Browserbase as a company page** — [[stagehand]] is published by Browserbase, which also runs the serverless browser backend Stagehand depends on. The company has appeared in two open-source agent contexts now (Stagehand v2 + the agent-controlled browser pattern). Probably worth an [[orgs/]] page to track its position.
+      **What I need from you:** Approve / defer creating a Browserbase org page. A 2nd-source threshold isn't quite met yet, but the structural importance is.
+
+- [ ] **Block as a company page** — [[codename-goose|Goose]] is published by Block (Square / Cash App / Tidal parent). Block doesn't have a wiki page, but the corporate-backing point is load-bearing for Goose's positioning vs solo-maintained alternatives. Same threshold question as Browserbase.
+      **What I need from you:** Approve / defer creating a Block org page.
+
+- [ ] **ByteDance as a company page** — [[deerflow|DeerFlow]] is the wiki's first ByteDance OSS contribution. Pattern to watch — if a second ByteDance OSS framework lands, the org page becomes a clear yes. For now: tracking only.
 
 - [ ] **20 stub pages need richer coverage as new sources land** — Lint 2026-04-08 flagged the following pages as <150 words. They are intentionally thin "nascent entity" pages that the wiki rule says should grow with new sources, not by fabricating content from training data. This task is a tracking pointer so we remember to enrich them when relevant sources come in.
       **People (need a second source each):** [[tin-rovic]], [[zubair-trabzada]], [[nathan-sebhastian]], [[beyond-fireship]], [[simon-hoiberg]], [[dave-swift]].

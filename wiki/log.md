@@ -2,11 +2,44 @@
 type: log
 created: 2026-04-06
 updated: 2026-04-08
+# 12-source batch ingested 2026-04-08 (later same day as the 04-08 lint)
 ---
 
 # Wiki Log
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
+
+## [2026-04-08] ingest | 12-source batch (open-source agents + R1-0528 + n8n maturation)
+
+Second-largest batch in wiki history. User authorized full autonomous one-by-one ingest with issues-into-tasks. **12 sources in scope, 1 skipped (Bazzite gaming VM, off-topic). 80 sources ingested total.**
+
+- **Sources** (12):
+  1. **100x Cursor + Cline with Task Master AI** ([[worldofai|WorldofAI]]) — anchors new [[task-master-ai]] entity
+  2. **AgentZero** (WorldofAI) — anchors new [[agent-zero]] entity
+  3. **AgenticSeek** (WorldofAI) — anchors new [[agenticseek]] entity
+  4. **Claude 4 Opus + CodeLLM Composer Agent** (WorldofAI) — anchors new [[codellm]] entity
+  5. **Codename Goose** (WorldofAI) — anchors new [[codename-goose]] entity
+  6. **DeerFlow** (WorldofAI) — anchors new [[deerflow]] entity (first ByteDance OSS in wiki)
+  7. **Stagehand v2** (WorldofAI) — anchors new [[stagehand]] entity
+  8. **DeepSeek R1-0528** (WorldofAI) — refreshes [[deepseek]] with full R1-0528 spec
+  9. **n8n NEW Perplexity Node** ([[zubair-trabzada|Zubair Trabzada]]) — anchors new [[perplexity]] entity
+  10. **Faceless Shorts in n8n** ([[nate-herk|Nate Herk]]) — anchors new [[json-to-video]] entity
+  11. **YouTube Scraper with n8n** ([[tin-rovic|Tin Rovic]]) — adds free creator-research recipe
+  12. **Longform YouTube Videos Hourly** ([[jay-e-robonuggets|Jay E (RoboNuggets)]]) — new person; deeper [[json-to-video]] pipeline
+
+- **Skipped** (1): Bazzite gaming VM (Craft Computing) — homelab/gaming infrastructure with no AI angle. Off-topic per CLAUDE.md scope. Archived without processing.
+
+- **Major thread — DeepSeek R1-0528 as the default open-source reasoning backbone**: 4 of the new entities ([[codename-goose]], [[stagehand]], [[deerflow]], [[agenticseek]]) explicitly recommend R1-0528 (or distillations) as their default free model. This is the structural takeaway from the batch — the MIT license + free OpenRouter tier broke the chicken-and-egg problem.
+
+- **Major thread — n8n's content-pipeline maturation**: 4 sources moved n8n from "no-code agent runner" to "first-class content-generation backbone." [[perplexity]] node closes the real-time-search loop; [[json-to-video]] is the new video-assembly primitive used by both [[summary-nate-herk-faceless-shorts-n8n|Nate Herk's shorts pipeline]] and [[summary-jay-e-longform-youtube-videos|Jay E's longform pipeline]]; Tin Rovic adds the foundational creator-research scraper.
+
+- **Major thread — open-source generalist agent landscape filled out**: [[agent-zero]], [[agenticseek]], [[deerflow]], [[codename-goose]] now sit alongside [[manus]], [[openmanus]], [[flowith]], [[hermes-agent]] in the general-agent cluster. Differentiated by surface (UI/TUI/CLI), backing (Block/Browserbase/ByteDance/solo-maintainer), and topology (single agent / coordinator-planner / self-organizing).
+
+- **New abstraction layer — cost-routing as a feature**: [[task-master-ai]] introduces multi-model task routing (main/research/fallback) as a stand-alone tool, not as a hand-rolled config. This is a generalization of [[open-source-model-integration]] taken further by [[agent-zero]] (5 model slots).
+
+- **First ByteDance OSS contribution** in the wiki: [[deerflow]]. Pattern to watch.
+
+- **Single-commit batch decision**: same as the 2026-04-07 batch — one commit at the end with all sources. Per-source rollback unit is the source-summary page.
 
 ## [2026-04-08] lint: 2026-04-08 — post-batch cleanup + Models category
 
@@ -93,8 +126,4 @@ Largest single ingest in the wiki to date. The user authorized batch processing 
 ## [2026-04-07] lint: 2026-04-07 (round 2) — post-batch-3 cleanup
 - **Group A — re-fixed two regressions from the first lint pass**; **Group B** — created [[supabase]]; **Group 5** — refreshed `wiki/overview.md`; **Group 6** — refreshed `wiki/tasks.md`.
 - **Notes**: Two passes were needed. Lesson: lint Phase 3 must verify edits before declaring done.
-
-## [2026-04-07] ingest | THIS is the REAL DEAL for local LLMs (Alex Ziskind)
-- **Source**: YouTube transcript by Alex Ziskind on vLLM + FP8 + RTX PRO 6000 Blackwell
-- **Pages created** (4): `summary-alex-ziskind-vllm-fp8.md`; `wiki/people/alex-ziskind.md`; `wiki/open-source/vllm.md`; `wiki/concepts/fp8-quantization.md`
 

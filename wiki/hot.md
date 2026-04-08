@@ -1,48 +1,45 @@
 ---
 type: hot-cache
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-08
 ---
 
 # Hot Cache
 
 ## Current State
 
-**68 sources ingested** (after a 17-source batch ingest on 2026-04-07), 6 org pages. Strongest threads: planning-first AI coding (Claude Code, BMAD, meta-prompting, Ultra Plan, **context-engineering / PRP**), local-AI throughput stack (Ollama, vLLM+FP8, Docker Model Runner, Continue, Unsloth), **n8n-centered AI automation** (newly anchored), the **free-cursor-alternative cluster** (Cline + Continue, Void IDE, OpenCode), and the **general AI agent landscape** (Manus, OpenManus, Flowith).
+**80 sources ingested** (after a 12-source batch on 2026-04-08), 6 org pages, 1 newly-tagged Models section in the index. The two strongest threads from this batch: **R1-0528 as the default open-source reasoning backbone** for the agent ecosystem, and **n8n's content-pipeline maturation** (faceless shorts + longform videos + first-class Perplexity node + free YouTube scraper).
 
 ## Most Active Pages
 
-- [[claude-code|Claude Code]] — primary tool; sub-agents, /loop, /ultra-plan, skills, marketplace
-- [[mcp|MCP]] — canonical concept; foundational; now with Docker MCP Toolkit
-- [[n8n]] — newly created; convergence point for 5+ sources from this batch
-- [[ollama]] — most-cross-linked local runtime; Modelfile section for fine-tuned models
-- [[cline]] — newly created; the canonical free agentic VS Code extension
-- [[void-ide]] / [[opencode]] — new entries in the open-source coding-tool cluster
-- [[context-engineering]] — new concept; sibling of [[bmad-method]] / [[meta-prompting]]
-- [[saas-death-spiral]] — market thesis tying it all together
+- [[deepseek|DeepSeek]] — refreshed with R1-0528 (671B/37B MoE, MIT, 136K context, free OpenRouter); now the default free reasoning backbone for [[codename-goose|Goose]], [[stagehand]], [[deerflow]], [[agenticseek]]
+- [[n8n]] — added 4 new workflow refs and a "First-class nodes worth tracking" section ([[perplexity]], [[zep]], AI Agent)
+- [[task-master-ai]] — new entity; the cleanest practical implementation of the cost-routing thesis
+- [[deerflow]] — new entity; first ByteDance-published open-source agent framework in the wiki
+- [[codename-goose]] — new entity; the only "free Claude Code" alternative with corporate backing (Block)
+- [[stagehand]] — new entity; MCP-native browser automation; fills the long-empty browser-control slot
+- [[perplexity]] — new entity; canonical real-time-search primitive for n8n agents and MCP servers
+- [[multi-agent-orchestration]] — expanded with Task Master, AgentZero, DeerFlow, AgenticSeek
 
-## Most Recently Added (the 17-source batch)
+## Most Recently Added (the 12-source batch 2026-04-08)
 
-The largest single batch in wiki history. Highlights:
-- **n8n finally has a first-class page** after being referenced repeatedly. Anchors voice agents ([[retell-ai]]), Zep long-term memory ([[zep]]), content-repurposing, and the AI-automation-agency playbook.
-- **Free coding cluster filled out**: [[cline]] (Cline v3.18 + Cline+Continue tutorial = 2 sources); [[void-ide]] (full-app open-source IDE with Gather Mode); [[opencode]] (SST terminal coder, 75+ providers); plus [[claude-code]] sub-agents added as a section.
-- **General-agent cluster**: [[manus]], [[openmanus]], [[flowith]] now form a coherent thread alongside [[devin]] and [[deepcode]].
-- **New open-weights models**: [[kimi-k2]] (Moonshot, ~10× cheaper than Sonnet), [[minimax-m1]] (1M context hybrid attention).
-- **New concept**: [[context-engineering]] (Karpathy/Lütke) — Cole Medin's PRP template walkthrough.
-- **New people**: [[simon-hoiberg]], [[beyond-fireship]], [[zubair-trabzada]], [[tin-rovic]], [[nathan-sebhastian]].
-- **Memory thread expansion**: [[zep]] joins [[open-brain|OpenBrain]] as the hosted-knowledge-graph alternative; Nate Herk's cost-trap fix is documented.
+- **Open-source agent frameworks** (4): [[task-master-ai]] (cost-routing layer), [[agent-zero]] (self-organizing), [[agenticseek]] (local + voice), [[deerflow]] (deep research, ByteDance)
+- **Free Claude Code alternatives** (2): [[codename-goose]] (Block), [[codellm]] (Abacus, $10 hosted bundle)
+- **Browser automation** (1): [[stagehand]] (Browserbase, MCP-native, self-healing)
+- **Models** (1): [[deepseek|DeepSeek R1-0528]] benchmark + adoption signal
+- **n8n maturation** (4): Perplexity node v1.98+, faceless shorts pipeline, longform video pipeline (new person [[jay-e-robonuggets]]), free YouTube scraper
 
 ## Open Gaps
 
 - **Long-standing primary sources**: Karpathy's gist, AI 2027, Dan Shapiro, StrongDM, METR study
+- **JSON-to-Video pricing model** — flagged as a tasks.md item for follow-up
+- **Bazzite gaming-VM source** — skipped as off-topic this batch
 - **Jules (Google)** — still mentioned as the thing Open-SWE replaces; no primary ingest yet
-- **CAISI** — referenced in OpenAI's industrial policy paper; needs corroboration
-- **Manus** — only secondary references (via OpenManus); no first-party Manus source
-- **Cline** — has 2 sources but no first-party blog/release-notes ingest yet
+- **Browserbase as a company page** — Stagehand vendor; no org page yet
 
 ## Architectural Threads to Watch
 
-- **Free coding-tool fragmentation**: extension-stack (Cline+Continue) vs full-app (Void) vs terminal (OpenCode, Claude Code, Gemini CLI). Each has trade-offs; user choice is becoming workflow-defining.
-- **Context engineering convergence**: [[context-engineering]] + [[ai-coding-workflow]] + [[bmad-method]] + [[meta-prompting]] + Claude Code Ultra Plan all converge on "structure the input, not the model"
-- **n8n as the no-code runtime layer**: the wiki's lower half — voice, content, memory, business automations — increasingly all routes through [[n8n]]
-- **Agent memory pattern split**: [[zep]] (hosted knowledge graph) vs [[open-brain]] (DIY Postgres + MCP). Both viable; the trade is control vs maintenance
+- **DeepSeek R1-0528 as the default open-weights reasoning backbone**: this is the single biggest pattern from the batch — Goose, Stagehand, DeerFlow, AgenticSeek all converge on R1 (or its distillations) as their recommended free model. The MIT license + free OpenRouter tier is the structural reason.
+- **Cost-routing layers (multi-model splits)**: Task Master AI's main/research/fallback split is a generalization of [[open-source-model-integration]]; AgentZero takes it further (5 model slots). This is the next abstraction layer above "use a cheaper model."
+- **n8n's first-class node ecosystem**: Perplexity, Zep, AI Agent, and the next-up integrations are pulling automation work *into* n8n rather than out of it. The real-time-search closure with Perplexity is the structurally biggest of the batch.
+- **ByteDance enters as a frontier OSS contributor**: DeerFlow is the first; expect more.

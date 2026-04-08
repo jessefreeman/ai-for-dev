@@ -2,6 +2,7 @@
 type: index
 created: 2026-04-06
 updated: 2026-04-08
+# 12-source batch ingested 2026-04-08
 description: "Jesse Freeman's personal AI research wiki — AI tools, techniques, and workflows for developers. Maintained by Claude Code."
 socialImage: og-image.png
 ---
@@ -51,6 +52,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[zubair-trabzada|Zubair Trabzada]] — No-code AI automation educator; voice agents and n8n workflows.
 - [[tin-rovic|Tin Rovic]] — No-code AI automation creator; n8n workflow recipes.
 - [[nathan-sebhastian|Nathan Sebhastian]] — Code with Nathan; practical dev environment + AI coding tutorials.
+- [[jay-e-robonuggets|Jay E (RoboNuggets)]] — AI automation educator; deep n8n + generative-media long-form video pipelines.
 
 ### Organizations
 - [[anthropic|Anthropic]] — US frontier-AI lab; Claude, Claude Code, the MCP standard, the Claude Code architecture leak. PBC structure.
@@ -109,6 +111,9 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[retell-ai|Retell AI]] — Voice-AI platform for inbound/outbound phone agents; telephony + persona + function calling.
 - [[zep|Zep]] — Hosted long-term agent memory as a per-user relational graph; n8n integration.
 - [[void-ide|Void IDE]] — Fully open-source agentic IDE shipped as a full editor; Agent Mode + Gather Mode.
+- [[codellm|Abacus AI CodeLLM]] — Hosted IDE running Claude 4 Opus by default; bundles Composer Agent + Computer Agent + Chat Mode at ~$10/month; Cursor alternative.
+- [[perplexity|Perplexity]] — AI search engine with citations; canonical "real-time search" primitive; first-class n8n node and MCP server.
+- [[json-to-video|JSON-to-Video]] — Video assembly API used as the no-code video primitive in n8n content pipelines; the no-code sibling of [[remotion|Remotion]].
 
 ### Open-Source Projects
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
@@ -143,6 +148,12 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[strapi|Strapi]] — Self-hostable headless CMS; Contentful/Sanity alternative.
 - [[nocodb|NocoDB]] — Self-hostable no-code database; Airtable alternative.
 - [[grafana|Grafana]] — Open-source observability/analytics dashboards; PostHog/Amplitude alternative when paired with Postgres.
+- [[task-master-ai|Task Master AI]] — Open-source task-management layer for AI coding agents; three-model split (main/research/fallback) routes each task to the cheapest capable model; CLI + MCP.
+- [[agent-zero|AgentZero]] — Self-organizing multi-agent framework with multi-tier LLM slots and MCP-first extensibility; Docker-installable.
+- [[agenticseek|AgenticSeek]] — Fully local Manus alternative with voice input and visual UI; built for local reasoning models.
+- [[codename-goose|Codename Goose]] — Block's open-source AI software engineer; TUI + desktop app; free Claude Code alternative with corporate backing.
+- [[deerflow|DeerFlow]] — ByteDance's open-source LangGraph-based deep-research framework; Coordinator → Planner → Research Team → Reporter topology; first ByteDance entry.
+- [[stagehand|Stagehand]] — Browserbase's open-source AI browser-automation framework on Playwright; v2 ships self-healing + MCP-native integration.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -248,6 +259,18 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-nate-herk-zep-memory|n8n + Zep memory]] — Knowledge-graph long-term memory with cost-trap fix.
 - [[summary-nathan-sebhastian-vscode-cline-continue|VSCode + Cline + Continue]] — Canonical free Cursor-replacement setup.
 - [[summary-worldofai-void-ide|Void IDE Update]] — Fully open-source agentic IDE with Agent Mode + Gather Mode.
+- [[summary-task-master-ai-cursor-cline|100x Cursor + Cline with Task Master AI]] — Three-model split for AI coding agents.
+- [[summary-agent-zero-framework|AgentZero ALL-IN-ONE Multi Agent]] — Self-organizing multi-agent framework with MCP-first extensibility.
+- [[summary-agenticseek-manus-alternative|AgenticSeek FULLY FREE Manus Alternative]] — Local-first generalist agent with voice and UI.
+- [[summary-claude-4-opus-codellm-composer|Claude 4 Opus + Composer Agent]] — Abacus AI CodeLLM walkthrough; Cursor alternative at $10/month.
+- [[summary-codename-goose-claude-code-alternative|Codename Goose: FREE AI Software Engineer]] — Block's TUI + desktop free Claude Code alternative.
+- [[summary-deerflow-local-research-agent|DeerFlow: FREE Local Deep Research Agent]] — ByteDance's LangGraph-based research framework.
+- [[summary-stagehand-v2-browser-automation|Stagehand V2 Browser Use AI Agent]] — Browserbase's MCP-native self-healing browser automation.
+- [[summary-deepseek-r1-0528-reasoning-model|DeepSeek-R1-0528: BEST Open Reasoning Model]] — MIT-licensed 671B/37B MoE reasoning model with free OpenRouter tier.
+- [[summary-zubair-trabzada-perplexity-node-n8n|n8n NEW Perplexity Node]] — First-class real-time search node in n8n v1.98+.
+- [[summary-nate-herk-faceless-shorts-n8n|Faceless Shorts with n8n]] — Free template for fully automated n8n short-form video pipeline.
+- [[summary-tin-rovic-youtube-scraper-n8n|How To Scrape YouTube For FREE with n8n]] — Free YouTube Data API v3 channel scraper.
+- [[summary-jay-e-longform-youtube-videos|Longform YouTube Videos Hourly]] — Jay E's deep n8n + JSON-to-Video long-form pipeline with error-routed Creator Agent.
 
 ## Contribute or build your own
 
