@@ -1,8 +1,8 @@
 ---
 type: concept
-sources: ["Model Context Protocol (MCP), clearly explained (why it matters).md"]
+sources: ["Model Context Protocol (MCP), clearly explained (why it matters).md", "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template).md", "This MCP Server for AI Coding Assistants Will 10x Your Productivity.md", "n8n + MCP Build and Automate Anything! Run ALL Your AI Locally - LLMs, AI Agents! (Opensource).md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [concept, ai, llm, agents, protocol, anthropic, integration]
 ---
 
@@ -59,6 +59,18 @@ This is why every major service provider has been racing to publish MCP servers 
 - **Standalone MCP servers as products**: e.g. Cole Medin's Supabase MCP server demo in [[summary-cole-medin-100x-ai-coding|his AI coding video]].
 - **MCP-native agents**: [[stagehand|Stagehand]] (browser automation), [[task-master-ai|Task Master AI]] (cost-routing task manager), [[agent-zero|AgentZero]] (general-agent framework) all install as MCP servers and run inside any compliant host (Cline, Cursor, Claude Code) without per-host glue.
 - **Perplexity-as-a-tool**: now a first-class node in [[n8n]] (v1.98+) as well as the canonical free MCP server in AgentZero quickstarts. See [[perplexity]].
+- **n8n + community MCP node**: the `n8n-nodes-mcp` community node lets n8n consume any MCP server (Brave Search, Filesystem, Postgres, [[context7|Context7]], etc.). Escape hatch for tools n8n hasn't shipped first-class. See [[summary-worldofai-n8n-mcp-local-ai]].
+- **Curated docs as RAG**: [[context7|Context7]] hosts curated, version-correct docs for 1,856+ frameworks; the wiki's strongest data point for "RAG works well when someone curates the corpus." Pairs with [[summary-cole-medin-context7-mcp|Cole Medin's walkthrough]].
+
+## Building your own MCP server
+
+The wiki's canonical reference is [[summary-cole-medin-mcp-server-template|Cole Medin's MCP template walkthrough]]. Key takeaways:
+
+- **Use FastMCP** (`pip install mcp`) — high-level Python API
+- **Lifespan pattern**: singleton client (DB, API connection) created at server start, passed via context to every tool call. Avoids reconnect-per-call overhead.
+- **Transports**: **stdio** for local IDE-embedded use (faster), **SSE** for shared/remote servers (port 8070 default). Beginners often default to SSE because docs lead with it; choose stdio if the server lives next to the host.
+- **Tool decorator**: `@mcp.tool` + a docstring written for an LLM (not for a human reader) — the docstring is what the LLM sees when picking tools.
+- **Reference template**: `github.com/coleam00/mcp-mem0` — Mem0 MCP server with `save_memory` / `get_all_memories` / `search_memories` tools, deployable via Docker.
 
 ## Startup Opportunities (Per Ras Mic)
 

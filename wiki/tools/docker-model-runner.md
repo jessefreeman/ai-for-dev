@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["How To Install Any LLM Locally! Open WebUI (Model Runner) - Easiest Way Possible!.md", "The Easiest Ways to Run LLMs Locally - Docker Model Runner Tutorial.md"]
+sources: ["How To Install Any LLM Locally! Open WebUI (Model Runner) - Easiest Way Possible!.md", "The Easiest Ways to Run LLMs Locally - Docker Model Runner Tutorial.md", "Turn Your Mac Into an AI Playground with Docker Model Runner.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, ai, local-ai, docker, llm-runtime, open-source]
 ---
 
@@ -130,3 +130,4 @@ This gives you a full ChatGPT-style local UI without ever installing Ollama.
 - [[summary-worldofai-docker-model-runner|Source: Docker Model Runner walkthrough (WorldofAI)]]
 - [[summary-tech-with-tim-docker-model-runner|Source: Docker Model Runner Tutorial (Tech With Tim)]]
 - [[summary-alex-ziskind-vllm-fp8|Source: Alex Ziskind on vLLM + FP8 (parallelism comparison)]]
+- [[summary-docker-model-runner-mac-playground|Source: Docker official Mac demo]] — first-party Docker walkthrough

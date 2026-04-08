@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["THIS is the REAL DEAL 🤯 for local LLMs.md"]
+sources: ["THIS is the REAL DEAL 🤯 for local LLMs.md", "Run A Local LLM Across Multiple Computers! (vLLM Distributed Inference).md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [open-source, ai, llm, inference, runtime, gpu, parallelism, nvidia]
 ---
 
@@ -79,6 +79,17 @@ The decision tree:
 - **Multi-user serving in production?** → **vLLM**
 - **Tinkering with custom inference primitives?** → llama.cpp directly
 
+## Distributed inference (multi-node)
+
+vLLM supports **horizontal scaling across multiple nodes** via a **Ray cluster** — `ray start --head` on the head node, `ray start --address=...` on workers — combining **tensor parallelism** (split model layers across GPUs in one node) and **pipeline parallelism** (split model depth across nodes). Per [[summary-bijan-bowen-vllm-distributed-inference|Bijan Bowen's walkthrough]] (2 nodes × 2 GPUs):
+
+- **Identical Python envs** across nodes — Docker is the recommended way to enforce this
+- **Identical model paths** across nodes
+- **Network**: 2.5G switch is the practical minimum; mixing WiFi/Ethernet causes latency spikes
+- **Heterogeneous GPU clusters** get bottlenecked by the weakest member — vLLM does not officially recommend mixed GPUs
+
+**Practical takeaway**: distributed inference is for the case where your single best GPU isn't enough, not the case where you happen to have two GPUs lying around.
+
 ## Relationship to the Benchmarks Section
 
 vLLM is what unlocks the top-tier scores for the [[benchmarks/rigs/proxmox-lenovo-p8-threadripper|Lenovo P8 Threadripper Proxmox host with RTX PRO 6000 Blackwell Max-Q]] in our [[benchmarks/index|hardware benchmarks]]. The Geekbench AI numbers reflect single-request throughput; vLLM with FP8 unlocks an *additional ~70x improvement* on concurrent workloads. This is the practical answer to "why pay $9,145 for the PRO 6000" — it's not the single-request speed, it's the parallelism + FP8 combination.
@@ -92,5 +103,7 @@ vLLM is what unlocks the top-tier scores for the [[benchmarks/rigs/proxmox-lenov
 - [[turboquant]] — adjacent KV cache optimization for the same hardware
 - [[gemma-4-vram-requirements]] — model sizing reference
 - [[benchmarks/rigs/proxmox-lenovo-p8-threadripper]] — the rig vLLM unlocks the most value on
-- [[alex-ziskind]] — primary advocate
+- [[alex-ziskind]] — primary advocate (single-node)
+- [[bijan-bowen|Bijan Bowen]] — multi-node coverage
 - [[summary-alex-ziskind-vllm-fp8|Source: vLLM + FP8 walkthrough]]
+- [[summary-bijan-bowen-vllm-distributed-inference|Source: Multi-node vLLM via Ray cluster]]

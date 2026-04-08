@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Host Your Own AI Code Assistant with Docker, Ollama and Continue!.md"]
+sources: ["Host Your Own AI Code Assistant with Docker, Ollama and Continue!.md", "Quick and Easy Local SSL Certificates for Your Homelab!.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [person, homelab, self-hosting, local-ai, youtube]
 ---
 
@@ -17,6 +17,7 @@ YouTube creator focused on **homelab and self-hosting**, with strong opinions ab
 ## Content in This Wiki
 
 - [[summary-wolfgangs-channel-self-host-ai-code-assistant|Host Your Own AI Code Assistant with Docker, Ollama and Continue!]] — Real-world comparison of self-hosting a local Copilot replacement on a 7900XTX gaming PC vs a LattePanda Sigma MiniPC. Hard data on power consumption (130W vs 4.6W idle), and the practical conclusion that **without a real GPU, local code assistance is unusable**. Introduces the [[continue|Continue]] VS Code extension as the local-Copilot frontend and walks through the Docker Compose recipe with ROCm device passthrough for AMD GPUs.
+- [[summary-wolfgangs-channel-local-ssl-homelab|Quick and Easy Local SSL Certificates for Your Homelab]] (2023-05-15) — Nginx Proxy Manager + Let's Encrypt DNS-01 challenge for valid SSL on private IPs; supports wildcard certs and works with private/local hostnames. The generic homelab version of the same pattern [[networkchuck|NetworkChuck]] applies to Open WebUI.
 
 ## Key Ideas
 

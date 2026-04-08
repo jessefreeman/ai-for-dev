@@ -32,6 +32,7 @@ n8n is the convergence point for a huge swath of the wiki's AI-agent content: vo
 - [[summary-nate-herk-faceless-shorts-n8n|Faceless YouTube Shorts]] — Ideas Agent + Creator Agent + [[json-to-video]] short-form pipeline
 - [[summary-jay-e-longform-youtube-videos|Longform YouTube videos]] — Jay E's deeper variant with 3-section error-routed Creator Agent and JSON-template customization
 - [[summary-zubair-trabzada-perplexity-node-n8n|Perplexity node v1.98+]] — first-class real-time search inside the AI Agent node
+- [[summary-worldofai-n8n-mcp-local-ai|n8n + MCP via community node]] — `n8n-nodes-mcp` lets n8n consume any MCP server (Brave Search demo)
 - [[summary-simon-hoiberg-self-hostable-alternatives|Self-hostable alternatives]] — n8n as the Zapier/Make replacement
 - [[summary-simon-hoiberg-5-ai-agent-business-ideas|AI Agent Business Ideas]] — selling n8n workflows as templates or webhook APIs
 

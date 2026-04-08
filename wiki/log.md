@@ -9,6 +9,27 @@ updated: 2026-04-08
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-08] ingest | 17-source batch (Cline updates, MCP maturity, local AI infra, async cloud agents)
+
+Fourth batch in two days. **17 sources in scope, 2 skipped (1 duplicate, 1 off-topic). 102 sources ingested total.**
+
+- **Cline cluster (3)**: [[summary-worldofai-cline-v313-memory-bank|v3.13 Memory Bank]], [[summary-worldofai-cline-v4-yolo-mode|v4.0 YOLO Mode + Chrome]], [[summary-worldofai-readdy-cline-fullstack|Readdy + Cline full-stack]]. Anchors new entity [[readdy]]. Cline release timeline now spans v3.13 → v4.0 → v3.18 with YOLO Mode + Chrome integration as the headline.
+- **Async cloud agents (2)**: [[summary-worldofai-augment-code-remote-agent|Augment Code Remote Agent]] (cloud, **10 parallel agents** per session — highest single-user concurrency in the cluster); [[summary-worldofai-github-copilot-coding-agent|GitHub Copilot Coding Agent]] (Pro Plus $39/mo, in-GitHub autonomous, MCP-extensible). Both update existing entity pages.
+- **MCP cluster (3)**: [[summary-cole-medin-mcp-server-template|Cole Medin's MCP build template]] (FastMCP + lifespan + Mem0 reference); [[summary-cole-medin-context7-mcp|Context7]] (anchors new entity [[context7]] — 1,856+ curated framework docs as MCP server); [[summary-worldofai-n8n-mcp-local-ai|n8n + MCP via community node]] (escape hatch for any MCP server inside n8n). [[mcp]] is now the wiki's deepest single-concept coverage.
+- **Cole Medin's other (2)**: [[summary-cole-medin-local-supabase-rag|Local Supabase 100% RAG]] (full self-hosted local-AI-packaged stack with PGVector); [[summary-cole-medin-crawl4ai-v2|Crawl4AI v2]] (anchors new entity [[crawl4ai]] — three crawl strategies, auto-detection). Cole Medin is now the wiki's most-cited single creator.
+- **Google free push (2)**: [[summary-worldofai-notebooklm-gemini25|NotebookLM + Gemini 2.5]] (anchors new entity [[notebooklm]] — third Google free-Gemini product alongside Jules + Stitch); [[summary-gemma4guide-overview|Gemma 4 Guide overview]] (companion to existing VRAM article).
+- **General agents (1)**: [[summary-worldofai-deepagent|DeepAgent (Abacus AI)]] (anchors new entity [[deepagent]] — Abacus's general-agent sibling to CodeLLM, bundled at $10/mo).
+- **Self-hosted infra (4)**: [[summary-wolfgangs-channel-local-ssl-homelab|Wolfgang local SSL]] + [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck Open WebUI domain+SSL]] (anchors new person [[networkchuck]]) — together the canonical "expose your local AI dashboard properly" recipe; [[summary-bijan-bowen-vllm-distributed-inference|Bijan Bowen multi-node vLLM]] (anchors new person [[bijan-bowen]] — Ray cluster, tensor + pipeline parallelism); [[summary-docker-model-runner-mac-playground|Docker official Mac Model Runner demo]] (first first-party Docker source, `model-runner.docker.internal` hostname).
+
+- **Skipped (2)**: Claude 4 + Cline duplicate (only YouTube URL playlist params differed from previously-archived source); Windows Docker container (off-topic — pure homelab/Windows tooling, no AI angle).
+
+- **Major thread — MCP maturity spike**: build-your-own template + curated production server + n8n consumption + every coding agent supports it. MCP is now the universal interface layer.
+- **Major thread — async cloud agents converging**: assign GitHub issue → sandbox → plan → PR. Jules, Augment Remote, Copilot Coding Agent all do this; differences are pricing, model, parallelism count.
+- **Major thread — self-hosted local AI stack has a full recipe**: Cole's local-AI-packaged + Wolfgang/NetworkChuck SSL + Docker Model Runner Mac + Bijan multi-node vLLM = full path from "try local AI" to "household uses it on phones."
+- **Major thread — RAG-skepticism vs RAG-defense in tension**: Context7 + Crawl4AI sit alongside CAG + RAG-vs-Wiki. Synthesis: RAG works when curated, raw web RAG remains brittle.
+
+- **5 memories** added.
+
 ## [2026-04-08] ingest | 5-source batch (Google I/O launches + CAG + Dify)
 
 Third batch of the day; user split it from the larger queue. **5 sources, all in scope, none skipped. 85 sources ingested total.**
@@ -141,10 +162,4 @@ Largest single ingest in the wiki to date. The user authorized batch processing 
 - **Source**: YouTube tutorial walkthrough by Tech With Tim, 2025-06-27 publish, ~5,270 source words
 - **Pages created** (4): `summary-tech-with-tim-fine-tune-ollama.md`; `wiki/people/tech-with-tim.md`; `wiki/open-source/unsloth.md`; `wiki/concepts/fine-tuning.md`
 - **Notes**: First fine-tuning entry in the wiki. Anchors a new concept thread connecting [[unsloth]] (training) → GGUF (artifact) → [[ollama]] (runtime) → [[llama-cpp]] (engine).
-
-## [2026-04-07] ingest | Industrial Policy for the Intelligence Age (OpenAI)
-- **Source**: PDF policy paper, 13 pages, published April 2026 by OpenAI. **First test of the new PDF ingest workflow** — extracted via `pypdf` 6.9.2.
-- **Pages created** (2): `summary-openai-industrial-policy-intelligence-age.md`; `industrial-policy-intelligence-age.md`
-- **Updated** (3): `saas-death-spiral.md`, `chatgpt.md`, `index.md`
-- **Notes**: First wiki source where the framing is "policy artifact from an interested party" — required heavier-than-usual editorial caveats.
 

@@ -1,14 +1,14 @@
 ---
 type: entity
-sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build).md", "Code 100x Faster with AI, Here's How (No Hype, FULL Process).md", "Sim AI Easily Create AI Agents That Can Automate Anything! Opensource n8n Alternative!.md", "Archon OS First-Ever AI Operating System for AI Coding! (Opensource).md"]
+sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build).md", "Code 100x Faster with AI, Here's How (No Hype, FULL Process).md", "Sim AI Easily Create AI Agents That Can Automate Anything! Opensource n8n Alternative!.md", "Archon OS First-Ever AI Operating System for AI Coding! (Opensource).md", "Run Supabase 100% LOCALLY for Your AI Agents.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, database, postgres, backend-as-a-service, open-source]
 ---
 
 # Supabase
 
-Open-source backend-as-a-service built on **Postgres + PGVector** + auto-generated REST/GraphQL APIs + auth + storage + edge functions. Has become the **default backend infrastructure** referenced across this wiki — especially for agent memory systems, AI coding workflows, and visual agent builders. Self-hostable, with a generous free hosted tier.
+Open-source backend-as-a-service built on **Postgres + PGVector** + auto-generated REST/GraphQL APIs + auth + storage + edge functions. Has become the **default backend infrastructure** referenced across this wiki — especially for agent memory systems, AI coding workflows, and visual agent builders. Self-hostable, with a generous free hosted tier. The wiki's canonical full self-hosted recipe is [[summary-cole-medin-local-supabase-rag|Cole Medin's local-AI-packaged stack]] — Supabase + n8n + Ollama + Open WebUI in a single docker-compose, with PGVector as the vector store for local RAG agents.
 
 - **Vendor**: Supabase Inc.
 - **Site**: supabase.com

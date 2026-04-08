@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Build Your Own Secure Local AI Assistant for Cyber Security (Ollama + Open WebUI).md"]
+sources: ["Build Your Own Secure Local AI Assistant for Cyber Security (Ollama + Open WebUI).md", "Turn Open WebUI into a real website (Domain + SSL).md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, ai, open-source, local, ui, web]
 ---
 
@@ -29,6 +29,7 @@ Open WebUI sits on top of an OpenAI-API-compatible local model runtime. Two prac
 
 - **Cybersecurity communication** — translating technical findings into plain English without leaking data to cloud LLMs ([[summary-joshua-clarke-local-ai-cybersec|Joshua Clarke video]])
 - **Private chat over local models** — the canonical use case
+- **Internet-accessible household AI dashboard** — [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck's Cloudflare + Nginx Proxy Manager + Let's Encrypt recipe]] turns a localhost Open WebUI install into a real-domain HTTPS service that family/team can use from any device. Pairs with [[summary-wolfgangs-channel-local-ssl-homelab|Wolfgang's general homelab SSL guide]] for the same pattern across non-AI services.
 
 ## See Also
 

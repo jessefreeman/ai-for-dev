@@ -54,6 +54,8 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[nathan-sebhastian|Nathan Sebhastian]] — Code with Nathan; practical dev environment + AI coding tutorials.
 - [[jay-e-robonuggets|Jay E (RoboNuggets)]] — AI automation educator; deep n8n + generative-media long-form video pipelines.
 - [[ai-jason|AI Jason]] — LLM application architecture educator; CAG advocate; runs the AI Builder Cloud community.
+- [[bijan-bowen|Bijan Bowen]] — Engineer / YouTuber on local LLM infrastructure; multi-node vLLM via Ray cluster.
+- [[networkchuck|NetworkChuck]] — Networking + self-hosting YouTuber; Cloudflare + Nginx Proxy Manager + Let's Encrypt deployment patterns.
 
 ### Organizations
 - [[anthropic|Anthropic]] — US frontier-AI lab; Claude, Claude Code, the MCP standard, the Claude Code architecture leak. PBC structure.
@@ -117,6 +119,10 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[json-to-video|JSON-to-Video]] — Video assembly API used as the no-code video primitive in n8n content pipelines; the no-code sibling of [[remotion|Remotion]].
 - [[jules|Google Jules]] — Google's free cloud-based async AI coding agent on Gemini 2.5 Pro; GitHub-integrated, sandboxed VM, audio PR summaries; 5 tasks/day free.
 - [[dify|Dify]] — No-code AI agent + knowledge base platform; first-class RAG with configurable chunking/retrieval; complementary to n8n.
+- [[readdy|Readdy]] — AI frontend builder generating clean React/Figma; pairs with Cline + Supabase as a free no-code-with-real-code-output stack.
+- [[notebooklm|NotebookLM]] — Google's free AI research assistant on Gemini 2.5 Flash; multimodal source ingest, audio overviews in 50+ languages.
+- [[deepagent|DeepAgent]] — Abacus AI's general-purpose agent (research, dashboards, automation); bundled with CodeLLM at $10/month.
+- [[context7|Context7]] — MCP server hosting curated, version-correct docs for 1,856+ frameworks; the wiki's strongest "RAG works when curated" data point.
 
 ### Open-Source Projects
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
@@ -151,6 +157,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[strapi|Strapi]] — Self-hostable headless CMS; Contentful/Sanity alternative.
 - [[nocodb|NocoDB]] — Self-hostable no-code database; Airtable alternative.
 - [[grafana|Grafana]] — Open-source observability/analytics dashboards; PostHog/Amplitude alternative when paired with Postgres.
+- [[crawl4ai|Crawl4AI]] — Open-source web-to-markdown library optimized for LLM ingestion; 42K+ stars; the wiki's canonical knowledge-base build primitive.
 - [[task-master-ai|Task Master AI]] — Open-source task-management layer for AI coding agents; three-model split (main/research/fallback) routes each task to the cheapest capable model; CLI + MCP.
 - [[agent-zero|AgentZero]] — Self-organizing multi-agent framework with multi-tier LLM slots and MCP-first extensibility; Docker-installable.
 - [[agenticseek|AgenticSeek]] — Fully local Manus alternative with voice input and visual UI; built for local reasoning models.
@@ -280,6 +287,23 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-worldofai-google-jules|Google Jules launch]] — first-party Google async coder on Gemini 2.5 Pro; CRM dashboard demo.
 - [[summary-worldofai-google-stitch|Google Stitch I/O 2025 launch]] — Stitch second source; pricing modes + Airbnb clone demo.
 - [[summary-dify-knowledge-base-rag-configuration|Dify Knowledge Base configuration]] — no-code RAG control panel walkthrough.
+- [[summary-worldofai-cline-v313-memory-bank|Cline v3.13]] — Memory Bank, slash commands, checkpoint system.
+- [[summary-worldofai-cline-v4-yolo-mode|Cline v4.0]] — YOLO Mode, Chrome browser integration, 10× faster diff editing.
+- [[summary-worldofai-readdy-cline-fullstack|Readdy + Cline full-stack]] — no-code stack with Cline as the backend half.
+- [[summary-worldofai-augment-code-remote-agent|Augment Code Remote Agent]] — cloud-hosted Augment with 10 parallel agents per session.
+- [[summary-worldofai-github-copilot-coding-agent|GitHub Copilot Coding Agent]] — autonomous in-GitHub agent on Pro Plus tier.
+- [[summary-cole-medin-mcp-server-template|MCP server template (Cole Medin)]] — FastMCP + lifespan + Mem0 reference template.
+- [[summary-cole-medin-context7-mcp|Context7 MCP server]] — curated docs for 1,856+ frameworks; the production MCP server example.
+- [[summary-worldofai-n8n-mcp-local-ai|n8n + MCP via community node]] — escape hatch for any MCP server inside n8n.
+- [[summary-cole-medin-local-supabase-rag|Local Supabase RAG (Cole Medin)]] — full self-hosted local-AI stack with PGVector RAG.
+- [[summary-cole-medin-crawl4ai-v2|Crawl4AI v2 (Cole Medin)]] — three crawl strategies with auto-detection; Pydantic AI + Chroma DB template.
+- [[summary-worldofai-notebooklm-gemini25|NotebookLM + Gemini 2.5]] — free AI research assistant with multilingual audio overviews.
+- [[summary-gemma4guide-overview|Gemma 4 Guide overview]] — companion to the VRAM requirements article; tier ladder + Qwen/Llama comparison.
+- [[summary-worldofai-deepagent|DeepAgent (Abacus AI)]] — general-purpose research/dashboards/automation agent bundled with CodeLLM.
+- [[summary-wolfgangs-channel-local-ssl-homelab|Wolfgang: Local SSL for Homelab]] — Nginx Proxy Manager + Let's Encrypt DNS-01 for valid SSL on private IPs.
+- [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck: Open WebUI Domain + SSL]] — Cloudflare DNS deployment recipe for Open WebUI.
+- [[summary-bijan-bowen-vllm-distributed-inference|Multi-node vLLM (Bijan Bowen)]] — Ray cluster + tensor/pipeline parallelism across 2 nodes.
+- [[summary-docker-model-runner-mac-playground|Docker Model Runner Mac demo]] — official Docker walkthrough for Apple Silicon.
 
 ## Contribute or build your own
 

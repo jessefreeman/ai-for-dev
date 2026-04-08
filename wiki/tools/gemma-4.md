@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Google just dropped Gemma 4... (WOAH).md", "Ollama + Claude Code = 99% CHEAPER.md", "Gemma 4 VRAM Requirements Every GPU and Mac Tested (2026).md"]
+sources: ["Google just dropped Gemma 4... (WOAH).md", "Ollama + Claude Code = 99% CHEAPER.md", "Gemma 4 VRAM Requirements Every GPU and Mac Tested (2026).md", "Gemma 4 Guide Models, Local Deployment, VRAM, and Comparisons.md"]
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, ai, llm, open-source, google, model]
 ---
 

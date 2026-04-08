@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Build BEAUTIFUL Diagrams with Claude Code (Full Workflow).md", "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead).md", "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now).md", "Code 100x Faster with AI, Here's How (No Hype, FULL Process).md", "Archon OS First-Ever AI Operating System for AI Coding! (Opensource).md"]
+sources: ["Build BEAUTIFUL Diagrams with Claude Code (Full Workflow).md", "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead).md", "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now).md", "Code 100x Faster with AI, Here's How (No Hype, FULL Process).md", "Archon OS First-Ever AI Operating System for AI Coding! (Opensource).md", "Run Supabase 100% LOCALLY for Your AI Agents.md", "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template).md", "This MCP Server for AI Coding Assistants Will 10x Your Productivity.md", "Turn ANY Website into LLM Knowledge in Seconds - EVOLVED.md"]
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [person, ai, claude-code, rag, educator]
 ---
 
@@ -22,6 +22,10 @@ AI educator and developer. Runs the Dynamis community. Focuses on practical Clau
 - [[summary-cole-medin-rag-for-code|Why the Best AI Coding Tools Abandoned RAG]] — RAG is dead for code (structured data → agentic search) but essential for unstructured data. Bridge approach: give agents both tools, let them choose per-query.
 - [[summary-cole-medin-e2e-testing|This One Command Makes Coding Agents Find All Their Mistakes]] — Self-healing AI coding workflow: 6-step E2E testing with parallel sub-agents, browser automation, DB validation, screenshot review, and PIV loop (Plan→Implement→Validate).
 - [[summary-cole-medin-100x-ai-coding|Code 100x Faster with AI]] — Full coding-with-AI process: 8 golden rules, PLANNING.md/TASK.md, global rules, three core MCP servers, one-shot Supabase MCP server demo. See [[ai-coding-workflow]].
+- [[summary-cole-medin-local-supabase-rag|Run Supabase 100% LOCALLY for Your AI Agents]] (2025-02-16) — adds self-hosted [[supabase|Supabase]] to the `local-ai-packaged` stack; PGVector RAG with Ollama embeddings.
+- [[summary-cole-medin-mcp-server-template|The ULTIMATE Guide to Building Your Own MCP Servers]] (2025-04-13) — FastMCP + lifespan + Mem0 template; the wiki's canonical "how to build an MCP server" reference.
+- [[summary-cole-medin-context7-mcp|Context7 — 10x Your AI Coding Productivity]] (2025-04-20) — RAG-powered MCP server with 1,856+ curated framework docs; the production-grade MCP server example.
+- [[summary-cole-medin-crawl4ai-v2|Turn ANY Website into LLM Knowledge — EVOLVED]] (2025-04-30) — Crawl4AI three-strategy guide; auto-detecting Pydantic AI + Chroma DB template.
 
 ## Key Ideas
 

@@ -9,15 +9,15 @@ tags: [ai, llm, knowledge-management, agent]
 
 This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
-**Current state:** 85 sources ingested (after a second 5-source batch on 2026-04-08); 16-rig personal hardware benchmark section; 6 organization pages; index Models category; growing RAG-skepticism thread (now 3 entries).
+**Current state:** 102 sources ingested (after a 17-source batch on 2026-04-08, fourth batch in two days); 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) now sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]).
 
 ## Themes
 
 ### Knowledge Compounding
-The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value that chat-based or RAG-based approaches don't. Cross-references, contradictions, and synthesis are pre-compiled. The wiki's **RAG-skepticism thread** now has three entries: [[RAG vs Wiki]] (curated wiki beats vector search), [[summary-cole-medin-rag-for-code|Cole Medin's "RAG is dead for code"]] (agentic search beats vector search for codebases), and [[context-augmented-generation|CAG]] (full-context loading beats retrieval when the dataset fits the window). The macro thesis: **RAG was a bridge technology** for context-window scarcity; cheap long context (Gemini 2.0 at $0.01/M and 1M-token windows) shrinks its remaining role.
+The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value chat-based or RAG-based approaches don't. The wiki's **RAG-skepticism thread** has three entries: [[RAG vs Wiki]], [[summary-cole-medin-rag-for-code|"RAG is dead for code"]], and [[context-augmented-generation|CAG]]. Sitting alongside is a **RAG-defense pair**: [[context7|Context7]] (curated MCP docs) and [[crawl4ai|Crawl4AI]] (upstream builder). Synthesis: **RAG works when curated**; raw web RAG remains brittle. Macro: RAG was a bridge for context-window scarcity; cheap long context shrinks its role to "datasets larger than any feasible window."
 
 ### Production Agent Architecture
-[[Nate B Jones]]'s body of work defines the architectural layer: the [[Agentic Harness Primitives]] (12 primitives from the Claude Code leak), the three-Lego-brick model (memory + proactivity + tools), and the argument that [[OpenClaw]]'s 200k-star appeal is reducible to these primitives. The [[Claude Code]] ecosystem now includes multiple skill/plugin layers ([[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]]) each encoding different methodologies.
+[[Nate B Jones]]'s body of work defines the architectural layer: the [[Agentic Harness Primitives]] (12 primitives from the Claude Code leak), the three-Lego-brick model (memory + proactivity + tools), the [[OpenClaw]]-via-primitives reduction. The [[Claude Code]] skill ecosystem ([[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]]) each encodes different methodologies.
 
 ### Agent Proactivity, Memory, and Self-Improvement
 Three converging primitives: [[/loop]] (Anthropic, March 2026) gives agents a native heartbeat; [[OpenBrain]] (Postgres + PGVector + MCP via [[supabase|Supabase]], ~$0.10/month) gives them persistent memory; [[mcp|MCP]] gives them tool reach. Together they enable accumulated-value loops.
@@ -42,6 +42,9 @@ A major thread that crystallized in early April 2026: **structured thinking befo
 
 [[Frontier Operations]] and [[meta-prompting]] describe the persistent skills required to operate at the expanding AI/human boundary.
 
+### Self-Hosted AI Infrastructure
+The wiki now has a **complete self-hosted recipe stack**: [[summary-cole-medin-local-supabase-rag|Cole's local-AI-packaged]] (n8n + Ollama + Open WebUI + Supabase + PGVector, single docker-compose); [[summary-wolfgangs-channel-local-ssl-homelab|Wolfgang]] / [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck]] SSL recipes (Nginx Proxy Manager + Let's Encrypt) for real-domain HTTPS; [[summary-bijan-bowen-vllm-distributed-inference|Bijan's multi-node vLLM]] for horizontal scaling. Full path from "try local AI" to "household uses it on phones."
+
 ### Local AI Throughput Stack
 [[llama-cpp|llama.cpp]] is the foundation: GGUF format, integer quantization (Q4_K_M, Q5_K_M, Q8). [[Ollama]] wraps it. [[Open WebUI]] is the canonical chat UI. [[docker-model-runner|Docker Model Runner]] is the container-native alternative. [[turboquant|TurboQuant]] extends the same hardware with 4x context windows.
 
@@ -56,19 +59,10 @@ Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4
 [[ChatGPT]] = ease of use (now needs [[meta-prompting]] for GPT-5's literalism); [[Claude]] = work and coding; [[Gemini]] = search, deep research, video ingestion; [[Grok]] = real-time Twitter/X.
 
 ### Agentic Coding Platform Proliferation
-The market is fragmenting fast. [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]], [[firebase-studio|Firebase Studio]], [[archon-os|Archon OS]], [[deepcode|DeepCode]], [[codellm|Abacus CodeLLM]] (Claude 4 Opus hosted IDE, $10/mo), and **[[jules|Google Jules]]** (free async coder on Gemini 2.5 Pro, 5 tasks/day) all coexist with overlapping but distinct positioning. Jules is the wiki's first first-party Google async coding agent and closes the gap that [[open-swe|Open-SWE]] was tracked against. [[Augment Agent]] claims #1 OSS on SWE-bench Verified at 65.4%. [[deepcode|DeepCode]]'s standout is **Paper2Code** (research → working implementations). [[firebase-studio|Firebase Studio]] is Google's Project IDX rebrand. **[[task-master-ai|Task Master AI]]** introduces a *cost-routing layer* (main/research/fallback model split) that runs *inside* any host harness — this is the next abstraction above raw model substitution. [[saas-death-spiral|The death spiral analysis]] explains why this market is fragmenting.
+The market is fragmenting fast. [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]] (now with **Remote Agent**: cloud + 10 parallel agents), [[firebase-studio|Firebase Studio]], [[archon-os|Archon OS]], [[deepcode|DeepCode]], [[codellm|Abacus CodeLLM]] (Claude 4 Opus hosted IDE, $10/mo), [[jules|Google Jules]] (Gemini 2.5 Pro, free), and **GitHub Copilot Coding Agent** (Pro Plus tier, $39/mo, in-GitHub autonomous) all coexist with overlapping but distinct positioning. The **async cloud agent cluster** is converging on the same workflow shape — assign GitHub issue → sandbox → plan → PR — with vendor differences mostly in pricing, model, and parallelism count. [[Augment Agent]] claims #1 OSS on SWE-bench Verified at 65.4%. [[deepcode|DeepCode]]'s standout is **Paper2Code** (research → working implementations). [[firebase-studio|Firebase Studio]] is Google's Project IDX rebrand. **[[task-master-ai|Task Master AI]]** introduces a *cost-routing layer* (main/research/fallback model split) that runs *inside* any host harness — this is the next abstraction above raw model substitution. [[saas-death-spiral|The death spiral analysis]] explains why this market is fragmenting.
 
 ### Visual Workflow & Multi-Agent Orchestration
-Different layers of the same problem:
-- [[sim-ai|Sim AI]] — drag-and-drop visual workflow builder; n8n alternative; AI primitives as first-class nodes
-- [[dify|Dify]] — no-code AI agent + knowledge base platform; complement to n8n with first-class RAG
-- [[paperclip|Paperclip]] — multi-agent orchestration at the company level
-- [[hermes-agent|Hermes Agent]], [[OpenClaw]], [[ThePopeBot]] — full personal-agent frameworks
-- [[deerflow|DeerFlow]] (ByteDance) — Coordinator → Planner → Research Team → Reporter for deep-research workflows
-- [[agent-zero|AgentZero]] — self-organizing multi-agent framework with multi-tier LLM slots and MCP-first extensibility
-- [[agenticseek|AgenticSeek]] — fully local Manus alternative with voice and visual UI
-- [[codename-goose|Codename Goose]] — Block's AI software engineer (TUI + desktop)
-- [[stagehand|Stagehand]] — MCP-native browser-automation primitive
+Different layers of the same problem: [[sim-ai|Sim AI]] (visual builder, n8n alternative), [[dify|Dify]] (no-code agents + KB), [[paperclip|Paperclip]] (multi-agent at company level), [[hermes-agent|Hermes Agent]] / [[OpenClaw]] / [[ThePopeBot]] (personal-agent frameworks), [[deerflow|DeerFlow]] (ByteDance Coordinator/Planner pattern), [[agent-zero|AgentZero]] (self-organizing), [[agenticseek|AgenticSeek]] (local + voice), [[codename-goose|Codename Goose]] (Block's TUI + desktop), [[deepagent|DeepAgent]] (Abacus general agent), [[stagehand|Stagehand]] (MCP browser primitive).
 
 ### The Command-Line Creative Stack
 [[Google Stitch]] (voice→UI, design.md), [[Remotion]] (video-as-code, #1 non-corporate Claude Code skill), [[Blender MCP]] (natural language→3D), [[VoiceBox]] (local TTS / ElevenLabs alternative). MCP turns any tool into an agent-accessible primitive.

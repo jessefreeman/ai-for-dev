@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["How AI is breaking the SaaS business model....md"]
+sources: ["How AI is breaking the SaaS business model....md", "NEW Github Copilot Coding Agent Powerful NEW AI CODER + Copilot Opensource!.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, ai, agent, orchestration, github, microsoft, devops]
 ---
 
@@ -13,6 +13,13 @@ Microsoft's evolution of GitHub from code-hosting platform into a **complete AI 
 - **Vendor**: Microsoft / GitHub
 - **Form factor**: Cloud platform layered onto existing GitHub repos
 - **License**: Hosted product (commercial)
+
+## Sub-products
+
+- **Agent Mode** — in-IDE interactive Copilot agent (the original product surface)
+- **Copilot Coding Agent** — autonomous in-GitHub agent: assign an issue, Copilot opens a sandbox (GitHub Actions), reads the repo via Code Search (RAG), drafts a PR, runs CI, iterates. Pro Plus tier ($39/mo) at preview launch. Respects branch protection. **MCP-extensible.** See [[summary-worldofai-github-copilot-coding-agent]].
+
+The two-tier split (Agent Mode + Coding Agent) is the same shape as [[claude-code|Claude Code]]'s local-CLI + Ultra-Plan-cloud architecture, and as Augment's IDE + [[summary-worldofai-augment-code-remote-agent|Remote Agent]] split.
 
 ## What It Does
 
@@ -47,3 +54,6 @@ The structural advantage: GitHub already has the **shared state** (the repo + th
 - [[firebase-studio]] — Google's parallel cloud-IDE play
 - [[fireship]] — source channel
 - [[summary-fireship-saas-death-spiral|Source: How AI is Breaking SaaS]]
+- [[summary-worldofai-github-copilot-coding-agent|Source: GitHub Copilot Coding Agent walkthrough]]
+- [[jules|Google Jules]] — sibling async cloud agent
+- [[mcp|MCP]] — extension protocol

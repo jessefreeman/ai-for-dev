@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Augment Agent RIP Cursor! NEW Agentic AI IDE! AI Software Engineer Automates Your Code (Opensource).md"]
+sources: ["Augment Agent RIP Cursor! NEW Agentic AI IDE! AI Software Engineer Automates Your Code (Opensource).md", "Augment Code UPDATE RIP Cursor! NEW AGENT! AI Software Engineer Automates Your Code! (New Agent).md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, agent, ide, coding-assistant, open-source]
 ---
 
@@ -23,6 +23,10 @@ Agentic AI pair programmer from Augment Code, designed for professional software
 - **MCP support** — pluggable APIs, SQL, CLI tools via the standard [[mcp|Model Context Protocol]]
 - **Visual debugging** — drag-in screenshots for UI/CSS issues; agent suggests fixes and runs only relevant tests
 - **Next Edit** — predictive code edit feature
+
+## Remote Agent (cloud, 10 parallel)
+
+In May 2025 Augment shipped **Remote Agent** — a cloud-hosted version of the agent that runs in an isolated mirrored dev environment and supports up to **10 parallel agents** per session. This puts Augment directly in the async / cloud cluster alongside [[jules|Google Jules]], cloud Codex, and [[claude-code|Claude Code Ultra Plan]]. Distinguishing feature: 10 parallel agents per developer is the highest single-user concurrency in the cluster. Waitlist-only at launch (`augment.new`). See [[summary-worldofai-augment-code-remote-agent]].
 
 ## How It Compares
 
@@ -46,3 +50,5 @@ Agentic AI pair programmer from Augment Code, designed for professional software
 - [[mcp]] — the protocol Augment Agent supports
 - [[WorldofAI]] — primary source channel
 - [[summary-worldofai-augment-agent|Source: Augment Agent walkthrough]]
+- [[summary-worldofai-augment-code-remote-agent|Source: Augment Remote Agent (cloud, 10 parallel)]]
+- [[jules|Google Jules]] — sibling cloud async agent
