@@ -1,5 +1,6 @@
 ---
 type: entity
+sources: ["OpenManus FULLY FREE Manus Alternative! First-Ever General AI Agent - Automate Your Life!.md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [open-source, ai-agent, general-agent]

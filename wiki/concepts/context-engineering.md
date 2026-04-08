@@ -1,5 +1,6 @@
 ---
 type: concept
+sources: ["Context Engineering The End of Vibe Coding! 100x Better Than Vibe Coding (Full Tutorial).md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [concept, ai-coding, prompting]

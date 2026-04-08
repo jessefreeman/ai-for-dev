@@ -1,5 +1,6 @@
 ---
 type: entity
+sources: ["Cline v3.18 HUGE UPDATE Fully FREE Autonomous AI Coding Agent! Gemini CLI + Claude Code!.md", "VSCode + Cline + Continue  NEVER PAY for CURSOR again. Use this OPEN SOURCE & LOCAL Alternative.md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [open-source, ai-coding, vscode-extension]

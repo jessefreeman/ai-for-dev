@@ -50,7 +50,7 @@ The **throughput ceiling** is unlocked by [[vllm|vLLM]] + [[fp8-quantization|FP8
 [[Open-Source Model Integration]] demonstrates 50–100x cost reduction via model substitution. [[Project Nomad]] takes local AI to its logical extreme: fully offline knowledge infrastructure.
 
 ### Open-Source Model Landscape
-Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (Google, 31B) ranks #3 globally — see [[gemma-4-vram-requirements]] for full GPU + Mac sizing. [[minimax-m2-7|MiniMax M2.7]] claims to outperform Claude Opus 4.6 at 20x lower cost. New entrants from the 2026-04-07 batch: [[kimi-k2|Kimi K2]] (Moonshot, ~10× cheaper than Sonnet) and [[minimax-m1|MiniMax M1]] (1M context, hybrid attention). **The 2026-04-08 batch made [[deepseek|DeepSeek R1-0528]] (671B/37B MoE, MIT, 136K context, free OpenRouter tier) the de facto open-source reasoning backbone** — [[codename-goose|Goose]], [[stagehand|Stagehand]], [[deerflow|DeerFlow]], and [[agenticseek|AgenticSeek]] all default to it. For 95% of use cases, open-source is sufficient.
+Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (31B) ranks #3 globally; see [[gemma-4-vram-requirements]]. **[[deepseek|DeepSeek R1-0528]] (671B/37B MoE, MIT, 136K context, free OpenRouter) is the de facto open-source reasoning backbone** — [[codename-goose|Goose]], [[stagehand|Stagehand]], [[deerflow|DeerFlow]], and [[agenticseek|AgenticSeek]] all default to it. See the index Models section for the full open-weights catalog.
 
 ### Frontier Model Specialties & Prompting
 [[ChatGPT]] = ease of use (now needs [[meta-prompting]] for GPT-5's literalism); [[Claude]] = work and coding; [[Gemini]] = search, deep research, video ingestion; [[Grok]] = real-time Twitter/X.

@@ -1,5 +1,6 @@
 ---
 type: entity
+sources: ["OpenCode FASTEST AI Coder + Opensource! BYE Gemini CLI & ClaudeCode!.md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [open-source, ai-coding, cli, terminal]

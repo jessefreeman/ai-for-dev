@@ -1,5 +1,6 @@
 ---
 type: concept
+sources: ["Claude Code Sub-Agents BEST AI Coder! SUPERCHARGE Claude Code and 10x Coding Workflow!.md"]
 created: 2026-04-08
 updated: 2026-04-08
 tags: [concept, claude-code, multi-agent, anthropic]

@@ -1,7 +1,8 @@
 ---
 type: entity
+sources: ["Turn ANY YouTube Video Into SEO Blog Post With N8N (No Code).md", "How To Scrape YouTube For FREE with N8N (YouTube Scraper).md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [person, youtuber, n8n]
 ---
 

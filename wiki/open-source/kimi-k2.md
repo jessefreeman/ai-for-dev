@@ -1,5 +1,6 @@
 ---
 type: entity
+sources: ["Kimi Coder FULLY FREE + FAST AI Coder! High Quality Apps With No Code! (Opensource).md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [open-source, model, moe]

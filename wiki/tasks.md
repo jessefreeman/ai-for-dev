@@ -31,7 +31,7 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
       **What I need from you:** Want me to web-fetch the json2video.com pricing page and add a Pricing section, or leave it as a tasks-tracked gap until an organic source lands?
       *Referenced from:* [[json-to-video]]
 
-- [ ] **Browserbase as a company page** — [[stagehand]] is published by Browserbase, which also runs the serverless browser backend Stagehand depends on. The company has appeared in two open-source agent contexts now (Stagehand v2 + the agent-controlled browser pattern). Probably worth an [[orgs/]] page to track its position.
+- [ ] **Browserbase as a company page** — [[stagehand]] is published by Browserbase, which also runs the serverless browser backend Stagehand depends on. The company has appeared in two open-source agent contexts now (Stagehand v2 + the agent-controlled browser pattern). Probably worth an `orgs/` page to track its position.
       **What I need from you:** Approve / defer creating a Browserbase org page. A 2nd-source threshold isn't quite met yet, but the structural importance is.
 
 - [ ] **Block as a company page** — [[codename-goose|Goose]] is published by Block (Square / Cash App / Tidal parent). Block doesn't have a wiki page, but the corporate-backing point is load-bearing for Goose's positioning vs solo-maintained alternatives. Same threshold question as Browserbase.

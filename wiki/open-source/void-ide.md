@@ -1,5 +1,6 @@
 ---
 type: entity
+sources: ["Void IDE UPDATE 100% FREE AI Agentic IDE - Cursor Alternative! FREE API + MCP (Opensource).md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [open-source, ai-coding, ide]

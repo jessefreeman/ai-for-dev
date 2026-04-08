@@ -1,5 +1,6 @@
 ---
 type: entity
+sources: ["I built a DeepSeek R1 powered VS Code extension….md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [person, youtuber, developer-education]

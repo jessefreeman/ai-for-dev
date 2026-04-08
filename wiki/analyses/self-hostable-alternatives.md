@@ -1,5 +1,6 @@
 ---
 type: analysis
+sources: ["Replace Your Expensive Cloud Tools With These (Self-Hostable) Alternatives.md"]
 created: 2026-04-08
 updated: 2026-04-08
 tags: [analysis, self-hosting, open-source, reference]

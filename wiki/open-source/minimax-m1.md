@@ -1,7 +1,8 @@
 ---
 type: entity
+sources: ["MiniMax Agent NEW Opensource General AI Agent w MCP & 1 Million Context!.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [open-source, model, long-context]
 ---
 
@@ -11,12 +12,12 @@ MiniMax's first open-source large-scale hybrid-attention reasoning model. Two va
 
 ## Why it matters
 
-The "lightning attention" hybrid architecture is the technical moat — efficient long-context processing that lets the model use its full 1M window without the throughput collapse that hits standard attention at long sequences. Anchors a model family that continued into [[minimax-m27|M2.7]].
+The "lightning attention" hybrid architecture is the technical moat — efficient long-context processing that lets the model use its full 1M window without the throughput collapse that hits standard attention at long sequences. Anchors a model family that continued into [[minimax-m2-7|M2.7]].
 
 ## Status in the wiki
 
 - **M1** is the open-weights generation covered here (June 2025)
-- **[[minimax-m27|M2.7]]** is the closed-source successor at 20× lower cost than Opus 4.6 (covered in [[summary-damian-malliaros-minimax-m27]])
+- **[[minimax-m2-7|M2.7]]** is the closed-source successor at 20× lower cost than Opus 4.6 (covered in [[summary-damian-malliaros-minimax-m27]])
 
 ## Sources
 
@@ -24,6 +25,6 @@ The "lightning attention" hybrid architecture is the technical moat — efficien
 
 ## See Also
 
-- [[minimax-m27]] — successor
+- [[minimax-m2-7|MiniMax M2.7]] — successor
 - [[deepseek]], [[qwen]], [[kimi-k2]] — sibling open-weights models
 - [[vllm]] — recommended runtime for serving M1 with high throughput

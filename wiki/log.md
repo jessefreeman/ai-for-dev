@@ -9,6 +9,18 @@ updated: 2026-04-08
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-08] lint: 2026-04-08 (round 2) — post-12-source-batch cleanup
+
+Second lint pass of the day, after the 12-source ingest batch. 3 actionable groups, all approved.
+
+- **Group A** — 4 dangling link fixes: `[[MCP]]` → `[[mcp|MCP]]` in [[google-stitch]]; `[[minimax-m27]]` → `[[minimax-m2-7]]` in [[minimax-m1]] and [[summary-worldofai-minimax-m1-agent]]; `[[openbrain-architecture]]` → `[[open-brain|OpenBrain]]` in [[summary-nate-herk-zep-memory]] (regression from morning lint missed this file); malformed `[[orgs/]]` placeholder in [[tasks]] converted to plain text.
+- **Group B-correct** — populated `sources:` frontmatter on 20 entity/concept/people pages from the 04-07 batch that were missing it. Each page now points to its actual anchoring raw filename(s) (most one source, several with two — cline, simon-hoiberg, tin-rovic, zubair-trabzada). Audit's count of 25 was an overcount; actual is 20.
+- **Group C** — trimmed [[overview]] from 1,517 → 1,362 words (was 17 over the 1,500 cap). Compressed the Open-Source Model Landscape paragraph; deferred the full open-weights catalog to the index Models section (added in the morning lint).
+
+**Group G carryover (false positives)**: the audit re-flagged `[[saas-death-spiral#policy-responses]]` and the `[[benchmarks/index]]` / `[[benchmarks/methodology]]` / `[[benchmarks/rigs/...]]` nested-path links. Both are valid in Obsidian and Quartz; same false positives as the morning lint. No action.
+
+**Notes**: The 04-07 missing-frontmatter cluster is the kind of thing the ingest prompt should catch at write time. Lesson for next batch: source-summary writes should auto-populate the entity-page `sources:` field (not just write the entity body and skip frontmatter). Tracking informally for now; will surface as a tasks.md item if it recurs.
+
 ## [2026-04-08] ingest | 12-source batch (open-source agents + R1-0528 + n8n maturation)
 
 Second-largest batch in wiki history. User authorized full autonomous one-by-one ingest with issues-into-tasks. **12 sources in scope, 1 skipped (Bazzite gaming VM, off-topic). 80 sources ingested total.**
@@ -122,8 +134,4 @@ Largest single ingest in the wiki to date. The user authorized batch processing 
 - **Status**: Originally skipped as off-topic. **User reframed**: relevant as a defensive audit tool for self-hosters running local AI infrastructure.
 - **Pages created** (3): `summary-tcm-bjorn-network-pentest-pi.md`; `wiki/open-source/bjorn.md`; `wiki/people/the-cyber-mentor.md`
 - **Notes**: First wiki entry whose framing differs significantly from the source's framing. Both are accurate; the wiki framing is what makes it useful in this knowledge base.
-
-## [2026-04-07] lint: 2026-04-07 (round 2) — post-batch-3 cleanup
-- **Group A — re-fixed two regressions from the first lint pass**; **Group B** — created [[supabase]]; **Group 5** — refreshed `wiki/overview.md`; **Group 6** — refreshed `wiki/tasks.md`.
-- **Notes**: Two passes were needed. Lesson: lint Phase 3 must verify edits before declaring done.
 

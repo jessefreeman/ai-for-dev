@@ -30,8 +30,8 @@ MiniMax dropped their first open-source large-scale hybrid-attention reasoning m
 ## Connected Pages
 
 - [[minimax-m1]] — model entity
-- [[minimax-m27|MiniMax M2.7]] — successor model already in the wiki
-- [[summary-damian-malliaros-minimax-m27]] — successor model coverage
+- [[minimax-m2-7|MiniMax M2.7]] — successor model already in the wiki
+- [[summary-damian-malliaros-minimax-m27|Damian Malliaros: MiniMax M2.7]] — successor model coverage
 - [[mcp]] — agent-side marketplace pattern
 - [[manus]], [[openmanus]], [[flowith]] — sibling general agents
 - [[worldofai|WorldofAI]] — channel hub

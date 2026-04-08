@@ -1,7 +1,8 @@
 ---
 type: entity
+sources: ["This AI Voice Agent Can Handle EVERYTHING! (No-Code Tutorial).md", "n8n Just Made AI Agents 10x Smarter NEW Perplexity Node.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [person, youtuber, n8n]
 ---
 

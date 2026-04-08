@@ -43,5 +43,5 @@ Figma stock dropped when Stitch launched because the product makes high-fidelity
 - [[Nate B Jones]] — source analysis
 - [[Blender MCP]] — companion creative tool via MCP
 - [[Remotion]] — companion video-as-code tool
-- [[MCP]] — the standard that makes Stitch agent-accessible
+- [[mcp|MCP]] — the standard that makes Stitch agent-accessible
 - [[summary-nate-b-jones-google-stitch|Source: A Markdown File Just Replaced Your Design Meeting]]

@@ -1,5 +1,6 @@
 ---
 type: entity
+sources: ["5 (Real) AI Agent Business Ideas For 2025.md", "Replace Your Expensive Cloud Tools With These (Self-Hostable) Alternatives.md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [person, founder, saas]

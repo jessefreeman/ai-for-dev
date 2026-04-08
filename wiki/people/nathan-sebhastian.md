@@ -1,5 +1,6 @@
 ---
 type: entity
+sources: ["VSCode + Cline + Continue  NEVER PAY for CURSOR again. Use this OPEN SOURCE & LOCAL Alternative.md"]
 created: 2026-04-07
 updated: 2026-04-07
 tags: [person, youtuber, developer-education]

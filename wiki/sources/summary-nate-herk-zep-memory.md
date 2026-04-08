@@ -34,4 +34,4 @@ Nate Herk demos giving an [[n8n]] AI agent **long-term memory via [[zep|Zep's]] 
 - [[zep]] — entity
 - [[nate-herk|Nate Herk]] — channel hub (now 2 sources)
 - [[open-brain]] — alternative agent-memory architecture (Postgres + MCP)
-- [[openbrain-architecture|OpenBrain Architecture]] — comparison point: Zep is hosted-graph, OpenBrain is DIY-Postgres
+- [[open-brain|OpenBrain]] — comparison point: Zep is hosted-graph, OpenBrain is DIY-Postgres
