@@ -11,6 +11,10 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
 
 ## Open
 
+- [ ] **Dissect Journey Kits to extract borrowable concepts** — You flagged Matthew Berman's [[journey-kits|Journey]] as something you want to try out and take apart for the packaging format and any concepts you might use or borrow. The [[journey-kits]] entity page has an initial "What's borrowable" section with 7 candidates ([[ai-coding-workflow|kit.md as workflow spec]], "failures overcome" as first-class field, credentials-by-pointer, learnings-flow-back, host-adaptation-as-kit-responsibility, agent-prompted upgrades, publisher reputation), but those are derived from the launch video — not from hands-on use of an actual installed kit.
+      **What I need from you:** Want to install Journey ([`npm install -g journey-kits`](https://journeykits.ai)) on a throwaway environment, install one of Berman's published kits (the knowledge-base RAG kit is the most-detailed in the source), then walk through with me to identify which concepts actually apply to the wiki's [[page-conventions]] / ingest methodology vs which are agent-runtime-specific?
+      *Referenced from:* [[journey-kits]], [[summary-matthew-berman-journey-kits]]
+
 - [ ] **Shadow factory thread — primary source needed?** — The "shadow factory agency model" is your business vision (referenced inline in [[saas-death-spiral]] open questions). Currently it's a one-line note backed only by the StrongDM 3-person team mention in [[summary-nate-b-jones-five-levels|5 Levels of AI Coding]]. To turn this into a real concept page or analysis we need at least one source that goes deeper on dark-factory economics or L4/L5 operating patterns.
       **What I need from you:** Do you want me to actively hunt for a primary source on shadow-factory economics (web search / specific creators to track), keep it as an inline note until something lands organically, or pivot to writing it as a vision page from your own thinking with no external source?
       *Referenced from:* [[saas-death-spiral]], [[summary-nate-b-jones-five-levels]]

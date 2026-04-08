@@ -9,6 +9,22 @@ updated: 2026-04-08
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-08] ingest | Journey Kits launch (Matthew Berman)
+
+Single-source ingest. **Anchors a new entity, [[journey-kits]] — the wiki's first dedicated agent-workflow packaging format.** User flagged this with explicit interest: *"something I want to try out and take apart to understand the packaging and if I can use or borrow any concepts from it."*
+
+- **Source**: [[summary-matthew-berman-journey-kits|I Built Something — Matthew Berman]] (2026-04-04)
+- **Pages created** (2): `wiki/sources/summary-matthew-berman-journey-kits.md`, `wiki/tools/journey-kits.md`
+- **Pages updated** (1): [[matthew-berman]]
+
+The entity page is structured around the user's stated interest — a "What's borrowable" section breaks the format into 7 specific concepts (kit.md as single-file workflow spec, "failures overcome" as first-class field, credentials-by-pointer, learnings-flow-back, host adaptation as kit responsibility, agent-prompted upgrades, publisher reputation scoring).
+
+**Where Journey sits**: user-facing implementation of [[agentic-harness-primitives]] (registry / type system / tool pool assembly), broader-scope sibling of [[skills-sh]] (Journey ships everything around the skill, host-agnostic), complementary to [[mcp]] (packaging layer vs protocol layer).
+
+**Tasks added (1)**: dissect Journey kit format for concepts borrowable for the wiki's own page-conventions methodology.
+
+**Notes**: Single-source coverage. Treat capability claims as marketing position until a third-party walkthrough lands. No formal spec for the kit format published at recording — long-term kit portability depends on whether Berman publishes one.
+
 ## [2026-04-08] lint: 2026-04-08 (round 3) — post-17-source-batch cleanup
 
 Third lint pass of the day, after the 5-source and 17-source batches. 7 fixes, all approved.
@@ -161,9 +177,4 @@ Largest single ingest in the wiki to date. The user authorized batch processing 
 - **Source**: YouTube tool walkthrough by WorldofAI, 2025-08-12, ~2,445 source words
 - **Pages created** (3): `summary-worldofai-open-swe.md`; `wiki/orgs/langchain.md` (NEW org page — 6th wiki org); `wiki/open-source/open-swe.md`
 - **Notes**: First first-party LangChain product to land in the wiki. The org page documents LangChain's framework-vendor distinction vs the model-vendor frontier labs and the agent-shipping open-source collectives.
-
-## [2026-04-07] ingest | Host Your Own AI Code Assistant (Wolfgang's Channel)
-- **Source**: YouTube tutorial + hardware comparison by Wolfgang's Channel, 2024-08-24, ~3,532 source words
-- **Pages created** (3): `summary-wolfgangs-channel-self-host-ai-code-assistant.md`; `wiki/people/wolfgangs-channel.md`; `wiki/tools/continue.md`
-- **Notes**: Builds the wiki's bridge between the local-AI hardware thread and the agentic-coding thread. Power data (130W gaming PC vs 4.6W MiniPC, no usable middle ground) corroborates [[summary-alex-ziskind-vllm-fp8|Alex Ziskind's vLLM analysis]] from a different angle.
 

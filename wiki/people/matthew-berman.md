@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Google just dropped Gemma 4... (WOAH).md", "You NEED to try these open-source AI projects right now....md", "Every AI Model Explained in 20 Minutes.md"]
+sources: ["Google just dropped Gemma 4... (WOAH).md", "You NEED to try these open-source AI projects right now....md", "Every AI Model Explained in 20 Minutes.md", "I built something.....md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-08
 tags: [person, ai, open-source, educator]
 ---
 
@@ -19,6 +19,7 @@ AI content creator and YouTuber. Focuses on open-source model releases, local in
 - [[summary-matthew-berman-gemma4|Google just dropped Gemma 4... (WOAH)]] — Overview of the [[Gemma 4]] release: model family, benchmarks, capabilities, and relevance for local [[Claude Code]] workflows
 - [[summary-matthew-berman-open-source-projects|You NEED to Try These Open-Source AI Projects]] — Four projects showing where agents are headed: [[GStack]] (YC methodology as Claude Code skills), [[Hermes Agent]] (self-improving loop), [[Superpowers]] (TDD plugin, 115k stars), [[Paperclip]] (multi-agent orchestration)
 - [[summary-matthew-berman-ai-models|Every AI Model Explained in 20 Minutes]] — Introductory survey of frontier models, open-source models, coding agents, image/video/audio generation; seeds model entity pages in the wiki
+- [[summary-matthew-berman-journey-kits|I Built Something — Journey Kits launch]] (2026-04-04) — Berman launches **Journey**, the wiki's first dedicated agent-workflow packaging format. Anchors the new entity [[journey-kits]] with a "borrowable concepts" breakdown.
 
 ## Key Ideas
 
@@ -30,6 +31,7 @@ AI content creator and YouTuber. Focuses on open-source model releases, local in
 - [[Cursor]] is his personal favorite coding agent; the entire coding agent category has been most transformed by AI
 
 ## See Also
+- [[journey-kits|Journey Kits]] — Berman's own product
 - [[Gemma 4]]
 - [[Ollama]]
 - [[Open-Source Model Integration]]

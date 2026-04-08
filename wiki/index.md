@@ -123,6 +123,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[notebooklm|NotebookLM]] — Google's free AI research assistant on Gemini 2.5 Flash; multimodal source ingest, audio overviews in 50+ languages.
 - [[deepagent|DeepAgent]] — Abacus AI's general-purpose agent (research, dashboards, automation); bundled with CodeLLM at $10/month.
 - [[context7|Context7]] — MCP server hosting curated, version-correct docs for 1,856+ frameworks; the wiki's strongest "RAG works when curated" data point.
+- [[journey-kits|Journey / Journey Kits]] — Matthew Berman's "npm for agent workflows"; the wiki's first dedicated agent-workflow packaging format with host-adaptation, learnings-flow-back, and credentials-by-pointer.
 
 ### Open-Source Projects
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
@@ -304,6 +305,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck: Open WebUI Domain + SSL]] — Cloudflare DNS deployment recipe for Open WebUI.
 - [[summary-bijan-bowen-vllm-distributed-inference|Multi-node vLLM (Bijan Bowen)]] — Ray cluster + tensor/pipeline parallelism across 2 nodes.
 - [[summary-docker-model-runner-mac-playground|Docker Model Runner Mac demo]] — official Docker walkthrough for Apple Silicon.
+- [[summary-matthew-berman-journey-kits|I Built Something — Journey Kits launch]] — Matthew Berman launches Journey, the wiki's first agent-workflow packaging format.
 
 ## Contribute or build your own
 

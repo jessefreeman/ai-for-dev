@@ -8,7 +8,7 @@ updated: 2026-04-08
 
 ## Current State
 
-**102 sources ingested** (after a 17-source batch on 2026-04-08, fourth batch in two days). Strongest threads from this round: **MCP maturity** (build-your-own template + curated server (Context7) + n8n integration), **the async cloud agent cluster filling out** (Augment Remote Agent, GitHub Copilot Coding Agent, Jules carryover), and **the local self-hosted AI infrastructure layer** finally has a clean recipe stack (Cole's local-Supabase RAG + Wolfgang/NetworkChuck SSL + Bijan multi-node vLLM + Docker Model Runner Mac).
+**103 sources ingested** (102 from the four 04-08 batches + Matthew Berman's Journey Kits one-off). Strongest threads from today's ingests: **MCP maturity**, **async cloud agent cluster filling out**, **self-hosted AI infrastructure recipe stack**, and now **the wiki's first dedicated agent-workflow packaging format** ([[journey-kits|Journey]] — npm for agent workflows; user is actively interested in dissecting the kit format for borrowable concepts).
 
 ## Most Active Pages
 
