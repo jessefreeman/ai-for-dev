@@ -4,8 +4,6 @@ on:
   push:
     tags: ['v*']
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'  # nightly at midnight UTC
 
 permissions:
   contents: read
