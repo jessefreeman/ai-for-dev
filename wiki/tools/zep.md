@@ -1,7 +1,8 @@
 ---
 type: entity
+sources: ["Unlock the Next Evolution of Agents with Human-like Memory (n8n + zep).md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, agent-memory, knowledge-graph]
 ---
 

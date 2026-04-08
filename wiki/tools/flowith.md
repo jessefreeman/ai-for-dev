@@ -1,7 +1,8 @@
 ---
 type: entity
+sources: ["Flowith First-Ever Infinte Agent! INSANELY Powerful AI Agent Can Automate and Build Anything!.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, ai-agent, infinite-canvas]
 ---
 

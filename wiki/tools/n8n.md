@@ -1,7 +1,8 @@
 ---
 type: entity
+sources: ["Replace Your Expensive Cloud Tools With These (Self-Hostable) Alternatives.md", "This AI Voice Agent Can Handle EVERYTHING! (No-Code Tutorial).md", "Turn ANY YouTube Video Into SEO Blog Post With N8N (No Code).md", "Unlock the Next Evolution of Agents with Human-like Memory (n8n + zep).md", "I've Built 500 AI Workflows, This is What Businesses Want in 2026.md", "5 (Real) AI Agent Business Ideas For 2025.md", "How I Automated Faceless Shorts with AI in n8n (free template).md", "How To Scrape YouTube For FREE with N8N (YouTube Scraper).md", "n8n Just Made AI Agents 10x Smarter NEW Perplexity Node.md", "This AI System Creates Longform YouTube Videos Hourly (n8n NO CODE automation tutorial 🥚).md", "n8n + MCP Build and Automate Anything! Run ALL Your AI Locally - LLMs, AI Agents! (Opensource).md", "Run Supabase 100% LOCALLY for Your AI Agents.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [tool, automation, ai-agents, self-hostable]
 ---
 

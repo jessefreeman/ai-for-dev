@@ -38,7 +38,7 @@ It also fits the wiki's [[rag-vs-wiki|RAG-skepticism thread]] interestingly: Dif
 
 ## Channel attribution
 
-The channel — variously labeled "LLMs Explained," "Aggregate Intellect," "AI.SCIENCE" — does not name an individual creator in this source. Per [[page-conventions|page-conventions]], the wiki avoids creating stub person pages without verified channel info. Tracked in tasks.md for follow-up; the source-summary above stands on its own.
+The channel — variously labeled "LLMs Explained," "Aggregate Intellect," "AI.SCIENCE" — does not name an individual creator in this source. Per [page-conventions](../../.instructions/core/rules/page-conventions.md), the wiki avoids creating stub person pages without verified channel info. Tracked in tasks.md for follow-up; the source-summary above stands on its own.
 
 ## See Also
 

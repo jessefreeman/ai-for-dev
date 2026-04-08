@@ -39,7 +39,7 @@ All in a single `docker-compose` orchestrated by `coleam00/local-ai-packaged`.
 
 ## Why it matters
 
-This is the wiki's **canonical local-AI stack reference** — every component is self-hosted, no cloud calls required, and the components are the same ones that show up across the rest of the wiki ([[n8n]], [[supabase]], [[ollama]], [[open-webui]], [[pgvector]]). The PGVector-as-vector-store choice is also the load-bearing connection back to the [[open-brain|OpenBrain]] thread: OpenBrain is "Postgres + PGVector + MCP" as agent memory, and Cole's stack is the practical recipe that makes both that and traditional RAG run on the same database.
+This is the wiki's **canonical local-AI stack reference** — every component is self-hosted, no cloud calls required, and the components are the same ones that show up across the rest of the wiki ([[n8n]], [[supabase]], [[ollama]], [[open-webui]], pgvector). The PGVector-as-vector-store choice is also the load-bearing connection back to the [[open-brain|OpenBrain]] thread: OpenBrain is "Postgres + PGVector + MCP" as agent memory, and Cole's stack is the practical recipe that makes both that and traditional RAG run on the same database.
 
 ## See Also
 

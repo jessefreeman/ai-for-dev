@@ -9,6 +9,15 @@ updated: 2026-04-08
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-08] lint: 2026-04-08 (round 3) — post-17-source-batch cleanup
+
+Third lint pass of the day, after the 5-source and 17-source batches. 7 fixes, all approved.
+
+- **Group A — dangling wikilink fixes (2 of 3)**: `[[pgvector]]` → plain text in [[summary-cole-medin-local-supabase-rag]] (pgvector is a Postgres extension, not an entity); `[[page-conventions]]` → relative markdown link in [[summary-dify-knowledge-base-rag-configuration]] (it's a rules file, not a wiki page). **Skipped A1**: `[[browser-use]]` in stagehand summary stays as an intentional dangling placeholder.
+- **Group B — `sources:` frontmatter on 04-07 batch stragglers (5)**: round 2 fixed 20 of 25 such pages but missed [[flowith]], [[manus]], [[n8n]], [[retell-ai]], [[zep]]. All five now point to their actual anchoring source filenames. n8n's sources field is the largest in the wiki (12 sources) — reflects its role as the convergence point for the AI-automation thread.
+
+**Notes**: shorter than rounds 1 and 2. The 5-source and 17-source batches that landed after the morning lints had cleaner frontmatter discipline. Stub count unchanged (20, all tracked). No regressions detected in the 7 new entity pages from today's ingests.
+
 ## [2026-04-08] ingest | 17-source batch (Cline updates, MCP maturity, local AI infra, async cloud agents)
 
 Fourth batch in two days. **17 sources in scope, 2 skipped (1 duplicate, 1 off-topic). 102 sources ingested total.**
@@ -157,9 +166,4 @@ Largest single ingest in the wiki to date. The user authorized batch processing 
 - **Source**: YouTube tutorial + hardware comparison by Wolfgang's Channel, 2024-08-24, ~3,532 source words
 - **Pages created** (3): `summary-wolfgangs-channel-self-host-ai-code-assistant.md`; `wiki/people/wolfgangs-channel.md`; `wiki/tools/continue.md`
 - **Notes**: Builds the wiki's bridge between the local-AI hardware thread and the agentic-coding thread. Power data (130W gaming PC vs 4.6W MiniPC, no usable middle ground) corroborates [[summary-alex-ziskind-vllm-fp8|Alex Ziskind's vLLM analysis]] from a different angle.
-
-## [2026-04-07] ingest | EASIEST Way to Fine-Tune a LLM and Use It With Ollama (Tech With Tim)
-- **Source**: YouTube tutorial walkthrough by Tech With Tim, 2025-06-27 publish, ~5,270 source words
-- **Pages created** (4): `summary-tech-with-tim-fine-tune-ollama.md`; `wiki/people/tech-with-tim.md`; `wiki/open-source/unsloth.md`; `wiki/concepts/fine-tuning.md`
-- **Notes**: First fine-tuning entry in the wiki. Anchors a new concept thread connecting [[unsloth]] (training) → GGUF (artifact) → [[ollama]] (runtime) → [[llama-cpp]] (engine).
 
