@@ -83,6 +83,8 @@ Claude Code is the primary public example of these primitives at production scal
 
 ## See Also
 - [[Claude Code]]
+- [[claude-code-subagents|Claude Code Sub-Agents]] — Anthropic's first-class delegation primitive
+- [[slash-loop|/loop]] — the proactivity primitive that extends these foundations into scheduled execution
 - [[LLM Wiki Pattern]]
 - [[Nate B Jones]]
 - [[summary-nate-jones-12-agent-primitives|Source: 12 Agent Primitives]]

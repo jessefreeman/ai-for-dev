@@ -19,6 +19,8 @@ tags: [tool, ai, llm, anthropic]
 
 ## Sub-Agents (July 2025)
 
+See [[claude-code-subagents|Claude Code Sub-Agents]] for the full concept page on Anthropic's first-party multi-agent primitive.
+
 Anthropic shipped first-class sub-agents: per-project or per-user specialist agents with their own system prompt, tool/MCP whitelist, and **isolated context window** (preserves the main thread). Managed via `/agents` in the Claude Code TUI.
 
 - **Why** — solves three pain points at once: context-window pollution from off-task work, tool-call hallucination, and the lack of a clean delegation primitive
@@ -101,7 +103,7 @@ Skip it for trivial changes — local plan mode is fine and doesn't need the clo
 ## Skills Ecosystem
 
 Claude Code has a growing ecosystem of installable skills and plugins:
-- [[skills.sh]] — open directory for agent skills (150k+ installs for [[Remotion]])
+- [[skills-sh|skills.sh]] — open directory for agent skills (150k+ installs for [[Remotion]])
 - [[GStack]] — YC startup methodology (~50k stars)
 - [[Superpowers]] — TDD-enforcing plugin (115k stars)
 - [[Impeccable]] — frontend design skill (17 commands)

@@ -39,7 +39,7 @@ The video closes with a pattern: hook creative tools (Stitch, Remotion) to cloud
 - [[Google Stitch]] — new
 - [[Remotion]] — new
 - [[Blender MCP]] — new
-- [[skills.sh]] — new
+- [[skills-sh|skills.sh]] — new
 - [[Nate B Jones]] — updated
 
 ## See Also

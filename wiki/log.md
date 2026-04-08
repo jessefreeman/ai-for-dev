@@ -1,12 +1,27 @@
 ---
 type: log
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-08
 ---
 
 # Wiki Log
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
+
+## [2026-04-08] lint: 2026-04-08 — post-batch cleanup + Models category
+
+First lint pass after the 17-source batch. 10 actionable items from a 12-category Phase 1 audit, all approved.
+
+- **Group A** — fixed source-count contradiction in [[overview]] (45 → 68); refreshed Gaps list (removed Lovable, Kimi K2, Nous Research now that those pages exist; added Jules and CAISI carryovers from [[hot]]); updated Open-Source Model Landscape paragraph to mention Kimi K2 and MiniMax M1.
+- **Groups B/C/D** — orphan pages now linked: [[claude-code-subagents]] from [[claude-code]] body; [[slash-loop|/loop]] + [[claude-code-subagents]] from [[agentic-harness-primitives]] See Also; [[lovable]] from [[ai-professional-interface]] Implementation section.
+- **Group E (the big one)** — created a new **Models** section in [[index]] that consolidates closed-weights and open-weights model entries previously scattered across "Frontier Models", "Tools", and "Open-Source Projects". Rationale: models deserve their own category so we can track each model's progress, capability changes, and best-practice evolution over time. Files were not moved — only the index was restructured. [[minimax-m2-7|MiniMax M2.7]], [[kimi-k2|Kimi K2]], [[minimax-m1|MiniMax M1]], [[gemma-4|Gemma 4]], [[llama|Llama]], [[deepseek|DeepSeek]], [[qwen|Qwen]] all moved into the new Models section. [[kimi-coder|Kimi Coder]] stays under Open-Source Projects (it's an app, not a model). Also rewrote 5 brittle `[[MiniMax M2.7]]` references to `[[minimax-m2-7|MiniMax M2.7]]` in their referencing pages.
+- **Group F** — replaced 3 dangling `[[openbrain-architecture]]` references with `[[open-brain|OpenBrain]]` in [[hot]] and [[zep]].
+- **Group G** — verified `[[saas-death-spiral#policy-responses]]` resolves correctly (the section exists at line 70 of [[saas-death-spiral]]); false positive, no fix needed.
+- **Group H** — created [[skills-sh|skills.sh]] entity page (was a long-standing dangling link from 3 pages); rewrote `[[skills.sh]]` to `[[skills-sh|skills.sh]]` in [[claude-code]], [[remotion]], and the Google Stitch summary.
+- **Group I** — bumped [[index]] frontmatter `updated: 2026-04-08` (was stale at 2026-04-06 since the batch).
+- **Group J** — added a single tracking task to [[tasks]] listing the 20 stub pages flagged by lint, framed as "enrich on next relevant ingest" rather than fabricate content. Wiki rule: stubs grow from new sources, not training data.
+
+**Notes**: clean lint overall — no duplicates, no off-topic, no frontmatter drift across 224 pages, no size violations. The 17-source batch was integrated cleanly. The Models reorg is the only structural change; everything else was either a link fix or a date bump.
 
 ## [2026-04-07] ingest | 17-source batch (mixed channels)
 
@@ -83,6 +98,3 @@ Largest single ingest in the wiki to date. The user authorized batch processing 
 - **Source**: YouTube transcript by Alex Ziskind on vLLM + FP8 + RTX PRO 6000 Blackwell
 - **Pages created** (4): `summary-alex-ziskind-vllm-fp8.md`; `wiki/people/alex-ziskind.md`; `wiki/open-source/vllm.md`; `wiki/concepts/fp8-quantization.md`
 
-## [2026-04-07] ingest | Sim AI (WorldofAI)
-- **Source**: YouTube transcript by WorldofAI on Sim AI
-- **Pages created** (2): `summary-worldofai-sim-ai.md`; `wiki/tools/sim-ai.md`

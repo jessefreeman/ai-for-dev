@@ -105,7 +105,7 @@ This positioning changes everything about how you're perceived. It also provides
 
 ## Implementation
 
-- **Tool**: Lovable (no-code, 2-3 hours for a full site)
+- **Tool**: [[lovable|Lovable]] (no-code, 2-3 hours for a full site)
 - **Cost**: Near-zero at the margin (cheap LLM + static site)
 - **Source**: GitHub repo (linked from Nate's video), full Substack build guide with prompts
 - **Requirement**: Real substance. Cannot fake depth. Works for experienced professionals with compressed, non-linear, or unconventional careers. NOT for early-career.

@@ -1,7 +1,7 @@
 ---
 type: index
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-08
 description: "Jesse Freeman's personal AI research wiki — AI tools, techniques, and workflows for developers. Maintained by Claude Code."
 socialImage: og-image.png
 ---
@@ -60,11 +60,24 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[langchain|LangChain]] — AI framework vendor (LangChain library, LangGraph, Open-SWE); open-source frameworks + paid LangSmith observability.
 - [[lovable|Lovable]] — European no-code AI app builder; afternoon-to-prototype tool referenced across multiple wiki sources.
 
-### Frontier Models
+### Models
+
+Tracked separately from tools and frameworks so we can follow each model's progress, capabilities, and best practices over time.
+
+**Frontier (closed-weights):**
 - [[chatgpt|ChatGPT]] — OpenAI's flagship model; best for ease of use.
 - [[claude|Claude]] — Anthropic's model family; best for work and coding.
 - [[gemini|Gemini]] — Google's model; unique video ingestion; best for search and deep research.
 - [[grok|Grok]] — xAI's model; best for real-time Twitter/X research.
+- [[minimax-m2-7|MiniMax M2.7]] — Closed-source model claiming to outperform Opus 4.6 at 20x lower cost.
+
+**Open-weights:**
+- [[llama|Llama]] — Meta's open-weights model family; pioneered local LLM inference.
+- [[deepseek|DeepSeek]] — Chinese lab open-weights model; stronger than Llama as of 2026.
+- [[qwen|Qwen]] — Alibaba's open-weights model family; among the top open-source models.
+- [[gemma-4|Gemma 4]] — Google's open-weights model; 31B ranks #3 globally.
+- [[kimi-k2|Kimi K2]] — Moonshot's open-weights MoE model; 32B active params, ~10× cheaper than Sonnet at output.
+- [[minimax-m1|MiniMax M1]] — MiniMax's open-weights hybrid-attention model; 1M token context, 80K reasoning output.
 
 ### Tools
 - [[augment-agent|Augment Agent]] — Agentic IDE; #1 OSS on SWE-bench Verified at 65.4%; large-codebase indexing.
@@ -90,7 +103,6 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[open-webui|Open WebUI]] — Self-hosted ChatGPT-like web interface for local LLMs via Ollama.
 - [[docker-model-runner|Docker Model Runner]] — Local LLM runtime built into Docker Desktop; OCI-packaged models, no CUDA needed.
 - [[continue|Continue]] — Open-source VS Code/JetBrains extension; local Copilot replacement via Ollama or any OpenAI-compliant API.
-- [[minimax-m2-7|MiniMax M2.7]] — Closed-source model claiming to outperform Opus 4.6 at 20x lower cost.
 - [[n8n|n8n]] — Open-source workflow automation platform; canonical no-code agent runner; convergence point for the wiki's AI-automation thread.
 - [[flowith|Flowith]] — Multimodal infinite-canvas execution agent; 10M-token context, 30+ native integrations.
 - [[manus|Manus]] — Closed-source viral general AI agent; the original of the open-source [[openmanus]] clone.
@@ -119,19 +131,13 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[voicebox|VoiceBox]] — Free local TTS app with voice cloning; open-source ElevenLabs alternative.
 - [[attractor|Attractor]] — StrongDM's dark factory agent; three markdown specs = the entire agent.
 - [[thepopebot|ThePopeBot]] — Free open-source OpenClaw alternative; Docker + GitHub Actions + Ollama.
-- [[gemma-4|Gemma 4]] — Google's open-weights model; 31B ranks #3 globally.
-- [[llama|Llama]] — Meta's open-weights model family; pioneered local LLM inference.
-- [[deepseek|DeepSeek]] — Chinese lab open-weights model; stronger than Llama as of 2026.
-- [[qwen|Qwen]] — Alibaba's open-weights model family; among the top open-source models.
 - [[deepcode|DeepCode]] — Open-source multi-agent coding platform from HKUDS; Paper2Code, Text2Web, Text2Backend.
 - [[bjorn|Bjorn]] — Open-source Raspberry Pi network pentest tool; defensive audit for self-hosted AI infrastructure.
 - [[vllm|vLLM]] — High-throughput LLM inference engine; saturates Nvidia GPUs with concurrent requests.
 - [[cline|Cline]] — Open-source autonomous AI coding agent as a VS Code extension; bring-your-own-model.
 - [[opencode|OpenCode]] — SST's open-source terminal AI coder; 75+ providers, parallel agents, themable UI.
 - [[openmanus|OpenManus]] — MetaGPT's open-source clone of [[manus|Manus]]; Python agent loop with no UI.
-- [[kimi-k2|Kimi K2]] — Moonshot's open-weights MoE model; 32B active params, ~10× cheaper than Sonnet at output.
 - [[kimi-coder|Kimi Coder]] — Llama Coder fork repointed at Kimi K2; web app for prompt-to-SPA generation.
-- [[minimax-m1|MiniMax M1]] — MiniMax's open-weights hybrid-attention model; 1M token context, 80K reasoning output.
 - [[docmost|Docmost]] — Self-hostable collaborative wiki/docs platform; Notion (docs portion) alternative.
 - [[plane|Plane]] — Self-hostable open-source project management; Jira/Linear/Notion (PM portion) alternative.
 - [[strapi|Strapi]] — Self-hostable headless CMS; Contentful/Sanity alternative.

@@ -29,7 +29,7 @@ Works best for: text animations, data visualizations, product demos, terminal re
 
 - Launched Claude Code skill: January 2026
 - 6M+ views on launch demo video within 48 hours
-- **150,000+ installs** on [[skills.sh]] within 8 weeks
+- **150,000+ installs** on [[skills-sh|skills.sh]] within 8 weeks
 - **#1 skill not made by Vercel, Anthropic, or Microsoft** on skills.sh
 
 ## Example Pipeline
@@ -47,7 +47,7 @@ When combined with cloud scheduling (e.g., Noah's Way Claude Code scheduler), Re
 
 - [[Google Stitch]] — companion UI design tool
 - [[Blender MCP]] — companion 3D tool
-- [[skills.sh]] — where the Remotion skill lives
+- [[skills-sh|skills.sh]] — where the Remotion skill lives
 - [[Claude Code]] — the harness Remotion integrates with
 - [[Nate B Jones]] — source analysis
 - [[summary-nate-b-jones-google-stitch|Source: A Markdown File Just Replaced Your Design Meeting]]

@@ -8,7 +8,7 @@ tags: [ai, llm, claude-code, minimax, cost, video, transcript]
 
 # Summary: Damian Malliaros — Cut Claude Code Costs 95% with MiniMax M2.7
 
-[[Damian Malliaros]] demonstrates building a full ClickUp clone using [[Claude Code]] with [[MiniMax M2.7]] as the model — achieving roughly 20x cost reduction and 3x speed improvement over Opus 4.6 while claiming superior benchmark performance.
+[[Damian Malliaros]] demonstrates building a full ClickUp clone using [[Claude Code]] with [[minimax-m2-7|MiniMax M2.7]] as the model — achieving roughly 20x cost reduction and 3x speed improvement over Opus 4.6 while claiming superior benchmark performance.
 
 ## Why MiniMax M2.7
 
@@ -62,7 +62,7 @@ Compared to Claude Code Max plan ($200/month with limits), the $80 tier offers e
 - **MiniMax Agent**: Web-based agent interface for creating Chrome jobs, automations.
 
 ## See Also
-- [[MiniMax M2.7]]
+- [[minimax-m2-7|MiniMax M2.7]]
 - [[Damian Malliaros]]
 - [[Open-Source Model Integration]]
 - [[Claude Code]]

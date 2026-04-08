@@ -1,7 +1,7 @@
 ---
 type: overview
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [ai, llm, knowledge-management, agent]
 ---
 
@@ -9,7 +9,7 @@ tags: [ai, llm, knowledge-management, agent]
 
 This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
-**Current state:** 45 sources ingested; 16-rig personal hardware benchmark section.
+**Current state:** 68 sources ingested (after 17-source batch on 2026-04-07); 16-rig personal hardware benchmark section; 6 organization pages.
 
 ## Themes
 
@@ -50,7 +50,7 @@ The **throughput ceiling** is unlocked by [[vllm|vLLM]] + [[fp8-quantization|FP8
 [[Open-Source Model Integration]] demonstrates 50–100x cost reduction via model substitution. [[Project Nomad]] takes local AI to its logical extreme: fully offline knowledge infrastructure.
 
 ### Open-Source Model Landscape
-Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (Google, 31B) ranks #3 globally — see [[gemma-4-vram-requirements]] for full GPU + Mac sizing. [[MiniMax M2.7]] claims to outperform Claude Opus 4.6 at 20x lower cost. For 95% of use cases, open-source is sufficient.
+Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (Google, 31B) ranks #3 globally — see [[gemma-4-vram-requirements]] for full GPU + Mac sizing. [[minimax-m2-7|MiniMax M2.7]] claims to outperform Claude Opus 4.6 at 20x lower cost. New entrants from the 2026-04-07 batch: [[kimi-k2|Kimi K2]] (Moonshot, ~10× cheaper than Sonnet) and [[minimax-m1|MiniMax M1]] (1M context, hybrid attention). For 95% of use cases, open-source is sufficient.
 
 ### Frontier Model Specialties & Prompting
 [[ChatGPT]] = ease of use (now needs [[meta-prompting]] for GPT-5's literalism); [[Claude]] = work and coding; [[Gemini]] = search, deep research, video ingestion; [[Grok]] = real-time Twitter/X.
@@ -89,7 +89,8 @@ Different layers of the same problem:
 ## Gaps & Next Steps
 
 - Karpathy's gist, AI 2027, Dan Shapiro, StrongDM, METR study — long-standing primary sources still uningested
-- Lovable — referenced repeatedly across multiple sources, no entity page
-- Kimi K2, Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model — mentioned but no entity pages
-- Nous Research, HKUDS — orgs behind Hermes Agent and DeepCode, both worth tracking
+- Qwen 3 Coder Next, ZAI GLM 5, MiniMax M2.5, Waymo World Model — mentioned but no entity pages
+- HKUDS — org behind DeepCode, worth tracking
 - Bret Fisher's Open WebUI + Docker Model Runner gist — referenced but not pulled
+- Jules (Google) — still mentioned as the thing Open-SWE replaces; no primary ingest yet
+- CAISI — referenced in OpenAI's industrial policy paper; needs corroboration

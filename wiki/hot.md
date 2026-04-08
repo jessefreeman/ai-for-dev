@@ -30,7 +30,7 @@ The largest single batch in wiki history. Highlights:
 - **New open-weights models**: [[kimi-k2]] (Moonshot, ~10× cheaper than Sonnet), [[minimax-m1]] (1M context hybrid attention).
 - **New concept**: [[context-engineering]] (Karpathy/Lütke) — Cole Medin's PRP template walkthrough.
 - **New people**: [[simon-hoiberg]], [[beyond-fireship]], [[zubair-trabzada]], [[tin-rovic]], [[nathan-sebhastian]].
-- **Memory thread expansion**: [[zep]] joins [[open-brain]] / [[openbrain-architecture]] as the hosted-knowledge-graph alternative; Nate Herk's cost-trap fix is documented.
+- **Memory thread expansion**: [[zep]] joins [[open-brain|OpenBrain]] as the hosted-knowledge-graph alternative; Nate Herk's cost-trap fix is documented.
 
 ## Open Gaps
 

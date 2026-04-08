@@ -11,7 +11,7 @@ Hosted long-term agent memory service. Stores per-user **relational graphs**: en
 
 ## Why it matters
 
-Agent memory has been a long-standing wiki thread (see [[open-brain]], [[openbrain-architecture]]). Zep is the hosted-knowledge-graph alternative to the DIY-Postgres approach: less control, zero maintenance, but the cost trap is real if you use the native integration naively.
+Agent memory has been a long-standing wiki thread (see [[open-brain|OpenBrain]]). Zep is the hosted-knowledge-graph alternative to the DIY-Postgres approach: less control, zero maintenance, but the cost trap is real if you use the native integration naively.
 
 ## Usage patterns
 
@@ -35,5 +35,5 @@ Result: ~2,400 tokens → ~1,000 tokens per turn for the same query.
 
 ## See Also
 
-- [[open-brain]], [[openbrain-architecture]] — DIY Postgres+MCP alternative
+- [[open-brain|OpenBrain]] — DIY Postgres+MCP alternative
 - [[n8n]] — primary integration platform in this wiki

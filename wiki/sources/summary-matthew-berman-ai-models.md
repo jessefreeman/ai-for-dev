@@ -60,5 +60,5 @@ An introductory survey of the AI model landscape as of early 2026. Covers fronti
 ## See Also
 
 - [[Gemma 4]] — Google's open-weights model (separate from Gemini)
-- [[MiniMax M2.7]] — mentioned in open-source section; full page exists
+- [[minimax-m2-7|MiniMax M2.7]] — mentioned in open-source section; full page exists
 - [[Open-Source Model Integration]] — practical guide to using open-source models

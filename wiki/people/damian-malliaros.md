@@ -16,7 +16,7 @@ AI content creator focused on Claude Code workflows, cost optimization, and app 
 
 ## Content in This Wiki
 
-- [[summary-damian-malliaros-minimax-m27|I Cut Claude Code Costs by 95% (MiniMax M2.7)]] — Demonstrates using [[MiniMax M2.7]] with [[Claude Code]] to build a ClickUp clone; 20x cheaper and 3x faster than Opus 4.6 per his testing; includes Supabase MCP integration and parallel Claude instances workflow
+- [[summary-damian-malliaros-minimax-m27|I Cut Claude Code Costs by 95% (MiniMax M2.7)]] — Demonstrates using [[minimax-m2-7|MiniMax M2.7]] with [[Claude Code]] to build a ClickUp clone; 20x cheaper and 3x faster than Opus 4.6 per his testing; includes Supabase MCP integration and parallel Claude instances workflow
 
 ## Key Ideas
 
@@ -26,7 +26,7 @@ AI content creator focused on Claude Code workflows, cost optimization, and app 
 - MiniMax M2.7 subscription plans offer effectively unlimited coding throughput at a fraction of Claude Max pricing
 
 ## See Also
-- [[MiniMax M2.7]]
+- [[minimax-m2-7|MiniMax M2.7]]
 - [[Claude Code]]
 - [[Open-Source Model Integration]]
 - [[summary-damian-malliaros-minimax-m27|Source: Cut Claude Code Costs 95%]]

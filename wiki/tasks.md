@@ -1,7 +1,7 @@
 ---
 type: tasks
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-08
 ---
 
 # Tasks
@@ -21,3 +21,11 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
 - [ ] **Customize-template prompt — validate end-to-end on a fresh clone?** — `customize-template.md` has been written but never run on an actual fresh clone of this repo. Until it's tested at least once we don't know whether the prompt produces a clean second-brain starter or whether the data-agnostic split in `.instructions/core/` actually holds. GitHub issues #7 and #8 track this.
       **What I need from you:** Want to spin up a throwaway clone (e.g. `~/tmp/test-brain`) and run the prompt against it together so we can find the breakage, or defer until you actually start a second brain?
       *Referenced from:* [`customize-template.md`](../.instructions/core/prompts/customize-template.md)
+
+- [ ] **20 stub pages need richer coverage as new sources land** — Lint 2026-04-08 flagged the following pages as <150 words. They are intentionally thin "nascent entity" pages that the wiki rule says should grow with new sources, not by fabricating content from training data. This task is a tracking pointer so we remember to enrich them when relevant sources come in.
+      **People (need a second source each):** [[tin-rovic]], [[zubair-trabzada]], [[nathan-sebhastian]], [[beyond-fireship]], [[simon-hoiberg]], [[dave-swift]].
+      **Self-hostable alternatives (will grow with deployment-experience sources):** [[nocodb]], [[strapi]], [[grafana]], [[plane]], [[docmost]].
+      **Tools/models with one source so far:** [[anything-llm]], [[manus]], [[kimi-coder]], [[minimax-m1]], [[obsidian]], [[obsidian-web-clipper]], [[mirrorish]], [[agency]].
+      **Demo/legacy:** [[ai-2027]] (demo ingest source, intentionally minimal).
+      **What I need from you:** Nothing right now. This is a tracking item — when an ingest naturally touches one of these entities, treat the pass as an opportunity to expand the page beyond stub status. Delete this task when most have grown out of stub state.
+      *Referenced from:* lint 2026-04-08
