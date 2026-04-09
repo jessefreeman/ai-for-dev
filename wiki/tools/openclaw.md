@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You NEED to try these open-source AI projects right now....md"]
+sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You NEED to try these open-source AI projects right now....md", "I Tested Claude's New Managed Agents... What You Need To Know.md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-09
 tags: [tool, agent, framework, open-source]
 ---
 
@@ -38,6 +38,10 @@ Peter Steinberger himself has been clear that OpenClaw is not recommended for no
 - **MCP tools** → tool access
 
 The key advantage: scheduling belongs to Anthropic (native), memory is in a database you control, and there's no orchestration layer with prompt injection vulnerabilities.
+
+## Still wins vs Managed Agents (April 2026)
+
+When Anthropic launched [[managed-agents|Managed Agents]], [[nate-herk|Nate Herk]] noted OpenClaw still wins on the two features that make it feel like an always-on assistant: **heartbeats** (cron-style "wake up every N minutes and do something") and **Telegram messaging** (chat with your agent from anywhere). Managed Agents has neither at launch — agents only run when their API is called. *"That's what Anthropic really needs to be doing with Claude Code that would just make it an absolute powerhouse."*
 
 ## Related Projects
 

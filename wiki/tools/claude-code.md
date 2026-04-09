@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Planning In Claude Code Just Got a Huge Upgrade.md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md"]
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-09
 tags: [tool, ai, llm, anthropic]
 ---
 
@@ -99,6 +99,10 @@ Ultra Plan uses more tokens upfront because it's running multi-agent exploration
 - You have enough subscription headroom to spend the extra tokens
 
 Skip it for trivial changes — local plan mode is fine and doesn't need the cloud roundtrip.
+
+## Managed Agents CLI Integration
+
+The `anthropic` CLI lets you build [[managed-agents|Managed Agents]] from inside Claude Code, using the project's existing context (CLAUDE.md, codebase) to write much more specific system prompts than the web quick-start produces. Two patterns this enables: (1) build a frontend in Claude Code that calls a Managed Agent endpoint for the actual work, keeping local context lean; (2) point Claude Code at API endpoints for sub-agents instead of co-locating them in `agents/` (which eats context). **Credential warning**: CLI-built agents may default to embedding plaintext API keys in the system prompt rather than using MCP OAuth — prefer OAuth flows.
 
 ## Skills Ecosystem
 

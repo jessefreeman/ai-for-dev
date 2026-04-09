@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "Ollama + Claude Code = 99% CHEAPER.md", "Planning In Claude Code Just Got a Huge Upgrade.md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "Ollama + Claude Code = 99% CHEAPER.md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md"]
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-09
 tags: [person, ai, youtube, automation]
 ---
 
@@ -24,6 +24,7 @@ YouTube creator focused on AI automation and practical Claude Code workflows. Ru
 - [[summary-nate-herk-500-ai-workflows|I've Built 500 AI Workflows, This is What Businesses Want in 2026]] — The 5 highest-value AI automation workflows for selling to businesses, plus the clogged pipe framework for identifying which one a client needs
 - [[summary-nate-herk-ultra-plan|Planning In Claude Code Just Got a Huge Upgrade]] — Walkthrough of Claude Code's new [[claude-code|Ultra Plan]] feature: cloud-hosted Opus 4.6 with 3 parallel exploration agents + 1 critique agent. Side-by-side dashboard build shows Ultra Plan at ~10–15 min vs local plan at ~45 min total.
 - [[summary-nate-herk-zep-memory|Unlock the Next Evolution of Agents with Human-like Memory (n8n + Zep)]] — Long-term knowledge-graph memory for [[n8n]] agents via [[zep]]; the cost-trap fix that drops per-turn tokens ~2.4×.
+- [[summary-nate-herk-managed-agents|I Tested Claude's New Managed Agents]] — Hands-on review of [[managed-agents|Anthropic Managed Agents]]: cloud sandbox runtime at $0.08/hr; great onramp for Claude.ai users, missing crons/heartbeats for power users; three private-preview features (Outcomes, Multi-Agent Orchestration, Persistent Memory) define whether it becomes a real Claude Code competitor.
 - [[summary-nate-herk-faceless-shorts-n8n|How I Automated Faceless Shorts with AI in n8n]] — Free n8n template for fully automated faceless YouTube Shorts via Ideas Agent + Creator Agent + [[json-to-video|JSON-to-Video]] + 11Labs + Suno; the canonical n8n + generative-media short-form pipeline.
 
 ## Key Ideas

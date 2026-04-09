@@ -9,7 +9,7 @@ tags: [ai, llm, knowledge-management, agent]
 
 This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
-**Current state:** 103 sources ingested (four batches on 2026-04-08 plus a Journey Kits one-off); 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) now sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]).
+**Current state:** 104 sources ingested; 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]); Anthropic now has a third primary surface ([[managed-agents|Managed Agents]]) tracked as future-facing.
 
 ## Themes
 

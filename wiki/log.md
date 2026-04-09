@@ -8,6 +8,18 @@ updated: 2026-04-09
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-09] ingest | Anthropic Managed Agents launch (Nate Herk hands-on)
+
+Single-source ingest. **Anchors a new entity, [[managed-agents]] — Anthropic's third primary surface alongside Claude.ai and Claude Code.** User flagged this with explicit interest as a *future-facing Anthropic feature to watch as it evolves and is announced* — the page is structured around the **roadmap** (Outcomes, Multi-Agent Orchestration, Persistent Memory) rather than the launch state.
+
+- **Source**: [[summary-nate-herk-managed-agents|I Tested Claude's New Managed Agents]] (2026-04-08)
+- **Pages created** (3): `wiki/sources/summary-nate-herk-managed-agents.md`, `wiki/tools/managed-agents.md`, `wiki/tools/trigger-dev.md` (stub for the trigger layer Nate prefers)
+- **Pages updated** (4): [[anthropic]] (Managed Agents added to product list), [[nate-herk]], [[claude-code]] (CLI integration section + credential warning), [[openclaw]] (still wins on heartbeats + Telegram)
+
+**Editorial verdict**: Managed Agents lowers the floor for non-developers but does not yet raise the ceiling for builders. The structural gap is the missing trigger primitive — no cron, no webhook, no heartbeat — which is the reason [[trigger-dev|trigger.dev]] now appears in the wiki for the first time. If the three private-preview features ship, Managed Agents becomes a credible hosted alternative to the [[slash-loop|/loop]] + [[open-brain|OpenBrain]] + MCP three-primitive stack — *minus* the trigger primitive.
+
+**Notes**: 104 sources total. No new tasks (Browserbase/Block stub-tracking already covers the org-page pattern; this source doesn't add a new gap). 5 memories added.
+
 ## [2026-04-09] lint: 2026-04-09 — pre-publish cleanup
 
 Quick pre-publish lint pass after committing the new methodology files (log-rules, overview-rules, lint size-compliance step). 4 fixes, all approved.
@@ -176,10 +188,4 @@ Largest single ingest in the wiki to date. The user authorized batch processing 
 
 - **Single-commit batch decision**: protocol says one commit per source, but the volume + user authorization made one batch commit the right call for this run. Each source still has its own summary page = the rollback unit.
 
-## [2026-04-07] ingest | The Easiest Ways to Run LLMs Locally - Docker Model Runner Tutorial (Tech With Tim)
-- **Source**: YouTube tutorial walkthrough by Tech With Tim, 2025-07-19, ~3,605 source words. **Second wiki source on `[[docker-model-runner]]`** — complementary coverage to WorldofAI's earlier walkthrough.
-- **Pages created** (1):
-  - `wiki/sources/summary-tech-with-tim-docker-model-runner.md` — Source summary
-- **Updated**: `wiki/tools/docker-model-runner.md` (added 'Port distinction', 'Container-side usage (host.docker.internal)', and 'Compose `provider: type: model` syntax' sections — three substantive new sections from this source). Tech With Tim already added in this batch's first ingest, so no person page change.
-- **Notes**: Sponsored by Docker (disclosed openly upfront, not buried). Recipes are reproducible and accurate; the framing language is the part to discount.
 

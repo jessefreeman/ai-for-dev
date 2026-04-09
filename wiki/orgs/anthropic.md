@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Every AI Model Explained in 20 Minutes.md", "Model Context Protocol (MCP), clearly explained (why it matters).md", "Planning In Claude Code Just Got a Huge Upgrade.md"]
+sources: ["I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Every AI Model Explained in 20 Minutes.md", "Model Context Protocol (MCP), clearly explained (why it matters).md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md"]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-09
 tags: [org, ai, llm, frontier-lab]
 ---
 
@@ -22,6 +22,7 @@ US frontier-AI lab founded by former [[openai|OpenAI]] research staff. Builds th
   - The **architecture leak** (early 2026) — Anthropic accidentally exposed Claude Code's source map via a build configuration error. [[nate-b-jones|Nate B Jones]] analyzed it and identified the [[Agentic Harness Primitives]]: 12 production-grade infrastructure patterns, 207-entry command registry, 184-entry tool registry, six built-in agent types, 18-module Bash security architecture, sessions persisted as JSON.
   - **[[/loop]]** (March 2026) — native `/loop` command for proactive agent scheduling. The "heartbeat" primitive that enables [[OpenBrain]]-style accumulated-value loops.
   - **[[claude-code|Ultra Plan]]** (April 2026) — `/ultra-plan` offloads planning to a cloud-hosted Opus 4.6 instance with 3 parallel exploration agents + 1 critique agent. ~10–15 min total vs ~45 min for local plan mode in [[nate-herk|Nate Herk]]'s side-by-side benchmark.
+  - **[[managed-agents|Managed Agents]]** (April 2026) — hosted agent runtime at `console.anthropic.com`. Anthropic's third primary surface alongside Claude.ai and Claude Code. $0.08/hr per active session + token costs; environments are free. Tracked as **future-facing** — three private-preview features (Outcomes, Multi-Agent Orchestration, Persistent Memory) define whether it becomes a real Claude Code competitor. Conspicuously lacks a native cron/webhook trigger. Notion is a launch partner.
   - **Skills ecosystem** — [[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]], [[skills-sh|skills.sh]] directory. The wiki tracks more Claude Code skills than for any other agent harness.
 
 ## Standards Anthropic created

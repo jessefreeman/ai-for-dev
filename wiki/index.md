@@ -1,7 +1,7 @@
 ---
 type: index
 created: 2026-04-06
-updated: 2026-04-08
+updated: 2026-04-09
 # 12-source batch ingested 2026-04-08
 description: "Jesse Freeman's personal AI research wiki — AI tools, techniques, and workflows for developers. Maintained by Claude Code."
 socialImage: og-image.png
@@ -124,6 +124,8 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[deepagent|DeepAgent]] — Abacus AI's general-purpose agent (research, dashboards, automation); bundled with CodeLLM at $10/month.
 - [[context7|Context7]] — MCP server hosting curated, version-correct docs for 1,856+ frameworks; the wiki's strongest "RAG works when curated" data point.
 - [[journey-kits|Journey / Journey Kits]] — Matthew Berman's "npm for agent workflows"; the wiki's first dedicated agent-workflow packaging format with host-adaptation, learnings-flow-back, and credentials-by-pointer.
+- [[managed-agents|Managed Agents]] — Anthropic's hosted agent runtime (April 2026); cloud sandbox at $0.08/hr per active session; future-facing — three private-preview features (Outcomes, Multi-Agent Orchestration, Persistent Memory) define whether it becomes a real Claude Code competitor.
+- [[trigger-dev|trigger.dev]] — Cloud platform for hosting code on schedules, webhooks, and other triggers; the canonical external trigger primitive that closes the gap left by Managed Agents.
 
 ### Open-Source Projects
 - [[llama-cpp|llama.cpp]] — C++ inference engine; the foundation underlying Ollama, AnythingLLM, and most local AI tools.
@@ -306,6 +308,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-bijan-bowen-vllm-distributed-inference|Multi-node vLLM (Bijan Bowen)]] — Ray cluster + tensor/pipeline parallelism across 2 nodes.
 - [[summary-docker-model-runner-mac-playground|Docker Model Runner Mac demo]] — official Docker walkthrough for Apple Silicon.
 - [[summary-matthew-berman-journey-kits|I Built Something — Journey Kits launch]] — Matthew Berman launches Journey, the wiki's first agent-workflow packaging format.
+- [[summary-nate-herk-managed-agents|I Tested Claude's New Managed Agents]] — Nate Herk's hands-on of Anthropic's new hosted agent runtime; great onramp for Claude.ai users, missing crons for power users; three private-preview features to watch.
 
 ## Contribute or build your own
 
