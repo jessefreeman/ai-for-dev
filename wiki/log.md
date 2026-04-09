@@ -8,6 +8,20 @@ updated: 2026-04-09
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-09] ingest | Fireship — Gemma 4 as a licensing event
+
+Single-source ingest. **Refresh-grade for [[gemma-4]] and [[turboquant]]**, plus a useful clarification for the TurboQuant page.
+
+- **Source**: [[summary-fireship-gemma4-apache|Google just casually disrupted the open-source AI narrative]] (2026-04-08, ~5 min Code Report)
+- **Pages created** (1): `wiki/sources/summary-fireship-gemma4-apache.md`
+- **Pages updated** (3): [[gemma-4]] (new "Apache 2.0 as a strategic event" section reframing Gemma 4 as a licensing event, fuller PLE explanation, explicit TurboQuant ≠ Gemma 4 compression note), [[turboquant]] (prominent "TurboQuant is NOT what makes Gemma 4 small" clarification at the top), [[fireship]] (third source).
+
+**Why it matters**: this is the first wiki source that frames Gemma 4 *as a licensing event* rather than a model release — every prior Gemma 4 source treated it as a benchmark/spec story. Fireship's "first FAANG to ship truly Apache 2.0" framing belongs in the org/strategy thread, not just the model page. Also corrects a likely misreading: the simultaneous Gemma 4 + TurboQuant release naturally suggests TurboQuant is the compression behind Gemma 4's footprint — Fireship explicitly says it isn't (PLE is). The TurboQuant page now leads with this clarification.
+
+**Sponsor**: Code Rabbit (CLI agent code-review tool, ~30s segment). **Not added to the wiki** per the YouTube template's sponsorship rule.
+
+**Notes**: 106 sources total. No memories added — the new framings are well-captured in the entity-page sections, and the wiki already has memories on Gemma 4 specs and TurboQuant. Lint reminder still pending from the Conway ingest.
+
 ## [2026-04-09] ingest | Conway leak + behavioral lock-in (Nate B Jones)
 
 Single-source ingest. **Anchors a new entity ([[conway]]) and a new concept page ([[behavioral-lock-in]]).** User flagged this as **speculative** but specifically interested in Nate B Jones's conceptual framing — the wiki captures the conceptual framework as primary contribution, treats Conway's structural facts as primary-source-from-leak, and flags the trajectory predictions as one analyst's editorial.
@@ -154,20 +168,6 @@ Second-largest batch in wiki history. User authorized full autonomous one-by-one
 
 - **Single-commit batch decision**: same as the 2026-04-07 batch — one commit at the end with all sources. Per-source rollback unit is the source-summary page.
 
-## [2026-04-08] lint: 2026-04-08 — post-batch cleanup + Models category
-
-First lint pass after the 17-source batch. 10 actionable items from a 12-category Phase 1 audit, all approved.
-
-- **Group A** — fixed source-count contradiction in [[overview]] (45 → 68); refreshed Gaps list (removed Lovable, Kimi K2, Nous Research now that those pages exist; added Jules and CAISI carryovers from [[hot]]); updated Open-Source Model Landscape paragraph to mention Kimi K2 and MiniMax M1.
-- **Groups B/C/D** — orphan pages now linked: [[claude-code-subagents]] from [[claude-code]] body; [[slash-loop|/loop]] + [[claude-code-subagents]] from [[agentic-harness-primitives]] See Also; [[lovable]] from [[ai-professional-interface]] Implementation section.
-- **Group E (the big one)** — created a new **Models** section in [[index]] that consolidates closed-weights and open-weights model entries previously scattered across "Frontier Models", "Tools", and "Open-Source Projects". Rationale: models deserve their own category so we can track each model's progress, capability changes, and best-practice evolution over time. Files were not moved — only the index was restructured. [[minimax-m2-7|MiniMax M2.7]], [[kimi-k2|Kimi K2]], [[minimax-m1|MiniMax M1]], [[gemma-4|Gemma 4]], [[llama|Llama]], [[deepseek|DeepSeek]], [[qwen|Qwen]] all moved into the new Models section. [[kimi-coder|Kimi Coder]] stays under Open-Source Projects (it's an app, not a model). Also rewrote 5 brittle `[[MiniMax M2.7]]` references to `[[minimax-m2-7|MiniMax M2.7]]` in their referencing pages.
-- **Group F** — replaced 3 dangling `[[openbrain-architecture]]` references with `[[open-brain|OpenBrain]]` in [[hot]] and [[zep]].
-- **Group G** — verified `[[saas-death-spiral#policy-responses]]` resolves correctly (the section exists at line 70 of [[saas-death-spiral]]); false positive, no fix needed.
-- **Group H** — created [[skills-sh|skills.sh]] entity page (was a long-standing dangling link from 3 pages); rewrote `[[skills.sh]]` to `[[skills-sh|skills.sh]]` in [[claude-code]], [[remotion]], and the Google Stitch summary.
-- **Group I** — bumped [[index]] frontmatter `updated: 2026-04-08` (was stale at 2026-04-06 since the batch).
-- **Group J** — added a single tracking task to [[tasks]] listing the 20 stub pages flagged by lint, framed as "enrich on next relevant ingest" rather than fabricate content. Wiki rule: stubs grow from new sources, not training data.
-
-**Notes**: clean lint overall — no duplicates, no off-topic, no frontmatter drift across 224 pages, no size violations. The 17-source batch was integrated cleanly. The Models reorg is the only structural change; everything else was either a link fix or a date bump.
 
 
 

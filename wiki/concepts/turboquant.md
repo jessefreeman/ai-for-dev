@@ -1,14 +1,20 @@
 ---
 type: concept
-sources: ["TurboQuant will change Local AI for everyone..md"]
+sources: ["TurboQuant will change Local AI for everyone..md", "Google just casually disrupted the open-source AI narrative….md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-09
 tags: [ai, llm, local-ai, quantization, inference, research]
 ---
 
 # TurboQuant
 
 A KV cache optimization technique from Google Research (published April 2026, synthesizing three concurrent papers) that enables 4–6x more tokens in the same RAM footprint on consumer hardware. Being merged into llama.cpp.
+
+## Important: TurboQuant is NOT what makes Gemma 4 small
+
+Google released TurboQuant as a research note **alongside** [[gemma-4|Gemma 4]] in April 2026. The simultaneous timing has led to a common misreading that TurboQuant is the compression technique behind Gemma 4's small footprint. **It is not.** Per [[fireship|Fireship]]'s [[summary-fireship-gemma4-apache|Code Report]]: *"TurboQuant is actually not the secret behind Gemma 4's small models."*
+
+Gemma 4's small footprint comes from **per-layer embeddings (PLE)** — see [[gemma-4#per-layer-embeddings-ple-explained]]. TurboQuant is a separate, parallel research drop that compresses the **KV cache** specifically (not model weights), and uses a different mathematical approach: polar coordinates instead of XYZ Cartesian, plus the Johnson-Lindenstrauss transform to compress high-dimensional data down to ±1 sign bits while preserving distances between points. The two techniques are complementary — Gemma 4 + TurboQuant in llama.cpp would stack — but they solve different problems.
 
 ## Background: The KV Cache Problem
 
@@ -56,3 +62,4 @@ Being actively merged into **llama.cpp** — the most widely used local inferenc
 - [[Tim Carambat]]
 - [[Gemma 4]]
 - [[summary-tim-carambat-turboquant|Source: TurboQuant]]
+- [[summary-fireship-gemma4-apache|Source: Fireship — Google casually disrupted the open-source AI narrative]] (clarifies TurboQuant ≠ Gemma 4's compression mechanism)

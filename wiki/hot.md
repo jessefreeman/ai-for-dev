@@ -8,7 +8,7 @@ updated: 2026-04-09
 
 ## Current State
 
-**105 sources ingested.** Two future-facing Anthropic ingests landed in one day: [[managed-agents|Managed Agents]] (announced) and [[conway|Conway]] (leaked, unannounced). The "Anthropic surface expansion" thread is now **load-bearing** — Anthropic now has three primary user-facing surfaces (Claude.ai, Claude Code, Managed Agents) plus a fourth in the leak (Conway). The new [[behavioral-lock-in]] concept page anchors the structural framing.
+**106 sources ingested.** Two future-facing Anthropic ingests landed in one day: [[managed-agents|Managed Agents]] (announced) and [[conway|Conway]] (leaked, unannounced). The "Anthropic surface expansion" thread is now **load-bearing** — Anthropic now has three primary user-facing surfaces (Claude.ai, Claude Code, Managed Agents) plus a fourth in the leak (Conway). The new [[behavioral-lock-in]] concept page anchors the structural framing.
 
 ## Most Active Pages
 
@@ -21,8 +21,9 @@ updated: 2026-04-09
 - [[open-brain]] — reframed as the structural counter to behavioral lock-in
 - [[mcp]] — proprietary-layer-on-top risk section ([[conway]]'s `.cnw.zip` pattern)
 
-## Most Recently Added (single-source ingest 2026-04-09)
+## Most Recently Added (2026-04-09)
 
+- [[summary-fireship-gemma4-apache|Fireship — Google casually disrupted the open-source AI narrative]] — Reframes [[gemma-4]] as a *licensing event* (first FAANG truly Apache 2.0). Cleanest wiki explanation of per-layer embeddings (PLE). **Important clarification**: TurboQuant is *not* what makes Gemma 4 small (PLE is). Sponsor: Code Rabbit, not added per template rule.
 - [[summary-nate-b-jones-conway-leak|Nate B Jones: I Analyzed 512,000 Lines of Leaked Code]] — Conway from the leak. Three credibility tiers: leak structure = primary-source-from-leak, 90-day timeline = verifiable corporate history, trajectory predictions = analyst editorial.
 
 ## What to Watch on Anthropic Surface Expansion

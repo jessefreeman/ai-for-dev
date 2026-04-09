@@ -314,6 +314,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-matthew-berman-journey-kits|I Built Something — Journey Kits launch]] — Matthew Berman launches Journey, the wiki's first agent-workflow packaging format.
 - [[summary-nate-herk-managed-agents|I Tested Claude's New Managed Agents]] — Nate Herk's hands-on of Anthropic's new hosted agent runtime; great onramp for Claude.ai users, missing crons for power users; three private-preview features to watch.
 - [[summary-nate-b-jones-conway-leak|I Analyzed 512,000 Lines of Leaked Code]] — Nate B Jones surfaces Conway from the Claude Code leak; frames Anthropic's 90-day platform play as a Microsoft speedrun and anchors the new behavioral-lock-in concept.
+- [[summary-fireship-gemma4-apache|Google just casually disrupted the open-source AI narrative]] — Fireship reframes Gemma 4 as a *licensing event* (first FAANG truly Apache 2.0); cleanest explanation of per-layer embeddings; clarifies TurboQuant is *not* the mechanism behind Gemma 4's small footprint.
 
 ## Contribute or build your own
 
