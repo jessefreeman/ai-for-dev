@@ -30,19 +30,9 @@ US frontier-AI lab founded by former [[openai|OpenAI]] research staff. Builds th
 
 - **[[mcp|Model Context Protocol]]** — per [[ras-mic|Ras Mic]]'s explainer on the [[greg-isenberg|Greg Isenberg]] podcast, MCP is **Anthropic's "3D chess" play**: by putting MCP servers in the hands of service providers (not LLM vendors), Anthropic externalized the integration cost across the entire ecosystem. Every new MCP server makes every compliant client more capable, for free. As of 2026 it's the de-facto standard across [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]], [[archon-os|Archon OS]], and countless others.
 
-## The 90-day platform play (Q1 2026)
+## The 90-day platform play
 
-[[nate-b-jones|Nate B Jones]]'s framing in his Conway-leak analysis: Anthropic's last quarter is not five separate product decisions but **a single platform strategy executed across multiple surfaces** — speedrunning Microsoft's 15-year DOS→Windows→Office→Active Directory arc in 15 months.
-
-1. **Claude Code channels** — Discord/Telegram messaging surface; neutralized [[openclaw|OpenClaw]] inside Anthropic's own product
-2. **Claude Co-work** — non-technical-user surface for the 95% of enterprise employees who aren't engineers; adoption reportedly outpaced Claude Code at the same stage
-3. **Claude Marketplace** — enterprise procurement layer (GitLab, Harvey, Snowflake purchasable through Anthropic; counts against existing spend commitments)
-4. **$100M Claude Partner Network** + Accenture training 30,000 professionals; Deloitte/Cognizant/Infosys as anchor SIs — *"complete system integrator lockin at enterprise scale"*
-5. **Third-party tool ban** — January quiet block of [[openclaw|OpenClaw]], February ToS revision, recent enforcement; pay-per-use rates 10–50× the subscription cover; rolling out to "everything else in coming weeks"
-6. **[[managed-agents|Managed Agents]]** (April) — first hosted agent runtime; the onramp tier
-7. **[[conway|Conway]]** (leaked, unannounced) — the always-on capstone; the Active Directory equivalent
-
-The wiki tracks this as **the Anthropic surface expansion thread**. As of April 2026 it is one of the wiki's load-bearing structural threads — Anthropic now has three primary user-facing surfaces (Claude.ai, Claude Code, Managed Agents) plus a fourth in the leak (Conway), each targeting a distinct user. See [[behavioral-lock-in]] for the concept this thread anchors.
+Anthropic's Q1 2026 product moves form a single coordinated platform strategy — Claude Code channels → Co-work → Marketplace → $100M Partner Network → third-party tool ban → [[managed-agents|Managed Agents]] → [[conway|Conway]] (leaked) — speedrunning Microsoft's 15-year DOS→Windows→Office→Active Directory arc in 15 months. **This is one of the wiki's load-bearing structural threads.** The full 7-step breakdown, the four-step playbook (Copy → Subsidize → Block → Lock the format), the four user-facing surfaces, and the watch list all live on the canonical thread page: **[[anthropic-surface-expansion]]**. The conceptual payload (the new vendor lock-in surface this enables) lives on **[[behavioral-lock-in]]**. The cross-lab comparison (Anthropic vs OpenAI vs Google) lives on **[[persistent-agent-layer-wars]]**.
 
 ## In the wiki's larger threads
 

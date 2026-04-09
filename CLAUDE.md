@@ -4,7 +4,7 @@ This vault is a **personal knowledge base** maintained by an LLM agent. The huma
 
 ## Wiki Scope
 
-This wiki tracks **AI tools, techniques, and workflows for developers** — production agent architecture, the planning-first AI coding stack, the local-AI throughput layer, agent proactivity/memory primitives, AI ethics and policy as industry-observability signal, business models in the post-SaaS world, and personal hardware capacity for local inference.
+This wiki tracks **AI tools, techniques, and workflows for developers** — production agent architecture, the planning-first AI coding stack, the local-AI throughput layer, agent proactivity/memory primitives, the persistent-agent-layer competition between frontier labs (including the lock-in and portability questions it raises), AI ethics and policy as industry-observability signal, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
 **Adjacent dev tooling is also in scope.** A lot of the AI content here exists to help with coding, so the wiki is *AI for devs* in the broad sense: open-source and self-hostable developer tools belong here even when they're not AI-specific (wikis, project management, CMS, databases, observability, automation). When an ingested source mentions a commercial tool that has a credible self-hostable open-source alternative, capture the alternative as its own entity and cross-link it to the commercial tool via the [[self-hostable-alternatives|Self-Hostable Alternatives]] map. Other adjacent topics in scope when they materially affect the above (e.g., self-hosting infrastructure, defensive network security for self-hosted AI rigs).
 

@@ -196,6 +196,8 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
 - [[saas-death-spiral|SaaS Death Spiral]] — Why $1T in SaaS market cap evaporated in early 2026; seven AI developments and the per-seat pricing axis.
 - [[self-hostable-alternatives|Self-Hostable Alternatives]] — Running map of commercial dev tools and credible open-source self-hostable replacements captured in this wiki.
+- [[anthropic-surface-expansion|Anthropic Surface Expansion]] — Canonical thread page for Anthropic's 90-day platform play; the 7-step Microsoft speedrun, the four-step playbook, the four user-facing surfaces (Claude.ai + Claude Code + Managed Agents + leaked Conway), and the Era 1→2→3 frame.
+- [[persistent-agent-layer-wars|The Persistent Agent Layer Wars]] — Cross-lab scorecard for Era 3 of AI competition: Anthropic vs OpenAI vs Google moves toward owning the always-on agent layer. Empty cells are intentional forcing functions.
 
 ### Personal Hardware Benchmarks
 - [[benchmarks/index|Benchmark Index]] — Master ranking of all 16 personal rigs by AI Capability Index.
