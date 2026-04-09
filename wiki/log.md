@@ -8,6 +8,24 @@ updated: 2026-04-09
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-09] ingest | LLM Design Patterns thread anchor (Simon Scrapes — Claude Code workflows)
+
+Single-source ingest. **Anchors a new long-running concept thread the user explicitly flagged as a core pillar to flesh out over time: [[llm-design-patterns]] — the canonical wiki library of named patterns for working with LLMs and agents.** First entries are the 5 Claude Code workflow patterns from Simon Scrapes; the page is structured for growth with explicit "how to extend this page" rules so future ingests slot in cleanly without fragmenting.
+
+- **Source**: [[summary-simon-scrapes-claude-code-workflows|Every Claude Code Workflow Explained (& When to Use Each)]] (2026-04-07)
+- **Pages created** (3): `wiki/sources/summary-simon-scrapes-claude-code-workflows.md`, `wiki/concepts/llm-design-patterns.md` (the load-bearing thread anchor — sibling framework page to [[agentic-harness-primitives]] and [[four-prompting-disciplines]]), `wiki/people/simon-scrapes.md` (stub)
+- **Pages updated** (3): [[claude-code]] (new "Workflow patterns" section with the 5-pattern ladder + new "CLI flags" subsection documenting `claude -w` and `claude -p` for the first time + Agent Teams research preview detail with the env var + the 3 always-on built-in sub-agents documented), [[claude-code-subagents]] (added 10 concurrent limit, the 3 always-on built-in sub-agents detail, the builder-validator chain pattern), [[multi-agent-orchestration]] (cross-link to the new design-patterns page)
+
+**Why this matters structurally**: this is the wiki's first concept page primarily about *patterns / techniques* rather than products, organizations, or threats. It joins [[agentic-harness-primitives]] and [[four-prompting-disciplines]] as the third "framework" page in the wiki's concept tier. The user flagged it as *"a core pillar — LLM Design Patterns which I want to flesh out over time"*, so the page is built for extensibility: every entry has a consistent template (what it is / when to use / when NOT to use / architectural sketch / cost profile / implementations / source(s)), and there's an explicit "how to extend this page" footer that defines the rules for future ingests (same pattern → extend; different name → add as alias; new pattern → new section; cross-tool → record all implementations).
+
+**New CLI primitives captured for the first time**: the wiki had no record of `claude -w` (git work-trees flag — Pattern 2) or `claude -p` (headless flag — Pattern 5). Both are now documented on [[claude-code]] with cross-links to the patterns they implement. Also captured: the **10 concurrent sub-agent hard limit**, the **Agent Teams research preview** (Opus 4.6, opt-in via `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` env var, costs 4–7× tokens), and the **3 always-on built-in sub-agents** (Explore on Haiku / Plan / General-purpose on Sonnet).
+
+**Boris Cherny** (Claude Code creator) is name-checked in the source as having spun up 15 sub-agents at a time. **No person page created yet** — deferred until a primary source covers him directly per the wiki's "no stub person pages from name-checks" rule. Same for the **GSD framework by Tash** and the **Ralph loop** community pattern — both name-checked, neither walked through, both deferred.
+
+**Skipped from raw/**: 2 duplicate files (Fireship 10-illegal-tools and Google Gemma 4 Apache) that had been re-clipped after they were already archived earlier today; deleted at user request before processing. Also skipped: Document360 review (Savage Reviews) as low-value affiliate-driven SaaS review on a tool already covered by [[docmost]] in the self-hostable alternatives map.
+
+**Notes**: 109 sources total. 5 memories added.
+
 ## [2026-04-09] lint: 2026-04-09 — post-7-ingest cleanup
 
 Lint pass after 7 ingests since last lint (Managed Agents → Conway → Fireship Gemma 4 → Defensive pair, plus the surface-expansion structural changes). 4 fixes, all approved.
@@ -144,24 +162,6 @@ Fourth batch in two days. **17 sources in scope, 2 skipped (1 duplicate, 1 off-t
 
 - **5 memories** added.
 
-## [2026-04-08] ingest | 5-source batch (Google I/O launches + CAG + Dify)
-
-Third batch of the day; user split it from the larger queue. **5 sources, all in scope, none skipped. 85 sources ingested total.**
-
-- **Sources** (5):
-  1. **Claude 4 Sonnet & Opus + Cline** ([[worldofai|WorldofAI]]) — refreshes [[claude]] with Claude 4 pricing ($15/$75 Opus, $3/$15 Sonnet) and the **~$2.60 SaaS-landing-page cost** data point; refreshes [[cline]] with Requesty/Kilo free-API workarounds.
-  2. **Don't Do RAG — CAG** ([[ai-jason|AI Jason]] — new person) — anchors new concept [[context-augmented-generation]]; updates [[rag-vs-wiki]] with CAG as a third approach.
-  3. **Google Jules** (WorldofAI) — anchors new entity [[jules]]; first-party Google async coding agent on Gemini 2.5 Pro; closes the long-standing Jules gap that [[open-swe]] was tracked against.
-  4. **Google Stitch I/O 2025 launch** (WorldofAI) — second source on existing [[google-stitch]]; adds two-mode pricing (350 Flash / 50 Pro per month), Figma/HTML export options, Airbnb-clone demo.
-  5. **Dify Knowledge Base configuration** (LLMs Explained / Aggregate Intellect — channel-attributed) — anchors new entity [[dify]].
-
-- **Major thread — Google's coordinated I/O 2025 free push**: Jules + Stitch in the same week, both Gemini-powered, both targeting paid incumbents (Codex/Copilot, v0.dev/Figma). Jules at 5 tasks/day free, Stitch at 350+50 generations/month free. The aggressive zero-pricing is the [[saas-death-spiral]] thread's strongest near-term move.
-
-- **Major thread — RAG-skepticism gets a third entry**: [[context-augmented-generation|CAG]] joins [[rag-vs-wiki|RAG vs Wiki]] (curated wiki) and [[summary-cole-medin-rag-for-code|"RAG is dead for code"]] (agentic search). Each proposes a different replacement for semantic retrieval. The [[rag-vs-wiki]] page now hosts the three-way comparison.
-
-- **Person page judgment call**: the Dify source channel ("LLMs Explained / Aggregate Intellect / AI.SCIENCE") doesn't name an individual creator. Per page-conventions ("never create stub person pages with unknown channel info"), no person page was created — flagged in tasks.md as a follow-up.
-
-- **5 memories** added to `raw/memories/`.
 
 
 

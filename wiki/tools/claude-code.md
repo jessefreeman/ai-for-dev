@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "Every Claude Code Workflow Explained (& When to Use Each).md"]
 created: 2026-04-06
 updated: 2026-04-09
 tags: [tool, ai, llm, anthropic]
@@ -99,6 +99,46 @@ Ultra Plan uses more tokens upfront because it's running multi-agent exploration
 - You have enough subscription headroom to spend the extra tokens
 
 Skip it for trivial changes — local plan mode is fine and doesn't need the cloud roundtrip.
+
+## Workflow patterns (the 5-pattern ladder)
+
+The wiki tracks five named Claude Code workflow patterns, captured in detail on **[[llm-design-patterns]]** (the canonical patterns library). They form a progression — climb only as high as the task requires:
+
+1. **Sequential Flow** — single conversation; ceiling is the context window + context rot
+2. **The Operator** — multiple parallel terminals via the **`claude -w`** git work-trees flag (auto-cleanup on close)
+3. **Split & Merge** — single session fanning out to sub-agents; **hard limit 10 concurrent**, hub-and-spoke topology
+4. **Agent Teams** — peer-to-peer agent collaboration via shared task list; **research preview** in Opus 4.6
+5. **Headless** — **`claude -p <prompt>`** for non-interactive autonomous execution; designed to plug into cron / Task Scheduler
+
+Source: [[summary-simon-scrapes-claude-code-workflows|Simon Scrapes — Every Claude Code Workflow Explained]].
+
+### CLI flags (workflow primitives)
+
+| Flag | Purpose | Pattern |
+|---|---|---|
+| **`claude -w <task-name>`** | Create a git **work-tree** (separate copy + branch) and start a new Claude session inside it. Auto-cleanup: empty work-trees removed on close; non-empty prompt before discarding. | [[llm-design-patterns#pattern-2-the-operator]] |
+| **`claude -p <prompt>`** | Run Claude in **non-interactive mode** — no conversation, no approvals, full permissions, return result when done. Combine with cron / Task Scheduler for autonomous workflows. | [[llm-design-patterns#pattern-5-headless]] |
+| **`--allowed-tools <list>`** | Restrict the tools available in headless mode (e.g., read-only). Guardrail for `-p` use. | Pattern 5 hardening |
+
+### Agent Teams (research preview, Opus 4.6)
+
+The newest workflow primitive. Currently experimental — opt in via:
+
+```
+CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
+```
+
+in `settings.json`. Then specify *"use an agent team"* explicitly in your prompt — Claude does NOT auto-route to it. Navigate teammates with **shift+up / shift+down** in the terminal; message a teammate directly or talk to the team lead. Costs **4–7× more tokens** than a single session because of cross-agent messaging + each teammate is a full Claude Code instance with its own context window. **When to use**: complex multi-discipline projects where genuine cross-collaboration is needed (front-end + back-end + test that have to coordinate as they build). **When NOT to use**: anything sub-agents or a single session could handle. See [[llm-design-patterns#pattern-4-agent-teams]] for the full architectural breakdown.
+
+### The 3 always-on built-in sub-agents
+
+Every Claude Code session uses these automatically — you don't have to invoke them. They show up in the terminal when triggered:
+
+- **Explore** (Haiku, read-only) — fast cheap scout for file/folder search; auto-invoked on questions like *"how does X work in this project?"*
+- **Plan** (per-session, read-only) — research before strategy; activates in plan mode (`/plan` or shift+tab twice)
+- **General-purpose** (Sonnet, full tool access) — heavy lifting for complex multi-step tasks needing both exploration and changes
+
+These overlap with the 6 built-in agent types from the [[agentic-harness-primitives|leaked Claude Code architecture]] (Explore, Plan, Verify, Guide, General-purpose, Status-line-setup). The 3 above are the user-facing always-on trio. User-defined sub-agents (separate from these) live in `.claude/agents/` per [[claude-code-subagents]] — and across both, the **hard concurrent limit is 10**; additional sub-agents queue.
 
 ## Managed Agents CLI Integration
 

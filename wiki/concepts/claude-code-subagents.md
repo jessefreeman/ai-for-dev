@@ -1,8 +1,8 @@
 ---
 type: concept
-sources: ["Claude Code Sub-Agents BEST AI Coder! SUPERCHARGE Claude Code and 10x Coding Workflow!.md"]
+sources: ["Claude Code Sub-Agents BEST AI Coder! SUPERCHARGE Claude Code and 10x Coding Workflow!.md", "Every Claude Code Workflow Explained (& When to Use Each).md"]
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 tags: [concept, claude-code, multi-agent, anthropic]
 ---
 
@@ -27,7 +27,7 @@ Sub-agents solve three Claude Code pain points at once:
 | **System prompt** | Custom; bounds expertise area |
 | **Tool / MCP whitelist** | Explicit allowlist; no fallthrough |
 | **Color tag** | Visual marker in the TUI |
-| **Parallelism** | Multiple sub-agents can run concurrently on the same project |
+| **Parallelism** | Multiple sub-agents can run concurrently on the same project — **hard limit: 10 concurrent**; additional queue |
 
 ## Setup
 
@@ -37,6 +37,22 @@ Sub-agents solve three Claude Code pain points at once:
        → select tools / MCPs
        → assign color tag
 ```
+
+## The 3 always-on built-in sub-agents
+
+Separately from user-defined sub-agents in `.claude/agents/`, every Claude Code session uses **three always-on built-in sub-agents** that Claude routes to automatically. Per [[summary-simon-scrapes-claude-code-workflows|Simon Scrapes]]:
+
+| Sub-agent | Model | Capability | Auto-invoked when |
+|---|---|---|---|
+| **Explore** | Haiku | Read-only file/folder search | You ask *"how does X work in this project?"* |
+| **Plan** | (per-session) | Read-only research before strategy | You enter plan mode (`/plan` or shift+tab twice) |
+| **General-purpose** | Sonnet | Full read/write tool access | Claude detects a complex multi-step task needing both exploration and changes |
+
+Each runs in its **own isolated context window** so the main conversation stays clean. These overlap with the 6 built-in agent types from the [[agentic-harness-primitives|leaked Claude Code architecture]] — Explore, Plan, Verify, Guide, General-purpose, Status-line-setup. The 3 above are the user-facing always-on trio.
+
+## The builder-validator chain
+
+The canonical sub-agent pattern surfaced by [[summary-simon-scrapes-claude-code-workflows|Simon Scrapes]]: sub-agent 1 builds → returns to main → main routes to sub-agent 2 (validator) → returns. Built-in quality check without you doing the review. The hub-and-spoke topology (sub-agents can only talk to the main agent, not each other) is the bottleneck — this is exactly the constraint **Agent Teams** ([[llm-design-patterns#pattern-4-agent-teams]]) is designed to remove.
 
 ## Marketplace
 
@@ -59,11 +75,13 @@ A workflow can use both: invoke a skill to format output, delegate to a sub-agen
 
 ## Sources
 
-- [[summary-worldofai-claude-code-subagents|WorldofAI walkthrough of sub-agents]] — primary source
+- [[summary-worldofai-claude-code-subagents|WorldofAI walkthrough of sub-agents]] — primary source for the user-defined primitive
+- [[summary-simon-scrapes-claude-code-workflows|Simon Scrapes — Every Claude Code Workflow Explained]] — adds the 3 always-on built-in sub-agents, the 10 concurrent limit, the builder-validator chain pattern, and the connection to [[llm-design-patterns]]
 
 ## See Also
 
 - [[claude-code]]
+- [[llm-design-patterns]] — sub-agents are the implementing primitive for Pattern 3 (Split & Merge)
 - [[multi-agent-orchestration]]
 - [[skills-sh]]
 - [[agentic-harness-primitives]]

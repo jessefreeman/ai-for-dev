@@ -194,6 +194,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[claude-code-subagents|Claude Code Sub-Agents]] — Anthropic's first-party multi-agent primitive: isolated context, tool whitelists, parallel execution.
 - [[behavioral-lock-in|Behavioral Lock-In]] — The new vendor lock-in surface introduced by always-on agents: the accumulated model of how you work, with no legal/regulatory/technical portability framework. Anchored by the leaked Conway analysis.
 - [[ai-personal-agent-hardening|AI Personal Agent Hardening]] — The defensive discipline for personal AI agents (OpenClaw, Managed Agents, Conway). Five named attack classes (tokenade, siege, format-override, faked-system-command, free-association exfil) and the two defensive rules (human-in-loop + frontier model as scanner). Anchored by the Berman/Pliny hardening challenge.
+- [[llm-design-patterns|LLM Design Patterns]] — Canonical wiki library of named patterns for working with LLMs and agents. First entries: the 5 Claude Code workflow patterns (Sequential / Operator / Split & Merge / Agent Teams / Headless). Built to grow as future ingests cover patterns from other tools. Sibling framework page to [[agentic-harness-primitives]] and [[four-prompting-disciplines]].
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -320,6 +321,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-fireship-gemma4-apache|Google just casually disrupted the open-source AI narrative]] — Fireship reframes Gemma 4 as a *licensing event* (first FAANG truly Apache 2.0); cleanest explanation of per-layer embeddings; clarifies TurboQuant is *not* the mechanism behind Gemma 4's small footprint.
 - [[summary-fireship-10-illegal-tools|10 open source tools that feel illegal]] — Fireship's Code Report on Kali Linux and 10 default pentest tools; captured defensively as the wiki's canonical audit kit for hardening self-hosted AI infrastructure.
 - [[summary-matthew-berman-i-was-hacked|I was hacked... (Matthew Berman)]] — Berman challenges Pliny the Liberator to break into his hardened OpenClaw; all 5 attempts quarantined. Anchors the new AI personal agent hardening concept page with five named attack classes and two defensive rules.
+- [[summary-simon-scrapes-claude-code-workflows|Every Claude Code Workflow Explained (Simon Scrapes)]] — Walkthrough of 5 named Claude Code workflow patterns (Sequential / Operator / Split & Merge / Agent Teams / Headless). Anchors the new [[llm-design-patterns]] concept page; documents `claude -w`, `claude -p`, the 10 concurrent sub-agent limit, and the Agent Teams research preview.
 
 ## Contribute or build your own
 

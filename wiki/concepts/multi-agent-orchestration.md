@@ -52,6 +52,7 @@ The 12 primitives become more critical at multi-agent scale: workflow state prev
 - [[agenticseek|AgenticSeek]] — fully local Manus alternative with voice input and visual UI
 
 ## See Also
+- [[llm-design-patterns]] — the more granular, pattern-by-pattern breakdown; this page is the higher-level concept entry
 - [[Paperclip]]
 - [[Agentic Harness Primitives]]
 - [[Claude Code]]

@@ -9,19 +9,22 @@ tags: [ai, llm, knowledge-management, agent]
 
 This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
-**Current state:** 108 sources ingested; 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]); **Anthropic surface expansion** is now a load-bearing thread — Anthropic has three announced primary surfaces (Claude.ai, Claude Code, [[managed-agents|Managed Agents]]) plus a fourth in the leak ([[conway|Conway]]); the new [[behavioral-lock-in]] concept page anchors the structural framing of the persistent-agent-layer wars.
+**Current state:** 109 sources ingested; 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]); **Anthropic surface expansion** is now a load-bearing thread — Anthropic has three announced primary surfaces (Claude.ai, Claude Code, [[managed-agents|Managed Agents]]) plus a fourth in the leak ([[conway|Conway]]); the new [[behavioral-lock-in]] concept page anchors the structural framing of the persistent-agent-layer wars.
 
 ## Themes
 
 ### Knowledge Compounding
-The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value chat-based or RAG-based approaches don't. The wiki's **RAG-skepticism thread** has three entries: [[RAG vs Wiki]], [[summary-cole-medin-rag-for-code|"RAG is dead for code"]], and [[context-augmented-generation|CAG]]. Sitting alongside is a **RAG-defense pair**: [[context7|Context7]] (curated MCP docs) and [[crawl4ai|Crawl4AI]] (upstream builder). Synthesis: **RAG works when curated**; raw web RAG remains brittle. Macro: RAG was a bridge for context-window scarcity; cheap long context shrinks its role to "datasets larger than any feasible window."
+The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value chat-based or RAG-based approaches don't. The wiki's **RAG-skepticism thread** has three entries — [[RAG vs Wiki]], [[summary-cole-medin-rag-for-code|"RAG is dead for code"]], [[context-augmented-generation|CAG]] — alongside the **RAG-defense pair** [[context7|Context7]] + [[crawl4ai|Crawl4AI]]. Synthesis: **RAG works when curated**; raw web RAG remains brittle. Cheap long context shrinks the role to "datasets larger than any feasible window."
 
 ### Anthropic Surface Expansion (load-bearing)
 
 Anthropic's 90-day platform play — [[managed-agents|Managed Agents]] (announced) + [[conway|Conway]] (leaked) + the third-party tool ban + the Claude Marketplace + the $100M Partner Network — speedruns Microsoft's 15-year DOS→Office→Active Directory arc in 15 months. Full breakdown on [[anthropic-surface-expansion]]; cross-lab scorecard on [[persistent-agent-layer-wars]]; conceptual payload on [[behavioral-lock-in]]. [[open-brain|OpenBrain]] is the structural counter-pattern.
 
 ### Production Agent Architecture
-[[Nate B Jones]]'s body of work defines the architectural layer: the [[Agentic Harness Primitives]] (12 primitives from the Claude Code leak), the three-Lego-brick model (memory + proactivity + tools), the [[OpenClaw]]-via-primitives reduction. The [[Claude Code]] skill ecosystem ([[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]]) each encodes different methodologies.
+[[Nate B Jones]]'s body of work defines the architectural layer: [[Agentic Harness Primitives]] (12 primitives from the Claude Code leak), the three-Lego-brick model, the [[OpenClaw]]-via-primitives reduction. The [[Claude Code]] skill ecosystem ([[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]]) each encodes different methodologies.
+
+### LLM Design Patterns (new pillar)
+[[llm-design-patterns]] is the wiki's canonical library of named patterns for working with LLMs and agents. First entries: the 5 Claude Code workflow patterns from Simon Scrapes (Sequential / Operator / Split & Merge / Agent Teams / Headless). Sibling framework page to [[agentic-harness-primitives]] and [[four-prompting-disciplines]]; built for growth via documented contribution rules.
 
 ### Agent Proactivity, Memory, and Self-Improvement
 Three converging primitives: [[/loop]] (Anthropic, March 2026) gives agents a native heartbeat; [[OpenBrain]] (Postgres + PGVector + MCP via [[supabase|Supabase]], ~$0.10/month) gives them persistent memory; [[mcp|MCP]] gives them tool reach. Together they enable accumulated-value loops.
@@ -51,7 +54,7 @@ A major thread that crystallized in early April 2026: **structured thinking befo
 [[ai-personal-agent-hardening]] (5 named attack classes + 2 hardening rules from the Berman/Pliny challenge) and [[kali-linux]] (10-tool network audit kit) anchor the wiki's defensive cluster, alongside [[bjorn]] and [[parseltongue]]. Rule 1 (human-in-loop mandatory) is the load-bearing constraint on Conway-class always-on agents.
 
 ### Self-Hosted AI Infrastructure
-The wiki now has a **complete self-hosted recipe stack**: [[summary-cole-medin-local-supabase-rag|Cole's local-AI-packaged]] (n8n + Ollama + Open WebUI + Supabase + PGVector, single docker-compose); [[summary-wolfgangs-channel-local-ssl-homelab|Wolfgang]] / [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck]] SSL recipes (Nginx Proxy Manager + Let's Encrypt) for real-domain HTTPS; [[summary-bijan-bowen-vllm-distributed-inference|Bijan's multi-node vLLM]] for horizontal scaling. Full path from "try local AI" to "household uses it on phones."
+A complete recipe stack: [[summary-cole-medin-local-supabase-rag|Cole's local-AI-packaged]] (n8n + Ollama + Open WebUI + Supabase + PGVector); [[summary-wolfgangs-channel-local-ssl-homelab|Wolfgang]] / [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck]] SSL recipes; [[summary-bijan-bowen-vllm-distributed-inference|Bijan's multi-node vLLM]] for horizontal scaling.
 
 ### Local AI Throughput Stack
 [[llama-cpp|llama.cpp]] is the foundation: GGUF format, integer quantization (Q4_K_M, Q5_K_M, Q8). [[Ollama]] wraps it. [[Open WebUI]] is the canonical chat UI. [[docker-model-runner|Docker Model Runner]] is the container-native alternative. [[turboquant|TurboQuant]] extends the same hardware with 4x context windows.
@@ -63,8 +66,8 @@ The **throughput ceiling** is unlocked by [[vllm|vLLM]] + [[fp8-quantization|FP8
 ### Open-Source Model Landscape
 Chinese labs ([[DeepSeek]], [[Qwen]]) have surpassed [[Llama]] (Meta). [[Gemma 4]] (31B) ranks #3 globally; see [[gemma-4-vram-requirements]]. **[[deepseek|DeepSeek R1-0528]] (671B/37B MoE, MIT, 136K context, free OpenRouter) is the de facto open-source reasoning backbone** — [[codename-goose|Goose]], [[stagehand|Stagehand]], [[deerflow|DeerFlow]], and [[agenticseek|AgenticSeek]] all default to it. See the index Models section for the full open-weights catalog.
 
-### Frontier Model Specialties & Prompting
-[[ChatGPT]] = ease of use (now needs [[meta-prompting]] for GPT-5's literalism); [[Claude]] = work and coding; [[Gemini]] = search, deep research, video ingestion; [[Grok]] = real-time Twitter/X.
+### Frontier Model Specialties
+[[ChatGPT]] = ease of use ([[meta-prompting]] for GPT-5); [[Claude]] = work + coding; [[Gemini]] = search/research/video; [[Grok]] = real-time Twitter/X.
 
 ### Agentic Coding Platform Proliferation
 The market is fragmenting fast. [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]] (Remote Agent: cloud + 10 parallel), [[firebase-studio|Firebase Studio]], [[archon-os|Archon OS]], [[deepcode|DeepCode]] (Paper2Code), [[codellm|Abacus CodeLLM]] ($10/mo), [[jules|Google Jules]] (free), and **GitHub Copilot Coding Agent** ($39/mo) all coexist. The **async cloud agent cluster** is converging on the same shape — GitHub issue → sandbox → plan → PR — differing on pricing, model, and parallelism. **[[task-master-ai|Task Master AI]]** introduces a cost-routing layer inside any host harness. [[saas-death-spiral|The death spiral analysis]] explains the fragmentation.
