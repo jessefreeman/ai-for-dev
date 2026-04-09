@@ -22,7 +22,6 @@ Walk the wiki and produce a single report covering:
 10. **Tag inconsistency** — same concept tagged different ways across pages.
 11. **Size compliance** — for each state file with a defined cap, flag if it exceeds the cap. Caps:
     - `wiki/hot.md` — 500 words ([hot-cache-rules](../rules/hot-cache-rules.md))
-    - `wiki/overview.md` — 1,500 words ([overview-rules](../rules/overview-rules.md))
     - `wiki/log.md` — 10 entries ([log-rules](../rules/log-rules.md))
     - `wiki/tasks.md` — 15 active items ([tasks-rules](../rules/tasks-rules.md), also covered in step 12)
     For each violator, propose a concrete trim (which sections/entries to drop). Never auto-trim — wait for Phase 3 approval.

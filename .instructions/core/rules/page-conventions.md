@@ -30,7 +30,6 @@ tags: [tag1, tag2]
 | `business` | `wiki/business/` | Business patterns, ROI frameworks, sales playbooks | `framework-name` |
 | `comparison` | `wiki/analyses/` | Side-by-side analysis | `x-vs-y` |
 | `analysis` | `wiki/analyses/` | Filed answer to a query | `analysis-topic` |
-| `overview` | `wiki/` (root) | High-level KB synthesis | `overview.md` |
 
 **Org pages vs product pages**: products live in `wiki/tools/` (commercial) or `wiki/open-source/` (OSS); the **organizations behind them** live in `wiki/orgs/`. An org page exists when the wiki references the organization itself — its corporate decisions, policy positions, acquisitions, leadership shifts — beyond just its products. Create an org page as soon as the wiki has either (a) a source published *by* the org (a paper, a manifesto, a blog post) or (b) two or more references to the org's products that share an editorial thread (e.g., the same company's products keep showing up in adjacent contexts). Cross-link products to their org page in both directions.
 

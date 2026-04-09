@@ -10,7 +10,17 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "aifor.dev",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "hot.md",
+      "tasks.md",
+      "log.md",
+      "CLAUDE.md",
+      ".instructions",
+      "raw",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -81,6 +91,7 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
+      Plugin.CustomOgImages(),
     ],
   },
 }

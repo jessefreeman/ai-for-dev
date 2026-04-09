@@ -84,7 +84,6 @@ Detailed rules live in `.instructions/core/rules/`. Read on demand, not preempti
 | `page-conventions.md` | Frontmatter, page types & folders, wikilinks, quality bar |
 | `memory-rules.md` | RavenBrain memory format, tag taxonomy, what to capture |
 | `hot-cache-rules.md` | What goes in `wiki/hot.md` and what doesn't (500-word cap) |
-| `overview-rules.md` | What goes in `wiki/overview.md` (1,500-word cap, synthesis only) |
 | `index-rules.md` | Format and content of `wiki/index.md` |
 | `log-rules.md` | Rolling-window changelog rules for `wiki/log.md` (10-entry cap; git is the historical record) |
 | `tasks-rules.md` | What belongs in `wiki/tasks.md` (user-input items only) and how lint/task-review keep it pruned |

@@ -29,6 +29,15 @@ fi
 echo "==> Copying quartz.config.ts..."
 cp "$REPO_ROOT/quartz.config.ts" "$QUARTZ_DIR/quartz.config.ts"
 
+# Apply repo-local Quartz overrides (custom components, static assets, layout patches).
+# Anything under quartz-overrides/ is copied on top of the cloned Quartz tree, mirroring
+# its directory layout. This lets us version overrides in the wiki repo without forking
+# Quartz itself. See quartz-overrides/README.md for conventions.
+if [ -d "$REPO_ROOT/quartz-overrides" ]; then
+  echo "==> Applying quartz-overrides/ on top of Quartz..."
+  cp -av "$REPO_ROOT/quartz-overrides/." "$QUARTZ_DIR/" | tail -20
+fi
+
 # Install dependencies
 echo "==> Installing Quartz dependencies..."
 cd "$QUARTZ_DIR"

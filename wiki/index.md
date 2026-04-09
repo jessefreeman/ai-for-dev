@@ -15,12 +15,6 @@ I built this after watching [Nate Herk's video](https://www.youtube.com/watch?v=
 
 New content appears as I read, watch, and research. The site updates automatically.
 
-## Start here
-
-- [[overview|Overview]] — The big picture: what's in this wiki and why it exists.
-- [[llm-wiki-pattern|LLM Wiki Pattern]] — How this wiki is built and maintained.
-- [[rag-vs-wiki|RAG vs Wiki]] — Why a structured wiki beats semantic search for personal knowledge bases.
-
 ## Browse by category
 
 ### People

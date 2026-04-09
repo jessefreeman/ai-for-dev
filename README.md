@@ -81,7 +81,7 @@ After the customize-template prompt runs, you'll have:
 
 - `CLAUDE.md` with **your** topic scope, **your** domain tags, **your** project list
 - `README.md` with **your** wiki name, author, URL, and social handles (or generic placeholders if you skipped that question)
-- `wiki/index.md`, `wiki/hot.md`, `wiki/overview.md`, `wiki/log.md`, `wiki/tasks.md` initialized as empty scaffolds keyed to your topic
+- `wiki/index.md`, `wiki/hot.md`, `wiki/log.md`, `wiki/tasks.md` initialized as empty scaffolds keyed to your topic
 - `.instructions/projects/<your-project>/` directories scaffolded for any project-specific use cases you named
 - The full `.instructions/core/` methodology unchanged — same prompts, same rules, same templates
 

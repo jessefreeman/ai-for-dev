@@ -40,10 +40,9 @@ After approval, for each source:
 ### Phase 3 — Update wiki state
 
 1. Append entries to `wiki/index.md` per [index rules](../rules/index-rules.md).
-2. Revise `wiki/overview.md` to reflect the new source.
-3. Append a dated entry to `wiki/log.md` listing what was ingested and what pages were created/updated.
-4. Rewrite `wiki/hot.md` per [hot-cache rules](../rules/hot-cache-rules.md). Max 500 words. Rewrite, don't append.
-5. Update `wiki/tasks.md` with any new tools/projects/repos worth investigating, as `- [ ] **Name** — why [[source-page]]`. Skip anything already covered by an existing wiki page.
+2. Append a dated entry to `wiki/log.md` listing what was ingested and what pages were created/updated.
+3. Rewrite `wiki/hot.md` per [hot-cache rules](../rules/hot-cache-rules.md). Max 500 words. Rewrite, don't append.
+4. Update `wiki/tasks.md` with any new tools/projects/repos worth investigating, as `- [ ] **Name** — why [[source-page]]`. Skip anything already covered by an existing wiki page.
 
 ### Phase 4 — Generate memories
 

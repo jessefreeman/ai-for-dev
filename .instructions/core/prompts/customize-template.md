@@ -55,7 +55,6 @@ Reset all wiki state files to a clean starting point keyed to the new topic:
 
 - **`wiki/index.md`** — clear out the default content; replace with a minimal scaffold with section headers (`## People`, `## Tools`, `## Concepts`, `## Sources`) and a one-line description of the wiki using the user's topic
 - **`wiki/hot.md`** — set to "Wiki freshly initialized for {topic}. No sources ingested yet. Run the ingest prompt to add the first source."
-- **`wiki/overview.md`** — replace with a minimal scaffold: Title, Topic Scope (copy from CLAUDE.md), and an empty Themes section
 - **`wiki/log.md`** — append a single new entry: `## [YYYY-MM-DD] init: customized for {topic}` with bullets listing what was changed
 - **`wiki/tasks.md`** — clear out, leave only the type frontmatter and an empty `## To Investigate` section
 
@@ -99,4 +98,4 @@ Re-running is also useful if the user:
 - Decides to expand the topic scope as the wiki matures
 - Wants to update branding (author name, URL, social) without touching content
 
-In re-run mode, **never reset `wiki/index.md`, `wiki/hot.md`, `wiki/log.md`, `wiki/tasks.md`, or `wiki/overview.md`** — those have user content. Only update CLAUDE.md, README.md branding, and the project scaffolding directories.
+In re-run mode, **never reset `wiki/index.md`, `wiki/hot.md`, `wiki/log.md`, or `wiki/tasks.md`** — those have user content. Only update CLAUDE.md, README.md branding, and the project scaffolding directories.

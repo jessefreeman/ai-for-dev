@@ -8,7 +8,7 @@ You are doing a focused link-graph audit. The goal: every wiki page should have 
 
 ### Phase 1 — Build the link graph
 
-1. List every `.md` file under `wiki/` (excluding `wiki/index.md`, `wiki/log.md`, `wiki/hot.md`, `wiki/overview.md`, `wiki/tasks.md`).
+1. List every `.md` file under `wiki/` (excluding `wiki/index.md`, `wiki/log.md`, `wiki/hot.md`, `wiki/tasks.md`).
 2. For each file, extract every `[[target]]` or `[[target|display]]` link in its body.
 3. Build:
    - **Inbound count** per page (how many other pages link TO it)
@@ -39,5 +39,5 @@ After approval:
 - Append a `lint: orphans <date>` entry to `wiki/log.md`.
 
 ## Don'ts
-- Don't treat `index.md`, `hot.md`, `log.md`, `overview.md`, or `tasks.md` as inbound link sources for orphan detection — they're navigation, not content.
+- Don't treat `index.md`, `hot.md`, `log.md`, or `tasks.md` as inbound link sources for orphan detection — they're navigation, not content.
 - Don't delete a page just because it's orphaned. Many orphans are legitimately new — they need linking, not removal.
