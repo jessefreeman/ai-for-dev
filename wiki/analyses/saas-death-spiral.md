@@ -79,6 +79,16 @@ The pattern to watch: whether other frontier labs (Anthropic, Google DeepMind, x
 
 - **Shadow factory agency model** — Jesse's business vision: deeper into dark factory economics, L4/L5 operating patterns, and agency models serving businesses that can't build their own. Related to the StrongDM 3-person dark factory team referenced in [[summary-nate-b-jones-five-levels|5 Levels of AI Coding]]. Needs a primary source on shadow-factory economics before promoting to its own page.
 
+  **Enabling-infrastructure thread (new 2026-04-09)**: the wiki now tracks several pieces of infrastructure that take the constraints of the 3-person shadow-factory model seriously — primitives a tiny team can rely on without an ops team. The pattern is *"infrastructure that makes 3-person agentic teams economically viable"*:
+  - **[[aimock]]** — deterministic CI for the entire agentic stack (LLM + MCP + A2A + vector + search/rerank/moderation). Drift detection catches provider changes within 24h. Critical for a team with no ops capacity.
+  - **[[trigger-dev]]** — cron / webhook primitive for `claude -p`-style autonomous agents (the [[llm-design-patterns#pattern-5-headless|headless pattern]])
+  - **[[supabase]]** — memory + auth backbone for [[open-brain]] / [[archon-os]]
+  - **[[mcp]]** — universal tool protocol; the wire that makes everything connect
+  - **[[a2a-protocol]]** — agent-to-agent protocol (cross-runtime multi-agent)
+  - **[[ag-ui]]** — agent-to-frontend protocol
+
+  **Shadow factory company gap**: Jesse remembers Nate B Jones referencing a specific company that mocks all their API endpoints as part of how they operate as a shadow factory. Not yet captured in the wiki — flagged in [[tasks]] as a follow-up. AIMock is *infrastructure for the pattern*, not necessarily *the company doing it*.
+
 ## See Also
 
 - [[fireship]] — author
@@ -87,4 +97,6 @@ The pattern to watch: whether other frontier labs (Anthropic, Google DeepMind, x
 - [[summary-fireship-saas-death-spiral|Source: How AI is Breaking the SaaS Business Model]]
 - [[summary-nate-b-jones-five-levels|5 Levels of AI Coding]] — the architectural consequence
 - [[summary-nate-herk-500-ai-workflows|500 AI Workflows]] — what gets sold into the vacated spend
+- [[aimock]] — enabling infrastructure for shadow-factory teams
+- [[summary-anmol-aimock-launch|Source: AIMock launch (CopilotKit)]]
 - [[summary-openai-industrial-policy-intelligence-age|Source: OpenAI Industrial Policy paper]] — the policy-response counterpart

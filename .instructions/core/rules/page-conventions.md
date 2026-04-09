@@ -64,6 +64,31 @@ Every page must link to at least one other wiki page.
 - **Filenames**: lowercase-kebab-case (`retrieval-augmented-generation.md`)
 - **Page titles**: short and clear ("Retrieval-Augmented Generation", not "A Summary of RAG Techniques")
 
+## Images and assets — local snapshots are mandatory
+
+**Every image referenced from a raw source must be downloaded locally on ingest and the raw markdown rewritten to use the local path.** Remote images break: blog posts get deleted, image CDNs rotate URLs, dev.to redirects expire. The wiki is a local snapshot of the moment a source mattered; that includes the images.
+
+### How to localize images on ingest
+
+1. **Create a per-source asset folder**: `raw/assets/<source-slug>/` where `<source-slug>` matches the slug used for the source-summary page (without the `summary-` prefix). Example: a source summary at `wiki/sources/summary-anmol-aimock-launch.md` gets assets in `raw/assets/anmol-aimock-launch/`.
+2. **Download every product image** referenced from the raw markdown. Skip third-party promo banners, sponsor logos, and unrelated newsletter footer ads — those are not part of the source's content.
+3. **Rewrite the raw markdown** to use relative paths from the raw file's location. For a file in `raw/`, that's `assets/<source-slug>/<filename>`. For a file in `raw/archive/` (post-archival), it's `../assets/<source-slug>/<filename>`. Strip the linked-image wrapper (`[![alt](url)](url)` → `![alt](relative-path)`) — the click-through to the dynamic CDN URL is no longer load-bearing once the image is local.
+4. **Use stable filenames**. Image CDN URLs are usually opaque hashes. Rename downloaded files to `<short-descriptive-slug>.<ext>` based on what the image shows (e.g., `architecture.png`, `comparison-table-1.png`, `drift-detection-flow.png`). This makes the file useful in Obsidian's file picker and survives re-downloading.
+5. **Embed images in the source summary** where they materially break down the content — architectural diagrams next to architecture sections, comparison tables next to comparison discussion, screenshots next to feature walkthroughs. Source summaries with images live in `wiki/sources/`; the relative path from there to `raw/assets/<source-slug>/<file>` is `../../raw/assets/<source-slug>/<file>`.
+6. **Asset folder is committed to git** alongside the archived source markdown. Both the raw clipping and its assets are part of the historical record.
+7. **Cleanup of orphan asset folders**: when a source-summary page is deleted, its `raw/assets/<source-slug>/` folder is also deleted. Lint should flag asset folders without a corresponding source.
+
+### Why not just keep the remote URLs?
+
+- **Link rot**: dev.to, Medium, Substack, and YouTube thumbnails all rotate URLs over time
+- **Privacy**: every Quartz page render that loads remote images sends a request to the third-party host
+- **Offline use**: the wiki should be browsable on a plane
+- **Deletion resilience**: if the original post is taken down, the wiki still has the visual context
+
+### What about videos?
+
+YouTube source summaries get thumbnail screenshots only when they're load-bearing for the breakdown (e.g., a benchmark dashboard, a UI screenshot referenced inline). Don't archive entire videos. The video itself is captured by the transcript clipping; the thumbnail and any inline screenshots the user already saved get the same local-asset treatment as article images.
+
 ## Frontmatter tag taxonomy
 
 - **Domain tags:** declared per-wiki in `CLAUDE.md`. Use a consistent, finite set.

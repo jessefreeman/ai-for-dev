@@ -30,6 +30,7 @@ For **each** source, before creating any pages:
 
 After approval, for each source:
 
+0. **Localize images first.** If the raw source contains remote images, download them all to `raw/assets/<source-slug>/` and rewrite the raw markdown to use local paths *before* writing the source summary. Skip third-party promo banners and unrelated newsletter footer ads. See [page-conventions § Images and assets](../rules/page-conventions.md#images-and-assets-local-snapshots-are-mandatory) for the full rules. The source-summary page should embed the localized images inline where they materially break down the content.
 1. **Source summary** — create `wiki/sources/summary-<slug>.md` (type `source-summary`). Dense: a 5,000-word article → ~500-word summary.
 2. **Entity & concept pages** — create or update pages in the correct subfolder (`wiki/people/`, `wiki/tools/`, `wiki/open-source/`, `wiki/concepts/`, `wiki/business/`). Add new info only — don't duplicate.
 3. **Person pages** must follow the [person page template](../templates/person-page.md). Always update "Content in This Wiki" with the new source.

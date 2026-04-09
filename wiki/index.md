@@ -164,6 +164,9 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[nocodb|NocoDB]] — Self-hostable no-code database; Airtable alternative.
 - [[grafana|Grafana]] — Open-source observability/analytics dashboards; PostHog/Amplitude alternative when paired with Postgres.
 - [[crawl4ai|Crawl4AI]] — Open-source web-to-markdown library optimized for LLM ingestion; 42K+ stars; the wiki's canonical knowledge-base build primitive.
+- [[aimock|AIMock]] — Open-source unified mock server for the entire agentic AI stack (LLM + MCP + A2A + vector + search/rerank/moderation); ships drift detection, record/replay, and chaos testing as first-class primitives. Enabling infrastructure for the shadow factory operating model.
+- [[ag-ui|AG-UI]] — Open protocol that connects AI agents to frontend applications; adopted by LangGraph, CrewAI, Mastra, Google ADK, and AWS Bedrock AgentCore.
+- [[a2a-protocol|A2A Protocol]] — Open agent-to-agent discovery and communication protocol; sibling to MCP (agent↔tools) and AG-UI (agent↔frontend).
 - [[task-master-ai|Task Master AI]] — Open-source task-management layer for AI coding agents; three-model split (main/research/fallback) routes each task to the cheapest capable model; CLI + MCP.
 - [[agent-zero|AgentZero]] — Self-organizing multi-agent framework with multi-tier LLM slots and MCP-first extensibility; Docker-installable.
 - [[agenticseek|AgenticSeek]] — Fully local Manus alternative with voice input and visual UI; built for local reasoning models.
@@ -322,6 +325,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-fireship-10-illegal-tools|10 open source tools that feel illegal]] — Fireship's Code Report on Kali Linux and 10 default pentest tools; captured defensively as the wiki's canonical audit kit for hardening self-hosted AI infrastructure.
 - [[summary-matthew-berman-i-was-hacked|I was hacked... (Matthew Berman)]] — Berman challenges Pliny the Liberator to break into his hardened OpenClaw; all 5 attempts quarantined. Anchors the new AI personal agent hardening concept page with five named attack classes and two defensive rules.
 - [[summary-simon-scrapes-claude-code-workflows|Every Claude Code Workflow Explained (Simon Scrapes)]] — Walkthrough of 5 named Claude Code workflow patterns (Sequential / Operator / Split & Merge / Agent Teams / Headless). Anchors the new [[llm-design-patterns]] concept page; documents `claude -w`, `claude -p`, the 10 concurrent sub-agent limit, and the Agent Teams research preview.
+- [[summary-anmol-aimock-launch|AIMock launch (CopilotKit / Anmol Baranwal)]] — First-party launch post for [[aimock]]; covers 5 mock surfaces, 3 load-bearing primitives (drift detection, record/replay, chaos), AG-UI production use, and the shadow factory infrastructure connection.
 
 ## Contribute or build your own
 

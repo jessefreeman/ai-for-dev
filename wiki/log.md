@@ -8,6 +8,36 @@ updated: 2026-04-09
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-09] ingest | AIMock + new image-localization rule (CopilotKit launch post)
+
+Single-source ingest. **Triggers a structural methodology change** — the user instructed *"download the images locally and fix the md file so we keep a local snapshot of it if the post goes down. This should be a rule, we want everything locally to not break images and include them as you breakdown the content where it makes sense."*
+
+- **Source**: [[summary-anmol-aimock-launch|AIMock: One Mock Server For Your Entire AI Stack]] (2026-04-08, dev.to / CopilotKit blog by [[anmol-baranwal|Anmol Baranwal]])
+
+### Methodology change (rule codification)
+
+- **New rule** in [page-conventions § Images and assets](../.instructions/core/rules/page-conventions.md#images-and-assets-local-snapshots-are-mandatory): every image referenced from a raw source must be downloaded to `raw/assets/<source-slug>/`, the raw markdown must be rewritten to use local relative paths, and source-summary pages must embed images inline where they materially break down the content. Includes naming conventions (descriptive slugs, not opaque hashes), the third-party-promo-skip rule, and the orphan asset cleanup rule for lint.
+- **Ingest prompt updated** in [`.instructions/core/prompts/ingest.md`](../.instructions/core/prompts/ingest.md) Phase 2: a new step 0 mandates image localization *before* writing the source summary on any source with remote images.
+- **Applied to this ingest**: 13 product images downloaded to `raw/assets/anmol-aimock-launch/` (~28 MB total), raw markdown rewritten to local paths, Notion MCP Challenge promo banner stripped per the third-party-ad-skip rule.
+
+### Pages
+
+- **Created** (6): `wiki/sources/summary-anmol-aimock-launch.md` (with 13 inline images), `wiki/open-source/aimock.md` (load-bearing — first wiki entry for "deterministic CI for the agentic stack"), `wiki/orgs/copilotkit.md` (vendor stub), `wiki/open-source/ag-ui.md` (open protocol stub — agent↔frontend), `wiki/open-source/a2a-protocol.md` (open protocol stub — agent↔agent), `wiki/people/anmol-baranwal.md` (author stub)
+- **Updated** (2): [[saas-death-spiral]] (new "enabling-infrastructure thread" subsection on the shadow-factory open question, listing AIMock, trigger.dev, Supabase, MCP, A2A, AG-UI as the infrastructure primitives that make 3-person agentic teams economically viable), [[tasks]] (new task to find the specific Nate B Jones video that referenced a shadow-factory company mocking all API endpoints)
+
+### Why this matters structurally
+
+This is the wiki's first ingest of a piece of **enabling infrastructure for the shadow-factory operating model**. The user has tracked shadow-factory as a personal business vision via [[saas-death-spiral]] open questions and the [[attractor]] StrongDM 3-person factory entry, but until now the wiki had no concrete tooling story for how a 3-person team survives CI flakiness across a 6-service agentic request path. AIMock fills that gap on the testing side; the analysis page now hosts a list of sibling primitives ([[trigger-dev]] for triggers, [[supabase]] for memory backend, [[mcp]] for tool wire, [[a2a-protocol]] for agent wire, [[ag-ui]] for frontend wire) that together form the wiki's first coherent "infrastructure stack a 3-person agentic team can rely on" reference.
+
+Three new open protocols enter the wiki via this single source: [[a2a-protocol|A2A]] (agent↔agent), [[ag-ui|AG-UI]] (agent↔frontend), joining [[mcp|MCP]] (agent↔tools) as the connective layer of the 2026 agentic stack. The wiki should track adoption of all three as separate threads going forward.
+
+### Notes
+
+- 110 sources total. 4 memories added.
+- **Image-localization rule applies to all future ingests** — the rule is now in `.instructions/core/rules/page-conventions.md` and the ingest prompt step 0.
+- Lint should grow an orphan-asset-folder check to catch `raw/assets/<slug>/` directories without a corresponding source-summary page. Tracked informally for the next lint pass.
+- The author / vendor relationship is disclosed: this is a **first-party CopilotKit launch post**. Comparison-table claims treated as marketing position; technical features treated as descriptive (verifiable from the public repo).
+
 ## [2026-04-09] ingest | LLM Design Patterns thread anchor (Simon Scrapes — Claude Code workflows)
 
 Single-source ingest. **Anchors a new long-running concept thread the user explicitly flagged as a core pillar to flesh out over time: [[llm-design-patterns]] — the canonical wiki library of named patterns for working with LLMs and agents.** First entries are the 5 Claude Code workflow patterns from Simon Scrapes; the page is structured for growth with explicit "how to extend this page" rules so future ingests slot in cleanly without fragmenting.
@@ -141,26 +171,6 @@ Third lint pass of the day, after the 5-source and 17-source batches. 7 fixes, a
 
 **Notes**: shorter than rounds 1 and 2. The 5-source and 17-source batches that landed after the morning lints had cleaner frontmatter discipline. Stub count unchanged (20, all tracked). No regressions detected in the 7 new entity pages from today's ingests.
 
-## [2026-04-08] ingest | 17-source batch (Cline updates, MCP maturity, local AI infra, async cloud agents)
-
-Fourth batch in two days. **17 sources in scope, 2 skipped (1 duplicate, 1 off-topic). 102 sources ingested total.**
-
-- **Cline cluster (3)**: [[summary-worldofai-cline-v313-memory-bank|v3.13 Memory Bank]], [[summary-worldofai-cline-v4-yolo-mode|v4.0 YOLO Mode + Chrome]], [[summary-worldofai-readdy-cline-fullstack|Readdy + Cline full-stack]]. Anchors new entity [[readdy]]. Cline release timeline now spans v3.13 → v4.0 → v3.18 with YOLO Mode + Chrome integration as the headline.
-- **Async cloud agents (2)**: [[summary-worldofai-augment-code-remote-agent|Augment Code Remote Agent]] (cloud, **10 parallel agents** per session — highest single-user concurrency in the cluster); [[summary-worldofai-github-copilot-coding-agent|GitHub Copilot Coding Agent]] (Pro Plus $39/mo, in-GitHub autonomous, MCP-extensible). Both update existing entity pages.
-- **MCP cluster (3)**: [[summary-cole-medin-mcp-server-template|Cole Medin's MCP build template]] (FastMCP + lifespan + Mem0 reference); [[summary-cole-medin-context7-mcp|Context7]] (anchors new entity [[context7]] — 1,856+ curated framework docs as MCP server); [[summary-worldofai-n8n-mcp-local-ai|n8n + MCP via community node]] (escape hatch for any MCP server inside n8n). [[mcp]] is now the wiki's deepest single-concept coverage.
-- **Cole Medin's other (2)**: [[summary-cole-medin-local-supabase-rag|Local Supabase 100% RAG]] (full self-hosted local-AI-packaged stack with PGVector); [[summary-cole-medin-crawl4ai-v2|Crawl4AI v2]] (anchors new entity [[crawl4ai]] — three crawl strategies, auto-detection). Cole Medin is now the wiki's most-cited single creator.
-- **Google free push (2)**: [[summary-worldofai-notebooklm-gemini25|NotebookLM + Gemini 2.5]] (anchors new entity [[notebooklm]] — third Google free-Gemini product alongside Jules + Stitch); [[summary-gemma4guide-overview|Gemma 4 Guide overview]] (companion to existing VRAM article).
-- **General agents (1)**: [[summary-worldofai-deepagent|DeepAgent (Abacus AI)]] (anchors new entity [[deepagent]] — Abacus's general-agent sibling to CodeLLM, bundled at $10/mo).
-- **Self-hosted infra (4)**: [[summary-wolfgangs-channel-local-ssl-homelab|Wolfgang local SSL]] + [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck Open WebUI domain+SSL]] (anchors new person [[networkchuck]]) — together the canonical "expose your local AI dashboard properly" recipe; [[summary-bijan-bowen-vllm-distributed-inference|Bijan Bowen multi-node vLLM]] (anchors new person [[bijan-bowen]] — Ray cluster, tensor + pipeline parallelism); [[summary-docker-model-runner-mac-playground|Docker official Mac Model Runner demo]] (first first-party Docker source, `model-runner.docker.internal` hostname).
-
-- **Skipped (2)**: Claude 4 + Cline duplicate (only YouTube URL playlist params differed from previously-archived source); Windows Docker container (off-topic — pure homelab/Windows tooling, no AI angle).
-
-- **Major thread — MCP maturity spike**: build-your-own template + curated production server + n8n consumption + every coding agent supports it. MCP is now the universal interface layer.
-- **Major thread — async cloud agents converging**: assign GitHub issue → sandbox → plan → PR. Jules, Augment Remote, Copilot Coding Agent all do this; differences are pricing, model, parallelism count.
-- **Major thread — self-hosted local AI stack has a full recipe**: Cole's local-AI-packaged + Wolfgang/NetworkChuck SSL + Docker Model Runner Mac + Bijan multi-node vLLM = full path from "try local AI" to "household uses it on phones."
-- **Major thread — RAG-skepticism vs RAG-defense in tension**: Context7 + Crawl4AI sit alongside CAG + RAG-vs-Wiki. Synthesis: RAG works when curated, raw web RAG remains brittle.
-
-- **5 memories** added.
 
 
 
