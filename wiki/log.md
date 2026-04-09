@@ -8,6 +8,17 @@ updated: 2026-04-09
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-09] lint: 2026-04-09 — post-7-ingest cleanup
+
+Lint pass after 7 ingests since last lint (Managed Agents → Conway → Fireship Gemma 4 → Defensive pair, plus the surface-expansion structural changes). 4 fixes, all approved.
+
+- **Size compliance**: hot.md 601 → ~330w (collapsed the verbose 5-attack-classes + 2-rules sections into a 2-line "defensive vocabulary" pointer to [[ai-personal-agent-hardening]]; trimmed Most Active Pages and Open Gaps); overview.md 1,765 → ~1,470w (compressed Anthropic Surface Expansion to a 1-paragraph pointer to the analysis page; tightened Defensive AI Security to 2 lines; compressed Agentic Coding Platform Proliferation to remove redundant inline detail). Both back under their caps.
+- **Dangling link tracked, not fixed**: `[[claude-agent-sdk]]` — new dangling link from yesterday's Managed Agents ingest, referenced by [[summary-nate-herk-managed-agents]] and [[trigger-dev]]. Per the lint convention, dangling links signal "this page should exist eventually" — added a tracking task to [[tasks]] to create the page when a primary source lands.
+- **Dangling link skipped**: `[[browser-use]]` in [[summary-stagehand-v2-browser-automation]] — intentional placeholder per the 04-08 round 3 lint, no change.
+- **Log rotation**: this entry pushes log.md to the 10-entry cap; oldest entry (12-source batch 2026-04-08) dropped. Older entries remain in `git log -- wiki/log.md`.
+
+**Notes**: cleanest lint result to date — 0 orphans, 0 frontmatter drift across 298 files, 12 active tasks (under the 15-cap), 10 log entries (at cap). Stub count unchanged (20; minimax-m1 borderline at 143w but stays on the list). The structural changes from yesterday (analysis pages, CLAUDE.md scope amendments, the new defensive cluster) integrated cleanly with no broken cross-references.
+
 ## [2026-04-09] ingest | Defensive security pair — Kali toolkit + Berman/Pliny hardening challenge
 
 Two-source ingest, both defensive-framing. **Adds the wiki's first concept page on AI personal agent hardening as a discipline**, plus Kali Linux as the canonical network/infra audit toolkit. User explicit framing: *"I don't want to promote or enable hacking but these are critical things I want to capture for testing and hardening infrastructure and AI apps."*
@@ -152,17 +163,6 @@ Third batch of the day; user split it from the larger queue. **5 sources, all in
 
 - **5 memories** added to `raw/memories/`.
 
-## [2026-04-08] lint: 2026-04-08 (round 2) — post-12-source-batch cleanup
-
-Second lint pass of the day, after the 12-source ingest batch. 3 actionable groups, all approved.
-
-- **Group A** — 4 dangling link fixes: `[[MCP]]` → `[[mcp|MCP]]` in [[google-stitch]]; `[[minimax-m27]]` → `[[minimax-m2-7]]` in [[minimax-m1]] and [[summary-worldofai-minimax-m1-agent]]; `[[openbrain-architecture]]` → `[[open-brain|OpenBrain]]` in [[summary-nate-herk-zep-memory]] (regression from morning lint missed this file); malformed `[[orgs/]]` placeholder in [[tasks]] converted to plain text.
-- **Group B-correct** — populated `sources:` frontmatter on 20 entity/concept/people pages from the 04-07 batch that were missing it. Each page now points to its actual anchoring raw filename(s) (most one source, several with two — cline, simon-hoiberg, tin-rovic, zubair-trabzada). Audit's count of 25 was an overcount; actual is 20.
-- **Group C** — trimmed [[overview]] from 1,517 → 1,362 words (was 17 over the 1,500 cap). Compressed the Open-Source Model Landscape paragraph; deferred the full open-weights catalog to the index Models section (added in the morning lint).
-
-**Group G carryover (false positives)**: the audit re-flagged `[[saas-death-spiral#policy-responses]]` and the `[[benchmarks/index]]` / `[[benchmarks/methodology]]` / `[[benchmarks/rigs/...]]` nested-path links. Both are valid in Obsidian and Quartz; same false positives as the morning lint. No action.
-
-**Notes**: The 04-07 missing-frontmatter cluster is the kind of thing the ingest prompt should catch at write time. Lesson for next batch: source-summary writes should auto-populate the entity-page `sources:` field (not just write the entity body and skip frontmatter). Tracking informally for now; will surface as a tasks.md item if it recurs.
 
 
 
