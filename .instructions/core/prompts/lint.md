@@ -20,7 +20,13 @@ Walk the wiki and produce a single report covering:
 8. **Frontmatter drift** — pages missing required frontmatter fields (type, sources, created, updated, tags) per [page-conventions](../rules/page-conventions.md).
 9. **Index/log drift** — entries in `wiki/index.md` that point to nonexistent files, or recent ingests in `wiki/log.md` whose pages aren't in the index.
 10. **Tag inconsistency** — same concept tagged different ways across pages.
-11. **Tasks.md validation** — walk the active section of `wiki/tasks.md` per [tasks-rules](../rules/tasks-rules.md) and flag:
+11. **Size compliance** — for each state file with a defined cap, flag if it exceeds the cap. Caps:
+    - `wiki/hot.md` — 500 words ([hot-cache-rules](../rules/hot-cache-rules.md))
+    - `wiki/overview.md` — 1,500 words ([overview-rules](../rules/overview-rules.md))
+    - `wiki/log.md` — 10 entries ([log-rules](../rules/log-rules.md))
+    - `wiki/tasks.md` — 15 active items ([tasks-rules](../rules/tasks-rules.md), also covered in step 12)
+    For each violator, propose a concrete trim (which sections/entries to drop). Never auto-trim — wait for Phase 3 approval.
+12. **Tasks.md validation** — walk the active section of `wiki/tasks.md` per [tasks-rules](../rules/tasks-rules.md) and flag:
     - **Resolved by page creation** — items referencing a wikilink that now resolves to an existing page
     - **Resolved by source ingest** — items referencing a `raw/archive/` filename that has been archived
     - **Threshold-met for entity-page creation** — items asking "should X get a page" where X now has ≥2 inbound source-summary references
