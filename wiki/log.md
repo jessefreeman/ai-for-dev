@@ -8,6 +8,34 @@ updated: 2026-04-09
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-09] ingest | Defensive security pair — Kali toolkit + Berman/Pliny hardening challenge
+
+Two-source ingest, both defensive-framing. **Adds the wiki's first concept page on AI personal agent hardening as a discipline**, plus Kali Linux as the canonical network/infra audit toolkit. User explicit framing: *"I don't want to promote or enable hacking but these are critical things I want to capture for testing and hardening infrastructure and AI apps."*
+
+- **Sources** (2):
+  1. [[summary-fireship-10-illegal-tools|Fireship — 10 open source tools that feel illegal]] (2026-02-05) — Code Report on Kali Linux + 10 default pentest tools (Nmap, Wireshark, Metasploit, Aircrack-ng, Hashcat, Skipfish, Foremost, sqlmap, hping3, SET).
+  2. [[summary-matthew-berman-i-was-hacked|Matthew Berman — I was hacked]] (2026-04-03) — Berman challenges Pliny the Liberator (Time 100 in AI; creator of Parseltongue) to break into his hardened OpenClaw in 5 attempts. **All 5 quarantined.** A 6th attempt with a hint also caught.
+
+- **Pages created** (6):
+  - `wiki/sources/summary-fireship-10-illegal-tools.md`
+  - `wiki/open-source/kali-linux.md` — anchor entity; **all 10 tools captured as inline entries in a single structured table** with explicit defensive use-case framing per tool. Avoids 10 separate stub pages per the "stubs grow from sources, not training data" rule.
+  - `wiki/sources/summary-matthew-berman-i-was-hacked.md`
+  - `wiki/people/pliny-the-liberator.md` — Time 100 in AI; the wiki's first AI red-teamer person page
+  - `wiki/open-source/parseltongue.md` — Pliny's open-source AI red-team toolkit (stub; defensive framing)
+  - `wiki/concepts/ai-personal-agent-hardening.md` — **load-bearing**. Captures the five named attack classes Pliny demonstrated (tokenade, siege/wallet-drain, format-override jailbreak, faked-system-command injection, free-association exfiltration) with the defensive response per class, plus the two rules (human-in-loop mandatory; best model as frontier scanner) and a 13-item canonical hardening checklist.
+
+- **Pages updated** (3): [[matthew-berman]], [[fireship]], [[openclaw]] (new "Hardening case study" section pointing to the new concept page — first concrete data point on the security concerns the existing OpenClaw page already flagged).
+
+- **Defensive framing applied throughout**: every tool on the Kali page has a "what to use it for on your own infrastructure" framing alongside the descriptive content. The hardening concept page names attacks so defenders know what to look for but does not host walkthroughs, payloads, or instructions. Pliny is treated as a primary threat-model source (same way the wiki treats Karpathy or Nate B Jones as primary architectural sources) — his coverage is editorial-record, not promotion.
+
+- **Why this matters structurally**: this ingest closes a long-standing gap. Before today, the wiki's defensive coverage was a single bullet on [[openclaw]] (*"security researchers have called OpenClaw a nightmare"*) and [[bjorn]] as a one-off network audit entry. The wiki now has **two anchor pages** covering both sides: [[kali-linux]] for network/infra hardening and [[ai-personal-agent-hardening]] for the AI-app-side hardening. The five attack classes get named with consistent vocabulary so future ingests can build on them. **Connects directly to [[anthropic-surface-expansion]] / [[behavioral-lock-in]]**: rule 1 (human-in-loop) is the load-bearing constraint on the Conway / Era 3 always-on agent vision — *"a truly autonomous always-on agent without a human-in-loop quarantine is not hardenable today."*
+
+- **CLAUDE.md scope amended**: existing scope only covered *"defensive network security for self-hosted AI rigs"* (network/infra side). Added an explicit clause for AI agent hardening / prompt injection defense so future sources on this thread land in scope unambiguously.
+
+- **Sponsors** (both not added per template rule): Hostinger (Fireship video), Greptile (Berman video).
+
+- **Notes**: 108 sources total. 6 memories added. **Lint reminder is overdue** — the log ingest count crossed the 5-multiple two ingests ago (Conway) and is now at 7 unprocessed since the last lint. Recommend running the lint prompt soon.
+
 ## [2026-04-09] ingest | Fireship — Gemma 4 as a licensing event
 
 Single-source ingest. **Refresh-grade for [[gemma-4]] and [[turboquant]]**, plus a useful clarification for the TurboQuant page.
@@ -136,37 +164,6 @@ Second lint pass of the day, after the 12-source ingest batch. 3 actionable grou
 
 **Notes**: The 04-07 missing-frontmatter cluster is the kind of thing the ingest prompt should catch at write time. Lesson for next batch: source-summary writes should auto-populate the entity-page `sources:` field (not just write the entity body and skip frontmatter). Tracking informally for now; will surface as a tasks.md item if it recurs.
 
-## [2026-04-08] ingest | 12-source batch (open-source agents + R1-0528 + n8n maturation)
-
-Second-largest batch in wiki history. User authorized full autonomous one-by-one ingest with issues-into-tasks. **12 sources in scope, 1 skipped (Bazzite gaming VM, off-topic). 80 sources ingested total.**
-
-- **Sources** (12):
-  1. **100x Cursor + Cline with Task Master AI** ([[worldofai|WorldofAI]]) — anchors new [[task-master-ai]] entity
-  2. **AgentZero** (WorldofAI) — anchors new [[agent-zero]] entity
-  3. **AgenticSeek** (WorldofAI) — anchors new [[agenticseek]] entity
-  4. **Claude 4 Opus + CodeLLM Composer Agent** (WorldofAI) — anchors new [[codellm]] entity
-  5. **Codename Goose** (WorldofAI) — anchors new [[codename-goose]] entity
-  6. **DeerFlow** (WorldofAI) — anchors new [[deerflow]] entity (first ByteDance OSS in wiki)
-  7. **Stagehand v2** (WorldofAI) — anchors new [[stagehand]] entity
-  8. **DeepSeek R1-0528** (WorldofAI) — refreshes [[deepseek]] with full R1-0528 spec
-  9. **n8n NEW Perplexity Node** ([[zubair-trabzada|Zubair Trabzada]]) — anchors new [[perplexity]] entity
-  10. **Faceless Shorts in n8n** ([[nate-herk|Nate Herk]]) — anchors new [[json-to-video]] entity
-  11. **YouTube Scraper with n8n** ([[tin-rovic|Tin Rovic]]) — adds free creator-research recipe
-  12. **Longform YouTube Videos Hourly** ([[jay-e-robonuggets|Jay E (RoboNuggets)]]) — new person; deeper [[json-to-video]] pipeline
-
-- **Skipped** (1): Bazzite gaming VM (Craft Computing) — homelab/gaming infrastructure with no AI angle. Off-topic per CLAUDE.md scope. Archived without processing.
-
-- **Major thread — DeepSeek R1-0528 as the default open-source reasoning backbone**: 4 of the new entities ([[codename-goose]], [[stagehand]], [[deerflow]], [[agenticseek]]) explicitly recommend R1-0528 (or distillations) as their default free model. This is the structural takeaway from the batch — the MIT license + free OpenRouter tier broke the chicken-and-egg problem.
-
-- **Major thread — n8n's content-pipeline maturation**: 4 sources moved n8n from "no-code agent runner" to "first-class content-generation backbone." [[perplexity]] node closes the real-time-search loop; [[json-to-video]] is the new video-assembly primitive used by both [[summary-nate-herk-faceless-shorts-n8n|Nate Herk's shorts pipeline]] and [[summary-jay-e-longform-youtube-videos|Jay E's longform pipeline]]; Tin Rovic adds the foundational creator-research scraper.
-
-- **Major thread — open-source generalist agent landscape filled out**: [[agent-zero]], [[agenticseek]], [[deerflow]], [[codename-goose]] now sit alongside [[manus]], [[openmanus]], [[flowith]], [[hermes-agent]] in the general-agent cluster. Differentiated by surface (UI/TUI/CLI), backing (Block/Browserbase/ByteDance/solo-maintainer), and topology (single agent / coordinator-planner / self-organizing).
-
-- **New abstraction layer — cost-routing as a feature**: [[task-master-ai]] introduces multi-model task routing (main/research/fallback) as a stand-alone tool, not as a hand-rolled config. This is a generalization of [[open-source-model-integration]] taken further by [[agent-zero]] (5 model slots).
-
-- **First ByteDance OSS contribution** in the wiki: [[deerflow]]. Pattern to watch.
-
-- **Single-commit batch decision**: same as the 2026-04-07 batch — one commit at the end with all sources. Per-source rollback unit is the source-summary page.
 
 
 

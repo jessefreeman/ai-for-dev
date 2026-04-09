@@ -9,7 +9,7 @@ tags: [ai, llm, knowledge-management, agent]
 
 This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
-**Current state:** 106 sources ingested; 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]); **Anthropic surface expansion** is now a load-bearing thread — Anthropic has three announced primary surfaces (Claude.ai, Claude Code, [[managed-agents|Managed Agents]]) plus a fourth in the leak ([[conway|Conway]]); the new [[behavioral-lock-in]] concept page anchors the structural framing of the persistent-agent-layer wars.
+**Current state:** 108 sources ingested; 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]); **Anthropic surface expansion** is now a load-bearing thread — Anthropic has three announced primary surfaces (Claude.ai, Claude Code, [[managed-agents|Managed Agents]]) plus a fourth in the leak ([[conway|Conway]]); the new [[behavioral-lock-in]] concept page anchors the structural framing of the persistent-agent-layer wars.
 
 ## Themes
 
@@ -45,6 +45,10 @@ A major thread that crystallized in early April 2026: **structured thinking befo
 [[saas-death-spiral|The SaaS death spiral]] is the market consequence: ~$1T in SaaS megacap valuation erased in early 2026 because per-seat pricing breaks when an AI agent does 10 people's work in 10 milliseconds. [[fireship|Fireship]]'s thesis. New tool [[github-agent-hq]] is the orchestration-platform play that absorbs the vacated spend.
 
 [[Frontier Operations]] and [[meta-prompting]] describe the persistent skills required to operate at the expanding AI/human boundary.
+
+### Defensive AI Security (new)
+
+The wiki's first coherent cluster on hardening self-hosted AI: [[ai-personal-agent-hardening]] (the AI-app-side concept page anchored by [[matthew-berman|Matthew Berman]]'s [[summary-matthew-berman-i-was-hacked|hardening challenge]] against [[pliny-the-liberator|Pliny the Liberator]]; five named attack classes — tokenade, siege, format-override, faked-system-command, free-association exfil — and two defensive rules: human-in-loop mandatory + best model as frontier scanner) plus [[kali-linux]] (the network/infra-side anchor with the canonical 10-tool audit kit) plus [[bjorn]] (Pi pentest device) plus [[parseltongue]] (Pliny's open-source AI red-team toolkit). **Connects directly to the surface-expansion thread**: hardening rule 1 (human-in-loop) is the load-bearing constraint on the Conway / Era 3 always-on agent vision — a truly autonomous always-on agent without a quarantine layer is not hardenable today.
 
 ### Self-Hosted AI Infrastructure
 The wiki now has a **complete self-hosted recipe stack**: [[summary-cole-medin-local-supabase-rag|Cole's local-AI-packaged]] (n8n + Ollama + Open WebUI + Supabase + PGVector, single docker-compose); [[summary-wolfgangs-channel-local-ssl-homelab|Wolfgang]] / [[summary-networkchuck-open-webui-domain-ssl|NetworkChuck]] SSL recipes (Nginx Proxy Manager + Let's Encrypt) for real-domain HTTPS; [[summary-bijan-bowen-vllm-distributed-inference|Bijan's multi-node vLLM]] for horizontal scaling. Full path from "try local AI" to "household uses it on phones."

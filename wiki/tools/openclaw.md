@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You NEED to try these open-source AI projects right now....md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "I Analyzed 512,000 Lines of Leaked Code. It Shows What's Coming for Your AI Tools..md"]
+sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You NEED to try these open-source AI projects right now....md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "I Analyzed 512,000 Lines of Leaked Code. It Shows What's Coming for Your AI Tools..md", "I was hacked....md"]
 created: 2026-04-06
 updated: 2026-04-09
 tags: [tool, agent, framework, open-source]
@@ -19,6 +19,17 @@ At its core, OpenClaw is an LLM with:
 - **Multi-platform messaging**: Telegram, Discord, Slack, WhatsApp, Signal, CLI
 
 As Nate B Jones simplified it: "Peter Steinberger put together an LLM with memory plus tools and made sure you could message it from a messaging platform. It's actually not that complicated."
+
+## Hardening case study — Berman vs Pliny
+
+The wiki's first concrete data point on hardening an OpenClaw against a real attacker. In [[summary-matthew-berman-i-was-hacked|I was hacked]], [[matthew-berman|Matthew Berman]] gives [[pliny-the-liberator|Pliny the Liberator]] (Time 100 AI red-teamer; creator of [[parseltongue|Parseltongue]]) 5 attempts to break into his hardened personal OpenClaw via a known scanned email address. **All five attempts quarantined.** A 6th attempt with a hint (model = Opus 4.6 thinking) was also caught.
+
+The five attack classes Pliny demonstrated are now the wiki's canonical reference for what attacks against personal AI agents look like, captured in detail on **[[ai-personal-agent-hardening]]**: tokenade, siege/wallet-drain, format-override jailbreak, faked-system-command injection, free-association exfiltration. The same page hosts the **two defensive rules** Berman extracted:
+
+1. **Human in the loop is mandatory** — every Pliny attack ended in "quarantined," not "blocked at the LLM." The quarantine is what saved the system, not the model's prompt-injection resistance alone.
+2. **Use the best possible model as your frontier scanner** — *"Unless you are putting your best possible model forward as the frontier scanner, it's going to collapse. You are going to get infiltrated."* Local / instant / small models will fall for low-hanging-fruit injection that frontier reasoners catch.
+
+Pliny's parting line — *"No AI system is permanently secure"* — is the framing the wiki adopts. Treat OpenClaw hardening as a process, not a state. See [[ai-personal-agent-hardening]] for the full hardening checklist.
 
 ## Security Concerns
 

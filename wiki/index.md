@@ -151,6 +151,8 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[thepopebot|ThePopeBot]] — Free open-source OpenClaw alternative; Docker + GitHub Actions + Ollama.
 - [[deepcode|DeepCode]] — Open-source multi-agent coding platform from HKUDS; Paper2Code, Text2Web, Text2Backend.
 - [[bjorn|Bjorn]] — Open-source Raspberry Pi network pentest tool; defensive audit for self-hosted AI infrastructure.
+- [[kali-linux|Kali Linux]] — Debian-based pentest distro; canonical defensive audit toolkit. Anchors the wiki's 10-tool catalog (Nmap, Wireshark, Metasploit, Aircrack-ng, Hashcat, Skipfish, Foremost, sqlmap, hping3, SET) for hardening self-hosted AI infrastructure.
+- [[parseltongue|Parseltongue]] — Pliny the Liberator's open-source AI red-team toolkit; the public reference for tokenades, jailbreak templates, and exfil patterns.
 - [[vllm|vLLM]] — High-throughput LLM inference engine; saturates Nvidia GPUs with concurrent requests.
 - [[cline|Cline]] — Open-source autonomous AI coding agent as a VS Code extension; bring-your-own-model.
 - [[opencode|OpenCode]] — SST's open-source terminal AI coder; 75+ providers, parallel agents, themable UI.
@@ -191,6 +193,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[context-augmented-generation|Context Augmented Generation (CAG)]] — Pre-load the entire dataset into the model context window; the third entry in the wiki's RAG-skepticism thread alongside the LLM Wiki Pattern and Cole Medin's "RAG is dead for code."
 - [[claude-code-subagents|Claude Code Sub-Agents]] — Anthropic's first-party multi-agent primitive: isolated context, tool whitelists, parallel execution.
 - [[behavioral-lock-in|Behavioral Lock-In]] — The new vendor lock-in surface introduced by always-on agents: the accumulated model of how you work, with no legal/regulatory/technical portability framework. Anchored by the leaked Conway analysis.
+- [[ai-personal-agent-hardening|AI Personal Agent Hardening]] — The defensive discipline for personal AI agents (OpenClaw, Managed Agents, Conway). Five named attack classes (tokenade, siege, format-override, faked-system-command, free-association exfil) and the two defensive rules (human-in-loop + frontier model as scanner). Anchored by the Berman/Pliny hardening challenge.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -315,6 +318,8 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-nate-herk-managed-agents|I Tested Claude's New Managed Agents]] — Nate Herk's hands-on of Anthropic's new hosted agent runtime; great onramp for Claude.ai users, missing crons for power users; three private-preview features to watch.
 - [[summary-nate-b-jones-conway-leak|I Analyzed 512,000 Lines of Leaked Code]] — Nate B Jones surfaces Conway from the Claude Code leak; frames Anthropic's 90-day platform play as a Microsoft speedrun and anchors the new behavioral-lock-in concept.
 - [[summary-fireship-gemma4-apache|Google just casually disrupted the open-source AI narrative]] — Fireship reframes Gemma 4 as a *licensing event* (first FAANG truly Apache 2.0); cleanest explanation of per-layer embeddings; clarifies TurboQuant is *not* the mechanism behind Gemma 4's small footprint.
+- [[summary-fireship-10-illegal-tools|10 open source tools that feel illegal]] — Fireship's Code Report on Kali Linux and 10 default pentest tools; captured defensively as the wiki's canonical audit kit for hardening self-hosted AI infrastructure.
+- [[summary-matthew-berman-i-was-hacked|I was hacked... (Matthew Berman)]] — Berman challenges Pliny the Liberator to break into his hardened OpenClaw; all 5 attempts quarantined. Anchors the new AI personal agent hardening concept page with five named attack classes and two defensive rules.
 
 ## Contribute or build your own
 

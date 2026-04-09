@@ -8,31 +8,37 @@ updated: 2026-04-09
 
 ## Current State
 
-**106 sources ingested.** Two future-facing Anthropic ingests landed in one day: [[managed-agents|Managed Agents]] (announced) and [[conway|Conway]] (leaked, unannounced). The "Anthropic surface expansion" thread is now **load-bearing** — Anthropic now has three primary user-facing surfaces (Claude.ai, Claude Code, Managed Agents) plus a fourth in the leak (Conway). The new [[behavioral-lock-in]] concept page anchors the structural framing.
+**108 sources ingested.** Today's defensive-security pair closes a long-standing wiki gap: the wiki now has anchor pages for **both sides** of self-hosted AI hardening — [[kali-linux]] for network/infra audit and [[ai-personal-agent-hardening]] for AI-app-side prompt-injection / agent defense. Connects directly into the [[anthropic-surface-expansion]] / [[behavioral-lock-in]] thread: rule 1 (human-in-loop) is the load-bearing constraint on Conway-class always-on agents.
 
 ## Most Active Pages
 
-- [[conway]] — new; leaked Anthropic always-on agent; future-facing watch
-- [[behavioral-lock-in]] — new concept; the wiki's first concept page primarily about a *future risk*
-- [[managed-agents]] — Conway sibling section added
-- [[anthropic]] — new "90-day platform play" section (7-step Microsoft speedrun); load-bearing thread
-- [[nate-b-jones]] — three new key ideas (behavioral lock-in, three eras of AI competition, four-step playbook)
-- [[openclaw]] — Steinberger→OpenAI→ban timeline as the playbook target
-- [[open-brain]] — reframed as the structural counter to behavioral lock-in
-- [[mcp]] — proprietary-layer-on-top risk section ([[conway]]'s `.cnw.zip` pattern)
+- [[ai-personal-agent-hardening]] — new concept; 5 named attack classes + 2 defensive rules + 13-item hardening checklist; the wiki's first AI-app security discipline page
+- [[kali-linux]] — new entity; 10 default pentest tools captured with explicit defensive use cases per tool
+- [[pliny-the-liberator]] — new person; Time 100 in AI; the wiki's first AI red-teamer person page
+- [[parseltongue]] — new tool stub; Pliny's open-source AI red-team toolkit
+- [[openclaw]] — new "Hardening case study" section (Berman vs Pliny: 5 attempts caught)
+- [[matthew-berman]] — fifth source; the hardening rules now in his key ideas
+- [[fireship]] — fourth source; Kali toolkit walkthrough
 
 ## Most Recently Added (2026-04-09)
 
-- [[summary-fireship-gemma4-apache|Fireship — Google casually disrupted the open-source AI narrative]] — Reframes [[gemma-4]] as a *licensing event* (first FAANG truly Apache 2.0). Cleanest wiki explanation of per-layer embeddings (PLE). **Important clarification**: TurboQuant is *not* what makes Gemma 4 small (PLE is). Sponsor: Code Rabbit, not added per template rule.
-- [[summary-nate-b-jones-conway-leak|Nate B Jones: I Analyzed 512,000 Lines of Leaked Code]] — Conway from the leak. Three credibility tiers: leak structure = primary-source-from-leak, 90-day timeline = verifiable corporate history, trajectory predictions = analyst editorial.
+- [[summary-fireship-10-illegal-tools|Fireship — 10 open source tools that feel illegal]] — Code Report on Kali Linux + 10 default pentest tools. Captured defensively as the canonical audit kit. Sponsor: Hostinger, not added.
+- [[summary-matthew-berman-i-was-hacked|Matthew Berman — I was hacked]] — Pliny the Liberator vs Berman's hardened OpenClaw, 5 attempts, all quarantined. Anchors the new hardening concept page. Sponsor: Greptile, not added.
 
-## What to Watch on Anthropic Surface Expansion
+## The five attack classes (now in the wiki vocabulary)
 
-- **Conway naming on a real Anthropic surface** — first appearance in docs/roadmap/launch confirms the leak
-- **`.cnw.zip` published as a real format** — the "build for the App Store" inflection for tool developers
-- **Automatic triggers shipping in Managed Agents** — would close the cron gap and make trigger.dev less load-bearing
-- **OpenAI's and Google's equivalent always-on agents** — Nate B Jones predicts both ship Conway-class systems within months; if so, Era 3 persistence wars become the wiki's central thread
-- **Any portability commitment from any frontier lab** — would be the rare counterexample to the four-step playbook
+For future ingests touching personal AI agents — these are the canonical names:
+
+1. **Tokenade** — token-flooding payload disguised as innocuous content
+2. **Siege attack** — denial-of-wallet via parallel tokenades
+3. **Format-override jailbreak** — wedge attack to control any small piece of output behavior
+4. **Faked-system-command injection** — payload formatted as internal system instruction (e.g., `<thinking>` tags)
+5. **Free-association exfiltration** — embed exfil request inside benign creative tasks tied to memory access
+
+## The two hardening rules
+
+1. **Human in the loop is mandatory** — quarantine is what catches attacks, not LLM resistance alone
+2. **Best possible model as frontier scanner** — local/instant models will fall for what frontier reasoners catch. *"The first model the input touches is the most important model in the system."*
 
 ## Open Gaps
 
@@ -42,12 +48,13 @@ updated: 2026-04-09
 - **CodeLLM pricing tier verification** — carryover
 - **Browserbase / Block / ByteDance org pages** — still tracked
 - **Trigger.dev** — still a stub
-- **Lint due** — log.md ingest count hit 5-multiple after this ingest
+- **Public attack-payload corpus** — open question on the new hardening concept page; is there a developer-facing equivalent of OWASP for AI agents yet?
+- **Lint overdue** — log ingest count is now at 7 since the last lint pass; recommend running soon
 
 ## Architectural Threads to Watch
 
-- **Anthropic surface expansion (load-bearing)**: Claude.ai + Claude Code + Managed Agents + Conway. Three announced surfaces and one leaked, each targeting a distinct user segment, all pushing toward owning the persistent agent layer. Tracked canonically in [[anthropic]] § "The 90-day platform play."
-- **Behavioral lock-in vs intelligence portability**: the new concept thread, anchored by [[behavioral-lock-in]] and [[conway]], structurally countered by [[open-brain|OpenBrain]]. The wiki's first concept page about a future risk rather than a working pattern.
-- **Three eras of AI competition** (Nate B Jones): Era 1 = models, Era 2 = interfaces (just climaxed with the OpenClaw ban), Era 3 = persistence and memory (the rest of 2026).
-- **The four-step playbook**: Copy → Subsidize → Block → Lock the format. Visible across OpenClaw → Claude Code channels → Managed Agents → Conway. Watch for OpenAI/Google running the same play.
-- **MCP as universal interface layer** — unchanged but now with a flagged risk: proprietary distribution layers (Google Play Services pattern) on top of the open standard.
+- **Defensive AI security as a discipline** (new): [[ai-personal-agent-hardening]] + [[kali-linux]] + [[bjorn]] + [[parseltongue]] now form the wiki's first coherent defensive cluster. Future ingests on prompt injection, agent quarantine architectures, AI red-team tooling, or self-hosted AI exposure all land here.
+- **Anthropic surface expansion (load-bearing)**: [[anthropic-surface-expansion]] is the canonical thread page. Hardening rule 1 is the load-bearing constraint on Conway-class always-on agents — *"a truly autonomous always-on agent without a human-in-loop quarantine is not hardenable today."*
+- **Behavioral lock-in vs intelligence portability**: same surface as hardening, different concern. The accumulated context Conway-class agents build is exactly what an attacker tries to exfiltrate.
+- **Three eras of AI competition** (Nate B Jones): models → interfaces → persistence/memory.
+- **MCP as universal interface layer** with the proprietary-layer-on-top risk flagged for `.cnw.zip`.
