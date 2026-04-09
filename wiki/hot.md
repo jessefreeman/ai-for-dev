@@ -8,28 +8,30 @@ updated: 2026-04-09
 
 ## Current State
 
-**104 sources ingested.** Newest: Nate Herk's hands-on of Anthropic [[managed-agents|Managed Agents]] — Anthropic's third primary surface (alongside Claude.ai + Claude Code). User flagged it as **future-facing — track as it evolves**. The wiki entity is structured around the *roadmap* (Outcomes, Multi-Agent Orchestration, Persistent Memory in private preview) rather than the launch state, because the launch state is missing the load-bearing trigger primitive.
+**105 sources ingested.** Two future-facing Anthropic ingests landed in one day: [[managed-agents|Managed Agents]] (announced) and [[conway|Conway]] (leaked, unannounced). The "Anthropic surface expansion" thread is now **load-bearing** — Anthropic now has three primary user-facing surfaces (Claude.ai, Claude Code, Managed Agents) plus a fourth in the leak (Conway). The new [[behavioral-lock-in]] concept page anchors the structural framing.
 
 ## Most Active Pages
 
-- [[managed-agents]] — new; Anthropic's hosted agent runtime; future-facing watch
-- [[anthropic]] — Managed Agents added to product list
-- [[claude-code]] — new "Managed Agents CLI Integration" section + credential warning
-- [[openclaw]] — comparison: still wins on heartbeats + Telegram
-- [[trigger-dev]] — new stub; the trigger layer Managed Agents lacks
-- [[mcp]] — auth + tool integration layer for every Managed Agent
-- [[slash-loop|/loop]] + [[open-brain|OpenBrain]] — the local primitives Managed Agents conspicuously fails to replicate at launch
+- [[conway]] — new; leaked Anthropic always-on agent; future-facing watch
+- [[behavioral-lock-in]] — new concept; the wiki's first concept page primarily about a *future risk*
+- [[managed-agents]] — Conway sibling section added
+- [[anthropic]] — new "90-day platform play" section (7-step Microsoft speedrun); load-bearing thread
+- [[nate-b-jones]] — three new key ideas (behavioral lock-in, three eras of AI competition, four-step playbook)
+- [[openclaw]] — Steinberger→OpenAI→ban timeline as the playbook target
+- [[open-brain]] — reframed as the structural counter to behavioral lock-in
+- [[mcp]] — proprietary-layer-on-top risk section ([[conway]]'s `.cnw.zip` pattern)
 
 ## Most Recently Added (single-source ingest 2026-04-09)
 
-- [[summary-nate-herk-managed-agents|Nate Herk: I Tested Claude's New Managed Agents]] — pricing ($0.08/hr per active session + tokens), tool surface (same as Claude Code), Notion launch partner, CLI integration via `anthropic` CLI from inside Claude Code. Nate's verdict: *"Disappointing for power users — I'd rather use Claude Code + trigger.dev."*
+- [[summary-nate-b-jones-conway-leak|Nate B Jones: I Analyzed 512,000 Lines of Leaked Code]] — Conway from the leak. Three credibility tiers: leak structure = primary-source-from-leak, 90-day timeline = verifiable corporate history, trajectory predictions = analyst editorial.
 
-## What to Watch on Managed Agents
+## What to Watch on Anthropic Surface Expansion
 
-- **Outcomes** ships → first hosted self-eval primitive from a frontier lab (parallels [[autoresearch-evals|AutoResearch]] / Hermes GEPA)
-- **Multi-Agent Orchestration** ships → directly competes with [[claude-code-subagents]] and [[paperclip|Paperclip]]
-- **Persistent Memory** ships → replicates [[open-brain|OpenBrain]] hosted
-- **Native cron / webhook / event-trigger** lands → would close the [[trigger-dev|trigger.dev]] gap
+- **Conway naming on a real Anthropic surface** — first appearance in docs/roadmap/launch confirms the leak
+- **`.cnw.zip` published as a real format** — the "build for the App Store" inflection for tool developers
+- **Automatic triggers shipping in Managed Agents** — would close the cron gap and make trigger.dev less load-bearing
+- **OpenAI's and Google's equivalent always-on agents** — Nate B Jones predicts both ship Conway-class systems within months; if so, Era 3 persistence wars become the wiki's central thread
+- **Any portability commitment from any frontier lab** — would be the rare counterexample to the four-step playbook
 
 ## Open Gaps
 
@@ -38,10 +40,13 @@ updated: 2026-04-09
 - **JSON-to-Video pricing model** — carryover
 - **CodeLLM pricing tier verification** — carryover
 - **Browserbase / Block / ByteDance org pages** — still tracked
-- **Trigger.dev** — currently a stub; will grow as more sources reference it
+- **Trigger.dev** — still a stub
+- **Lint due** — log.md ingest count hit 5-multiple after this ingest
 
 ## Architectural Threads to Watch
 
-- **Anthropic surface expansion**: Claude.ai (chat) + Claude Code (CLI) + Managed Agents (hosted runtime) — three primary surfaces, each targeting a distinct user. Managed Agents is the onramp tier; whether it evolves into a real builder tier depends on the three private-preview features + a native trigger primitive.
-- **The trigger gap is the structural story**: every cloud agent runtime (Managed Agents, Augment Remote, Copilot Coding Agent) is reactive — they only run when called. [[slash-loop|/loop]], [[openclaw|OpenClaw]] heartbeats, [[trigger-dev|trigger.dev]], n8n schedules are all filling the same gap. Whoever ships native triggers first wins the always-on assistant pattern.
-- **MCP as universal interface layer** — unchanged; reinforced by Managed Agents using MCP for every external integration.
+- **Anthropic surface expansion (load-bearing)**: Claude.ai + Claude Code + Managed Agents + Conway. Three announced surfaces and one leaked, each targeting a distinct user segment, all pushing toward owning the persistent agent layer. Tracked canonically in [[anthropic]] § "The 90-day platform play."
+- **Behavioral lock-in vs intelligence portability**: the new concept thread, anchored by [[behavioral-lock-in]] and [[conway]], structurally countered by [[open-brain|OpenBrain]]. The wiki's first concept page about a future risk rather than a working pattern.
+- **Three eras of AI competition** (Nate B Jones): Era 1 = models, Era 2 = interfaces (just climaxed with the OpenClaw ban), Era 3 = persistence and memory (the rest of 2026).
+- **The four-step playbook**: Copy → Subsidize → Block → Lock the format. Visible across OpenClaw → Claude Code channels → Managed Agents → Conway. Watch for OpenAI/Google running the same play.
+- **MCP as universal interface layer** — unchanged but now with a flagged risk: proprietary distribution layers (Google Play Services pattern) on top of the open standard.

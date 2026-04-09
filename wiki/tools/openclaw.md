@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You NEED to try these open-source AI projects right now....md", "I Tested Claude's New Managed Agents... What You Need To Know.md"]
+sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You NEED to try these open-source AI projects right now....md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "I Analyzed 512,000 Lines of Leaked Code. It Shows What's Coming for Your AI Tools..md"]
 created: 2026-04-06
 updated: 2026-04-09
 tags: [tool, agent, framework, open-source]
@@ -38,6 +38,18 @@ Peter Steinberger himself has been clear that OpenClaw is not recommended for no
 - **MCP tools** → tool access
 
 The key advantage: scheduling belongs to Anthropic (native), memory is in a database you control, and there's no orchestration layer with prompt injection vulnerabilities.
+
+## The Steinberger → OpenAI → Anthropic ban timeline
+
+[[nate-b-jones|Nate B Jones]] reads the recent OpenClaw events as a coordinated playbook by Anthropic, exposed by the [[claude-code|Claude Code]] leak that also surfaced [[conway|Conway]]:
+
+1. **Feb 14, 2026** — Peter Steinberger (OpenClaw creator) joins OpenAI; Sam Altman publicly tags him to *"drive the next generation of personal agents"*
+2. **Within weeks** — OpenClaw moves to a foundation with OpenAI backing
+3. **January 2026 (retroactively visible)** — Anthropic quietly blocks third-party tools from using subscription login credentials, framed as tightening safeguards
+4. **February 2026** — Anthropic ToS revision explicitly prohibits the practice
+5. **April 2026** — enforcement against OpenClaw first; pay-per-use rates 10–50× subscription cover; rolling out to "everything else in coming weeks"
+
+The pattern (Nate's framing): **Copy → Subsidize → Block → Lock the format.** Anthropic builds the first-party version (Claude Code channels → [[managed-agents|Managed Agents]] → [[conway|Conway]]), makes it subsidized inside the subscription, blocks third-party access, then ships the proprietary extension format (`.cnw.zip`) that ensures the ecosystem builds for Anthropic's surface, not the open one. OpenClaw is the **canonical playbook target** — see [[behavioral-lock-in]] for the structural framing.
 
 ## Still wins vs Managed Agents (April 2026)
 

@@ -125,6 +125,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[context7|Context7]] — MCP server hosting curated, version-correct docs for 1,856+ frameworks; the wiki's strongest "RAG works when curated" data point.
 - [[journey-kits|Journey / Journey Kits]] — Matthew Berman's "npm for agent workflows"; the wiki's first dedicated agent-workflow packaging format with host-adaptation, learnings-flow-back, and credentials-by-pointer.
 - [[managed-agents|Managed Agents]] — Anthropic's hosted agent runtime (April 2026); cloud sandbox at $0.08/hr per active session; future-facing — three private-preview features (Outcomes, Multi-Agent Orchestration, Persistent Memory) define whether it becomes a real Claude Code competitor.
+- [[conway|Conway]] — Anthropic's **leaked, unannounced** always-on agent project surfaced from the Claude Code leak; sidebar UI, proprietary `.cnw.zip` extension format on top of MCP, automatic webhook triggers, browser control. The structural sibling to Managed Agents and the capstone of Anthropic's 90-day platform play.
 - [[trigger-dev|trigger.dev]] — Cloud platform for hosting code on schedules, webhooks, and other triggers; the canonical external trigger primitive that closes the gap left by Managed Agents.
 
 ### Open-Source Projects
@@ -189,6 +190,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[context-engineering|Context Engineering]] — Karpathy/Lütke's successor to prompt engineering; curating *all* the information an LLM needs to plausibly solve a task.
 - [[context-augmented-generation|Context Augmented Generation (CAG)]] — Pre-load the entire dataset into the model context window; the third entry in the wiki's RAG-skepticism thread alongside the LLM Wiki Pattern and Cole Medin's "RAG is dead for code."
 - [[claude-code-subagents|Claude Code Sub-Agents]] — Anthropic's first-party multi-agent primitive: isolated context, tool whitelists, parallel execution.
+- [[behavioral-lock-in|Behavioral Lock-In]] — The new vendor lock-in surface introduced by always-on agents: the accumulated model of how you work, with no legal/regulatory/technical portability framework. Anchored by the leaked Conway analysis.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -309,6 +311,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-docker-model-runner-mac-playground|Docker Model Runner Mac demo]] — official Docker walkthrough for Apple Silicon.
 - [[summary-matthew-berman-journey-kits|I Built Something — Journey Kits launch]] — Matthew Berman launches Journey, the wiki's first agent-workflow packaging format.
 - [[summary-nate-herk-managed-agents|I Tested Claude's New Managed Agents]] — Nate Herk's hands-on of Anthropic's new hosted agent runtime; great onramp for Claude.ai users, missing crons for power users; three private-preview features to watch.
+- [[summary-nate-b-jones-conway-leak|I Analyzed 512,000 Lines of Leaked Code]] — Nate B Jones surfaces Conway from the Claude Code leak; frames Anthropic's 90-day platform play as a Microsoft speedrun and anchors the new behavioral-lock-in concept.
 
 ## Contribute or build your own
 

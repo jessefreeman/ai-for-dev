@@ -1,6 +1,6 @@
 ---
 type: entity
-sources: ["I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Every AI Model Explained in 20 Minutes.md", "Model Context Protocol (MCP), clearly explained (why it matters).md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md"]
+sources: ["I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Every AI Model Explained in 20 Minutes.md", "Model Context Protocol (MCP), clearly explained (why it matters).md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "I Analyzed 512,000 Lines of Leaked Code. It Shows What's Coming for Your AI Tools..md"]
 created: 2026-04-07
 updated: 2026-04-09
 tags: [org, ai, llm, frontier-lab]
@@ -22,12 +22,27 @@ US frontier-AI lab founded by former [[openai|OpenAI]] research staff. Builds th
   - The **architecture leak** (early 2026) — Anthropic accidentally exposed Claude Code's source map via a build configuration error. [[nate-b-jones|Nate B Jones]] analyzed it and identified the [[Agentic Harness Primitives]]: 12 production-grade infrastructure patterns, 207-entry command registry, 184-entry tool registry, six built-in agent types, 18-module Bash security architecture, sessions persisted as JSON.
   - **[[/loop]]** (March 2026) — native `/loop` command for proactive agent scheduling. The "heartbeat" primitive that enables [[OpenBrain]]-style accumulated-value loops.
   - **[[claude-code|Ultra Plan]]** (April 2026) — `/ultra-plan` offloads planning to a cloud-hosted Opus 4.6 instance with 3 parallel exploration agents + 1 critique agent. ~10–15 min total vs ~45 min for local plan mode in [[nate-herk|Nate Herk]]'s side-by-side benchmark.
+  - **[[conway|Conway]]** (leaked, unannounced, April 2026) — internal always-on agent project surfaced from the Claude Code leak by [[nate-b-jones|Nate B Jones]]. Standalone sidebar inside the Claude interface; proprietary `.cnw.zip` extension format on top of MCP; automatic webhook triggers; browser control; persistent memory across sessions. Not on Anthropic's roadmap page. **Anchors [[behavioral-lock-in]]** as a wiki concept. Tracked as the capstone of Anthropic's 90-day platform play.
   - **[[managed-agents|Managed Agents]]** (April 2026) — hosted agent runtime at `console.anthropic.com`. Anthropic's third primary surface alongside Claude.ai and Claude Code. $0.08/hr per active session + token costs; environments are free. Tracked as **future-facing** — three private-preview features (Outcomes, Multi-Agent Orchestration, Persistent Memory) define whether it becomes a real Claude Code competitor. Conspicuously lacks a native cron/webhook trigger. Notion is a launch partner.
   - **Skills ecosystem** — [[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]], [[skills-sh|skills.sh]] directory. The wiki tracks more Claude Code skills than for any other agent harness.
 
 ## Standards Anthropic created
 
 - **[[mcp|Model Context Protocol]]** — per [[ras-mic|Ras Mic]]'s explainer on the [[greg-isenberg|Greg Isenberg]] podcast, MCP is **Anthropic's "3D chess" play**: by putting MCP servers in the hands of service providers (not LLM vendors), Anthropic externalized the integration cost across the entire ecosystem. Every new MCP server makes every compliant client more capable, for free. As of 2026 it's the de-facto standard across [[claude-code|Claude Code]], [[cursor|Cursor]], [[augment-agent|Augment Agent]], [[archon-os|Archon OS]], and countless others.
+
+## The 90-day platform play (Q1 2026)
+
+[[nate-b-jones|Nate B Jones]]'s framing in his Conway-leak analysis: Anthropic's last quarter is not five separate product decisions but **a single platform strategy executed across multiple surfaces** — speedrunning Microsoft's 15-year DOS→Windows→Office→Active Directory arc in 15 months.
+
+1. **Claude Code channels** — Discord/Telegram messaging surface; neutralized [[openclaw|OpenClaw]] inside Anthropic's own product
+2. **Claude Co-work** — non-technical-user surface for the 95% of enterprise employees who aren't engineers; adoption reportedly outpaced Claude Code at the same stage
+3. **Claude Marketplace** — enterprise procurement layer (GitLab, Harvey, Snowflake purchasable through Anthropic; counts against existing spend commitments)
+4. **$100M Claude Partner Network** + Accenture training 30,000 professionals; Deloitte/Cognizant/Infosys as anchor SIs — *"complete system integrator lockin at enterprise scale"*
+5. **Third-party tool ban** — January quiet block of [[openclaw|OpenClaw]], February ToS revision, recent enforcement; pay-per-use rates 10–50× the subscription cover; rolling out to "everything else in coming weeks"
+6. **[[managed-agents|Managed Agents]]** (April) — first hosted agent runtime; the onramp tier
+7. **[[conway|Conway]]** (leaked, unannounced) — the always-on capstone; the Active Directory equivalent
+
+The wiki tracks this as **the Anthropic surface expansion thread**. As of April 2026 it is one of the wiki's load-bearing structural threads — Anthropic now has three primary user-facing surfaces (Claude.ai, Claude Code, Managed Agents) plus a fourth in the leak (Conway), each targeting a distinct user. See [[behavioral-lock-in]] for the concept this thread anchors.
 
 ## In the wiki's larger threads
 

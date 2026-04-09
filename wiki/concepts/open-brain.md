@@ -1,14 +1,18 @@
 ---
 type: concept
-sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build).md"]
+sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build).md", "I Analyzed 512,000 Lines of Leaked Code. It Shows What's Coming for Your AI Tools..md"]
 created: 2026-04-06
-updated: 2026-04-06
+updated: 2026-04-09
 tags: [concept, agent-memory, mcp, sql, supabase, vector-embeddings]
 ---
 
 # OpenBrain
 
 A personal knowledge database architecture by [[Nate B Jones]]: Postgres + PGVector + Supabase + MCP. Gives every AI tool you use persistent, searchable memory across sessions. Thousands of community members have built their own versions. Total cost: $0.10–0.30/month.
+
+## The structural counter to behavioral lock-in
+
+In Nate B Jones's [[summary-nate-b-jones-conway-leak|Conway leak analysis]], OpenBrain is reframed as **the user-owned counter-pattern to [[behavioral-lock-in|behavioral lock-in]]**. Conway-class always-on agents (Conway, eventually Managed Agents with Persistent Memory shipped, plus equivalent moves expected from OpenAI and Google) accumulate the model of how you work *inside the vendor's infrastructure* — there's no export format and no migration consultant. OpenBrain inverts that: the memory lives in a Postgres database the user controls, exposed through the open MCP protocol; any model can access it and switching providers loses the agent's runtime intelligence but preserves the accumulated context. Nate is also working on a behavioral-audit skill on top of OpenBrain that explicitly tries to make the "model of how you work" portable across providers. Convenience will still win for most users — but the structural distinction matters at the edge (regulated industries, power users, employees who change jobs without leaving their working context behind).
 
 ## The Problem It Solves
 

@@ -9,12 +9,16 @@ tags: [ai, llm, knowledge-management, agent]
 
 This knowledge base tracks research on AI tools, techniques, and workflows for developers — production agent architecture, the planning-first coding-with-AI thread, the local-AI throughput stack, the agent proactivity/memory layer, business models in the post-SaaS world, and personal hardware capacity for local inference.
 
-**Current state:** 104 sources ingested; 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]); Anthropic now has a third primary surface ([[managed-agents|Managed Agents]]) tracked as future-facing.
+**Current state:** 105 sources ingested; 16-rig personal hardware benchmark section; 6 organization pages; index Models category; RAG-skepticism thread (3 entries) sits alongside a curated-RAG defense ([[context7]] + [[crawl4ai]]); **Anthropic surface expansion** is now a load-bearing thread — Anthropic has three announced primary surfaces (Claude.ai, Claude Code, [[managed-agents|Managed Agents]]) plus a fourth in the leak ([[conway|Conway]]); the new [[behavioral-lock-in]] concept page anchors the structural framing of the persistent-agent-layer wars.
 
 ## Themes
 
 ### Knowledge Compounding
 The central insight from [[Andrej Karpathy]]'s [[LLM Wiki Pattern]]: a wiki incrementally maintained by an LLM accumulates value chat-based or RAG-based approaches don't. The wiki's **RAG-skepticism thread** has three entries: [[RAG vs Wiki]], [[summary-cole-medin-rag-for-code|"RAG is dead for code"]], and [[context-augmented-generation|CAG]]. Sitting alongside is a **RAG-defense pair**: [[context7|Context7]] (curated MCP docs) and [[crawl4ai|Crawl4AI]] (upstream builder). Synthesis: **RAG works when curated**; raw web RAG remains brittle. Macro: RAG was a bridge for context-window scarcity; cheap long context shrinks its role to "datasets larger than any feasible window."
+
+### Anthropic Surface Expansion (load-bearing)
+
+[[nate-b-jones|Nate B Jones]]'s analysis of the [[claude-code|Claude Code]] leak surfaced [[conway|Conway]] — Anthropic's unannounced internal always-on agent. Conway sits alongside [[managed-agents|Managed Agents]] (announced April 2026) as the two visible prongs of Anthropic's bet on owning the persistent agent layer. The full 90-day platform play (Claude Code channels → Co-work → Marketplace → $100M partner network → third-party tool ban → Managed Agents → Conway) is tracked canonically in [[anthropic]] § "The 90-day platform play" — Nate's framing is that Anthropic is speedrunning Microsoft's 15-year DOS→Windows→Office→Active Directory arc in 15 months. This thread anchors the new [[behavioral-lock-in]] concept page (the new vendor lock-in surface introduced by always-on agents — the accumulated model of how you work, with no portability framework yet) and reframes [[open-brain|OpenBrain]] as the structural counter-pattern. Watch for: Conway naming on a real Anthropic surface, `.cnw.zip` as a published format, equivalent always-on launches from OpenAI/Google.
 
 ### Production Agent Architecture
 [[Nate B Jones]]'s body of work defines the architectural layer: the [[Agentic Harness Primitives]] (12 primitives from the Claude Code leak), the three-Lego-brick model (memory + proactivity + tools), the [[OpenClaw]]-via-primitives reduction. The [[Claude Code]] skill ecosystem ([[GStack]], [[Superpowers]], [[Agency]], [[Impeccable]], [[Open Viking]], [[Hermes Agent]]) each encodes different methodologies.

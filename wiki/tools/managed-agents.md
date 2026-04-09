@@ -12,6 +12,10 @@ tags: [tool, anthropic, agent, cloud, future-facing]
 
 > **Future-facing — track as it evolves.** The flagged user interest in this page is the **roadmap**, not the launch state. Three private-preview features (Outcomes, Multi-Agent Orchestration, Persistent Memory) define whether this becomes a real Claude Code competitor or stays as the "easy mode" onramp. Updated as new sources land.
 
+## Conway sibling — the unannounced always-on version
+
+[[nate-b-jones|Nate B Jones]]'s analysis of the Claude Code leak surfaced **[[conway|Conway]]**, an unannounced internal Anthropic project that is structurally the always-on sibling to Managed Agents: standalone sidebar UI, proprietary `.cnw.zip` extension format, automatic webhook triggers (the primitive Managed Agents lacks at launch), browser control, persistent memory across sessions. The two are not redundant — Managed Agents is the *announced* onramp tier; Conway is the *unannounced* always-on capstone. Together they're the visible shape of Anthropic's bet on owning the [[behavioral-lock-in|persistent agent layer]]. See [[conway]] for the leak details and the [[behavioral-lock-in]] concept page for the structural framing.
+
 ## What it is
 
 A web console at `console.anthropic.com` → **Managed Agents** with two creation paths: pick a template, or chat-build from a goal description. Each agent has:

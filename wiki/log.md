@@ -8,6 +8,20 @@ updated: 2026-04-09
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-09] ingest | Conway leak + behavioral lock-in (Nate B Jones)
+
+Single-source ingest. **Anchors a new entity ([[conway]]) and a new concept page ([[behavioral-lock-in]]).** User flagged this as **speculative** but specifically interested in Nate B Jones's conceptual framing — the wiki captures the conceptual framework as primary contribution, treats Conway's structural facts as primary-source-from-leak, and flags the trajectory predictions as one analyst's editorial.
+
+- **Source**: [[summary-nate-b-jones-conway-leak|I Analyzed 512,000 Lines of Leaked Code]] (2026-04-08)
+- **Pages created** (3): `wiki/sources/summary-nate-b-jones-conway-leak.md`, `wiki/tools/conway.md` (leaked, future-facing — structured like [[managed-agents]] with explicit "what to watch" section), `wiki/concepts/behavioral-lock-in.md`
+- **Pages updated** (5): [[anthropic]] (Conway added; new "90-day platform play" section makes the surface-expansion thread explicit and load-bearing), [[nate-b-jones]] (3 new key ideas: behavioral lock-in, three eras, four-step playbook), [[managed-agents]] (Conway sibling section), [[openclaw]] (Steinberger→OpenAI→ban timeline as the playbook target), [[open-brain]] (reframed as the structural counter to behavioral lock-in), [[mcp]] (proprietary-layer-on-top risk section).
+
+**Why this matters structurally**: this is the **second Anthropic future-facing-watch entity in two days** (Managed Agents 2026-04-09 morning, Conway 2026-04-09 afternoon). The "Anthropic surface expansion" thread is now load-bearing — Anthropic has three announced primary surfaces (Claude.ai, Claude Code, Managed Agents) plus a fourth in the leak (Conway), each targeting a distinct user. The [[anthropic]] page now hosts the canonical 7-step 90-day platform play. The [[behavioral-lock-in]] concept is the wiki's first concept page that's primarily *about a future risk* rather than describing a working pattern — it exists so the wiki has a place to file the next data point as Conway-class agents from OpenAI and Google land.
+
+**Speculative-source handling**: per user flag, the wiki distinguishes three credibility tiers in the source summary and the Conway entity page: (1) factual structure of Conway from the leak = primary-source-from-leak, (2) the 90-day timeline = verifiable corporate history, (3) trajectory predictions ("OpenAI/Google will ship versions in months", "behavioral lock-in is the rest-of-2026 story") = Nate's editorial. All three are filed; only (1) and (2) are treated as ground truth.
+
+**Notes**: 105 sources total. 6 memories added. **Lint reminder due** — log.md ingest count is now at 5-multiple per Phase 6 of ingest prompt.
+
 ## [2026-04-09] ingest | Anthropic Managed Agents launch (Nate Herk hands-on)
 
 Single-source ingest. **Anchors a new entity, [[managed-agents]] — Anthropic's third primary surface alongside Claude.ai and Claude Code.** User flagged this with explicit interest as a *future-facing Anthropic feature to watch as it evolves and is announced* — the page is structured around the **roadmap** (Outcomes, Multi-Agent Orchestration, Persistent Memory) rather than the launch state.
@@ -155,37 +169,5 @@ First lint pass after the 17-source batch. 10 actionable items from a 12-categor
 
 **Notes**: clean lint overall — no duplicates, no off-topic, no frontmatter drift across 224 pages, no size violations. The 17-source batch was integrated cleanly. The Models reorg is the only structural change; everything else was either a link fix or a date bump.
 
-## [2026-04-07] ingest | 17-source batch (mixed channels)
-
-Largest single ingest in the wiki to date. The user authorized batch processing with autonomous judgment. **17 sources, 68 source ingested total.**
-
-- **Sources** (17):
-  1. **5 (Real) AI Agent Business Ideas** ([[simon-hoiberg|Simon Høiberg]]) — five monetization paths
-  2. **Claude Code Sub-Agents** ([[worldofai|WorldofAI]]) — Anthropic ships first-class sub-agents in [[claude-code]]
-  3. **Cline v3.18** (WorldofAI) — anchors new [[cline]] entity
-  4. **Context Engineering** (WorldofAI) — anchors new [[context-engineering]] concept
-  5. **Flowith Neo** (WorldofAI) — anchors new [[flowith]] entity
-  6. **DeepSeek R1 VS Code Extension** ([[beyond-fireship|Beyond Fireship]]) — first builder-tutorial in the wiki
-  7. **Kimi Coder** (WorldofAI) — anchors new [[kimi-k2]] + [[kimi-coder]] entities
-  8. **MiniMax Agent (M1)** (WorldofAI) — anchors new [[minimax-m1]] entity
-  9. **Docker MCP Toolkit** (WorldofAI) — major [[mcp]] ecosystem development
-  10. **OpenCode** (WorldofAI) — anchors new [[opencode]] entity
-  11. **OpenManus** (WorldofAI) — anchors new [[openmanus]] + [[manus]] entities
-  12. **Self-Hostable Cloud Alternatives** (Simon Høiberg) — n8n + DeepSeek + Hetzner GPU thread
-  13. **Retell AI Voice Agent** ([[zubair-trabzada|Zubair Trabzada]]) — anchors new [[retell-ai]] entity
-  14. **YouTube → SEO Blog (n8n)** ([[tin-rovic|Tin Rovic]]) — content-repurposing pipeline
-  15. **n8n + Zep memory** ([[nate-herk|Nate Herk]]) — anchors new [[zep]] entity; cost-trap fix
-  16. **VSCode + Cline + Continue** ([[nathan-sebhastian|Nathan Sebhastian]]) — second source on [[cline]]
-  17. **Void IDE Update** (WorldofAI) — anchors new [[void-ide]] entity
-
-- **Major thread filled — n8n** (long-standing wiki gap): **5 sources in this batch reference n8n** as their backbone. Created [[n8n]] as a first-class entity that ties together [[ai-automation-workflows]], [[zep]], [[retell-ai]], [[openrouter]], and the Simon Høiberg / Tin Rovic / Nate Herk / Zubair Trabzada source threads.
-
-- **New thread — open-source IDE proliferation**: [[cline]], [[opencode]], [[void-ide]], [[continue]] now together form the wiki's free-cursor-alternative cluster, complementing the commercial [[cursor]] / [[claude-code]] / [[augment-agent]] thread. Documented two install paths: extension-stack (Cline + Continue) and full-app (Void).
-
-- **New thread — general AI agent landscape**: [[manus]], [[openmanus]], [[flowith]] now sit alongside [[devin]] and [[deepcode]] as the "general autonomous agent" cluster.
-
-- **New concept — context engineering**: [[context-engineering]] joins [[bmad-method]], [[meta-prompting]], [[four-prompting-disciplines]], [[ai-coding-workflow]] as a planning-discipline page. Anchors the PRP (Product Requirement Prompt) pattern.
-
-- **Single-commit batch decision**: protocol says one commit per source, but the volume + user authorization made one batch commit the right call for this run. Each source still has its own summary page = the rollback unit.
 
 

@@ -2,7 +2,7 @@
 type: concept
 sources: ["Model Context Protocol (MCP), clearly explained (why it matters).md", "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template).md", "This MCP Server for AI Coding Assistants Will 10x Your Productivity.md", "n8n + MCP Build and Automate Anything! Run ALL Your AI Locally - LLMs, AI Agents! (Opensource).md"]
 created: 2026-04-07
-updated: 2026-04-08
+updated: 2026-04-09
 tags: [concept, ai, llm, agents, protocol, anthropic, integration]
 ---
 
@@ -77,6 +77,10 @@ The wiki's canonical reference is [[summary-cole-medin-mcp-server-template|Cole 
 - **MCP App Store** — central place to browse and one-click-deploy MCP servers (Ras Mic claims he registered the domain but hasn't built it; "please steal this idea")
 - **Standards observation play for non-technical builders** — wait for the standard to finalize, then ship integrations on the rails of the winning protocol
 
+## The proprietary-layer-on-top risk
+
+[[nate-b-jones|Nate B Jones]]'s [[summary-nate-b-jones-conway-leak|Conway leak analysis]] flags a structural pattern to watch: **a vendor can publish an open standard and then build the valuable tooling in a proprietary layer on top of it.** [[conway|Conway]]'s leaked `.cnw.zip` extension format does exactly this — extensions sit on top of MCP but only work inside Conway. The wiki tracks this as the **Google Play Services / iOS App Store pattern applied to AI agents**: open kernel + proprietary distribution layer. The MCP credibility win is real (OpenAI, Google, Linux Foundation all adopted it), but the commercial lock-in is shifting to the proprietary stores built on top. See [[behavioral-lock-in]] for the broader concept and [[conway]] for the specific case.
+
 ## See Also
 
 - [[summary-greg-isenberg-mcp-explained]] — the Ras Mic explainer
@@ -85,4 +89,6 @@ The wiki's canonical reference is [[summary-cole-medin-mcp-server-template|Cole 
 - [[OpenBrain]] — MCP-based agent memory pattern
 - [[ai-coding-workflow]] — Cole Medin's three-MCP-server pattern
 - [[openclaw]] — what MCP + /loop + OpenBrain replaces
+- [[conway]] — leaked Anthropic always-on agent with the `.cnw.zip` proprietary-layer-on-top pattern
+- [[behavioral-lock-in]] — the broader lock-in concept the proprietary-layer pattern serves
 - [[greg-isenberg]], [[ras-mic]] — source authors
