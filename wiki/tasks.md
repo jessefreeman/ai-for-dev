@@ -1,8 +1,7 @@
 ---
 type: tasks
 created: 2026-04-06
-updated: 2026-04-08
-# 12-source ingest batch 2026-04-08 added 5 new items
+updated: 2026-04-09
 ---
 
 # Tasks
@@ -12,7 +11,7 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
 ## Open
 
 - [ ] **Dissect Journey Kits to extract borrowable concepts** — You flagged Matthew Berman's [[journey-kits|Journey]] as something you want to try out and take apart for the packaging format and any concepts you might use or borrow. The [[journey-kits]] entity page has an initial "What's borrowable" section with 7 candidates ([[ai-coding-workflow|kit.md as workflow spec]], "failures overcome" as first-class field, credentials-by-pointer, learnings-flow-back, host-adaptation-as-kit-responsibility, agent-prompted upgrades, publisher reputation), but those are derived from the launch video — not from hands-on use of an actual installed kit.
-      **What I need from you:** Want to install Journey ([`npm install -g journey-kits`](https://journeykits.ai)) on a throwaway environment, install one of Berman's published kits (the knowledge-base RAG kit is the most-detailed in the source), then walk through with me to identify which concepts actually apply to the wiki's [[page-conventions]] / ingest methodology vs which are agent-runtime-specific?
+      **What I need from you:** Want to install Journey ([`npm install -g journey-kits`](https://journeykits.ai)) on a throwaway environment, install one of Berman's published kits (the knowledge-base RAG kit is the most-detailed in the source), then walk through with me to identify which concepts actually apply to the wiki's [page-conventions](../.instructions/core/rules/page-conventions.md) / ingest methodology vs which are agent-runtime-specific?
       *Referenced from:* [[journey-kits]], [[summary-matthew-berman-journey-kits]]
 
 - [ ] **Shadow factory thread — primary source needed?** — The "shadow factory agency model" is your business vision (referenced inline in [[saas-death-spiral]] open questions). Currently it's a one-line note backed only by the StrongDM 3-person team mention in [[summary-nate-b-jones-five-levels|5 Levels of AI Coding]]. To turn this into a real concept page or analysis we need at least one source that goes deeper on dark-factory economics or L4/L5 operating patterns.
@@ -47,10 +46,10 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
       **What I need from you:** If you know who runs this channel, name them and I'll create the person page. Otherwise we leave the source-summary stand-alone.
       *Referenced from:* [[summary-dify-knowledge-base-rag-configuration]]
 
-- [ ] **20 stub pages need richer coverage as new sources land** — Lint 2026-04-08 flagged the following pages as <150 words. They are intentionally thin "nascent entity" pages that the wiki rule says should grow with new sources, not by fabricating content from training data. This task is a tracking pointer so we remember to enrich them when relevant sources come in.
+- [ ] **19 stub pages need richer coverage as new sources land** — Lint 2026-04-09 confirmed the following pages as <150 words. They are intentionally thin "nascent entity" pages that the wiki rule says should grow with new sources, not by fabricating content from training data. This task is a tracking pointer so we remember to enrich them when relevant sources come in.
       **People (need a second source each):** [[tin-rovic]], [[zubair-trabzada]], [[nathan-sebhastian]], [[beyond-fireship]], [[simon-hoiberg]], [[dave-swift]].
       **Self-hostable alternatives (will grow with deployment-experience sources):** [[nocodb]], [[strapi]], [[grafana]], [[plane]], [[docmost]].
-      **Tools/models with one source so far:** [[anything-llm]], [[manus]], [[kimi-coder]], [[minimax-m1]], [[obsidian]], [[obsidian-web-clipper]], [[mirrorish]], [[agency]].
+      **Tools/models with one source so far:** [[anything-llm]], [[manus]], [[flowith]], [[obsidian]], [[obsidian-web-clipper]], [[mirrorish]], [[agency]].
       **Demo/legacy:** [[ai-2027]] (demo ingest source, intentionally minimal).
       **What I need from you:** Nothing right now. This is a tracking item — when an ingest naturally touches one of these entities, treat the pass as an opportunity to expand the page beyond stub status. Delete this task when most have grown out of stub state.
-      *Referenced from:* lint 2026-04-08
+      *Referenced from:* lint 2026-04-09
