@@ -8,6 +8,60 @@ updated: 2026-04-09
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-09] ingest | Dubibubii Claude skills 33-plugin walkthrough — anchors agent-plugins index
+
+Single-source ingest. **Anchors a new long-running concept thread the user explicitly asked for: [[agent-plugins]] — the canonical wiki index for anything you have to install to extend an AI coding agent.** User framing: *"I'd like to start keeping a record of plugins and flag ones I should use in tasks to catch my attention when people [mention] them."* After a design back-and-forth, settled on a single index page (rows + platforms + status) where every plugin gets its own dedicated downstream page so the user can flesh them out with hands-on notes when they actually run them.
+
+- **Source**: [[summary-dubibubii-claude-skills-2026|The Only Claude Skills You Need in 2026]] (2026-04-08, [[dubibubii|Dubibubii]] / YouTube)
+
+### Pages created (30)
+
+- `wiki/sources/summary-dubibubii-claude-skills-2026.md`
+- `wiki/people/dubibubii.md` (author stub)
+- `wiki/concepts/agent-plugins.md` — **load-bearing thread anchor**, structured for growth (rows + platforms + status flags + extension rules in the page footer). Sibling concept page to [[llm-design-patterns]] (design patterns are *how* to think; plugins are *what* to install).
+- 26 new plugin pages in `wiki/open-source/`: [[frontend-design-skill]], [[autoresearch]], [[playwright-mcp]], [[tavily]], [[codebase-memory-mcp]], [[pdf-processing-skill]], [[xlsx-skill]], [[pptx-skill]], [[doc-co-authoring-skill]], [[canvas-design-skill]], [[web-artifacts-builder-skill]], [[marketing-skills-pack]], [[claude-seo-skill]], [[brand-guidelines-skill]], [[deep-research-skill]], [[gpt-researcher]], [[obsidian-skills-pack]], [[context-optimization-skill]], [[promptfoo]], [[skill-creator-skill]], [[firecrawl]], [[langflow]], [[claude-squad]], [[container-use]], [[ghost-os]], [[awesome-claude-skills]]
+
+### Pages updated (10)
+
+- [[superpowers]] — 100K+ stars confirmed; Anthropic marketplace acceptance Jan 2026; "deletes code written before tests" detail; second source added
+- [[context7]] — adoption signal (50K stars / 240K weekly NPM); "#1 MCP server" framing; second source added
+- [[gstack]] — TechCrunch coverage + viral "god mode" CTO quote; star-count discrepancy noted (40K per Dubibubii vs 50K per Berman — kept both)
+- [[task-master-ai]] — 36 MCP tools detail; second source added
+- [[n8n]], [[remotion]] — adoption-signal cross-links to plugins index
+- [[andrej-karpathy]] — autoresearch 50K-stars-in-a-week growth signal added to AutoResearch key idea
+- [[ai-personal-agent-hardening]] — promptfoo + container-use added as defensive plugin entries (load-bearing: this is the first install-grade tooling for the human-in-loop quarantine rule)
+- [[multi-agent-orchestration]] — claude-squad added as user-facing parallel-session primitive
+- [[mcp]] / [[claude-code]] — cross-links to the new plugins index
+
+### Why this matters structurally
+
+This is the **first concept page in the wiki built around an installable category instead of a pattern, product, or thread**. Until today, the wiki tracked plugins one source at a time as they appeared in primary sources ([[context7]] from Cole Medin, [[superpowers]] from Berman, [[gstack]] from Berman, [[task-master-ai]] from WorldofAI, [[n8n]] across 12 sources, [[remotion]] from Nate B Jones). The Dubibubii source surfaces ~26 new entries at once, which is dense enough to deserve a dedicated index. The user explicitly requested:
+
+1. A single index page (not a per-plugin proliferation)
+2. Each plugin still gets its own dedicated downstream page (so hands-on notes have somewhere to land)
+3. A status flag system (`tracked` / `try` / `tried` / `recommended` / `skip`)
+4. A single tasks.md nudge ("review agent plugins") rather than per-plugin tasks
+5. A broad name (`agent-plugins`, not `claude-skills`) so the index ages well across vendors
+
+The page was built with extensibility-first conventions: explicit "how to extend this page" footer covering new entries, status changes, deprecation, and the per-plugin promotion rule (every new plugin gets a page even when thin — pages exist as containers for hands-on notes, not as derived-from-source content).
+
+### Defensive cluster (load-bearing connection)
+
+Two of the 26 new plugins land directly in the [[ai-personal-agent-hardening]] cluster:
+- [[promptfoo]] = the wiki's first **prompt-level red-teaming tool** for testing your own LLM apps before they ship
+- [[container-use]] = the wiki's first **install-grade implementation of the human-in-loop quarantine rule** (Dagger / Solomon Hykes / Docker creator pedigree)
+
+Together they span the full defensive stack: promptfoo tests the prompts before the agent ships, container-use contains the agent after it ships. Both are referenced from the hardening concept page now, and the hardening discipline gains its first concrete tooling answers.
+
+### Notes
+
+- 111 sources total. **Lint reminder: log entry count crosses 5-multiple from this ingest.** Recommend running the lint prompt next session.
+- Source has no inline images (one YouTube embed link only); image-localization step was a no-op.
+- 8 task-shortlist plugins (frontend-design, superpowers, promptfoo, Context7, container-use, claude-squad, autoresearch, skill-creator) replaced by **a single "review agent plugins" task** per user request. Status flags on the index drive the nudge.
+- One known content discrepancy: GStack star count is 50K (Berman, March 2026) vs 40K (Dubibubii, April 2026). Kept both as-recorded; could be measurement noise or a star-count correction.
+- Two skills-sh pages exist (`wiki/open-source/skills-sh.md` + `wiki/tools/skills-sh.md`) — pre-existing duplicate from before this ingest. Flagged for the next lint pass.
+- One verification flag carried into [[obsidian-skills-pack]]: source attributes the pack to "Kepano, the creator of Obsidian." Treat as source claim, verify against repo before treating as Obsidian-official.
+
 ## [2026-04-09] ingest | AIMock + new image-localization rule (CopilotKit launch post)
 
 Single-source ingest. **Triggers a structural methodology change** — the user instructed *"download the images locally and fix the md file so we keep a local snapshot of it if the post goes down. This should be a rule, we want everything locally to not break images and include them as you breakdown the content where it makes sense."*
@@ -162,14 +216,6 @@ The entity page is structured around the user's stated interest — a "What's bo
 
 **Notes**: Single-source coverage. Treat capability claims as marketing position until a third-party walkthrough lands. No formal spec for the kit format published at recording — long-term kit portability depends on whether Berman publishes one.
 
-## [2026-04-08] lint: 2026-04-08 (round 3) — post-17-source-batch cleanup
-
-Third lint pass of the day, after the 5-source and 17-source batches. 7 fixes, all approved.
-
-- **Group A — dangling wikilink fixes (2 of 3)**: `[[pgvector]]` → plain text in [[summary-cole-medin-local-supabase-rag]] (pgvector is a Postgres extension, not an entity); `[[page-conventions]]` → relative markdown link in [[summary-dify-knowledge-base-rag-configuration]] (it's a rules file, not a wiki page). **Skipped A1**: `[[browser-use]]` in stagehand summary stays as an intentional dangling placeholder.
-- **Group B — `sources:` frontmatter on 04-07 batch stragglers (5)**: round 2 fixed 20 of 25 such pages but missed [[flowith]], [[manus]], [[n8n]], [[retell-ai]], [[zep]]. All five now point to their actual anchoring source filenames. n8n's sources field is the largest in the wiki (12 sources) — reflects its role as the convergence point for the AI-automation thread.
-
-**Notes**: shorter than rounds 1 and 2. The 5-source and 17-source batches that landed after the morning lints had cleaner frontmatter discipline. Stub count unchanged (20, all tracked). No regressions detected in the 7 new entity pages from today's ingests.
 
 
 

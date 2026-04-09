@@ -48,6 +48,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[nathan-sebhastian|Nathan Sebhastian]] — Code with Nathan; practical dev environment + AI coding tutorials.
 - [[jay-e-robonuggets|Jay E (RoboNuggets)]] — AI automation educator; deep n8n + generative-media long-form video pipelines.
 - [[ai-jason|AI Jason]] — LLM application architecture educator; CAG advocate; runs the AI Builder Cloud community.
+- [[dubibubii|Dubibubii]] — vibe-coding YouTube creator; Claude skill / plugin curation reels.
 - [[bijan-bowen|Bijan Bowen]] — Engineer / YouTuber on local LLM infrastructure; multi-node vLLM via Ray cluster.
 - [[networkchuck|NetworkChuck]] — Networking + self-hosting YouTuber; Cloudflare + Nginx Proxy Manager + Let's Encrypt deployment patterns.
 
@@ -167,6 +168,32 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[codename-goose|Codename Goose]] — Block's open-source AI software engineer; TUI + desktop app; free Claude Code alternative with corporate backing.
 - [[deerflow|DeerFlow]] — ByteDance's open-source LangGraph-based deep-research framework; Coordinator → Planner → Research Team → Reporter topology; first ByteDance entry.
 - [[stagehand|Stagehand]] — Browserbase's open-source AI browser-automation framework on Playwright; v2 ships self-healing + MCP-native integration.
+- [[frontend-design-skill|Frontend Design Skill]] — Most-installed Claude skill (277K); bans generic fonts and forces design direction.
+- [[autoresearch|autoresearch (Karpathy)]] — Karpathy's overnight research-loop repo; 50K stars in one week.
+- [[playwright-mcp|Playwright MCP]] — Microsoft's browser-control MCP server.
+- [[tavily|Tavily]] — AI-native search MCP (search/extract/crawl/map).
+- [[codebase-memory-mcp|Codebase Memory MCP]] — Persistent codebase knowledge graph across agent sessions.
+- [[pdf-processing-skill|PDF Processing Skill]] — Anthropic-official: read/extract/fill/merge/split PDFs.
+- [[xlsx-skill|XLSX Skill]] — Anthropic-official: Excel from natural language.
+- [[pptx-skill|PPTX Skill]] — Anthropic-official: PowerPoint from natural language.
+- [[doc-co-authoring-skill|Doc Co-Authoring Skill]] — Real-time collaborative writing with Claude.
+- [[canvas-design-skill|Canvas Design Skill]] — Social graphics/posters/covers from text.
+- [[web-artifacts-builder-skill|Web Artifacts Builder Skill]] — Calculators, dashboards, widgets from natural language.
+- [[marketing-skills-pack|Marketing Skills Pack (Corey Haines)]] — 20+ sub-skills; CRO/SEO/copy/email/growth; 16K stars.
+- [[claude-seo-skill|Claude SEO Skill]] — Site audit, schema validation, 12 sub-skills.
+- [[brand-guidelines-skill|Brand Guidelines Skill]] — Encodes brand voice/colors/tone; auto-applies to outputs.
+- [[deep-research-skill|Deep Research Skill]] — 8-phase research pipeline with credibility scoring.
+- [[gpt-researcher|GPT Researcher]] — Model-agnostic OSS autonomous research agent.
+- [[obsidian-skills-pack|Obsidian Skills Pack]] — Vault-native AI: auto-tag, auto-link, Claude reads your notes; 16K stars.
+- [[context-optimization-skill|Context Optimization Skill]] — KV-cache tricks + token-spend cuts for agent workflows.
+- [[promptfoo|Promptfoo]] — Prompt red-teaming, injection testing, vulnerability scanning; VC-backed; 18K stars.
+- [[skill-creator-skill|Skill Creator Skill]] — Anthropic-official meta-skill: generates Claude skills from plain English.
+- [[firecrawl|Firecrawl]] — URL → LLM-ready markdown; 97K stars; YC-backed; passed Scrapy in stars.
+- [[langflow|LangFlow]] — DataStax-backed visual drag-and-drop AI pipeline builder; 146K stars.
+- [[claude-squad|Claude Squad]] — Run multiple coding agents in parallel terminal sessions; 65K stars.
+- [[container-use|Container-Use]] — Dagger's per-agent containerized sandbox; the install-grade answer to the human-in-loop quarantine rule.
+- [[ghost-os|Ghost OS]] — macOS agent that drives every native app via screen + click + drag.
+- [[awesome-claude-skills|Awesome Claude Skills]] — Travis Vian's curated index of Claude skills; 95K stars.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -192,6 +219,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[behavioral-lock-in|Behavioral Lock-In]] — The new vendor lock-in surface introduced by always-on agents: the accumulated model of how you work, with no legal/regulatory/technical portability framework. Anchored by the leaked Conway analysis.
 - [[ai-personal-agent-hardening|AI Personal Agent Hardening]] — The defensive discipline for personal AI agents (OpenClaw, Managed Agents, Conway). Five named attack classes (tokenade, siege, format-override, faked-system-command, free-association exfil) and the two defensive rules (human-in-loop + frontier model as scanner). Anchored by the Berman/Pliny hardening challenge.
 - [[llm-design-patterns|LLM Design Patterns]] — Canonical wiki library of named patterns for working with LLMs and agents. First entries: the 5 Claude Code workflow patterns (Sequential / Operator / Split & Merge / Agent Teams / Headless). Built to grow as future ingests cover patterns from other tools. Sibling framework page to [[agentic-harness-primitives]] and [[four-prompting-disciplines]].
+- [[agent-plugins|Agent Plugins]] — Canonical wiki index of *anything you have to install to extend an AI coding agent* (Claude skills, MCP servers, skill packs, sandboxing, parallel runners). Rows include type / platforms / status; status flags `try` flow into [[tasks]]. Per-plugin pages exist as containers for hands-on notes when the user actually runs them.
 
 ### Analyses
 - [[rag-vs-wiki|RAG vs Wiki]] — Comparison of semantic search RAG vs the LLM Wiki approach.
@@ -320,6 +348,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-matthew-berman-i-was-hacked|I was hacked... (Matthew Berman)]] — Berman challenges Pliny the Liberator to break into his hardened OpenClaw; all 5 attempts quarantined. Anchors the new AI personal agent hardening concept page with five named attack classes and two defensive rules.
 - [[summary-simon-scrapes-claude-code-workflows|Every Claude Code Workflow Explained (Simon Scrapes)]] — Walkthrough of 5 named Claude Code workflow patterns (Sequential / Operator / Split & Merge / Agent Teams / Headless). Anchors the new [[llm-design-patterns]] concept page; documents `claude -w`, `claude -p`, the 10 concurrent sub-agent limit, and the Agent Teams research preview.
 - [[summary-anmol-aimock-launch|AIMock launch (CopilotKit / Anmol Baranwal)]] — First-party launch post for [[aimock]]; covers 5 mock surfaces, 3 load-bearing primitives (drift detection, record/replay, chaos), AG-UI production use, and the shadow factory infrastructure connection.
+- [[summary-dubibubii-claude-skills-2026|The Only Claude Skills You Need in 2026 (Dubibubii)]] — 33-plugin walkthrough that anchored the new [[agent-plugins]] index; introduces 26 new plugin entries spanning skills, MCPs, and OSS repos.
 
 ## Contribute or build your own
 

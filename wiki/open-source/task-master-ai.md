@@ -1,9 +1,9 @@
 ---
 type: entity
-sources: ["100x Cursor + Cline's Code Quality, Cost, & Speed With Task Master AI! (Opensource).md"]
+sources: ["100x Cursor + Cline's Code Quality, Cost, & Speed With Task Master AI! (Opensource).md", "The Only Claude Skills You Need in 2026.md"]
 created: 2026-04-08
-updated: 2026-04-08
-tags: [open-source, ai-coding, task-management, mcp, multi-model, planning]
+updated: 2026-04-09
+tags: [open-source, ai-coding, task-management, mcp, multi-model, planning, plugin]
 ---
 
 # Task Master AI
@@ -29,12 +29,18 @@ The thesis: most tokens an AI coding agent burns are *not* hard reasoning — th
 
 Task Master is a clean instance of the [[agentic-harness-primitives|Agentic Harness Primitives]] **tool pool assembly** + **token budget tracking** + **agent type system** patterns rolled into a single user-facing tool. It's also one of the cleanest practical implementations of the planning-first thesis ([[ai-coding-workflow|Cole Medin's pattern]], [[bmad-method|BMAD]], [[meta-prompting|meta-prompting]]) — the PRD-to-task-list step is exactly the planning artifact those frameworks ask for.
 
+## Adoption signal
+
+Per the [[summary-dubibubii-claude-skills-2026|Dubibubii 2026-04 ingest]]: Task Master exposes **36 MCP tools** and works in *"Cursor, Claude code, and so forth, basically anything."* Source framing: *"think of it as hiring a project manager who never sleeps, never gets confused, never asks you to repeat yourself."* Confirmed free.
+
 ## Sources
 
 - [[summary-task-master-ai-cursor-cline|100x Cursor + Cline's Code Quality, Cost, & Speed With Task Master AI]] — [[worldofai|WorldofAI]] walkthrough; full-stack task app demo
+- [[summary-dubibubii-claude-skills-2026|The Only Claude Skills You Need in 2026]] (2026-04-08) — adoption signal, 36-MCP-tools detail
 
 ## See Also
 
+- [[agent-plugins]] — index of installable plugins
 - [[ai-coding-workflow|AI Coding Workflow]] — the planning-first thesis Task Master operationalizes
 - [[bmad-method|BMAD Method]] — heavier multi-persona variant
 - [[multi-agent-orchestration|Multi-Agent Orchestration]] — broader pattern

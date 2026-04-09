@@ -1,9 +1,9 @@
 ---
 type: entity
-sources: ["This MCP Server for AI Coding Assistants Will 10x Your Productivity.md"]
+sources: ["This MCP Server for AI Coding Assistants Will 10x Your Productivity.md", "The Only Claude Skills You Need in 2026.md"]
 created: 2026-04-08
-updated: 2026-04-08
-tags: [tool, mcp, rag, ai-coding, documentation, hallucination-fix]
+updated: 2026-04-09
+tags: [tool, mcp, rag, ai-coding, documentation, hallucination-fix, plugin]
 ---
 
 # Context7
@@ -32,12 +32,18 @@ Context7 is **curated**, not crawled. That's the structural difference vs genera
 
 Context7 is the **counterpoint to the wiki's RAG skepticism**: it shows that RAG works well *when someone curates the corpus*. The hallucination-fixing thesis is the part the wiki cares about — and it's the part the other patterns can't replicate cheaply.
 
+## Adoption signal
+
+Per the [[summary-dubibubii-claude-skills-2026|Dubibubii 2026-04 ingest]]: **50,000 GitHub stars, 240,000+ weekly NPM downloads** — described as *"the #1 MCP server by a mile"* and *"if you install one MCP server from this entire video, make sure it is this one."*
+
 ## Sources
 
 - [[summary-cole-medin-context7-mcp|This MCP Server Will 10x Your Productivity]] ([[cole-medin|Cole Medin]], 2025-04-20)
+- [[summary-dubibubii-claude-skills-2026|The Only Claude Skills You Need in 2026]] (2026-04-08) — adoption signal + universal-recommendation framing
 
 ## See Also
 
+- [[agent-plugins]] — index of installable plugins
 - [[mcp|MCP]]
 - [[summary-cole-medin-mcp-server-template|MCP server template]] — sibling Cole video (build your own)
 - [[cursor|Cursor]] / [[cline|Cline]] / [[claude-code|Claude Code]] — primary MCP hosts

@@ -177,3 +177,4 @@ Claude Code has a growing ecosystem of installable skills and plugins:
 - [[summary-nate-herk-ultra-plan|Source: Planning In Claude Code Just Got a Huge Upgrade]]
 - [[ai-coding-workflow]] — Cole Medin's process discipline that pairs naturally with Ultra Plan
 - [[bmad-method]] — heavier alternative to Ultra Plan's automatic multi-agent approach
+- [[agent-plugins]] — canonical index of installable Claude Code skills, MCPs, and companion CLIs

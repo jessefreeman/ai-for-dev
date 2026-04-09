@@ -8,51 +8,48 @@ updated: 2026-04-09
 
 ## Current State
 
-**110 sources ingested.** Today's structural addition: **the wiki now downloads images locally on every ingest** ([page-conventions § Images and assets](../.instructions/core/rules/page-conventions.md#images-and-assets-local-snapshots-are-mandatory)) and the AIMock launch is the first ingest under the new rule. AIMock anchors a new "infrastructure for shadow-factory teams" cluster on [[saas-death-spiral]] alongside [[trigger-dev]], [[supabase]], [[mcp]], plus two new open protocols: [[ag-ui]] (agent↔frontend) and [[a2a-protocol]] (agent↔agent).
+**111 sources ingested.** Today's structural addition: **the wiki now has a canonical [[agent-plugins]] index** — anything you have to install to extend an AI coding agent (Claude skills, MCPs, skill packs, sandboxing, parallel runners). Anchored by the [[summary-dubibubii-claude-skills-2026|Dubibubii 33-plugin walkthrough]]: 26 new plugin entity pages created in one ingest, each with its own page so the user can flesh them out with hands-on notes when they actually run them. Status flags (`tracked` / `try` / `tried` / `recommended` / `skip`) on the index drive a single rolling [[tasks|"review agent plugins"]] nudge.
 
 ## Most Active Pages
 
-- [[aimock]] — new entity; deterministic CI for the entire agentic stack (LLM + MCP + A2A + vector + search/rerank/moderation)
-- [[copilotkit]] — new org stub; AIMock vendor
-- [[ag-ui]] — new open protocol stub; agent↔frontend wire (LangGraph, CrewAI, Mastra, Google ADK, AWS Bedrock AgentCore)
-- [[a2a-protocol]] — new open protocol stub; agent↔agent wire
-- [[saas-death-spiral]] — new "enabling-infrastructure thread" subsection on shadow-factory question
-- [[llm-design-patterns]] — yesterday's pillar; still load-bearing
-- [[ai-personal-agent-hardening]] / [[kali-linux]] — defensive cluster
+- [[agent-plugins]] — **new load-bearing index page** (concept tier; sibling to [[llm-design-patterns]])
+- [[promptfoo]] / [[container-use]] — new defensive plugins; first install-grade tooling for [[ai-personal-agent-hardening]] rule 1 (human-in-loop quarantine)
+- [[firecrawl]] / [[langflow]] / [[claude-squad]] — new flagship OSS entries (97K / 146K / 65K stars)
+- [[autoresearch]] — new Karpathy repo entry; 50K stars in one week
+- [[obsidian-skills-pack]] — only `try`-flagged plugin from the Dubibubii batch (overlaps with this wiki's own operating model)
+- [[aimock]] — yesterday morning's ingest; still load-bearing for shadow-factory infra thread
+- [[llm-design-patterns]] — pillar concept; sibling to the new plugins index
 
-## Most Recently Added (2026-04-09)
+## New methodology beat (today)
 
-- [[summary-anmol-aimock-launch|AIMock launch (CopilotKit)]] — first ingest under the new image-localization rule. 13 product images saved to `raw/assets/anmol-aimock-launch/`. 5 mock surfaces + 3 unique primitives (drift detection, record/replay, chaos testing). Production user: [[ag-ui]].
+**Plugin promotion rule** (codified in the [[agent-plugins]] page footer): every plugin gets its own page even when thin, because pages exist as containers for *hands-on notes when the user runs the plugin*, not as summaries derived from training data. This is a deliberate carve-out from the general "no stub pages from training data" rule, scoped to the plugin category.
 
-## New methodology rule (today)
+## Defensive cluster grew
 
-**Image localization is now mandatory on every ingest.** Codified in `page-conventions.md`. Step 0 added to ingest prompt Phase 2. All images downloaded to `raw/assets/<source-slug>/`, raw markdown rewritten to local paths, third-party promo banners stripped. Source summaries embed images inline where they materially break down the content.
+The hardening discipline now has **two install-grade tooling answers** in the wiki:
 
-## Three new open protocols in the wiki (via single source)
+| Surface | Plugin | Role |
+|---|---|---|
+| Pre-ship | [[promptfoo]] | Red-teaming + injection testing for your own LLM apps |
+| Post-ship | [[container-use]] | Per-agent containerized sandbox; the human-in-loop quarantine primitive |
 
-The 2026 agentic connective layer is now tracked as a triad:
-
-| Protocol | Connects |
-|---|---|
-| [[mcp\|MCP]] | Agents ↔ tools |
-| [[a2a-protocol\|A2A]] | Agents ↔ other agents |
-| [[ag-ui\|AG-UI]] | Agents ↔ frontend |
+Both are referenced from [[ai-personal-agent-hardening]] now.
 
 ## Open Gaps
 
+- **Lint reminder due** — log ingest count crossed the 5-multiple from the Dubibubii ingest. Recommend running lint next session (also covers the duplicate `skills-sh` page issue surfaced today).
+- **Plugin-page stub follow-up** — 26 new plugin pages all start in `tracked` status with empty hands-on notes. The "review agent plugins" task is the rolling nudge to convert them to `tried` / `recommended` / `skip`.
 - **Long-standing primary sources**: Karpathy gist, AI 2027, Dan Shapiro, StrongDM, METR study
-- **Aggregate Intellect creator, JSON-to-Video pricing, CodeLLM tier** — carryovers
-- **Browserbase / Block / ByteDance org pages** — still tracked
-- **Trigger.dev / Claude Agent SDK** — stubs / dangling
-- **Boris Cherny / GSD framework / Ralph loop** — name-checked, deferred
-- **Shadow-factory company Nate B Jones referenced** — new task to find the specific video
-- **Lint orphan-asset-folder check** — needed once enough ingests build up
+- **Boris Cherny / GSD framework / Ralph loop / claude-agent-sdk** — name-checked, deferred
+- **Shadow-factory company Nate B Jones referenced** — open task to find the specific video
+- **Obsidian skills pack maintainer attribution** — verify against repo before treating as Obsidian-official
 
 ## Architectural Threads to Watch
 
-- **Shadow-factory enabling infrastructure** (new): [[aimock]] + [[trigger-dev]] + [[supabase]] + [[mcp]] + [[a2a-protocol]] + [[ag-ui]] = the wiki's first coherent "infrastructure stack a 3-person agentic team can rely on."
-- **LLM Design Patterns library** (user-flagged pillar): [[llm-design-patterns]] is built for growth.
-- **Defensive AI security as a discipline**: [[ai-personal-agent-hardening]] + [[kali-linux]] + [[bjorn]] + [[parseltongue]].
-- **Anthropic surface expansion (load-bearing)**: [[anthropic-surface-expansion]] + [[persistent-agent-layer-wars]].
-- **Behavioral lock-in vs intelligence portability**.
-- **Three eras of AI competition**: models → interfaces → persistence/memory.
+- **Agent plugin ecosystem** (new): the [[agent-plugins]] index is where future plugin sources accrete. Status flags drive the user-facing nudge system.
+- **Shadow-factory enabling infrastructure**: [[aimock]] + [[trigger-dev]] + [[supabase]] + [[mcp]] + [[a2a-protocol]] + [[ag-ui]]
+- **LLM Design Patterns library** (user-flagged pillar): [[llm-design-patterns]]
+- **Defensive AI security as a discipline**: [[ai-personal-agent-hardening]] + [[kali-linux]] + [[promptfoo]] + [[container-use]] + [[bjorn]] + [[parseltongue]]
+- **Anthropic surface expansion (load-bearing)**: [[anthropic-surface-expansion]] + [[persistent-agent-layer-wars]]
+- **Behavioral lock-in vs intelligence portability**
+- **Three eras of AI competition**: models → interfaces → persistence/memory

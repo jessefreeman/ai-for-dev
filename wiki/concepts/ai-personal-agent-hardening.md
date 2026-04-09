@@ -1,6 +1,6 @@
 ---
 type: concept
-sources: ["I was hacked....md"]
+sources: ["I was hacked....md", "The Only Claude Skills You Need in 2026.md"]
 created: 2026-04-09
 updated: 2026-04-09
 tags: [concept, security, ai-agent, prompt-injection, openclaw, defensive]
@@ -140,3 +140,7 @@ Practical checklist anyone running a personal AI agent should be able to answer 
 - [[kali-linux]] — defensive sibling on the network/infra side
 - [[anthropic-surface-expansion]], [[persistent-agent-layer-wars]] — the broader thread this concept page protects
 - [[summary-matthew-berman-i-was-hacked|Source: I was hacked...]]
+- [[summary-dubibubii-claude-skills-2026|Source: The Only Claude Skills You Need in 2026]] — added [[promptfoo]] + [[container-use]]
+- [[promptfoo]] — prompt-level red-teaming / injection testing (defensive use)
+- [[container-use]] — Dagger sandboxing primitive supporting the human-in-loop quarantine rule
+- [[agent-plugins]] — index where defensive plugins live

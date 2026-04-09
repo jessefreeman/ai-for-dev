@@ -1,14 +1,16 @@
 ---
 type: entity
-sources: ["You NEED to try these open-source AI projects right now....md"]
+sources: ["You NEED to try these open-source AI projects right now....md", "The Only Claude Skills You Need in 2026.md"]
 created: 2026-04-06
-updated: 2026-04-06
-tags: [open-source, claude-code, tdd, productivity]
+updated: 2026-04-09
+tags: [open-source, claude-code, tdd, productivity, plugin]
 ---
 
 # Superpowers
 
-An open-source Claude Code plugin (by "Ora") that enforces test-driven development and structured engineering workflow. The most-starred Claude Code enhancement tool as of March 2026.
+An open-source [[claude-code|Claude Code]] skill pack (by "Ora") that enforces test-driven development and structured engineering workflow. **100,000+ GitHub stars** and **accepted into the Anthropic marketplace in January 2026** per the [[summary-dubibubii-claude-skills-2026|Dubibubii ingest]]. By a wide margin the most-starred Claude Code skill pack the wiki has tracked.
+
+The behavior the source emphasizes most: **it will literally delete code written before its tests exist** — not archive it, delete it. Aggressive enough to make most vibe coders uncomfortable, and that's the point.
 
 ## What It Does
 
@@ -44,8 +46,10 @@ Then: `/superpowers` to see available tools. `/superpowers brainstorm` to start.
 
 ## See Also
 
+- [[agent-plugins]] — index of installable plugins
 - [[GStack]] — complementary startup-methodology tool
 - [[Claude Code]] — the harness Superpowers extends
 - [[Agentic Harness Primitives]] — the production agent framework Superpowers overlaps with
 - [[Matthew Berman]] — source
 - [[summary-matthew-berman-open-source-projects|Source: Open-Source AI Projects]]
+- [[summary-dubibubii-claude-skills-2026|Source: The Only Claude Skills You Need in 2026]]

@@ -58,3 +58,5 @@ The 12 primitives become more critical at multi-agent scale: workflow state prev
 - [[Claude Code]]
 - [[Nate Herk]]
 - [[summary-nate-herk-paperclip|Source: Claude Code + Paperclip]]
+- [[claude-squad]] — user-facing parallel-session primitive (run multiple agents in separate terminals)
+- [[agent-plugins]] — index of installable plugins relevant to this thread

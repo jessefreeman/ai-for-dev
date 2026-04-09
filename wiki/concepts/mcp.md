@@ -92,3 +92,4 @@ The wiki's canonical reference is [[summary-cole-medin-mcp-server-template|Cole 
 - [[conway]] — leaked Anthropic always-on agent with the `.cnw.zip` proprietary-layer-on-top pattern
 - [[behavioral-lock-in]] — the broader lock-in concept the proprietary-layer pattern serves
 - [[greg-isenberg]], [[ras-mic]] — source authors
+- [[agent-plugins]] — index of installable plugins (skills, MCPs, repos); MCP-typed entries flow through this protocol

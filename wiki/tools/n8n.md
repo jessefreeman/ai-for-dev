@@ -55,3 +55,4 @@ Single Docker container; community edition is full-featured. Hostinger and other
 - [[json-to-video]] — video assembly primitive used by the n8n content pipelines
 - [[openrouter]] — LLM gateway commonly paired with n8n
 - [[saas-death-spiral]] — n8n is one of the tools eating per-seat SaaS
+- [[agent-plugins]] — index of installable plugins (n8n recorded as a visual-builder entry; **180K+ stars** per the [[summary-dubibubii-claude-skills-2026|2026-04-08 Dubibubii ingest]])

@@ -10,6 +10,12 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
 
 ## Open
 
+- [ ] **Review agent plugins — rolling nudge** — The [[agent-plugins]] index now tracks 33+ installable plugins (Claude skills, MCPs, skill packs, sandboxing, parallel runners). This is the **catch-your-attention task** for the plugin ecosystem: when you see a plugin recommended somewhere (a video, a thread, a colleague), check if it's in the index — if it is, decide whether to flip its status from `tracked` to `try` / `recommended` / `skip`; if it isn't, add a row + create a per-plugin page so it has somewhere to land.
+      Currently `try`-flagged: [[obsidian-skills-pack]] (overlaps with this wiki's own Obsidian-vault operating model — most likely to produce hands-on notes the wiki can use).
+      Defensively load-bearing: [[promptfoo]] (prompt red-teaming) and [[container-use]] (Dagger sandboxing) — both connect directly to [[ai-personal-agent-hardening]] rule 1.
+      **What I need from you:** Walk through the index with me whenever you've heard about a plugin and want to mark it. Or tell me one you ran — we'll fill in the hands-on notes section of its page and flip the row's status.
+      *Referenced from:* [[agent-plugins]], [[summary-dubibubii-claude-skills-2026]]
+
 - [ ] **`claude-agent-sdk` page — create when a primary source lands** — Two pages now reference [[claude-agent-sdk]] as a dangling link: [[summary-nate-herk-managed-agents]] and [[trigger-dev]]. The Claude Agent SDK is the SDK that [[managed-agents|Managed Agents]] wraps and that Nate Herk recommends building agents on top of for use with [[trigger-dev|trigger.dev]]. No primary source has covered the SDK directly yet — current references are name-checks inside other ingests. Per the wiki convention, the dangling link signals "this page should exist eventually."
       **What I need from you:** Nothing right now. When an ingest lands that's actually about the Agent SDK (Anthropic docs walkthrough, a tutorial on building with it, or a comparison of agent SDKs), create the page then. Delete this task at that point.
       *Referenced from:* [[summary-nate-herk-managed-agents]], [[trigger-dev]]

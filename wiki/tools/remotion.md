@@ -51,3 +51,4 @@ When combined with cloud scheduling (e.g., Noah's Way Claude Code scheduler), Re
 - [[Claude Code]] — the harness Remotion integrates with
 - [[Nate B Jones]] — source analysis
 - [[summary-nate-b-jones-google-stitch|Source: A Markdown File Just Replaced Your Design Meeting]]
+- [[agent-plugins]] — index of installable plugins (Remotion noted at **117K weekly installs** per the [[summary-dubibubii-claude-skills-2026|2026-04-08 Dubibubii ingest]] — used in app-factory promo-video pipelines)
