@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "Every Claude Code Workflow Explained (& When to Use Each).md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "I Broke Down Anthropic's $2.5 Billion Leak. Your Agent Is Missing 12 Critical Pieces..md", "Ollama + Claude Code = 99% CHEAPER.md", "Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "Every Claude Code Workflow Explained (& When to Use Each).md", "Claude Just Told Us to Stop Using Their Best Model.md"]
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 tags: [tool, ai, llm, anthropic]
 ---
 
@@ -119,6 +119,19 @@ Source: [[summary-simon-scrapes-claude-code-workflows|Simon Scrapes — Every Cl
 | **`claude -w <task-name>`** | Create a git **work-tree** (separate copy + branch) and start a new Claude session inside it. Auto-cleanup: empty work-trees removed on close; non-empty prompt before discarding. | [[llm-design-patterns#pattern-2-the-operator]] |
 | **`claude -p <prompt>`** | Run Claude in **non-interactive mode** — no conversation, no approvals, full permissions, return result when done. Combine with cron / Task Scheduler for autonomous workflows. | [[llm-design-patterns#pattern-5-headless]] |
 | **`--allowed-tools <list>`** | Restrict the tools available in headless mode (e.g., read-only). Guardrail for `-p` use. | Pattern 5 hardening |
+| **`/model opus-plan`** | Hidden model selector: **Opus 4.6 in plan mode, Sonnet 4.6 for execution**. Saves session usage by reserving Opus for planning. | [[llm-design-patterns#pattern-6-advisor-strategy]] |
+
+### Advisor Strategy in Claude Code
+
+The `/model opus-plan` command is a hidden model selector that implements the [[llm-design-patterns#pattern-6-advisor-strategy|Advisor Strategy]] concept inside Claude Code. It sets **Opus 4.6 for plan mode** and **Sonnet 4.6 for execution mode**. The status bar shows the active model; switching to plan mode activates Opus, exiting drops back to Sonnet automatically.
+
+This saves session usage because Opus consumes more of the subscription limit than Sonnet. In [[Nate Herk]]'s side-by-side test, the Opus-plan output (Opus planning + Sonnet execution) was preferred over the Opus-only output — better dynamic elements, clearer diagrams, interactive features — while spending fewer tokens.
+
+**How to set it:** `/model` → type `opus-plan` → enter. Not listed in the standard model picker; you have to type it manually.
+
+**Note:** This is mode-based routing (plan = Opus, execute = Sonnet), not the difficulty-based routing of the Messages API Advisor Strategy. The economic goal is the same — expensive model for hard thinking, cheap model for execution — but the mechanism is manual rather than automatic. See [[claude]] for the API-level Advisor Strategy.
+
+Source: [[summary-nate-herk-advisor-strategy]].
 
 ### Agent Teams (research preview, Opus 4.6)
 
@@ -178,3 +191,4 @@ Claude Code has a growing ecosystem of installable skills and plugins:
 - [[ai-coding-workflow]] — Cole Medin's process discipline that pairs naturally with Ultra Plan
 - [[bmad-method]] — heavier alternative to Ultra Plan's automatic multi-agent approach
 - [[agent-plugins]] — canonical index of installable Claude Code skills, MCPs, and companion CLIs
+- [[summary-nate-herk-advisor-strategy|Source: Claude Just Told Us to Stop Using Their Best Model]]

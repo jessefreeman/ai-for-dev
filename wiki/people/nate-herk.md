@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "Ollama + Claude Code = 99% CHEAPER.md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md"]
+sources: ["Andrej Karpathy Just 10x'd Everyone's Claude Code.md", "Ollama + Claude Code = 99% CHEAPER.md", "Planning In Claude Code Just Got a Huge Upgrade.md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "Claude Just Told Us to Stop Using Their Best Model.md"]
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 tags: [person, ai, youtube, automation]
 ---
 
@@ -26,6 +26,7 @@ YouTube creator focused on AI automation and practical Claude Code workflows. Ru
 - [[summary-nate-herk-zep-memory|Unlock the Next Evolution of Agents with Human-like Memory (n8n + Zep)]] — Long-term knowledge-graph memory for [[n8n]] agents via [[zep]]; the cost-trap fix that drops per-turn tokens ~2.4×.
 - [[summary-nate-herk-managed-agents|I Tested Claude's New Managed Agents]] — Hands-on review of [[managed-agents|Anthropic Managed Agents]]: cloud sandbox runtime at $0.08/hr; great onramp for Claude.ai users, missing crons/heartbeats for power users; three private-preview features (Outcomes, Multi-Agent Orchestration, Persistent Memory) define whether it becomes a real Claude Code competitor.
 - [[summary-nate-herk-faceless-shorts-n8n|How I Automated Faceless Shorts with AI in n8n]] — Free n8n template for fully automated faceless YouTube Shorts via Ideas Agent + Creator Agent + [[json-to-video|JSON-to-Video]] + 11Labs + Suno; the canonical n8n + generative-media short-form pipeline.
+- [[summary-nate-herk-advisor-strategy|Claude Just Told Us to Stop Using Their Best Model]] — Walkthrough of Anthropic's Advisor Strategy (beta Messages API feature pairing Opus as advisor with cheaper executor); introduces `/model opus-plan` in [[claude-code|Claude Code]]; side-by-side cost/quality demo. Anchors [[llm-design-patterns#pattern-6-advisor-strategy|Pattern 6]] on the design patterns page.
 
 ## Key Ideas
 
@@ -37,6 +38,7 @@ YouTube creator focused on AI automation and practical Claude Code workflows. Ru
 - The clogged pipe diagnostic: *"If 500 new clients showed up tomorrow, what would break first?"* — reveals the real bottleneck
 - **"Give me 6 hours to chop down a tree and I will spend the first four sharpening the axe"** — quoted re: planning. Spending more tokens upfront on planning is worth it if execution is faster and higher-quality
 - Ultra Plan in Claude Code uses **3 parallel exploration agents + 1 critique agent** running cloud-hosted Opus 4.6 — multi-agent exploration is the structural reason it produces better plans than local single-agent linear thinking
+- **Advisor Strategy**: "It's not a matter of which model is best — the question is for this specific task, which model should I be using?" — use Opus only for the hard steps, Haiku/Sonnet for everything else. Test hundreds of prompts before production; saving tokens is only worth it if quality doesn't drop. `/model opus-plan` in Claude Code is the practical implementation.
 
 ## See Also
 - [[Claude Code]]

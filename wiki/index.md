@@ -2,7 +2,6 @@
 type: index
 created: 2026-04-06
 updated: 2026-04-10
-# 12-source batch ingested 2026-04-08
 description: "Jesse Freeman's personal AI research wiki — AI tools, techniques, and workflows for developers. Maintained by Claude Code."
 socialImage: og-image.png
 ---
@@ -354,6 +353,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-bart-slodyczka-gemma4-searxng-openclaw|Gemma 4 + SearXNG + OpenClaw (Bart Slodyczka)]] — Running OpenClaw 100% free and private with Gemma 4 via Ollama + SearXNG for self-hosted web search.
 - [[summary-cole-medin-openclaw-trading|I Gave OpenClaw $10,000 to Trade Stocks (Cole Medin)]] — 30-day real-money AI trading experiment; sub-agent wealth adviser methodology; both bots beat the S&P.
 - [[summary-archon-readme|Archon README (Cole Medin)]] — Documents Archon's pivot from AI OS to YAML-based deterministic workflow engine for AI coding agents; 17 default workflows, git worktree isolation, multi-platform adapters.
+- [[summary-nate-herk-advisor-strategy|Claude Just Told Us to Stop Using Their Best Model (Nate Herk)]] — Anthropic's Advisor Strategy: pair Opus as advisor with Haiku/Sonnet as executor; `/model opus-plan` in Claude Code; anchors Pattern 6 on [[llm-design-patterns]].
 
 ## Contribute or build your own
 

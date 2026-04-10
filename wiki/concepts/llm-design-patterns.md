@@ -1,6 +1,6 @@
 ---
 type: concept
-sources: ["Every Claude Code Workflow Explained (& When to Use Each).md", "coleam00Archon The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable..md"]
+sources: ["Every Claude Code Workflow Explained (& When to Use Each).md", "coleam00Archon The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable..md", "Claude Just Told Us to Stop Using Their Best Model.md"]
 created: 2026-04-09
 updated: 2026-04-10
 tags: [concept, design-patterns, llm, agent, workflow, claude-code, framework]
@@ -10,7 +10,7 @@ tags: [concept, design-patterns, llm, agent, workflow, claude-code, framework]
 
 The wiki's canonical library of **named patterns for working with LLMs and agents**. A framework page in the same tier as [[four-prompting-disciplines]] and [[agentic-harness-primitives]] — it captures *patterns*, not products. Each pattern has a name, a *when-to-use*, a *when-not-to-use*, an architectural sketch, a cost profile, and the primitives that implement it across the tools the wiki tracks.
 
-> **Built to grow.** This page starts with a single source ([[summary-simon-scrapes-claude-code-workflows|Simon Scrapes's Claude Code workflow taxonomy]]) and the 5 Claude Code-specific patterns it names. Future ingests on workflow patterns from other surfaces (Cursor, Cline, Codex, the Claude Agent SDK, generic LLM-app patterns) extend this page rather than fragmenting. See **[[#how-to-extend-this-page]]** for the contribution rules.
+> **Built to grow.** This page started with 5 Claude Code workflow patterns from [[summary-simon-scrapes-claude-code-workflows|Simon Scrapes]] and now includes a 6th (the Advisor Strategy from [[summary-nate-herk-advisor-strategy|Nate Herk]]). Future ingests on workflow patterns from other surfaces (Cursor, Cline, Codex, the Claude Agent SDK, generic LLM-app patterns) extend this page rather than fragmenting. See **[[#how-to-extend-this-page]]** for the contribution rules.
 
 ## Why this page exists
 
@@ -228,6 +228,53 @@ You — coordinating, copy-pasting findings, deciding when to merge each branch
 
 ---
 
+## Pattern 6 — Advisor Strategy
+
+**Also known as**: advisor/executor, tiered model routing, smart escalation.
+
+**What it is.** A cheap model (Haiku or Sonnet) handles every request as the **executor**. When it self-assesses a task as too difficult, it escalates to an expensive model (Opus) as the **advisor**. The advisor provides guidance; the executor continues the task. The key insight: most steps in an agentic workflow don't need the frontier model — only the hard ones do.
+
+**When to use.**
+- API-built applications where you control the model selection per request and want to optimize cost without sacrificing quality on hard tasks
+- Customer-facing agents with mixed-difficulty workloads (most queries are simple; a few require deep reasoning)
+- Any workflow where you can tolerate non-deterministic escalation behavior (the executor decides when to call the advisor, and this varies by model and prompt)
+
+**When NOT to use.**
+- Tasks where every step is genuinely hard (just use Opus directly — the routing overhead adds cost without saving anything)
+- When you need deterministic control over which model handles which step (use explicit model routing instead)
+- Production without extensive prompt testing — *"Test hundreds of prompts through each of them to see what you consistently think is performing better"* — Nate Herk
+
+**Architectural sketch.**
+```
+[User request]
+      |
+      v
+  [Executor: Haiku/Sonnet]
+      |
+      ├── easy task ──> [Executor handles alone] ──> response
+      |
+      └── hard task ──> [calls Advisor: Opus] ──> [Executor uses guidance] ──> response
+```
+
+**Cost profile.** Dramatically cheaper than running Opus on every request. Anthropic's evaluations:
+- **Sonnet + Opus advisor**: +2.7pp on SWE-bench over Sonnet alone, **−12% cost** per agentic task
+- **Haiku + Opus advisor**: 41.2% on BrowseComp vs 19.7% solo (more than 2× performance at a fraction of Opus-only cost)
+- Simple queries: Haiku alone cost **21× less** than Opus alone with comparable quality (Nate's dashboard demo)
+
+The `max_uses` parameter caps how many times the executor can call the advisor per request, giving explicit budget control.
+
+**Non-deterministic escalation.** The executor's self-assessment of difficulty varies by model and prompt. In Nate's tests, Sonnet escalated to the advisor on a query that Haiku handled solo — suggesting Sonnet's self-assessment threshold differs from Haiku's. This is not a bug; it's a design property. It means you must test your specific prompts across model combos before committing to a configuration.
+
+**Implementations the wiki tracks.**
+- **Claude Messages API (beta)** — add `type: "advisor_2026_03_01"`, `name: "advisor"`, and optionally `max_uses` to the API request. The executor calls the advisor automatically when it detects difficulty. See [[claude]].
+- **[[claude-code]] — `/model opus-plan`** — the Claude Code equivalent. Sets Opus 4.6 for plan mode and Sonnet 4.6 for execution. Not true advisor routing (it's mode-based, not difficulty-based), but achieves the same economic goal: expensive model for the hard thinking, cheap model for the execution. See [[claude-code#advisor-strategy-in-claude-code]].
+
+**Relationship to other patterns.** The Advisor Strategy is orthogonal to Patterns 1–5 — it's about *which model* handles each step, not *how many sessions or agents* you run. You can combine it with any of the other patterns: a Sequential Flow where the executor is Haiku + Opus advisor, or an Agent Teams setup where each teammate uses the advisor strategy internally.
+
+**Source(s)**: [[summary-nate-herk-advisor-strategy]]
+
+---
+
 ## The pattern selection ladder
 
 The five patterns are not alternatives — they're a progression. Climb only as high as the task requires.
@@ -256,6 +303,8 @@ session       session         session,           session,     in loop
 Sequential  <  Operator  <  Split & Merge  <<  Agent Teams  ≈  Headless × N runs
 ```
 Headless is cheap *per run* but cron'd headless can rack up costs faster than interactive sessions because there's no human gating it.
+
+**Pattern 6 (Advisor Strategy) is orthogonal** — it's about *model selection per step*, not workflow topology. Apply it as a cost overlay on any of the five patterns above.
 
 ---
 
@@ -292,3 +341,4 @@ When a future source introduces a workflow pattern, follow these rules to keep t
 - [[simon-scrapes]] — first source author
 - [[nate-b-jones]] — author of adjacent framework pages
 - [[summary-simon-scrapes-claude-code-workflows|Source: Every Claude Code Workflow Explained]]
+- [[summary-nate-herk-advisor-strategy|Source: Claude Just Told Us to Stop Using Their Best Model]]

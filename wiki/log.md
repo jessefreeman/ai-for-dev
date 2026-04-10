@@ -8,6 +8,33 @@ updated: 2026-04-10
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-10] ingest | Advisor Strategy (Nate Herk)
+
+Single-source ingest. **Adds the wiki's 6th LLM design pattern ([[llm-design-patterns#pattern-6-advisor-strategy|Advisor Strategy]]) and documents `/model opus-plan` in Claude Code for the first time.**
+
+- **Source**: [[summary-nate-herk-advisor-strategy|Claude Just Told Us to Stop Using Their Best Model]] (2026-04-09, [[nate-herk|Nate Herk]] / YouTube) — walkthrough of Anthropic's beta Messages API Advisor Strategy feature + Claude Code `/model opus-plan` + cost/quality dashboard demo.
+
+### Pages created (1)
+
+- `wiki/sources/summary-nate-herk-advisor-strategy.md`
+
+### Pages updated (4)
+
+- [[llm-design-patterns]] — **Pattern 6: Advisor Strategy** added. The first pattern on this page that's orthogonal to the topology ladder (Patterns 1–5) — it's about *which model* handles each step, not *how many sessions/agents*. Includes Anthropic benchmark data, the non-deterministic escalation caveat, and both implementations (Messages API + Claude Code `/model opus-plan`).
+- [[claude-code]] — new "Advisor Strategy in Claude Code" section documenting `/model opus-plan` (hidden model selector: Opus for plan mode, Sonnet for execution). Added to CLI flags table. Third new CLI primitive captured in 2 days (after `claude -w` and `claude -p` from the Simon Scrapes ingest).
+- [[claude]] — new "Advisor Strategy (Messages API, beta)" section with API parameters (`type: advisor_2026_03_01`, `name: advisor`, `max_uses`), the updated per-million token pricing table (Opus $5/$25, Sonnet $3/$15, Haiku $1/$5), and Anthropic evaluation benchmarks.
+- [[nate-herk]] — 9th source; new key idea on the advisor strategy.
+
+### Why this matters structurally
+
+This is the **first cost-optimization pattern** on the design-patterns page. Patterns 1–5 are about *workflow topology* (how many sessions, who orchestrates); Pattern 6 is about *model selection per step*. It's orthogonal — you can layer the advisor strategy on top of any topology. The wiki now has three distinct cost-optimization threads: (1) model swapping via environment variables ([[open-source-model-integration]]), (2) Ultra Plan for planning efficiency ([[claude-code#ultra-plan]]), and (3) the advisor strategy for per-step model routing. Each targets a different layer of the cost stack.
+
+### Notes
+
+- 115 sources total. No images to localize (YouTube transcript).
+- The Messages API Advisor Strategy is in **beta** — the `advisor_2026_03_01` type string includes a date stamp suggesting versioning. Worth re-checking when it exits beta.
+- The "monitor tool" is name-dropped in the video as a new Anthropic feature announced on X during recording. No detail captured — watch for a primary source.
+
 ## [2026-04-10] ingest | 3-source batch — SearXNG, OpenClaw trading methodology, Archon pivot to workflow engine
 
 Three-source batch ingest. **Two new entities ([[searxng]], [[bart-slodyczka]]) and one major entity rewrite ([[archon-os]]).**
@@ -228,17 +255,6 @@ Single-source ingest. **Anchors a new entity, [[managed-agents]] — Anthropic's
 **Editorial verdict**: Managed Agents lowers the floor for non-developers but does not yet raise the ceiling for builders. The structural gap is the missing trigger primitive — no cron, no webhook, no heartbeat — which is the reason [[trigger-dev|trigger.dev]] now appears in the wiki for the first time. If the three private-preview features ship, Managed Agents becomes a credible hosted alternative to the [[slash-loop|/loop]] + [[open-brain|OpenBrain]] + MCP three-primitive stack — *minus* the trigger primitive.
 
 **Notes**: 104 sources total. No new tasks (Browserbase/Block stub-tracking already covers the org-page pattern; this source doesn't add a new gap). 5 memories added.
-
-## [2026-04-09] lint: 2026-04-09 — pre-publish cleanup
-
-Quick pre-publish lint pass after committing the new methodology files (log-rules, overview-rules, lint size-compliance step). 4 fixes, all approved.
-
-- **Dangling link**: `[[page-conventions]]` in [[tasks]] → relative markdown link to the rules file (the only true dangling link; `[[browser-use]]` in stagehand summary stays as intentional placeholder per round 3).
-- **Overview drift**: source count 102 → 103 (Journey Kits one-off was missed in the post-batch overview refresh).
-- **Stub-tracking task**: count 20 → 19; removed [[kimi-coder]] (no longer a stub), added [[flowith]] (still <150w). Lint date stamp bumped to 2026-04-09.
-- **Log rotation**: this entry pushes the log to the 10-entry cap; oldest entry (Open-SWE 2026-04-07) dropped per [log-rules](../.instructions/core/rules/log-rules.md).
-
-**Notes**: zero orphans, zero frontmatter drift, all four state files within their caps (overview at 1,486/1,500, hot at 451/500, log at 10/10, tasks at 11/15). Cleanest lint pass to date — yesterday's three rounds did the heavy lifting.
 
 
 
