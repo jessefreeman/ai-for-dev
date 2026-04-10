@@ -1,7 +1,7 @@
 ---
 type: index
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 # 12-source batch ingested 2026-04-08
 description: "Jesse Freeman's personal AI research wiki — AI tools, techniques, and workflows for developers. Maintained by Claude Code."
 socialImage: og-image.png
@@ -51,6 +51,7 @@ New content appears as I read, watch, and research. The site updates automatical
 - [[dubibubii|Dubibubii]] — vibe-coding YouTube creator; Claude skill / plugin curation reels.
 - [[bijan-bowen|Bijan Bowen]] — Engineer / YouTuber on local LLM infrastructure; multi-node vLLM via Ray cluster.
 - [[networkchuck|NetworkChuck]] — Networking + self-hosting YouTuber; Cloudflare + Nginx Proxy Manager + Let's Encrypt deployment patterns.
+- [[bart-slodyczka|Bart Slodyczka]] — OpenClaw + local AI YouTuber; daily-drives Gemma 4 26B on a 512 GB Mac Studio.
 
 ### Organizations
 - [[anthropic|Anthropic]] — US frontier-AI lab; Claude, Claude Code, the MCP standard, the Claude Code architecture leak. PBC structure.
@@ -83,7 +84,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[augment-agent|Augment Agent]] — Agentic IDE; #1 OSS on SWE-bench Verified at 65.4%; large-codebase indexing.
 - [[firebase-studio|Firebase Studio]] — Google's cloud agentic dev environment (rebrand of Project IDX); free tier.
 - [[github-agent-hq|GitHub Agent HQ]] — Microsoft's evolution of GitHub into a full AI agent orchestration platform.
-- [[archon-os|Archon OS]] — Cole Medin's open-source command center for AI coding agents; unified knowledge + task layer via MCP.
+- [[archon-os|Archon]] — Cole Medin's open-source workflow engine for AI coding agents; YAML DAG workflows, git worktree isolation, multi-platform adapters. *"Dockerfiles for AI coding."*
 - [[sim-ai|Sim AI]] — Open-source visual AI agent workflow builder; n8n alternative with 60+ integrations.
 - [[supabase|Supabase]] — Open-source Postgres + PGVector + auth backend; convergence point for OpenBrain, Archon OS, Sim AI, and AI coding workflows.
 - [[claude-code|Claude Code]] — Anthropic's CLI tool, the engine behind this wiki. Now with /loop and a skills ecosystem.
@@ -194,6 +195,7 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[container-use|Container-Use]] — Dagger's per-agent containerized sandbox; the install-grade answer to the human-in-loop quarantine rule.
 - [[ghost-os|Ghost OS]] — macOS agent that drives every native app via screen + click + drag.
 - [[awesome-claude-skills|Awesome Claude Skills]] — Travis Vian's curated index of Claude skills; 95K stars.
+- [[searxng|SearXNG]] — Self-hosted privacy-respecting meta-search engine; native OpenClaw integration; the self-hostable alternative to paid search APIs.
 
 ### Concepts
 - [[llm-wiki-pattern|LLM Wiki Pattern]] — Method for building LLM-maintained personal knowledge bases in markdown.
@@ -349,6 +351,9 @@ Tracked separately from tools and frameworks so we can follow each model's progr
 - [[summary-simon-scrapes-claude-code-workflows|Every Claude Code Workflow Explained (Simon Scrapes)]] — Walkthrough of 5 named Claude Code workflow patterns (Sequential / Operator / Split & Merge / Agent Teams / Headless). Anchors the new [[llm-design-patterns]] concept page; documents `claude -w`, `claude -p`, the 10 concurrent sub-agent limit, and the Agent Teams research preview.
 - [[summary-anmol-aimock-launch|AIMock launch (CopilotKit / Anmol Baranwal)]] — First-party launch post for [[aimock]]; covers 5 mock surfaces, 3 load-bearing primitives (drift detection, record/replay, chaos), AG-UI production use, and the shadow factory infrastructure connection.
 - [[summary-dubibubii-claude-skills-2026|The Only Claude Skills You Need in 2026 (Dubibubii)]] — 33-plugin walkthrough that anchored the new [[agent-plugins]] index; introduces 26 new plugin entries spanning skills, MCPs, and OSS repos.
+- [[summary-bart-slodyczka-gemma4-searxng-openclaw|Gemma 4 + SearXNG + OpenClaw (Bart Slodyczka)]] — Running OpenClaw 100% free and private with Gemma 4 via Ollama + SearXNG for self-hosted web search.
+- [[summary-cole-medin-openclaw-trading|I Gave OpenClaw $10,000 to Trade Stocks (Cole Medin)]] — 30-day real-money AI trading experiment; sub-agent wealth adviser methodology; both bots beat the S&P.
+- [[summary-archon-readme|Archon README (Cole Medin)]] — Documents Archon's pivot from AI OS to YAML-based deterministic workflow engine for AI coding agents; 17 default workflows, git worktree isolation, multi-platform adapters.
 
 ## Contribute or build your own
 

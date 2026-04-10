@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Google just dropped Gemma 4... (WOAH).md", "Ollama + Claude Code = 99% CHEAPER.md", "Gemma 4 VRAM Requirements Every GPU and Mac Tested (2026).md", "Gemma 4 Guide Models, Local Deployment, VRAM, and Comparisons.md", "Google just casually disrupted the open-source AI narrative….md"]
+sources: ["Google just dropped Gemma 4... (WOAH).md", "Ollama + Claude Code = 99% CHEAPER.md", "Gemma 4 VRAM Requirements Every GPU and Mac Tested (2026).md", "Gemma 4 Guide Models, Local Deployment, VRAM, and Comparisons.md", "Google just casually disrupted the open-source AI narrative….md", "Gemma 4 + SearXNG = 100% FREE & PRIVATE OpenClaw (Full Setup).md"]
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 tags: [tool, ai, llm, open-source, google, model]
 ---
 
@@ -67,6 +67,10 @@ See [[gemma-4-vram-requirements]] for the full VRAM lookup table by GPU and Mac.
 - **BF16 31B** — 24 GB GPU (RTX 4090)
 
 The 26B A4B MoE only activates ~4B params during inference, which is why it fits in 12–14 GB while delivering reasoning quality close to a 26B dense model — the most efficient option for users who want more than E4B but can't run 31B.
+
+## Tool-calling on OpenClaw (E4B field report)
+
+[[bart-slodyczka|Bart Slodyczka]] ran the E4B model (~9.6 GB) as his [[openclaw|OpenClaw]] daily driver for several days and was *"very impressed with its ability to do agentic tool calling."* Multi-step tasks (web search → summarize → create report → attach to ClickUp → email) completed without the model buckling mid-chain — a failure mode he'd seen with previous small models. He attributes the improvement partly to OpenClaw's improved backend prompt structure for tool calling. The 26B (18 GB) is now his primary daily driver on a 512 GB Mac Studio, with the E2B (7.2 GB) viable for 16 GB MacBook Pro users. See [[summary-bart-slodyczka-gemma4-searxng-openclaw|source]].
 
 ## Relevance to Claude Code Workflows
 

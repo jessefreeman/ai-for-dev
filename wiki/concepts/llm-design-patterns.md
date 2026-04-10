@@ -1,8 +1,8 @@
 ---
 type: concept
-sources: ["Every Claude Code Workflow Explained (& When to Use Each).md"]
+sources: ["Every Claude Code Workflow Explained (& When to Use Each).md", "coleam00Archon The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable..md"]
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-10
 tags: [concept, design-patterns, llm, agent, workflow, claude-code, framework]
 ---
 
@@ -218,7 +218,8 @@ You — coordinating, copy-pasting findings, deciding when to merge each branch
 
 **Implementations the wiki tracks.**
 - [[claude-code]]: **`claude -p <prompt>`** flag — runs Claude in non-interactive mode
-- **The Ralph loop** — community pattern: re-feed the same prompt back to Claude until output meets criteria; each iteration sees the previous cycle's work. Used to ship full projects overnight. Name-checked but not yet ingested.
+- **The Ralph loop** — community pattern: re-feed the same prompt back to Claude until output meets criteria; each iteration sees the previous cycle's work. Used to ship full projects overnight. **Now a first-class Archon workflow**: `archon-ralph-dag` iterates through PRD stories until done. See [[archon-os]].
+- **PIV loop** (Plan-Implement-Validate) — Cole Medin's pattern (see [[ai-coding-workflow]]). **Now a first-class Archon workflow**: `archon-piv-loop` — guided PIV with human review between iterations. See [[archon-os]].
 - [[trigger-dev]] — external trigger primitive that complements `claude -p` for cloud-scheduled workflows
 - [[slash-loop|/loop]] — Anthropic's local proactivity primitive (laptop-bound; less powerful than `-p` + cron)
 - [[managed-agents]] — Anthropic's hosted version of headless, but **without** native scheduling triggers as of launch

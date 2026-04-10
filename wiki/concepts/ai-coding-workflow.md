@@ -65,8 +65,13 @@ Optional: Quadrant for long-term agent memory (or use IDE-native memories).
 
 The pattern enforces **context discipline without constant prompting cost**. Global rules carry the persistent instructions. PLANNING/TASK markdown files carry persistent project state. MCP servers extend tool reach. The actual user prompt can stay short because everything else is already in scope.
 
+## Evolution: Archon as the YAML-packaged version
+
+Cole's [[archon-os|Archon]] has pivoted from an "AI OS" knowledge backbone into a **workflow engine** that packages this same pattern as YAML DAG workflows. The PLANNING.md/TASK.md pattern is the lightweight version (two markdown files, manual discipline); Archon is the heavyweight version (YAML-defined phases, validation gates, git worktree isolation per run, approval loops). The `archon-piv-loop` workflow is a direct implementation of the PIV loop with human review between iterations. See [[summary-archon-readme|source]].
+
 ## Compared to Other Workflows
 
+- [[archon-os|Archon]] — the YAML-packaged evolution of this pattern; deterministic workflow engine with git worktree isolation. Use Archon when you want repeatable, fire-and-forget workflow runs; use the markdown pattern when Archon is overkill.
 - [[bmad-method]] — heavier (six personas, six artifacts) vs. Cole's lighter two-file pattern. Use BMAD for SaaS-scale apps; use Cole's for projects under ~10 stories.
 - [[four-prompting-disciplines]] — Cole's pattern is mostly **context engineering** (discipline #2) with light **specification engineering** (#4) in the global rules.
 - [[autoresearch-evals]] — adjacent self-improvement pattern from Nick Saraev for skill development.
@@ -78,4 +83,5 @@ The pattern enforces **context discipline without constant prompting cost**. Glo
 - [[claude-code]], [[cursor]] — IDEs this pattern targets
 - [[mcp]] — protocol enabling step 3
 - [[four-prompting-disciplines]] — broader theory
+- [[archon-os]] — YAML-packaged evolution of this pattern
 - [[summary-cole-medin-100x-ai-coding|Source: Code 100x Faster with AI]]

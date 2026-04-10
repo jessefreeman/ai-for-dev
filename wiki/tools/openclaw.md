@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You NEED to try these open-source AI projects right now....md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "I Analyzed 512,000 Lines of Leaked Code. It Shows What's Coming for Your AI Tools..md", "I was hacked....md"]
+sources: ["Anthropic Just Gave Your AI Agent the One Thing OpenClaw Has. Without the Risk..md", "You NEED to try these open-source AI projects right now....md", "I Tested Claude's New Managed Agents... What You Need To Know.md", "I Analyzed 512,000 Lines of Leaked Code. It Shows What's Coming for Your AI Tools..md", "I was hacked....md", "Gemma 4 + SearXNG = 100% FREE & PRIVATE OpenClaw (Full Setup).md", "I Gave OpenClaw $10,000 to Trade Stocks.md"]
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 tags: [tool, agent, framework, open-source]
 ---
 
@@ -30,6 +30,33 @@ The five attack classes Pliny demonstrated are now the wiki's canonical referenc
 2. **Use the best possible model as your frontier scanner** — *"Unless you are putting your best possible model forward as the frontier scanner, it's going to collapse. You are going to get infiltrated."* Local / instant / small models will fall for low-hanging-fruit injection that frontier reasoners catch.
 
 Pliny's parting line — *"No AI system is permanently secure"* — is the framing the wiki adopts. Treat OpenClaw hardening as a process, not a state. See [[ai-personal-agent-hardening]] for the full hardening checklist.
+
+## Running 100% locally and free
+
+Per [[bart-slodyczka|Bart Slodyczka]]'s [[summary-bart-slodyczka-gemma4-searxng-openclaw|setup guide]], OpenClaw can run fully local with no paid APIs:
+
+- **Model**: [[gemma-4|Gemma 4]] via [[ollama|Ollama]] — native integration, no custom coding. `openclaw configure` → select Ollama → pick models from `ollama list`.
+- **Web search**: [[searxng|SearXNG]] via Docker — self-hosted meta-search engine. One config change required: add `json` format to SearXNG's `settings.yaml` (OpenClaw uses JSON, SearXNG defaults to HTML).
+- **Result**: no rate limits, no data leaves the device, zero cost.
+
+Bart daily-drives the Gemma 4 26B (18 GB) on a 512 GB Mac Studio and reports the E4B (mobile-grade) handles multi-step tool calling well on OpenClaw's improved backend prompt structure.
+
+## AI trading experiment — methodology
+
+Per [[cole-medin|Cole Medin]]'s [[summary-cole-medin-openclaw-trading|30-day trading challenge]], OpenClaw can be configured as an autonomous stock trading agent:
+
+- **Brokerage integration**: Alpaca API for live US equity + options trading
+- **Autonomous execution**: cron job every 30 minutes during market hours; bot researches, rebalances, executes trades without human intervention
+- **Sub-agent team pattern**: Nate prompted OpenClaw to *"spin up a team of wealth advisers"* — the bot created specialized sub-agents for research, analysis, and trade execution. The sub-agents collaboratively designed a strategy: 60–70% momentum swing trades, 15–25% options, 10%+ cash reserve.
+- **Adaptive strategy**: bots independently adjusted tactics mid-challenge — Samin's bot adopted a scalping pattern (sell below 2% loss, take profit above 5%), Nate's bot pivoted to aggressive options in the final week.
+- **Inter-agent communication**: bots emailed each other daily (trash talk + attempted prompt injection / disinformation about portfolio performance).
+- **Results (30 days, $10K each, S&P down 8.5%)**:
+  - **Nate**: $9,980 (−$20, −0.2%) — crushed the S&P; simple "be my financial adviser" prompt
+  - **Samin**: $9,624 (−$376, −3.8%) — Pareto/high-risk strategy; still beat the S&P
+  - 20 buy orders + 16 sells (Nate), 61 total trades (Samin); Alpaca pattern day trading limits constrained frequency.
+- **Bot's retrospective advice**: *"Go all-in on energy from day one. Use 10% trailing stops instead of 2%. Never touch short-dated options — one bad option trade cost us $550."*
+
+**This is an experiment, not financial advice.** Both participants stressed controlled-environment framing.
 
 ## Security Concerns
 

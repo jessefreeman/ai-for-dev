@@ -1,55 +1,44 @@
 ---
 type: hot-cache
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 ---
 
 # Hot Cache
 
 ## Current State
 
-**111 sources ingested.** Today's structural addition: **the wiki now has a canonical [[agent-plugins]] index** — anything you have to install to extend an AI coding agent (Claude skills, MCPs, skill packs, sandboxing, parallel runners). Anchored by the [[summary-dubibubii-claude-skills-2026|Dubibubii 33-plugin walkthrough]]: 26 new plugin entity pages created in one ingest, each with its own page so the user can flesh them out with hands-on notes when they actually run them. Status flags (`tracked` / `try` / `tried` / `recommended` / `skip`) on the index drive a single rolling [[tasks|"review agent plugins"]] nudge.
+**114 sources ingested.** Today's batch: 3 sources covering SearXNG (new self-hosted search entity), an OpenClaw autonomous trading methodology, and Archon's pivot from AI OS to workflow engine.
 
 ## Most Active Pages
 
-- [[agent-plugins]] — **new load-bearing index page** (concept tier; sibling to [[llm-design-patterns]])
-- [[promptfoo]] / [[container-use]] — new defensive plugins; first install-grade tooling for [[ai-personal-agent-hardening]] rule 1 (human-in-loop quarantine)
-- [[firecrawl]] / [[langflow]] / [[claude-squad]] — new flagship OSS entries (97K / 146K / 65K stars)
-- [[autoresearch]] — new Karpathy repo entry; 50K stars in one week
-- [[obsidian-skills-pack]] — only `try`-flagged plugin from the Dubibubii batch (overlaps with this wiki's own operating model)
-- [[aimock]] — yesterday morning's ingest; still load-bearing for shadow-factory infra thread
-- [[llm-design-patterns]] — pillar concept; sibling to the new plugins index
+- [[archon-os]] — **major rewrite**: Archon is now a YAML-based deterministic workflow engine with git worktree isolation and 17 default workflows, not the MCP knowledge backbone it was yesterday
+- [[openclaw]] — two new sections: fully local+free stack (Gemma 4 + Ollama + SearXNG) + autonomous trading methodology (cron-driven, sub-agent wealth adviser teams, Alpaca integration)
+- [[searxng]] — **new entity**: self-hosted meta-search engine; first self-hosted web search in the wiki; added to [[self-hostable-alternatives]]
+- [[llm-design-patterns]] — Ralph loop and PIV loop now have concrete Archon implementations (`archon-ralph-dag`, `archon-piv-loop`)
+- [[agent-plugins]] — load-bearing plugin index; rolling review task active
 
-## New methodology beat (today)
+## Archon pivot (load-bearing)
 
-**Plugin promotion rule** (codified in the [[agent-plugins]] page footer): every plugin gets its own page even when thin, because pages exist as containers for *hands-on notes when the user runs the plugin*, not as summaries derived from training data. This is a deliberate carve-out from the general "no stub pages from training data" rule, scoped to the plugin category.
+The existing [[archon-os]] page was describing a product that no longer exists. Cole Medin's Archon has pivoted from "AI OS" (knowledge + task backbone) to **workflow engine** (YAML DAGs, composable AI + deterministic nodes, approval gates, git worktree per run). The framing: *"Dockerfiles for AI coding."* The `archon-ralph-dag` workflow means the Ralph loop — previously just name-checked on [[llm-design-patterns]] — now has an implementation. The PIV loop also has `archon-piv-loop`.
 
-## Defensive cluster grew
+## Fully local agent stack now complete
 
-The hardening discipline now has **two install-grade tooling answers** in the wiki:
-
-| Surface | Plugin | Role |
-|---|---|---|
-| Pre-ship | [[promptfoo]] | Red-teaming + injection testing for your own LLM apps |
-| Post-ship | [[container-use]] | Per-agent containerized sandbox; the human-in-loop quarantine primitive |
-
-Both are referenced from [[ai-personal-agent-hardening]] now.
+SearXNG closes the last gap. The wiki now documents a **zero-cost, fully private OpenClaw stack**: [[gemma-4]] via [[ollama]] (model) + [[searxng]] via Docker (web search) + [[openclaw]] (agent framework). No API keys, no rate limits, no data leaves the device.
 
 ## Open Gaps
 
-- **Lint reminder due** — log ingest count crossed the 5-multiple from the Dubibubii ingest. Recommend running lint next session (also covers the duplicate `skills-sh` page issue surfaced today).
-- **Plugin-page stub follow-up** — 26 new plugin pages all start in `tracked` status with empty hands-on notes. The "review agent plugins" task is the rolling nudge to convert them to `tried` / `recommended` / `skip`.
+- **Lint reminder due** — 114 sources; overdue since the Dubibubii ingest crossed the 5-multiple
+- **Plugin-page stub follow-up** — 26 plugin pages in `tracked` status; single rolling task nudge
 - **Long-standing primary sources**: Karpathy gist, AI 2027, Dan Shapiro, StrongDM, METR study
 - **Boris Cherny / GSD framework / Ralph loop / claude-agent-sdk** — name-checked, deferred
-- **Shadow-factory company Nate B Jones referenced** — open task to find the specific video
-- **Obsidian skills pack maintainer attribution** — verify against repo before treating as Obsidian-official
+- **Trading experiment follow-up** — user wants to experiment and research the autonomous trading methodology further
 
 ## Architectural Threads to Watch
 
-- **Agent plugin ecosystem** (new): the [[agent-plugins]] index is where future plugin sources accrete. Status flags drive the user-facing nudge system.
 - **Shadow-factory enabling infrastructure**: [[aimock]] + [[trigger-dev]] + [[supabase]] + [[mcp]] + [[a2a-protocol]] + [[ag-ui]]
-- **LLM Design Patterns library** (user-flagged pillar): [[llm-design-patterns]]
-- **Defensive AI security as a discipline**: [[ai-personal-agent-hardening]] + [[kali-linux]] + [[promptfoo]] + [[container-use]] + [[bjorn]] + [[parseltongue]]
-- **Anthropic surface expansion (load-bearing)**: [[anthropic-surface-expansion]] + [[persistent-agent-layer-wars]]
+- **Agent plugin ecosystem**: [[agent-plugins]] index; status flags drive the user-facing nudge
+- **LLM Design Patterns library** (user-flagged pillar): [[llm-design-patterns]] — now with Archon implementations
+- **Defensive AI security**: [[ai-personal-agent-hardening]] + [[kali-linux]] + [[promptfoo]] + [[container-use]]
+- **Anthropic surface expansion**: [[anthropic-surface-expansion]] + [[persistent-agent-layer-wars]]
 - **Behavioral lock-in vs intelligence portability**
-- **Three eras of AI competition**: models → interfaces → persistence/memory

@@ -33,6 +33,7 @@ When you ingest a source that mentions a commercial tool with an OSS alternative
 | **Google Jules** (async coding agent) | [[open-swe]] | [[summary-worldofai-open-swe]] |
 | **OpenClaw** (multi-agent runtime) | [[thepopebot]], [[paperclip]] | [[summary-stephen-g-pope-thepopebot]], [[summary-nate-herk-paperclip]] |
 | **Hosted MCP servers** | [[mcp]] via Docker MCP Toolkit (containerized + secrets vault) | [[summary-worldofai-docker-mcp-toolkit]] |
+| **Google/Bing/Tavily search API** (paid web search for agents) | [[searxng]] (meta-search, Docker, native [[openclaw]] integration) | [[summary-bart-slodyczka-gemma4-searxng-openclaw]] |
 
 ## Editorial notes
 

@@ -1,12 +1,52 @@
 ---
 type: log
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 ---
 
 # Wiki Log
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
+
+## [2026-04-10] ingest | 3-source batch — SearXNG, OpenClaw trading methodology, Archon pivot to workflow engine
+
+Three-source batch ingest. **Two new entities ([[searxng]], [[bart-slodyczka]]) and one major entity rewrite ([[archon-os]]).**
+
+- **Sources** (3):
+  1. [[summary-bart-slodyczka-gemma4-searxng-openclaw|Gemma 4 + SearXNG = 100% FREE & PRIVATE OpenClaw]] (2026-04-06, Bart Slodyczka / YouTube) — full local+free OpenClaw setup with Gemma 4 via Ollama + SearXNG for private web search.
+  2. [[summary-cole-medin-openclaw-trading|I Gave OpenClaw $10,000 to Trade Stocks]] (2026-04-09, Cole Medin / YouTube) — 30-day real-money AI trading experiment; sub-agent wealth adviser team; both bots beat the S&P 500 (−8.5%) with Nate at −0.2% and Samin at −3.8%.
+  3. [[summary-archon-readme|Archon README]] (GitHub, Cole Medin) — documents Archon's complete pivot from AI OS (knowledge + task backbone via MCP) to **workflow engine for AI coding agents** (YAML DAG workflows, git worktree isolation, 17 default workflows, multi-platform adapters).
+
+### Pages created (5)
+
+- `wiki/sources/summary-bart-slodyczka-gemma4-searxng-openclaw.md`
+- `wiki/open-source/searxng.md` — **new entity**: self-hosted meta-search engine; the wiki's first self-hosted web search entry; added to [[self-hostable-alternatives]] map.
+- `wiki/people/bart-slodyczka.md` (author stub)
+- `wiki/sources/summary-cole-medin-openclaw-trading.md`
+- `wiki/sources/summary-archon-readme.md`
+
+### Pages updated (8)
+
+- [[openclaw]] — new "Running 100% locally and free" section (Ollama native integration + SearXNG) + "AI trading experiment — methodology" section (full cron-driven autonomous trading pattern with Alpaca, sub-agent teams, adaptive strategy, inter-agent communication, results)
+- [[gemma-4]] — new "Tool-calling on OpenClaw (E4B field report)" section (Bart's hands-on with E4B + 26B daily driver)
+- [[ollama]] — expanded Cloud Tier section ($20/mo, specific models) + new "Native OpenClaw Integration" section
+- [[self-hostable-alternatives]] — new SearXNG row (web search)
+- [[archon-os]] — **major rewrite** reflecting the pivot from AI OS to workflow engine. New sections: YAML DAG workflows, git worktree isolation, 17 default workflows table, multi-platform adapters, Web UI, architecture diagram, three-era lineage (agent builder → AI OS → workflow engine).
+- [[cole-medin]] — two new sources in Content in This Wiki; updated Archon key idea to reflect the pivot.
+- [[llm-design-patterns]] — Ralph loop and PIV loop now have first-class Archon implementations (`archon-ralph-dag`, `archon-piv-loop`).
+- [[ai-coding-workflow]] — new "Evolution: Archon as the YAML-packaged version" section; Archon added to Compared to Other Workflows.
+
+### Why this matters structurally
+
+1. **SearXNG closes the "free web search" gap** — until today, every agent web search path in the wiki required a paid API. SearXNG + Ollama + OpenClaw = the wiki's first fully free, fully private agent stack.
+2. **The trading experiment captures a methodology** — the user flagged this for the autonomous execution pattern (cron jobs, sub-agent teams, adaptive strategy), not the financial results. The pattern is now captured on [[openclaw]] for future experimentation.
+3. **Archon's pivot is load-bearing** — the existing [[archon-os]] page was describing a product that no longer exists. The rewrite reflects the current state: a workflow engine that's the YAML-packaged evolution of Cole's PLANNING.md/TASK.md pattern. The Ralph loop — previously just "name-checked but not yet ingested" on [[llm-design-patterns]] — now has a concrete implementation.
+
+### Notes
+
+- 114 sources total.
+- No images to localize (YouTube transcripts + GitHub README).
+- The trading source was kept despite being entertainment-first because the user explicitly wanted the methodology extracted for future experimentation.
 
 ## [2026-04-09] ingest | Dubibubii Claude skills 33-plugin walkthrough — anchors agent-plugins index
 
@@ -199,23 +239,6 @@ Quick pre-publish lint pass after committing the new methodology files (log-rule
 - **Log rotation**: this entry pushes the log to the 10-entry cap; oldest entry (Open-SWE 2026-04-07) dropped per [log-rules](../.instructions/core/rules/log-rules.md).
 
 **Notes**: zero orphans, zero frontmatter drift, all four state files within their caps (overview at 1,486/1,500, hot at 451/500, log at 10/10, tasks at 11/15). Cleanest lint pass to date — yesterday's three rounds did the heavy lifting.
-
-## [2026-04-08] ingest | Journey Kits launch (Matthew Berman)
-
-Single-source ingest. **Anchors a new entity, [[journey-kits]] — the wiki's first dedicated agent-workflow packaging format.** User flagged this with explicit interest: *"something I want to try out and take apart to understand the packaging and if I can use or borrow any concepts from it."*
-
-- **Source**: [[summary-matthew-berman-journey-kits|I Built Something — Matthew Berman]] (2026-04-04)
-- **Pages created** (2): `wiki/sources/summary-matthew-berman-journey-kits.md`, `wiki/tools/journey-kits.md`
-- **Pages updated** (1): [[matthew-berman]]
-
-The entity page is structured around the user's stated interest — a "What's borrowable" section breaks the format into 7 specific concepts (kit.md as single-file workflow spec, "failures overcome" as first-class field, credentials-by-pointer, learnings-flow-back, host adaptation as kit responsibility, agent-prompted upgrades, publisher reputation scoring).
-
-**Where Journey sits**: user-facing implementation of [[agentic-harness-primitives]] (registry / type system / tool pool assembly), broader-scope sibling of [[skills-sh]] (Journey ships everything around the skill, host-agnostic), complementary to [[mcp]] (packaging layer vs protocol layer).
-
-**Tasks added (1)**: dissect Journey kit format for concepts borrowable for the wiki's own page-conventions methodology.
-
-**Notes**: Single-source coverage. Treat capability claims as marketing position until a third-party walkthrough lands. No formal spec for the kit format published at recording — long-term kit portability depends on whether Berman publishes one.
-
 
 
 

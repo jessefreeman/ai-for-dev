@@ -1,8 +1,8 @@
 ---
 type: entity
-sources: ["Ollama + Claude Code = 99% CHEAPER.md", "Google just dropped Gemma 4... (WOAH).md", "EASIEST Way to Fine-Tune a LLM and Use It With Ollama.md"]
+sources: ["Ollama + Claude Code = 99% CHEAPER.md", "Google just dropped Gemma 4... (WOAH).md", "EASIEST Way to Fine-Tune a LLM and Use It With Ollama.md", "Gemma 4 + SearXNG = 100% FREE & PRIVATE OpenClaw (Full Setup).md"]
 created: 2026-04-06
-updated: 2026-04-07
+updated: 2026-04-10
 tags: [tool, ai, open-source, local, inference]
 ---
 
@@ -30,7 +30,11 @@ Ollama integrates with [[Claude Code]] to substitute open-source models for Anth
 
 ## Cloud Tier
 
-Ollama also hosts cloud models (e.g., MiniMax M 2.7) that can be used without local hardware. Free usage is limited; paid subscription unlocks higher throughput. Models only available in the cloud tier will not show a size in Ollama's model list.
+Ollama offers a **$20/month cloud plan** for users on VPS or devices too small to run models locally. Per [[bart-slodyczka|Bart Slodyczka]]'s [[summary-bart-slodyczka-gemma4-searxng-openclaw|guide]], the plan should cover typical [[openclaw|OpenClaw]] daily usage and gives access to large models like Kimi K2.5, GLM 5, and MiniMax M2.7 — plus the ability to run [[gemma-4|Gemma 4]] 31B with full 256K context in the cloud. Models only available in the cloud tier will not show a size in Ollama's model list.
+
+## Native OpenClaw Integration
+
+Ollama has a native integration with [[openclaw|OpenClaw]] — `openclaw configure` auto-detects models from `ollama list`. Supports both local and cloud models. After configuration, `openclaw gateway restart` flushes the settings. See [[summary-bart-slodyczka-gemma4-searxng-openclaw|source]].
 
 ## Custom Models via Modelfile (loading fine-tuned GGUF)
 

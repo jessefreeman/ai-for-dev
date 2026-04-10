@@ -1,7 +1,7 @@
 ---
 type: tasks
 created: 2026-04-06
-updated: 2026-04-09
+updated: 2026-04-10
 ---
 
 # Tasks
@@ -9,6 +9,10 @@ updated: 2026-04-09
 Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.instructions/core/rules/tasks-rules.md) for what belongs here. Resolved items are deleted, not archived — the historical record lives in [[log|log.md]]. Walk through these with the [task-review prompt](../.instructions/core/prompts/task-review.md).
 
 ## Open
+
+- [ ] **Autonomous AI trading — experiment further** — The [[openclaw]] page now captures the full methodology from [[summary-cole-medin-openclaw-trading|Cole Medin's 30-day experiment]]: cron-driven execution via Alpaca API, sub-agent wealth adviser teams, adaptive strategy, inter-agent communication. Both bots beat the S&P 500 (−8.5%) — Nate at −0.2%, Samin at −3.8%. You flagged this for further experimentation and research.
+      **What I need from you:** Do you want to (a) set up your own OpenClaw trading bot using the methodology on the page, (b) research more sources on AI trading patterns / tools, or (c) keep this as a tracking item until you have time to dig in? The Alpaca API + cron pattern is straightforward to replicate; the sub-agent team spawning is the interesting architectural bit.
+      *Referenced from:* [[openclaw]], [[summary-cole-medin-openclaw-trading]]
 
 - [ ] **Review agent plugins — rolling nudge** — The [[agent-plugins]] index now tracks 33+ installable plugins (Claude skills, MCPs, skill packs, sandboxing, parallel runners). This is the **catch-your-attention task** for the plugin ecosystem: when you see a plugin recommended somewhere (a video, a thread, a colleague), check if it's in the index — if it is, decide whether to flip its status from `tracked` to `try` / `recommended` / `skip`; if it isn't, add a row + create a per-plugin page so it has somewhere to land.
       Currently `try`-flagged: [[obsidian-skills-pack]] (overlaps with this wiki's own Obsidian-vault operating model — most likely to produce hands-on notes the wiki can use).
