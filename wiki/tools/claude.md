@@ -10,14 +10,14 @@ tags: [tool, llm, anthropic, frontier-model]
 
 [[anthropic|Anthropic]]'s frontier LLM family. Widely considered the best model for work tasks and coding. Distinct from [[Claude Code]], which is the CLI agent harness built on top of Claude models. See [[anthropic]] for the company-level entity.
 
-## Claude 4 (May 2025 generation)
+## Claude 4 (May 2025 generation — launch pricing)
 
 | Tier | Input | Output | Notable |
 |---|---|---|---|
 | **Opus 4** | $15/1M | $75/1M | #1 SWE-bench Verified at launch; one-shot full-stack capability |
 | **Sonnet 4** | $3/1M | $15/1M | Faster than Opus; ~$2.60 to generate a SaaS landing page via Cline ([[summary-worldofai-claude-4-opus-sonnet-cline|source]]) |
 
-The model family later evolved into the 4.5 / 4.6 line that powers [[claude-code|Claude Code]] today.
+The model family later evolved into the 4.5 / 4.6 line that powers [[claude-code|Claude Code]] today. **Current-generation API pricing** (significantly lower for Opus) is in the [[#advisor-strategy-messages-api-beta|Advisor Strategy]] section below.
 
 ## Strengths
 

@@ -1,33 +1,40 @@
 ---
 type: entity
-sources: ["A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md"]
+sources: ["A Markdown File Just Replaced Your Most Expensive Design Meeting. (Google Stitch).md", "7 new open source AI tools you need right now….md"]
 created: 2026-04-06
-updated: 2026-04-06
-tags: [tool, claude-code, skills, marketplace]
+updated: 2026-04-10
+tags: [tool, open-source, claude-code, skills, marketplace, registry]
 ---
 
 # skills.sh
 
-An open directory for Claude Code agent skills. Skills are installable playbooks that teach Claude Code how to work with specific tools, frameworks, or workflows.
+Open community directory for [[claude-code|Claude Code]] skills — installable agent capabilities packaged as markdown + scripts. Functions as the de-facto registry for the Claude Code skills ecosystem: anyone can publish a skill, anyone can install one with a single command.
 
-## What It Is
+## Why it matters
 
-skills.sh is where Claude Code skill creators publish their skills and where developers find and install them. A skill is typically a markdown or configuration file installed into a Claude Code project with a single terminal command.
+The Claude Code skills marketplace is one of the strongest signals of the wiki's **[[agentic-harness-primitives|agent harness primitives]]** thesis: when an agent harness ships a clean extension surface, an ecosystem forms around it almost immediately. skills.sh is where that ecosystem lives. The directory is what makes [[remotion|Remotion]] (150k+ installs in 8 weeks), [[gstack|GStack]], [[superpowers|Superpowers]], [[impeccable|Impeccable]], [[agency|Agency]], and dozens of others discoverable.
 
-## Notable Skills Listed
+## What's on it
 
-- **[[Remotion]]** — video-as-code skill; 150,000+ installs as of early 2026; #1 non-corporate skill on the platform
-- **[[Google Stitch]]** output skills — playbooks for working with Stitch-generated `design.md` files
-- Skills from Vercel, Anthropic, and Microsoft are among the most installed corporate-published skills
+A growing catalog of skills published by individual creators, companies (Vercel, Anthropic, Microsoft), and the broader Claude Code community. Skills cover frontend design, video generation, testing discipline, agent role templates, knowledge management, and much more. Each entry typically includes a one-line install command and a description of what the skill does.
 
-## Why It Matters
+## Notable installs
 
-skills.sh is the distribution layer for Claude Code's expanding capability set. The Remotion skill's trajectory — from zero to #1 non-corporate skill in 8 weeks — illustrates how quickly the ecosystem is growing and how MCP/skill distribution is becoming a product growth strategy for developer tools.
+- **[[remotion|Remotion]]** — 150,000+ installs within 8 weeks of launch; #1 skill not made by Vercel, Anthropic, or Microsoft. The canonical example of a Claude Code skill becoming a viral install in its own right.
+- **[[gstack|GStack]]** — YC President Gary Tan's startup methodology as Claude Code skills (~50k stars).
+- **[[superpowers|Superpowers]]** — TDD-enforcing plugin (115k stars).
+- **[[impeccable|Impeccable]]** — frontend design skill (17 UI commands).
+- **[[agency|Agency]]** — role-based agent templates (frontend, backend, security, etc.).
+- **[[google-stitch|Google Stitch]]** output skills — playbooks for working with Stitch-generated `design.md` files.
+
+## Sources
+
+- [[summary-nate-b-jones-google-stitch|A Markdown File Just Replaced Your Most Expensive Design Meeting]] — first wiki source on skills.sh as a registry; cites the Remotion install metric
+- [[summary-fireship-7-open-source-tools|7 Open-Source AI Tools]] — covers the broader skills ecosystem
 
 ## See Also
 
-- [[Claude Code]] — the tool skills are built for
-- [[Remotion]] — #1 non-corporate skill
-- [[Google Stitch]] — shipped official Claude Code skills on launch
-- [[Nate B Jones]] — source analysis
-- [[summary-nate-b-jones-google-stitch|Source: A Markdown File Just Replaced Your Design Meeting]]
+- [[claude-code|Claude Code]] — the harness skills.sh extends
+- [[agentic-harness-primitives|Agentic Harness Primitives]] — the framework that makes a registry like this viable
+- [[remotion|Remotion]] — the breakout install that anchored the registry
+- [[agent-plugins]] — the wiki's broader plugin index across all agent harnesses

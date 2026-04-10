@@ -56,22 +56,19 @@ Open questions that need **your** input or judgment. See [`tasks-rules.md`](../.
       **What I need from you:** Want me to web-fetch the json2video.com pricing page and add a Pricing section, or leave it as a tasks-tracked gap until an organic source lands?
       *Referenced from:* [[json-to-video]]
 
-- [ ] **Browserbase as a company page** — [[stagehand]] is published by Browserbase, which also runs the serverless browser backend Stagehand depends on. The company has appeared in two open-source agent contexts now (Stagehand v2 + the agent-controlled browser pattern). Probably worth an `orgs/` page to track its position.
-      **What I need from you:** Approve / defer creating a Browserbase org page. A 2nd-source threshold isn't quite met yet, but the structural importance is.
-
-- [ ] **Block as a company page** — [[codename-goose|Goose]] is published by Block (Square / Cash App / Tidal parent). Block doesn't have a wiki page, but the corporate-backing point is load-bearing for Goose's positioning vs solo-maintained alternatives. Same threshold question as Browserbase.
-      **What I need from you:** Approve / defer creating a Block org page.
-
-- [ ] **ByteDance as a company page** — [[deerflow|DeerFlow]] is the wiki's first ByteDance OSS contribution. Pattern to watch — if a second ByteDance OSS framework lands, the org page becomes a clear yes. For now: tracking only.
+- [ ] **Org pages — Browserbase, Block, ByteDance** — Three companies referenced via their products ([[stagehand]] → Browserbase, [[codename-goose]] → Block, [[deerflow]] → ByteDance) but without org pages. Create each when a 2nd source lands that references the *company* (not just the product). Browserbase is closest — appeared in two agent contexts (Stagehand v2 + browser pattern).
+      **What I need from you:** Nothing right now. Create on 2nd-source threshold.
+      *Referenced from:* lint 2026-04-09, lint 2026-04-10
 
 - [ ] **LLMs Explained / Aggregate Intellect / AI.SCIENCE — creator attribution** — The Dify knowledge-base source ([[summary-dify-knowledge-base-rag-configuration]]) is from a YouTube channel that uses three different display names but doesn't credit an individual creator on screen. Per page-conventions ("never create stub person pages with unknown channel info"), no person page was created.
       **What I need from you:** If you know who runs this channel, name them and I'll create the person page. Otherwise we leave the source-summary stand-alone.
       *Referenced from:* [[summary-dify-knowledge-base-rag-configuration]]
 
-- [ ] **19 stub pages need richer coverage as new sources land** — Lint 2026-04-09 confirmed the following pages as <150 words. They are intentionally thin "nascent entity" pages that the wiki rule says should grow with new sources, not by fabricating content from training data. This task is a tracking pointer so we remember to enrich them when relevant sources come in.
-      **People (need a second source each):** [[tin-rovic]], [[zubair-trabzada]], [[nathan-sebhastian]], [[beyond-fireship]], [[simon-hoiberg]], [[dave-swift]].
+- [ ] **30 stub pages need richer coverage as new sources land** — Lint 2026-04-10 confirmed the following pages as <150 words. They are intentionally thin "nascent entity" pages that the wiki rule says should grow with new sources, not by fabricating content from training data. This task is a tracking pointer so we remember to enrich them when relevant sources come in.
+      **People (need a second source each):** [[tin-rovic]], [[zubair-trabzada]], [[nathan-sebhastian]], [[beyond-fireship]], [[simon-hoiberg]], [[dave-swift]], [[bart-slodyczka]].
       **Self-hostable alternatives (will grow with deployment-experience sources):** [[nocodb]], [[strapi]], [[grafana]], [[plane]], [[docmost]].
-      **Tools/models with one source so far:** [[anything-llm]], [[manus]], [[flowith]], [[obsidian]], [[obsidian-web-clipper]], [[mirrorish]], [[agency]].
+      **Tools/models with one source so far:** [[anything-llm]], [[manus]], [[flowith]], [[obsidian]], [[obsidian-web-clipper]], [[mirrorish]], [[agency]], [[kimi-coder]], [[minimax-m1]].
+      **Plugin stubs (containers for hands-on notes):** [[brand-guidelines-skill]], [[canvas-design-skill]], [[claude-seo-skill]], [[context-optimization-skill]], [[deep-research-skill]], [[doc-co-authoring-skill]], [[pptx-skill]], [[web-artifacts-builder-skill]], [[xlsx-skill]].
       **Demo/legacy:** [[ai-2027]] (demo ingest source, intentionally minimal).
       **What I need from you:** Nothing right now. This is a tracking item — when an ingest naturally touches one of these entities, treat the pass as an opportunity to expand the page beyond stub status. Delete this task when most have grown out of stub state.
-      *Referenced from:* lint 2026-04-09
+      *Referenced from:* lint 2026-04-10

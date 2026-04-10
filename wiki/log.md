@@ -8,6 +8,17 @@ updated: 2026-04-10
 
 Rolling window of recent operations with interpretation. Capped at 10 entries per [`log-rules.md`](../.instructions/core/rules/log-rules.md). Older history is in `git log -- wiki/log.md`.
 
+## [2026-04-10] lint: 2026-04-10 — post-advisor-strategy cleanup
+
+Lint pass after 8 ingests since last lint. 4 fixes, all approved.
+
+- **Duplicate resolved**: `wiki/open-source/skills-sh.md` merged into `wiki/tools/skills-sh.md` per user preference ("each tool can be marked as open source but we keep one tool page to organize them all"). Richer content from the open-source copy preserved; tools/ copy updated with both sources, all cross-links, and the agent-plugins index reference. All 16 inbound `[[skills-sh]]` wikilinks resolve unchanged.
+- **Pricing contradiction clarified**: [[claude]] had Claude 4 launch pricing ($15/$75 per million for Opus) and the new Advisor Strategy section's current-gen pricing ($5/$25) on the same page with no explanation. Added a note to the Claude 4 table pointing to the current-gen table below.
+- **Stub tracking updated**: 19 → 30 stubs. New entries: 9 plugin skill pages from the Dubibubii ingest (intentionally thin containers for hands-on notes), [[bart-slodyczka]], [[kimi-coder]], [[minimax-m1]].
+- **Tasks pruned**: merged 3 org-page tasks (Browserbase, Block, ByteDance) into 1 combined task. Active count 16 → 14 (under the 15-cap).
+
+**Notes**: 0 orphans, 0 frontmatter drift, 0 broken index entries. All state files within caps (hot 340w/500, log 10/10, tasks 14/15). The skills-sh duplicate was flagged in the 2026-04-09 Dubibubii lint notes and is now resolved.
+
 ## [2026-04-10] ingest | Advisor Strategy (Nate Herk)
 
 Single-source ingest. **Adds the wiki's 6th LLM design pattern ([[llm-design-patterns#pattern-6-advisor-strategy|Advisor Strategy]]) and documents `/model opus-plan` in Claude Code for the first time.**
@@ -243,18 +254,6 @@ Single-source ingest. **Anchors a new entity ([[conway]]) and a new concept page
 **Speculative-source handling**: per user flag, the wiki distinguishes three credibility tiers in the source summary and the Conway entity page: (1) factual structure of Conway from the leak = primary-source-from-leak, (2) the 90-day timeline = verifiable corporate history, (3) trajectory predictions ("OpenAI/Google will ship versions in months", "behavioral lock-in is the rest-of-2026 story") = Nate's editorial. All three are filed; only (1) and (2) are treated as ground truth.
 
 **Notes**: 105 sources total. 6 memories added. **Lint reminder due** — log.md ingest count is now at 5-multiple per Phase 6 of ingest prompt.
-
-## [2026-04-09] ingest | Anthropic Managed Agents launch (Nate Herk hands-on)
-
-Single-source ingest. **Anchors a new entity, [[managed-agents]] — Anthropic's third primary surface alongside Claude.ai and Claude Code.** User flagged this with explicit interest as a *future-facing Anthropic feature to watch as it evolves and is announced* — the page is structured around the **roadmap** (Outcomes, Multi-Agent Orchestration, Persistent Memory) rather than the launch state.
-
-- **Source**: [[summary-nate-herk-managed-agents|I Tested Claude's New Managed Agents]] (2026-04-08)
-- **Pages created** (3): `wiki/sources/summary-nate-herk-managed-agents.md`, `wiki/tools/managed-agents.md`, `wiki/tools/trigger-dev.md` (stub for the trigger layer Nate prefers)
-- **Pages updated** (4): [[anthropic]] (Managed Agents added to product list), [[nate-herk]], [[claude-code]] (CLI integration section + credential warning), [[openclaw]] (still wins on heartbeats + Telegram)
-
-**Editorial verdict**: Managed Agents lowers the floor for non-developers but does not yet raise the ceiling for builders. The structural gap is the missing trigger primitive — no cron, no webhook, no heartbeat — which is the reason [[trigger-dev|trigger.dev]] now appears in the wiki for the first time. If the three private-preview features ship, Managed Agents becomes a credible hosted alternative to the [[slash-loop|/loop]] + [[open-brain|OpenBrain]] + MCP three-primitive stack — *minus* the trigger primitive.
-
-**Notes**: 104 sources total. No new tasks (Browserbase/Block stub-tracking already covers the org-page pattern; this source doesn't add a new gap). 5 memories added.
 
 
 
